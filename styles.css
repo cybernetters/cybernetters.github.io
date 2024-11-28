@@ -18,13 +18,14 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 .header {
-    position: relative; /* Ensures the overlay works */
-    background-image: url('https://raw.githubusercontent.com/cybernetters/cybernetters.github.io/main/cyber-background-qrvi98v4g2ezuomr.jpg'); /* Correct raw URL */
+    position: relative; /* Required for the overlay */
+    background-image: url('https://raw.githubusercontent.com/cybernetters/cybernetters.github.io/main/cyber-background-qrvi98v4g2ezuomr.jpg');
     background-size: cover; /* Ensure the image covers the entire header */
     background-position: center; /* Center the image */
-    color: #00ff00; /* Retain neon green text for visibility */
-    border-bottom: 2px solid #00ff00; /* Keep the neon green underline */
-    padding: 1rem 0; /* Add padding for spacing */
+    filter: grayscale(100%) brightness(1.2); /* Convert to grayscale and brighten */
+    color: #00ff00; /* Keep the neon green text */
+    border-bottom: 2px solid #00ff00; /* Green underline */
+    padding: 1rem 0; /* Add padding */
 }
 
 .header::before {
