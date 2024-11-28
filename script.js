@@ -1,9 +1,16 @@
 // Smooth Scroll for Navigation
 document.querySelectorAll('.nav a').forEach(link => {
   link.addEventListener('click', e => {
-    e.preventDefault();
-    const target = document.querySelector(e.target.getAttribute('href'));
-    target.scrollIntoView({ behavior: 'smooth' });
+    const href = link.getAttribute('href');
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        console.warn(`Element with id "${href.substring(1)}" not found`);
+      }
+    }
   });
 });
 
