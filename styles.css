@@ -20,11 +20,11 @@ body {
 
 /* Header Styles */
 .header {
-    position: relative; /* Required for the overlay */
+    position: relative;
     background-image: url('https://raw.githubusercontent.com/cybernetters/cybernetters.github.io/main/cyber-background-qrvi98v4g2ezuomr.jpg');
     background-size: cover;
     background-position: center;
-    filter: grayscale(100%) brightness(1.2); /* Grayscale and brighten */
+    filter: grayscale(100%) brightness(1.2);
     color: var(--text-color);
     border-bottom: 2px solid var(--accent-color);
     padding: 1rem 0;
@@ -82,16 +82,18 @@ body {
     margin-left: 1rem;
 }
 
-.nav ul li a {
+.nav ul li a, .nav ul li .dropbtn {
     color: var(--accent-color);
     text-decoration: none;
     padding: 0.5rem 1rem;
     position: relative;
+    font-weight: bold;
     transition: color 0.3s, background-color 0.3s;
 }
 
-.nav ul li a:hover {
+.nav ul li a:hover, .nav ul li .dropbtn:hover {
     color: #fff;
+    background-color: var(--accent-color);
 }
 
 .nav ul li a::after {
@@ -107,6 +109,41 @@ body {
 
 .nav ul li a:hover::after {
     width: 100%;
+}
+
+/* Dropdown Container */
+.nav ul li.dropdown {
+    position: relative;
+}
+
+/* Dropdown Content */
+.nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--dark-gray);
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.nav ul li .dropdown-content a {
+    color: var(--accent-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav ul li .dropdown-content a:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+/* Show the Dropdown Menu on Hover */
+.nav ul li.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* Mobile Menu */
@@ -156,20 +193,19 @@ body {
 }
 
 .button-nav li a {
-    display: inline-block;
     padding: 0.5rem 1rem;
     background-color: var(--accent-color);
-    color: #808080; /* Default gray text */
+    color: #808080;
     font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 0 10px var(--accent-color);
 }
 
 .button-nav li a:hover {
-    background-color: #00cc00; /* Darker green */
-    color: #fff; /* White text */
+    background-color: #00cc00;
+    color: #fff;
     transform: scale(1.1);
     box-shadow: 0 0 15px var(--accent-color);
 }
@@ -317,50 +353,4 @@ body {
 .status.not-started {
     background: #ff0000;
     color: #fff;
-}
-
-/* Dropdown Container */
-.nav ul li.dropdown {
-    position: relative;
-}
-
-/* Dropdown Button (Courses) */
-.nav ul li .dropbtn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: var(--dark-gray);
-    color: var(--accent-color);
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-/* Dropdown Content */
-.nav ul li .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--dark-gray);
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 5px;
-}
-
-.nav ul li .dropdown-content a {
-    color: var(--accent-color);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-size: 1rem;
-}
-
-.nav ul li .dropdown-content a:hover {
-    background-color: var(--accent-color);
-    color: #fff;
-}
-
-/* Show the Dropdown Menu on Hover */
-.nav ul li.dropdown:hover .dropdown-content {
-    display: block;
 }
