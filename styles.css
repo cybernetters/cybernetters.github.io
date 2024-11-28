@@ -201,7 +201,7 @@ body {
     display: inline-block;
     padding: 0.5rem 1rem;
     background-color: var(--accent-color); /* Neon green background */
-    color: #808080; /* Black text (visible by default) */
+    color: #808080; /* Grey text (visible by default) */
     font-weight: bold;
     text-decoration: none;
     border-radius: 5px; /* Rounded corners */
