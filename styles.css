@@ -318,3 +318,42 @@ body {
     background: #ff0000;
     color: #fff;
 }
+
+/* Dropdown Menu Styles */
+.nav ul li.dropdown {
+    position: relative;
+}
+
+.nav ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the parent menu item */
+    left: 0;
+    background-color: var(--dark-gray);
+    list-style: none;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--accent-color);
+    z-index: 1000;
+}
+
+.nav ul li .dropdown-menu li {
+    padding: 0.5rem 1rem;
+}
+
+.nav ul li .dropdown-menu li a {
+    color: var(--accent-color);
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav ul li .dropdown-menu li a:hover {
+    color: #fff; /* White text on hover */
+    background-color: var(--accent-color); /* Neon green background on hover */
+}
+
+/* Show Dropdown on Hover */
+.nav ul li.dropdown:hover .dropdown-menu {
+    display: block;
+}
