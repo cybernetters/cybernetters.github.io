@@ -18,12 +18,12 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 .header {
-    background-image: url('https://github.com/cybernetters/cybernetters.github.io/blob/main/cyber-background-qrvi98v4g2ezuomr.jpg?raw=true'); /* Use the raw URL */
-    background-size: cover; /* Ensure the image covers the entire header */
-    background-position: center; /* Center the image */
-    color: #00ff00; /* Retain the neon green text for visibility */
-    border-bottom: 2px solid #00ff00; /* Keep the green underline */
-    padding: 1rem 0; /* Add padding for spacing */
+    background-image: url('images/cyber-background-qrvi98v4g2ezuomr.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #00ff00;
+    border-bottom: 2px solid #00ff00;
+    padding: 1rem 0;
 }
 .hero {
     color: var(--text-color);
