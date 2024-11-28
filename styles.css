@@ -319,41 +319,48 @@ body {
     color: #fff;
 }
 
-/* Dropdown Menu Styles */
+/* Dropdown Container */
 .nav ul li.dropdown {
     position: relative;
 }
 
-.nav ul li .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%; /* Position below the parent menu item */
-    left: 0;
-    background-color: var(--dark-gray);
-    list-style: none;
-    padding: 0.5rem 0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px var(--accent-color);
-    z-index: 1000;
-}
-
-.nav ul li .dropdown-menu li {
+/* Dropdown Button (Courses) */
+.nav ul li .dropbtn {
+    display: inline-block;
     padding: 0.5rem 1rem;
-}
-
-.nav ul li .dropdown-menu li a {
+    background-color: var(--dark-gray);
     color: var(--accent-color);
     text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Dropdown Content */
+.nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--dark-gray);
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.nav ul li .dropdown-content a {
+    color: var(--accent-color);
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
-    transition: color 0.3s ease-in-out;
+    font-size: 1rem;
 }
 
-.nav ul li .dropdown-menu li a:hover {
-    color: #fff; /* White text on hover */
-    background-color: var(--accent-color); /* Neon green background on hover */
+.nav ul li .dropdown-content a:hover {
+    background-color: var(--accent-color);
+    color: #fff;
 }
 
-/* Show Dropdown on Hover */
-.nav ul li.dropdown:hover .dropdown-menu {
+/* Show the Dropdown Menu on Hover */
+.nav ul li.dropdown:hover .dropdown-content {
     display: block;
 }
