@@ -1,60 +1,105 @@
-/* Add this to the existing CSS */
 /* Smooth Scroll */
 html {
     scroll-behavior: smooth;
-  }
-  
-  /* Mobile Menu */
-  .menu-toggle {
-    display: none;
-    font-size: 1.5rem;
-    background: none;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .nav ul {
+}
+
+/* Theme Variables */
+:root {
+    --background-color: #121212;
+    --text-color: #00ff00;
+    --accent-color: #00ff00;
+    --dark-gray: #1a1a1a;
+}
+
+/* Base Styles */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+.header {
+    background-color: #000;
+    border-bottom: 2px solid var(--accent-color);
+}
+.hero {
+    color: var(--text-color);
+    background: linear-gradient(to right, #000000, var(--dark-gray));
+    text-align: center;
+    padding: 5rem 1rem;
+}
+.section {
+    background-color: var(--dark-gray);
+}
+.nav ul {
     display: flex;
     list-style: none;
     justify-content: flex-end;
-  }
-  
-  .nav ul li {
+}
+.nav ul li {
     margin-left: 1rem;
-  }
-  
-  #menu {
-    display: flex;
-  }
-  
-  @media (max-width: 768px) {
+}
+.nav ul li a {
+    color: var(--accent-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    position: relative;
+    transition: color 0.3s, background-color 0.3s;
+}
+.nav ul li a:hover {
+    color: #fff;
+}
+.nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease-in-out;
+}
+.nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
     .menu-toggle {
-      display: block;
+        display: block;
     }
-  
     #menu {
-      display: none;
-      flex-direction: column;
-      background-color: #333;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
     }
-  
     #menu.active {
-      display: flex;
+        display: flex;
+        opacity: 1;
+        visibility: visible;
     }
-  
     #menu li {
-      margin: 0;
-      padding: 1rem;
+        margin: 0;
+        padding: 1rem;
     }
-  }
-  
-  /* Modal Styling */
-  .modal {
+}
+
+/* Modal */
+.modal {
     display: none;
     position: fixed;
     top: 0;
@@ -64,61 +109,59 @@ html {
     background: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
-  }
-  
-  .modal-content {
+}
+.modal-content {
     background: white;
     padding: 2rem;
     border-radius: 8px;
     max-width: 600px;
     text-align: center;
-  }
-  
-  .close {
+}
+.close {
     position: absolute;
     top: 1rem;
     right: 1rem;
     cursor: pointer;
-  }
-  
-  /* Scroll Animation */
-  [data-animate] {
+}
+
+/* Animations */
+[data-animate] {
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.5s ease-in-out;
-  }
-  
-  [data-animate].in-view {
+}
+[data-animate].in-view {
     opacity: 1;
     transform: translateY(0);
-  }
-  
-  /* Update the background and text colors for a hacker theme */
-  body {
-    background-color: #121212; /* Dark background */
-    color: #00ff00; /* Neon green text */
-    font-family: 'Courier New', Courier, monospace; /* Monospace font for hacker vibes */
-  }
-  
-  .header {
-    background-color: #000000; /* Black */
-    border-bottom: 2px solid #00ff00; /* Neon green underline */
-  }
-  
-  .hero {
-    color: #00ff00; /* Neon green text */
-    background: linear-gradient(to right, #000000, #333333); /* Dark gradient background */
-  }
-  
-  .nav ul li a {
-    color: #00ff00; /* Neon green links */
-  }
-  
-  .section {
-    background-color: #1a1a1a; /* Darker gray for sections */
-  }
-  
-  #matrix-animation {
+}
+.hero h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: glitch 1s infinite;
+}
+@keyframes glitch {
+    0%, 100% { text-shadow: 1px 0 red, -1px 0 blue; }
+    50% { text-shadow: -2px 0 red, 2px 0 blue; }
+}
+.hero .btn {
+    margin-top: 1rem;
+    background-color: var(--accent-color);
+    color: #000;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 0 10px var(--accent-color);
+    transition: transform 0.3s ease-in-out;
+}
+.hero .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px var(--accent-color);
+}
+
+/* Matrix Animation */
+#matrix-animation {
     position: fixed;
     top: 0;
     left: 0;
@@ -127,80 +170,14 @@ html {
     background-color: #000;
     z-index: -1;
     overflow: hidden;
-  }
-  
-  .matrix-char {
+}
+.matrix-char {
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
-    color: rgba(0, 255, 0, 0.8); /* Neon green with transparency */
+    color: rgba(0, 255, 0, 0.8);
     animation: fall linear infinite;
-  }
-  
-  @keyframes fall {
+}
+@keyframes fall {
     0% { transform: translateY(-100%); }
     100% { transform: translateY(100vh); }
-  }
-  
-  .nav ul li a {
-    position: relative;
-    color: #00ff00;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: color 0.3s;
-  }
-  
-  .nav ul li a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #00ff00;
-    transition: width 0.3s ease-in-out;
-  }
-  
-  .nav ul li a:hover {
-    color: #fff; /* White text on hover */
-  }
-  
-  .nav ul li a:hover::after {
-    width: 100%; /* Glowing underline animation */
-  }
-  
-  .hero {
-    background: linear-gradient(to right, #000000, #1a1a1a);
-    text-align: center;
-    padding: 5rem 1rem;
-    color: #00ff00;
-  }
-  
-  .hero h2 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    animation: glitch 1s infinite;
-  }
-  
-  @keyframes glitch {
-    0%, 100% { text-shadow: 1px 0 red, -1px 0 blue; }
-    50% { text-shadow: -2px 0 red, 2px 0 blue; }
-  }
-  
-  .hero .btn {
-    margin-top: 1rem;
-    background-color: #00ff00;
-    color: #000;
-    padding: 1rem 2rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    box-shadow: 0 0 10px #00ff00;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .hero .btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px #00ff00;
-  }
-  
+}
