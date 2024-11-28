@@ -116,9 +116,27 @@ body {
     position: relative;
 }
 
+/* Dropdown Button (Courses) */
+.nav ul li .dropbtn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--dark-gray); /* Background for button */
+    color: var(--accent-color); /* Accent color for text */
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav ul li .dropbtn:hover {
+    background-color: var(--accent-color); /* Accent background on hover */
+    color: #fff; /* White text on hover */
+}
+
 /* Dropdown Content */
 .nav ul li .dropdown-content {
-    display: none;
+    display: none; /* Keep it hidden by default */
     position: absolute;
     background-color: var(--dark-gray);
     min-width: 160px;
@@ -145,6 +163,7 @@ body {
 .nav ul li.dropdown:hover .dropdown-content {
     display: block;
 }
+
 
 /* Mobile Menu */
 .menu-toggle {
