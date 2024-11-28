@@ -211,7 +211,7 @@ body {
 
 /* Hover state */
 .button-nav li a:hover {
-    background-color: #00cc00; /* Darker green on hover */
+    background-color: #00cc00; /* Darker neon green background on hover */
     color: #fff; /* White text for better contrast on hover */
     transform: scale(1.1); /* Slight zoom effect */
     box-shadow: 0 0 15px #00ff00; /* Brighter neon glow */
