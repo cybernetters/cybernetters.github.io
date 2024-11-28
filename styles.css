@@ -196,24 +196,28 @@ body {
     margin: 0 0.5rem;
 }
 
+/* Default button styling */
 .button-nav li a {
     display: inline-block;
     padding: 0.5rem 1rem;
     background-color: var(--accent-color); /* Neon green background */
-    color: #000; /* Black text */
+    color: #000; /* Black text (visible by default) */
     font-weight: bold;
     text-decoration: none;
-    border-radius: 5px; /* Rounded corners for button effect */
+    border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 0 10px var(--accent-color); /* Neon green glow */
+    box-shadow: 0 0 10px var(--accent-color); /* Neon glow */
 }
 
+/* Hover state */
 .button-nav li a:hover {
-    background-color: #00cc00; /* Darker neon green on hover */
+    background-color: #00cc00; /* Darker green on hover */
+    color: #fff; /* White text for better contrast on hover */
     transform: scale(1.1); /* Slight zoom effect */
-    box-shadow: 0 0 15px #00ff00; /* Brighter glow on hover */
+    box-shadow: 0 0 15px #00ff00; /* Brighter neon glow */
 }
 
+/* Active state (when button is clicked) */
 .button-nav li a:active {
-    transform: scale(0.95); /* Pressed effect */
+    transform: scale(0.95); /* Slightly smaller for pressed effect */
 }
