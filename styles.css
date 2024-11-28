@@ -87,55 +87,24 @@ body {
 
 .nav ul li {
     margin-left: 1rem;
+    position: relative; /* Ensures the dropdown's absolute positioning is relative to its list item */
 }
 
-.nav ul li a,
-.nav ul li .dropbtn {
+/* Button-style Navigation Links */
+.nav ul li a, .nav ul li .dropbtn {
     color: var(--accent-color);
     text-decoration: none;
     padding: 0.5rem 1rem;
-    position: relative;
     font-weight: bold;
-    transition: color var(--transition-speed), background-color var(--transition-speed);
-}
-
-.nav ul li a:hover,
-.nav ul li .dropbtn:hover {
-    color: #fff;
-    background-color: var(--accent-color);
-}
-
-.nav ul li a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--accent-color);
-    transition: width var(--transition-speed) ease-in-out;
-}
-
-.nav ul li a:hover::after {
-    width: 100%;
-}
-
-/* Dropdown Container */
-.nav ul li.dropdown {
-    position: relative;
+    transition: color 0.3s, background-color 0.3s;
+    display: block;
 }
 
 /* Dropdown Button (Courses) */
 .nav ul li .dropbtn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
     background-color: var(--dark-gray);
     color: var(--accent-color);
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
     border-radius: var(--border-radius);
-    transition: background-color var(--transition-speed), color var(--transition-speed);
 }
 
 .nav ul li .dropbtn:hover {
@@ -149,9 +118,10 @@ body {
     position: absolute;
     background-color: var(--dark-gray);
     min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 10; /* Ensure it's above other elements */
     border-radius: var(--border-radius);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 0;
 }
 
 .nav ul li .dropdown-content a {
@@ -160,29 +130,21 @@ body {
     text-decoration: none;
     display: block;
     font-size: 1rem;
-    transition: background-color var(--transition-speed), color var(--transition-speed);
+    transition: background-color 0.3s, color 0.3s;
 }
 
+/* Hover Effects for Dropdown Content */
 .nav ul li .dropdown-content a:hover {
     background-color: var(--accent-color);
     color: #fff;
 }
 
-/* Show the Dropdown Menu on Hover */
+/* Show the Dropdown on Hover */
 .nav ul li.dropdown:hover .dropdown-content {
     display: block;
 }
 
 /* Mobile Menu */
-.menu-toggle {
-    display: none;
-    font-size: 1.5rem;
-    background: none;
-    color: var(--text-color);
-    border: none;
-    cursor: pointer;
-}
-
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -198,7 +160,7 @@ body {
         width: 100%;
         opacity: 0;
         visibility: hidden;
-        transition: opacity var(--transition-speed) ease, visibility var(--transition-speed) ease;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
     }
 
     #menu.active {
@@ -212,10 +174,16 @@ body {
         padding: 1rem;
     }
 
-    /* Mobile dropdown fix */
+    /* Ensure dropdown shows on mobile too */
     .nav ul li.dropdown:hover .dropdown-content {
-        display: block; /* Display dropdown on mobile too */
+        display: block;
     }
+}
+
+/* Mobile Dropdown Menu */
+.nav ul li.dropdown .dropdown-content {
+    position: static;
+    width: 100%; /* Full-width dropdown on mobile */
 }
 
 /* Button-style Navigation Links */
