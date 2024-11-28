@@ -14,6 +14,25 @@ document.querySelectorAll('.nav a').forEach(link => {
   });
 });
 
+//Interactivity for marking topics
+document.addEventListener("DOMContentLoaded", () => {
+  const statusElements = document.querySelectorAll(".status");
+
+  statusElements.forEach((status) => {
+    status.addEventListener("click", () => {
+      if (status.classList.contains("not-started")) {
+        status.textContent = "In Progress";
+        status.classList.remove("not-started");
+        status.classList.add("in-progress");
+      } else if (status.classList.contains("in-progress")) {
+        status.textContent = "Completed";
+        status.classList.remove("in-progress");
+        status.classList.add("complete");
+      }
+    });
+  });
+});
+
 // Mobile Menu Toggle
 const menuToggle = document.getElementById('menu-toggle');
 const menu = document.getElementById('menu');
