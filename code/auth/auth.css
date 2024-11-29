@@ -1,6 +1,6 @@
 /* auth.css */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace; /* Set font to Courier New */
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
@@ -52,6 +52,7 @@ input[type="text"], input[type="email"], input[type="password"] {
   margin: 5px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace; /* Ensure inputs use Courier New */
 }
 
 button {
@@ -62,6 +63,7 @@ button {
   color: white;
   border-radius: 4px;
   cursor: pointer;
+  font-family: 'Courier New', Courier, monospace; /* Ensure button uses Courier New */
 }
 
 button:hover {
