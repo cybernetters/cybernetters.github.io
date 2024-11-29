@@ -354,3 +354,52 @@ body {
     background: #ff0000;
     color: #fff;
 }
+
+/* Ensure the sidebar and main content are in a flex container */
+.course-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Adjust space between sidebar and content */
+}
+
+.sidebar {
+  flex: 1 1 300px; /* Sidebar takes up minimum 300px width */
+  max-width: 300px; /* Sidebar should not exceed this width */
+  margin-top: 20px; /* Adjust if needed */
+}
+
+.course-overview {
+  flex: 2 1 70%; /* Main content takes remaining space */
+}
+
+/* Add some spacing to the main container */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Optional: Make sidebar items look cleaner */
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar ul li a:hover {
+  color: #007bff;
+}
+
