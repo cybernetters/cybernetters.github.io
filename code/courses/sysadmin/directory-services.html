@@ -3,119 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Directory Services - System Administration - CyberNetters</title>
-  <link rel="stylesheet" href="../../../styles.css">
+  <title>Directory Services - CyberNetters</title>
+  <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
   <!-- Header -->
   <header class="header">
-  <div class="container">
-    <h1 class="logo"><a href="index.html">CyberNetters</a></h1>
-    <nav class="nav">
-      <ul id="menu" class="button-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="/code/about/about.html">About</a></li>
-        <li><a href="/code/services/services.html">Services</a></li>
-        <li><a href="/code/resources/resources.html">Resources</a></li>
-        <li class="dropdown">
-          <a href="/code/courses/courses.html" class="dropbtn">Courses</a>
-          <div class="dropdown-content">
-            <a href="/code/courses/networking1/networking1.html">Networking I</a>
-            <a href="/code/courses/sysadmin/sysadmin.html">System Administration</a>
-            <!-- You can add more course links here as needed -->
-          </div>
-        </li>
-        <li><a href="/code/resources/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
+    <div class="container">
+      <h1 class="logo"><a href="../../index.html">CyberNetters</a></h1>
+      <nav class="nav">
+        <ul id="menu" class="button-nav">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../about/about.html">About</a></li>
+          <li><a href="../../services/services.html">Services</a></li>
+          <li><a href="../../resources/resources.html">Resources</a></li>
+          <li><a href="../systemadmin.html">System Administration</a></li>
+          <li><a href="../networking1.html">Networking I</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <!-- Main Content -->
   <main class="course-page">
-    <h2>Directory Services</h2>
-    <p>This page covers Directory Services concepts including Active Directory, Group Policy, Domains, and more.</p>
-
-    <!-- Directory Services Overview -->
-    <section class="unit">
-      <h3>1. Directory Services Overview</h3>
-      <p>Directory Services is a framework used for managing users, computers, and other resources in a network. It provides a centralized and organized method for accessing and managing network resources.</p>
-    </section>
-
-    <!-- Pruning and Grafting -->
-    <section class="unit">
-      <h3>2. Pruning and Grafting</h3>
-      <p>Pruning and grafting refer to the processes of trimming down and enhancing the directory structure in Active Directory. Pruning involves removing unnecessary data, while grafting involves adding or modifying schema objects.</p>
-    </section>
-
-    <!-- Schema -->
-    <section class="unit">
-      <h3>3. Schema</h3>
-      <p>The schema defines the structure of the Directory Service. It outlines the types of data that can be stored, how that data is stored, and how it is accessed.</p>
-    </section>
-
-    <!-- Leaf Objects -->
-    <section class="unit">
-      <h3>4. Leaf Objects</h3>
-      <p>Leaf objects are the lowest-level objects in the directory, such as users, computers, or printers. They are the entities that are actually managed and manipulated in a directory.</p>
-    </section>
-
-    <!-- Domain Controllers -->
-    <section class="unit">
-      <h3>5. Domain Controllers</h3>
-      <p>Domain Controllers are servers that manage authentication and authorization for users and computers within a domain. They store the directory database and ensure that users and computers can access network resources securely.</p>
-    </section>
-
-    <!-- Active Directory -->
-    <section class="unit">
-      <h3>6. Active Directory</h3>
-      <p>Active Directory (AD) is the directory service used by Microsoft for organizing and managing computers and other resources in a network. It provides a centralized management platform for authentication, authorization, and configuration management.</p>
-    </section>
-
-    <!-- Group Policy -->
-    <section class="unit">
-      <h3>7. Group Policy</h3>
-      <p>Group Policy is used to manage and configure operating system, application, and user settings across a network of computers. It allows administrators to enforce security settings and apply configuration changes on a large scale.</p>
+    <!-- Sidebar: Left Side (Video and Resources) -->
+    <aside class="sidebar left">
+      <h2>Video and Resources</h2>
       <ul>
-        <li><strong>i. Settings</strong> – Group Policy settings define how the system behaves for users and computers within a domain. These settings can be applied to individual users, computers, or groups of users and computers.</li>
+        <li><a href="#">Pruning and Grafting</a></li>
+        <li><a href="#">Schema</a></li>
+        <li><a href="#">Leaf Objects</a></li>
+        <li><a href="#">Domain Controllers</a></li>
+        <li><a href="#">Active Directory</a></li>
+        <li><a href="#">Group Policy</a></li>
+        <li><a href="#">Domains</a></li>
+        <li><a href="#">Organizational Units</a></li>
+        <li><a href="#">Trees</a></li>
+        <li><a href="#">Trusts</a></li>
+        <li><a href="#">Sites</a></li>
+        <li><a href="#">Forest</a></li>
       </ul>
-    </section>
+    </aside>
 
-    <!-- Domains -->
-    <section class="unit">
-      <h3>8. Domains</h3>
-      <p>A domain is a logical group of network resources (e.g., computers, users, and devices) that are managed together. Domains provide a framework for managing user accounts, permissions, and access to resources.</p>
-    </section>
+    <!-- Right Section (Progress and Mastery) -->
+    <section class="course-overview right">
+      <h2>Directory Services Progress</h2>
+      <div class="progress-bar">
+        <div class="progress" style="width: 50%;">50% Mastery</div>
+      </div>
 
-    <!-- Organizational Unit -->
-    <section class="unit">
-      <h3>9. Organizational Units</h3>
-      <p>Organizational Units (OUs) are containers within a domain that are used to organize objects like users and computers. They help administrators manage and delegate permissions more easily within a domain.</p>
-    </section>
+      <!-- Mastery Details -->
+      <h3>Mastery: 50%</h3>
 
-    <!-- Trees -->
-    <section class="unit">
-      <h3>10. Trees</h3>
-      <p>A tree in Active Directory is a collection of one or more domains that share a common schema and global catalog. Trees are organized in a hierarchical structure, with parent-child domain relationships.</p>
-    </section>
-
-    <!-- Trusts -->
-    <section class="unit">
-      <h3>11. Trusts</h3>
-      <p>Trusts allow users from one domain to access resources in another domain. Trusts can be one-way or two-way, and they are used to establish relationships between domains in different Active Directory forests.</p>
-    </section>
-
-    <!-- Sites -->
-    <section class="unit">
-      <h3>12. Sites</h3>
-      <p>Sites in Active Directory represent physical locations in a network where domain controllers and other resources are located. Sites are used to optimize replication and authentication processes based on geographical locations.</p>
-    </section>
-
-    <!-- Forest -->
-    <section class="unit">
-      <h3>13. Forest</h3>
-      <p>A forest is the top-level container in an Active Directory structure. It consists of one or more domains that share a common schema, configuration, and global catalog. Forests enable scalability and isolation within an AD environment.</p>
+      <div class="units">
+        <!-- Directory Services Topics -->
+        <div class="unit">
+          <h3>Unit: Directory Services</h3>
+          <ul>
+            <li>Pruning and Grafting</li>
+            <li>Schema</li>
+            <li>Leaf Objects</li>
+            <li>Domain Controllers</li>
+            <li>Active Directory</li>
+            <li>Group Policy
+              <ul>
+                <li>Settings</li>
+              </ul>
+            </li>
+            <li>Domains</li>
+            <li>Organizational Units</li>
+            <li>Trees</li>
+            <li>Trusts</li>
+            <li>Sites</li>
+            <li>Forest</li>
+          </ul>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -129,4 +93,3 @@
   <script src="../../script.js"></script>
 </body>
 </html>
-
