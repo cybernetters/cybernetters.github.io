@@ -3,27 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Directory Services - System Administration - CyberNetters</title>
-  <link rel="stylesheet" href="../../../styles.css"> <!-- Updated path for styles -->
+  <title>Directory Services - CyberNetters</title>
+  <link rel="stylesheet" href="../../../styles.css">
 </head>
 <body>
   <!-- Header -->
   <header class="header">
     <div class="container">
-      <h1 class="logo"><a href="../../../index.html">CyberNetters</a></h1>
+      <h1 class="logo"><a href="/index.html">CyberNetters</a></h1>
       <nav class="nav">
         <ul id="menu" class="button-nav">
-          <li><a href="../../../index.html">Home</a></li>
+          <li><a href="/index.html">Home</a></li>
           <li><a href="/code/about/about.html">About</a></li>
           <li><a href="/code/services/services.html">Services</a></li>
           <li><a href="/code/resources/resources.html">Resources</a></li>
-          <li class="dropdown">
-            <a href="/code/courses/courses.html" class="dropbtn">Courses</a>
-            <div class="dropdown-content">
-              <a href="/code/courses/networking1/networking1.html">Networking I</a>
-              <a href="/code/courses/sysadmin/sysadmin.html">System Administration</a>
-            </div>
-          </li>
+          <li><a href="/code/courses/systemadmin/sysadmin.html">System Administration</a></li>
+          <li><a href="/code/courses/networking1/networking1.html">Networking I</a></li>
           <li><a href="/code/resources/contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -32,47 +27,50 @@
 
   <!-- Main Content -->
   <main class="course-page">
-    <div class="container">
-      <div class="course-content">
-        <!-- Left Column: Learning Progress -->
-        <div class="progress-section">
-          <h2>Mastery Progress</h2>
-          <div class="progress-bar">
-            <div class="progress" style="width: 40%;">40% Mastery</div>
-          </div>
-
-          <h3>Units Covered</h3>
-          <ul>
-            <li>Directory Services Overview</li>
-            <li>Active Directory and Group Policy</li>
-            <li>Domains and Organizational Units</li>
-            <li>Forest and Sites</li>
-          </ul>
-        </div>
-
-        <!-- Right Column: Practice and Resources -->
-        <div class="resources-section">
-          <h2>Practice</h2>
-          <div class="practice-status">
-            <h3>Practice Quiz</h3>
-            <p>Progress: <span class="practice-progress">60%</span></p>
-            <a href="#">Start Quiz</a>
-          </div>
-
-          <h2>Video Tutorial</h2>
-          <div class="video-tutorial">
-            <iframe src="https://www.youtube.com/embed/your_video_id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          
-          <h2>Resources</h2>
-          <ul>
-            <li><a href="#">Active Directory Overview PDF</a></li>
-            <li><a href="#">Group Policy Settings Guide</a></li>
-            <li><a href="#">Complete AD & Directory Services Guide</a></li>
-          </ul>
+    <!-- Left Section: Video -->
+    <section class="video-tutorial">
+      <div class="container">
+        <h2>Directory Services</h2>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Right Section: Resources and Progress -->
+    <section class="resources-progress">
+      <div class="container">
+        <!-- Resources -->
+        <div class="resources-section">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Directory Services Overview</a></li>
+            <li><a href="#">Active Directory - What Is It?</a></li>
+            <li><a href="#">Group Policy Settings</a></li>
+            <li><a href="#">Advanced Topics in Directory Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Practice Section -->
+        <div class="practice-section">
+          <h3>Practice</h3>
+          <p>Complete these tasks to strengthen your understanding:</p>
+          <ul>
+            <li><a href="#">Test 1: Configure Active Directory</a></li>
+            <li><a href="#">Test 2: Group Policy Configuration</a></li>
+            <li><a href="#">Test 3: Directory Pruning and Grafting</a></li>
+          </ul>
+        </div>
+
+        <!-- Mastery Progress Bar -->
+        <div class="progress-section">
+          <h3>Course Progress</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 50%;">50% Mastery</div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
