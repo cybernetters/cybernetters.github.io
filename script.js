@@ -94,3 +94,17 @@ const createMatrixRain = () => {
 };
 
 createMatrixRain();
+
+// Toggle between Sign In and Sign Up forms
+function toggleForms() {
+  var signinForm = document.getElementById('signin-form');
+  var signupForm = document.getElementById('signup-form');
+  
+  if (signinForm.style.display === 'none') {
+    signinForm.style.display = 'block';
+    signupForm.style.display = 'none';
+  } else {
+    signinForm.style.display = 'none';
+    signupForm.style.display = 'block';
+  }
+}
