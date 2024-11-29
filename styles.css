@@ -92,7 +92,7 @@ body {
 
 /* Button-style Navigation Links */
 .nav ul li a, .nav ul li .dropbtn {
-    color: var(--accent-color);
+    color: var(--dark-gray);
     text-decoration: none;
     padding: 0.5rem 1rem;
     font-weight: bold;
