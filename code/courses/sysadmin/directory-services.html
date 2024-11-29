@@ -9,21 +9,28 @@
 <body>
   <!-- Header -->
   <header class="header">
-    <div class="container">
-      <h1 class="logo"><a href="../../../index.html">CyberNetters</a></h1>
-      <nav class="nav">
-        <ul id="menu" class="button-nav">
-          <li><a href="../../../index.html">Home</a></li>
-          <li><a href="/code/about/about.html">About</a></li>
-          <li><a href="/code/services/services.html">Services</a></li>
-          <li><a href="/code/resources/resources.html">Resources</a></li>
-          <li><a href="/code/courses/systemadmin.html">System Administration</a></li>
-          <li><a href="/code/courses/networking1.html">Networking I</a></li>
-          <li><a href="/code/resources/contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="container">
+    <h1 class="logo"><a href="index.html">CyberNetters</a></h1>
+    <nav class="nav">
+      <ul id="menu" class="button-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/code/about/about.html">About</a></li>
+        <li><a href="/code/services/services.html">Services</a></li>
+        <li><a href="/code/resources/resources.html">Resources</a></li>
+        <li class="dropdown">
+          <a href="/code/courses/courses.html" class="dropbtn">Courses</a>
+          <div class="dropdown-content">
+            <a href="/code/courses/networking1/networking1.html">Networking I</a>
+            <a href="/code/courses/sysadmin/sysadmin.html">System Administration</a>
+            <!-- You can add more course links here as needed -->
+          </div>
+        </li>
+        <li><a href="/code/resources/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 
   <!-- Main Content -->
   <main class="course-page">
