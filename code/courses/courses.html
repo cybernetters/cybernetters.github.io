@@ -20,9 +20,8 @@
           <li class="dropdown">
             <a href="/code/courses/courses.html">Courses</a>
             <ul class="dropdown-menu">
-              <li><a href="/code/courses/beginner.html">Beginner</a></li>
-              <li><a href="/code/courses/intermediate.html">Intermediate</a></li>
-              <li><a href="/code/courses/advanced.html">Advanced</a></li>
+              <li><a href="/code/courses/system-administration.html">System Administration</a></li>
+              <li><a href="/code/courses/networking.html">Networking I</a></li>
             </ul>
           </li>
           <li><a href="/code/resources/contact.html">Contact</a></li>
@@ -35,40 +34,61 @@
   <main class="course-page">
     <!-- Sidebar -->
     <aside class="sidebar">
-      <h2>Course Units</h2>
+      <h2>Courses</h2>
       <ul>
-        <li><a href="#unit1">Unit 1: Networking Basics</a></li>
-        <li><a href="#unit2">Unit 2: Ethical Hacking</a></li>
-        <li><a href="#unit3">Unit 3: Cyber Defense</a></li>
-        <li><a href="#unit4">Unit 4: Advanced Networking</a></li>
+        <li><a href="#system-administration">System Administration</a></li>
+        <li><a href="#networking-i">Networking I</a></li>
       </ul>
     </aside>
 
-    <!-- Course Overview -->
+    <!-- Course Content -->
     <section class="course-overview">
-      <h2>Course Progress</h2>
-      <div class="progress-bar">
-        <div class="progress" style="width: 65%;">65% Mastery</div>
-      </div>
-      <div class="units">
-        <!-- Unit 1 -->
-        <div id="unit1" class="unit">
-          <h3>Unit 1: Networking Basics</h3>
-          <p>Learn about network protocols, communication, and basic configurations.</p>
+      <!-- System Administration -->
+      <div id="system-administration" class="course">
+        <h2>System Administration</h2>
+        <p>Learn the skills to manage and maintain computer systems and networks effectively.</p>
+        <div class="units">
+          <h3>Units</h3>
           <ul>
-            <li>Topic 1: Introduction to Networking <span class="status complete">Completed</span></li>
-            <li>Topic 2: TCP/IP Basics <span class="status in-progress">In Progress</span></li>
-            <li>Topic 3: Network Topologies <span class="status not-started">Not Started</span></li>
+            <li>Unit 1: Introduction to System Administration
+              <ul>
+                <li>Topic 1: Overview of Operating Systems <span class="status complete">Completed</span></li>
+                <li>Topic 2: Command Line Basics <span class="status in-progress">In Progress</span></li>
+                <li>Topic 3: File and Process Management <span class="status not-started">Not Started</span></li>
+              </ul>
+            </li>
+            <li>Unit 2: User and Group Management
+              <ul>
+                <li>Topic 1: User Permissions <span class="status not-started">Not Started</span></li>
+                <li>Topic 2: Role-Based Access Control <span class="status not-started">Not Started</span></li>
+                <li>Topic 3: Security Best Practices <span class="status not-started">Not Started</span></li>
+              </ul>
+            </li>
           </ul>
         </div>
-        <!-- Unit 2 -->
-        <div id="unit2" class="unit">
-          <h3>Unit 2: Ethical Hacking</h3>
-          <p>Develop penetration testing and ethical hacking skills.</p>
+      </div>
+
+      <!-- Networking I -->
+      <div id="networking-i" class="course">
+        <h2>Networking I</h2>
+        <p>Develop foundational networking skills to understand and configure computer networks.</p>
+        <div class="units">
+          <h3>Units</h3>
           <ul>
-            <li>Topic 1: Reconnaissance Techniques <span class="status not-started">Not Started</span></li>
-            <li>Topic 2: Exploitation <span class="status not-started">Not Started</span></li>
-            <li>Topic 3: Post-Exploitation <span class="status not-started">Not Started</span></li>
+            <li>Unit 1: Networking Basics
+              <ul>
+                <li>Topic 1: Communication Models <span class="status complete">Completed</span></li>
+                <li>Topic 2: Data Link Layer Basics <span class="status in-progress">In Progress</span></li>
+                <li>Topic 3: VLAN Configuration <span class="status not-started">Not Started</span></li>
+              </ul>
+            </li>
+            <li>Unit 2: IP Addressing and Routing
+              <ul>
+                <li>Topic 1: IPv4 and IPv6 Addressing <span class="status not-started">Not Started</span></li>
+                <li>Topic 2: Subnetting <span class="status not-started">Not Started</span></li>
+                <li>Topic 3: Static and Dynamic Routing <span class="status not-started">Not Started</span></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
