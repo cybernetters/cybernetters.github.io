@@ -24,6 +24,17 @@ body {
     padding: 0;
 }
 
+/* Universal Link Styling */
+a {
+    color: var(--accent-color); /* Uses the neon green variable */
+    text-decoration: none; /* Removes underline */
+}
+
+a:visited, a:hover, a:active {
+    color: var(--accent-color); /* Ensures all states are neon green */
+    text-decoration: none; /* Consistent styling */
+}
+
 /* Header Styles */
 .header {
     position: relative;
