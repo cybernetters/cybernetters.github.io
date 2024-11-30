@@ -530,12 +530,14 @@ a:visited, a:hover, a:active {
   padding: 5rem 1rem;
   background-color: var(--dark-gray);
   color: var(--text-color);
+  text-align: center; /* Centering text in the entire section */
 }
 
 .courses-section h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  text-align: center;
+  font-weight: bold;
+  color: var(--accent-color);
 }
 
 /* Styling each course section */
@@ -545,29 +547,40 @@ a:visited, a:hover, a:active {
   color: #fff;
   padding: 3rem 1rem;
   border-radius: var(--border-radius);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   position: relative;
   margin-bottom: 2rem;
+  height: 350px; /* Adjust the height for uniformity */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Ensure text is at the bottom of the course section */
+  overflow: hidden;
 }
 
 .course .course-content {
   position: absolute;
-  bottom: 1rem;
+  bottom: 10px;  /* Slightly higher from the bottom for better spacing */
   left: 0;
   right: 0;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.6);  /* Dark overlay for readability */
   border-radius: var(--border-radius);
+  transition: background 0.3s ease-in-out;
+}
+
+.course:hover .course-content {
+  background: rgba(0, 0, 0, 0.8);  /* Darken overlay on hover */
 }
 
 .course h3 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 .course p {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
 }
 
 .progress-bar {
@@ -584,6 +597,30 @@ a:visited, a:hover, a:active {
   line-height: 20px;
   color: #000;
   font-weight: bold;
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+  .courses-section {
+    padding: 3rem 1rem; /* Less padding on mobile */
+  }
+
+  .course {
+    height: 300px; /* Slightly smaller height on mobile */
+    padding: 2rem 1rem; /* Less padding inside each course */
+  }
+
+  .course .course-content {
+    padding: 0.5rem; /* Reduce padding on mobile */
+  }
+
+  .course h3 {
+    font-size: 1.5rem; /* Adjust heading size on mobile */
+  }
+
+  .course p {
+    font-size: 1rem; /* Adjust text size on mobile */
+  }
 }
 
 /* Styling for the Sign In / Sign Up page */
