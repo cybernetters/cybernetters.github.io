@@ -443,6 +443,56 @@ a:visited, a:hover, a:active {
   }
 }
 
+/* Offerings Section */
+#offerings {
+  background-color: var(--dark-gray);
+  color: var(--text-color);
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+#offerings h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.offerings-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.offering-card {
+  background: var(--light-gray);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  width: calc(33% - 2rem);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.offering-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.offering-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.offering-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.offering-card p {
+  font-size: 1rem;
+}
+
 
 /* Sidebar and Course Overview */
 .course-page {
