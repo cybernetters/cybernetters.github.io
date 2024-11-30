@@ -114,121 +114,72 @@ a:visited, a:hover, a:active {
 }
 
 /* =======================================
-   Navbar Button Styling
+   Header Styling
 ======================================== */
-.nav ul li a,
-.nav ul li .dropbtn {
-    color: var(--text-color);  /* Text color for the navbar buttons */
-    text-decoration: none;  /* Removes the underline */
-    padding: 0.5rem 1rem;  /* Adjust padding for spacing */
-    font-weight: bold;
-    background-color: transparent; /* Transparent background */
-    border: none;  /* Remove any default border */
-    border-radius: var(--border-radius);
-    transition: color 0.3s, background-color 0.3s;  /* Smooth transition for hover */
-    display: block;
+.header {
+  background-color: #121212; /* Dark background for header */
+  color: var(--text-color);   /* Light text color */
+  padding: 1rem 0;
 }
 
-/* Button Hover Effect */
-.nav ul li a:hover,
-.nav ul li .dropbtn:hover {
-    background-color: var(--accent-color);  /* Background color on hover */
-    color: #000;  /* Text color on hover */
-    border-radius: var(--border-radius); /* Rounded corners on hover */
+.header .logo img {
+  max-width: 200px;
+  height: auto; /* Maintain aspect ratio */
 }
 
-/* Dropdown Menu */
-.nav ul li .dropdown-content {
-    display: none;  /* Hidden by default */
-    position: absolute;
-    background-color: var(--dark-gray);
-    min-width: 160px;
-    z-index: 10;  /* Ensure the dropdown is above other content */
-    border-radius: var(--border-radius);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.nav {
+  background-color: transparent;
 }
 
-.nav ul li .dropdown-content a {
-    color: var(--accent-color);  /* Color for dropdown links */
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-size: 1rem;
-}
-
-/* Hover for Dropdown Links */
-.nav ul li .dropdown-content a:hover {
-    background-color: var(--accent-color);  /* Background on hover */
-    color: #fff;  /* Text color on hover */
-}
-
-/* Show dropdown on hover */
-.nav ul li.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* =======================================
-   Navbar Styling (Without Bullets)
-======================================== */
 .nav ul {
-    display: flex;                /* Align items horizontally */
-    list-style: none;             /* Removes bullet points from the list */
-    padding: 0;                   /* Removes default padding */
-    margin: 0;                    /* Removes default margin */
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
 }
 
 .nav ul li {
-    margin-left: 1rem;            /* Space between each menu item */
-    position: relative;           /* Ensures dropdown works properly */
+  margin-left: 1.5rem;  /* Space out items */
 }
 
-/* Button-style Navigation Links */
-.nav ul li a, .nav ul li .dropbtn {
-    color: var(--text-color);     /* Text color for navbar buttons */
-    text-decoration: none;        /* Remove underline */
-    padding: 0.5rem 1rem;         /* Padding for the buttons */
-    font-weight: bold;
-    background-color: transparent; /* Transparent background */
-    border: none;                 /* Remove border */
-    border-radius: var(--border-radius);
-    transition: color 0.3s, background-color 0.3s; /* Smooth hover transition */
-    display: block;               /* Ensures clickable area is the whole button */
+.nav ul li a.nav-link {
+  color: #00ff00; /* Neon green color */
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-/* Button Hover Effect */
-.nav ul li a:hover,
-.nav ul li .dropbtn:hover {
-    background-color: var(--accent-color);  /* Background color on hover */
-    color: #000;                          /* Change text color when hovered */
+.nav ul li a.nav-link:hover {
+  color: #fff;  /* Hover color */
 }
 
 /* Dropdown Menu */
+.nav ul li.dropdown {
+  position: relative;
+}
+
 .nav ul li .dropdown-content {
-    display: none;                       /* Hide dropdown by default */
-    position: absolute;
-    background-color: var(--dark-gray);  /* Dropdown background */
-    min-width: 160px;
-    z-index: 10;                         /* Ensure dropdown is above other elements */
-    border-radius: var(--border-radius);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 0.5rem 0;
+  display: none;
+  position: absolute;
+  background-color: var(--dark-gray);
+  min-width: 160px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.nav ul li:hover .dropdown-content {
+  display: block;
 }
 
 .nav ul li .dropdown-content a {
-    color: var(--accent-color);   /* Color for dropdown links */
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-size: 1rem;
+  padding: 12px 16px;
+  color: #00ff00;
+  text-decoration: none;
+  display: block;
 }
 
-/* Hover for Dropdown Links */
 .nav ul li .dropdown-content a:hover {
-    background-color: var(--accent-color);  /* Background on hover */
-    color: #fff;                             /* Text color on hover */
-}
-
-/* Show the Dropdown when Hovered */
-.nav ul li.dropdown:hover .dropdown-content {
-    display: block;
+  background-color: #00cc00;
+  color: white;
 }
