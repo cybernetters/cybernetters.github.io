@@ -844,76 +844,68 @@ a:visited, a:hover, a:active {
 }
 
 /* =======================================
-   Layout Structure for Course Page
+   Layout for Course Page
 ======================================== */
-
-/* Flexbox Layout for Course Page */
-.course-layout {
+.courses-layout {
   display: flex;
-  justify-content: space-between; /* Distribute the sections evenly */
-  gap: 2rem; /* Add space between left and right sections */
+  justify-content: space-between; /* Space between the course cards and progress sidebar */
+  gap: 2rem;
   margin-top: 2rem;
 }
 
-/* Left Side: Course Units */
-.course-units {
-  flex: 1; /* Takes up more space */
-  background-color: var(--dark-gray);
-  color: var(--text-color);
+/* Course Cards Section */
+.course-cards {
+  flex: 0.7; /* The left side takes up most of the space */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for course cards */
+  gap: 1rem;
+}
+
+.course-card {
+  background-size: cover;
+  background-position: center;
   padding: 2rem;
   border-radius: var(--border-radius);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.course-units h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  color: var(--accent-color);
-}
-
-.units-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns layout */
-  gap: 1rem;
-}
-
-.unit {
-  background: rgba(0, 0, 0, 0.6); /* Dark background for each unit */
-  margin-bottom: 1rem;
+.card-content {
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay for content inside the card */
   padding: 1rem;
   border-radius: var(--border-radius);
+  color: #fff;
 }
 
-.unit h3 {
+.card-content h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
-.unit ul {
-  list-style: none;
-  padding: 0;
+.card-content p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.unit ul li a {
+.card-content a {
   color: var(--accent-color);
-  font-size: 1.2rem;
   text-decoration: none;
+  font-weight: bold;
 }
 
-.unit ul li a:hover {
+.card-content a:hover {
   color: #fff;
 }
 
-/* Right Side: Course Progress */
-.course-progress {
-  flex: 0.4; /* Takes less space than course units */
+/* Progress Sidebar */
+.progress-sidebar {
+  flex: 0.3; /* Right side takes up less space */
   background-color: var(--light-gray);
   padding: 2rem;
   border-radius: var(--border-radius);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.course-progress h2 {
+.progress-sidebar h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   color: var(--accent-color);
@@ -936,16 +928,17 @@ a:visited, a:hover, a:active {
   font-weight: bold;
 }
 
-/* Responsive Design for Smaller Screens */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .course-layout {
-    flex-direction: column; /* Stack left and right sections on smaller screens */
+  .courses-layout {
+    flex-direction: column; /* Stack the cards and progress sidebar on mobile */
   }
 
-  .units-grid {
-    grid-template-columns: 1fr; /* Single column layout for course units */
+  .course-cards {
+    grid-template-columns: 1fr; /* Stack the course cards vertically on small screens */
   }
 }
+
 
 /* Styling for the Sign In / Sign Up page */
 .auth-page {
