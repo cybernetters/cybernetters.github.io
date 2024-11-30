@@ -1,40 +1,500 @@
-/* =======================================
-   General Styling for Courses Section
-======================================== */
-.course-page {
-  display: flex;
-  gap: 2rem; /* Space between course cards and sidebar */
-  flex-wrap: wrap; /* Stack items on smaller screens */
-  padding: 3rem 1rem;
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
 }
 
-/* Course Cards Section */
-.course-cards {
+/* Theme Variables */
+:root {
+    --background-color: #121212;
+    --text-color: #00ff00;
+    --accent-color: #00ff00;
+    --dark-gray: #1a1a1a;
+    --light-gray: #333333;
+    --border-radius: 5px;
+    --transition-speed: 0.3s;
+    --font-family: 'Courier New', Courier, monospace; /* Added global font family */
+}
+
+/* Base Styles */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family); /* Use the variable for font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Universal Link Styling */
+a {
+    color: var(--accent-color); /* Uses the neon green variable */
+    text-decoration: none; /* Removes underline */
+}
+
+a:visited, a:hover, a:active {
+    color: var(--accent-color); /* Ensures all states are neon green */
+    text-decoration: none; /* Consistent styling */
+}
+
+/* =======================================
+   Header Styles
+======================================== */
+.header {
+    position: relative;
+    background-image: url('https://raw.githubusercontent.com/cybernetters/cybernetters.github.io/main/cyber-background-qrvi98v4g2ezuomr.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%) brightness(1.2);
+    color: var(--text-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding: 1rem 0;
+}
+
+/* =======================================
+   Hero Section Styling
+======================================== */
+.hero {
+    color: var(--text-color);
+    background-image: url('images/cybersecurity-bg.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 5rem 1rem;
+    position: relative;
+    box-shadow: 0 0 20px var(--accent-color);
+    border-radius: var(--border-radius);
+    background: linear-gradient(to right, #121212, #1a1a1a);  /* Optional gradient background */
+}
+
+/* Hero Overlay */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    z-index: 1;
+}
+
+/* Ensuring text and buttons stay above the overlay */
+.hero h2,
+.hero p,
+.hero .btn {
+    position: relative;
+    z-index: 2; /* Ensures text and button appear above the overlay */
+}
+
+.hero h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: glitch 1s infinite;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.hero .btn {
+    margin-top: 1.5rem;
+    background-color: var(--accent-color);
+    color: #000;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    box-shadow: 0 0 10px var(--accent-color);
+    transition: transform var(--transition-speed) ease-in-out;
+}
+
+.hero .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px var(--accent-color);
+}
+
+/* =======================================
+   Logo Visibility Fix in Hero Section
+======================================== */
+.header .logo {
+    position: relative;
+    z-index: 2; /* Ensure the logo sits above the hero overlay */
+}
+
+.header .logo img {
+    max-width: 200px; /* Adjust logo size */
+    height: auto;     /* Maintain aspect ratio */
+}
+
+/* Additional Hero Styles (Optional Gradient) */
+.hero {
+    background: linear-gradient(to right, #121212, #1a1a1a); /* Gradient to enhance the section */
+    color: var(--text-color);
+    text-align: center;
+    padding: 5rem 1rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+/* Hero Heading and Text */
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+/* Goals Section */
+.goals .cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  width: 75%; /* Main content area for course cards */
+  gap: 1rem;
+}
+
+.goals .card {
+  background: var(--dark-gray);
+  color: var(--text-color);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  flex: 1 1 calc(25% - 1rem); /* Adjust for 4 cards in a row */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.goals .card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+/* Call-to-Action Section */
+.cta {
+  background: linear-gradient(to right, #000000, var(--dark-gray));
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-color);
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta .btn {
+  background-color: var(--accent-color);
+  color: #000;
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 0 10px var(--accent-color);
+}
+
+.cta .btn:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+
+/* Navigation */
+.nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    margin-left: 1rem;
+    position: relative; /* Ensures the dropdown's absolute positioning is relative to its list item */
+}
+
+/* Button-style Navigation Links */
+.nav ul li a, .nav ul li .dropbtn {
+    color: var(--dark-gray);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s;
+    display: block;
+}
+
+/* Dropdown Button (Courses) */
+.nav ul li .dropbtn {
+    background-color: var(--dark-gray);
+    color: var(--accent-color);
+    border-radius: var(--border-radius);
+}
+
+.nav ul li .dropbtn:hover {
+    background-color: var(--dark-gray);
+    color: #fff;
+}
+
+/* Dropdown Content */
+.nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--dark-gray);
+    min-width: 160px;
+    z-index: 10; /* Ensure it's above other elements */
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 0;
+}
+
+.nav ul li .dropdown-content a {
+    color: var(--accent-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover Effects for Dropdown Content */
+.nav ul li .dropdown-content a:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+/* Show the Dropdown on Hover */
+.nav ul li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        background-color: var(--light-gray);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    #menu.active {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #menu li {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    /* Ensure dropdown shows on mobile too */
+    .nav ul li.dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+/* Mobile Dropdown Menu */
+.nav ul li.dropdown .dropdown-content {
+    position: static;
+    width: 100%; /* Full-width dropdown on mobile */
+}
+
+/* Button-style Navigation Links */
+.button-nav li {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.button-nav li a {
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-color);
+    color: #049172;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+.button-nav li a:hover {
+    background-color: #00cc00;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px var(--accent-color);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    max-width: 600px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+/* Animations */
+[data-animate] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+}
+
+[data-animate].in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Sidebar and Course Overview */
+.course-page {
+    display: flex;
+    gap: 30px; /* Adjust space between sidebar and content */
+}
+
+.sidebar {
+    flex: 1 1 300px; /* Sidebar takes minimum 300px width, but can grow */
+    background: var(--dark-gray);
+    color: var(--text-color);
+    padding: 1rem;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 0.5rem;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: var(--accent-color);
+    transition: color var(--transition-speed);
+}
+
+.sidebar ul li a:hover {
+    color: #fff;
+}
+
+.course-overview {
+    flex: 2 1 70%; /* Content takes remaining space */
+    padding: 2rem;
+}
+
+/* Progress Bar */
+.progress-bar {
+    background: #333;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+    overflow: hidden;
+    position: relative;
+    height: 20px;
+}
+
+.progress {
+    background: var(--accent-color);
+    height: 100%;
+    text-align: center;
+    line-height: 20px;
+    color: #000;
+    font-weight: bold;
+    transition: width 0.5s ease-in-out;
+}
+
+.unit {
+    margin-bottom: 2rem;
+    background: var(--dark-gray);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+.unit h3 {
+    margin-bottom: 1rem;
+}
+/* =======================================
+   Courses Section Styling
+======================================== */
+#courses {
+  padding: 5rem 1rem;
+  text-align: center;
+  background-color: var(--dark-gray);
+  color: var(--text-color);
+}
+
+#courses h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Flexible grid */
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .course-card {
-  width: calc(33.333% - 2rem); /* Three cards per row */
   background-size: cover;
   background-position: center;
   color: #fff;
-  padding: 3rem 1rem;
   border-radius: var(--border-radius);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: relative;
+  padding: 3rem 1rem;
+  text-align: center;
+  overflow: hidden;
+  height: 350px;
 }
 
-.course-card .card-content {
+.course-card .course-content {
   position: absolute;
   bottom: 1rem;
   left: 0;
   right: 0;
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+  background: rgba(0, 0, 0, 0.6);
   border-radius: var(--border-radius);
 }
 
@@ -44,7 +504,7 @@
 }
 
 .course-card p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 1.5rem;
 }
 
@@ -63,18 +523,64 @@
   transform: scale(1.1);
   box-shadow: 0 0 20px var(--accent-color);
 }
-
-/* Sidebar for Progress */
-.progress-sidebar {
-  width: 25%; /* Sidebar takes up 25% width */
+/* =======================================
+   Courses Section Styling
+======================================== */
+.courses-section {
+  padding: 5rem 1rem;
   background-color: var(--dark-gray);
-  padding: 2rem;
-  border-radius: var(--border-radius);
+  color: var(--text-color);
+  text-align: center; /* Centering text in the entire section */
 }
 
-.progress-sidebar h2 {
+.courses-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+/* Styling each course section */
+.course {
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 3rem 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  margin-bottom: 2rem;
+  height: 350px; /* Adjust the height for uniformity */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Ensure text is at the bottom of the course section */
+  overflow: hidden;
+}
+
+.course .course-content {
+  position: absolute;
+  bottom: 10px;  /* Slightly higher from the bottom for better spacing */
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.6);  /* Dark overlay for readability */
+  border-radius: var(--border-radius);
+  transition: background 0.3s ease-in-out;
+}
+
+.course:hover .course-content {
+  background: rgba(0, 0, 0, 0.8);  /* Darken overlay on hover */
+}
+
+.course h3 {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.course p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
 }
 
 .progress-bar {
@@ -82,7 +588,6 @@
   border-radius: 5px;
   width: 100%;
   height: 20px;
-  margin-bottom: 1rem;
 }
 
 .progress {
@@ -94,18 +599,240 @@
   font-weight: bold;
 }
 
-/* Responsive Layout */
+/* Mobile-Friendly Adjustments */
 @media (max-width: 768px) {
-  .course-card {
-    width: calc(50% - 1rem); /* Two cards per row on smaller screens */
+  .courses-section {
+    padding: 3rem 1rem; /* Less padding on mobile */
   }
 
-  .progress-sidebar {
-    width: 100%; /* Sidebar takes full width on mobile */
-    margin-top: 2rem; /* Add spacing above the sidebar */
+  .course {
+    height: 300px; /* Slightly smaller height on mobile */
+    padding: 2rem 1rem; /* Less padding inside each course */
   }
 
-  .course-cards {
-    width: 100%; /* Course cards take full width on mobile */
+  .course .course-content {
+    padding: 0.5rem; /* Reduce padding on mobile */
   }
+
+  .course h3 {
+    font-size: 1.5rem; /* Adjust heading size on mobile */
+  }
+
+  .course p {
+    font-size: 1rem; /* Adjust text size on mobile */
+  }
+}
+
+/* Styling for the Sign In / Sign Up page */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.auth-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form h2 {
+  text-align: center;
+}
+
+.auth-form label {
+  margin-bottom: 8px;
+}
+
+.auth-form input {
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.auth-form button {
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth-form button:hover {
+  background-color: #0056b3;
+}
+
+.auth-form p {
+  text-align: center;
+}
+
+.auth-form a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.auth-form a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 30px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+.footer-links,
+.footer-socials,
+.footer-contact {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-links h4,
+.footer-socials h4,
+.footer-contact h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-links ul,
+.footer-socials ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-socials li {
+  margin-bottom: 8px;
+}
+
+.footer-links a,
+.footer-socials a,
+.footer-contact a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-socials a:hover,
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.social-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-bottom {
+  background-color: #141414;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Featured Content Section */
+.section {
+  padding: 60px 20px;
+  background-color: #121212;
+  color: #fff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #00ff00; /* Cyber green */
+  text-transform: uppercase;
+}
+
+.featured-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.featured-card {
+  background-color: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 300px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.featured-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.featured-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.featured-content {
+  padding: 15px;
+}
+
+.featured-content h3 a {
+  color: #00ff00;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.featured-content h3 a:hover {
+  color: #fff;
+}
+
+.featured-content p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.logo img {
+    max-width: 300px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures no extra spacing */
 }
