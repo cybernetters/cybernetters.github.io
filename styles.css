@@ -1,47 +1,33 @@
-/* General Styling for all pages */
-html {
-    scroll-behavior: smooth;
-}
-
-:root {
-    --background-color: #121212;
-    --text-color: #00ff00;
-    --accent-color: #00ff00;
-    --dark-gray: #1a1a1a;
-    --light-gray: #333333;
-    --border-radius: 5px;
-    --transition-speed: 0.3s;
-    --font-family: 'Courier New', Courier, monospace;
-}
-
+/* =======================================
+   Global Styles
+======================================== */
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    font-family: var(--font-family);
     margin: 0;
-    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #121212;
+    color: #00ff00;
 }
 
-/* Global Links */
+/* Universal Link Styling */
 a {
-    color: var(--accent-color);
+    color: #00ff00; /* Green color */
     text-decoration: none;
 }
 
 a:visited, a:hover, a:active {
-    color: var(--accent-color);
+    color: #00ff00;
     text-decoration: none;
 }
 
-/* Header Styles */
+/* Header Section */
 .header {
     position: relative;
     background-image: url('https://raw.githubusercontent.com/cybernetters/cybernetters.github.io/main/cyber-background-qrvi98v4g2ezuomr.jpg');
     background-size: cover;
     background-position: center;
     filter: grayscale(100%) brightness(1.2);
-    color: var(--text-color);
-    border-bottom: 2px solid var(--accent-color);
+    color: #00ff00;
+    border-bottom: 2px solid #00ff00;
     padding: 1rem 0;
 }
 
@@ -55,7 +41,6 @@ a:visited, a:hover, a:active {
     height: auto;
 }
 
-/* Navigation */
 .nav ul {
     display: flex;
     list-style: none;
@@ -66,19 +51,22 @@ a:visited, a:hover, a:active {
 
 .nav ul li {
     margin-left: 1rem;
+    position: relative;
 }
 
 .nav ul li a {
+    color: #1a1a1a;
     text-decoration: none;
-    color: var(--text-color);
+    padding: 0.5rem 1rem;
     font-weight: bold;
+    transition: color 0.3s, background-color 0.3s;
 }
 
 .nav ul li a:hover {
     color: #fff;
 }
 
-/* Footer Styles */
+/* Footer Section */
 .footer {
     background-color: #1f1f1f;
     color: white;
@@ -97,101 +85,30 @@ a:visited, a:hover, a:active {
     max-width: 150px;
 }
 
-/* Button Styling */
-.btn {
-  background-color: var(--accent-color);
-  color: #000;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  border-radius: var(--border-radius);
-  font-weight: bold;
-  box-shadow: 0 0 10px var(--accent-color);
-  transition: transform var(--transition-speed) ease-in-out;
+.footer-links ul {
+    list-style: none;
+    padding: 0;
 }
 
-.btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 20px var(--accent-color);
+.footer-links li {
+    margin-bottom: 8px;
 }
 
-/* Hero Section Styling */
-.hero {
-  background-image: url('images/cybersecurity-bg.png');
-  background-size: cover;
-  background-position: center;
-  padding: 5rem 1rem;
-  color: var(--text-color);
-  text-align: center;
-  position: relative;
-  box-shadow: 0 0 20px var(--accent-color);
-  border-radius: var(--border-radius);
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
-  z-index: 1;
+.footer-links a:hover {
+    text-decoration: underline;
 }
 
-.hero h2 {
-  font-size: 3rem;
-  color: #fff;
+.footer-bottom {
+    background-color: #141414;
+    padding: 15px 0;
+    text-align: center;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  color: #fff;
-}
-
-.hero .btn {
-  background-color: var(--accent-color);
-  color: #000;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  border-radius: var(--border-radius);
-  font-weight: bold;
-  box-shadow: 0 0 10px var(--accent-color);
-  transition: transform var(--transition-speed) ease-in-out;
-}
-
-.hero .btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 20px var(--accent-color);
-}
-
-
-/* Mobile Menu */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    #menu {
-        display: none;
-        flex-direction: column;
-        background-color: var(--light-gray);
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s ease, visibility 0.3s ease;
-    }
-
-    #menu.active {
-        display: flex;
-        opacity: 1;
-        visibility: visible;
-    }
-
-    #menu li {
-        margin: 0;
-        padding: 1rem;
-    }
+.footer-bottom p {
+    font-size: 14px;
 }
