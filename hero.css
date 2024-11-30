@@ -60,35 +60,104 @@
   font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: var(--accent-color); /* Green color (neon green) */
+  color: var(--accent-color); /* Neon green text */
   animation: glitch 1s infinite; /* Apply the glitch effect */
   position: relative;
 }
 
-/* Glitch Animation */
-@keyframes glitch {
+/* Glitch Text Effect with Red, Green, and Blue Distortion */
+.glitch-text {
+  position: relative;
+  font-size: 3rem;
+  color: var(--accent-color); /* Neon green text */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff; /* White text shadow for each glitch layer */
+  background: #000;
+  z-index: -1;
+  clip: rect(0, 900px, 0, 0); /* Clip the text */
+  animation: glitch-anim 2s infinite linear;
+}
+
+.glitch-text::after {
+  left: 2px;
+  text-shadow: -1px 0 red, 1px 0 blue, 0 -1px red, 0 1px blue; /* Red and blue text-shadow for split */
+  animation: glitch-anim-2 2s infinite linear;
+}
+
+/* Glitch Animation for the First Layer (Primary Glitch) */
+@keyframes glitch-anim {
   0% {
-    text-shadow: 2px 2px 0px rgba(0, 255, 0, 0.7), -2px -2px 0px rgba(0, 255, 0, 0.7);
-    transform: translate(0);
+    clip: rect(6px, 9999px, 68px, 0);
+    transform: skew(0.38deg);
+    color: red;
   }
   20% {
-    text-shadow: 2px 2px 0px rgba(0, 255, 0, 0.7), -2px -2px 0px rgba(0, 255, 0, 0.7);
-    transform: translate(-5px, 5px);
+    clip: rect(53px, 9999px, 16px, 0);
+    transform: skew(0.44deg);
+    color: blue;
   }
   40% {
-    text-shadow: 2px 2px 0px rgba(0, 255, 0, 0.7), -2px -2px 0px rgba(0, 255, 0, 0.7);
-    transform: translate(5px, -5px);
+    clip: rect(74px, 9999px, 45px, 0);
+    transform: skew(0.38deg);
+    color: green;
   }
   60% {
-    text-shadow: 2px 2px 0px rgba(0, 255, 0, 0.7), -2px -2px 0px rgba(0, 255, 0, 0.7);
-    transform: translate(-5px, 5px);
+    clip: rect(92px, 9999px, 25px, 0);
+    transform: skew(0.25deg);
+    color: red;
   }
   80% {
-    text-shadow: 2px 2px 0px rgba(0, 255, 0, 0.7), -2px -2px 0px rgba(0, 255, 0, 0.7);
-    transform: translate(5px, -5px);
+    clip: rect(39px, 9999px, 8px, 0);
+    transform: skew(0.5deg);
+    color: blue;
   }
   100% {
-    text-shadow: 2px 2px 0px rgba(0, 255, 0, 0.7), -2px -2px 0px rgba(0, 255, 0, 0.7);
-    transform: translate(0);
+    clip: rect(6px, 9999px, 68px, 0);
+    transform: skew(0.38deg);
+    color: green;
+  }
+}
+
+/* Glitch Animation for the Second Layer (Distortion Effect) */
+@keyframes glitch-anim-2 {
+  0% {
+    clip: rect(85px, 9999px, 12px, 0);
+    transform: skew(0.2deg);
+    color: red;
+  }
+  20% {
+    clip: rect(22px, 9999px, 45px, 0);
+    transform: skew(0.4deg);
+    color: blue;
+  }
+  40% {
+    clip: rect(65px, 9999px, 35px, 0);
+    transform: skew(0.33deg);
+    color: green;
+  }
+  60% {
+    clip: rect(60px, 9999px, 20px, 0);
+    transform: skew(0.48deg);
+    color: red;
+  }
+  80% {
+    clip: rect(35px, 9999px, 75px, 0);
+    transform: skew(0.43deg);
+    color: blue;
+  }
+  100% {
+    clip: rect(60px, 9999px, 14px, 0);
+    transform: skew(0.35deg);
+    color: green;
   }
 }
