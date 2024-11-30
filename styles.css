@@ -523,6 +523,68 @@ a:visited, a:hover, a:active {
   transform: scale(1.1);
   box-shadow: 0 0 20px var(--accent-color);
 }
+/* =======================================
+   Courses Section Styling
+======================================== */
+.courses-section {
+  padding: 5rem 1rem;
+  background-color: var(--dark-gray);
+  color: var(--text-color);
+}
+
+.courses-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Styling each course section */
+.course {
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 3rem 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.course .course-content {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.6);  /* Dark overlay for readability */
+  border-radius: var(--border-radius);
+}
+
+.course h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.course p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.progress-bar {
+  background: #333;
+  border-radius: 5px;
+  width: 100%;
+  height: 20px;
+}
+
+.progress {
+  background: var(--accent-color);
+  height: 100%;
+  text-align: center;
+  line-height: 20px;
+  color: #000;
+  font-weight: bold;
+}
 
 /* Styling for the Sign In / Sign Up page */
 .auth-page {
