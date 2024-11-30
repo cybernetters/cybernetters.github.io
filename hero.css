@@ -52,3 +52,43 @@
     transform: scale(1.1);
     box-shadow: 0 0 20px #00ff00;
 }
+
+/* =======================================
+   Hero Section Styling (with glitch)
+======================================== */
+.hero h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent-color); /* Green color (neon green) */
+  animation: glitch 1s infinite; /* Apply the glitch effect */
+  position: relative;
+}
+
+/* Glitch Animation */
+@keyframes glitch {
+  0% {
+    text-shadow: 2px 2px 0px rgba(0, 255, 0, 0.7), -2px -2px 0px rgba(0, 255, 0, 0.7);
+    transform: translate(0);
+  }
+  20% {
+    text-shadow: 2px 2px 0px rgba(0, 255, 0, 0.7), -2px -2px 0px rgba(0, 255, 0, 0.7);
+    transform: translate(-5px, 5px);
+  }
+  40% {
+    text-shadow: 2px 2px 0px rgba(0, 255, 0, 0.7), -2px -2px 0px rgba(0, 255, 0, 0.7);
+    transform: translate(5px, -5px);
+  }
+  60% {
+    text-shadow: 2px 2px 0px rgba(0, 255, 0, 0.7), -2px -2px 0px rgba(0, 255, 0, 0.7);
+    transform: translate(-5px, 5px);
+  }
+  80% {
+    text-shadow: 2px 2px 0px rgba(0, 255, 0, 0.7), -2px -2px 0px rgba(0, 255, 0, 0.7);
+    transform: translate(5px, -5px);
+  }
+  100% {
+    text-shadow: 2px 2px 0px rgba(0, 255, 0, 0.7), -2px -2px 0px rgba(0, 255, 0, 0.7);
+    transform: translate(0);
+  }
+}
