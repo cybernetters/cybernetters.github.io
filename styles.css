@@ -50,9 +50,13 @@ a:visited, a:hover, a:active {
 /* Hero Section */
 .hero {
     color: var(--text-color);
-    background: linear-gradient(to right, #000000, var(--dark-gray));
+    background-image: url('images/cybersecurity-bg.png'); /* New background image */
+    background-size: cover;
+    background-position: center;
     text-align: center;
     padding: 5rem 1rem;
+    box-shadow: 0 0 20px var(--accent-color);
+    border-radius: var(--border-radius);
 }
 
 .hero h2 {
