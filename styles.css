@@ -733,12 +733,12 @@ a:visited, a:hover, a:active {
 }
 
 /* =======================================
-   General Styling for Courses Section
+   Specific Styling for Courses Page
 ======================================== */
 #courses-page .course-page {
   display: flex;
-  gap: 2rem; /* Space between course cards and sidebar */
-  flex-wrap: wrap; /* Stack items on smaller screens */
+  gap: 2rem;
+  flex-wrap: wrap;
   padding: 3rem 1rem;
 }
 
@@ -748,7 +748,7 @@ a:visited, a:hover, a:active {
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
-  width: 75%; /* Main content area for course cards */
+  width: 75%;
 }
 
 #courses-page .course-card {
@@ -827,7 +827,7 @@ a:visited, a:hover, a:active {
   color: #000;
   font-weight: bold;
 
-/* Responsive Layout */
+/* Responsive Layout for Courses Page */
 @media (max-width: 768px) {
   #courses-page .course-card {
     width: calc(50% - 1rem); /* Two cards per row on smaller screens */
