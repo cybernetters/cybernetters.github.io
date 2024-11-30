@@ -377,6 +377,98 @@ a:visited, a:hover, a:active {
     opacity: 1;
     transform: translateY(0);
 }
+/* =======================================
+   Course Units Section Styling
+======================================== */
+.course-overview {
+  background-image: url('../../images/sysadmin-bg.jpg'); /* Ensure this path is correct */
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 1rem;
+  color: #fff; /* Ensure text is white for better contrast */
+  position: relative;
+}
+
+.course-overview::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+  z-index: 1;
+}
+
+.course-overview .units {
+  position: relative;
+  z-index: 2; /* Make sure text stays above the overlay */
+}
+
+.course-overview h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.progress-bar {
+  background: #333;
+  border-radius: 5px;
+  width: 100%;
+  height: 20px;
+  margin-bottom: 2rem;
+}
+
+.progress {
+  background: var(--accent-color);
+  height: 100%;
+  text-align: center;
+  line-height: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+.unit {
+  background: rgba(0, 0, 0, 0.6); /* Dark background for each unit */
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+}
+
+.unit h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.unit ul {
+  list-style: none;
+  padding: 0;
+}
+
+.unit ul li a {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.unit ul li a:hover {
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .course-overview h2 {
+    font-size: 2rem;
+  }
+
+  .unit h3 {
+    font-size: 1.5rem;
+  }
+
+  .unit ul li a {
+    font-size: 1rem;
+  }
+}
 
 /* =======================================
    About Section Styling
