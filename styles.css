@@ -339,3 +339,54 @@ a:active {
     font-size: 14px;
     margin: 0;
 }
+
+/* Coming Soon Section */
+.coming-soon {
+  text-align: center;
+  padding: 5rem 1rem;
+  color: var(--text-color);
+  background: linear-gradient(to right, #121212, #1a1a1a);
+}
+
+.coming-soon h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.coming-soon p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.coming-soon-image {
+  max-width: 300px;
+  margin: 2rem 0;
+}
+
+.notify-form {
+  margin-top: 2rem;
+}
+
+.notify-form input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--border-radius);
+  width: 250px;
+}
+
+.notify-form button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: var(--accent-color);
+  color: #000;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.notify-form button:hover {
+  background-color: #00cc00;
+}
+
