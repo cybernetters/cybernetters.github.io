@@ -1,0 +1,62 @@
+/* Hero Section Styling */
+.hero {
+    color: var(--text-color);
+    background-image: url('images/cybersecurity-bg.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 5rem 1rem;
+    position: relative;
+    box-shadow: 0 0 20px var(--accent-color);
+    border-radius: var(--border-radius);
+    background: linear-gradient(to right, #121212, #1a1a1a);  /* Optional gradient background */
+}
+
+/* Hero Overlay */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    z-index: 1;
+}
+
+/* Ensuring text and buttons stay above the overlay */
+.hero h2,
+.hero p,
+.hero .btn {
+    position: relative;
+    z-index: 2; /* Ensures text and button appear above the overlay */
+}
+
+.hero h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: glitch 1s infinite;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.hero .btn {
+    margin-top: 1.5rem;
+    background-color: var(--accent-color);
+    color: #000;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    box-shadow: 0 0 10px var(--accent-color);
+    transition: transform var(--transition-speed) ease-in-out;
+}
+
+.hero .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px var(--accent-color);
+}
