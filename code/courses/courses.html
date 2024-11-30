@@ -6,18 +6,16 @@
   <title>Courses - CyberNetters</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJxvbl27a1af2b3eb344107B0EE1c7d10fa08a58192e14fffb0215b81d24" crossorigin="anonymous">
-  <!-- Link to custom courses.css -->
-  <link rel="stylesheet" href="../../styles.css">
-  <link rel="stylesheet" href="courses.css">
+  <link rel="stylesheet" href="courses.css">  <!-- Custom Styles -->
 </head>
 <body>
   <!-- Header Section -->
   <header class="header">
     <div class="container">
-      <h1 class="logo"><a href="../../index.html">CyberNetters</a></h1>
+      <h1 class="logo"><a href="index.html">CyberNetters</a></h1>
       <nav class="nav">
         <ul id="menu" class="button-nav">
-          <li><a href="../../index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="/code/about/about.html">About</a></li>
           <li><a href="/code/services/services.html">Services</a></li>
           <li><a href="/code/resources/resources.html">Resources</a></li>
@@ -35,30 +33,38 @@
     </div>
   </header>
 
-  <!-- Main Content for Courses Page -->
+  <!-- Main Content -->
   <main id="courses-page" class="container mt-5">
-    <div class="course-page-layout">
+    <div class="row">
       <!-- Course Cards Section -->
-      <section class="course-cards">
-        <div class="course-card" style="background-image: url('../../images/sysadmin-bg.jpg');">
-          <div class="card-content p-3">
-            <h3><a href="/code/courses/sysadmin/sysadmin.html" class="text-white">System Administration</a></h3>
-            <p class="text-white">This course provides an introduction to system administration tasks such as configuring operating systems, managing users, and securing networks.</p>
-            <a href="/code/courses/sysadmin/sysadmin.html" class="btn btn-light">Learn More</a>
+      <section class="col-md-8">
+        <div class="row">
+          <!-- Course Card 1 -->
+          <div class="col-md-6 mb-4">
+            <div class="course-card" style="background-image: url('images/sysadmin-bg.jpg');">
+              <div class="card-content p-3">
+                <h3><a href="/code/courses/sysadmin/sysadmin.html" class="text-white">System Administration</a></h3>
+                <p class="text-white">This course provides an introduction to system administration tasks such as configuring operating systems, managing users, and securing networks.</p>
+                <a href="/code/courses/sysadmin/sysadmin.html" class="btn btn-light">Learn More</a>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="course-card" style="background-image: url('../../images/networking-bg.jpg');">
-          <div class="card-content p-3">
-            <h3><a href="/code/courses/networking1/networking1.html" class="text-white">Networking I</a></h3>
-            <p class="text-white">Learn the fundamentals of networking, including IP addressing, routing, and protocols like DNS and DHCP.</p>
-            <a href="/code/courses/networking1/networking1.html" class="btn btn-light">Learn More</a>
+          <!-- Course Card 2 -->
+          <div class="col-md-6 mb-4">
+            <div class="course-card" style="background-image: url('images/networking-bg.jpg');">
+              <div class="card-content p-3">
+                <h3><a href="/code/courses/networking1/networking1.html" class="text-white">Networking I</a></h3>
+                <p class="text-white">Learn the fundamentals of networking, including IP addressing, routing, and protocols like DNS and DHCP.</p>
+                <a href="/code/courses/networking1/networking1.html" class="btn btn-light">Learn More</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Progress Sidebar -->
-      <aside class="progress-sidebar">
+      <!-- Progress Sidebar Section -->
+      <aside class="col-md-4">
         <h2>Progress</h2>
         <div class="progress-bar mb-3">
           <h3>System Administration</h3>
@@ -81,14 +87,14 @@
   <footer class="footer">
     <div class="container footer-container">
       <div class="footer-logo">
-        <a href="../../index.html">
-          <img src="../../images/cybernetters-logo.png" alt="CyberNetters Logo" class="logo">
+        <a href="index.html">
+          <img src="images/cybernetters-logo.png" alt="CyberNetters Logo" class="logo">
         </a>
       </div>
       <div class="footer-links">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="../../index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="/code/about/about.html">About</a></li>
           <li><a href="/code/resources/resources.html">Resources</a></li>
           <li><a href="/code/contact/contact.html">Contact</a></li>
@@ -97,10 +103,10 @@
       <div class="footer-socials">
         <h4>Follow Us</h4>
         <ul>
-          <li><a href="https://discord.gg/cybernetters"><img src="../../images/iconmonstr-discord-1.svg" alt="Discord"></a></li>
-          <li><a href="https://www.youtube.com/@CyberNetters"><img src="../../images/iconmonstr-youtube-8.svg" alt="YouTube"></a></li>
-          <li><a href="https://linkedin.com/company/cybernetters"><img src="../../images/iconmonstr-linkedin-3.svg" alt="LinkedIn"></a></li>
-          <li><a href="https://twitter.com/cybernetters"><img src="../../images/iconmonstr-twitter-3.svg" alt="Twitter"></a></li>
+          <li><a href="https://discord.gg/cybernetters"><img src="images/iconmonstr-discord-1.svg" alt="Discord"></a></li>
+          <li><a href="https://www.youtube.com/@CyberNetters"><img src="images/iconmonstr-youtube-8.svg" alt="YouTube"></a></li>
+          <li><a href="https://linkedin.com/company/cybernetters"><img src="images/iconmonstr-linkedin-3.svg" alt="LinkedIn"></a></li>
+          <li><a href="https://twitter.com/cybernetters"><img src="images/iconmonstr-twitter-3.svg" alt="Twitter"></a></li>
         </ul>
       </div>
       <div class="footer-contact">
@@ -116,7 +122,6 @@
     </div>
   </footer>
 
-  <script src="../../script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-B4gt1jrGC7Jh4AgJv3aqj5nGg43pLsT4cK6X3XzG7c1q9fwUrhbuHjlQ7akX6t9y" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>
