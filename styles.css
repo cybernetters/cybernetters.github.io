@@ -843,6 +843,109 @@ a:visited, a:hover, a:active {
   }
 }
 
+/* =======================================
+   Layout Structure for Course Page
+======================================== */
+
+/* Flexbox Layout for Course Page */
+.course-layout {
+  display: flex;
+  justify-content: space-between; /* Distribute the sections evenly */
+  gap: 2rem; /* Add space between left and right sections */
+  margin-top: 2rem;
+}
+
+/* Left Side: Course Units */
+.course-units {
+  flex: 1; /* Takes up more space */
+  background-color: var(--dark-gray);
+  color: var(--text-color);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.course-units h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-color);
+}
+
+.units-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns layout */
+  gap: 1rem;
+}
+
+.unit {
+  background: rgba(0, 0, 0, 0.6); /* Dark background for each unit */
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+}
+
+.unit h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.unit ul {
+  list-style: none;
+  padding: 0;
+}
+
+.unit ul li a {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.unit ul li a:hover {
+  color: #fff;
+}
+
+/* Right Side: Course Progress */
+.course-progress {
+  flex: 0.4; /* Takes less space than course units */
+  background-color: var(--light-gray);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.course-progress h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-color);
+}
+
+.progress-bar {
+  background: #333;
+  border-radius: 5px;
+  width: 100%;
+  height: 20px;
+  margin-bottom: 2rem;
+}
+
+.progress {
+  background: var(--accent-color);
+  height: 100%;
+  text-align: center;
+  line-height: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .course-layout {
+    flex-direction: column; /* Stack left and right sections on smaller screens */
+  }
+
+  .units-grid {
+    grid-template-columns: 1fr; /* Single column layout for course units */
+  }
+}
 
 /* Styling for the Sign In / Sign Up page */
 .auth-page {
