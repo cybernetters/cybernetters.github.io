@@ -1,129 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Courses - CyberNetters</title>
-  <!-- Add Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJxvbl27a1af2b3eb344107B0EE1c7d10fa08a58192e14fffb0215b81d24" crossorigin="anonymous">
-  
-  <!-- Link to the new courses-specific CSS -->
-  <link rel="stylesheet" href="../../courses.css">
-</head>
-<body>
-  <!-- Header Section -->
-  <header class="header">
-    <div class="container">
-      <h1 class="logo"><a href="../../index.html">CyberNetters</a></h1>
-      <nav class="nav">
-        <ul id="menu" class="button-nav">
-          <li><a href="../../index.html">Home</a></li>
-          <li><a href="/code/about/about.html">About</a></li>
-          <li><a href="/code/services/services.html">Services</a></li>
-          <li><a href="/code/resources/resources.html">Resources</a></li>
-          <li class="dropdown">
-            <a href="/code/courses/courses.html" class="dropbtn">Courses</a>
-            <div class="dropdown-content">
-              <a href="/code/courses/networking1/networking1.html">Networking I</a>
-              <a href="/code/courses/sysadmin/sysadmin.html">System Administration</a>
-            </div>
-          </li>
-          <li><a href="/code/resources/contact.html">Contact</a></li>
-          <li><a href="/code/auth/sign-in.html">Sign In</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+/* =======================================
+   General Layout for Courses Page
+======================================== */
 
-  <!-- Main Content for Courses Page -->
-  <main id="courses-page" class="container mt-5">
-    <div class="row">
-      <!-- Course Cards Section (Left Side) -->
-      <section class="col-md-8">
-        <div class="row">
-          <div class="col-md-6 mb-4">
-            <div class="course-card" style="background-image: url('../../images/sysadmin-bg.jpg');">
-              <div class="card-content p-3">
-                <h3><a href="/code/courses/sysadmin/sysadmin.html" class="text-white">System Administration</a></h3>
-                <p class="text-white">This course provides an introduction to system administration tasks such as configuring operating systems, managing users, and securing networks.</p>
-                <a href="/code/courses/sysadmin/sysadmin.html" class="btn btn-light">Learn More</a>
-              </div>
-            </div>
-          </div>
+/* Course Page Layout */
+#courses-page .course-page {
+  display: flex;
+  gap: 2rem;  /* Space between course cards and sidebar */
+  flex-wrap: wrap;  /* Stack items on smaller screens */
+  padding: 3rem 1rem;
+}
 
-          <div class="col-md-6 mb-4">
-            <div class="course-card" style="background-image: url('../../images/networking-bg.jpg');">
-              <div class="card-content p-3">
-                <h3><a href="/code/courses/networking1/networking1.html" class="text-white">Networking I</a></h3>
-                <p class="text-white">Learn the fundamentals of networking, including IP addressing, routing, and protocols like DNS and DHCP.</p>
-                <a href="/code/courses/networking1/networking1.html" class="btn btn-light">Learn More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+/* Course Cards Section (Left Side) */
+#courses-page .course-cards {
+  flex: 0.7;  /* Main content area for course cards */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  width: 75%; /* Ensure course cards take up most of the width */
+}
 
-      <!-- Progress Sidebar (Right Side) -->
-      <aside class="col-md-4">
-        <h2>Progress</h2>
-        <div class="progress-bar mb-3">
-          <h3>System Administration</h3>
-          <div class="progress">
-            <div class="progress-bar bg-success" style="width: 50%;">50% Mastery</div>
-          </div>
-        </div>
-        
-        <div class="progress-bar mb-3">
-          <h3>Networking I</h3>
-          <div class="progress">
-            <div class="progress-bar bg-warning" style="width: 25%;">25% Mastery</div>
-          </div>
-        </div>
-      </aside>
-    </div>
-  </main>
+#courses-page .course-card {
+  width: calc(33.333% - 1rem); /* Three cards per row */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 3rem 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
 
-  <!-- Footer Section -->
-  <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-logo">
-        <a href="../../index.html">
-          <img src="../../images/cybernetters-logo.png" alt="CyberNetters Logo" class="logo">
-        </a>
-      </div>
-      <div class="footer-links">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="../../index.html">Home</a></li>
-          <li><a href="/code/about/about.html">About</a></li>
-          <li><a href="/code/resources/resources.html">Resources</a></li>
-          <li><a href="/code/contact/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-socials">
-        <h4>Follow Us</h4>
-        <ul>
-          <li><a href="https://discord.gg/cybernetters"><img src="../../images/iconmonstr-discord-1.svg" alt="Discord"></a></li>
-          <li><a href="https://www.youtube.com/@CyberNetters"><img src="../../images/iconmonstr-youtube-8.svg" alt="YouTube"></a></li>
-          <li><a href="https://linkedin.com/company/cybernetters"><img src="../../images/iconmonstr-linkedin-3.svg" alt="LinkedIn"></a></li>
-          <li><a href="https://twitter.com/cybernetters"><img src="../../images/iconmonstr-twitter-3.svg" alt="Twitter"></a></li>
-        </ul>
-      </div>
-      <div class="footer-contact">
-        <h4>Contact Us</h4>
-        <p>Email: <a href="mailto:support@cybernetters.net">support@cybernetters.net</a></p>
-        <p>Phone: +1-765-357-6468</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <p>© 2024 CyberNetters. All Rights Reserved.</p>
-      </div>
-    </div>
-  </footer>
+#courses-page .course-card .card-content {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.6);  /* Dark overlay for readability */
+  border-radius: var(--border-radius);
+}
 
-  <script src="../../script.js"></script>
-  <!-- Add Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-B4gt1jrGC7Jh4AgJv3aqj5nGg43pLsT4cK6X3XzG7c1q9fwUrhbuHjlQ7akX6t9y" crossorigin="anonymous"></script>
-</body>
-</html>
+#courses-page .course-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+#courses-page .course-card p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+#courses-page .course-card .btn {
+  background-color: var(--accent-color);
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  box-shadow: 0 0 10px var(--accent-color);
+  transition: transform var(--transition-speed) ease-in-out;
+}
+
+#courses-page .course-card .btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px var(--accent-color);
+}
+
+/* Progress Sidebar (Right Side) */
+#courses-page .progress-sidebar {
+  flex: 0.3; /* Sidebar takes 30% width */
+  background-color: var(--dark-gray);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+}
+
+#courses-page .progress-sidebar h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#courses-page .progress-bar {
+  background: #333;
+  border-radius: 5px;
+  width: 100%;
+  height: 20px;
+  margin-bottom: 1rem;
+}
+
+#courses-page .progress {
+  background: var(--accent-color);
+  height: 100%;
+  text-align: center;
+  line-height: 20px;
+  color: #000;
+  font-weight: bold;
+
+/* Responsive Layout for Courses Page */
+@media (max-width: 768px) {
+  #courses-page .course-card {
+    width: 100%;  /* Stack the course cards on mobile */
+  }
+
+  #courses-page .progress-sidebar {
+    width: 100%;  /* Sidebar takes full width on mobile */
+    margin-top: 2rem;  /* Add space above the sidebar */
+  }
+
+  #courses-page .course-cards {
+    width: 100%; /* Course cards take full width on mobile */
+  }
+}
