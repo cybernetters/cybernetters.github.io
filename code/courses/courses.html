@@ -33,44 +33,47 @@
 
   <!-- Main Content -->
   <main class="course-page">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <h2>Available Courses</h2>
-      <ul>
-        <li><a href="/code/courses/sysadmin/sysadmin.html">System Administration</a></li>
-        <li><a href="/code/courses/networking1/networking1.html">Networking I</a></li>
-        <!-- Add more courses as needed -->
-      </ul>
-    </aside>
-
-    <!-- Course Overview Section -->
-    <section class="courses-section">
-      <h2>Our Courses</h2>
-      
-      <!-- System Administration Course -->
-      <div class="course" style="background-image: url('images/sysadmin-bg.jpg');">
-        <div class="course-content">
+    <!-- Course Cards Section -->
+    <section class="course-cards">
+      <div class="course-card" style="background-image: url('images/sysadmin-bg.jpg');">
+        <div class="card-content">
           <h3><a href="/code/courses/sysadmin/sysadmin.html">System Administration</a></h3>
           <p>This course provides an introduction to system administration tasks such as configuring operating systems, managing users, and securing networks.</p>
-          <div class="progress-bar">
-            <div class="progress" style="width: 50%;">50% Mastery</div>
-          </div>
+          <a href="/code/courses/sysadmin/sysadmin.html" class="btn">Learn More</a>
         </div>
       </div>
 
-      <!-- Networking I Course -->
-      <div class="course" style="background-image: url('images/networking-bg.jpg');">
-        <div class="course-content">
+      <div class="course-card" style="background-image: url('images/networking-bg.jpg');">
+        <div class="card-content">
           <h3><a href="/code/courses/networking1/networking1.html">Networking I</a></h3>
           <p>Learn the fundamentals of networking, including IP addressing, routing, and protocols like DNS and DHCP.</p>
-          <div class="progress-bar">
-            <div class="progress" style="width: 25%;">25% Mastery</div>
-          </div>
+          <a href="/code/courses/networking1/networking1.html" class="btn">Learn More</a>
         </div>
       </div>
 
-      <!-- Add more course sections here -->
+      <!-- Additional course cards can be added here -->
     </section>
+
+    <!-- Sidebar for Progress -->
+    <aside class="progress-sidebar">
+      <h2>Progress</h2>
+      
+      <div class="progress-bar">
+        <h3>System Administration</h3>
+        <div class="progress">
+          <div class="progress-fill" style="width: 50%;">50% Mastery</div>
+        </div>
+      </div>
+      
+      <div class="progress-bar">
+        <h3>Networking I</h3>
+        <div class="progress">
+          <div class="progress-fill" style="width: 25%;">25% Mastery</div>
+        </div>
+      </div>
+
+      <!-- Add more progress bars here -->
+    </aside>
   </main>
 
   <!-- Footer Section -->
