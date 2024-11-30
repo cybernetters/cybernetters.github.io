@@ -547,7 +547,7 @@ a:visited, a:hover, a:active {
 }
 
 .logo img {
-    max-width: 150px; /* Adjust size as needed */
+    max-width: 300px; /* Adjust size as needed */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Ensures no extra spacing */
 }
