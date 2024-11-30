@@ -1,4 +1,4 @@
-/* About Section */
+/* About Section Styling */
 .about-section {
     background-image: url('images/about-bg.jpg');
     background-size: cover;
@@ -48,15 +48,4 @@
     line-height: 1.5;
     color: #fff;
     text-align: justify;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .about-text h2 {
-        font-size: 2rem;
-    }
-
-    .about-text p {
-        font-size: 1rem;
-    }
 }
