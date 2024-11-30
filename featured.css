@@ -1,0 +1,49 @@
+/* Featured Cards Section */
+.featured-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.featured-card {
+    background-color: #1a1a1a;
+    border: 2px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.featured-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.featured-image {
+    width: 100%;
+    height: auto;
+}
+
+.featured-content {
+    padding: 15px;
+}
+
+.featured-content h3 a {
+    color: #00ff00;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.featured-content h3 a:hover {
+    color: #fff;
+}
+
+.featured-content p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 10px;
+}
