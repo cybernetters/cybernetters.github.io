@@ -1,57 +1,57 @@
 /* =======================================
-   General Layout for Courses Page
+   General Styling for Courses Page
 ======================================== */
-
-/* Course Page Layout */
-#courses-page .course-page {
-  display: flex;
-  gap: 2rem;  /* Space between course cards and sidebar */
-  flex-wrap: wrap;  /* Stack items on smaller screens */
-  padding: 3rem 1rem;
+#courses-page {
+  padding: 2rem 0;
 }
 
-/* Course Cards Section (Left Side) */
-#courses-page .course-cards {
-  flex: 0.7;  /* Main content area for course cards */
+.course-page-layout {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Course Cards Section */
+.course-cards {
+  flex: 1 1 60%; /* Adjusted to take 60% of the screen width */
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: center;
-  width: 75%; /* Ensure course cards take up most of the width */
 }
 
-#courses-page .course-card {
-  width: calc(33.333% - 1rem); /* Three cards per row */
+.course-card {
+  flex: 1 1 calc(33.333% - 1rem); /* Three cards per row */
   background-size: cover;
   background-position: center;
   color: #fff;
-  padding: 3rem 1rem;
+  padding: 2rem;
   border-radius: var(--border-radius);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: relative;
 }
 
-#courses-page .course-card .card-content {
+.course-card .card-content {
   position: absolute;
   bottom: 1rem;
   left: 0;
   right: 0;
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.6);  /* Dark overlay for readability */
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
   border-radius: var(--border-radius);
 }
 
-#courses-page .course-card h3 {
+.course-card h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
-#courses-page .course-card p {
-  font-size: 1.1rem;
+.course-card p {
+  font-size: 1rem;
   margin-bottom: 1.5rem;
 }
 
-#courses-page .course-card .btn {
+.course-card .btn {
   background-color: var(--accent-color);
   color: #000;
   padding: 0.8rem 1.5rem;
@@ -62,25 +62,25 @@
   transition: transform var(--transition-speed) ease-in-out;
 }
 
-#courses-page .course-card .btn:hover {
+.course-card .btn:hover {
   transform: scale(1.1);
   box-shadow: 0 0 20px var(--accent-color);
 }
 
-/* Progress Sidebar (Right Side) */
-#courses-page .progress-sidebar {
-  flex: 0.3; /* Sidebar takes 30% width */
-  background-color: var(--dark-gray);
+/* Progress Sidebar */
+.progress-sidebar {
+  flex: 0.35; /* Sidebar takes 35% of the width */
+  background-color: var(--light-gray);
   padding: 2rem;
   border-radius: var(--border-radius);
 }
 
-#courses-page .progress-sidebar h2 {
+.progress-sidebar h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 
-#courses-page .progress-bar {
+.progress-bar {
   background: #333;
   border-radius: 5px;
   width: 100%;
@@ -88,7 +88,7 @@
   margin-bottom: 1rem;
 }
 
-#courses-page .progress {
+.progress {
   background: var(--accent-color);
   height: 100%;
   text-align: center;
@@ -96,18 +96,22 @@
   color: #000;
   font-weight: bold;
 
-/* Responsive Layout for Courses Page */
+/* Responsive Layout */
 @media (max-width: 768px) {
-  #courses-page .course-card {
-    width: 100%;  /* Stack the course cards on mobile */
+  .course-page-layout {
+    flex-direction: column; /* Stack the courses and sidebar on mobile */
   }
 
-  #courses-page .progress-sidebar {
-    width: 100%;  /* Sidebar takes full width on mobile */
-    margin-top: 2rem;  /* Add space above the sidebar */
+  .course-cards {
+    width: 100%;
   }
 
-  #courses-page .course-cards {
-    width: 100%; /* Course cards take full width on mobile */
+  .course-card {
+    flex: 1 1 100%; /* Make cards take full width */
+  }
+
+  .progress-sidebar {
+    width: 100%; /* Sidebar takes full width on mobile */
+    margin-top: 2rem; /* Add spacing above the sidebar */
   }
 }
