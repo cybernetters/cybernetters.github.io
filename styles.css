@@ -35,7 +35,9 @@ a:visited, a:hover, a:active {
     text-decoration: none; /* Consistent styling */
 }
 
-/* Header Styles */
+/* =======================================
+   Header Styles
+======================================== */
 .header {
     position: relative;
     background-image: url('https://raw.githubusercontent.com/cybernetters/cybernetters.github.io/main/cyber-background-qrvi98v4g2ezuomr.jpg');
@@ -47,6 +49,9 @@ a:visited, a:hover, a:active {
     padding: 1rem 0;
 }
 
+/* =======================================
+   Hero Section Styling
+======================================== */
 .hero {
     color: var(--text-color);
     background-image: url('images/cybersecurity-bg.png'); /* Background image */
@@ -57,8 +62,10 @@ a:visited, a:hover, a:active {
     position: relative;
     box-shadow: 0 0 20px var(--accent-color);
     border-radius: var(--border-radius);
+    background: linear-gradient(to right, #121212, #1a1a1a);  /* Optional gradient background */
 }
 
+/* Hero Overlay */
 .hero::before {
     content: '';
     position: absolute;
@@ -70,11 +77,12 @@ a:visited, a:hover, a:active {
     z-index: 1;
 }
 
+/* Ensuring text and buttons stay above the overlay */
 .hero h2,
 .hero p,
 .hero .btn {
     position: relative;
-    z-index: 2; /* Ensures text appears above the overlay */
+    z-index: 2; /* Ensures text and button appear above the overlay */
 }
 
 .hero h2 {
@@ -105,24 +113,40 @@ a:visited, a:hover, a:active {
     transform: scale(1.1);
     box-shadow: 0 0 20px var(--accent-color);
 }
-/* Hero Section */
-.hero {
-  background: linear-gradient(to right, #121212, #1a1a1a);
-  color: var(--text-color);
-  text-align: center;
-  padding: 5rem 1rem;
-  border-bottom: 2px solid var(--accent-color);
+
+/* =======================================
+   Logo Visibility Fix in Hero Section
+======================================== */
+.header .logo {
+    position: relative;
+    z-index: 2; /* Ensure the logo sits above the hero overlay */
 }
 
+.header .logo img {
+    max-width: 200px; /* Adjust logo size */
+    height: auto;     /* Maintain aspect ratio */
+}
+
+/* Additional Hero Styles (Optional Gradient) */
+.hero {
+    background: linear-gradient(to right, #121212, #1a1a1a); /* Gradient to enhance the section */
+    color: var(--text-color);
+    text-align: center;
+    padding: 5rem 1rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+/* Hero Heading and Text */
 .hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
+
 
 /* Goals Section */
 .goals .cards {
