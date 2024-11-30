@@ -731,10 +731,11 @@ a:visited, a:hover, a:active {
   transform: scale(1.1);
   box-shadow: 0 0 20px var(--accent-color);
 }
+
 /* =======================================
    General Styling for Courses Section
 ======================================== */
-.course-page {
+#courses-page .course-page {
   display: flex;
   gap: 2rem; /* Space between course cards and sidebar */
   flex-wrap: wrap; /* Stack items on smaller screens */
@@ -742,7 +743,7 @@ a:visited, a:hover, a:active {
 }
 
 /* Course Cards Section */
-.course-cards {
+#courses-page .course-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -750,7 +751,7 @@ a:visited, a:hover, a:active {
   width: 75%; /* Main content area for course cards */
 }
 
-.course-card {
+#courses-page .course-card {
   width: calc(33.333% - 2rem); /* Three cards per row */
   background-size: cover;
   background-position: center;
@@ -761,7 +762,7 @@ a:visited, a:hover, a:active {
   position: relative;
 }
 
-.course-card .card-content {
+#courses-page .course-card .card-content {
   position: absolute;
   bottom: 1rem;
   left: 0;
@@ -771,17 +772,17 @@ a:visited, a:hover, a:active {
   border-radius: var(--border-radius);
 }
 
-.course-card h3 {
+#courses-page .course-card h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
-.course-card p {
+#courses-page .course-card p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
 }
 
-.course-card .btn {
+#courses-page .course-card .btn {
   background-color: var(--accent-color);
   color: #000;
   padding: 0.8rem 1.5rem;
@@ -792,25 +793,25 @@ a:visited, a:hover, a:active {
   transition: transform var(--transition-speed) ease-in-out;
 }
 
-.course-card .btn:hover {
+#courses-page .course-card .btn:hover {
   transform: scale(1.1);
   box-shadow: 0 0 20px var(--accent-color);
 }
 
 /* Sidebar for Progress */
-.progress-sidebar {
+#courses-page .progress-sidebar {
   width: 25%; /* Sidebar takes up 25% width */
   background-color: var(--dark-gray);
   padding: 2rem;
   border-radius: var(--border-radius);
 }
 
-.progress-sidebar h2 {
+#courses-page .progress-sidebar h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 
-.progress-bar {
+#courses-page .progress-bar {
   background: #333;
   border-radius: 5px;
   width: 100%;
@@ -818,30 +819,30 @@ a:visited, a:hover, a:active {
   margin-bottom: 1rem;
 }
 
-.progress {
+#courses-page .progress {
   background: var(--accent-color);
   height: 100%;
   text-align: center;
   line-height: 20px;
   color: #000;
   font-weight: bold;
-}
 
 /* Responsive Layout */
 @media (max-width: 768px) {
-  .course-card {
+  #courses-page .course-card {
     width: calc(50% - 1rem); /* Two cards per row on smaller screens */
   }
 
-  .progress-sidebar {
+  #courses-page .progress-sidebar {
     width: 100%; /* Sidebar takes full width on mobile */
     margin-top: 2rem; /* Add spacing above the sidebar */
   }
 
-  .course-cards {
+  #courses-page .course-cards {
     width: 100%; /* Course cards take full width on mobile */
   }
 }
+
 
 
 
