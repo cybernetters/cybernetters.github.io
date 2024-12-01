@@ -1,146 +1,105 @@
 /* =======================================
-   SysAdmin Course Page Layout Styling
-======================================== */
-
-/* Main Content Container */
-.course-page {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-/* Units Section (Course Cards) */
+/* Units Section */
 .units {
+  flex: 0 0 70%;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: space-between; /* Space the cards evenly */
-  margin-top: 2rem;
-  flex: 0 0 70%; /* Take up 70% of space */
 }
 
-.unit {
-  flex: 1 1 calc(50% - 1rem); /* Two items per row, with space between */
+.units .unit {
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(59, 141, 39, 0.658);
   position: relative;
-  text-align: center;
-  height: auto;
-}
-
-.unit .unit-content {
-  background: rgba(0, 0, 0, 0.6); /* Dark overlay for content inside the unit */
-  padding: 1rem;
-  border-radius: 8px;
-  position: relative;
-}
-
-.unit h3 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-}
-
-.unit p {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.unit .btn {
-  background-color: #00ff00;
-  color: black;
-  padding: 0.8rem 1.5rem;
-  text-decoration: none;
-  border-radius: 8px;
+  text-align: left;
+  height: auto; /* Fixed height for consistency */
+  width: 100%;
+  font-size: 1.2rem;
   font-weight: bold;
-  box-shadow: 0 0 10px #00ff00;
-  transition: transform 0.3s ease-in-out;
 }
 
-.unit .btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 20px #00ff00;
+.units .unit-content {
+  font-weight: normal;
+  border-top: 1px solid #bbb;
 }
 
-/* Progress Sidebar Section */
-.sidebar {
-  flex: 0 0 30%; /* Sidebar takes up 30% of the width */
-  background: #333;
-  padding: 2rem;
-  border-radius: 8px;
+.units .unit .mastery {
+  font-weight: normal;
+  font-size: 0.9rem;
+  float: right;
 }
 
-.sidebar h2 {
-  font-size: 1.6rem;
+.units .unit h3 {
+  font-size: 1.5rem;
+  color: #00ff00;
   margin-bottom: 1rem;
 }
 
-.sidebar ul {
+.units .unit ul {
   list-style: none;
   padding: 0;
 }
 
-.sidebar ul li {
+.units .unit ul li {
+  font-weight: normal;
   margin-bottom: 0.8rem;
 }
 
-.sidebar ul li a {
+.units .unit ul li a {
+  font-weight: normal;
   color: #fff;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
 }
 
-.sidebar ul li a:hover {
+.units .unit ul li a:hover {
+  font-weight: normal;
   color: #00ff00;
 }
 
-/* Footer Styling */
-.footer {
-  background-color: #1f1f1f;
-  color: white;
-  padding: 30px 0;
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
 }
 
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-logo img {
-  max-width: 150px;
-}
-
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links li {
-  margin-bottom: 8px;
-}
-
-.footer-links a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-.footer-bottom {
-  background-color: #141414;
-  padding: 15px 0;
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
   text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 105%;
+/*   bottom: 125%;
+  left: 50%; */
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
-.footer-bottom p {
-  font-size: 14px;
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
