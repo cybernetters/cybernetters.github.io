@@ -3,14 +3,12 @@
   background-image: url('images/cybersecurity-bg.png');
   background-size: cover;
   background-position: center;
-  padding: 8rem 1rem; /* Increase the padding to make text more visible */
-  display: flex; /* Use flexbox for centering */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 100vh; /* Full viewport height */
+  color: var(--text-color);
+  padding: 8rem 1rem;
   text-align: center;
-  position: relative; /* For absolutely positioning the glitch text */
+  position: relative;
 }
+
 /* Button Styling */
 .hero .btn {
   background-color: #00ff00; /* Neon green background */
@@ -30,66 +28,91 @@
   box-shadow: 0 0 20px #00ff00; /* Neon green glow on hover */
 }
 
-/* Glitch Text Effect */
-.glitch-text {
+/* Glitch Effect */
+.glitch-container {
   position: relative;
-  color: #b1ff3c; /* Neon green */
-  font-size: 4rem; /* Adjust font size as needed */
-  font-weight: bold;
-  animation: glitch 1s infinite; /* Apply glitch animation */
-  z-index: 1; /* Ensure the text is on top */
-  display: inline-block;
-  text-align: center;
 }
 
-/* Glitch Text Before and After Shadows */
-.glitch-text:before, .glitch-text:after {
+.glitch-text {
+  position: relative;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #00ff00;  /* Neon Green color */
+  font-weight: bold;
+  display: inline-block;
+}
+
+.glitch-text:before,
+.glitch-text:after {
   content: attr(data-text);
   position: absolute;
   top: 0;
   left: 0;
-  color: #000; /* Dark background color for the shadow effect */
-  z-index: -1;
-  text-shadow: -5px 0 #f30, 5px 0 #2380f9; /* Red and Blue shadow effects */
-  animation: noise 3s linear infinite alternate-reverse, glitch 1s infinite;
+  color: white;
+  text-shadow: -1px 0 red, 1px 0 blue, 0 -1px red, 0 1px blue;
+  animation: glitch-animation 1s infinite;
 }
 
-/* Keyframes for the glitch animation */
-@keyframes glitch {
+.glitch-text:before {
+  left: -2px;
+  text-shadow: -2px 0 #ff0000;
+}
+
+.glitch-text:after {
+  left: 2px;
+  text-shadow: 2px 0 #0000ff;
+}
+
+/* Glitch Animation */
+@keyframes glitch-animation {
   0% {
-    clip: rect(6px, 9999px, 68px, 0);
-    transform: skew(0.38deg);
+    clip: rect(3px, 9999px, 60px, 0);
+    transform: skew(0.42deg);
     color: red;
   }
   20% {
-    clip: rect(53px, 9999px, 16px, 0);
+    clip: rect(23px, 9999px, 58px, 0);
     transform: skew(0.44deg);
     color: blue;
   }
   40% {
-    clip: rect(74px, 9999px, 45px, 0);
-    transform: skew(0.38deg);
+    clip: rect(78px, 9999px, 40px, 0);
+    transform: skew(0.47deg);
     color: green;
   }
   60% {
-    clip: rect(92px, 9999px, 25px, 0);
-    transform: skew(0.25deg);
+    clip: rect(92px, 9999px, 60px, 0);
+    transform: skew(0.50deg);
     color: red;
   }
   80% {
-    clip: rect(39px, 9999px, 8px, 0);
-    transform: skew(0.5deg);
+    clip: rect(47px, 9999px, 50px, 0);
+    transform: skew(0.44deg);
     color: blue;
   }
   100% {
-    clip: rect(6px, 9999px, 68px, 0);
-    transform: skew(0.38deg);
+    clip: rect(10px, 9999px, 70px, 0);
+    transform: skew(0.42deg);
     color: green;
   }
 }
 
-/* Glitch noise animation */
-@keyframes noise {
-  0% { transform: translate(0, 0); }
-  100% { transform: translate(-5px, 5px); }
+/* Button Styling */
+.hero .btn {
+  background-color: #00ff00; /* Neon green background */
+  color: black;              /* Black text */
+  padding: 1rem 2rem;        /* Add padding for better size */
+  font-size: 1.2rem;         /* Increase font size */
+  text-decoration: none;     /* Remove underline */
+  border-radius: 8px;        /* Rounded corners */
+  font-weight: bold;
+  box-shadow: 0 0 10px #00ff00; /* Neon green glow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  margin-top: 1.5rem;        /* Space between text and button */
+}
+
+.hero .btn:hover {
+  transform: scale(1.1);  /* Hover effect: enlarge the button */
+  box-shadow: 0 0 20px #00ff00; /* Neon green glow on hover */
 }
