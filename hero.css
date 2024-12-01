@@ -1,6 +1,6 @@
 /* Hero Section */
 .hero {
-  background-image: url('images/cybersecurity-bg.webp');
+  background-image: url('images/cybersecurity-bg.png');
   background-size: cover;
   background-position: center;
   color: var(--text-color);
@@ -9,13 +9,25 @@
   position: relative;
 }
 
-.hero h2 {
-  font-size: 4rem; /* Increase font size for better visibility */
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: var(--accent-color); /* Neon Green color */
-  animation: glitch 1s infinite; /* Glitch animation */
+/* Button Styling in Hero */
+.hero .btn {
+  background-color: var(--accent-color); /* Neon green background */
+  color: black;                         /* Black text */
+  padding: 1rem 2rem;                   /* Add padding to make the button bigger */
+  font-size: 1.2rem;                    /* Increase font size */
+  text-decoration: none;                /* Remove underline */
+  border-radius: 8px;                   /* Rounded corners */
+  font-weight: bold;
+  box-shadow: 0 0 10px var(--accent-color); /* Neon green glow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  margin-top: 1.5rem;                   /* Space between text and button */
 }
+
+.hero .btn:hover {
+  transform: scale(1.1);  /* Hover effect to enlarge */
+  box-shadow: 0 0 20px var(--accent-color); /* Neon glow on hover */
+}
+
 
 /* Glitch Effect */
 @keyframes glitch {
