@@ -85,6 +85,35 @@ body {
     color: #00ff00;
   }
   
+  /* Header and Navbar Styling */
+  .header {
+    background-color: #121212; /* Dark background */
+    color: var(--text-color);   /* Neon green text color */
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional subtle shadow */
+    border-bottom: 3px solid #fff;  /* White bar underneath navbar */
+  }
+
+  .nav ul li a {
+    color: var(--text-color);  /* Neon green text */
+    text-decoration: none;
+    padding: 0.8rem 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+
+  .nav ul li a:hover {
+    color: #000;
+    background-color: #00ff00;  /* Neon green background */
+    border-radius: 8px;
+  }
+
+  /* Add spacing below the navbar for the white bar to stand out */
+  .nav ul {
+    padding-bottom: 1rem; /* This ensures some space below the navbar */
+  }
+
+
   /* Featured Resource Section */
   .featured-resource {
     background-color: #121212;
