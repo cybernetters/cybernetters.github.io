@@ -1,6 +1,6 @@
 /* Hero Section */
 .hero {
-  background-image: url('images/cybersecurity-bg.png');
+  background-image: url('images/cybersecurity-bg.webp');
   background-size: cover;
   background-position: center;
   color: var(--text-color);
