@@ -1,15 +1,32 @@
 /* =======================================
    General Styles for Courses Page
 ======================================== */
-
 body {
   background-color: #121212;
   color: #00ff00; /* Accent color */
   font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
 }
 
-/* Course Card Styling */
+/* Main Content Container */
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Course Cards Section */
+.course-cards {
+  flex: 0 0 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
 .course-card {
+  width: calc(50% - 1rem);
   background-size: cover;
   background-position: center;
   color: white;
@@ -18,7 +35,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: relative;
   text-align: center;
-  height: 250px; /* Adjusted height for better card display */
+  height: 250px; /* Fixed height for consistency */
 }
 
 .course-card .card-content {
@@ -54,14 +71,21 @@ body {
   box-shadow: 0 0 20px #00ff00;
 }
 
-/* Progress Sidebar */
+/* Progress Sidebar Section */
+.progress-sidebar {
+  flex: 0 0 30%;
+  background: #333;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
 .progress-bar {
   background: #333;
   border-radius: 5px;
   margin-bottom: 1rem;
 }
 
-.progress-bar .progress {
+.progress-bar .progress-fill {
   background-color: #00ff00;
   height: 20px;
 }
@@ -82,48 +106,4 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-logo img {
-  max-width: 150px;
-}
-
-.footer-links,
-.footer-socials,
-.footer-contact {
-  flex: 1;
-  padding: 0 20px;
-}
-
-.footer-links h4,
-.footer-socials h4,
-.footer-contact h4 {
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.footer-links ul,
-.footer-socials ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links li,
-.footer-socials li {
-  margin-bottom: 8px;
-}
-
-.footer-links a,
-.footer-socials a,
-.footer-contact a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.footer-links a:hover,
-.footer-socials a:hover,
-.footer-contact a:hover {
-  text-decoration: underline;
-}
+  margin: 0
