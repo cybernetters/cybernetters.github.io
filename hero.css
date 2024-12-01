@@ -28,11 +28,14 @@
   box-shadow: 0 0 20px #00ff00; /* Neon green glow on hover */
 }
 
-/* Glitch Text Styling for Hero Section */
 /* Glitch Text Effect */
 .glitch-text {
   animation: glitch 30s 30s infinite;
   color: #b1ff3c; /* Neon green color */
+  position: relative; /* Ensure that the text is positioned relative to its container */
+  display: inline-block; /* Ensure it behaves like inline text but allows positioning */
+  text-align: center; /* Center the text horizontally */
+  z-index: 1; /* Ensure it is above the background layers */
 }
 
 .glitch-text:before, .glitch-text:after {
