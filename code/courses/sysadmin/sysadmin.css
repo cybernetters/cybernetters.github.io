@@ -100,7 +100,14 @@
   border-color: #555 transparent transparent transparent;
 }
 
+.tooltip img {
+    width: 20px; /* Adjusts the width of the image icon */
+    height: auto; /* Maintains aspect ratio */
+}
+
+
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
+
