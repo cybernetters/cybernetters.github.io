@@ -29,131 +29,49 @@
 }
 
 /* Glitch Text Styling for Hero Section */
+/* Glitch Text Effect */
 .glitch-text {
-  font-size: 3rem; /* Adjust font size as needed */
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: var(--accent-color); /* Neon green color */
-  position: relative;
-  font-weight: bold;
-  display: inline-block;
-  animation: glitch 1s infinite; /* Apply the glitch effect */
+  animation: glitch 30s 30s infinite;
+  color: #b1ff3c; /* Neon green color */
 }
 
-/* Glitch Animation Effect */
-@keyframes glitch {
-  0% {
-    clip: rect(6px, 9999px, 68px, 0);
-    transform: skew(0.38deg);
-    color: red;
-  }
-  20% {
-    clip: rect(53px, 9999px, 16px, 0);
-    transform: skew(0.44deg);
-    color: blue;
-  }
-  40% {
-    clip: rect(74px, 9999px, 45px, 0);
-    transform: skew(0.38deg);
-    color: green;
-  }
-  60% {
-    clip: rect(92px, 9999px, 25px, 0);
-    transform: skew(0.25deg);
-    color: red;
-  }
-  80% {
-    clip: rect(39px, 9999px, 8px, 0);
-    transform: skew(0.5deg);
-    color: blue;
-  }
-  100% {
-    clip: rect(6px, 9999px, 68px, 0);
-    transform: skew(0.38deg);
-    color: green;
-  }
+.glitch-text:before, .glitch-text:after {
+  animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+  left: -2px;
+  text-shadow: -5px 0 #f30; /* Red text shadow */
 }
 
-.glitch-text::before,
-.glitch-text::after {
+.glitch-text:before, .glitch-text:after {
+  background: #000;
   content: attr(data-text);
+  overflow: hidden;
   position: absolute;
   top: 0;
-  left: 0;
-  color: #fff; /* White shadow effect for glitch */
-  z-index: -1;
-  clip: rect(0, 900px, 0, 0);
-  animation: glitch-anim 2s infinite linear;
 }
 
-.glitch-text::after {
+.glitch-text:after {
+  animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
   left: 2px;
-  text-shadow: -1px 0 red, 1px 0 blue, 0 -1px red, 0 1px blue;
-  animation: glitch-anim-2 2s infinite linear;
+  text-shadow: -5px 0 #2380f9; /* Blue text shadow */
 }
 
-@keyframes glitch-anim {
-  0% {
-    clip: rect(6px, 9999px, 68px, 0);
-    transform: skew(0.38deg);
-    color: red;
-  }
-  20% {
-    clip: rect(53px, 9999px, 16px, 0);
-    transform: skew(0.44deg);
-    color: blue;
-  }
-  40% {
-    clip: rect(74px, 9999px, 45px, 0);
-    transform: skew(0.38deg);
-    color: green;
-  }
-  60% {
-    clip: rect(92px, 9999px, 25px, 0);
-    transform: skew(0.25deg);
-    color: red;
-  }
-  80% {
-    clip: rect(39px, 9999px, 8px, 0);
-    transform: skew(0.5deg);
-    color: blue;
-  }
-  100% {
-    clip: rect(6px, 9999px, 68px, 0);
-    transform: skew(0.38deg);
-    color: green;
-  }
+/* Noise Animation */
+@keyframes noise-1 {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-10px, -5px); }
 }
 
-@keyframes glitch-anim-2 {
-  0% {
-    clip: rect(85px, 9999px, 12px, 0);
-    transform: skew(0.2deg);
-    color: red;
-  }
-  20% {
-    clip: rect(22px, 9999px, 45px, 0);
-    transform: skew(0.4deg);
-    color: blue;
-  }
-  40% {
-    clip: rect(65px, 9999px, 35px, 0);
-    transform: skew(0.33deg);
-    color: green;
-  }
-  60% {
-    clip: rect(60px, 9999px, 20px, 0);
-    transform: skew(0.48deg);
-    color: red;
-  }
-  80% {
-    clip: rect(35px, 9999px, 75px, 0);
-    transform: skew(0.43deg);
-    color: blue;
-  }
-  100% {
-    clip: rect(60px, 9999px, 14px, 0);
-    transform: skew(0.35deg);
-    color: green;
-  }
+@keyframes noise-2 {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(10px, 5px); }
+}
+
+/* Glitch Animation */
+@keyframes glitch {
+  0% { clip: rect(6px, 9999px, 68px, 0); transform: skew(0.38deg); color: red; }
+  20% { clip: rect(53px, 9999px, 16px, 0); transform: skew(0.44deg); color: blue; }
+  40% { clip: rect(74px, 9999px, 45px, 0); transform: skew(0.38deg); color: green; }
+  60% { clip: rect(92px, 9999px, 25px, 0); transform: skew(0.25deg); color: red; }
+  80% { clip: rect(39px, 9999px, 8px, 0); transform: skew(0.5deg); color: blue; }
+  100% { clip: rect(6px, 9999px, 68px, 0); transform: skew(0.38deg); color: green; }
 }
