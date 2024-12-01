@@ -1,157 +1,101 @@
 /* =======================================
-   SysAdmin Course Page Styles
+   SysAdmin Course Page Layout Styling
 ======================================== */
 
-/* General Styles */
-body {
-  background-color: #121212; /* Dark background */
-  color: #00ff00; /* Accent color */
-  font-family: 'Courier New', Courier, monospace;
-  margin: 0;
-  padding: 0;
-}
-
-/* Units Section */
-.units {
-  flex: 0 0 70%;
+/* Main Content Container */
+.course-page {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  padding: 2rem;
 }
 
-.units .unit {
+/* Units Section (Course Cards) */
+.units {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between; /* Space the cards evenly */
+  margin-top: 2rem;
+  flex: 0 0 70%; /* Take up 70% of space */
+}
+
+.unit {
+  flex: 1 1 calc(50% - 1rem); /* Two items per row, with space between */
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(59, 141, 39, 0.658);
   position: relative;
-  text-align: left;
+  text-align: center;
   height: auto;
-  width: 100%;
-  font-size: 1.2rem;
-  font-weight: bold;
 }
 
-.units .unit-content {
-  font-weight: normal;
-  border-top: 1px solid #bbb;
+.unit .unit-content {
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay for content inside the unit */
+  padding: 1rem;
+  border-radius: 8px;
+  position: relative;
 }
 
-.units .unit .mastery {
-  font-weight: normal;
-  font-size: 0.9rem;
-  float: right;
-}
-
-.units .unit h3 {
-  font-size: 1.5rem;
-  color: #00ff00;
+.unit h3 {
+  font-size: 1.6rem;
   margin-bottom: 1rem;
 }
 
-.units .unit ul {
+.unit p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.unit .btn {
+  background-color: #00ff00;
+  color: black;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 0 10px #00ff00;
+  transition: transform 0.3s ease-in-out;
+}
+
+.unit .btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #00ff00;
+}
+
+/* Progress Sidebar Section */
+.sidebar {
+  flex: 0 0 30%; /* Sidebar takes up 30% of the width */
+  background: #333;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.sidebar h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
   list-style: none;
   padding: 0;
 }
 
-.units .unit ul li {
-  font-weight: normal;
+.sidebar ul li {
   margin-bottom: 0.8rem;
 }
 
-.units .unit ul li a {
-  font-weight: normal;
+.sidebar ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
+  font-size: 1rem;
 }
 
-.units .unit ul li a:hover {
-  font-weight: normal;
+.sidebar ul li a:hover {
   color: #00ff00;
-}
-
-/* Tooltip container */
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 200px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  top: -5px;
-  right: 105%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-
-/* Header Styling for SysAdmin Page */
-.header {
-  background-color: #1a1a1a; /* Dark background */
-  color: #00ff00;
-  padding: 1rem 2rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.header .logo img {
-  max-width: 180px;
-  height: auto;
-}
-
-.nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  justify-content: flex-end;
-}
-
-.nav ul li {
-  margin-left: 1.5rem;
-}
-
-.nav ul li a {
-  color: var(--text-color);
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  font-weight: bold;
-  transition: color 0.3s, background-color 0.3s;
-  display: block;
-}
-
-.nav ul li a:hover {
-  color: #000;
-  background-color: var(--accent-color);
-  border-radius: var(--border-radius);
 }
 
 /* Footer Styling */
@@ -199,16 +143,4 @@ body {
 
 .footer-bottom p {
   font-size: 14px;
-}
-
-/* Progress Bar */
-.progress-bar {
-  background: #333;
-  border-radius: 5px;
-  margin-bottom: 1rem;
-}
-
-.progress-bar .progress-fill {
-  background-color: #00ff00;
-  height: 20px;
 }
