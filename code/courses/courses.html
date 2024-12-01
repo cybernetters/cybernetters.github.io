@@ -42,39 +42,60 @@
   </header>
 
   <!-- Main Content -->
-  <main id="courses-page">
-    <div class="content-container">
+  <main class="courses-page container mt-5">
+    <div class="row">
       <!-- Course Cards Section -->
-      <section class="course-cards">
-        <div class="course-card" style="background-image: url('/images/sysadmin-bg.webp');">
-          <div class="card-content">
-            <h3><a href="/code/courses/sysadmin/sysadmin.html">System Administration</a></h3>
-            <p>This course provides an introduction to system administration tasks such as configuring operating systems, managing users, and securing networks.</p>
-            <a href="/code/courses/sysadmin/sysadmin.html" class="btn">Learn More</a>
+      <section class="col-md-8">
+        <div class="row">
+          <!-- Course Card 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="course-card" style="background-image: url('../../images/sysadmin-bg.jpg');">
+              <div class="card-content p-3">
+                <h3><a href="/code/courses/sysadmin/sysadmin.html" class="text-white">System Administration</a></h3>
+                <p class="text-white">This course provides an introduction to system administration tasks such as configuring operating systems, managing users, and securing networks.</p>
+                <a href="/code/courses/sysadmin/sysadmin.html" class="btn btn-light">Learn More</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="course-card" style="background-image: url('/images/networking-bg.webp');">
-          <div class="card-content">
-            <h3><a href="/code/courses/networking1/networking1.html">Networking I</a></h3>
-            <p>Learn the fundamentals of networking, including IP addressing, routing, and protocols like DNS and DHCP.</p>
-            <a href="/code/courses/networking1/networking1.html" class="btn">Learn More</a>
+
+          <!-- Course Card 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="course-card" style="background-image: url('../../images/networking-bg.jpg');">
+              <div class="card-content p-3">
+                <h3><a href="/code/courses/networking1/networking1.html" class="text-white">Networking I</a></h3>
+                <p class="text-white">Learn the fundamentals of networking, including IP addressing, routing, and protocols like DNS and DHCP.</p>
+                <a href="/code/courses/networking1/networking1.html" class="btn btn-light">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course Card 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="course-card" style="background-image: url('../../images/ethical-hacking.jpg');">
+              <div class="card-content p-3">
+                <h3><a href="/code/courses/ethical-hacking/ethical-hacking.html" class="text-white">Ethical Hacking</a></h3>
+                <p class="text-white">Learn the techniques and tools used by ethical hackers to protect systems and networks.</p>
+                <a href="/code/courses/ethical-hacking/ethical-hacking.html" class="btn btn-light">Learn More</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Progress Sidebar Section -->
-      <aside class="progress-sidebar">
+      <aside class="col-md-4">
         <h2>Progress</h2>
-        <div class="progress-bar">
+        <div class="progress-bar mb-3">
           <h3>System Administration</h3>
           <div class="progress">
-            <div class="progress-fill" style="width: 50%;">50% Mastery</div>
+            <div class="progress-bar bg-success" style="width: 50%;">50% Mastery</div>
           </div>
         </div>
-        <div class="progress-bar">
+        
+        <div class="progress-bar mb-3">
           <h3>Networking I</h3>
           <div class="progress">
-            <div class="progress-fill" style="width: 25%;">25% Mastery</div>
+            <div class="progress-bar bg-warning" style="width: 25%;">25% Mastery</div>
           </div>
         </div>
       </aside>
@@ -85,8 +106,8 @@
   <footer class="footer">
     <div class="container footer-container">
       <div class="footer-logo">
-        <a href="../../index.html">
-          <img src="/images/cybernetters-logo.webp" alt="CyberNetters Logo" class="logo">
+        <a href="index.html">
+          <img src="../../images/cybernetters-logo.png" alt="CyberNetters Logo" class="logo">
         </a>
       </div>
       <div class="footer-links">
@@ -101,10 +122,10 @@
       <div class="footer-socials">
         <h4>Follow Us</h4>
         <ul>
-          <li><a href="https://discord.gg/cybernetters"><img src="images/iconmonstr-discord-1.svg" alt="Discord"></a></li>
-          <li><a href="https://www.youtube.com/@CyberNetters"><img src="images/iconmonstr-youtube-8.svg" alt="YouTube"></a></li>
-          <li><a href="https://linkedin.com/company/cybernetters"><img src="images/iconmonstr-linkedin-3.svg" alt="LinkedIn"></a></li>
-          <li><a href="https://twitter.com/cybernetters"><img src="images/iconmonstr-twitter-3.svg" alt="Twitter"></a></li>
+          <li><a href="https://discord.gg/cybernetters"><img src="../../images/iconmonstr-discord-1.svg" alt="Discord"></a></li>
+          <li><a href="https://www.youtube.com/@CyberNetters"><img src="../../images/iconmonstr-youtube-8.svg" alt="YouTube"></a></li>
+          <li><a href="https://linkedin.com/company/cybernetters"><img src="../../images/iconmonstr-linkedin-3.svg" alt="LinkedIn"></a></li>
+          <li><a href="https://twitter.com/cybernetters"><img src="../../images/iconmonstr-twitter-3.svg" alt="Twitter"></a></li>
         </ul>
       </div>
       <div class="footer-contact">
@@ -120,6 +141,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="../../script.js"></script>
 </body>
 </html>
