@@ -15,18 +15,19 @@ body {
   flex-wrap: wrap;
   gap: 2rem;
   padding: 2rem;
+  justify-content: space-between;
 }
 
 /* Course Cards Section */
 .course-cards {
-  flex: 0 0 70%;
+  flex: 1 1 65%; /* Takes up more space, ensuring 3 cards fit */
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
 }
 
 .course-card {
-  width: calc(50% - 1rem);
+  width: calc(33.333% - 1.33rem); /* 3 cards side by side */
   background-size: cover;
   background-position: center;
   color: white;
@@ -73,7 +74,7 @@ body {
 
 /* Progress Sidebar Section */
 .progress-sidebar {
-  flex: 0 0 30%;
+  flex: 0 0 30%; /* Takes 30% width for the progress bar */
   background: #333;
   padding: 2rem;
   border-radius: 8px;
@@ -90,10 +91,6 @@ body {
   height: 20px;
 }
 
-.progress-bar .progress-bar {
-  background: #00ff00;
-}
-
 /* Footer Styles */
 .footer {
   background-color: #1f1f1f;
@@ -106,4 +103,58 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   max-width: 1200px;
-  margin: 0
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+.footer-links,
+.footer-socials,
+.footer-contact {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-links h4,
+.footer-socials h4,
+.footer-contact h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-links ul,
+.footer-socials ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-socials li {
+  margin-bottom: 8px;
+}
+
+.footer-links a,
+.footer-socials a,
+.footer-contact a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-socials a:hover,
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #141414;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+}
