@@ -9,6 +9,28 @@ body {
     margin: 0;
   }
   
+  /* Ensure header and navbar text color is consistent */
+  .header {
+    background-color: #121212;  /* Keep the background dark for consistency */
+    color: var(--text-color);  /* Inherit text color from global styles */
+  }
+
+  .nav ul li a {
+    color: var(--text-color);  /* Set navbar link color to the global text color */
+    text-decoration: none;
+  }
+
+  .nav ul li a:hover {
+    color: #fff;  /* Change color on hover */
+    background-color: var(--accent-color);  /* Add accent color on hover */
+  }
+
+  .nav ul li a.active {
+    color: #fff; /* Color for active page */
+    background-color: var(--accent-color); /* Highlight active page */
+  }
+
+
   /* Intro Section */
   .intro {
     background-color: #1a1a1a;
