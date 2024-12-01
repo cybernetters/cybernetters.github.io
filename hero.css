@@ -9,56 +9,21 @@
   position: relative;
 }
 
-/* Button Styling in Hero */
+/* Button Styling */
 .hero .btn {
-  background-color: var(--accent-color); /* Neon green background */
-  color: black;                         /* Black text */
-  padding: 1rem 2rem;                   /* Add padding to make the button bigger */
-  font-size: 1.2rem;                    /* Increase font size */
-  text-decoration: none;                /* Remove underline */
-  border-radius: 8px;                   /* Rounded corners */
+  background-color: #00ff00; /* Neon green background */
+  color: black;              /* Black text */
+  padding: 1rem 2rem;        /* Add padding for better size */
+  font-size: 1.2rem;         /* Increase font size */
+  text-decoration: none;     /* Remove underline */
+  border-radius: 8px;        /* Rounded corners */
   font-weight: bold;
-  box-shadow: 0 0 10px var(--accent-color); /* Neon green glow */
+  box-shadow: 0 0 10px #00ff00; /* Neon green glow */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
-  margin-top: 1.5rem;                   /* Space between text and button */
+  margin-top: 1.5rem;        /* Space between text and button */
 }
 
 .hero .btn:hover {
-  transform: scale(1.1);  /* Hover effect to enlarge */
-  box-shadow: 0 0 20px var(--accent-color); /* Neon glow on hover */
-}
-
-
-/* Glitch Effect */
-@keyframes glitch {
-  0% {
-    clip: rect(6px, 9999px, 68px, 0);
-    transform: skew(0.38deg);
-    color: red;
-  }
-  20% {
-    clip: rect(53px, 9999px, 16px, 0);
-    transform: skew(0.44deg);
-    color: blue;
-  }
-  40% {
-    clip: rect(74px, 9999px, 45px, 0);
-    transform: skew(0.38deg);
-    color: green;
-  }
-  60% {
-    clip: rect(92px, 9999px, 25px, 0);
-    transform: skew(0.25deg);
-    color: red;
-  }
-  80% {
-    clip: rect(39px, 9999px, 8px, 0);
-    transform: skew(0.5deg);
-    color: blue;
-  }
-  100% {
-    clip: rect(6px, 9999px, 68px, 0);
-    transform: skew(0.38deg);
-    color: green;
-  }
+  transform: scale(1.1);  /* Hover effect: enlarge the button */
+  box-shadow: 0 0 20px #00ff00; /* Neon green glow on hover */
 }
