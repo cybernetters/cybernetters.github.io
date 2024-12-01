@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://cybernetters.net/</loc>
+  <lastmod>2024-12-01T03:06:22+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://cybernetters.net/index.html</loc>
+  <lastmod>2024-12-01T03:06:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cybernetters.net/code/about/about.html</loc>
+  <lastmod>2024-12-01T03:06:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cybernetters.net/code/services/services.html</loc>
+  <lastmod>2024-12-01T03:06:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cybernetters.net/code/resources/resources.html</loc>
+  <lastmod>2024-12-01T03:06:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cybernetters.net/code/courses/courses.html</loc>
+  <lastmod>2024-12-01T03:06:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cybernetters.net/code/courses/networking1/networking1.html</loc>
+  <lastmod>2024-12-01T03:06:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cybernetters.net/code/courses/sysadmin/sysadmin.html</loc>
+  <lastmod>2024-12-01T03:06:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cybernetters.net/code/auth/sign-in.html</loc>
+  <lastmod>2024-12-01T03:06:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cybernetters.net/code/auth/sign-up.html</loc>
+  <lastmod>2024-12-01T03:06:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cybernetters.net/code/courses/sysadmin/unit1.html</loc>
+  <lastmod>2024-12-01T03:06:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cybernetters.net/code/courses/sysadmin/aaa.html</loc>
+  <lastmod>2024-12-01T03:06:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cybernetters.net/code/courses/sysadmin/directory-services.html</loc>
+  <lastmod>2024-12-01T03:06:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cybernetters.net/code/courses/sysadmin/active-directory.html</loc>
+  <lastmod>2024-12-01T03:06:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
