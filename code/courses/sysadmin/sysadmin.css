@@ -1,0 +1,214 @@
+/* =======================================
+   SysAdmin Course Page Styles
+======================================== */
+
+/* General Styles */
+body {
+  background-color: #121212; /* Dark background */
+  color: #00ff00; /* Accent color */
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+/* Units Section */
+.units {
+  flex: 0 0 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.units .unit {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(59, 141, 39, 0.658);
+  position: relative;
+  text-align: left;
+  height: auto;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.units .unit-content {
+  font-weight: normal;
+  border-top: 1px solid #bbb;
+}
+
+.units .unit .mastery {
+  font-weight: normal;
+  font-size: 0.9rem;
+  float: right;
+}
+
+.units .unit h3 {
+  font-size: 1.5rem;
+  color: #00ff00;
+  margin-bottom: 1rem;
+}
+
+.units .unit ul {
+  list-style: none;
+  padding: 0;
+}
+
+.units .unit ul li {
+  font-weight: normal;
+  margin-bottom: 0.8rem;
+}
+
+.units .unit ul li a {
+  font-weight: normal;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.units .unit ul li a:hover {
+  font-weight: normal;
+  color: #00ff00;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 105%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Header Styling for SysAdmin Page */
+.header {
+  background-color: #1a1a1a; /* Dark background */
+  color: #00ff00;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header .logo img {
+  max-width: 180px;
+  height: auto;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+.nav ul li {
+  margin-left: 1.5rem;
+}
+
+.nav ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  transition: color 0.3s, background-color 0.3s;
+  display: block;
+}
+
+.nav ul li a:hover {
+  color: #000;
+  background-color: var(--accent-color);
+  border-radius: var(--border-radius);
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 30px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #141414;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+}
+
+/* Progress Bar */
+.progress-bar {
+  background: #333;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.progress-bar .progress-fill {
+  background-color: #00ff00;
+  height: 20px;
+}
