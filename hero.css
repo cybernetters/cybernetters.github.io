@@ -52,16 +52,6 @@
   z-index: 1; /* Keep glitch layers behind the main text */
 }
 
-.glitch-text:before {
-  left: -2px;
-  text-shadow: -3px 0 #f30;  /* Slightly offset */
-}
-
-.glitch-text:after {
-  left: 2px;
-  text-shadow: 3px 0 #2380f9;  /* Slightly offset */
-}
-
 /* Glitch Animation */
 @keyframes glitch-animation {
   0% {
@@ -94,6 +84,17 @@
     transform: skew(0.42deg);
     color: green;
   }
+}
+
+/* Glitch Layer Offsets */
+.glitch-text:before {
+  left: -2px;
+  text-shadow: -3px 0 #f30;  /* Slightly offset */
+}
+
+.glitch-text:after {
+  left: 2px;
+  text-shadow: 3px 0 #2380f9;  /* Slightly offset */
 }
 
 /* Button Styling */
