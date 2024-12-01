@@ -70,9 +70,18 @@
   border-bottom: 1px dotted black;
 }
 
+/* Styling for Tooltip Icon */
+.tooltip img {
+  width: 16px; /* Adjust to make icon smaller or bigger */
+  height: auto; /* Maintain aspect ratio */
+  vertical-align: middle; /* Align with text */
+  cursor: pointer; /* Make it look clickable */
+}
+
+/* Tooltip Text */
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 200px;
+  width: 250px;
   background-color: #555;
   color: #fff;
   text-align: center;
@@ -81,12 +90,15 @@
   position: absolute;
   z-index: 1;
   top: -5px;
-  right: 105%;
-/*   bottom: 125%;
-  left: 50%; */
-  margin-left: -60px;
+  left: 50%;
+  margin-left: -125px; /* Centers the tooltip */
   opacity: 0;
   transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 .tooltip .tooltiptext::after {
@@ -99,15 +111,3 @@
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
-
-.tooltip img {
-    width: 10px; /* Adjusts the width of the image icon */
-    height: auto; /* Maintains aspect ratio */
-}
-
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-
