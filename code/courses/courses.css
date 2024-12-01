@@ -10,24 +10,22 @@ body {
 }
 
 /* Main Content Container */
-.content-container {
+.courses-page {
   display: flex;
-  flex-wrap: wrap;
   gap: 2rem;
   padding: 2rem;
-  justify-content: space-between;
 }
 
 /* Course Cards Section */
 .course-cards {
-  flex: 1 1 65%; /* Takes up more space, ensuring 3 cards fit */
+  flex: 0 0 70%;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
 }
 
 .course-card {
-  width: calc(33.333% - 1.33rem); /* 3 cards side by side */
+  width: calc(33.333% - 2rem); /* Three cards side by side */
   background-size: cover;
   background-position: center;
   color: white;
@@ -74,7 +72,7 @@ body {
 
 /* Progress Sidebar Section */
 .progress-sidebar {
-  flex: 0 0 30%; /* Takes 30% width for the progress bar */
+  flex: 0 0 30%;
   background: #333;
   padding: 2rem;
   border-radius: 8px;
@@ -89,6 +87,10 @@ body {
 .progress-bar .progress-fill {
   background-color: #00ff00;
   height: 20px;
+}
+
+.progress-bar .progress-bar {
+  background: #00ff00;
 }
 
 /* Footer Styles */
