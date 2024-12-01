@@ -101,7 +101,7 @@
 }
 
 .tooltip img {
-    width: 20px; /* Adjusts the width of the image icon */
+    width: 10px; /* Adjusts the width of the image icon */
     height: auto; /* Maintains aspect ratio */
 }
 
