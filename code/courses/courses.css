@@ -25,7 +25,7 @@ body {
 }
 
 .course-card {
-  width: calc(33.333% - 2rem); /* Three cards side by side */
+  width: calc(25% - 2rem); /* Three cards side by side */
   background-size: cover;
   background-position: center;
   color: white;
