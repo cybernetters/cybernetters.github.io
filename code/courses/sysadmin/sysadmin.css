@@ -9,8 +9,10 @@
 }
 
 .units .unit {
-  background-size: cover;
+  background-image: url('/images/sysadmin-unit1-bg.webp'); /* Add the background image here */
+  background-size: 50% auto; /* Adjust the background size to be 50% of the width, maintaining aspect ratio */
   background-position: center;
+  background-repeat: no-repeat;
   color: white;
   padding: 1rem;
   border-radius: 8px;
