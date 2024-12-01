@@ -8,7 +8,7 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
-/* Course Card Layout */
+/* Course Card Styling */
 .course-card {
   background-size: cover;
   background-position: center;
@@ -18,16 +18,10 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: relative;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.course-card:hover {
-  transform: scale(1.05); /* Slight scaling effect */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
 }
 
 .course-card .card-content {
-  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay for content inside the card */
   padding: 1rem;
   border-radius: 8px;
   position: relative;
@@ -44,7 +38,7 @@ body {
 }
 
 .course-card .btn {
-  background-color: #00ff00; /* Neon Green */
+  background-color: #00ff00;
   color: black;
   padding: 0.8rem 1.5rem;
   text-decoration: none;
@@ -58,7 +52,6 @@ body {
   transform: scale(1.1);
   box-shadow: 0 0 20px #00ff00;
 }
-
 
 /* Progress Sidebar */
 .progress-bar {
@@ -132,4 +125,108 @@ body {
 .footer-socials a:hover,
 .footer-contact a:hover {
   text-decoration: underline;
+}
+
+/* =======================================
+   Global Styles
+======================================== */
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #121212;
+    color: #00ff00;
+}
+
+/* Header Section */
+.header {
+  position: relative;
+  background-image: url('https://raw.githubusercontent.com/cybernetters/cybernetters.github.io/main/cyber-background-qrvi98v4g2ezuomr.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%) brightness(1.2);
+  color: #00ff00;
+  border-bottom: 2px solid #00ff00;
+  padding: 1rem 0;
+}
+
+.header .logo {
+  position: relative;
+  z-index: 2;
+}
+
+.header .logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  margin-left: 1rem;
+  position: relative;
+}
+
+.nav ul li a {
+  color: #1a1a1a;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.nav ul li a:hover {
+  color: #fff;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 30px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #141414;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
 }
