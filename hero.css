@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: center;
   color: var(--text-color);
-  padding: 8rem 1rem;
+  padding: 8rem 1rem; /* Increase the padding to make text more visible */
   text-align: center;
   position: relative;
 }
@@ -31,6 +31,7 @@
 /* Glitch Effect */
 .glitch-container {
   position: relative;
+  display: inline-block;
 }
 
 .glitch-text {
@@ -41,6 +42,7 @@
   color: #00ff00;  /* Neon Green color */
   font-weight: bold;
   display: inline-block;
+  z-index: 2; /* Make sure the neon green text is on top */
 }
 
 .glitch-text:before,
@@ -52,6 +54,7 @@
   color: white;
   text-shadow: -1px 0 red, 1px 0 blue, 0 -1px red, 0 1px blue;
   animation: glitch-animation 1s infinite;
+  z-index: 1; /* Ensure the glitch effect stays behind */
 }
 
 .glitch-text:before {
