@@ -42,47 +42,49 @@
   </header>
 
   <!-- Main Content -->
-  <main class="courses-page container mt-5">
+  <main class="container mt-5 courses-page">
     <div class="row">
       <!-- Course Cards Section -->
-      <section class="col-md-8">
-        <div class="row">
-          <!-- Course Card 1 -->
-          <div class="col-md-4 mb-4">
-            <div class="course-card" style="background-image: url('/images/sysadmin-bg.jpg');">
-              <div class="card-content p-3">
-                <h3><a href="/code/courses/sysadmin/sysadmin.html" class="text-white">System Administration</a></h3>
-                <p class="text-white">This course provides an introduction to system administration tasks such as configuring operating systems, managing users, and securing networks.</p>
-                <a href="/code/courses/sysadmin/sysadmin.html" class="btn btn-light">Learn More</a>
-              </div>
-            </div>
+      <section class="course-cards">
+        <div class="course-card" style="background-image: url('/images/sysadmin-bg.jpg');">
+          <div class="card-content">
+            <h3><a href="/code/courses/sysadmin/sysadmin.html" class="text-white">System Administration</a></h3>
+            <p class="text-white">This course provides an introduction to system administration tasks such as configuring operating systems, managing users, and securing networks.</p>
+            <a href="/code/courses/sysadmin/sysadmin.html" class="btn btn-light">Learn More</a>
           </div>
+        </div>
 
-          <!-- Course Card 2 -->
-          <div class="col-md-4 mb-4">
-            <div class="course-card" style="background-image: url('/images/networking-bg.jpg');">
-              <div class="card-content p-3">
-                <h3><a href="/code/courses/networking1/networking1.html" class="text-white">Networking I</a></h3>
-                <p class="text-white">Learn the fundamentals of networking, including IP addressing, routing, and protocols like DNS and DHCP.</p>
-                <a href="/code/courses/networking1/networking1.html" class="btn btn-light">Learn More</a>
-              </div>
-            </div>
+        <div class="course-card" style="background-image: url('/images/networking-bg.jpg');">
+          <div class="card-content">
+            <h3><a href="/code/courses/networking1/networking1.html" class="text-white">Networking I</a></h3>
+            <p class="text-white">Learn the fundamentals of networking, including IP addressing, routing, and protocols like DNS and DHCP.</p>
+            <a href="/code/courses/networking1/networking1.html" class="btn btn-light">Learn More</a>
           </div>
+        </div>
+
+        <div class="course-card" style="background-image: url('/images/unixadmin-bg.jpg');">
+          <div class="card-content">
+            <h3><a href="/code/courses/sysadmin/sysadmin.html" class="text-white">UNIX Administration</a></h3>
+            <p class="text-white">Insert Introduction here.</p>
+            <a href="/code/courses/sysadmin/sysadmin.html" class="btn btn-light">Learn More</a>
+          </div>
+        </div>
+      </section>
 
       <!-- Progress Sidebar Section -->
-      <aside class="col-md-4">
+      <aside class="progress-sidebar">
         <h2>Progress</h2>
         <div class="progress-bar mb-3">
           <h3>System Administration</h3>
           <div class="progress">
-            <div class="progress-bar bg-success" style="width: 50%;">50% Mastery</div>
+            <div class="progress-fill" style="width: 50%;">50% Mastery</div>
           </div>
         </div>
-        
+
         <div class="progress-bar mb-3">
           <h3>Networking I</h3>
           <div class="progress">
-            <div class="progress-bar bg-warning" style="width: 25%;">25% Mastery</div>
+            <div class="progress-fill" style="width: 25%;">25% Mastery</div>
           </div>
         </div>
       </aside>
@@ -93,7 +95,7 @@
   <footer class="footer">
     <div class="container footer-container">
       <div class="footer-logo">
-        <a href="index.html">
+        <a href="../../index.html">
           <img src="../../images/cybernetters-logo.png" alt="CyberNetters Logo" class="logo">
         </a>
       </div>
