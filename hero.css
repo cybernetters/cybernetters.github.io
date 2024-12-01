@@ -29,20 +29,15 @@
 }
 
 /* Glitch Effect */
-.glitch-container {
-  position: relative;
-  display: inline-block;
-}
-
 .glitch-text {
   position: relative;
-  font-size: 4rem;
+  font-size: 4rem;  /* Adjust font size */
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #00ff00;  /* Neon Green color */
   font-weight: bold;
+  color: #b1ff3c;  /* Neon green */
   display: inline-block;
-  z-index: 2; /* Make sure the neon green text is on top */
+  z-index: 2;  /* Ensure the neon green text is on top */
 }
 
 .glitch-text:before,
@@ -52,19 +47,19 @@
   top: 0;
   left: 0;
   color: white;
-  text-shadow: -1px 0 red, 1px 0 blue, 0 -1px red, 0 1px blue;
+  text-shadow: -2px 0 #f30, 2px 0 #2380f9;  /* Red and Blue for glitch */
   animation: glitch-animation 1s infinite;
-  z-index: 1; /* Ensure the glitch effect stays behind */
+  z-index: 1; /* Keep glitch layers behind the main text */
 }
 
 .glitch-text:before {
   left: -2px;
-  text-shadow: -2px 0 #ff0000;
+  text-shadow: -3px 0 #f30;  /* Slightly offset */
 }
 
 .glitch-text:after {
   left: 2px;
-  text-shadow: 2px 0 #0000ff;
+  text-shadow: 3px 0 #2380f9;  /* Slightly offset */
 }
 
 /* Glitch Animation */
