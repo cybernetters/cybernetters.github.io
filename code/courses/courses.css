@@ -8,7 +8,7 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
-/* Course Card Styling */
+/* Course Card Layout */
 .course-card {
   background-size: cover;
   background-position: center;
@@ -18,10 +18,16 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: relative;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: scale(1.05); /* Slight scaling effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
 }
 
 .course-card .card-content {
-  background: rgba(0, 0, 0, 0.6); /* Dark overlay for content inside the card */
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
   padding: 1rem;
   border-radius: 8px;
   position: relative;
@@ -38,7 +44,7 @@ body {
 }
 
 .course-card .btn {
-  background-color: #00ff00;
+  background-color: #00ff00; /* Neon Green */
   color: black;
   padding: 0.8rem 1.5rem;
   text-decoration: none;
@@ -52,6 +58,7 @@ body {
   transform: scale(1.1);
   box-shadow: 0 0 20px #00ff00;
 }
+
 
 /* Progress Sidebar */
 .progress-bar {
