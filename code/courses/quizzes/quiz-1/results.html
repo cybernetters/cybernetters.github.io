@@ -3,39 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz 1 - Question 3</title>
+  <title>Quiz 1 - Results</title>
   <link rel="stylesheet" href="../../../../styles.css">
   <style>
     body { background-color: #111; color: #00ff00; font-family: 'Courier New', monospace; }
-    .quiz-container { max-width: 600px; margin: 2rem auto; padding: 1rem; background: #222; border-radius: 8px; }
-    h1 { text-align: center; color: #00ff00; }
-    button { background: #00ff00; color: #000; padding: 0.8rem 1.5rem; border: none; border-radius: 8px; cursor: pointer; font-size: 1rem; }
-    button:hover { background: #008f00; }
+    .result-container { max-width: 600px; margin: 2rem auto; padding: 1rem; background: #222; border-radius: 8px; text-align: center; }
+    h1 { color: #00ff00; }
+    .score { font-size: 1.5rem; margin: 1rem 0; }
+    .retry { background: #00ff00; color: #000; padding: 0.8rem 1.5rem; border: none; border-radius: 8px; cursor: pointer; font-size: 1rem; }
+    .retry:hover { background: #008f00; }
   </style>
 </head>
 <body>
-  <div class="quiz-container">
-    <h1>Question 3</h1>
-    <p>What would you use if you wanted to set a default wallpaper background for all machines in your company, but still wanted users to be able to set their own wallpaper?</p>
-    <form id="question-form">
-      <label><input type="radio" name="q3" value="a"> A preference</label><br>
-      <label><input type="radio" name="q3" value="b"> A policy</label><br>
-      <label><input type="radio" name="q3" value="c"> A registry key</label><br>
-      <label><input type="radio" name="q3" value="d"> A group membership</label><br>
-      <button type="button" onclick="saveAnswer()">Finish</button>
-    </form>
+  <div class="result-container">
+    <h1>Quiz Results</h1>
+    <p class="score" id="score"></p>
+    <button class="retry" onclick="retryQuiz()">Retry Quiz</button>
   </div>
 
   <script>
-    function saveAnswer() {
-      const selected = document.querySelector('input[name="q3"]:checked');
-      if (!selected) {
-        alert("Please select an answer!");
-        return;
+    function calculateScore() {
+      const answers = { q1: 'a', q2: 'b' }; // Correct answers
+      let score = 0;
+      let totalQuestions = Object.keys(answers).length;
+
+      for (const [key, correctAnswer] of Object.entries(answers)) {
+        if (localStorage.getItem(key) === correctAnswer) {
+          score++;
+        }
       }
-      localStorage.setItem('q3', selected.value);
-      window.location.href = 'results.html';
+
+      document.getElementById('score').textContent = `You scored ${score} out of ${totalQuestions}!`;
     }
+
+    function retryQuiz() {
+      localStorage.clear(); // Clear all saved answers
+      window.location.href = 'q1.html'; // Redirect to the first question
+    }
+
+    calculateScore(); // Calculate and display the score
   </script>
 </body>
 </html>
