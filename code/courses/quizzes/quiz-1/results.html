@@ -23,16 +23,23 @@
 
   <script>
     function calculateScore() {
-      const answers = { q1: 'a', q2: 'b' }; // Correct answers
+      // Add all correct answers for the 3 questions
+      const answers = { 
+        q1: 'a', // Correct answer for Question 1
+        q2: 'b', // Correct answer for Question 2
+        q3: 'a'  // Correct answer for Question 3
+      };
       let score = 0;
       let totalQuestions = Object.keys(answers).length;
 
+      // Loop through each question and compare user answers with the correct answers
       for (const [key, correctAnswer] of Object.entries(answers)) {
         if (localStorage.getItem(key) === correctAnswer) {
           score++;
         }
       }
 
+      // Update the score text
       document.getElementById('score').textContent = `You scored ${score} out of ${totalQuestions}!`;
     }
 
