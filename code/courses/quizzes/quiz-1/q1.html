@@ -5,9 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz 1 - Question 1</title>
   <!-- Global and Quiz-Specific Styles -->
-  <link rel="stylesheet" href="../../../../styles.css"> <!-- Global CSS -->
+  <link rel="stylesheet" href="../../../styles.css"> <!-- Global CSS -->
   <link rel="stylesheet" href="quiz-style.css"> <!-- Quiz-Specific CSS -->
   <script src="quiz-script.js" defer></script> <!-- Quiz-Specific JS -->
+  <script>
+    // Define correct answers and total questions for this quiz
+    const correctAnswers = { q1: 'a', q2: 'a', q3: 'a' }; // Pass quiz-specific answers
+    const totalQuestions = 3; // Total number of questions in this quiz
+  </script>
 </head>
 <body>
   <div class="quiz-container">
@@ -16,6 +21,7 @@
       <div class="progress-bar"></div>
     </div>
 
+    <!-- Question Content -->
     <h1>Question 1</h1>
     <p>How are things organized in a directory server?</p>
     <form id="question-form">
@@ -23,20 +29,11 @@
       <label><input type="radio" name="q1" value="b"> By random allocation of user accounts</label><br>
       <label><input type="radio" name="q1" value="c"> By IP addresses and subnets</label><br>
       <label><input type="radio" name="q1" value="d"> By alphabetical sorting of usernames</label><br>
-      <button type="button" onclick="saveAnswer()">Next</button>
+      <button type="button" onclick="nextQuestion('q1', correctAnswers, 'q2.html')">Next</button>
     </form>
-  </div>
 
-  <script>
-    function saveAnswer() {
-      const selected = document.querySelector('input[name="q1"]:checked');
-      if (!selected) {
-        alert("Please select an answer!");
-        return;
-      }
-      localStorage.setItem('q1', selected.value); // Save answer to localStorage
-      window.location.href = 'q2.html'; // Redirect to the next question
-    }
-  </script>
+    <!-- Feedback Section -->
+    <p id="feedback" style="margin-top: 1rem; font-size: 1.2rem;"></p>
+  </div>
 </body>
 </html>
