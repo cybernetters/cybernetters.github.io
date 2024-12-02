@@ -3,9 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>System Administration - CyberNetters</title>
+  <title>Unit 1: Introduction to Directory Services</title>
   <link rel="stylesheet" href="../../../styles.css">  <!-- Global Styles -->
-  <link rel="stylesheet" href="sysadmin.css">  <!-- SysAdmin Course Styles -->
+  <style>
+    /* Page Styling */
+    body {
+      background-color: #111;
+      color: #00ff00;
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2 {
+      color: #00ff00;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    /* Table Styling */
+    table {
+      width: 100%;
+      margin-top: 2rem;
+      border-spacing: 0;
+      border-collapse: separate;
+      padding: 1rem;
+    }
+
+    td {
+      vertical-align: top;
+      padding: 1rem;
+    }
+
+    /* Column Styling */
+    .resources, .quizzes {
+      background-color: #222;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+    }
+
+    .resources h3, .quizzes h3 {
+      text-align: left;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      text-decoration: underline;
+    }
+
+    .resources ul, .quizzes ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .resources li, .quizzes li {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: #00ff00;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #fff;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      table {
+        display: block;
+      }
+
+      td {
+        display: block;
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Header Section -->
@@ -43,35 +132,56 @@
 
   <!-- Main Content -->
   <main>
-    <section class="unit-overview">
-      <h2>Unit 1: Introduction to Directory Services</h2>
-      <div class="unit-topics">
-        <div class="topic">
-          <a href="aaa.html">
-            <img src="../../../images/aaa-thumbnail.png" alt="AAA">
-            <p>AAA</p>
-          </a>
-        </div>
-        <div class="topic">
-          <a href="directory-services.html">
-            <img src="../../../images/directory-services-thumbnail.png" alt="Directory Services">
-            <p>Directory Services</p>
-          </a>
-        </div>
-        <div class="topic">
-          <a href="active-directory.html">
-            <img src="../../../images/active-directory-thumbnail.png" alt="Active Directory">
-            <p>Active Directory</p>
-          </a>
-        </div>
-        <div class="topic">
-          <a href="enterprise-ad.html">
-            <img src="../../../images/enterprise-ad-thumbnail.png" alt="Enterprise AD">
-            <p>Enterprise AD</p>
-          </a>
-        </div>
-      </div>
-    </section>
+    <h2>Unit 1: Introduction to Directory Services</h2>
+    <table>
+      <tr>
+        <!-- Videos & Resources Section -->
+        <td class="resources">
+          <h3>Videos & Resources</h3>
+          <ul>
+            <li>
+              <strong>Video 1: Introduction to Directory Services</strong>
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Introduction to Directory Services"></iframe>
+              </div>
+            </li>
+            <li>
+              <strong>Resource: AAA Fundamentals</strong>
+              <a href="/code/resources/aaa-fundamentals.pdf" target="_blank">Download AAA PDF</a>
+            </li>
+            <li>
+              <strong>Video 2: Directory Service Basics</strong>
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Directory Service Basics"></iframe>
+              </div>
+            </li>
+            <li>
+              <strong>Resource: Understanding Active Directory</strong>
+              <a href="/code/resources/active-directory-overview.pdf" target="_blank">Download PDF</a>
+            </li>
+          </ul>
+        </td>
+
+        <!-- Quizzes Section -->
+        <td class="quizzes">
+          <h3>Quizzes</h3>
+          <ul>
+            <li>
+              <strong>Quiz 1: Basics of Directory Services</strong><br>
+              <a href="/code/quizzes/quiz1.html">Take the Quiz</a>
+            </li>
+            <li>
+              <strong>Quiz 2: AAA Principles</strong><br>
+              <a href="/code/quizzes/quiz2.html">Take the Quiz</a>
+            </li>
+            <li>
+              <strong>Quiz 3: Active Directory Essentials</strong><br>
+              <a href="/code/quizzes/quiz3.html">Take the Quiz</a>
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </table>
   </main>
 
   <!-- Footer -->
@@ -82,4 +192,3 @@
   </footer>
 </body>
 </html>
-
