@@ -3,52 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz 1 - Results</title>
-  <link rel="stylesheet" href="../../../../styles.css">
-  <style>
-    body { background-color: #111; color: #00ff00; font-family: 'Courier New', monospace; }
-    .result-container { max-width: 600px; margin: 2rem auto; padding: 1rem; background: #222; border-radius: 8px; text-align: center; }
-    h1 { color: #00ff00; }
-    .score { font-size: 1.5rem; margin: 1rem 0; }
-    .retry { background: #00ff00; color: #000; padding: 0.8rem 1.5rem; border: none; border-radius: 8px; cursor: pointer; font-size: 1rem; }
-    .retry:hover { background: #008f00; }
-  </style>
+  <title>Quiz 1 - Question 2</title>
+  <!-- External Styles -->
+  <link rel="stylesheet" href="../../../quiz-style.css">
+  <script src="../../../quiz-script.js" defer></script>
 </head>
 <body>
-  <div class="result-container">
-    <h1>Quiz Results</h1>
-    <p class="score" id="score"></p>
-    <button class="retry" onclick="retryQuiz()">Retry Quiz</button>
+  <div class="quiz-container">
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+
+    <!-- Question Content -->
+    <h1>Question 2</h1>
+    <p>In order to authenticate user accounts against AD, what must be done to the computer first?</p>
+    <form id="question-form">
+      <label><input type="radio" name="q2" value="a"> Join it to the domain</label><br>
+      <label><input type="radio" name="q2" value="b"> Install Active Directory on the computer</label><br>
+      <label><input type="radio" name="q2" value="c"> Set up a local user account with the same username</label><br>
+      <label><input type="radio" name="q2" value="d"> Connect the computer to the internet</label><br>
+      <button type="button" onclick="saveAnswer()">Next</button>
+    </form>
   </div>
 
   <script>
-    function calculateScore() {
-      // Add all correct answers for the 3 questions
-      const answers = { 
-        q1: 'a', // Correct answer for Question 1
-        q2: 'b', // Correct answer for Question 2
-        q3: 'a'  // Correct answer for Question 3
-      };
-      let score = 0;
-      let totalQuestions = Object.keys(answers).length;
-
-      // Loop through each question and compare user answers with the correct answers
-      for (const [key, correctAnswer] of Object.entries(answers)) {
-        if (localStorage.getItem(key) === correctAnswer) {
-          score++;
-        }
+    function saveAnswer() {
+      const selected = document.querySelector('input[name="q2"]:checked');
+      if (!selected) {
+        alert("Please select an answer!");
+        return;
       }
-
-      // Update the score text
-      document.getElementById('score').textContent = `You scored ${score} out of ${totalQuestions}!`;
+      localStorage.setItem('q2', selected.value); // Save answer to localStorage
+      window.location.href = 'q3.html'; // Redirect to the next question
     }
-
-    function retryQuiz() {
-      localStorage.clear(); // Clear all saved answers
-      window.location.href = 'q1.html'; // Redirect to the first question
-    }
-
-    calculateScore(); // Calculate and display the score
   </script>
 </body>
 </html>
