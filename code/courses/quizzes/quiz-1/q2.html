@@ -29,11 +29,14 @@
       <label><input type="radio" name="q2" value="b"> Install Active Directory on the computer</label><br>
       <label><input type="radio" name="q2" value="c"> Set up a local user account with the same username</label><br>
       <label><input type="radio" name="q2" value="d"> Connect the computer to the internet</label><br>
-      <button type="button" onclick="nextQuestion('q2', correctAnswers, 'q3.html')">Next</button>
+      <button type="button" id="check-answer" onclick="checkAnswer('q2', correctAnswers)">Check Answer</button>
     </form>
 
     <!-- Feedback Section -->
     <p id="feedback" style="margin-top: 1rem; font-size: 1.2rem;"></p>
+
+    <!-- Next Button (Initially Disabled) -->
+    <button id="next-button" onclick="goToNextPage('q3.html')" disabled>Next</button>
   </div>
 </body>
 </html>
