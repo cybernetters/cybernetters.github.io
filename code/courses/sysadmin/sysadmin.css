@@ -74,7 +74,7 @@
 
 /* Styling for Tooltip Icon */
 .tooltip img {
-  width: 4px; /* Adjust to make icon smaller or bigger */
+  width: 16px; /* Adjust to make icon smaller or bigger */
   height: auto; /* Maintain aspect ratio */
   vertical-align: middle; /* Align with text */
   cursor: pointer; /* Make it look clickable */
