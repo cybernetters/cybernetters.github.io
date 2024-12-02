@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Unit 1: Introduction to Directory Services</title>
-  <link rel="stylesheet" href="../../../styles.css">  <!-- Global Styles -->
+  <link rel="stylesheet" href="../../../styles.css"> <!-- Global Styles -->
   <style>
     /* Page Styling */
     body {
@@ -68,19 +68,35 @@
       color: #fff;
     }
 
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
-      height: 0;
+    /* Video Thumbnail Styling */
+    .video-thumbnail {
+      display: inline-block;
+      background-color: #333;
+      border-radius: 8px;
       overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+      width: 150px;
+      height: 100px;
+      position: relative;
+      cursor: pointer;
+      text-align: center;
     }
 
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
+    .video-thumbnail img {
       width: 100%;
       height: 100%;
+      object-fit: cover;
+    }
+
+    .video-thumbnail p {
+      position: absolute;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #00ff00;
+      font-size: 0.8rem;
+      padding: 5px;
+      margin: 0;
+      width: 100%;
     }
 
     /* Responsive Design */
@@ -140,20 +156,22 @@
           <h3>Videos & Resources</h3>
           <ul>
             <li>
-              <strong>Video 1: Introduction to Directory Services</strong>
-              <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Introduction to Directory Services"></iframe>
-              </div>
+              <strong>Video: Active Directory Basics</strong>
+              <a href="https://www.youtube.com/watch?v=nRltqZ-bq3U" target="_blank" class="video-thumbnail">
+                <img src="../../../images/active-directory-thumbnail.png" alt="Active Directory Basics">
+                <p>Active Directory Basics</p>
+              </a>
+            </li>
+            <li>
+              <strong>Video: Directory Services</strong>
+              <a href="https://www.youtube.com/watch?v=1Vik-cSLDLc" target="_blank" class="video-thumbnail">
+                <img src="../../../images/directory-services-thumbnail.png" alt="Directory Services">
+                <p>Directory Services</p>
+              </a>
             </li>
             <li>
               <strong>Resource: AAA Fundamentals</strong>
               <a href="/code/resources/aaa-fundamentals.pdf" target="_blank">Download AAA PDF</a>
-            </li>
-            <li>
-              <strong>Video 2: Directory Service Basics</strong>
-              <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Directory Service Basics"></iframe>
-              </div>
             </li>
             <li>
               <strong>Resource: Understanding Active Directory</strong>
