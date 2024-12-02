@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="../../../../styles.css"> <!-- Global CSS -->
   <link rel="stylesheet" href="quiz-style.css"> <!-- Quiz-Specific CSS -->
   <script src="quiz-script.js" defer></script> <!-- Quiz-Specific JS -->
+  <script>
+    // Define correct answers and total questions for this quiz
+    const correctAnswers = { q1: 'a', q2: 'a', q3: 'a' }; // Pass quiz-specific answers
+    const totalQuestions = 3; // Total number of questions in this quiz
+  </script>
 </head>
 <body>
   <div class="quiz-container">
@@ -24,20 +29,11 @@
       <label><input type="radio" name="q2" value="b"> Install Active Directory on the computer</label><br>
       <label><input type="radio" name="q2" value="c"> Set up a local user account with the same username</label><br>
       <label><input type="radio" name="q2" value="d"> Connect the computer to the internet</label><br>
-      <button type="button" onclick="saveAnswer()">Next</button>
+      <button type="button" onclick="nextQuestion('q2', correctAnswers, 'q3.html')">Next</button>
     </form>
-  </div>
 
-  <script>
-    function saveAnswer() {
-      const selected = document.querySelector('input[name="q2"]:checked');
-      if (!selected) {
-        alert("Please select an answer!");
-        return;
-      }
-      localStorage.setItem('q2', selected.value); // Save answer to localStorage
-      window.location.href = 'q3.html'; // Redirect to the next question
-    }
-  </script>
+    <!-- Feedback Section -->
+    <p id="feedback" style="margin-top: 1rem; font-size: 1.2rem;"></p>
+  </div>
 </body>
 </html>
