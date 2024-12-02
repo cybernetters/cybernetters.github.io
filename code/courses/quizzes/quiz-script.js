@@ -15,14 +15,16 @@ function initializeProgressBar() {
   setProgressBar(currentQuestion, totalQuestions);
 }
 
-// Provide Feedback and Save Answer
-function provideFeedback(questionId, correctAnswers) {
+// Provide Feedback and Enable "Next"
+function checkAnswer(questionId, correctAnswers) {
   const selected = document.querySelector(`input[name="${questionId}"]:checked`);
   const feedbackElement = document.getElementById('feedback');
+  const nextButton = document.getElementById('next-button');
+
   if (!selected) {
     feedbackElement.textContent = "Please select an answer!";
     feedbackElement.style.color = "yellow";
-    return false;
+    return; // Exit if no answer is selected
   }
 
   const userAnswer = selected.value;
@@ -32,23 +34,22 @@ function provideFeedback(questionId, correctAnswers) {
     feedbackElement.textContent = "Correct! Well done!";
     feedbackElement.style.color = "lime";
   } else {
-    feedbackElement.textContent = "Incorrect. Review the material and try again.";
+    feedbackElement.textContent = "Incorrect. The correct answer is A preference.";
     feedbackElement.style.color = "red";
   }
 
-  // Save the user's answer
+  // Save the user's answer to localStorage
   localStorage.setItem(questionId, userAnswer);
-  return true;
+
+  // Enable the "Next" button
+  nextButton.disabled = false;
 }
 
-// Handle the "Next" Button Click
-function nextQuestion(questionId, correctAnswers, nextPage) {
-  if (provideFeedback(questionId, correctAnswers)) {
-    setTimeout(() => {
-      window.location.href = nextPage; // Redirect to the next question
-    }, 2000); // Delay to show feedback
-  }
+// Handle Navigation on "Next"
+function goToNextPage(nextPage) {
+  window.location.href = nextPage; // Navigate to the next page
 }
 
 // Initialize Progress Bar on Page Load
 document.addEventListener('DOMContentLoaded', initializeProgressBar);
+
