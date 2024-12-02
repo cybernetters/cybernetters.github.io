@@ -29,19 +29,14 @@
       <label><input type="radio" name="q3" value="b"> A policy</label><br>
       <label><input type="radio" name="q3" value="c"> A registry key</label><br>
       <label><input type="radio" name="q3" value="d"> A group membership</label><br>
-      <button type="button" onclick="nextQuestion('q3', correctAnswers, 'results.html')">Finish</button>
+      <button type="button" id="check-answer" onclick="checkAnswer('q3', correctAnswers)">Check Answer</button>
     </form>
 
     <!-- Feedback Section -->
     <p id="feedback" style="margin-top: 1rem; font-size: 1.2rem;"></p>
-  </div>
-</body>
-</html>
 
-      }
-      localStorage.setItem('q3', selected.value); // Save answer to localStorage
-      window.location.href = 'results.html'; // Redirect to the results page
-    }
-  </script>
+    <!-- Next Button (Disabled Initially) -->
+    <button id="next-button" onclick="goToNextPage('results.html')" disabled>Finish</button>
+  </div>
 </body>
 </html>
