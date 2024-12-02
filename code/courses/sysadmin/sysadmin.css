@@ -1,4 +1,70 @@
 /* =======================================
+   Course Header
+======================================== */
+.course-header {
+  background-image: url('/images/sysadmin-bg.webp'); /* Add a relevant background image */
+  background-size: cover;
+  background-position: center;
+  color: #00ff00; /* Neon green color */
+  text-align: center;
+  padding: 4rem 1rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.course-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+  z-index: 1;
+}
+
+.course-header h1 {
+  font-size: 3rem; /* Increase the font size for emphasis */
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Neon glow effect */
+  position: relative;
+  z-index: 2; /* Ensure text appears above the overlay */
+  margin-bottom: 1rem;
+}
+
+.course-header p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+.course-header .cta {
+  margin-top: 1.5rem;
+}
+
+.course-header .cta a {
+  display: inline-block;
+  background-color: #00ff00;
+  color: black;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px #00ff00;
+}
+
+.course-header .cta a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #00ff00;
+}
+
+
+/* =======================================
    Units Section
 ======================================== */
 .units {
@@ -9,8 +75,9 @@
 }
 
 .units .unit {
-  background-image: url('/images/sysadmin-bg.webp'); /* Add the background image here */
-  background-size: 100% auto; /* Adjust the background size to be 50% of the width, maintaining aspect ratio */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url('/images/sysadmin-bg.webp'); /* Add the image */
+  background-size: 100% auto; 
   background-position: center;
   background-repeat: no-repeat;
   color: white;
