@@ -29,11 +29,14 @@
       <label><input type="radio" name="q1" value="b"> By random allocation of user accounts</label><br>
       <label><input type="radio" name="q1" value="c"> By IP addresses and subnets</label><br>
       <label><input type="radio" name="q1" value="d"> By alphabetical sorting of usernames</label><br>
-      <button type="button" onclick="nextQuestion('q1', correctAnswers, 'q2.html')">Next</button>
+      <button type="button" id="check-answer" onclick="checkAnswer('q1', correctAnswers)">Check Answer</button>
     </form>
 
     <!-- Feedback Section -->
     <p id="feedback" style="margin-top: 1rem; font-size: 1.2rem;"></p>
+
+    <!-- Next Button (Initially Disabled) -->
+    <button id="next-button" onclick="goToNextPage('q2.html')" disabled>Next</button>
   </div>
 </body>
 </html>
