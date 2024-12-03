@@ -529,188 +529,189 @@ const questionBank = [
   
   ];
   
-  // Additional Multiple Choice Questions
-  questionBank.push(
-    {
-      question: "What is the purpose of a Directory System Agent (DSA) in X.500 directories?",
-      answers: [
-        { text: "To authenticate users across the directory", correct: false },
-        { text: "To provide an interface for applications to query directory data", correct: false },
-        { text: "To facilitate communication between directory services", correct: true },
-        { text: "To act as a schema management tool", correct: false },
-        { text: "To enforce hierarchical permissions", correct: false }
-      ]
-    },
-    {
-      question: "Which of the following is an example of an object attribute in a directory?",
-      answers: [
-        { text: "Container name", correct: false },
-        { text: "Printer paper size", correct: true },
-        { text: "Distinguished name format", correct: false },
-        { text: "Organizational unit location", correct: false },
-        { text: "Directory protocol", correct: false }
-      ]
-    },
-    {
-      question: "What directory component is typically used to group users and resources based on department or function?",
-      answers: [
-        { text: "Leaf objects", correct: false },
-        { text: "Organizational Units (OUs)", correct: true },
-        { text: "Schema definitions", correct: false },
-        { text: "Distinguished names", correct: false },
-        { text: "Namespace roots", correct: false }
-      ]
-    },
-    {
-      question: "Which feature is essential for enabling directory-based single sign-on (SSO)?",
-      answers: [
-        { text: "Integration with LDAP over UDP", correct: false },
-        { text: "Directory schema customization", correct: false },
-        { text: "Centralized authentication protocols", correct: true },
-        { text: "Pruning and grafting of directory objects", correct: false },
-        { text: "Use of alias objects", correct: false }
-      ]
-    },
-    {
-      question: "In LDAP operations, which function is used to verify directory credentials?",
-      answers: [
-        { text: "Modify", correct: false },
-        { text: "Search", correct: false },
-        { text: "Compare", correct: false },
-        { text: "Bind", correct: true },
-        { text: "Unbind", correct: false }
-      ]
-    }
-  );
-  
-  // Additional True/False Questions
-  questionBank.push(
-    {
-      question: "Directory services allow the use of alias objects to reference other entries in the directory.",
-      answers: [
-        { text: "True", correct: true },
-        { text: "False", correct: false }
-      ]
-    },
-    {
-      question: "An organizational unit (OU) in a directory can contain other OUs but cannot contain leaf objects.",
-      answers: [
-        { text: "True", correct: false },
-        { text: "False", correct: true }
-      ]
-    },
-    {
-      question: "The X.500 directory standard introduced the concepts of a tree, leaf objects, and distinguished names.",
-      answers: [
-        { text: "True", correct: true },
-        { text: "False", correct: false }
-      ]
-    },
-    {
-      question: "Pruning and grafting allow administrators to duplicate objects in multiple directory locations.",
-      answers: [
-        { text: "True", correct: false },
-        { text: "False", correct: true }
-      ]
-    },
-    {
-      question: "Attributes such as location or department can help directories organize and manage objects effectively.",
-      answers: [
-        { text: "True", correct: true },
-        { text: "False", correct: false }
-      ]
-    }
-  );
-  
-  // True/False Questions
-  questionBank.push(
-    {
-      question: "LDAP uses TCP port 636 for secure communication.",
-      answers: [
-        { text: "True", correct: true },
-        { text: "False", correct: false }
-      ]
-    },
-    {
-      question: "A directory schema defines both the attributes and the hierarchical structure of objects.",
-      answers: [
-        { text: "True", correct: true },
-        { text: "False", correct: false }
-      ]
-    },
-    {
-      question: "Alias objects in a directory can point to other directory entries without storing their data.",
-      answers: [
-        { text: "True", correct: true },
-        { text: "False", correct: false }
-      ]
-    },
-    {
-      question: "Pruning and grafting in a directory can only move individual users, not entire groups or sections.",
-      answers: [
-        { text: "True", correct: false },
-        { text: "False", correct: true }
-      ]
-    },
-    {
-      question: "Organizational units (OUs) can be nested within other OUs to reflect a hierarchy.",
-      answers: [
-        { text: "True", correct: true },
-        { text: "False", correct: false }
-      ]
-    }
-  );
-  
-  // Multiple Choice Questions
-  questionBank.push(
-    {
-      question: "What is a primary benefit of using a hierarchical structure in directories?",
-      answers: [
-        { text: "Reduces administrative effort by simplifying permissions", correct: false },
-        { text: "Supports flat and linear naming conventions", correct: false },
-        { text: "Provides a single logical view of network resources", correct: true },
-        { text: "Limits the scope of directories to small organizations", correct: false },
-        { text: "Ensures that objects cannot inherit attributes", correct: false }
-      ]
-    },
-    {
-      question: "Which of the following is an example of an alias object in a directory?",
-      answers: [
-        { text: "A reference to a user account with full data storage", correct: false },
-        { text: "A printer object pointing to another printer in a different location", correct: true },
-        { text: "A container object used to group organizational units", correct: false },
-        { text: "A schema definition for leaf objects", correct: false },
-        { text: "A distinguished name with a context", correct: false }
-      ]
-    },
-    {
-      question: "Which operation is NOT supported by LDAP?",
-      answers: [
-        { text: "Bind", correct: false },
-        { text: "Search", correct: false },
-        { text: "Delete", correct: false },
-        { text: "Print", correct: true },
-        { text: "Modify", correct: false }
-      ]
-    },
-    {
-      question: "In directory terminology, what does 'pruning' refer to?",
-      answers: [
-        { text: "Adding new objects to a container", correct: false },
-        { text: "Moving objects from one directory location to another", correct: true },
-        { text: "Deleting an entire directory structure", correct: false },
-        { text: "Assigning permissions to an organizational unit", correct: false },
-        { text: "Removing schema definitions from leaf objects", correct: false }
-      ]
-    },
-    {
-      question: "Which naming convention example reflects an Absolute Distinguished Name (DN) using LDAP?",
-      answers: [
-        { text: "cn=John Doe, ou=Sales, o=Company, c=US", correct: true },
-        { text: "cn=John, ou=Sales relative to o=Company", correct: false },
-        { text: ".Sales.JohnDoe", correct: false },
-        { text: "context=Sales.Company.US.John", correct: false },
-        { text: "Sales.o=Company", correct: false }
-      ]
-    }
-  );
+// Additional Multiple Choice Questions
+questionBank.push(
+  {
+    question: "What is the purpose of a Directory System Agent (DSA) in X.500 directories?",
+    answers: [
+      { text: "To authenticate users across the directory", correct: false },
+      { text: "To provide an interface for applications to query directory data", correct: false },
+      { text: "To facilitate communication between directory services", correct: true },
+      { text: "To act as a schema management tool", correct: false },
+      { text: "To enforce hierarchical permissions", correct: false }
+    ]
+  },
+  {
+    question: "Which of the following is an example of an object attribute in a directory?",
+    answers: [
+      { text: "Container name", correct: false },
+      { text: "Printer paper size", correct: true },
+      { text: "Distinguished name format", correct: false },
+      { text: "Organizational unit location", correct: false },
+      { text: "Directory protocol", correct: false }
+    ]
+  },
+  {
+    question: "What directory component is typically used to group users and resources based on department or function?",
+    answers: [
+      { text: "Leaf objects", correct: false },
+      { text: "Organizational Units (OUs)", correct: true },
+      { text: "Schema definitions", correct: false },
+      { text: "Distinguished names", correct: false },
+      { text: "Namespace roots", correct: false }
+    ]
+  },
+  {
+    question: "Which feature is essential for enabling directory-based single sign-on (SSO)?",
+    answers: [
+      { text: "Integration with LDAP over UDP", correct: false },
+      { text: "Directory schema customization", correct: false },
+      { text: "Centralized authentication protocols", correct: true },
+      { text: "Pruning and grafting of directory objects", correct: false },
+      { text: "Use of alias objects", correct: false }
+    ]
+  },
+  {
+    question: "In LDAP operations, which function is used to verify directory credentials?",
+    answers: [
+      { text: "Modify", correct: false },
+      { text: "Search", correct: false },
+      { text: "Compare", correct: false },
+      { text: "Bind", correct: true },
+      { text: "Unbind", correct: false }
+    ]
+  }
+);
+
+// Additional True/False Questions
+questionBank.push(
+  {
+    question: "Directory services allow the use of alias objects to reference other entries in the directory.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false }
+    ]
+  },
+  {
+    question: "An organizational unit (OU) in a directory can contain other OUs but cannot contain leaf objects.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true }
+    ]
+  },
+  {
+    question: "The X.500 directory standard introduced the concepts of a tree, leaf objects, and distinguished names.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false }
+    ]
+  },
+  {
+    question: "Pruning and grafting allow administrators to duplicate objects in multiple directory locations.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true }
+    ]
+  },
+  {
+    question: "Attributes such as location or department can help directories organize and manage objects effectively.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false }
+    ]
+  }
+);
+
+// True/False Questions
+questionBank.push(
+  {
+    question: "LDAP uses TCP port 636 for secure communication.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false }
+    ]
+  },
+  {
+    question: "A directory schema defines both the attributes and the hierarchical structure of objects.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false }
+    ]
+  },
+  {
+    question: "Alias objects in a directory can point to other directory entries without storing their data.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false }
+    ]
+  },
+  {
+    question: "Pruning and grafting in a directory can only move individual users, not entire groups or sections.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true }
+    ]
+  },
+  {
+    question: "Organizational units (OUs) can be nested within other OUs to reflect a hierarchy.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false }
+    ]
+  }
+);
+
+// Multiple Choice Questions
+questionBank.push(
+  {
+    question: "What is a primary benefit of using a hierarchical structure in directories?",
+    answers: [
+      { text: "Reduces administrative effort by simplifying permissions", correct: false },
+      { text: "Supports flat and linear naming conventions", correct: false },
+      { text: "Provides a single logical view of network resources", correct: true },
+      { text: "Limits the scope of directories to small organizations", correct: false },
+      { text: "Ensures that objects cannot inherit attributes", correct: false }
+    ]
+  },
+  {
+    question: "Which of the following is an example of an alias object in a directory?",
+    answers: [
+      { text: "A reference to a user account with full data storage", correct: false },
+      { text: "A printer object pointing to another printer in a different location", correct: true },
+      { text: "A container object used to group organizational units", correct: false },
+      { text: "A schema definition for leaf objects", correct: false },
+      { text: "A distinguished name with a context", correct: false }
+    ]
+  },
+  {
+    question: "Which operation is NOT supported by LDAP?",
+    answers: [
+      { text: "Bind", correct: false },
+      { text: "Search", correct: false },
+      { text: "Delete", correct: false },
+      { text: "Print", correct: true },
+      { text: "Modify", correct: false }
+    ]
+  },
+  {
+    question: "In directory terminology, what does 'pruning' refer to?",
+    answers: [
+      { text: "Adding new objects to a container", correct: false },
+      { text: "Moving objects from one directory location to another", correct: true },
+      { text: "Deleting an entire directory structure", correct: false },
+      { text: "Assigning permissions to an organizational unit", correct: false },
+      { text: "Removing schema definitions from leaf objects", correct: false }
+    ]
+  },
+  {
+    question: "Which naming convention example reflects an Absolute Distinguished Name (DN) using LDAP?",
+    answers: [
+      { text: "cn=John Doe, ou=Sales, o=Company, c=US", correct: true },
+      { text: "cn=John, ou=Sales relative to o=Company", correct: false },
+      { text: ".Sales.JohnDoe", correct: false },
+      { text: "context=Sales.Company.US.John", correct: false },
+      { text: "Sales.o=Company", correct: false }
+    ]
+  }
+);
+
