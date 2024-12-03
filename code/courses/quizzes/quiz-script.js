@@ -125,6 +125,7 @@ function goToNextQuestion() {
     feedback.textContent = `Correct! You earned ${points} points. Total Score: ${userScore}`;
     feedback.style.color = "lime";
   } else {
+    userScore = points
     feedback.textContent = "Incorrect. Try again!";
     feedback.style.color = "red";
   }
