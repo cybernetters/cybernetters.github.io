@@ -78,6 +78,7 @@ function checkAnswer() {
   const answerButton = document.getElementById("check-answer-button");
   const nextButton = document.getElementById("next-button");
 
+  // Check if an answer is selected
   if (!selected) {
     feedback.textContent = "Please select an answer!";
     feedback.style.color = "yellow";
@@ -89,8 +90,8 @@ function checkAnswer() {
 
   // Retrieve the correct answer's label text
   const correctAnswerLabel = Array.from(document.querySelectorAll('input[name="answer"]'))
-    .find(input => input.value === "true")
-    ?.parentNode.textContent.trim();
+    .find(input => input.value === "true") // Find the correct input
+    ?.parentNode.textContent.trim(); // Get the label text associated with the correct input
 
   // Scoring logic
   if (isCorrect) {
@@ -111,14 +112,15 @@ function checkAnswer() {
   // Update score and accuracy display dynamically
   updateScoreDisplay();
 
-  // Enable "Next" button
-  answerButton.disabled = true;
-  answerButton.style.display = "none";
-  nextButton.style.display = "block";
+  // Enable "Next" button and disable "Submit" button
+  answerButton.disabled = true; // Disable the "Submit Answer" button
+  answerButton.style.display = "none"; // Hide the "Submit Answer" button
+  nextButton.style.display = "block"; // Show the "Next Question" button
 
   // Save progress to local storage
   localStorage.setItem("quizScore", userScore);
 }
+
 
 
 
