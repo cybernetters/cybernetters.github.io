@@ -126,6 +126,7 @@ function checkAnswer() {
 function goToNextQuestion() {
   const selected = document.querySelector('input[name="answer"]:checked');
   const feedback = document.getElementById("feedback");
+  const correctAnswerElement = document.getElementById("correct-answer"); // Select the correct answer element
 
   // Check if an answer is selected
   if (!selected) {
@@ -143,6 +144,10 @@ function goToNextQuestion() {
   //  feedback.textContent = "Incorrect. Try again!";
   //  feedback.style.color = "red";
   //}
+  
+  // Reset feedback and correct answer display
+  feedback.textContent = "";
+  correctAnswerElement.textContent = ""; // Clear the correct answer display
 
   //// Update score and progress
   //updateScoreDisplay();
@@ -156,7 +161,6 @@ function goToNextQuestion() {
     endQuiz(); // End the quiz if no more questions remain
   }
 }
-
 // Update progress bar
 function updateProgressBar() {
   const progress = ((currentQuestionIndex + 1) / questionBank.length) * 100;
