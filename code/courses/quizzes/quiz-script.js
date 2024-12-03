@@ -74,23 +74,23 @@ function calculatePenalty(currentScore) {
 function checkAnswer() {
   const selected = document.querySelector('input[name="answer"]:checked'); // Get selected answer
   const feedback = document.getElementById("feedback");
+  const correctAnswerElement = document.getElementById("correct-answer");
   const answerButton = document.getElementById("check-answer-button");
   const nextButton = document.getElementById("next-button");
 
-  // Check if an answer is selected
   if (!selected) {
     feedback.textContent = "Please select an answer!";
     feedback.style.color = "yellow";
     return; // Do not proceed if no answer is selected
   }
 
+  const isCorrect = selected.value === "true"; // Determine if the selected answer is correct
+  totalAnswersCount++; // Increment the total number of answers
+
   // Retrieve the correct answer's label text
   const correctAnswerLabel = Array.from(document.querySelectorAll('input[name="answer"]'))
     .find(input => input.value === "true")
     ?.parentNode.textContent.trim();
-
-  const isCorrect = selected.value === "true"; // Determine if the selected answer is correct
-  totalAnswersCount++; // Increment the total number of answers
 
   // Scoring logic
   if (isCorrect) {
@@ -99,17 +99,19 @@ function checkAnswer() {
     correctAnswersCount++; // Increment the count of correct answers
     feedback.textContent = `✅ Correct! You earned ${points} points. Total Score: ${userScore}`;
     feedback.style.color = "lime"; // Display feedback in green
+    correctAnswerElement.textContent = ""; // Clear correct answer feedback when the user is correct
   } else {
     const penalty = calculatePenalty(userScore); // Dynamically calculate penalty for wrong answers
     userScore = Math.max(0, userScore - penalty); // Subtract points and ensure score doesn't go below 0
-    feedback.innerHTML = `❌ Incorrect! You lost ${penalty} points. Total Score: ${userScore}<br>Correct Answer: ${correctAnswerLabel}`;
+    feedback.textContent = `❌ Incorrect! You lost ${penalty} points. Total Score: ${userScore}`;
     feedback.style.color = "red"; // Display feedback in red
+    correctAnswerElement.textContent = `Correct Answer: ${correctAnswerLabel}`; // Display the correct answer
   }
 
   // Update score and accuracy display dynamically
   updateScoreDisplay();
 
-  // Enable the "Next" button
+  // Enable "Next" button
   answerButton.disabled = true;
   answerButton.style.display = "none";
   nextButton.style.display = "block";
