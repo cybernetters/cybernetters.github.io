@@ -1,64 +1,86 @@
-// Question Bank
-const questionBank = [
-  {
-    question: "How are things organized in a directory server?",
-    answers: [
-      { text: "By a hierarchical model of objects and containers", correct: true },
-      { text: "By random allocation of user accounts", correct: false },
-      { text: "By IP addresses and subnets", correct: false },
-      { text: "By alphabetical sorting of usernames", correct: false }
-    ]
-  },
-  {
-    question: "In order to authenticate user accounts against AD, what must be done to the computer first?",
-    answers: [
-      { text: "Join it to the domain", correct: true },
-      { text: "Install Active Directory on the computer", correct: false },
-      { text: "Set up a local user account with the same username", correct: false },
-      { text: "Connect the computer to the internet", correct: false }
-    ]
-  },
-  {
-    question: "What would you use if you wanted to set a default wallpaper background for all machines in your company, but still wanted users to be able to set their own wallpaper?",
-    answers: [
-      { text: "A preference", correct: true },
-      { text: "A policy", correct: false },
-      { text: "A registry key", correct: false },
-      { text: "A group membership", correct: false }
-    ]
-  },
-  // Add more questions here...
-];
+let userScore = 0; // Track the user's current score
+let askedQuestions = []; // Track already-asked questions
 
-let selectedQuestions = []; // To store randomized questions
-const numberOfQuestions = 3; // Number of questions per quiz
+// Function to get a random question that hasn't been asked
+function getRandomQuestion() {
+  const unaskedQuestions = questionBank.filter((_, index) => !askedQuestions.includes(index));
+  if (unaskedQuestions.length === 0) {
+    // If all questions have been asked, reset the pool
+    askedQuestions = [];
+    return getRandomQuestion(); // Get another random question
+  }
 
-// Randomly shuffle and pick questions for this session
-function getRandomQuestions() {
-  const shuffled = questionBank.sort(() => Math.random() - 0.5);
-  selectedQuestions = shuffled.slice(0, numberOfQuestions);
+  // Randomly select a question
+  const randomIndex = Math.floor(Math.random() * unaskedQuestions.length);
+  const selectedQuestionIndex = questionBank.indexOf(unaskedQuestions[randomIndex]);
+  askedQuestions.push(selectedQuestionIndex);
+  return questionBank[selectedQuestionIndex];
 }
 
-// Display a question based on its index
-function displayQuestion(index) {
+// Function to display a question
+function displayQuestion() {
+  const question = getRandomQuestion();
   const questionContainer = document.getElementById("question-container");
-  const question = selectedQuestions[index];
-  
+
   // Display the question text
   questionContainer.querySelector(".question-text").textContent = question.question;
 
   // Display answers as radio buttons
   const answerContainer = questionContainer.querySelector(".answers");
   answerContainer.innerHTML = ""; // Clear previous answers
-  question.answers.forEach((answer, i) => {
+  question.answers.forEach((answer) => {
     const label = document.createElement("label");
     label.innerHTML = `<input type="radio" name="answer" value="${answer.correct}"> ${answer.text}`;
     answerContainer.appendChild(label);
   });
+
+  // Clear feedback and disable "Next" button
+  document.getElementById("feedback").textContent = "";
+  document.getElementById("next-button").disabled = true;
 }
 
-// Initialize randomized questions and display the first one
-document.addEventListener("DOMContentLoaded", () => {
-  getRandomQuestions(); // Get randomized questions
-  displayQuestion(0); // Show the first question
-});
+// Calculate diminishing points
+function calculatePoints(currentScore) {
+  const maxScore = 100; // Maximum score
+  const basePoints = 10; // Base points for a correct answer
+  const diminishingFactor = 1 - currentScore / maxScore;
+  return Math.ceil(basePoints * diminishingFactor);
+}
+
+// Check the user's answer
+function checkAnswer() {
+  const selected = document.querySelector('input[name="answer"]:checked');
+  const feedback = document.getElementById("feedback");
+  const nextButton = document.getElementById("next-button");
+
+  if (!selected) {
+    feedback.textContent = "Please select an answer!";
+    feedback.style.color = "yellow";
+    return;
+  }
+
+  const isCorrect = selected.value === "true";
+  if (isCorrect) {
+    const points = calculatePoints(userScore);
+    userScore += points;
+    feedback.textContent = `Correct! You earned ${points} points. Total Score: ${userScore}`;
+    feedback.style.color = "lime";
+  } else {
+    feedback.textContent = "Incorrect. Try again!";
+    feedback.style.color = "red";
+  }
+
+  // Enable the "Next" button
+  nextButton.disabled = false;
+
+  // Save progress
+  localStorage.setItem("quizScore", userScore);
+}
+
+// End the quiz and redirect to the results page
+function endQuiz() {
+  window.location.href = "results.html"; // Redirect to results page
+}
+
+// Initialize the first question
+document.addEventListener("DOMContentLoaded", displayQuestion);
