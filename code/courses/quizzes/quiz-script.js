@@ -71,7 +71,7 @@ function calculatePenalty(currentScore) {
 function checkAnswer() {
   const selected = document.querySelector('input[name="answer"]:checked'); // Get selected answer
   const feedback = document.getElementById("feedback");
-  const nextButton = document.getElementById("check-answer-button");
+  const answerButton = document.getElementById("check-answer-button");
   const nextButton = document.getElementById("next-button");
 
   // Check if an answer is selected
@@ -100,7 +100,7 @@ function checkAnswer() {
   updateScoreDisplay();
 
   // Enable the "Next" button
-  check-answer-button.disabled = true;
+  answerButton.disabled = true;
   nextButton.disabled = false;
 
   // Save progress to local storage
@@ -112,9 +112,6 @@ function checkAnswer() {
 function goToNextQuestion() {
   const selected = document.querySelector('input[name="answer"]:checked');
   const feedback = document.getElementById("feedback");
-  const nextButton = document.getElementById("check-answer-button");
-  const nextButton = document.getElementById("next-button");
-
 
   // Check if an answer is selected
   if (!selected) {
