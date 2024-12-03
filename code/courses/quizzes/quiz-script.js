@@ -51,57 +51,59 @@ function displayQuestion() {
   updateProgressBar();
 }
 
-// Calculate diminishing points
+// Calculate diminishing points for correct answers
 function calculatePoints(currentScore) {
-  const maxScore = 100; // Maximum score
+  const maxScore = 100; // Maximum possible score
   const basePoints = 10; // Base points for a correct answer
-  const diminishingFactor = 1 - currentScore / maxScore;
+  const diminishingFactor = Math.max(0.1, 1 - currentScore / maxScore); // Ensure at least 10% scaling
   return Math.ceil(basePoints * diminishingFactor);
+}
+
+// Calculate penalty for wrong answers
+function calculatePenalty(currentScore) {
+  const penaltyFactor = 0.1; // Lose 10% of the current score
+  const penalty = Math.ceil(currentScore * penaltyFactor); // Deduct based on current score
+  return penalty > 0 ? penalty : 1; // Ensure at least 1 point is deducted
 }
 
 // Check the user's answer
 function checkAnswer() {
-  const selected = document.querySelector('input[name="answer"]:checked');
+  const selected = document.querySelector('input[name="answer"]:checked'); // Get selected answer
   const feedback = document.getElementById("feedback");
   const nextButton = document.getElementById("next-button");
 
+  // Check if an answer is selected
   if (!selected) {
     feedback.textContent = "Please select an answer!";
     feedback.style.color = "yellow";
-    return;
+    return; // Do not proceed if no answer is selected
   }
 
-  const isCorrect = selected.value === "true";
+  const isCorrect = selected.value === "true"; // Determine if the selected answer is correct
+
+  // Scoring logic
   if (isCorrect) {
-    const points = calculatePoints(userScore);
-    userScore += points;
-    feedback.textContent = `Correct! You earned ${points} points. Total Score: ${userScore}`;
-    feedback.style.color = "lime";
+    const points = calculatePoints(userScore); // Dynamically calculate points for correct answers
+    userScore += points; // Add points to the user's score
+    feedback.textContent = `✅ Correct! You earned ${points} points. Total Score: ${userScore}`;
+    feedback.style.color = "lime"; // Display feedback in green
   } else {
-    feedback.textContent = "Incorrect. Try again!";
-    feedback.style.color = "red";
+    const penalty = calculatePenalty(userScore); // Dynamically calculate penalty for wrong answers
+    userScore = Math.max(0, userScore - penalty); // Subtract points and ensure score doesn't go below 0
+    feedback.textContent = `❌ Incorrect! You lost ${penalty} points. Total Score: ${userScore}`;
+    feedback.style.color = "red"; // Display feedback in red
   }
 
-  // Update score dynamically
-  document.getElementById("score-display").textContent = `Score: ${userScore}`;
+  // Update score display dynamically
+  updateScoreDisplay();
 
   // Enable the "Next" button
   nextButton.disabled = false;
 
-  // Save progress
+  // Save progress to local storage
   localStorage.setItem("quizScore", userScore);
-
-
-  // Save progress
-  localStorage.setItem("quizScore", userScore);
-
-  // Enable the "Next" button
-  document.getElementById("next-button").disabled = false;
-
-  // Update live score display
-  updateScoreDisplay();
-
 }
+
 
 // Navigate to the next question
 function goToNextQuestion() {
@@ -131,15 +133,13 @@ function goToNextQuestion() {
   updateScoreDisplay();
   localStorage.setItem("quizScore", userScore);
 
-  // Pause briefly to show feedback before moving to the next question
-  setTimeout(() => {
-    if (currentQuestionIndex < questionBank.length - 1) {
-      currentQuestionIndex++;
-      displayQuestion(); // Show the next question
-    } else {
-      endQuiz(); // End the quiz if no more questions remain
-    }
-  }, 1500); // 1.5-second delay to show feedback
+  // Move to the next question immediately
+  if (currentQuestionIndex < questionBank.length - 1) {
+    currentQuestionIndex++;
+    displayQuestion(); // Show the next question
+  } else {
+    endQuiz(); // End the quiz if no more questions remain
+  }
 }
 
 // Update progress bar
