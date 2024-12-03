@@ -63,6 +63,7 @@ function calculatePoints(currentScore) {
 function checkAnswer() {
   const selected = document.querySelector('input[name="answer"]:checked');
   const feedback = document.getElementById("feedback");
+  const nextButton = document.getElementById("next-button");
 
   if (!selected) {
     feedback.textContent = "Please select an answer!";
@@ -74,12 +75,22 @@ function checkAnswer() {
   if (isCorrect) {
     const points = calculatePoints(userScore);
     userScore += points;
-    feedback.textContent = `✅ Correct! You earned ${points} points. Total Score: ${userScore}`;
+    feedback.textContent = `Correct! You earned ${points} points. Total Score: ${userScore}`;
     feedback.style.color = "lime";
   } else {
-    feedback.textContent = "❌ Incorrect. Try again!";
+    feedback.textContent = "Incorrect. Try again!";
     feedback.style.color = "red";
   }
+
+  // Update score dynamically
+  document.getElementById("score-display").textContent = `Score: ${userScore}`;
+
+  // Enable the "Next" button
+  nextButton.disabled = false;
+
+  // Save progress
+  localStorage.setItem("quizScore", userScore);
+}
 
   // Save progress
   localStorage.setItem("quizScore", userScore);
