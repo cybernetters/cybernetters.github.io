@@ -114,8 +114,6 @@ const questionBank = [
       { text: "E. Operating User", correct: false },
     ],
   },
-  const questionBank = [
-  // True/False Questions
   {
     question: "Directory services only store information about users and computers.",
     answers: [
@@ -295,7 +293,5 @@ const questionBank = [
       { text: "E. Model and make", correct: false },
     ],
   },
-];
-
 ];
 
