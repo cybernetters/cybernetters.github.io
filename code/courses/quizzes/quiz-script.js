@@ -100,6 +100,7 @@ function checkAnswer() {
 
   // Update live score display
   updateScoreDisplay();
+
 }
 
 // Navigate to the next question
