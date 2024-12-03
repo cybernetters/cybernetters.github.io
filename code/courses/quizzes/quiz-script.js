@@ -90,7 +90,7 @@ function checkAnswer() {
 
   // Save progress
   localStorage.setItem("quizScore", userScore);
-}
+
 
   // Save progress
   localStorage.setItem("quizScore", userScore);
