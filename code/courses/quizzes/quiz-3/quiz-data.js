@@ -244,4 +244,159 @@ const questionBank = [
       { text: "E. None of the above", correct: false },
     ],
   }
+// More Multiple Choice Questions
+questionBank.push(
+  {
+    question: "What is a key feature of Organizational Units (OUs)?",
+    answers: [
+      { text: "A. Serve as a security boundary", correct: false },
+      { text: "B. Allow for delegation of control", correct: true },
+      { text: "C. Manage physical topology of the network", correct: false },
+      { text: "D. Replace domain controllers in a forest", correct: false },
+      { text: "E. Enable Kerberos-based authentication", correct: false },
+    ],
+  },
+  {
+    question: "How does replication differ between sites in Active Directory?",
+    answers: [
+      { text: "A. It uses DNS records to prioritize servers.", correct: false },
+      { text: "B. It happens instantaneously between domain controllers.", correct: false },
+      { text: "C. It occurs within a timeframe of 15–180 minutes.", correct: true },
+      { text: "D. It is managed through the Group Policy Editor.", correct: false },
+      { text: "E. None of the above.", correct: false },
+    ],
+  },
+  {
+    question: "What is the purpose of transitive trusts in a forest?",
+    answers: [
+      { text: "A. They manage replication schedules between domain controllers.", correct: false },
+      { text: "B. They enable cross-domain authentication within the forest.", correct: true },
+      { text: "C. They prevent unauthorized access to global catalogs.", correct: false },
+      { text: "D. They are used for defining object permissions.", correct: false },
+      { text: "E. They manage schema updates across the forest.", correct: false },
+    ],
+  },
+  {
+    question: "What happens when a user logs in to an Active Directory domain?",
+    answers: [
+      { text: "A. The user is authenticated using NTLM protocol.", correct: false },
+      { text: "B. The user's security token is assigned based on group memberships.", correct: true },
+      { text: "C. The login is verified by the schema.", correct: false },
+      { text: "D. Replication begins across domain controllers.", correct: false },
+      { text: "E. The domain controller extends the user’s SID.", correct: false },
+    ],
+  },
+  {
+    question: "Which of the following is required for an Active Directory Forest?",
+    answers: [
+      { text: "A. At least two domain controllers in each domain", correct: false },
+      { text: "B. One or more domains sharing a common schema", correct: true },
+      { text: "C. A physical network topology", correct: false },
+      { text: "D. All groups must be universal in scope", correct: false },
+      { text: "E. Kerberos delegation must be configured", correct: false },
+    ],
+  },
+  {
+    question: "Which of the following is NOT a default policy in Active Directory?",
+    answers: [
+      { text: "A. Default Domain Policy", correct: false },
+      { text: "B. Default Domain Controllers Policy", correct: false },
+      { text: "C. Default Group Policy Object", correct: true },
+      { text: "D. None of the above", correct: false },
+    ],
+  },
+  {
+    question: "Which protocol does Active Directory use by default for user authentication?",
+    answers: [
+      { text: "A. NTLM", correct: false },
+      { text: "B. Kerberos", correct: true },
+      { text: "C. LDAP", correct: false },
+      { text: "D. SSL", correct: false },
+      { text: "E. DNS", correct: false },
+    ],
+  },
+  {
+    question: "Which group scope allows members from any domain in the forest?",
+    answers: [
+      { text: "A. Universal Group", correct: true },
+      { text: "B. Domain Local Group", correct: false },
+      { text: "C. Global Group", correct: false },
+      { text: "D. Security Group", correct: false },
+      { text: "E. Distribution Group", correct: false },
+    ],
+  },
+  {
+    question: "What defines the physical structure of a network in Active Directory?",
+    answers: [
+      { text: "A. Domains", correct: false },
+      { text: "B. Sites", correct: true },
+      { text: "C. Organizational Units", correct: false },
+      { text: "D. Schemas", correct: false },
+      { text: "E. Group Policy", correct: false },
+    ],
+  },
+  {
+    question: "What happens if a Global Catalog server fails in a single-domain forest?",
+    answers: [
+      { text: "A. The forest loses all functionality.", correct: false },
+      { text: "B. Only password changes can propagate.", correct: false },
+      { text: "C. The domain remains fully functional.", correct: true },
+      { text: "D. Replication across sites halts.", correct: false },
+      { text: "E. Kerberos authentication fails completely.", correct: false },
+    ],
+  },
+
+  // Application-Based Multiple Choice Questions
+  {
+    question: "You are tasked with setting up a branch office for your organization. How would you define this branch office in Active Directory?",
+    answers: [
+      { text: "A. Create a new domain in the forest", correct: false },
+      { text: "B. Configure a new site for the branch office", correct: true },
+      { text: "C. Set up a separate forest for the branch office", correct: false },
+      { text: "D. Add the branch office subnet to an existing site", correct: false },
+      { text: "E. Assign the branch office as a schema master", correct: false },
+    ],
+  },
+  {
+    question: "Your organization needs to restrict access to a specific application for users in a single department. What is the best approach?",
+    answers: [
+      { text: "A. Create a security group for the department and assign permissions", correct: true },
+      { text: "B. Use the Default Domain Policy to configure restrictions", correct: false },
+      { text: "C. Configure a new schema class for the application", correct: false },
+      { text: "D. Create a new OU for the department and apply a GPO", correct: false },
+      { text: "E. Use transitive trusts to restrict access", correct: false },
+    ],
+  },
+  {
+    question: "A new application requires extending the schema in Active Directory. What must you ensure before making schema changes?",
+    answers: [
+      { text: "A. The changes are made on any domain controller", correct: false },
+      { text: "B. The Schema Master FSMO role is accessible", correct: true },
+      { text: "C. All Global Catalog servers are online", correct: false },
+      { text: "D. Group policies are updated beforehand", correct: false },
+      { text: "E. None of the above", correct: false },
+    ],
+  },
+  {
+    question: "Your domain has several domain controllers. How would you optimize replication between them?",
+    answers: [
+      { text: "A. Use Group Policy to enable replication", correct: false },
+      { text: "B. Define sites and associate subnets for controlled replication", correct: true },
+      { text: "C. Restrict replication to a single FSMO role holder", correct: false },
+      { text: "D. Disable replication for less critical domain controllers", correct: false },
+      { text: "E. Set all domain controllers as Global Catalog servers", correct: false },
+    ],
+  },
+  {
+    question: "A user is unable to access shared network resources despite being a member of the correct security group. What is the most likely issue?",
+    answers: [
+      { text: "A. The security group is a distribution group, not a security group.", correct: true },
+      { text: "B. The user’s account is not replicated across domain controllers.", correct: false },
+      { text: "C. The schema definition for the user account is incorrect.", correct: false },
+      { text: "D. The domain controller responsible for the resource is offline.", correct: false },
+      { text: "E. The site topology is misconfigured.", correct: false },
+    ],
+  }
+);
+
 ];
