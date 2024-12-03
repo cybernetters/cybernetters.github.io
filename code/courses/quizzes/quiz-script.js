@@ -118,14 +118,11 @@ function goToNextQuestion() {
   }
 
   // Validate the answer
-  const points = calculatePoints(userScore);
   const isCorrect = selected.value === "true";
   if (isCorrect) {
-    userScore += points;
     feedback.textContent = `Correct! You earned ${points} points. Total Score: ${userScore}`;
     feedback.style.color = "lime";
   } else {
-    userScore = points
     feedback.textContent = "Incorrect. Try again!";
     feedback.style.color = "red";
   }
