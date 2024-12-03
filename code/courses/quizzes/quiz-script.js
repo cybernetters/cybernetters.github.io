@@ -125,14 +125,15 @@ function checkAnswer() {
 
 // Navigate to the next question
 function goToNextQuestion() {
-  const selected = document.querySelector('input[name="answer"]:checked');
   const feedback = document.getElementById("feedback");
+  const correctAnswerElement = document.getElementById("correct-answer");
 
-  // Check if an answer is selected
+  // Check if the current question has been answered
+  const selected = document.querySelector('input[name="answer"]:checked');
   if (!selected) {
     feedback.textContent = "Please select an answer!";
     feedback.style.color = "yellow";
-    return; // Do not proceed if no answer is selected
+    return; // Stop here if no answer is selected
   }
 
   //// Validate the answer
@@ -149,14 +150,19 @@ function goToNextQuestion() {
   //updateScoreDisplay();
   //localStorage.setItem("quizScore", userScore);
 
-  // Move to the next question immediately
+  // Clear feedback and correct answer display before moving to the next question
+  feedback.textContent = "";
+  correctAnswerElement.textContent = "";
+
+  // Move to the next question if there are more remaining
   if (currentQuestionIndex < questionBank.length - 1) {
-    currentQuestionIndex++;
-    displayQuestion(); // Show the next question
+    currentQuestionIndex++; // Increment the current question index
+    displayQuestion(); // Load the next question
   } else {
     endQuiz(); // End the quiz if no more questions remain
   }
 }
+
 
 // Update progress bar
 function updateProgressBar() {
