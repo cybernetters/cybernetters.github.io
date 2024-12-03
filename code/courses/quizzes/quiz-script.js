@@ -1,5 +1,6 @@
 let userScore = 0; // Track the user's current score
 let askedQuestions = []; // Track already-asked questions
+let currentQuestionIndex = 0; // Keeps track of the current question
 
 // Function to get a random question that hasn't been asked
 function getRandomQuestion() {
@@ -37,6 +38,16 @@ function displayQuestion() {
   // Clear feedback and disable "Next" button
   document.getElementById("feedback").textContent = "";
   document.getElementById("next-button").disabled = true;
+
+  // Enable "Next" button once an answer is selected
+  document.querySelectorAll('input[name="answer"]').forEach((input) => {
+    input.addEventListener("change", () => {
+      document.getElementById("next-button").disabled = false;
+    });
+  });
+
+  // Update progress bar
+  updateProgressBar();
 }
 
 // Calculate diminishing points
@@ -51,7 +62,6 @@ function calculatePoints(currentScore) {
 function checkAnswer() {
   const selected = document.querySelector('input[name="answer"]:checked');
   const feedback = document.getElementById("feedback");
-  const nextButton = document.getElementById("next-button");
 
   if (!selected) {
     feedback.textContent = "Please select an answer!";
@@ -70,11 +80,24 @@ function checkAnswer() {
     feedback.style.color = "red";
   }
 
-  // Enable the "Next" button
-  nextButton.disabled = false;
-
   // Save progress
   localStorage.setItem("quizScore", userScore);
+}
+
+// Navigate to the next question
+function goToNextQuestion() {
+  if (currentQuestionIndex < questionBank.length - 1) {
+    currentQuestionIndex++;
+    displayQuestion(); // Show the next question
+  } else {
+    endQuiz(); // End the quiz if no more questions remain
+  }
+}
+
+// Update progress bar
+function updateProgressBar() {
+  const progress = ((currentQuestionIndex + 1) / questionBank.length) * 100;
+  document.querySelector(".progress-bar").style.width = `${progress}%`;
 }
 
 // End the quiz and redirect to the results page
@@ -82,5 +105,22 @@ function endQuiz() {
   window.location.href = "results.html"; // Redirect to results page
 }
 
+// Save quiz progress to localStorage
+function saveProgress() {
+  localStorage.setItem("quizScore", userScore);
+  localStorage.setItem("currentQuestionIndex", currentQuestionIndex);
+  localStorage.setItem("askedQuestions", JSON.stringify(askedQuestions));
+}
+
+// Load quiz progress from localStorage
+function loadProgress() {
+  userScore = parseInt(localStorage.getItem("quizScore")) || 0;
+  currentQuestionIndex = parseInt(localStorage.getItem("currentQuestionIndex")) || 0;
+  askedQuestions = JSON.parse(localStorage.getItem("askedQuestions")) || [];
+}
+
 // Initialize the first question
-document.addEventListener("DOMContentLoaded", displayQuestion);
+document.addEventListener("DOMContentLoaded", () => {
+  loadProgress();
+  displayQuestion();
+});
