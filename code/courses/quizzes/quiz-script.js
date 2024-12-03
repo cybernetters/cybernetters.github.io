@@ -31,6 +31,7 @@ function displayQuestion() {
   answerContainer.innerHTML = ""; // Clear previous answers
   question.answers.forEach((answer) => {
     const label = document.createElement("label");
+    label.style.display = "block"; // Ensure each option is on a new line
     label.innerHTML = `<input type="radio" name="answer" value="${answer.correct}"> ${answer.text}`;
     answerContainer.appendChild(label);
   });
@@ -73,15 +74,21 @@ function checkAnswer() {
   if (isCorrect) {
     const points = calculatePoints(userScore);
     userScore += points;
-    feedback.textContent = `Correct! You earned ${points} points. Total Score: ${userScore}`;
+    feedback.textContent = `✅ Correct! You earned ${points} points. Total Score: ${userScore}`;
     feedback.style.color = "lime";
   } else {
-    feedback.textContent = "Incorrect. Try again!";
+    feedback.textContent = "❌ Incorrect. Try again!";
     feedback.style.color = "red";
   }
 
   // Save progress
   localStorage.setItem("quizScore", userScore);
+
+  // Enable the "Next" button
+  document.getElementById("next-button").disabled = false;
+
+  // Update live score display
+  updateScoreDisplay();
 }
 
 // Navigate to the next question
@@ -100,27 +107,19 @@ function updateProgressBar() {
   document.querySelector(".progress-bar").style.width = `${progress}%`;
 }
 
+// Update live score display
+function updateScoreDisplay() {
+  const scoreDisplay = document.getElementById("score-display");
+  scoreDisplay.textContent = `Score: ${userScore}`;
+}
+
 // End the quiz and redirect to the results page
 function endQuiz() {
   window.location.href = "results.html"; // Redirect to results page
 }
 
-// Save quiz progress to localStorage
-function saveProgress() {
-  localStorage.setItem("quizScore", userScore);
-  localStorage.setItem("currentQuestionIndex", currentQuestionIndex);
-  localStorage.setItem("askedQuestions", JSON.stringify(askedQuestions));
-}
-
-// Load quiz progress from localStorage
-function loadProgress() {
-  userScore = parseInt(localStorage.getItem("quizScore")) || 0;
-  currentQuestionIndex = parseInt(localStorage.getItem("currentQuestionIndex")) || 0;
-  askedQuestions = JSON.parse(localStorage.getItem("askedQuestions")) || [];
-}
-
 // Initialize the first question
 document.addEventListener("DOMContentLoaded", () => {
-  loadProgress();
   displayQuestion();
+  updateScoreDisplay();
 });

@@ -14,6 +14,15 @@
   transition: width 0.3s ease-in-out;
 }
 
+.answers label {
+  display: block; /* Each option on a new line */
+  margin-bottom: 1rem; /* Add spacing between options */
+}
+
+.answers input {
+  margin-right: 10px; /* Space between radio button and text */
+}
+
 /* General Quiz Page Styling */
 body {
   background-color: #111;
