@@ -416,6 +416,116 @@ const questionBank = [
     { text: "False", correct: true },
   ],
 },
+// Additional Multiple Choice Questions
+{
+  question: "Which of the following attributes is typically inherited in a directory structure?",
+  answers: [
+    { text: "A. IP address of a device", correct: false },
+    { text: "B. Group membership of a user", correct: false },
+    { text: "C. Location-based permissions", correct: true },
+    { text: "D. Specific user login credentials", correct: false },
+    { text: "E. Print job prioritization", correct: false },
+  ],
+},
+{
+  question: "Which layer in a typical directory naming convention represents the organization name?",
+  answers: [
+    { text: "A. c", correct: false },
+    { text: "B. o", correct: true },
+    { text: "C. ou", correct: false },
+    { text: "D. cn", correct: false },
+    { text: "E. sn", correct: false },
+  ],
+},
+{
+  question: "What is a unique feature of directory-enabled applications?",
+  answers: [
+    { text: "A. They are standalone and do not require authentication.", correct: false },
+    { text: "B. They synchronize data across multiple directory systems.", correct: false },
+    { text: "C. They rely on directories for user logon and authentication.", correct: true },
+    { text: "D. They bypass schema-defined attributes.", correct: false },
+    { text: "E. They store data independently from the directory.", correct: false },
+  ],
+},
+{
+  question: "What happens when a directory object's inherited attributes are incorrectly configured?",
+  answers: [
+    { text: "A. The directory object becomes inaccessible.", correct: false },
+    { text: "B. The object loses its absolute distinguished name.", correct: false },
+    { text: "C. The object may not conform to administrative policies.", correct: true },
+    { text: "D. The schema of the directory is reset.", correct: false },
+    { text: "E. The directory tree collapses into a flat structure.", correct: false },
+  ],
+},
+{
+  question: "Why are distinguished names important in directory services?",
+  answers: [
+    { text: "A. They assign static permissions to objects.", correct: false },
+    { text: "B. They ensure uniqueness of objects within the directory.", correct: true },
+    { text: "C. They replace schema attributes for identification.", correct: false },
+    { text: "D. They allow dynamic changes to object locations.", correct: false },
+    { text: "E. They enforce security policies across the network.", correct: false },
+  ],
+},
+
+// Additional True/False Questions
+{
+  question: "A schema defines the types of attributes and objects a directory can contain.",
+  answers: [
+    { text: "True", correct: true },
+    { text: "False", correct: false },
+  ],
+},
+{
+  question: "Container objects cannot be nested within other container objects.",
+  answers: [
+    { text: "True", correct: false },
+    { text: "False", correct: true },
+  ],
+},
+{
+  question: "Relative distinguished names (RDNs) require the directory context to be set for resolution.",
+  answers: [
+    { text: "True", correct: true },
+    { text: "False", correct: false },
+  ],
+},
+{
+  question: "An object's absolute distinguished name (DN) includes its position from the directory root.",
+  answers: [
+    { text: "True", correct: true },
+    { text: "False", correct: false },
+  ],
+},
+{
+  question: "Directories typically use flat structures rather than hierarchical ones.",
+  answers: [
+    { text: "True", correct: false },
+    { text: "False", correct: true },
+  ],
+},
+
+// Additional Application-Based Questions
+{
+  question: "Identify the Absolute Distinguished Name (DN) in the following examples:",
+  answers: [
+    { text: "A. cn=Sarah Brown, ou=Finance, o=CompanyX, c=US", correct: true },
+    { text: "B. ou=HR, cn=Sarah Brown", correct: false },
+    { text: "C. o=CompanyX, c=UK", correct: false },
+    { text: "D. cn=John Doe, ou=Finance", correct: false },
+    { text: "E. context=CompanyX.Sarah", correct: false },
+  ],
+},
+{
+  question: "Which of the following illustrates a Relative Distinguished Name (RDN) within the Finance context?",
+  answers: [
+    { text: "A. cn=Mike Johnson, ou=Finance, o=CorpX, c=US", correct: false },
+    { text: "B. cn=Mike Johnson, ou=Finance", correct: false },
+    { text: "C. o=CorpX, c=UK", correct: false },
+    { text: "D. Mike relative to ou=Finance", correct: true },
+    { text: "E. context=CorpX.Mike", correct: false },
+  ],
+},
 
 ];
 
