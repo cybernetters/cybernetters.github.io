@@ -74,6 +74,7 @@ function calculatePenalty(currentScore) {
 // Check the user's answer
 function checkAnswer() {
   const selected = document.querySelector('input[name="answer"]:checked'); // Get selected answer
+  const correctAnswer = document.querySelector('#mySelect option[value="true"]').text;   // Get correct answer
   const feedback = document.getElementById("feedback");
   const answerButton = document.getElementById("check-answer-button");
   const nextButton = document.getElementById("next-button");
@@ -98,7 +99,12 @@ function checkAnswer() {
   } else {
     const penalty = calculatePenalty(userScore); // Dynamically calculate penalty for wrong answers
     userScore = Math.max(0, userScore - penalty); // Subtract points and ensure score doesn't go below 0
-    feedback.textContent = `❌ Incorrect! You lost ${penalty} points. Total Score: ${userScore}`;
+
+    if (correctAnswer) {
+      // Show the correct answer when the selected answer is wrong
+      correctAnswer
+    }
+    feedback.textContent = `❌ Incorrect! You lost ${penalty} points. Total Score: ${userScore} <br> The correct is "${correctAnswer}"`;
     feedback.style.color = "red"; // Display feedback in red
   }
 
