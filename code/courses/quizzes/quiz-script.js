@@ -124,19 +124,19 @@ function goToNextQuestion() {
     return; // Do not proceed if no answer is selected
   }
 
-  // Validate the answer
-  const isCorrect = selected.value === "true";
-  if (isCorrect) {
-    feedback.textContent = `Correct! You earned ${points} points. Total Score: ${userScore}`;
-    feedback.style.color = "lime";
-  } else {
-    feedback.textContent = "Incorrect. Try again!";
-    feedback.style.color = "red";
-  }
+  //// Validate the answer
+  //const isCorrect = selected.value === "true";
+  //if (isCorrect) {
+  //  feedback.textContent = `Correct! You earned ${points} points. Total Score: ${userScore}`;
+  //  feedback.style.color = "lime";
+  //} else {
+  //  feedback.textContent = "Incorrect. Try again!";
+  //  feedback.style.color = "red";
+  //}
 
-  // Update score and progress
-  updateScoreDisplay();
-  localStorage.setItem("quizScore", userScore);
+  //// Update score and progress
+  //updateScoreDisplay();
+  //localStorage.setItem("quizScore", userScore);
 
   // Move to the next question immediately
   if (currentQuestionIndex < questionBank.length - 1) {
