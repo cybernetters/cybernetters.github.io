@@ -714,28 +714,3 @@ questionBank.push(
     ]
   }
 );
-
-// Application-Based Questions
-questionBank.push(
-  {
-    question: "The following distinguished name is incorrectly formatted. Identify the issue: .gm.us.manufacturing.fortwayneassy.maintenance.jdoe",
-    answers: [
-      { text: "It uses periods instead of commas as separators.", correct: true },
-      { text: "The context of the distinguished name is not specified.", correct: false },
-      { text: "The distinguished name lacks a schema definition.", correct: false },
-      { text: "The name does not include a leaf object.", correct: false },
-      { text: "The structure is missing an organizational unit.", correct: false }
-    ]
-  },
-  {
-    question: "Given the context .cybernetters.net.production, which Relative DN identifies a security specialist named Jane Smith?",
-    answers: [
-      { text: ".cybernetters.net.production.security.jsmith", correct: false },
-      { text: "security.jsmith relative to .cybernetters.net.production", correct: true },
-      { text: ".security.jsmith", correct: false },
-      { text: ".jsmith.production.security", correct: false },
-      { text: "cn=security, ou=JaneSmith", correct: false }
-    ]
-  }
-);
-
