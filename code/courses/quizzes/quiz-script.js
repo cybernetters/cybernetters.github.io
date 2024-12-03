@@ -88,6 +88,11 @@ function checkAnswer() {
   const isCorrect = selected.value === "true"; // Determine if the selected answer is correct
   totalAnswersCount++; // Increment the total number of answers
 
+  // Retrieve the correct answer
+  const correctAnswer = Array.from(document.querySelectorAll('input[name="answer"]'))
+    .find((input) => input.value === "true")
+    .nextSibling.textContent.trim(); // Get the text of the correct answer
+
   // Scoring logic
   if (isCorrect) {
     const points = calculatePoints(userScore); // Dynamically calculate points for correct answers
@@ -98,7 +103,7 @@ function checkAnswer() {
   } else {
     const penalty = calculatePenalty(userScore); // Dynamically calculate penalty for wrong answers
     userScore = Math.max(0, userScore - penalty); // Subtract points and ensure score doesn't go below 0
-    feedback.textContent = `❌ Incorrect! You lost ${penalty} points. Total Score: ${userScore}`;
+    feedback.textContent = `❌ Incorrect! You lost ${penalty} points. Total Score: ${userScore}. Correct Answer: ${correctAnswer}`;
     feedback.style.color = "red"; // Display feedback in red
   }
 
