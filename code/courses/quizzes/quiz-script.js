@@ -105,12 +105,41 @@ function checkAnswer() {
 
 // Navigate to the next question
 function goToNextQuestion() {
-  if (currentQuestionIndex < questionBank.length - 1) {
-    currentQuestionIndex++;
-    displayQuestion(); // Show the next question
-  } else {
-    endQuiz(); // End the quiz if no more questions remain
+  const selected = document.querySelector('input[name="answer"]:checked');
+  const feedback = document.getElementById("feedback");
+
+  // Check if an answer is selected
+  if (!selected) {
+    feedback.textContent = "Please select an answer!";
+    feedback.style.color = "yellow";
+    return; // Do not proceed if no answer is selected
   }
+
+  // Validate the answer
+  const isCorrect = selected.value === "true";
+  if (isCorrect) {
+    const points = calculatePoints(userScore);
+    userScore += points;
+    feedback.textContent = `Correct! You earned ${points} points. Total Score: ${userScore}`;
+    feedback.style.color = "lime";
+  } else {
+    feedback.textContent = "Incorrect. Try again!";
+    feedback.style.color = "red";
+  }
+
+  // Update score and progress
+  updateScoreDisplay();
+  localStorage.setItem("quizScore", userScore);
+
+  // Pause briefly to show feedback before moving to the next question
+  setTimeout(() => {
+    if (currentQuestionIndex < questionBank.length - 1) {
+      currentQuestionIndex++;
+      displayQuestion(); // Show the next question
+    } else {
+      endQuiz(); // End the quiz if no more questions remain
+    }
+  }, 1500); // 1.5-second delay to show feedback
 }
 
 // Update progress bar
