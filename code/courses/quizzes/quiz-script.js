@@ -75,7 +75,6 @@ function calculatePenalty(currentScore) {
 function checkAnswer() {
   const selected = document.querySelector('input[name="answer"]:checked'); // Get selected answer
   const feedback = document.getElementById("feedback");
-  const correctAnswerElement = document.getElementById("correct-answer");
   const answerButton = document.getElementById("check-answer-button");
   const nextButton = document.getElementById("next-button");
 
@@ -89,10 +88,6 @@ function checkAnswer() {
   const isCorrect = selected.value === "true"; // Determine if the selected answer is correct
   totalAnswersCount++; // Increment the total number of answers
 
-  // Retrieve the current question and find the correct answer
-  const question = questionBank[currentQuestionIndex];
-  const correctAnswerText = question.answers.find(answer => answer.correct === true).text;
-
   // Scoring logic
   if (isCorrect) {
     const points = calculatePoints(userScore); // Dynamically calculate points for correct answers
@@ -100,40 +95,36 @@ function checkAnswer() {
     correctAnswersCount++; // Increment the count of correct answers
     feedback.textContent = `✅ Correct! You earned ${points} points. Total Score: ${userScore}`;
     feedback.style.color = "lime"; // Display feedback in green
-    correctAnswerElement.textContent = ""; // Clear the correct answer display
   } else {
     const penalty = calculatePenalty(userScore); // Dynamically calculate penalty for wrong answers
-    userScore = Math.max(0, userScore - penalty); // Ensure score doesn't go below 0
+    userScore = Math.max(0, userScore - penalty); // Subtract points and ensure score doesn't go below 0
     feedback.textContent = `❌ Incorrect! You lost ${penalty} points. Total Score: ${userScore}`;
     feedback.style.color = "red"; // Display feedback in red
-    correctAnswerElement.textContent = `Correct Answer: ${correctAnswerText}`; // Show the correct answer
   }
 
-  // Update score and accuracy dynamically
+  // Update score and accuracy display dynamically
   updateScoreDisplay();
 
-  // Enable "Next" button
+  // Enable the "Next" button
   answerButton.disabled = true;
   answerButton.style.display = "none";
   nextButton.style.display = "block";
 
   // Save progress to local storage
   localStorage.setItem("quizScore", userScore);
-  localStorage.setItem("correctAnswers", correctAnswersCount);
 }
 
 
 // Navigate to the next question
 function goToNextQuestion() {
-  const feedback = document.getElementById("feedback");
-  const correctAnswerElement = document.getElementById("correct-answer");
-
-  // Check if the current question has been answered
   const selected = document.querySelector('input[name="answer"]:checked');
+  const feedback = document.getElementById("feedback");
+
+  // Check if an answer is selected
   if (!selected) {
     feedback.textContent = "Please select an answer!";
     feedback.style.color = "yellow";
-    return; // Stop here if no answer is selected
+    return; // Do not proceed if no answer is selected
   }
 
   //// Validate the answer
@@ -150,20 +141,40 @@ function goToNextQuestion() {
   //updateScoreDisplay();
   //localStorage.setItem("quizScore", userScore);
 
-  // Clear feedback and correct answer display before moving to the next question
-  feedback.textContent = "";
-  correctAnswerElement.textContent = "";
-
-  // Move to the next question if there are more remaining
+  // Move to the next question immediately
   if (currentQuestionIndex < questionBank.length - 1) {
-    currentQuestionIndex++; // Increment the current question index
-    displayQuestion(); // Load the next question
+    currentQuestionIndex++;
+    displayQuestion(); // Show the next question
   } else {
     endQuiz(); // End the quiz if no more questions remain
   }
 }
 
+// Update progress bar
+function updateProgressBar() {
+  const progress = ((currentQuestionIndex + 1) / questionBank.length) * 100;
+  document.querySelector(".progress-bar").style.width = `${progress}%`;
+}
 
+// Update live score and accuracy display
+function updateScoreDisplay() {
+  const accuracy = totalAnswersCount > 0 
+    ? Math.round((correctAnswersCount / totalAnswersCount) * 100) 
+    : 0; // Calculate accuracy as a percentage
+  const scoreDisplay = document.getElementById("score-display");
+  scoreDisplay.textContent = `Score: ${userScore} | Accuracy: ${accuracy}%`;
+}
+
+// End the quiz and redirect to the results page
+function endQuiz() {
+  window.location.href = "results.html"; // Redirect to results page
+}
+
+// Initialize the first question
+document.addEventListener("DOMContentLoaded", () => {
+  displayQuestion();
+  updateScoreDisplay();
+});
 // Update progress bar
 function updateProgressBar() {
   const progress = ((currentQuestionIndex + 1) / questionBank.length) * 100;
