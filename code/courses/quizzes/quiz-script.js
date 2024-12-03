@@ -75,6 +75,7 @@ function calculatePenalty(currentScore) {
 function checkAnswer() {
   const selected = document.querySelector('input[name="answer"]:checked'); // Get selected answer
   const feedback = document.getElementById("feedback");
+  const correctAnswerElement = document.getElementById("correct-answer");
   const answerButton = document.getElementById("check-answer-button");
   const nextButton = document.getElementById("next-button");
 
@@ -88,35 +89,37 @@ function checkAnswer() {
   const isCorrect = selected.value === "true"; // Determine if the selected answer is correct
   totalAnswersCount++; // Increment the total number of answers
 
-  // Retrieve the correct answer
-  const correctAnswer = Array.from(document.querySelectorAll('input[name="answer"]'))
-    .find((input) => input.value === "true")
-    .nextSibling.textContent.trim(); // Get the text of the correct answer
+  // Retrieve the current question and find the correct answer
+  const question = questionBank[currentQuestionIndex];
+  const correctAnswerText = question.answers.find(answer => answer.correct === true).text;
 
   // Scoring logic
   if (isCorrect) {
-    const points = calculatePoints(userScore); // Dynamically calculate points for correct answers
-    userScore += points; // Add points to the user's score
+    const points = calculatePoints(userScore); // Calculate points for correct answers
+    userScore += points; // Add points to the score
     correctAnswersCount++; // Increment the count of correct answers
     feedback.textContent = `✅ Correct! You earned ${points} points. Total Score: ${userScore}`;
     feedback.style.color = "lime"; // Display feedback in green
+    correctAnswerElement.textContent = ""; // Clear the correct answer display
   } else {
-    const penalty = calculatePenalty(userScore); // Dynamically calculate penalty for wrong answers
-    userScore = Math.max(0, userScore - penalty); // Subtract points and ensure score doesn't go below 0
-    feedback.textContent = `❌ Incorrect! You lost ${penalty} points. Total Score: ${userScore}. Correct Answer: ${correctAnswer}`;
+    const penalty = calculatePenalty(userScore); // Calculate penalty for wrong answers
+    userScore = Math.max(0, userScore - penalty); // Ensure score does not go below 0
+    feedback.textContent = `❌ Incorrect! You lost ${penalty} points. Total Score: ${userScore}`;
     feedback.style.color = "red"; // Display feedback in red
+    correctAnswerElement.textContent = `Correct Answer: ${correctAnswerText}`; // Show the correct answer
   }
 
-  // Update score and accuracy display dynamically
+  // Update score and accuracy dynamically
   updateScoreDisplay();
 
-  // Enable the "Next" button
+  // Enable "Next" button
   answerButton.disabled = true;
   answerButton.style.display = "none";
   nextButton.style.display = "block";
 
   // Save progress to local storage
   localStorage.setItem("quizScore", userScore);
+  localStorage.setItem("correctAnswers", correctAnswersCount);
 }
 
 
