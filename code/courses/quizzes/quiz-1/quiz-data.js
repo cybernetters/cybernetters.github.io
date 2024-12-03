@@ -293,5 +293,129 @@ const questionBank = [
       { text: "E. Model and make", correct: false },
     ],
   },
+  // Multiple Choice Questions
+{
+  question: "A company implements a directory service for centralized authentication. Which scenario demonstrates the correct application of this feature?",
+  answers: [
+    { text: "A. Users log in once and gain access to multiple applications without additional credentials.", correct: true },
+    { text: "B. Administrators configure unique credentials for each user across all systems.", correct: false },
+    { text: "C. The directory service is only used for network printer configurations.", correct: false },
+    { text: "D. The directory service blocks all users not manually added to the firewall.", correct: false },
+    { text: "E. The service operates independently of all external applications.", correct: false },
+  ],
+},
+{
+  question: "An administrator is tasked with enabling secure VPN access for remote employees. Which directory-enabled application functionality is most relevant?",
+  answers: [
+    { text: "A. Granularity of administrative control", correct: false },
+    { text: "B. Storage of digital certificates for authentication", correct: true },
+    { text: "C. Moving directory objects between locations", correct: false },
+    { text: "D. Schema modification for container objects", correct: false },
+    { text: "E. Restricting user access to leaf objects only", correct: false },
+  ],
+},
+{
+  question: "A network engineer is designing a directory structure for a multinational corporation. What approach should be taken to accommodate geographical locations effectively?",
+  answers: [
+    { text: "A. Use a functional directory structure with departments as roots.", correct: false },
+    { text: "B. Employ a flat directory structure to simplify the design.", correct: false },
+    { text: "C. Create separate directory trees for each location.", correct: false },
+    { text: "D. Arrange the directory hierarchically by country and region.", correct: true },
+    { text: "E. Define a single root with no organizational units for simplicity.", correct: false },
+  ],
+},
+{
+  question: "A user reports difficulty logging into a shared application. The application relies on the directory for authentication. What is the most likely cause?",
+  answers: [
+    { text: "A. The user's account is not located in the directory tree.", correct: true },
+    { text: "B. The directory service does not support single sign-on.", correct: false },
+    { text: "C. The application does not query the directory for user credentials.", correct: false },
+    { text: "D. The directory schema is improperly configured.", correct: false },
+    { text: "E. The user is attempting to log in from an unauthorized device.", correct: false },
+  ],
+},
+{
+  question: "An organization wants to simplify user account naming conventions while maintaining uniqueness within each department. What configuration should the administrator implement?",
+  answers: [
+    { text: "A. Use absolute distinguished names (DNs) for all accounts.", correct: false },
+    { text: "B. Define relative distinguished names (RDNs) based on department-specific contexts.", correct: true },
+    { text: "C. Configure one schema for the entire directory with no subdivisions.", correct: false },
+    { text: "D. Limit inheritance of attributes to root objects only.", correct: false },
+    { text: "E. Assign duplicate names to accounts across different locations.", correct: false },
+  ],
+},
+
+// True/False Questions
+{
+  question: "Directories provide a single logical view of all network resources regardless of their physical locations.",
+  answers: [
+    { text: "True", correct: true },
+    { text: "False", correct: false },
+  ],
+},
+{
+  question: "In a directory, granularity of administrative control means that all administrators have full control over the entire directory.",
+  answers: [
+    { text: "True", correct: false },
+    { text: "False", correct: true },
+  ],
+},
+{
+  question: "Pruning and grafting enable the restructuring of directory trees without affecting the objects' inherited attributes.",
+  answers: [
+    { text: "True", correct: false },
+    { text: "False", correct: true },
+  ],
+},
+{
+  question: "LDAP is designed to operate exclusively over UDP.",
+  answers: [
+    { text: "True", correct: false },
+    { text: "False", correct: true },
+  ],
+},
+{
+  question: "Distinguished Names (DNs) include a complete path to the object in the directory tree.",
+  answers: [
+    { text: "True", correct: true },
+    { text: "False", correct: false },
+  ],
+},
+{
+  question: "Leaf objects in a directory cannot be further divided into container objects.",
+  answers: [
+    { text: "True", correct: true },
+    { text: "False", correct: false },
+  ],
+},
+{
+  question: "Attributes of directory objects are defined by the directory schema.",
+  answers: [
+    { text: "True", correct: true },
+    { text: "False", correct: false },
+  ],
+},
+{
+  question: "Relative distinguished names (RDNs) are fully specified paths that begin at the root of the directory.",
+  answers: [
+    { text: "True", correct: false },
+    { text: "False", correct: true },
+  ],
+},
+{
+  question: "Active Directory supports integration with Kerberos for authentication.",
+  answers: [
+    { text: "True", correct: true },
+    { text: "False", correct: false },
+  ],
+},
+{
+  question: "A directory service does not allow for multiple authentication methods to be exposed to third-party applications.",
+  answers: [
+    { text: "True", correct: false },
+    { text: "False", correct: true },
+  ],
+},
+
 ];
 
