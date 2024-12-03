@@ -71,10 +71,8 @@ function calculatePenalty(currentScore) {
   return penalty > 0 ? penalty : 1; // Ensure at least 1 point is deducted
 }
 
-// Check the user's answer
 function checkAnswer() {
   const selected = document.querySelector('input[name="answer"]:checked'); // Get selected answer
-  const correctAnswer = document.querySelector('#input[name="answer"] option[value="true"]').text;   // Get correct answer
   const feedback = document.getElementById("feedback");
   const answerButton = document.getElementById("check-answer-button");
   const nextButton = document.getElementById("next-button");
@@ -85,6 +83,11 @@ function checkAnswer() {
     feedback.style.color = "yellow";
     return; // Do not proceed if no answer is selected
   }
+
+  // Retrieve the correct answer's label text
+  const correctAnswerLabel = Array.from(document.querySelectorAll('input[name="answer"]'))
+    .find(input => input.value === "true")
+    ?.parentNode.textContent.trim();
 
   const isCorrect = selected.value === "true"; // Determine if the selected answer is correct
   totalAnswersCount++; // Increment the total number of answers
@@ -99,12 +102,7 @@ function checkAnswer() {
   } else {
     const penalty = calculatePenalty(userScore); // Dynamically calculate penalty for wrong answers
     userScore = Math.max(0, userScore - penalty); // Subtract points and ensure score doesn't go below 0
-
-    if (correctAnswer) {
-      // Show the correct answer when the selected answer is wrong
-      correctAnswer
-    }
-    feedback.textContent = `❌ Incorrect! You lost ${penalty} points. Total Score: ${userScore} <br> The correct is "${correctAnswer}"`;
+    feedback.innerHTML = `❌ Incorrect! You lost ${penalty} points. Total Score: ${userScore}<br>Correct Answer: ${correctAnswerLabel}`;
     feedback.style.color = "red"; // Display feedback in red
   }
 
@@ -119,6 +117,7 @@ function checkAnswer() {
   // Save progress to local storage
   localStorage.setItem("quizScore", userScore);
 }
+
 
 
 // Navigate to the next question
