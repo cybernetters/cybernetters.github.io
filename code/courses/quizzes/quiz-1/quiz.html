@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz 1</title>
+  <link rel="stylesheet" href="../../../../styles.css"> <!-- Global CSS -->
+  <link rel="stylesheet" href="quiz-style.css"> <!-- Quiz-Specific CSS -->
+  <script src="quiz-data.js"></script> <!-- Load Question Bank -->
+  <script src="quiz-script.js" defer></script> <!-- Load Quiz Logic -->
+</head>
+<body>
+  <div class="quiz-container">
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <div class="progress-bar" style="width: 0%;"></div>
+    </div>
+
+    <!-- Question Content -->
+    <div id="question-container">
+      <h1 class="question-text"></h1> <!-- Dynamically loaded question -->
+      <form class="answers"></form> <!-- Dynamically loaded answers -->
+    </div>
+
+    <!-- Feedback Section -->
+    <p id="feedback" style="margin-top: 1rem; font-size: 1.2rem;"></p>
+
+    <!-- Navigation Buttons -->
+    <div class="button-container">
+      <button id="next-button" onclick="goToNextQuestion()" disabled>Next</button>
+      <button id="end-button" onclick="endQuiz()">End Quiz</button>
+    </div>
+  </div>
+</body>
+</html>
