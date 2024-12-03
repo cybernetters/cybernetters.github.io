@@ -95,15 +95,15 @@ function checkAnswer() {
 
   // Scoring logic
   if (isCorrect) {
-    const points = calculatePoints(userScore); // Calculate points for correct answers
-    userScore += points; // Add points to the score
+    const points = calculatePoints(userScore); // Dynamically calculate points for correct answers
+    userScore += points; // Add points to the user's score
     correctAnswersCount++; // Increment the count of correct answers
     feedback.textContent = `✅ Correct! You earned ${points} points. Total Score: ${userScore}`;
     feedback.style.color = "lime"; // Display feedback in green
     correctAnswerElement.textContent = ""; // Clear the correct answer display
   } else {
-    const penalty = calculatePenalty(userScore); // Calculate penalty for wrong answers
-    userScore = Math.max(0, userScore - penalty); // Ensure score does not go below 0
+    const penalty = calculatePenalty(userScore); // Dynamically calculate penalty for wrong answers
+    userScore = Math.max(0, userScore - penalty); // Ensure score doesn't go below 0
     feedback.textContent = `❌ Incorrect! You lost ${penalty} points. Total Score: ${userScore}`;
     feedback.style.color = "red"; // Display feedback in red
     correctAnswerElement.textContent = `Correct Answer: ${correctAnswerText}`; // Show the correct answer
