@@ -74,7 +74,7 @@ function calculatePenalty(currentScore) {
 // Check the user's answer
 function checkAnswer() {
   const selected = document.querySelector('input[name="answer"]:checked'); // Get selected answer
-  const correctAnswer = document.querySelector('input[name="answer"] option[value="true"]').text;   // Get correct answer
+  const correctAnswer = document.querySelector('#input[name="answer"] option[value="true"]').text;   // Get correct answer
   const feedback = document.getElementById("feedback");
   const answerButton = document.getElementById("check-answer-button");
   const nextButton = document.getElementById("next-button");
