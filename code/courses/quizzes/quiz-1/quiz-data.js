@@ -529,3 +529,96 @@ const questionBank = [
 
 ];
 
+// Additional Multiple Choice Questions
+questionBank.push(
+  {
+    question: "What is the purpose of a Directory System Agent (DSA) in X.500 directories?",
+    answers: [
+      { text: "To authenticate users across the directory", correct: false },
+      { text: "To provide an interface for applications to query directory data", correct: false },
+      { text: "To facilitate communication between directory services", correct: true },
+      { text: "To act as a schema management tool", correct: false },
+      { text: "To enforce hierarchical permissions", correct: false }
+    ]
+  },
+  {
+    question: "Which of the following is an example of an object attribute in a directory?",
+    answers: [
+      { text: "Container name", correct: false },
+      { text: "Printer paper size", correct: true },
+      { text: "Distinguished name format", correct: false },
+      { text: "Organizational unit location", correct: false },
+      { text: "Directory protocol", correct: false }
+    ]
+  },
+  {
+    question: "What directory component is typically used to group users and resources based on department or function?",
+    answers: [
+      { text: "Leaf objects", correct: false },
+      { text: "Organizational Units (OUs)", correct: true },
+      { text: "Schema definitions", correct: false },
+      { text: "Distinguished names", correct: false },
+      { text: "Namespace roots", correct: false }
+    ]
+  },
+  {
+    question: "Which feature is essential for enabling directory-based single sign-on (SSO)?",
+    answers: [
+      { text: "Integration with LDAP over UDP", correct: false },
+      { text: "Directory schema customization", correct: false },
+      { text: "Centralized authentication protocols", correct: true },
+      { text: "Pruning and grafting of directory objects", correct: false },
+      { text: "Use of alias objects", correct: false }
+    ]
+  },
+  {
+    question: "In LDAP operations, which function is used to verify directory credentials?",
+    answers: [
+      { text: "Modify", correct: false },
+      { text: "Search", correct: false },
+      { text: "Compare", correct: false },
+      { text: "Bind", correct: true },
+      { text: "Unbind", correct: false }
+    ]
+  }
+);
+
+// Additional True/False Questions
+questionBank.push(
+  {
+    question: "Directory services allow the use of alias objects to reference other entries in the directory.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false }
+    ]
+  },
+  {
+    question: "An organizational unit (OU) in a directory can contain other OUs but cannot contain leaf objects.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true }
+    ]
+  },
+  {
+    question: "The X.500 directory standard introduced the concepts of a tree, leaf objects, and distinguished names.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false }
+    ]
+  },
+  {
+    question: "Pruning and grafting allow administrators to duplicate objects in multiple directory locations.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true }
+    ]
+  },
+  {
+    question: "Attributes such as location or department can help directories organize and manage objects effectively.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false }
+    ]
+  }
+);
+
