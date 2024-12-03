@@ -1,0 +1,13 @@
+<div class="result-container">
+  <h1>Quiz Results</h1>
+  <p id="score">Loading...</p>
+  <a href="q1.html" class="button">Retry Quiz</a>
+  <a href="../../sysadmin/unit1.html" class="button">Back to Unit</a>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const finalScore = localStorage.getItem("quizScore") || 0;
+    document.getElementById("score").textContent = `You scored ${finalScore} points!`;
+  });
+</script>
