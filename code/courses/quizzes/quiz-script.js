@@ -46,7 +46,7 @@ function displayQuestion() {
   document.querySelectorAll('input[name="answer"]').forEach((input) => {
     input.addEventListener("change", () => {
       document.getElementById("check-answer-button").disabled = false;
-      document.getElementById("check-answer-button")..style.display = "block";
+      document.getElementById("check-answer-button").style.display = "block";
     });
   });
 
@@ -103,9 +103,9 @@ function checkAnswer() {
 
   // Enable the "Next" button
   answerButton.disabled = true;
-  answerButton..style.display = "none";
+  answerButton.style.display = "none";
   nextButton.disabled = false;
-  nextButton..style.display = "block";
+  nextButton.style.display = "block";
 
   // Save progress to local storage
   localStorage.setItem("quizScore", userScore);
