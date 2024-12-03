@@ -39,14 +39,14 @@ function displayQuestion() {
   // Clear feedback and disable "Next" button
   document.getElementById("feedback").textContent = "";
   document.getElementById("check-answer-button").disabled = true;
-  document.getElementById("check-answer-button").show();
-  document.getElementById("next-button").hide();
+  document.getElementById("check-answer-button").style.display = "block";
+  document.getElementById("next-button").style.display = "none";
 
   // Enable "Next" button once an answer is selected
   document.querySelectorAll('input[name="answer"]').forEach((input) => {
     input.addEventListener("change", () => {
       document.getElementById("check-answer-button").disabled = false;
-      document.getElementById("check-answer-button").show();
+      document.getElementById("check-answer-button")..style.display = "block";
     });
   });
 
@@ -103,9 +103,9 @@ function checkAnswer() {
 
   // Enable the "Next" button
   answerButton.disabled = true;
-  answerButton.hide();
+  answerButton..style.display = "none";
   nextButton.disabled = false;
-  nextButton.show();
+  nextButton..style.display = "block";
 
   // Save progress to local storage
   localStorage.setItem("quizScore", userScore);
