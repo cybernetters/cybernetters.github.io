@@ -507,15 +507,15 @@ const questionBank = [
 
 // Additional Application-Based Questions
 {
-  question: "Identify the Absolute Distinguished Name (DN) in the following examples:",
-  answers: [
-    { text: "A. cn=Sarah Brown, ou=Finance, o=CompanyX, c=US", correct: true },
-    { text: "B. ou=HR, cn=Sarah Brown", correct: false },
-    { text: "C. o=CompanyX, c=UK", correct: false },
-    { text: "D. cn=John Doe, ou=Finance", correct: false },
-    { text: "E. context=CompanyX.Sarah", correct: false },
-  ],
-},
+  "question": "Identify the Absolute Distinguished Name (DN) in the following examples:",
+  "answers": [
+    { "text": "A. .companyx.us.finance.sarahbrown", "correct": true },
+    { "text": "B. .hr.sarahbrown", "correct": false },
+    { "text": "C. .companyx.uk", "correct": false },
+    { "text": "D. .finance.johndoe", "correct": false },
+    { "text": "E. .companyx.context.sarah", "correct": false }
+  ]
+}
 {
   question: "Which of the following illustrates a Relative Distinguished Name (RDN) within the Finance context?",
   answers: [
