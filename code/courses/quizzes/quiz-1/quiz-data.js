@@ -622,3 +622,120 @@ questionBank.push(
   }
 );
 
+// True/False Questions
+questionBank.push(
+  {
+    question: "LDAP uses TCP port 636 for secure communication.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false }
+    ]
+  },
+  {
+    question: "A directory schema defines both the attributes and the hierarchical structure of objects.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false }
+    ]
+  },
+  {
+    question: "Alias objects in a directory can point to other directory entries without storing their data.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false }
+    ]
+  },
+  {
+    question: "Pruning and grafting in a directory can only move individual users, not entire groups or sections.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true }
+    ]
+  },
+  {
+    question: "Organizational units (OUs) can be nested within other OUs to reflect a hierarchy.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false }
+    ]
+  }
+);
+
+// Multiple Choice Questions
+questionBank.push(
+  {
+    question: "What is a primary benefit of using a hierarchical structure in directories?",
+    answers: [
+      { text: "Reduces administrative effort by simplifying permissions", correct: false },
+      { text: "Supports flat and linear naming conventions", correct: false },
+      { text: "Provides a single logical view of network resources", correct: true },
+      { text: "Limits the scope of directories to small organizations", correct: false },
+      { text: "Ensures that objects cannot inherit attributes", correct: false }
+    ]
+  },
+  {
+    question: "Which of the following is an example of an alias object in a directory?",
+    answers: [
+      { text: "A reference to a user account with full data storage", correct: false },
+      { text: "A printer object pointing to another printer in a different location", correct: true },
+      { text: "A container object used to group organizational units", correct: false },
+      { text: "A schema definition for leaf objects", correct: false },
+      { text: "A distinguished name with a context", correct: false }
+    ]
+  },
+  {
+    question: "Which operation is NOT supported by LDAP?",
+    answers: [
+      { text: "Bind", correct: false },
+      { text: "Search", correct: false },
+      { text: "Delete", correct: false },
+      { text: "Print", correct: true },
+      { text: "Modify", correct: false }
+    ]
+  },
+  {
+    question: "In directory terminology, what does 'pruning' refer to?",
+    answers: [
+      { text: "Adding new objects to a container", correct: false },
+      { text: "Moving objects from one directory location to another", correct: true },
+      { text: "Deleting an entire directory structure", correct: false },
+      { text: "Assigning permissions to an organizational unit", correct: false },
+      { text: "Removing schema definitions from leaf objects", correct: false }
+    ]
+  },
+  {
+    question: "Which naming convention example reflects an Absolute Distinguished Name (DN) using LDAP?",
+    answers: [
+      { text: "cn=John Doe, ou=Sales, o=Company, c=US", correct: true },
+      { text: "cn=John, ou=Sales relative to o=Company", correct: false },
+      { text: ".Sales.JohnDoe", correct: false },
+      { text: "context=Sales.Company.US.John", correct: false },
+      { text: "Sales.o=Company", correct: false }
+    ]
+  }
+);
+
+// Application-Based Questions
+questionBank.push(
+  {
+    question: "The following distinguished name is incorrectly formatted. Identify the issue: .gm.us.manufacturing.fortwayneassy.maintenance.jdoe",
+    answers: [
+      { text: "It uses periods instead of commas as separators.", correct: true },
+      { text: "The context of the distinguished name is not specified.", correct: false },
+      { text: "The distinguished name lacks a schema definition.", correct: false },
+      { text: "The name does not include a leaf object.", correct: false },
+      { text: "The structure is missing an organizational unit.", correct: false }
+    ]
+  },
+  {
+    question: "Given the context .cybernetters.net.production, which Relative DN identifies a security specialist named Jane Smith?",
+    answers: [
+      { text: ".cybernetters.net.production.security.jsmith", correct: false },
+      { text: "security.jsmith relative to .cybernetters.net.production", correct: true },
+      { text: ".security.jsmith", correct: false },
+      { text: ".jsmith.production.security", correct: false },
+      { text: "cn=security, ou=JaneSmith", correct: false }
+    ]
+  }
+);
+
