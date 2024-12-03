@@ -1,6 +1,8 @@
 let userScore = 0; // Track the user's current score
 let askedQuestions = []; // Track already-asked questions
 let currentQuestionIndex = 0; // Keeps track of the current question
+let correctAnswersCount = 0; // Number of correct answers
+let totalAnswersCount = 0; // Total answers given
 
 // Function to get a random question that hasn't been asked
 function getRandomQuestion() {
@@ -84,11 +86,13 @@ function checkAnswer() {
   }
 
   const isCorrect = selected.value === "true"; // Determine if the selected answer is correct
+  totalAnswersCount++; // Increment the total number of answers
 
   // Scoring logic
   if (isCorrect) {
     const points = calculatePoints(userScore); // Dynamically calculate points for correct answers
     userScore += points; // Add points to the user's score
+    correctAnswersCount++; // Increment the count of correct answers
     feedback.textContent = `✅ Correct! You earned ${points} points. Total Score: ${userScore}`;
     feedback.style.color = "lime"; // Display feedback in green
   } else {
@@ -98,13 +102,12 @@ function checkAnswer() {
     feedback.style.color = "red"; // Display feedback in red
   }
 
-  // Update score display dynamically
+  // Update score and accuracy display dynamically
   updateScoreDisplay();
 
   // Enable the "Next" button
   answerButton.disabled = true;
   answerButton.style.display = "none";
-  //nextButton.disabled = false;
   nextButton.style.display = "block";
 
   // Save progress to local storage
@@ -153,10 +156,13 @@ function updateProgressBar() {
   document.querySelector(".progress-bar").style.width = `${progress}%`;
 }
 
-// Update live score display
+// Update live score and accuracy display
 function updateScoreDisplay() {
+  const accuracy = totalAnswersCount > 0 
+    ? Math.round((correctAnswersCount / totalAnswersCount) * 100) 
+    : 0; // Calculate accuracy as a percentage
   const scoreDisplay = document.getElementById("score-display");
-  scoreDisplay.textContent = `Score: ${userScore}`;
+  scoreDisplay.textContent = `Score: ${userScore} | Accuracy: ${accuracy}%`;
 }
 
 // End the quiz and redirect to the results page
