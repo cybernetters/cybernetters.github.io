@@ -31,12 +31,16 @@
       <form class="answers"></form> <!-- Dynamically loaded answers -->
     </div>
 
+    <div class="button-container">
+      <button id="check-answer-button" onclick="checkAnswer()" disabled>Submit Answer</button>
+    </div>
+
     <!-- Feedback Section -->
     <p id="feedback" style="margin-top: 1rem; font-size: 1.2rem;"></p>
 
     <!-- Navigation Buttons -->
     <div class="button-container">
-      <button id="next-button" onclick="goToNextQuestion()" disabled>Next</button>
+      <button id="next-button" onclick="goToNextQuestion()" disabled>Next Question</button>
       <button id="end-button" onclick="endQuiz()">End Quiz</button>
     </div>
   </div>
