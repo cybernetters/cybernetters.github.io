@@ -119,6 +119,8 @@ function checkAnswer() {
 
   // Save progress to local storage
   localStorage.setItem("quizScore", userScore);
+  localStorage.setItem("correctAnswersCount", correctAnswersCount);
+  localStorage.setItem("totalAnswersCount", totalAnswersCount);
 }
 
 
