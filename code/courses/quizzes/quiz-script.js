@@ -38,12 +38,13 @@ function displayQuestion() {
 
   // Clear feedback and disable "Next" button
   document.getElementById("feedback").textContent = "";
+  document.getElementById("check-answer-button").disabled = true; 
   document.getElementById("next-button").disabled = true;
 
   // Enable "Next" button once an answer is selected
   document.querySelectorAll('input[name="answer"]').forEach((input) => {
     input.addEventListener("change", () => {
-      document.getElementById("next-button").disabled = false;
+      document.getElementById("check-answer-button").disabled = false;
     });
   });
 
@@ -70,6 +71,7 @@ function calculatePenalty(currentScore) {
 function checkAnswer() {
   const selected = document.querySelector('input[name="answer"]:checked'); // Get selected answer
   const feedback = document.getElementById("feedback");
+  const nextButton = document.getElementById("check-answer-button");
   const nextButton = document.getElementById("next-button");
 
   // Check if an answer is selected
@@ -98,6 +100,7 @@ function checkAnswer() {
   updateScoreDisplay();
 
   // Enable the "Next" button
+  check-answer-button.disabled = true;
   nextButton.disabled = false;
 
   // Save progress to local storage
@@ -109,6 +112,9 @@ function checkAnswer() {
 function goToNextQuestion() {
   const selected = document.querySelector('input[name="answer"]:checked');
   const feedback = document.getElementById("feedback");
+  const nextButton = document.getElementById("check-answer-button");
+  const nextButton = document.getElementById("next-button");
+
 
   // Check if an answer is selected
   if (!selected) {
