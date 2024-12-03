@@ -3,6 +3,8 @@ let askedQuestions = []; // Track already-asked questions
 let currentQuestionIndex = 0; // Keeps track of the current question
 let correctAnswersCount = 0; // Number of correct answers
 let totalAnswersCount = 0; // Total answers given
+let totalQuestions = questionBank.length; // Set the total number of questions
+localStorage.setItem("totalQuestions", totalQuestions); // Save total questions to localStorage
 
 // Function to get a random question that hasn't been asked
 function getRandomQuestion() {
@@ -77,6 +79,42 @@ function checkAnswer() {
   const feedback = document.getElementById("feedback");
   const answerButton = document.getElementById("check-answer-button");
   const nextButton = document.getElementById("next-button");
+
+  if (!selected) {
+    feedback.textContent = "Please select an answer!";
+    feedback.style.color = "yellow";
+    return;
+  }
+
+  const isCorrect = selected.value === "true"; // Check if the selected answer is correct
+
+  // Update score and feedback
+  if (isCorrect) {
+    correctAnswers++; // Increment correct answers
+    const points = calculatePoints(userScore); // Dynamically calculate points
+    userScore += points; // Add points to score
+    feedback.textContent = `✅ Correct! You earned ${points} points. Total Score: ${userScore}`;
+    feedback.style.color = "lime"; // Green for correct
+  } else {
+    const penalty = calculatePenalty(userScore); // Calculate penalty
+    userScore = Math.max(0, userScore - penalty); // Ensure score doesn't go below 0
+    feedback.textContent = `❌ Incorrect! You lost ${penalty} points. Total Score: ${userScore}`;
+    feedback.style.color = "red"; // Red for incorrect
+  }
+
+  // Update score and correct answer count in localStorage
+  localStorage.setItem("quizScore", userScore);
+  localStorage.setItem("correctAnswers", correctAnswers);
+
+  // Update the score display dynamically
+  updateScoreDisplay();
+
+  // Enable the "Next" button
+  answerButton.disabled = true;
+  answerButton.style.display = "none";
+  nextButton.style.display = "block";
+}
+
 
   // Check if an answer is selected
   if (!selected) {
