@@ -51,33 +51,35 @@ t<!DOCTYPE html>
   <div class="result-container">
     <h1>Quiz Results</h1>
     <p id="score">Loading...</p>
-    <p id="accuracy">Calculating...</p>
-    <p id="proficiency">Determining proficiency...</p>
+    <p id="accuracy">Loading accuracy...</p>
+    <p id="proficiency">Loading proficiency...</p>
     <a href="q1.html" class="button">Retry Quiz</a>
     <a href="../../sysadmin/unit1.html" class="button">Back to Unit</a>
   </div>
 
+
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      // Retrieve stored score and number of questions
-      const finalScore = localStorage.getItem("quizScore") || 0;
-      const totalQuestions = localStorage.getItem("totalQuestions") || 1; // Default to prevent divide by 0
-      const correctAnswers = localStorage.getItem("correctAnswers") || 0;
+  document.addEventListener("DOMContentLoaded", () => {
+    const finalScore = localStorage.getItem("quizScore") || 0;
+    const correctAnswersCount = localStorage.getItem("correctAnswersCount") || 0;
+    const totalAnswersCount = localStorage.getItem("totalAnswersCount") || 0;
 
-      // Calculate accuracy percentage
-      const accuracy = Math.round((correctAnswers / totalQuestions) * 100);
+    // Calculate accuracy
+    const accuracy = totalAnswersCount > 0 
+      ? Math.round((correctAnswersCount / totalAnswersCount) * 100) 
+      : 0;
 
-      // Determine proficiency level
-      let proficiency = "Beginner";
-      if (finalScore >= 80) proficiency = "Proficient";
-      if (finalScore >= 90) proficiency = "Excellence";
-      if (finalScore >= 100) proficiency = "Mastery";
+    // Update result elements
+    document.getElementById("score").textContent = `Score: ${finalScore} points`;
+    document.getElementById("accuracy").textContent = `Accuracy: ${accuracy}% (${correctAnswersCount}/${totalAnswersCount})`;
 
-      // Update results content
-      document.getElementById("score").textContent = `Score: ${finalScore} points`;
-      document.getElementById("accuracy").textContent = `Accuracy: ${accuracy}% (${correctAnswers}/${totalQuestions})`;
-      document.getElementById("proficiency").textContent = `Proficiency Level: ${proficiency}`;
-    });
-  </script>
+    // Proficiency Level
+    let proficiency = "Beginner";
+    if (finalScore >= 80) proficiency = "Proficient";
+    if (finalScore >= 90) proficiency = "Excellence";
+    if (finalScore >= 100) proficiency = "Mastery";
+    document.getElementById("proficiency").textContent = `Proficiency Level: ${proficiency}`;
+  });
+</script>
 </body>
 </html>
