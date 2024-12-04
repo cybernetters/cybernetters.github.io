@@ -199,7 +199,7 @@ const questions = [
       { text: "D. Enable-ScriptExecution", correct: false },
       { text: "E. None of the above", correct: false },
     ],
-  }
+  },
   {
     question: "You need to verify that a PowerShell script has not been altered since its creation. What should you check?",
     answers: [
@@ -299,10 +299,7 @@ const questions = [
       { text: "D. [integer]Var = 10", correct: false },
       { text: "E. Var = 10", correct: false },
     ],
-  }
-  // Continue for more questions, ensuring the answers and questions align.
-
-  // True/False Questions
+  },
   {
     question: "VBScript is the default scripting language for Linux operating systems.",
     answers: [
