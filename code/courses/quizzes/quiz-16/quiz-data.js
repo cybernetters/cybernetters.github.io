@@ -324,7 +324,7 @@ const questionBank = [
       { text: "True", correct: false },
       { text: "False", correct: true }
     ]
-  }
+  },
   {
     question: "What is a key advantage of stand-alone licensing?",
     answers: [
@@ -384,7 +384,7 @@ const questionBank = [
       { text: "D. Per-connection licenses", correct: false },
       { text: "E. Proprietary licenses", correct: false }
     ]
-  }
+  },
 
 
   // True/False Questions
