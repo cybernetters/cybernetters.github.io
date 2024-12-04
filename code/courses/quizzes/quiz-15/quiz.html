@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz 1</title>
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="../../../../styles.css"> 
+  <!-- Quiz-Specific Styles -->
+  <link rel="stylesheet" href="../quiz-style.css">
+  <!-- Load Question Bank -->
+  <script src="quiz-data.js" defer></script> 
+  <!-- Load Quiz Logic -->
+  <script src="../quiz-script.js" defer></script> 
+</head>
+<body>
+  <div class="quiz-container">
+    <!-- Live Score and Accuracy Display -->
+    <div id="score-display" style="text-align: right; font-size: 1.2rem; margin-bottom: 1rem; color: lime;">
+      Score: 0 | Accuracy: 0%
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <div class="progress-bar" style="width: 0%;"></div>
+    </div>
+
+    <!-- Question Content -->
+    <div id="question-container">
+      <h1 class="question-text"></h1> <!-- Dynamically loaded question -->
+      <form class="answers"></form> <!-- Dynamically loaded answers -->
+    </div>
+
+    <div class="button-container">
+      <button id="check-answer-button" onclick="checkAnswer()" disabled>Submit Answer</button>
+    </div>
+
+    <!-- Feedback Section -->
+    <p id="feedback" style="margin-top: 1rem; font-size: 1.2rem;"></p>
+
+    <!-- Correct Answer Section -->
+    <p id="correct-answer" style="margin-top: 0.5rem; font-size: 1.1rem; color: lightblue;"></p>
+
+
+    <!-- Navigation Buttons -->
+    <div class="button-container">
+      <button id="next-button" onclick="goToNextQuestion()">Next Question</button>
+      <button id="end-button" onclick="endQuiz()">End Quiz</button>
+    </div>
+  </div>
+</body>
+</html>
