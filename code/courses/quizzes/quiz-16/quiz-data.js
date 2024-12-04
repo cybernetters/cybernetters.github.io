@@ -290,6 +290,102 @@ const questionBank = [
       { text: "E. Remove all copyright attributions", correct: false },
     ],
   },
+  {
+    question: "Open-source licenses always transfer the ownership of copyright to the end-user.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true }
+    ]
+  },
+  {
+    question: "Software audits can be conducted by the software vendor or a third-party organization.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false }
+    ]
+  },
+  {
+    question: "Volume licensing does not require software activation in modern systems.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true }
+    ]
+  },
+  {
+    question: "A floating license allows concurrent software usage regardless of the number of installations.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false }
+    ]
+  },
+  {
+    question: "Reverse engineering is explicitly permitted under most proprietary software licenses.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true }
+    ]
+  }
+  {
+    question: "What is a key advantage of stand-alone licensing?",
+    answers: [
+      { text: "A. Reduced installation complexity", correct: true },
+      { text: "B. Concurrent usage without limitations", correct: false },
+      { text: "C. Licensing tied to multiple machines", correct: false },
+      { text: "D. Increased server-client compatibility", correct: false },
+      { text: "E. Unlimited user access", correct: false }
+    ]
+  },
+  {
+    question: "Which organization focuses on anti-piracy and includes companies like Microsoft and Adobe?",
+    answers: [
+      { text: "A. GNU Project", correct: false },
+      { text: "B. Business Software Alliance (BSA)", correct: true },
+      { text: "C. Software & Information Industry Association (SIIA)", correct: false },
+      { text: "D. Free Software Foundation", correct: false },
+      { text: "E. Apache Software Foundation", correct: false }
+    ]
+  },
+  {
+    question: "What does a software maintenance program typically provide?",
+    answers: [
+      { text: "A. Access to proprietary source code", correct: false },
+      { text: "B. Security fixes and functionality upgrades", correct: true },
+      { text: "C. Additional CALs for free", correct: false },
+      { text: "D. Unlimited concurrent usage", correct: false },
+      { text: "E. Perpetual software licenses", correct: false }
+    ]
+  },
+  {
+    question: "Which licensing model is governed by the number of concurrent server connections?",
+    answers: [
+      { text: "A. Client Access License (CAL)", correct: false },
+      { text: "B. Per-connection license", correct: true },
+      { text: "C. Volume licensing", correct: false },
+      { text: "D. Stand-alone licensing", correct: false },
+      { text: "E. Floating license", correct: false }
+    ]
+  },
+  {
+    question: "What action can result in monetary and legal liability for a company?",
+    answers: [
+      { text: "A. Delaying software updates", correct: false },
+      { text: "B. Non-compliance in software audits", correct: true },
+      { text: "C. Using open-source licenses", correct: false },
+      { text: "D. Switching from proprietary to open-source models", correct: false },
+      { text: "E. Restricting software access to employees", correct: false }
+    ]
+  },
+  {
+    question: "Which licensing strategy is most appropriate for a university installing software on hundreds of computers?",
+    answers: [
+      { text: "A. Floating licenses", correct: false },
+      { text: "B. OEM licenses", correct: false },
+      { text: "C. Volume licensing", correct: true },
+      { text: "D. Per-connection licenses", correct: false },
+      { text: "E. Proprietary licenses", correct: false }
+    ]
+  }
+
 
   // True/False Questions
   { question: "Proprietary licenses allow redistribution of modified software.", answers: [{ text: "True", correct: false }, { text: "False", correct: true }] },
