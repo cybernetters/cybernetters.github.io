@@ -21,41 +21,39 @@
       margin-top: 1rem;
     }
 
-    /* Table Styling */
-    table {
-      width: 100%;
-      margin-top: 2rem;
-      border-spacing: 0;
-      border-collapse: separate;
-      padding: 1rem;
+    /* Card Container */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem auto;
+      max-width: 1200px;
     }
 
-    td {
-      vertical-align: top;
-      padding: 1rem;
-    }
-
-    /* Column Styling */
-    .resources, .quizzes {
+    /* Card Styling */
+    .card {
       background-color: #222;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
       padding: 1rem;
+      width: 300px;
+      text-align: center;
+      overflow: hidden;
     }
 
-    .resources h3, .quizzes h3 {
-      text-align: left;
-      font-size: 1.5rem;
+    .card h3 {
+      font-size: 1.3rem;
       margin-bottom: 1rem;
       text-decoration: underline;
     }
 
-    .resources ul, .quizzes ul {
+    .card ul {
       list-style: none;
       padding: 0;
     }
 
-    .resources li, .quizzes li {
+    .card li {
       margin-bottom: 1rem;
     }
 
@@ -75,8 +73,8 @@
       border-radius: 8px;
       overflow: hidden;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-      width: 150px;
-      height: 100px;
+      width: 100%;
+      height: 150px;
       position: relative;
       cursor: pointer;
       text-align: center;
@@ -101,12 +99,7 @@
 
     /* Responsive Design */
     @media (max-width: 768px) {
-      table {
-        display: block;
-      }
-
-      td {
-        display: block;
+      .card {
         width: 100%;
       }
     }
@@ -149,55 +142,53 @@
   <!-- Main Content -->
   <main>
     <h2>Unit 1: Introduction to Directory Services</h2>
-    <table>
-      <tr>
-        <!-- Videos & Resources Section -->
-        <td class="resources">
-          <h3>Videos & Resources</h3>
-          <ul>
-            <li>
-              <a href="https://www.youtube.com/watch?v=nRltqZ-bq3U" target="_blank" class="video-thumbnail">
-                <img src="../../../images/active-directory-thumbnail.png" alt="Active Directory Basics">
-                <p>Active Directory Basics</p>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/watch?v=1Vik-cSLDLc" target="_blank" class="video-thumbnail">
-                <img src="/images/directoryservicesthumbnail.webp" alt="Directory Services">
-                <p>Directory Services</p>
-              </a>
-            </li>
-            <li>
-              <strong>Resource: AAA Fundamentals</strong>
-              <a href="/code/resources/aaa-fundamentals.pdf" target="_blank">Download AAA PDF</a>
-            </li>
-            <li>
-              <strong>Resource: Understanding Active Directory</strong>
-              <a href="/code/resources/active-directory-overview.pdf" target="_blank">Download PDF</a>
-            </li>
-          </ul>
-        </td>
+    <div class="card-container">
+      <!-- Videos & Resources Card -->
+      <div class="card">
+        <h3>Videos & Resources</h3>
+        <ul>
+          <li>
+            <a href="https://www.youtube.com/watch?v=nRltqZ-bq3U" target="_blank" class="video-thumbnail">
+              <img src="../../../images/active-directory-thumbnail.png" alt="Active Directory Basics">
+              <p>Active Directory Basics</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=1Vik-cSLDLc" target="_blank" class="video-thumbnail">
+              <img src="/images/directoryservicesthumbnail.webp" alt="Directory Services">
+              <p>Directory Services</p>
+            </a>
+          </li>
+          <li>
+            <strong>Resource: AAA Fundamentals</strong><br>
+            <a href="/code/resources/aaa-fundamentals.pdf" target="_blank">Download AAA PDF</a>
+          </li>
+          <li>
+            <strong>Resource: Understanding Active Directory</strong><br>
+            <a href="/code/resources/active-directory-overview.pdf" target="_blank">Download PDF</a>
+          </li>
+        </ul>
+      </div>
 
-        <!-- Quizzes Section -->
-        <td class="quizzes">
-          <h3>Quizzes</h3>
-          <ul>
-            <li>
-              <strong>Quiz 1: Directory Services</strong><br>
-              <a href="https://cybernetters.net/code/courses/quizzes/quiz-1/landing.html">Take the Quiz</a>
-            </li>
-            <li>
-              <strong>Quiz 2: AAA Principles</strong><br>
-              <a href="https://cybernetters.net/code/courses/quizzes/quiz-2/landing.html">Take the Quiz</a>
-            </li>
-            <li>
-              <strong>Quiz 3: Active Directory Essentials</strong><br>
-              <a href="https://cybernetters.net/code/courses/quizzes/quiz-3/landing.html">Take the Quiz</a>
-            </li>
-          </ul>
-        </td>
-      </tr>
-    </table>
+      <!-- Quizzes Card -->
+      <div class="card">
+        <h3>Quizzes</h3>
+        <ul>
+          <li>
+            <strong>Quiz 1: Directory Services</strong><br>
+            <a href="https://cybernetters.net/code/courses/quizzes/quiz-1/landing.html">Take the Quiz</a>
+          </li>
+          <li>
+            <strong>Quiz 2: AAA Principles</strong><br>
+            <a href="https://cybernetters.net/code/courses/quizzes/quiz-2/landing.html">Take the Quiz</a>
+          </li>
+          <li>
+            <strong>Quiz 3: Active Directory Essentials</strong><br>
+            <a href="https://cybernetters.net/code/courses/quizzes/quiz-3/landing.html">Take the Quiz</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </main>
 
   <!-- Footer -->
