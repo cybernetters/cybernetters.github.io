@@ -190,6 +190,106 @@ const questionBank = [
       { text: "E. Active Directory", correct: false },
     ],
   },
+  {
+    question: "An organization suspects non-compliance with proprietary software. What is their first step?",
+    answers: [
+      { text: "A. Notify the vendor", correct: false },
+      { text: "B. Conduct an internal software audit", correct: true },
+      { text: "C. Purchase additional licenses", correct: false },
+      { text: "D. Hire a third-party auditor", correct: false },
+      { text: "E. Report to the BSA", correct: false },
+    ],
+  },
+  {
+    question: "Your organization uses software with a per-use license model. Which scenario benefits most?",
+    answers: [
+      { text: "A. Daily operational tools", correct: false },
+      { text: "B. Rarely used applications", correct: true },
+      { text: "C. Server-based environments", correct: false },
+      { text: "D. Open-source integrations", correct: false },
+      { text: "E. Stand-alone installations", correct: false },
+    ],
+  },
+  {
+    question: "A company is considering volume licensing. Which is a primary benefit?",
+    answers: [
+      { text: "A. Reduced licensing costs", correct: true },
+      { text: "B. Increased software functionality", correct: false },
+      { text: "C. Unlimited installations", correct: false },
+      { text: "D. Simplified redistribution rights", correct: false },
+      { text: "E. Concurrent server access", correct: false },
+    ],
+  },
+  {
+    question: "A system administrator needs to ensure compliance with volume licensing. What is the best approach?",
+    answers: [
+      { text: "A. Implement strict CAL rules", correct: false },
+      { text: "B. Enforce software activation via KMS", correct: true },
+      { text: "C. Use individual licenses per machine", correct: false },
+      { text: "D. Conduct daily external audits", correct: false },
+      { text: "E. Transition to open-source software", correct: false },
+    ],
+  },
+  {
+    question: "An organization needs a licensing model for multiple installations with concurrent use. Which is the best option?",
+    answers: [
+      { text: "A. Individual licenses", correct: false },
+      { text: "B. Floating licenses", correct: true },
+      { text: "C. Stand-alone licensing", correct: false },
+      { text: "D. Per-use licenses", correct: false },
+      { text: "E. OEM licenses", correct: false },
+    ],
+  },
+  {
+    question: "A developer modifies open-source software and redistributes it. What must they include in their distribution?",
+    answers: [
+      { text: "A. Proprietary license agreement", correct: false },
+      { text: "B. EULA compliance verification", correct: false },
+      { text: "C. Modified source code", correct: true },
+      { text: "D. Volume activation key", correct: false },
+      { text: "E. User warranty details", correct: false },
+    ],
+  },
+  {
+    question: "A small business purchases software for a client/server environment. What is the primary consideration for licensing?",
+    answers: [
+      { text: "A. Volume discounts", correct: false },
+      { text: "B. CAL requirements", correct: true },
+      { text: "C. Activation thresholds", correct: false },
+      { text: "D. Reverse engineering permissions", correct: false },
+      { text: "E. Maintenance programs", correct: false },
+    ],
+  },
+  {
+    question: "A company discovers non-compliance during an internal audit. Which document is essential for rectifying the issue?",
+    answers: [
+      { text: "A. Proprietary source code", correct: false },
+      { text: "B. License agreement and invoice", correct: true },
+      { text: "C. Software warranty", correct: false },
+      { text: "D. Activation key certificate", correct: false },
+      { text: "E. GNU License documentation", correct: false },
+    ],
+  },
+  {
+    question: "Which licensing strategy is most appropriate for a university installing software on hundreds of computers?",
+    answers: [
+      { text: "A. Floating licenses", correct: false },
+      { text: "B. OEM licenses", correct: false },
+      { text: "C. Volume licensing", correct: true },
+      { text: "D. Per-connection licenses", correct: false },
+      { text: "E. Proprietary licenses", correct: false },
+    ],
+  },
+  {
+    question: "An organization uses open-source software for internal projects. What can they legally do with the software?",
+    answers: [
+      { text: "A. Restrict its usage within the company", correct: false },
+      { text: "B. Redistribute it without including source code", correct: false },
+      { text: "C. Modify it for internal use", correct: true },
+      { text: "D. Resell it with proprietary restrictions", correct: false },
+      { text: "E. Remove all copyright attributions", correct: false },
+    ],
+  },
 
   // True/False Questions
   { question: "Proprietary licenses allow redistribution of modified software.", answers: [{ text: "True", correct: false }, { text: "False", correct: true }] },
