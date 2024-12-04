@@ -180,6 +180,11 @@
                     url('/images/sysadmin-unit3-bg.webp');
 }
 
+.units .unit.unit7 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url('/images/sysadmin-unit7-bg.webp');
+}
+
 /* Add more for additional units */
 
 /* Sidebar Styling */
