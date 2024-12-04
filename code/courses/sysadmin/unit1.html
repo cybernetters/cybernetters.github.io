@@ -1,232 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- MAIN CONTENT -->
+<main>
+  <h2>Unit 1: Introduction to Directory Services</h2>
+  
+  <!-- Back Button -->
+  <div style="text-align: center; margin-bottom: 1rem;">
+    <button 
+      onclick="window.location.href='../../../sysadmin.html'" 
+      style="background-color: #00ff00; color: #000; padding: 0.5rem 1rem; font-size: 1rem; border: none; border-radius: 4px; cursor: pointer;">
+      ← Back to Sysadmin
+    </button>
+  </div>
 
-<!-- HEAD -->
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unit 1: Introduction to Directory Services</title>
-  <link rel="stylesheet" href="../../../styles.css"> <!-- Global Styles -->
-  <style>
-    /* GLOBAL PAGE STYLING */
-    body {
-      background-color: #111;
-      color: #00ff00;
-      font-family: 'Courier New', Courier, monospace;
-      margin: 0;
-      padding: 0;
-    }
-
-    h1, h2 {
-      text-align: center;
-      margin: 2rem 0;
-    }
-
-    /* CONTAINER FOR TOPIC CARDS */
-    .topic-container {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    /* TOPIC CARD */
-    .topic-card {
-      background-color: #222;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-      padding: 1rem;
-      display: flex;
-      gap: 2rem;
-    }
-
-    /* LEARN AND PRACTICE SECTIONS */
-    .learn, .practice {
-      flex: 1;
-    }
-
-    .learn h3, .practice h3 {
-      color: #00ff00;
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-    }
-
-    .learn ul, .practice ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .learn li, .practice li {
-      margin-bottom: 1rem;
-    }
-
-    /* VIDEO THUMBNAILS */
-    .video-thumbnail {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      padding: 0.5rem;
-      background-color: #333;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: transform 0.2s;
-    }
-
-    .video-thumbnail:hover {
-      transform: scale(1.05);
-    }
-
-    .video-thumbnail img {
-      width: 80px;
-      height: 60px;
-      object-fit: cover;
-      border-radius: 4px;
-    }
-
-    .video-thumbnail p {
-      color: #00ff00;
-      font-size: 1rem;
-      margin: 0;
-    }
-
-    /* QUIZ BUTTON */
-    .quiz {
-      background-color: #333;
-      border-radius: 8px;
-      padding: 1rem;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    }
-
-    .quiz p {
-      color: #00ff00;
-      margin: 0.5rem 0;
-      font-size: 0.9rem;
-    }
-
-    .quiz button {
-      background-color: #00ff00;
-      color: #000;
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 1rem;
-    }
-
-    .quiz button:hover {
-      background-color: #008f00;
-    }
-
-    /* RESPONSIVE DESIGN */
-    @media (max-width: 768px) {
-      .topic-card {
-        flex-direction: column;
-      }
-    }
-  </style>
-</head>
-
-<!-- BODY -->
-<body>
-  <!-- HEADER SECTION -->
-  <header class="header">
-    <div class="container">
-      <div class="header-content">
-        <h1 class="logo">
-          <a href="../../../index.html">
-            <img src="/images/cybernetters-logo.webp" alt="CyberNetters Logo">
-          </a>
-        </h1>
-        <nav class="nav">
-          <ul id="menu" class="button-nav">
-            <li><a href="../../../index.html" class="nav-link">Home</a></li>
-            <li><a href="/code/about/about.html" class="nav-link">About</a></li>
-            <li><a href="/code/services/services.html" class="nav-link">Services</a></li>
-            <li><a href="/code/resources/resources.html" class="nav-link">Resources</a></li>
-            <li class="dropdown">
-              <a href="/code/courses/courses.html" class="dropbtn nav-link">Courses</a>
-              <div class="dropdown-content">
-                <a href="/code/courses/networking1/networking1.html">Networking I</a>
-                <a href="/code/courses/sysadmin/sysadmin.html">System Administration</a>
-              </div>
-            </li>
-            <li><a href="/code/resources/contact.html" class="nav-link">Contact</a></li>
-            <li><a href="/code/auth/sign-in.html" class="nav-link">Sign In</a></li>
-          </ul>
-        </nav>
+  <div class="topic-container">
+    <!-- AAA Card -->
+    <div class="topic-card">
+      <div class="learn">
+        <h3>Learn</h3>
+        <ul>
+          <li>
+            <a href="https://www.youtube.com/watch?v=nRltqZ-bq3U" target="_blank" class="video-thumbnail">
+              <img src="../../../images/active-directory-thumbnail.png" alt="AAA">
+              <p>AAA Fundamentals</p>
+            </a>
+          </li>
+          <li>
+            <strong>Resource:</strong> <a href="/code/resources/aaa-fundamentals.pdf" target="_blank">Download PDF</a>
+          </li>
+        </ul>
       </div>
-    </div>
-  </header>
-
-  <!-- MAIN CONTENT -->
-  <main>
-    <h2>Unit 1: Introduction to Directory Services</h2>
-    <div class="topic-container">
-      <!-- AAA Card -->
-      <div class="topic-card">
-        <!-- LEARN SECTION -->
-        <div class="learn">
-          <h3>Learn</h3>
-          <ul>
-            <li>
-              <a href="https://www.youtube.com/watch?v=nRltqZ-bq3U" target="_blank" class="video-thumbnail">
-                <img src="../../../images/active-directory-thumbnail.png" alt="AAA">
-                <p>AAA Fundamentals</p>
-              </a>
-            </li>
-            <li>
-              <strong>Resource:</strong> <a href="/code/resources/aaa-fundamentals.pdf" target="_blank">Download PDF</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- PRACTICE SECTION -->
-        <div class="practice">
-          <h3>Practice</h3>
-          <div class="quiz">
-            <p>Up next for you:</p>
-            <p><strong>Quiz 1: Directory Services</strong></p>
-            <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/quiz-1/landing.html'">Start</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- DIRECTORY SERVICES CARD -->
-      <div class="topic-card">
-        <div class="learn">
-          <h3>Learn</h3>
-          <ul>
-            <li>
-              <a href="https://www.youtube.com/watch?v=1Vik-cSLDLc" target="_blank" class="video-thumbnail">
-                <img src="/images/directoryservicesthumbnail.webp" alt="Directory Services">
-                <p>Directory Services</p>
-              </a>
-            </li>
-            <li>
-              <strong>Resource:</strong> <a href="/code/resources/active-directory-overview.pdf" target="_blank">Download PDF</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="practice">
-          <h3>Practice</h3>
-          <div class="quiz">
-            <p>Up next for you:</p>
-            <p><strong>Quiz 2: Directory Services Essentials</strong></p>
-            <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/quiz-2/landing.html'">Start</button>
-          </div>
+      <div class="practice">
+        <h3>Practice</h3>
+        <div class="quiz">
+          <p>Up next for you:</p>
+          <p><strong>Quiz 1: Directory Services</strong></p>
+          <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/quiz-1/landing.html'">Start</button>
         </div>
       </div>
     </div>
-  </main>
 
-  <!-- FOOTER SECTION -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2024 CyberNetters. All Rights Reserved.</p>
+    <!-- Directory Services Card -->
+    <div class="topic-card">
+      <div class="learn">
+        <h3>Learn</h3>
+        <ul>
+          <li>
+            <a href="https://www.youtube.com/watch?v=1Vik-cSLDLc" target="_blank" class="video-thumbnail">
+              <img src="/images/directoryservicesthumbnail.webp" alt="Directory Services">
+              <p>Directory Services</p>
+            </a>
+          </li>
+          <li>
+            <strong>Resource:</strong> <a href="/code/resources/active-directory-overview.pdf" target="_blank">Download PDF</a>
+          </li>
+        </ul>
+      </div>
+      <div class="practice">
+        <h3>Practice</h3>
+        <div class="quiz">
+          <p>Up next for you:</p>
+          <p><strong>Quiz 2: Directory Services Essentials</strong></p>
+          <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/quiz-2/landing.html'">Start</button>
+        </div>
+      </div>
     </div>
-  </footer>
-</body>
-</html>
+  </div>
+</main>
