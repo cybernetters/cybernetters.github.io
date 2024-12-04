@@ -200,6 +200,106 @@ const questions = [
       { text: "E. None of the above", correct: false },
     ],
   }
+  {
+    question: "You need to verify that a PowerShell script has not been altered since its creation. What should you check?",
+    answers: [
+      { text: "A. Execution policy", correct: false },
+      { text: "B. Digital signature", correct: true },
+      { text: "C. Script permissions", correct: false },
+      { text: "D. Object properties", correct: false },
+      { text: "E. Cmdlet syntax", correct: false },
+    ],
+  },
+  {
+    question: "A script is failing to execute on a remote machine. You suspect remoting is not enabled. Which command will you run?",
+    answers: [
+      { text: "A. Set-ExecutionPolicy", correct: false },
+      { text: "B. Enable-PSRemoting", correct: true },
+      { text: "C. Start-WSManSession", correct: false },
+      { text: "D. Enter-PSSession", correct: false },
+      { text: "E. Get-WinRM", correct: false },
+    ],
+  },
+  {
+    question: "You want to read the contents of a text file line by line in PowerShell. Which cmdlet should you use?",
+    answers: [
+      { text: "A. Set-Content", correct: false },
+      { text: "B. Get-Content", correct: true },
+      { text: "C. Import-CSV", correct: false },
+      { text: "D. Export-CSV", correct: false },
+      { text: "E. Out-File", correct: false },
+    ],
+  },
+  {
+    question: "How can you append new data to an existing file in PowerShell?",
+    answers: [
+      { text: "A. Replace-Content", correct: false },
+      { text: "B. Add-Content", correct: true },
+      { text: "C. Set-Content", correct: false },
+      { text: "D. Append-File", correct: false },
+      { text: "E. Write-Host", correct: false },
+    ],
+  },
+  {
+    question: "A script needs to schedule execution at a specific time every day. Which tool is most appropriate?",
+    answers: [
+      { text: "A. Windows Task Scheduler", correct: true },
+      { text: "B. PowerShell remoting", correct: false },
+      { text: "C. WSH", correct: false },
+      { text: "D. CRON", correct: false },
+      { text: "E. Batch scripting", correct: false },
+    ],
+  },
+  {
+    question: "Which command allows you to stop a remote PowerShell session?",
+    answers: [
+      { text: "A. Exit-Session", correct: false },
+      { text: "B. Stop-Remote", correct: false },
+      { text: "C. End-PSRemoting", correct: false },
+      { text: "D. Exit-PSSession", correct: true },
+      { text: "E. Disable-RemoteSession", correct: false },
+    ],
+  },
+  {
+    question: "You want to check running services and format the output in a table. Which of the following is correct?",
+    answers: [
+      { text: "A. Get-Service | Format-Table", correct: true },
+      { text: "B. Get-Service -Format Table", correct: false },
+      { text: "C. Get-Service | Table-Format", correct: false },
+      { text: "D. Format-Service | Get-Table", correct: false },
+      { text: "E. Table | Format-GetService", correct: false },
+    ],
+  },
+  {
+    question: "You need to iterate over each line in a CSV file. Which structure is most suitable in PowerShell?",
+    answers: [
+      { text: "A. While Loop", correct: false },
+      { text: "B. For Loop", correct: false },
+      { text: "C. Do While Loop", correct: false },
+      { text: "D. Foreach Loop", correct: true },
+      { text: "E. Infinite Loop", correct: false },
+    ],
+  },
+  {
+    question: "Which cmdlet is used to create a new object in PowerShell?",
+    answers: [
+      { text: "A. New-Cmdlet", correct: false },
+      { text: "B. New-Object", correct: true },
+      { text: "C. Create-Object", correct: false },
+      { text: "D. Add-Member", correct: false },
+      { text: "E. Init-Object", correct: false },
+    ],
+  },
+  {
+    question: "What is the correct syntax for assigning an integer value to a variable in PowerShell?",
+    answers: [
+      { text: "A. [int]$Var = 10", correct: true },
+      { text: "B. int$Var = 10", correct: false },
+      { text: "C. $Var = 10 (integer)", correct: false },
+      { text: "D. [integer]Var = 10", correct: false },
+      { text: "E. Var = 10", correct: false },
+    ],
+  }
   // Continue for more questions, ensuring the answers and questions align.
 
   // True/False Questions
