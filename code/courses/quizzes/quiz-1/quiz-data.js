@@ -191,8 +191,6 @@ const questionBank = [
       { text: "False", correct: true },
     ],
   },
-
-  // Multiple Choice Questions (MCQs)
   {
     question: "Which of the following is NOT a function of directory services?",
     answers: [
@@ -344,8 +342,6 @@ const questionBank = [
       { text: "E. Assign duplicate names to accounts across different locations.", correct: false },
     ],
   },
-
-  // True/False Questions
   {
     question: "Directories provide a single logical view of all network resources regardless of their physical locations.",
     answers: [
@@ -416,7 +412,6 @@ const questionBank = [
       { text: "False", correct: true },
     ],
   },
-  // Additional Multiple Choice Questions
   {
     question: "Which of the following attributes is typically inherited in a directory structure?",
     answers: [
@@ -467,8 +462,6 @@ const questionBank = [
       { text: "E. They enforce security policies across the network.", correct: false },
     ],
   },
-
-  // Additional True/False Questions
   {
     question: "A schema defines the types of attributes and objects a directory can contain.",
     answers: [
@@ -504,8 +497,6 @@ const questionBank = [
       { text: "False", correct: true },
     ],
   },
-
-  // Additional Application-Based Questions
   {
     "question": "Identify the Absolute Distinguished Name (DN) in the following examples:",
     "answers": [
@@ -515,8 +506,8 @@ const questionBank = [
       { "text": "D. .finance.johndoe", "correct": false },
       { "text": "E. .companyx.context.sarah", "correct": false }
     ]
-  }
-{
+  },
+  {
     question: "Which of the following illustrates a Relative Distinguished Name (RDN) within the Finance context?",
     answers: [
       { text: "A. cn=Mike Johnson, ou=Finance, o=CorpX, c=US", correct: false },
@@ -526,11 +517,6 @@ const questionBank = [
       { text: "E. context=CorpX.Mike", correct: false },
     ],
   },
-
-];
-
-// Additional Multiple Choice Questions
-questionBank.push(
   {
     question: "What is the purpose of a Directory System Agent (DSA) in X.500 directories?",
     answers: [
@@ -580,11 +566,7 @@ questionBank.push(
       { text: "Bind", correct: true },
       { text: "Unbind", correct: false }
     ]
-  }
-);
-
-// Additional True/False Questions
-questionBank.push(
+  },
   {
     question: "Directory services allow the use of alias objects to reference other entries in the directory.",
     answers: [
@@ -619,11 +601,7 @@ questionBank.push(
       { text: "True", correct: true },
       { text: "False", correct: false }
     ]
-  }
-);
-
-// True/False Questions
-questionBank.push(
+  },
   {
     question: "LDAP uses TCP port 636 for secure communication.",
     answers: [
@@ -658,11 +636,7 @@ questionBank.push(
       { text: "True", correct: true },
       { text: "False", correct: false }
     ]
-  }
-);
-
-// Multiple Choice Questions
-questionBank.push(
+  },
   {
     question: "What is a primary benefit of using a hierarchical structure in directories?",
     answers: [
@@ -713,4 +687,4 @@ questionBank.push(
       { text: "Sales.o=Company", correct: false }
     ]
   }
-);
+];
