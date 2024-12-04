@@ -140,7 +140,67 @@ const questions = [
       { text: "E. Parses plain text into CSV format", correct: false },
     ],
   },
-  // Continue for all 50+ questions, ensuring the answers and questions align.
+  {
+    question: "Which protocol does WS-MAN remoting use in PowerShell?",
+    answers: [
+      { text: "A. SMB", correct: false },
+      { text: "B. HTTP/HTTPS", correct: true },
+      { text: "C. FTP", correct: false },
+      { text: "D. RPC", correct: false },
+      { text: "E. DCOM", correct: false },
+    ],
+  },
+  {
+    question: "What does $_.Status represent in a pipelined PowerShell command?",
+    answers: [
+      { text: "A. Current user’s session status", correct: false },
+      { text: "B. A placeholder for a specific service status", correct: true },
+      { text: "C. A command's execution state", correct: false },
+      { text: "D. A script's debug state", correct: false },
+      { text: "E. None of the above", correct: false },
+    ],
+  },
+  {
+    question: "What does the get-content cmdlet do?",
+    answers: [
+      { text: "A. Writes content to a file", correct: false },
+      { text: "B. Reads the content of a file into an array", correct: true },
+      { text: "C. Appends content to a file", correct: false },
+      { text: "D. Deletes the content of a file", correct: false },
+      { text: "E. Sets the file content", correct: false },
+    ],
+  },
+  {
+    question: "In a For Each loop, what does the $object variable signify?",
+    answers: [
+      { text: "A. The total number of objects processed", correct: false },
+      { text: "B. The index of the current object", correct: false },
+      { text: "C. The current object being iterated over", correct: true },
+      { text: "D. The type of object in the loop", correct: false },
+      { text: "E. None of the above", correct: false },
+    ],
+  },
+  {
+    question: "Which PowerShell execution policy only allows digitally signed scripts to run?",
+    answers: [
+      { text: "A. Restricted", correct: false },
+      { text: "B. AllSigned", correct: false },
+      { text: "C. RemoteSigned", correct: true },
+      { text: "D. Unrestricted", correct: false },
+      { text: "E. Bypass", correct: false },
+    ],
+  },
+  {
+    question: "What is required to execute a PowerShell script in the current directory?",
+    answers: [
+      { text: "A. Start-ExecutionPolicy", correct: false },
+      { text: "B. Add-PathVariable", correct: false },
+      { text: "C. Prefix the script name with .\\", correct: true },
+      { text: "D. Enable-ScriptExecution", correct: false },
+      { text: "E. None of the above", correct: false },
+    ],
+  }
+  // Continue for more questions, ensuring the answers and questions align.
 
   // True/False Questions
   {
@@ -157,5 +217,131 @@ const questions = [
       { text: "False", correct: false },
     ],
   },
+  {
+    question: "Scripts written in WSH must always be embedded in HTML.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+    ],
+  },
+  {
+    question: "PowerShell cmdlets cannot accept parameters.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+    ],
+  },
+  {
+    question: "The Windows Task Scheduler allows automation of script execution.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false },
+    ],
+  },
+  {
+    question: "Digital signatures in WSH ensure that a script has not been tampered with.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false },
+    ],
+  },
+  {
+    question: "The Get-Member cmdlet is used to view cmdlet descriptions.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+    ],
+  },
+  {
+    question: "PowerShell remoting does not support remote execution.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+    ],
+  },
+  {
+    question: "CRON is used for task scheduling in Windows environments.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+    ],
+  },
+  {
+    question: "PowerShell is an object-based shell environment.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false },
+    ],
+  },
+  {
+    question: "The Set-Content cmdlet appends content to an existing file.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+    ],
+  },
+  {
+    question: "Scripts executed via cscript.exe output their results in dialog boxes.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+    ],
+  },
+  {
+    question: "Pipelines in PowerShell can pass objects between cmdlets.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false },
+    ],
+  },
+  {
+    question: "The -eq operator in PowerShell means 'equals.'",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false },
+    ],
+  },
+  {
+    question: "To import CSV data, the add-content cmdlet is used in PowerShell.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+    ],
+  },
+  {
+    question: "WSH supports scripts written in both Perl and Python by default.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+    ],
+  },
+  {
+    question: "PowerShell can only execute commands available in cmd.exe.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+    ],
+  },
+  {
+    question: "WS-MAN remoting in PowerShell is dependent on the WinRM service.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false },
+    ],
+  },
+  {
+    question: "Export-CSV creates a CSV file from objects in PowerShell.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false },
+    ],
+  },
+  {
+    question: "Named arguments can be passed to PowerShell scripts.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false },
+    ],
+  }
   // Continue similarly for all True/False questions...
 ];
