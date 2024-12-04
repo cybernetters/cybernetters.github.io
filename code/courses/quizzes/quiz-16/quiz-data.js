@@ -385,6 +385,141 @@ const questionBank = [
       { text: "E. Proprietary licenses", correct: false }
     ]
   },
+  {
+    question: "What is the purpose of activation in volume licensing?",
+    answers: [
+      { text: "A. To reduce installation time", correct: false },
+      { text: "B. To enforce compliance and prevent piracy", correct: true },
+      { text: "C. To allow unlimited installations", correct: false },
+      { text: "D. To simplify license management", correct: false },
+      { text: "E. To avoid the need for EULAs", correct: false },
+    ],
+  },
+  {
+    question: "Which of the following is an example of a software deployment-based licensing type?",
+    answers: [
+      { text: "A. Perpetual licensing", correct: false },
+      { text: "B. Volume licensing", correct: false },
+      { text: "C. Stand-alone licensing", correct: true },
+      { text: "D. Open-source licensing", correct: false },
+      { text: "E. Annual licensing", correct: false },
+    ],
+  },
+  {
+    question: "What is required to activate software in a KMS environment?",
+    answers: [
+      { text: "A. CAL agreement", correct: false },
+      { text: "B. License agreement with invoice", correct: false },
+      { text: "C. Minimum number of clients registering with KMS host", correct: true },
+      { text: "D. Open-source modification approval", correct: false },
+      { text: "E. Floating license", correct: false },
+    ],
+  },
+  {
+    question: "What does the GNU General Public License (GPL) require for redistribution?",
+    answers: [
+      { text: "A. No restrictions on modification", correct: false },
+      { text: "B. Modified source code must remain open", correct: true },
+      { text: "C. No liability for users", correct: false },
+      { text: "D. Limitation to non-commercial use", correct: false },
+      { text: "E. Enforced volume activation", correct: false },
+    ],
+  },
+  {
+    question: "Which type of software audit can result in criminal liability?",
+    answers: [
+      { text: "A. Internal audit", correct: false },
+      { text: "B. Vendor-conducted audit", correct: false },
+      { text: "C. Third-party audit", correct: false },
+      { text: "D. Forcibly conducted audit by law enforcement", correct: true },
+      { text: "E. Voluntary external audit", correct: false },
+    ],
+  },
+  {
+    question: "Stand-alone licensing enforces compliance on a per-machine basis.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false },
+    ],
+  },
+  {
+    question: "A perpetual license must be renewed annually to remain valid.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+    ],
+  },
+  {
+    question: "Key Management Services (KMS) ensure activation thresholds are met for volume licenses.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false },
+    ],
+  },
+  {
+    question: "Open-source licensing prohibits modification of the source code.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+    ],
+  },
+  {
+    question: "Non-compliance with licensing terms can lead to termination of the software agreement.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false },
+    ],
+  },
+  {
+    question: "A company uses floating licenses for a design tool. What would happen if all licenses are in use when a new user tries to access the software?",
+    answers: [
+      { text: "A. The user is granted temporary access.", correct: false },
+      { text: "B. The user must wait until a license becomes available.", correct: true },
+      { text: "C. The system automatically purchases an additional license.", correct: false },
+      { text: "D. The user receives unrestricted access to the tool.", correct: false },
+      { text: "E. The software disables for all users.", correct: false },
+    ],
+  },
+  {
+    question: "Your organization is evaluating switching to open-source software. What is a key advantage of this move?",
+    answers: [
+      { text: "A. No need for EULA acceptance", correct: false },
+      { text: "B. Lower total cost of ownership (TCO)", correct: true },
+      { text: "C. Unlimited liability protection", correct: false },
+      { text: "D. Enforced CAL compliance", correct: false },
+      { text: "E. Increased hardware integration", correct: false },
+    ],
+  },
+  {
+    question: "A small business discovers outdated licenses during an audit. What immediate action should they take?",
+    answers: [
+      { text: "A. Request a third-party audit", correct: false },
+      { text: "B. Purchase updated licenses to ensure compliance", correct: true },
+      { text: "C. Reinstall software under volume licensing", correct: false },
+      { text: "D. Ignore the findings as they are minor", correct: false },
+      { text: "E. Transition to stand-alone licenses", correct: false },
+    ],
+  },
+  {
+    question: "An IT team is configuring a KMS host. What must they ensure before activation can occur?",
+    answers: [
+      { text: "A. All client machines are online simultaneously.", correct: false },
+      { text: "B. The activation threshold is met.", correct: true },
+      { text: "C. The server is upgraded to the latest operating system.", correct: false },
+      { text: "D. A proprietary license is accepted on all machines.", correct: false },
+      { text: "E. The EULA is digitally signed by every user.", correct: false },
+    ],
+  },
+  {
+    question: "A university IT department is implementing software on 1,000 machines. Which licensing strategy is most efficient?",
+    answers: [
+      { text: "A. Per-connection licensing", correct: false },
+      { text: "B. Volume licensing", correct: true },
+      { text: "C. Stand-alone licensing", correct: false },
+      { text: "D. Open-source licensing", correct: false },
+      { text: "E. Floating licenses", correct: false },
+    ],
+  },
 
 
   // True/False Questions
