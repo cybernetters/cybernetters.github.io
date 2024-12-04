@@ -520,6 +520,126 @@ const questionBank = [
       { text: "E. Floating licenses", correct: false },
     ],
   },
+  {
+    question: "Proprietary software licenses often limit the rights granted under standard copyright law.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false },
+    ],
+  },
+  {
+    question: "The BSD license requires that modifications and redistributions include the original source code.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+    ],
+  },
+  {
+    question: "A perpetual license allows indefinite use of software without expiration.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false },
+    ],
+  },
+  {
+    question: "Client Access Licenses (CALs) are enforced on the server rather than the client.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+    ],
+  },
+  {
+    question: "Volume licenses can reduce costs for organizations with large-scale software deployments.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false },
+    ],
+  },
+  {
+    question: "Software rental licensing is ideal for frequently used enterprise applications.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+    ],
+  },
+  {
+    question: "KMS activation requires periodic communication between the client and the host.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false },
+    ],
+  },
+  {
+    question: "An EULA may legally prohibit reverse engineering of software.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false },
+    ],
+  },
+  {
+    question: "Open-source licenses typically require redistribution to remain free of cost.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+    ],
+  },
+  {
+    question: "Non-compliance with licensing agreements can result in legal penalties, including fines.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false },
+    ],
+  },
+  {
+    question: "What is one primary disadvantage of OEM licenses?",
+    answers: [
+      { text: "A. Higher upfront costs", correct: false },
+      { text: "B. Limited use to specific hardware", correct: true },
+      { text: "C. Lack of volume licensing discounts", correct: false },
+      { text: "D. Mandatory client-server integration", correct: false },
+      { text: "E. Open-source restrictions", correct: false },
+    ],
+  },
+  {
+    question: "Which license type is best suited for shared environments where users access software intermittently?",
+    answers: [
+      { text: "A. Per-connection licensing", correct: false },
+      { text: "B. Annual licenses", correct: false },
+      { text: "C. Floating licenses", correct: true },
+      { text: "D. Stand-alone licenses", correct: false },
+      { text: "E. OEM licenses", correct: false },
+    ],
+  },
+  {
+    question: "In deployment-based licensing, what determines licensing requirements?",
+    answers: [
+      { text: "A. The frequency of software usage", correct: false },
+      { text: "B. The number of servers", correct: false },
+      { text: "C. The method of software installation", correct: true },
+      { text: "D. The total number of end-users", correct: false },
+      { text: "E. The duration of the license agreement", correct: false },
+    ],
+  },
+  {
+    question: "Which organization is associated with the slogan “Don’t Copy That Floppy”?",
+    answers: [
+      { text: "A. Business Software Alliance (BSA)", correct: false },
+      { text: "B. GNU Project", correct: false },
+      { text: "C. Software & Information Industry Association (SIIA)", correct: true },
+      { text: "D. Open Source Initiative", correct: false },
+      { text: "E. Free Software Foundation", correct: false },
+    ],
+  },
+  {
+    question: "Which is a characteristic of time-based licensing models?",
+    answers: [
+      { text: "A. Unlimited redistribution rights", correct: false },
+      { text: "B. Tied to the duration of use", correct: true },
+      { text: "C. Requires CAL enforcement", correct: false },
+      { text: "D. Focused on server-based environments", correct: false },
+      { text: "E. Includes no expiration date", correct: false },
+    ],
+  },
 
 
   // True/False Questions
