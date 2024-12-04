@@ -640,6 +640,91 @@ const questionBank = [
       { text: "E. Includes no expiration date", correct: false },
     ],
   },
+  {
+    question: "Software maintenance programs are optional add-ons to software licenses.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false },
+    ],
+  },
+  {
+    question: "Proprietary licenses often prohibit sharing software with third parties.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false },
+    ],
+  },
+  {
+    question: "Open-source licenses always grant ownership of the copyright to the user.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+    ],
+  },
+  {
+    question: "CALs are required for each client accessing a server-based application.",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false },
+    ],
+  },
+  {
+    question: "Per-use licenses are cost-effective for frequently used enterprise applications.",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+    ],
+  },
+  {
+    question: "What is one key feature of volume licensing?",
+    answers: [
+      { text: "A. Allows installation on a single machine only", correct: false },
+      { text: "B. Requires unique activation for each installation", correct: false },
+      { text: "C. Utilizes a single key for multiple installations", correct: true },
+      { text: "D. Mandates compliance with open-source guidelines", correct: false },
+      { text: "E. Reduces client-server integration costs", correct: false },
+    ],
+  },
+  {
+    question: "Which type of licensing ensures the software is only accessible during a specific time frame?",
+    answers: [
+      { text: "A. Open-source licensing", correct: false },
+      { text: "B. Perpetual licensing", correct: false },
+      { text: "C. Annual licensing", correct: true },
+      { text: "D. Deployment-based licensing", correct: false },
+      { text: "E. OEM licensing", correct: false },
+    ],
+  },
+  {
+    question: "Which of the following must occur for KMS activation to be successful?",
+    answers: [
+      { text: "A. EULA acceptance by all users", correct: false },
+      { text: "B. Minimum number of client registrations with the host", correct: true },
+      { text: "C. Redistribution of the activation key", correct: false },
+      { text: "D. Deployment on a stand-alone machine", correct: false },
+      { text: "E. Reverse engineering of the activation process", correct: false },
+    ],
+  },
+  {
+    question: "What is the purpose of an external software audit?",
+    answers: [
+      { text: "A. To enforce reverse engineering restrictions", correct: false },
+      { text: "B. To identify and resolve licensing non-compliance", correct: true },
+      { text: "C. To validate the source code of open-source software", correct: false },
+      { text: "D. To distribute CALs to end-users", correct: false },
+      { text: "E. To increase the activation threshold of volume licenses", correct: false },
+    ],
+  },
+  {
+    question: "Which license model provides unrestricted access to modify and redistribute the software?",
+    answers: [
+      { text: "A. Proprietary licensing", correct: false },
+      { text: "B. Stand-alone licensing", correct: false },
+      { text: "C. Open-source licensing", correct: true },
+      { text: "D. Volume licensing", correct: false },
+      { text: "E. Deployment-based licensing", correct: false },
+    ],
+  },
 
 
   // True/False Questions
