@@ -319,8 +319,9 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   gap: 1rem;
+  max-width: 600px;
 }
 
 /* Left Section: Quiz Info */
@@ -344,7 +345,7 @@
   width: 2px;
   background-color: #444;
   flex-shrink: 0;
-  height: 60px;
+  height: 50px;
 }
 
 /* Right Section: Quiz Score */
