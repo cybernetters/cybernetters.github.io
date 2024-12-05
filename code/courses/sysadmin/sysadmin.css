@@ -310,6 +310,60 @@
   color: #fff;
 }
 
+/* Quiz Card Styling */
+.quiz-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+/* Left Section: Quiz Info */
+.quiz-info {
+  flex: 3; /* Larger Section */
+}
+
+.quiz-info h3 {
+  font-size: 1.5rem;
+  color: #00ff00;
+  margin-bottom: 0.5rem;
+}
+
+.quiz-info p {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+/* Divider */
+.divider {
+  width: 2px;
+  background-color: #444;
+  flex-shrink: 0;
+  height: 60px;
+}
+
+/* Right Section: Quiz Score */
+.quiz-score {
+  flex: 1; /* Smaller Section */
+  text-align: center;
+}
+
+.score-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00ff00;
+}
+
+.score-label {
+  font-size: 1rem;
+  color: #aaa;
+}
+
 
 /* Sidebar Styling */
 .sidebar {
