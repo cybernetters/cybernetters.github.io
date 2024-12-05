@@ -161,6 +161,24 @@
       margin-bottom: 1rem; /* Add spacing between items */
     }
 
+    .quiz-card {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr;
+    }
+    .quiz-card quiz-table {
+    }
+    .quiz-card quiz-score {
+      font-size: 350%;
+      text-align: center
+    }
+    .quiz-card:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    
     /* Responsive Design */
     @media (max-width: 768px) {
       .content-row {
@@ -250,23 +268,21 @@
           
             <!-- QUIZ CARD -->
             <div class="quiz-card">
-              <div class="quiz-table"> 
-                <div class="row">
-                  <!-- LEFT SIDE: Quiz Info -->
-                  <div class="quiz-info">
-                    <p><strong>Quiz:</strong> AAA</p>
-                    <p><strong>Mastery:</strong> Beginner</p>
-                  </div>
-            
-                  <!-- DIVIDER -->
-                  <div class="quiz-divider"></div>
-            
-                  <!-- START QUIZ BUTTON -->
-                  <div class="quiz-start">
-                    <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/quiz-1/landing.html'">
-                      Start Quiz
-                    </button>
-                  </div>
+	            <div class="quiz-table"> 
+                <!-- LEFT SIDE: Quiz Info -->
+                <div class="quiz-info">
+                  <p><strong>Quiz:</strong> AAA</p>
+                  <p><strong>Mastery:</strong> Beginner</p>
+                </div>
+          
+                <!-- DIVIDER -->
+                <div class="quiz-divider"></div>
+          
+                <!-- START QUIZ BUTTON -->
+                <div class="quiz-start">
+                  <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/quiz-1/landing.html'">
+                    Start Quiz
+                  </button>
                 </div>
               </div>
               <!-- RIGHT SIDE: Quiz Score -->
@@ -274,9 +290,7 @@
                 <p class="score-value">150</p>
                 <!--<p class="score-label">Points Earned</p>-->
               </div>
-
-            </div>
-          
+            </div>          
           </div>                              
         </div>
       </div>
