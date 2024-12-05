@@ -315,12 +315,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #222;
+  background-color: #222; /* Background color for the card */
   border-radius: 8px;
   padding: 20px;
   margin-top: 10px;
-  color: #00ff00;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  color: #00ff00; /* Neon green text color */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adds shadow for depth */
 }
 
 /* Left Side: Quiz Info */
@@ -336,7 +336,7 @@
 /* Divider Styling */
 .quiz-divider {
   width: 2px;
-  background-color: #00ff00;
+  background-color: #00ff00; /* Divider in neon green */
   height: 50px;
   margin: 0 20px;
 }
@@ -364,19 +364,20 @@
 }
 
 .quiz-start button {
-  background-color: #00ff00;
-  color: #000;
+  background-color: #00ff00; /* Neon green button */
+  color: #000; /* Black text */
   padding: 10px 20px;
   font-size: 1rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease-in-out; /* Smooth transition on hover */
 }
 
 .quiz-start button:hover {
-  background-color: #008f00;
+  background-color: #008f00; /* Darker green on hover */
 }
+
 
 /* Start Button */
 .quiz-start {
