@@ -310,45 +310,48 @@
   color: #fff;
 }
 
-/* QUIZ CARD: Styles the entire quiz card layout */
+/* QUIZ CARD: Table-like Layout */
 .quiz-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #222;
+  background-color: #222; /* Dark background for card */
   border-radius: 8px;
   padding: 20px;
   margin-top: 10px;
-  color: #00ff00;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  color: #00ff00; /* Neon green text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for card */
+}
+
+/* Table-like Layout */
+.quiz-table {
+  display: grid;
+  grid-template-columns: 2fr 1px 1fr; /* Left, Divider, Right */
+  align-items: center;
+  gap: 20px; /* Space between sections */
 }
 
 /* LEFT SIDE: Quiz Info */
 .quiz-info {
-  flex: 2; /* Larger section */
   font-size: 1rem;
 }
 
 .quiz-info p {
-  margin: 5px 0;
+  margin: 5px 0; /* Adds spacing between quiz info lines */
 }
 
-/* DIVIDER: Vertical line between sections */
+/* DIVIDER: Vertical Divider */
 .quiz-divider {
-  width: 2px;
-  background-color: #00ff00;
-  height: 50px;
-  margin: 0 20px;
+  width: 1px;
+  background-color: #00ff00; /* Neon green divider */
+  height: 100%; /* Stretch full height */
+  align-self: stretch; /* Ensures the divider matches height */
 }
 
 /* RIGHT SIDE: Quiz Score */
 .quiz-score {
-  flex: 1; /* Smaller section */
-  text-align: center; /* Center-align the text */
+  text-align: center; /* Center-align the score */
 }
 
 .quiz-score .score-value {
-  font-size: 1.8rem;
+  font-size: 1.8rem; /* Larger font size for score */
   font-weight: bold;
 }
 
@@ -360,12 +363,12 @@
 /* START QUIZ BUTTON */
 .quiz-start {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 15px; /* Adds spacing above the button */
 }
 
 .quiz-start button {
-  background-color: #00ff00;
-  color: #000;
+  background-color: #00ff00; /* Neon green button */
+  color: #000; /* Black text on the button */
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -375,7 +378,7 @@
 }
 
 .quiz-start button:hover {
-  background-color: #008f00;
+  background-color: #008f00; /* Darker green on hover */
 }
 
 
