@@ -134,6 +134,18 @@
       font-size: 1rem;
     }
 
+    .quiz-card {}
+    .quiz-card quiz-table {
+      float: left;
+      width: 75%;  
+    }
+    .quiz-card quiz-score {
+      float: left;
+      width: 25%;
+      padding-left: 20px;
+    }
+    
+    
     .quiz button:hover {
       background-color: #008f00;
     }
@@ -238,47 +250,33 @@
           
             <!-- QUIZ CARD -->
             <div class="quiz-card">
-              <div class="quiz-table">
-                <!-- LEFT SIDE: Quiz Info -->
+              <div class="quiz-table"> 
                 <div class="row">
+                  <!-- LEFT SIDE: Quiz Info -->
                   <div class="quiz-info">
-                    <p><strong>Quiz:</strong> Game 1</p>
+                    <p><strong>Quiz:</strong> AAA</p>
                     <p><strong>Mastery:</strong> Beginner</p>
                   </div>
             
                   <!-- DIVIDER -->
                   <div class="quiz-divider"></div>
             
-                  <!-- RIGHT SIDE: Quiz Score -->
-                  <div class="quiz-score">
-                    <p class="score-value">150</p>
-                    <p class="score-label">Points Earned</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="quiz-info">
-                    <p><strong>Quiz:</strong> Game 2</p>
-                    <p><strong>Mastery:</strong> Beginner</p>
-                  </div>
-            
-                  <!-- DIVIDER -->
-                  <div class="quiz-divider"></div>
-            
-                  <!-- RIGHT SIDE: Quiz Score -->
-                  <div class="quiz-score">
-                    <p class="score-value">150</p>
-                    <p class="score-label">Points Earned</p>
+                  <!-- START QUIZ BUTTON -->
+                  <div class="quiz-start">
+                    <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/quiz-1/landing.html'">
+                      Start Quiz
+                    </button>
                   </div>
                 </div>
               </div>
+              <!-- RIGHT SIDE: Quiz Score -->
+              <div class="quiz-score">
+                <p class="score-value">150</p>
+                <!--<p class="score-label">Points Earned</p>-->
+              </div>
+
             </div>
           
-            <!-- START QUIZ BUTTON -->
-            <div class="quiz-start">
-              <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/quiz-1/landing.html'">
-                Start Quiz
-              </button>
-            </div>
           </div>                              
         </div>
       </div>
