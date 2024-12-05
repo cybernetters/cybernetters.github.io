@@ -187,6 +187,86 @@
 
 /* Add more for additional units */
 
+/* Unit Card */
+.unit-card {
+  background-color: #222;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  color: #00ff00;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.unit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+/* Unit Header */
+.unit-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #333;
+  color: #00ff00;
+  text-align: left;
+  border-radius: 8px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+/* Unit Content */
+.unit-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.unit-content li {
+  margin: 0.5rem 0;
+}
+
+.unit-content li a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+.unit-content li a:hover {
+  color: #fff;
+}
+
+
 /* Sidebar Styling */
 .sidebar {
   background-color: #111; /* Dark background for contrast */
