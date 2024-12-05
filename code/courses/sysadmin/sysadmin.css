@@ -310,73 +310,74 @@
   color: #fff;
 }
 
-/* Quiz Card Styling */
+/* QUIZ CARD: Styles the entire quiz card layout */
 .quiz-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #222; /* Card background */
-  border-radius: 8px; /* Smooth rounded corners */
-  padding: 20px; /* Inner spacing */
-  margin-top: 20px; /* Space between cards */
-  color: #00ff00; /* Neon green text */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Add depth with shadow */
+  background-color: #222;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 10px;
+  color: #00ff00;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* Left Section: Quiz Info */
+/* LEFT SIDE: Quiz Info */
 .quiz-info {
-  flex: 2; /* Takes up 2x the space compared to the right side */
-  text-align: left; /* Align text to the left */
+  flex: 2; /* Larger section */
+  font-size: 1rem;
 }
 
 .quiz-info p {
-  margin: 5px 0; /* Spacing between lines */
+  margin: 5px 0;
 }
 
-/* Divider Styling */
+/* DIVIDER: Vertical line between sections */
 .quiz-divider {
-  width: 2px; /* Divider thickness */
-  background-color: #00ff00; /* Neon green divider */
-  height: 50px; /* Height of the divider */
-  margin: 0 20px; /* Space between left and right sections */
+  width: 2px;
+  background-color: #00ff00;
+  height: 50px;
+  margin: 0 20px;
 }
 
-/* Right Section: Score */
+/* RIGHT SIDE: Quiz Score */
 .quiz-score {
-  flex: 1; /* Takes up less space compared to the left side */
+  flex: 1; /* Smaller section */
   text-align: center; /* Center-align the text */
 }
 
 .quiz-score .score-value {
-  font-size: 2rem; /* Larger text for the score */
-  font-weight: bold; /* Make it stand out */
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .quiz-score .score-label {
-  font-size: 0.9rem; /* Smaller label text */
+  font-size: 0.9rem;
   margin: 0;
 }
 
-/* Start Quiz Button */
+/* START QUIZ BUTTON */
 .quiz-start {
   text-align: center;
-  margin-top: 10px; /* Space above the button */
+  margin-top: 10px;
 }
 
 .quiz-start button {
-  background-color: #00ff00; /* Neon green button */
-  color: #000; /* Black text */
-  padding: 10px 20px; /* Button padding */
-  font-size: 1rem; /* Standard font size */
+  background-color: #00ff00;
+  color: #000;
   border: none;
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer on hover */
-  transition: background-color 0.3s ease; /* Smooth hover effect */
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .quiz-start button:hover {
-  background-color: #008f00; /* Darker green on hover */
+  background-color: #008f00;
 }
+
 
 
 /* Start Button */
