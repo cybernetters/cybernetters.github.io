@@ -359,6 +359,20 @@
     </div>
   </footer>
 </body>
+<script>
+  function loadQuizScore(quizId, elementId) {
+    const score = localStorage.getItem(quizId) || 0; // Default score to 0
+    const scoreElement = document.getElementById(elementId);
+    if (scoreElement) {
+      scoreElement.textContent = score; // Update the score in the card
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    loadQuizScore("quiz-aaa-score", "quiz-aaa-score");
+  });
+</script>
+
 </html>
 
 <script src="quiz.js" defer></script>

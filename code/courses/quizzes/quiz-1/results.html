@@ -80,6 +80,13 @@
     if (finalScore >= 100) proficiency = "Mastery";
     document.getElementById("proficiency").textContent = `Proficiency Level: ${proficiency}`;
   });
-</script>
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const score = localStorage.getItem("quiz-1-score") || 0;
+      document.getElementById("final-score").textContent = `Your score: ${score}`;
+    });
+  </script>
+  <div id="final-score"></div>  
 </body>
 </html>

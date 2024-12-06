@@ -1,12 +1,11 @@
-function updateQuizScore(quizId, score) {
-    const scoreElement = document.getElementById(quizId);
-    if (scoreElement) {
-    scoreElement.querySelector("h2").textContent = score;
-    } else {
-    console.error(`Quiz ID "${quizId}" not found.`);
-    }
-}
-
-setTimeout(() => {
-    updateQuizScore("quiz-directory-services-score", 250); // Update to 250 points
-}, 2000)
+function saveQuizScore(quizId, score) {
+    localStorage.setItem(quizId, score); // Save the score using localStorage
+    console.log(`Score saved for ${quizId}: ${score}`);
+  }
+  
+  function endQuiz(quizId) {
+    const score = calculateScore(); // Replace this with the actual score calculation logic
+    saveQuizScore(quizId, score);
+    alert(`Quiz complete! You scored: ${score}`);
+  }
+  
