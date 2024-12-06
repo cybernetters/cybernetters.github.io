@@ -271,10 +271,10 @@
 	      <div class="quiz-table">
                 <p>Up next for you:</p>
                 <p><strong>Quiz: AAA</strong></p>
-                <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/quiz-2/landing.html'">Start</button>
+                <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/quiz-1/landing.html'">Start</button>
 	      </div>
 	      <div class="quiz-score">
-	        <div class="quiz-score-value" id="quiz-2-score">
+	        <div class="quiz-score-value" id="quiz-1-score">
 		      0
 	        </div>
 	      </div>
@@ -313,10 +313,17 @@
           <div class="practice">
             <h3>Practice</h3>
             <div class="quiz">
-              <p>Up next for you:</p>
-              <p><strong>Quiz: Directory Services</strong></p>
-              <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/quiz-1/landing.html'">Start</button>
-            </div>
+      	      <div class="quiz-table">
+                <p>Up next for you:</p>
+                <p><strong>Quiz: Directory Services</strong></p>
+                <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/quiz-2/landing.html'">Start</button>
+              </div>
+  	      <div class="quiz-score">
+	        <div class="quiz-score-value" id="quiz-2-score">
+	      	  0
+	        </div>
+	      </div>
+	    </div>
           </div>
         </div>
       </div>
@@ -351,9 +358,16 @@
           <div class="practice">
             <h3>Practice</h3>
             <div class="quiz">
-              <p>Up next for you:</p>
-              <p><strong>Quiz: Active Directory Basics</strong></p>
-              <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/quiz-3/landing.html'">Start</button>
+      	      <div class="quiz-table">
+                <p>Up next for you:</p>
+                <p><strong>Quiz: Active Directory Basics</strong></p>
+                <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/quiz-3/landing.html'">Start</button>
+	      </div>
+	      <div class="quiz-score">
+	        <div class="quiz-score-value" id="quiz-3-score">
+	      	  0
+	        </div>
+	      </div>
             </div>
           </div>
         </div>
@@ -384,8 +398,9 @@
 
   // Load all scores dynamically on page load
   document.addEventListener("DOMContentLoaded", () => {
-    loadQuizScore("quiz-1-score"); // Load Directory Services Quiz score
-    loadQuizScore("quiz-2-score"); // Load AAA Quiz score
+    loadQuizScore("quiz-1-score"); // Load AAA Quiz score
+    loadQuizScore("quiz-2-score"); // Load Directory Services Quiz score
+    loadQuizScore("quiz-3-score"); // Active Directory Basics
     // Add additional calls for other quizzes as needed
     // e.g., loadQuizScore("quiz-2-score", "quiz-directory-services-score");
   });
