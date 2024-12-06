@@ -126,13 +126,20 @@
     }
 
     .quiz .quiz-score {
-      text-align: center;
-      font-size: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
       border-color: #00ff00;
       border-style: solid;
       border-width: 0px 0px 0px 1px
     }
-	  
+
+    .quiz .quiz-score-value {
+      text-align: center;
+      font-size: 3rem;
+    }
+
     .quiz p {
       margin: 0.5rem 0;
       font-size: 1rem;
@@ -266,8 +273,10 @@
                 <p><strong>Quiz: AAA</strong></p>
                 <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/quiz-2/landing.html'">Start</button>
 	      </div>
-	      <div class="quiz-score" id="quiz-2-score">
+	      <div class="quiz-score">
+	        <div class="quiz-score-value" id="quiz-2-score">
 		      0
+	        </div>
 	      </div>
             </div>
           </div>        
