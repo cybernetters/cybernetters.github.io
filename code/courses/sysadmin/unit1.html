@@ -116,8 +116,23 @@
       padding: 1rem;
       text-align: center;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr;	/* two columns */
     }
 
+    .quiz .quiz-table {
+      text-align: left;
+    }
+
+    .quiz .quiz-score {
+      text-align: center;
+      font-size: 3rem;
+      border-color: white;
+      border-style: solid;
+      border-width: 0px 0px 0px 2px
+    }
+	  
     .quiz p {
       margin: 0.5rem 0;
       font-size: 1rem;
@@ -160,24 +175,6 @@
     .learn li {
       margin-bottom: 1rem; /* Add spacing between items */
     }
-
-    .quiz-card {
-      display: grid;
-      grid-gap: 10px;
-      grid-template-columns: 1fr 1fr;
-    }
-    .quiz-card quiz-table {
-    }
-    .quiz-card quiz-score {
-      font-size: 350%;
-      text-align: center
-    }
-    .quiz-card:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
     
     /* Responsive Design */
     @media (max-width: 768px) {
@@ -260,35 +257,20 @@
             </ul>
           </div>
 
-	  <div class="practice">
-            <h2>Practice</h2>
-		  <div class="topic-card">
-		    <!-- CARD HEADER -->
-		  
-		    <!-- QUIZ CARD -->
-		    <div class="quiz-card">
-          <!-- Left Side: Quiz Info -->
-          <div class="quiz-info">
-            <h4>Quiz: Directory Services</h4>
-            <p>Mastery: <strong>Beginner</strong></p>
-          </div>
-        
-          <!-- Divider -->
-          <div class="quiz-divider"></div>
-        
-          <!-- Right Side: Quiz Score -->
-          <div class="quiz-score" id="quiz-directory-services-score">
-            <h2>150</h2>
-            <p class="score-label">Points Earned</p>
-          </div>
-        </div>
-        
-        <!-- START QUIZ BUTTON -->
-        <div class="quiz-start">
-          <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/quiz-1/landing.html'">
-            Start Quiz
-          </button>
-        </div>
+	  <!-- PRACTICE SECTION -->
+          <div class="practice">
+            <h3>Practice</h3>
+            <div class="quiz">
+	      <div class="quiz-table">
+                <p>Up next for you:</p>
+                <p><strong>Quiz: Directory Services</strong></p>
+                <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/quiz-1/landing.html'">Start</button>
+	      </div>
+	      <div class="quiz-score">
+		230
+	      </div>
+            </div>
+          </div>        
         </div>
       </div>
 
