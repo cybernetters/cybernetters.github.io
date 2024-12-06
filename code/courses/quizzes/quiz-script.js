@@ -181,8 +181,14 @@ function updateScoreDisplay() {
 }
 
 // End the quiz and redirect to the results page
-function endQuiz() {
-  window.location.href = "results.html"; // Redirect to results page
+function endQuiz(quizId = null, score = null) {
+  // If `quizId` and `score` are provided, save the score
+  if (quizId && score !== null) {
+    localStorage.setItem(quizId, score);
+  }
+
+  // Redirect to the results page
+  window.location.href = "results.html";
 }
 
 // Initialize the first question
@@ -203,14 +209,6 @@ function updateScoreDisplay() {
     : 0; // Calculate accuracy as a percentage
   const scoreDisplay = document.getElementById("score-display");
   scoreDisplay.textContent = `Score: ${userScore} | Accuracy: ${accuracy}%`;
-}
-
-function endQuiz(quizId, score) {
-  // Save the score to localStorage
-  localStorage.setItem(quizId, score);
-
-  // Redirect to the results page (existing functionality)
-  window.location.href = "results.html"; // Redirect to results page
 }
 
 
