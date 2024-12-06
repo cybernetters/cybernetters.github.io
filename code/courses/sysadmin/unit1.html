@@ -266,7 +266,7 @@
                 <p><strong>Quiz: AAA</strong></p>
                 <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/quiz-2/landing.html'">Start</button>
 	      </div>
-	      <div class="quiz-score" id="quiz-aaa-score">
+	      <div class="quiz-score" id="quiz-2-score">
 		      0
 	      </div>
             </div>
@@ -361,23 +361,24 @@
 </body>
 <script>
   function loadQuizScore(quizId, elementId) {
+    // Retrieve the score from localStorage
     const score = localStorage.getItem(quizId) || 0; // Default score to 0
     const scoreElement = document.getElementById(elementId);
+
     if (scoreElement) {
       scoreElement.textContent = score; // Update the score in the card
+      console.log(`Updated score for ${quizId}: ${score}`);
+    } else {
+      console.error(`Element with ID ${elementId} not found.`);
     }
   }
 
-  // Script to load scores dynamically
+  // Load all scores dynamically on page load
   document.addEventListener("DOMContentLoaded", () => {
-      // Retrieve the score for "AAA Quiz"
-      const aaaScore = localStorage.getItem("quiz-1-score") || 0; // Default to 0 if not found
-
-      // Update the score in the quiz card
-      const scoreElement = document.getElementById("quiz-aaa-score");
-      if (scoreElement) {
-          scoreElement.textContent = aaaScore; // Update the score value
-      }
+    loadQuizScore("quiz-1-score"); // Load Directory Services Quiz score
+    loadQuizScore("quiz-1-score"); // Load AAA Quiz score
+    // Add additional calls for other quizzes as needed
+    // e.g., loadQuizScore("quiz-2-score", "quiz-directory-services-score");
   });
 </script>
 
