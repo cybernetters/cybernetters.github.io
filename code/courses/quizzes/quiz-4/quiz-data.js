@@ -190,7 +190,7 @@ const questionBank = [
       { "text": "Poor scalability", "correct": false },
       { "text": "Inefficient use of resources", "correct": false }
     ]
-  }
+  },
   {
     "question": "Virtualization was first introduced in the 1980s to address x86 server inefficiencies.",
     "answers": [
