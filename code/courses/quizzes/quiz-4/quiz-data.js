@@ -191,4 +191,194 @@ const questionBank = [
       { "text": "Inefficient use of resources", "correct": false }
     ]
   }
+  {
+    "question": "Virtualization was first introduced in the 1980s to address x86 server inefficiencies.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Hosted virtualization installs on top of existing hardware without an operating system.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Hardware-assisted virtualization offers the best compatibility.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Virtual machines can only be moved between servers with identical hardware configurations.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Memory virtualization involves mapping virtual memory to physical memory by the hypervisor.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Device and I/O virtualization causes significant performance impacts.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "VMware vSphere is an example of a bare-metal hypervisor.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "OpenVZ is primarily used for client-based virtualization in Linux environments.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Hypervisor virtualization removes the need for binary translation.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Paravirtualization requires a standard, unmodified guest OS for compatibility.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "The hypervisor in bare-metal architectures directly manages the hardware resources.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "A key advantage of virtualization is the consistent hardware interface it provides.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  }
+  {
+    "question": "Virtual appliances help simplify software installation and debugging.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "A major disadvantage of virtualization is reduced hardware utilization.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Virtualization was first introduced by VMware in 1998.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Cloning virtual machines requires complex hardware reconfiguration.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Virtualization reduces energy costs by minimizing power and cooling needs.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The concept of virtualization is a recent innovation from the 2000s.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "One drawback of virtualization is the difficulty in tracking virtualized systems.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Parallels is an example of virtualization software for Mac systems.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Which virtualization method would you recommend for a high-performance computing cluster requiring minimal latency?",
+    "answers": [
+      { "text": "Hosted virtualization", "correct": false },
+      { "text": "Paravirtualization", "correct": false },
+      { "text": "Full virtualization", "correct": false },
+      { "text": "Hardware-assisted virtualization", "correct": false },
+      { "text": "Bare-metal hypervisor", "correct": true }
+    ]
+  },
+  {
+    "question": "What configuration might best support a consistent development environment across geographically dispersed teams?",
+    "answers": [
+      { "text": "Hosted virtualization with VirtualBox", "correct": false },
+      { "text": "Cloud-based hypervisor solutions like Microsoft Azure", "correct": true },
+      { "text": "Hardware-assisted virtualization on local servers", "correct": false },
+      { "text": "Full virtualization on client machines", "correct": false },
+      { "text": "Paravirtualization with modified guest OS", "correct": false }
+    ]
+  },
+  {
+    "question": "An organization wants to scale server resources during peak traffic. Which feature is most relevant?",
+    "answers": [
+      { "text": "OS independence", "correct": false },
+      { "text": "Failover capability", "correct": false },
+      { "text": "Cloning VMs", "correct": false },
+      { "text": "Dynamic resource allocation in virtualization", "correct": true },
+      { "text": "Memory mapping", "correct": false }
+    ]
+  },
+  {
+    "question": "Which tool is most appropriate for testing software on different operating systems without purchasing multiple devices?",
+    "answers": [
+      { "text": "VMware ESXi", "correct": false },
+      { "text": "Microsoft Virtual PC", "correct": false },
+      { "text": "VMware Workstation", "correct": true },
+      { "text": "Xen", "correct": false },
+      { "text": "OpenVZ", "correct": false }
+    ]
+  },
+  {
+    "question": "What virtualization type offers the easiest hardware maintenance?",
+    "answers": [
+      { "text": "Hosted virtualization", "correct": true },
+      { "text": "Bare-metal hypervisor", "correct": false },
+      { "text": "Full virtualization", "correct": false },
+      { "text": "Memory virtualization", "correct": false },
+      { "text": "None", "correct": false }
+    ]
+  }
 ];
