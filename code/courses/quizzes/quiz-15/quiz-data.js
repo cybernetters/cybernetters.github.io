@@ -438,7 +438,6 @@ const questions = [
     answers: [
       { text: "True", correct: true },
       { text: "False", correct: false },
-    ],
+    ]
   }
-  // Continue similarly for all True/False questions...
 ];
