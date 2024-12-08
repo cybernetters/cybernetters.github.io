@@ -1,4 +1,4 @@
-const questions = [
+const questionBank = [
   // Multiple-Choice Questions
   {
     question: "Which of the following is a scripting host in Windows Script Host (WSH)?",
