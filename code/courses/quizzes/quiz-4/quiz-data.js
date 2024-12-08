@@ -274,7 +274,7 @@ const questionBank = [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
-  }
+  },
   {
     "question": "Virtual appliances help simplify software installation and debugging.",
     "answers": [
