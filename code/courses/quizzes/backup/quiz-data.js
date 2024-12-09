@@ -1,751 +1,442 @@
 const questionBank = [
-  // 20 Multiple Choice Questions (MCQs)
   {
-    question: "What is the primary purpose of software licensing?",
-    answers: [
-      { text: "A. To simplify the user interface", correct: false },
-      { text: "B. To prevent unauthorized duplication and usage", correct: true },
-      { text: "C. To reduce software costs", correct: false },
-      { text: "D. To allow unlimited installations", correct: false },
-      { text: "E. To enable hardware integration", correct: false },
-    ],
-  },
-  {
-    question: "Which of the following typically comes with off-the-shelf software?",
-    answers: [
-      { text: "A. OEM license", correct: false },
-      { text: "B. Proprietary license", correct: false },
-      { text: "C. License Agreement", correct: true },
-      { text: "D. Source code access", correct: false },
-      { text: "E. Client Access License (CAL)", correct: false },
-    ],
-  },
-  {
-    question: "What is the enforceability of an End-User License Agreement (EULA) dependent on?",
-    answers: [
-      { text: "A. The version of the software", correct: false },
-      { text: "B. Jurisdiction and user acceptance", correct: true },
-      { text: "C. Availability of source code", correct: false },
-      { text: "D. Reverse engineering permissions", correct: false },
-      { text: "E. Time of installation", correct: false },
-    ],
-  },
-  {
-    question: "What does a proprietary software license typically restrict?",
-    answers: [
-      { text: "A. Installation on multiple machines", correct: false },
-      { text: "B. Use without updates", correct: false },
-      { text: "C. Source code modifications", correct: true },
-      { text: "D. End-user warranty claims", correct: false },
-      { text: "E. Hardware compatibility", correct: false },
-    ],
-  },
-  {
-    question: "Which is a common example of deployment-based licensing?",
-    answers: [
-      { text: "A. Annual licensing", correct: false },
-      { text: "B. Perpetual licensing", correct: false },
-      { text: "C. Stand-alone licensing", correct: true },
-      { text: "D. Software rental licensing", correct: false },
-      { text: "E. Volume licensing", correct: false },
-    ],
-  },
-  {
-    question: "Which of the following licensing models governs concurrent software usage?",
-    answers: [
-      { text: "A. Individual licenses", correct: false },
-      { text: "B. Floating licenses", correct: true },
-      { text: "C. OEM licenses", correct: false },
-      { text: "D. Annual licenses", correct: false },
-      { text: "E. Per-connection licenses", correct: false },
-    ],
-  },
-  {
-    question: "In client/server licensing, what does a Client Access License (CAL) govern?",
-    answers: [
-      { text: "A. The number of servers available", correct: false },
-      { text: "B. Client access to server-based resources", correct: true },
-      { text: "C. Concurrent connections to a server", correct: false },
-      { text: "D. Individual software installations", correct: false },
-      { text: "E. Licensing for open-source distribution", correct: false },
-    ],
-  },
-  {
-    question: "Which licensing model is commonly used for rarely used applications?",
-    answers: [
-      { text: "A. Floating licenses", correct: false },
-      { text: "B. Software rental", correct: true },
-      { text: "C. Annual licenses", correct: false },
-      { text: "D. Per-connection licenses", correct: false },
-      { text: "E. Client/server licensing", correct: false },
-    ],
-  },
-  {
-    question: "What is required to validate software during volume licensing?",
-    answers: [
-      { text: "A. KMS host configuration", correct: true },
-      { text: "B. Source code availability", correct: false },
-      { text: "C. Proprietary license acceptance", correct: false },
-      { text: "D. Reverse engineering approval", correct: false },
-      { text: "E. CAL enforcement", correct: false },
-    ],
-  },
-  {
-    question: "What is the activation threshold for clients in a KMS setup?",
-    answers: [
-      { text: "A. 10", correct: false },
-      { text: "B. 15", correct: false },
-      { text: "C. 20", correct: false },
-      { text: "D. 25", correct: true },
-      { text: "E. 50", correct: false },
-    ],
-  },
-  {
-    question: "Which licensing type transfers software ownership to the end-user?",
-    answers: [
-      { text: "A. Proprietary", correct: false },
-      { text: "B. Deployment-based", correct: false },
-      { text: "C. Open-source", correct: true },
-      { text: "D. Stand-alone", correct: false },
-      { text: "E. Per-connection", correct: false },
-    ],
-  },
-  {
-    question: "What must redistributed open-source software include?",
-    answers: [
-      { text: "A. User manuals", correct: false },
-      { text: "B. License invoice", correct: false },
-      { text: "C. Source code", correct: true },
-      { text: "D. EULA", correct: false },
-      { text: "E. CAL", correct: false },
-    ],
-  },
-  {
-    question: "Which open-source license is slightly more restrictive than others?",
-    answers: [
-      { text: "A. MIT License", correct: false },
-      { text: "B. BSD License", correct: false },
-      { text: "C. GNU General Public License (GPL)", correct: true },
-      { text: "D. Apache License", correct: false },
-      { text: "E. KMS License", correct: false },
-    ],
-  },
-  {
-    question: "Which organization is known for its campaign 'Don’t Copy That Floppy'?",
-    answers: [
-      { text: "A. BSA", correct: false },
-      { text: "B. SIIA", correct: true },
-      { text: "C. GNU", correct: false },
-      { text: "D. Microsoft", correct: false },
-      { text: "E. Adobe", correct: false },
-    ],
-  },
-  {
-    question: "What governs the number of software copies validated under volume licensing?",
-    answers: [
-      { text: "A. CAL", correct: false },
-      { text: "B. Key management services", correct: true },
-      { text: "C. Floating licenses", correct: false },
-      { text: "D. Per-use licenses", correct: false },
-      { text: "E. Time-based licensing", correct: false },
-    ],
-  },
-  {
-    question: "What is a consequence of non-compliance in a software audit?",
-    answers: [
-      { text: "A. Increased software functionality", correct: false },
-      { text: "B. Access to proprietary source code", correct: false },
-      { text: "C. Legal and monetary liability", correct: true },
-      { text: "D. Automatic license renewal", correct: false },
-      { text: "E. Client/server integration", correct: false },
-    ],
-  },
-  {
-    question: "Which type of license is typically tied to individual machines?",
-    answers: [
-      { text: "A. Floating licenses", correct: false },
-      { text: "B. Individual licenses", correct: true },
-      { text: "C. CAL", correct: false },
-      { text: "D. Deployment licenses", correct: false },
-      { text: "E. Volume licenses", correct: false },
-    ],
-  },
-  {
-    question: "Which type of license allows a single key to validate multiple installations?",
-    answers: [
-      { text: "A. Client Access License", correct: false },
-      { text: "B. Volume license", correct: true },
-      { text: "C. Proprietary license", correct: false },
-      { text: "D. Time-based license", correct: false },
-      { text: "E. Deployment license", correct: false },
-    ],
-  },
-  {
-    question: "What tool is commonly used in Microsoft KMS management?",
-    answers: [
-      { text: "A. EULA Wizard", correct: false },
-      { text: "B. slmgr", correct: true },
-      { text: "C. License Manager", correct: false },
-      { text: "D. Volume Activation Service", correct: false },
-      { text: "E. Active Directory", correct: false },
-    ],
-  },
-  {
-    question: "An organization suspects non-compliance with proprietary software. What is their first step?",
-    answers: [
-      { text: "A. Notify the vendor", correct: false },
-      { text: "B. Conduct an internal software audit", correct: true },
-      { text: "C. Purchase additional licenses", correct: false },
-      { text: "D. Hire a third-party auditor", correct: false },
-      { text: "E. Report to the BSA", correct: false },
-    ],
-  },
-  {
-    question: "Your organization uses software with a per-use license model. Which scenario benefits most?",
-    answers: [
-      { text: "A. Daily operational tools", correct: false },
-      { text: "B. Rarely used applications", correct: true },
-      { text: "C. Server-based environments", correct: false },
-      { text: "D. Open-source integrations", correct: false },
-      { text: "E. Stand-alone installations", correct: false },
-    ],
-  },
-  {
-    question: "A company is considering volume licensing. Which is a primary benefit?",
-    answers: [
-      { text: "A. Reduced licensing costs", correct: true },
-      { text: "B. Increased software functionality", correct: false },
-      { text: "C. Unlimited installations", correct: false },
-      { text: "D. Simplified redistribution rights", correct: false },
-      { text: "E. Concurrent server access", correct: false },
-    ],
-  },
-  {
-    question: "A system administrator needs to ensure compliance with volume licensing. What is the best approach?",
-    answers: [
-      { text: "A. Implement strict CAL rules", correct: false },
-      { text: "B. Enforce software activation via KMS", correct: true },
-      { text: "C. Use individual licenses per machine", correct: false },
-      { text: "D. Conduct daily external audits", correct: false },
-      { text: "E. Transition to open-source software", correct: false },
-    ],
-  },
-  {
-    question: "An organization needs a licensing model for multiple installations with concurrent use. Which is the best option?",
-    answers: [
-      { text: "A. Individual licenses", correct: false },
-      { text: "B. Floating licenses", correct: true },
-      { text: "C. Stand-alone licensing", correct: false },
-      { text: "D. Per-use licenses", correct: false },
-      { text: "E. OEM licenses", correct: false },
-    ],
-  },
-  {
-    question: "A developer modifies open-source software and redistributes it. What must they include in their distribution?",
-    answers: [
-      { text: "A. Proprietary license agreement", correct: false },
-      { text: "B. EULA compliance verification", correct: false },
-      { text: "C. Modified source code", correct: true },
-      { text: "D. Volume activation key", correct: false },
-      { text: "E. User warranty details", correct: false },
-    ],
-  },
-  {
-    question: "A small business purchases software for a client/server environment. What is the primary consideration for licensing?",
-    answers: [
-      { text: "A. Volume discounts", correct: false },
-      { text: "B. CAL requirements", correct: true },
-      { text: "C. Activation thresholds", correct: false },
-      { text: "D. Reverse engineering permissions", correct: false },
-      { text: "E. Maintenance programs", correct: false },
-    ],
-  },
-  {
-    question: "A company discovers non-compliance during an internal audit. Which document is essential for rectifying the issue?",
-    answers: [
-      { text: "A. Proprietary source code", correct: false },
-      { text: "B. License agreement and invoice", correct: true },
-      { text: "C. Software warranty", correct: false },
-      { text: "D. Activation key certificate", correct: false },
-      { text: "E. GNU License documentation", correct: false },
-    ],
-  },
-  {
-    question: "Which licensing strategy is most appropriate for a university installing software on hundreds of computers?",
-    answers: [
-      { text: "A. Floating licenses", correct: false },
-      { text: "B. OEM licenses", correct: false },
-      { text: "C. Volume licensing", correct: true },
-      { text: "D. Per-connection licenses", correct: false },
-      { text: "E. Proprietary licenses", correct: false },
-    ],
-  },
-  {
-    question: "An organization uses open-source software for internal projects. What can they legally do with the software?",
-    answers: [
-      { text: "A. Restrict its usage within the company", correct: false },
-      { text: "B. Redistribute it without including source code", correct: false },
-      { text: "C. Modify it for internal use", correct: true },
-      { text: "D. Resell it with proprietary restrictions", correct: false },
-      { text: "E. Remove all copyright attributions", correct: false },
-    ],
-  },
-  {
-    question: "Open-source licenses always transfer the ownership of copyright to the end-user.",
-    answers: [
-      { text: "True", correct: false },
-      { text: "False", correct: true }
+    "question": "Which of the following best describes a Full Backup?",
+    "answers": [
+      { "text": "Backups only files modified since the last backup", "correct": false },
+      { "text": "Uses the least media but requires multiple restores", "correct": false },
+      { "text": "Backups all files, disregarding the archive bit", "correct": true },
+      { "text": "Requires restoring the last full backup and incrementals", "correct": false },
+      { "text": "Limited to only selective files", "correct": false }
     ]
   },
   {
-    question: "Software audits can be conducted by the software vendor or a third-party organization.",
-    answers: [
-      { text: "True", correct: true },
-      { text: "False", correct: false }
+    "question": "What is a primary advantage of Differential Backups over Incremental Backups?",
+    "answers": [
+      { "text": "Requires more media", "correct": false },
+      { "text": "More difficult to restore", "correct": false },
+      { "text": "Only the latest media set is required for restoration", "correct": true },
+      { "text": "Involves restoring all incremental backups since the full backup", "correct": false },
+      { "text": "Uses the least amount of media", "correct": false }
     ]
   },
   {
-    question: "Volume licensing does not require software activation in modern systems.",
-    answers: [
-      { text: "True", correct: false },
-      { text: "False", correct: true }
+    "question": "Which media type is most commonly used for backups due to its speed and reliability?",
+    "answers": [
+      { "text": "Magnetic Tape", "correct": false },
+      { "text": "Optical Storage", "correct": false },
+      { "text": "Magnetic Disk", "correct": true },
+      { "text": "Network Attached Storage", "correct": false },
+      { "text": "Blu-Ray", "correct": false }
     ]
   },
   {
-    question: "A floating license allows concurrent software usage regardless of the number of installations.",
-    answers: [
-      { text: "True", correct: true },
-      { text: "False", correct: false }
+    "question": "The archive bit is primarily used to:",
+    "answers": [
+      { "text": "Indicate which files have been compressed", "correct": false },
+      { "text": "Track files modified since the last backup", "correct": true },
+      { "text": "Perform recovery processes faster", "correct": false },
+      { "text": "Automatically encrypt backup data", "correct": false },
+      { "text": "Create bootable recovery media", "correct": false }
     ]
   },
   {
-    question: "Reverse engineering is explicitly permitted under most proprietary software licenses.",
-    answers: [
-      { text: "True", correct: false },
-      { text: "False", correct: true }
+    "question": "In a Grandfather-Father-Son (GFS) rotation method, the 'grandfather' is:",
+    "answers": [
+      { "text": "The first incremental backup in a cycle", "correct": false },
+      { "text": "The oldest media set stored permanently", "correct": true },
+      { "text": "The most recent differential backup", "correct": false },
+      { "text": "The daily backup made by an administrator", "correct": false },
+      { "text": "The full backup at the end of each week", "correct": false }
     ]
   },
   {
-    question: "What is a key advantage of stand-alone licensing?",
-    answers: [
-      { text: "A. Reduced installation complexity", correct: true },
-      { text: "B. Concurrent usage without limitations", correct: false },
-      { text: "C. Licensing tied to multiple machines", correct: false },
-      { text: "D. Increased server-client compatibility", correct: false },
-      { text: "E. Unlimited user access", correct: false }
+    "question": "What is the Mean Time Between Failure (MTBF)?",
+    "answers": [
+      { "text": "The average time for a backup to fail during operations", "correct": false },
+      { "text": "The duration before a backup server fails", "correct": false },
+      { "text": "The estimated time before hardware components fail", "correct": true },
+      { "text": "The average restore time during recovery", "correct": false },
+      { "text": "The time required to troubleshoot backup failures", "correct": false }
     ]
   },
   {
-    question: "Which organization focuses on anti-piracy and includes companies like Microsoft and Adobe?",
-    answers: [
-      { text: "A. GNU Project", correct: false },
-      { text: "B. Business Software Alliance (BSA)", correct: true },
-      { text: "C. Software & Information Industry Association (SIIA)", correct: false },
-      { text: "D. Free Software Foundation", correct: false },
-      { text: "E. Apache Software Foundation", correct: false }
+    "question": "A major downside of using Individual Drives for backups is:",
+    "answers": [
+      { "text": "Media is difficult to maintain", "correct": false },
+      { "text": "Requires network bandwidth", "correct": false },
+      { "text": "Risk of taking the server down if the subsystem fails", "correct": true },
+      { "text": "Involves setting up multiple backup servers", "correct": false },
+      { "text": "High cost and maintenance overhead", "correct": false }
     ]
   },
   {
-    question: "What does a software maintenance program typically provide?",
-    answers: [
-      { text: "A. Access to proprietary source code", correct: false },
-      { text: "B. Security fixes and functionality upgrades", correct: true },
-      { text: "C. Additional CALs for free", correct: false },
-      { text: "D. Unlimited concurrent usage", correct: false },
-      { text: "E. Perpetual software licenses", correct: false }
+    "question": "Which of the following backup types is also referred to as Level 0 Backup?",
+    "answers": [
+      { "text": "Incremental Backup", "correct": false },
+      { "text": "Full Backup", "correct": true },
+      { "text": "Differential Backup", "correct": false },
+      { "text": "Custom Backup", "correct": false },
+      { "text": "Network Backup", "correct": false }
     ]
   },
   {
-    question: "Which licensing model is governed by the number of concurrent server connections?",
-    answers: [
-      { text: "A. Client Access License (CAL)", correct: false },
-      { text: "B. Per-connection license", correct: true },
-      { text: "C. Volume licensing", correct: false },
-      { text: "D. Stand-alone licensing", correct: false },
-      { text: "E. Floating license", correct: false }
+    "question": "Which media type offers the best compression ratio with hardware compression?",
+    "answers": [
+      { "text": "Magnetic Disk", "correct": false },
+      { "text": "Optical Storage", "correct": false },
+      { "text": "Magnetic Tape", "correct": true },
+      { "text": "Blu-Ray", "correct": false },
+      { "text": "SSD", "correct": false }
     ]
   },
   {
-    question: "What action can result in monetary and legal liability for a company?",
-    answers: [
-      { text: "A. Delaying software updates", correct: false },
-      { text: "B. Non-compliance in software audits", correct: true },
-      { text: "C. Using open-source licenses", correct: false },
-      { text: "D. Switching from proprietary to open-source models", correct: false },
-      { text: "E. Restricting software access to employees", correct: false }
+    "question": "Why should backup media be rotated offsite?",
+    "answers": [
+      { "text": "Prevent physical wear of the media", "correct": false },
+      { "text": "Minimize network congestion during backups", "correct": false },
+      { "text": "Protect against theft, fire, or natural disaster", "correct": true },
+      { "text": "Allow continuous backup operations", "correct": false },
+      { "text": "Increase restore speeds in case of failure", "correct": false }
     ]
   },
   {
-    question: "Which licensing strategy is most appropriate for a university installing software on hundreds of computers?",
-    answers: [
-      { text: "A. Floating licenses", correct: false },
-      { text: "B. OEM licenses", correct: false },
-      { text: "C. Volume licensing", correct: true },
-      { text: "D. Per-connection licenses", correct: false },
-      { text: "E. Proprietary licenses", correct: false }
+    "question": "Which backup media type supports random access rather than sequential access?",
+    "answers": [
+      { "text": "Magnetic Tape", "correct": false },
+      { "text": "Optical Storage", "correct": true },
+      { "text": "Cloud Storage", "correct": false },
+      { "text": "Individual Drives", "correct": false },
+      { "text": "WORM Media", "correct": false }
     ]
   },
   {
-    question: "What is the purpose of activation in volume licensing?",
-    answers: [
-      { text: "A. To reduce installation time", correct: false },
-      { text: "B. To enforce compliance and prevent piracy", correct: true },
-      { text: "C. To allow unlimited installations", correct: false },
-      { text: "D. To simplify license management", correct: false },
-      { text: "E. To avoid the need for EULAs", correct: false },
-    ],
+    "question": "The Windows Server Backup Tool can recover which of the following?",
+    "answers": [
+      { "text": "Files and Folders only", "correct": false },
+      { "text": "Applications and Backup Catalogs only", "correct": false },
+      { "text": "Volumes, Applications, and Files", "correct": true },
+      { "text": "Operating Systems only", "correct": false },
+      { "text": "Only configurations and logs", "correct": false }
+    ]
   },
   {
-    question: "Which of the following is an example of a software deployment-based licensing type?",
-    answers: [
-      { text: "A. Perpetual licensing", correct: false },
-      { text: "B. Volume licensing", correct: false },
-      { text: "C. Stand-alone licensing", correct: true },
-      { text: "D. Open-source licensing", correct: false },
-      { text: "E. Annual licensing", correct: false },
-    ],
+    "question": "Which feature is unique to backups in Windows Server 2016/2019?",
+    "answers": [
+      { "text": "WORM-capable formats", "correct": false },
+      { "text": "Full support for optical media backups", "correct": true },
+      { "text": "Advanced backup configurations for Linux servers", "correct": false },
+      { "text": "Automation using PowerShell only", "correct": false },
+      { "text": "Limited restore capabilities", "correct": false }
+    ]
   },
   {
-    question: "What is required to activate software in a KMS environment?",
-    answers: [
-      { text: "A. CAL agreement", correct: false },
-      { text: "B. License agreement with invoice", correct: false },
-      { text: "C. Minimum number of clients registering with KMS host", correct: true },
-      { text: "D. Open-source modification approval", correct: false },
-      { text: "E. Floating license", correct: false },
-    ],
+    "question": "A Media Library used in backups includes:",
+    "answers": [
+      { "text": "Multiple servers dedicated to backup operations", "correct": false },
+      { "text": "Robotic arms to automatically swap media", "correct": true },
+      { "text": "Individual tape drives for sequential backups", "correct": false },
+      { "text": "Encryption software to secure backups", "correct": false },
+      { "text": "Network optimization tools", "correct": false }
+    ]
   },
   {
-    question: "What does the GNU General Public License (GPL) require for redistribution?",
-    answers: [
-      { text: "A. No restrictions on modification", correct: false },
-      { text: "B. Modified source code must remain open", correct: true },
-      { text: "C. No liability for users", correct: false },
-      { text: "D. Limitation to non-commercial use", correct: false },
-      { text: "E. Enforced volume activation", correct: false },
-    ],
+    "question": "Compression ratios for hardware compression backups are typically:",
+    "answers": [
+      { "text": "1:1 to 1.1", "correct": false },
+      { "text": "1.2 to 1.3", "correct": true },
+      { "text": "2.0 to 2.5", "correct": false },
+      { "text": "Variable depending on media type", "correct": false },
+      { "text": "Not applicable to most backup systems", "correct": false }
+    ]
   },
   {
-    question: "Which type of software audit can result in criminal liability?",
-    answers: [
-      { text: "A. Internal audit", correct: false },
-      { text: "B. Vendor-conducted audit", correct: false },
-      { text: "C. Third-party audit", correct: false },
-      { text: "D. Forcibly conducted audit by law enforcement", correct: true },
-      { text: "E. Voluntary external audit", correct: false },
-    ],
+    "question": "An advantage of Centralized Backups is:",
+    "answers": [
+      { "text": "Requires individual backups per server", "correct": false },
+      { "text": "Adds load to resource servers", "correct": false },
+      { "text": "Simplifies administration across multiple servers", "correct": true },
+      { "text": "Eliminates the need for incremental backups", "correct": false },
+      { "text": "Removes the need for encryption", "correct": false }
+    ]
   },
   {
-    question: "Stand-alone licensing enforces compliance on a per-machine basis.",
-    answers: [
-      { text: "True", correct: true },
-      { text: "False", correct: false },
-    ],
+    "question": "Offsite media storage should prioritize:",
+    "answers": [
+      { "text": "Reducing costs for backup operations", "correct": false },
+      { "text": "Storage in media-rated fireproof safes", "correct": true },
+      { "text": "Only digital backups in cloud storage", "correct": false },
+      { "text": "Using tape media exclusively", "correct": false },
+      { "text": "Local encryption keys for faster recovery", "correct": false }
+    ]
   },
   {
-    question: "A perpetual license must be renewed annually to remain valid.",
-    answers: [
-      { text: "True", correct: false },
-      { text: "False", correct: true },
-    ],
+    "question": "What is a key characteristic of Incremental Backups?",
+    "answers": [
+      { "text": "Easy to restore with only the latest media", "correct": false },
+      { "text": "Takes up the most media", "correct": false },
+      { "text": "Backups all data files regardless of modification", "correct": false },
+      { "text": "Requires all incrementals since the last full backup", "correct": true },
+      { "text": "Does not depend on the archive bit", "correct": false }
+    ]
   },
   {
-    question: "Key Management Services (KMS) ensure activation thresholds are met for volume licenses.",
-    answers: [
-      { text: "True", correct: true },
-      { text: "False", correct: false },
-    ],
+    "question": "A backup plan should include periodic testing to:",
+    "answers": [
+      { "text": "Reduce hardware failures during backups", "correct": false },
+      { "text": "Identify potential legal liabilities", "correct": false },
+      { "text": "Ensure the integrity and usability of backups", "correct": true },
+      { "text": "Minimize storage media costs", "correct": false },
+      { "text": "Automate backup processes effectively", "correct": false }
+    ]
   },
   {
-    question: "Open-source licensing prohibits modification of the source code.",
-    answers: [
-      { text: "True", correct: false },
-      { text: "False", correct: true },
-    ],
+    "question": "WORM media are primarily used for:",
+    "answers": [
+      { "text": "High-speed, random-access backups", "correct": false },
+      { "text": "Temporary storage of sensitive data", "correct": false },
+      { "text": "Write-once, permanent archival purposes", "correct": true },
+      { "text": "Automatic incremental backups", "correct": false },
+      { "text": "Dynamic data manipulation", "correct": false }
+    ]
   },
   {
-    question: "Non-compliance with licensing terms can lead to termination of the software agreement.",
-    answers: [
-      { text: "True", correct: true },
-      { text: "False", correct: false },
-    ],
+    "question": "A Differential Backup requires restoring all incremental backups since the last full backup.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
   },
   {
-    question: "A company uses floating licenses for a design tool. What would happen if all licenses are in use when a new user tries to access the software?",
-    answers: [
-      { text: "A. The user is granted temporary access.", correct: false },
-      { text: "B. The user must wait until a license becomes available.", correct: true },
-      { text: "C. The system automatically purchases an additional license.", correct: false },
-      { text: "D. The user receives unrestricted access to the tool.", correct: false },
-      { text: "E. The software disables for all users.", correct: false },
-    ],
+    "question": "Backups performed between 1:00 am and 5:00 am often minimize user disruptions.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
   },
   {
-    question: "Your organization is evaluating switching to open-source software. What is a key advantage of this move?",
-    answers: [
-      { text: "A. No need for EULA acceptance", correct: false },
-      { text: "B. Lower total cost of ownership (TCO)", correct: true },
-      { text: "C. Unlimited liability protection", correct: false },
-      { text: "D. Enforced CAL compliance", correct: false },
-      { text: "E. Increased hardware integration", correct: false },
-    ],
+    "question": "Magnetic disks are slower than tapes for backups due to sequential access.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
   },
   {
-    question: "A small business discovers outdated licenses during an audit. What immediate action should they take?",
-    answers: [
-      { text: "A. Request a third-party audit", correct: false },
-      { text: "B. Purchase updated licenses to ensure compliance", correct: true },
-      { text: "C. Reinstall software under volume licensing", correct: false },
-      { text: "D. Ignore the findings as they are minor", correct: false },
-      { text: "E. Transition to stand-alone licenses", correct: false },
-    ],
+    "question": "Offsite storage does not require encryption since it is physically protected.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
   },
   {
-    question: "An IT team is configuring a KMS host. What must they ensure before activation can occur?",
-    answers: [
-      { text: "A. All client machines are online simultaneously.", correct: false },
-      { text: "B. The activation threshold is met.", correct: true },
-      { text: "C. The server is upgraded to the latest operating system.", correct: false },
-      { text: "D. A proprietary license is accepted on all machines.", correct: false },
-      { text: "E. The EULA is digitally signed by every user.", correct: false },
-    ],
+    "question": "Media libraries use robotic arms for efficient media swapping during backups.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
   },
   {
-    question: "A university IT department is implementing software on 1,000 machines. Which licensing strategy is most efficient?",
-    answers: [
-      { text: "A. Per-connection licensing", correct: false },
-      { text: "B. Volume licensing", correct: true },
-      { text: "C. Stand-alone licensing", correct: false },
-      { text: "D. Open-source licensing", correct: false },
-      { text: "E. Floating licenses", correct: false },
-    ],
+    "question": "Magnetic tape has a lower success rate for full data restores than magnetic disks.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
   },
   {
-    question: "Proprietary software licenses often limit the rights granted under standard copyright law.",
-    answers: [
-      { text: "True", correct: true },
-      { text: "False", correct: false },
-    ],
+    "question": "GFS rotation simplifies backups by eliminating differential backups.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
   },
   {
-    question: "The BSD license requires that modifications and redistributions include the original source code.",
-    answers: [
-      { text: "True", correct: false },
-      { text: "False", correct: true },
-    ],
+    "question": "WORM media can be rewritten multiple times.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
   },
   {
-    question: "A perpetual license allows indefinite use of software without expiration.",
-    answers: [
-      { text: "True", correct: true },
-      { text: "False", correct: false },
-    ],
+    "question": "Incremental backups use the archive bit to identify changes.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
   },
   {
-    question: "Client Access Licenses (CALs) are enforced on the server rather than the client.",
-    answers: [
-      { text: "True", correct: false },
-      { text: "False", correct: true },
-    ],
+    "question": "Compression improves storage efficiency for tape backups.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
   },
   {
-    question: "Volume licenses can reduce costs for organizations with large-scale software deployments.",
-    answers: [
-      { text: "True", correct: true },
-      { text: "False", correct: false },
-    ],
+    "question": "Media-rated fireproof safes protect backup media from both fire and impact damage.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
   },
   {
-    question: "Software rental licensing is ideal for frequently used enterprise applications.",
-    answers: [
-      { text: "True", correct: false },
-      { text: "False", correct: true },
-    ],
+    "question": "The Windows Server Backup tool allows full restoration of the operating system to different hardware.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
   },
   {
-    question: "KMS activation requires periodic communication between the client and the host.",
-    answers: [
-      { text: "True", correct: true },
-      { text: "False", correct: false },
-    ],
+    "question": "Magnetic disks are becoming the most commonly used backup media due to their random access capabilities.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
   },
   {
-    question: "An EULA may legally prohibit reverse engineering of software.",
-    answers: [
-      { text: "True", correct: true },
-      { text: "False", correct: false },
-    ],
+    "question": "Grandfather backups in the GFS method are stored offsite for long-term archiving.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
   },
   {
-    question: "Open-source licenses typically require redistribution to remain free of cost.",
-    answers: [
-      { text: "True", correct: false },
-      { text: "False", correct: true },
-    ],
+    "question": "Compression ratios depend on the type of data being backed up.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
   },
   {
-    question: "Non-compliance with licensing agreements can result in legal penalties, including fines.",
-    answers: [
-      { text: "True", correct: true },
-      { text: "False", correct: false },
-    ],
+    "question": "Incremental backups require less media but are harder to restore compared to differential backups.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
   },
   {
-    question: "What is one primary disadvantage of OEM licenses?",
-    answers: [
-      { text: "A. Higher upfront costs", correct: false },
-      { text: "B. Limited use to specific hardware", correct: true },
-      { text: "C. Lack of volume licensing discounts", correct: false },
-      { text: "D. Mandatory client-server integration", correct: false },
-      { text: "E. Open-source restrictions", correct: false },
-    ],
+    "question": "Optical storage is often used for off-site, long-term archival rather than routine backups.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
   },
   {
-    question: "Which license type is best suited for shared environments where users access software intermittently?",
-    answers: [
-      { text: "A. Per-connection licensing", correct: false },
-      { text: "B. Annual licenses", correct: false },
-      { text: "C. Floating licenses", correct: true },
-      { text: "D. Stand-alone licenses", correct: false },
-      { text: "E. OEM licenses", correct: false },
-    ],
+    "question": "The wbadmin command-line tool is part of the Windows Server Backup suite.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
   },
   {
-    question: "In deployment-based licensing, what determines licensing requirements?",
-    answers: [
-      { text: "A. The frequency of software usage", correct: false },
-      { text: "B. The number of servers", correct: false },
-      { text: "C. The method of software installation", correct: true },
-      { text: "D. The total number of end-users", correct: false },
-      { text: "E. The duration of the license agreement", correct: false },
-    ],
+    "question": "Network-attached disk storage for backups requires significant bandwidth but simplifies maintenance.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
   },
   {
-    question: "Which organization is associated with the slogan “Don’t Copy That Floppy”?",
-    answers: [
-      { text: "A. Business Software Alliance (BSA)", correct: false },
-      { text: "B. GNU Project", correct: false },
-      { text: "C. Software & Information Industry Association (SIIA)", correct: true },
-      { text: "D. Open Source Initiative", correct: false },
-      { text: "E. Free Software Foundation", correct: false },
-    ],
+    "question": "Backups of registry files ensure OS settings can be restored after system failure.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
   },
   {
-    question: "Which is a characteristic of time-based licensing models?",
-    answers: [
-      { text: "A. Unlimited redistribution rights", correct: false },
-      { text: "B. Tied to the duration of use", correct: true },
-      { text: "C. Requires CAL enforcement", correct: false },
-      { text: "D. Focused on server-based environments", correct: false },
-      { text: "E. Includes no expiration date", correct: false },
-    ],
+    "question": "You are tasked with creating a backup plan for a company with limited storage capacity. Which backup strategy would best balance efficiency and restorability?",
+    "answers": [
+      { "text": "Daily full backups", "correct": false },
+      { "text": "Full backup followed by daily incremental backups", "correct": false },
+      { "text": "Full backup followed by daily differential backups", "correct": true },
+      { "text": "Custom backup with selective file inclusion", "correct": false },
+      { "text": "Using only centralized backup solutions", "correct": false }
+    ]
   },
   {
-    question: "Software maintenance programs are optional add-ons to software licenses.",
-    answers: [
-      { text: "True", correct: true },
-      { text: "False", correct: false },
-    ],
+    "question": "A server crashes, and you need to restore data. The backup strategy uses full backups and incremental backups. Which steps should you follow?",
+    "answers": [
+      { "text": "Restore the most recent differential backup only", "correct": false },
+      { "text": "Restore the last full backup and each incremental backup in sequence", "correct": true },
+      { "text": "Use only the latest incremental backup", "correct": false },
+      { "text": "Restore all backups, regardless of type, simultaneously", "correct": false },
+      { "text": "Begin with the oldest incremental and restore forward", "correct": false }
+    ]
   },
   {
-    question: "Proprietary licenses often prohibit sharing software with third parties.",
-    answers: [
-      { text: "True", correct: true },
-      { text: "False", correct: false },
-    ],
+    "question": "An organization uses magnetic tapes for backups but experiences slow recovery times. Which alternative would most improve performance while minimizing costs?",
+    "answers": [
+      { "text": "Optical storage", "correct": false },
+      { "text": "Individual hard drives", "correct": false },
+      { "text": "Network-attached magnetic disks", "correct": false },
+      { "text": "Blu-Ray discs", "correct": false },
+      { "text": "Magnetic disks with random access", "correct": true }
+    ]
   },
   {
-    question: "Open-source licenses always grant ownership of the copyright to the user.",
-    answers: [
-      { text: "True", correct: false },
-      { text: "False", correct: true },
-    ],
+    "question": "A data center experiences a total server failure. Which feature of the Windows Server Backup tool ensures a complete system recovery?",
+    "answers": [
+      { "text": "Compression capability", "correct": false },
+      { "text": "Volume Shadow Copy Service (VSS)", "correct": false },
+      { "text": "wbadmin command-line tool", "correct": false },
+      { "text": "Backup catalog recovery", "correct": true },
+      { "text": "Automated incremental backups", "correct": false }
+    ]
   },
   {
-    question: "CALs are required for each client accessing a server-based application.",
-    answers: [
-      { text: "True", correct: true },
-      { text: "False", correct: false },
-    ],
+    "question": "Your organization requires secure offsite backups to prevent theft during transit. What feature is critical for the backup media?",
+    "answers": [
+      { "text": "Fast read/write speeds", "correct": false },
+      { "text": "Encryption of the data", "correct": true },
+      { "text": "High compression ratios", "correct": false },
+      { "text": "Random access capability", "correct": false },
+      { "text": "Robust WORM support", "correct": false }
+    ]
   },
   {
-    question: "Per-use licenses are cost-effective for frequently used enterprise applications.",
-    answers: [
-      { text: "True", correct: false },
-      { text: "False", correct: true },
-    ],
+    "question": "A business with nationwide operations cannot back up all systems during off-hours. Which solution minimizes disruption while maintaining backup integrity?",
+    "answers": [
+      { "text": "Use centralized backups exclusively", "correct": false },
+      { "text": "Schedule backups during peak hours", "correct": false },
+      { "text": "Employ differential backups across systems", "correct": false },
+      { "text": "Implement incremental backups with custom schedules", "correct": true },
+      { "text": "Use only individual drives for localized backups", "correct": false }
+    ]
   },
   {
-    question: "What is one key feature of volume licensing?",
-    answers: [
-      { text: "A. Allows installation on a single machine only", correct: false },
-      { text: "B. Requires unique activation for each installation", correct: false },
-      { text: "C. Utilizes a single key for multiple installations", correct: true },
-      { text: "D. Mandates compliance with open-source guidelines", correct: false },
-      { text: "E. Reduces client-server integration costs", correct: false },
-    ],
+    "question": "A backup plan requires minimal media usage and fast restoration times. What method should be prioritized?",
+    "answers": [
+      { "text": "Full backups daily", "correct": false },
+      { "text": "Incremental backups only", "correct": false },
+      { "text": "Differential backups following a weekly full backup", "correct": true },
+      { "text": "Custom backups for key folders only", "correct": false },
+      { "text": "GFS rotation with optical storage", "correct": false }
+    ]
   },
   {
-    question: "Which type of licensing ensures the software is only accessible during a specific time frame?",
-    answers: [
-      { text: "A. Open-source licensing", correct: false },
-      { text: "B. Perpetual licensing", correct: false },
-      { text: "C. Annual licensing", correct: true },
-      { text: "D. Deployment-based licensing", correct: false },
-      { text: "E. OEM licensing", correct: false },
-    ],
+    "question": "A backup administrator discovers media has been repeatedly overwritten, reducing reliability. Which best practice addresses this issue?",
+    "answers": [
+      { "text": "Use optical storage for long-term backups", "correct": false },
+      { "text": "Implement a media rotation schedule", "correct": true },
+      { "text": "Switch to cloud storage exclusively", "correct": false },
+      { "text": "Avoid centralized backups", "correct": false },
+      { "text": "Enable hardware compression for all backups", "correct": false }
+    ]
   },
   {
-    question: "Which of the following must occur for KMS activation to be successful?",
-    answers: [
-      { text: "A. EULA acceptance by all users", correct: false },
-      { text: "B. Minimum number of client registrations with the host", correct: true },
-      { text: "C. Redistribution of the activation key", correct: false },
-      { text: "D. Deployment on a stand-alone machine", correct: false },
-      { text: "E. Reverse engineering of the activation process", correct: false },
-    ],
+    "question": "An audit reveals that your backup system lacks disaster recovery protocols for natural events like floods. What is the most effective improvement?",
+    "answers": [
+      { "text": "Store backups in media-rated fireproof safes", "correct": false },
+      { "text": "Encrypt all on-site backups", "correct": false },
+      { "text": "Transition to offsite backup rotation", "correct": true },
+      { "text": "Increase the frequency of incremental backups", "correct": false },
+      { "text": "Use magnetic tape exclusively for offsite backups", "correct": false }
+    ]
   },
   {
-    question: "What is the purpose of an external software audit?",
-    answers: [
-      { text: "A. To enforce reverse engineering restrictions", correct: false },
-      { text: "B. To identify and resolve licensing non-compliance", correct: true },
-      { text: "C. To validate the source code of open-source software", correct: false },
-      { text: "D. To distribute CALs to end-users", correct: false },
-      { text: "E. To increase the activation threshold of volume licenses", correct: false },
-    ],
-  },
-  {
-    question: "Which license model provides unrestricted access to modify and redistribute the software?",
-    answers: [
-      { text: "A. Proprietary licensing", correct: false },
-      { text: "B. Stand-alone licensing", correct: false },
-      { text: "C. Open-source licensing", correct: true },
-      { text: "D. Volume licensing", correct: false },
-      { text: "E. Deployment-based licensing", correct: false },
-    ],
-  },
-
-
-  // True/False Questions
-  { question: "Proprietary licenses allow redistribution of modified software.", answers: [{ text: "True", correct: false }, { text: "False", correct: true }] },
-  { question: "OEM licenses are typically bundled with hardware.", answers: [{ text: "True", correct: true }, { text: "False", correct: false }] },
-  { question: "Volume licensing originally required activation mechanisms.", answers: [{ text: "True", correct: false }, { text: "False", correct: true }] },
-  { question: "Perpetual licenses have an expiration date.", answers: [{ text: "True", correct: false }, { text: "False", correct: true }] },
-  { question: "A single CAL can govern multiple servers.", answers: [{ text: "True", correct: false }, { text: "False", correct: true }] },
-  { question: "KMS hosts are configured with a VLK.", answers: [{ text: "True", correct: true }, { text: "False", correct: false }] },
-  { question: "Reverse engineering is allowed under open-source licenses.", answers: [{ text: "True", correct: true }, { text: "False", correct: false }] },
-  { question: "The GNU General Public License (GPL) is less restrictive than the MIT License.", answers: [{ text: "True", correct: false }, { text: "False", correct: true }] },
-  { question: "CALs enforce licensing on the server.", answers: [{ text: "True", correct: false }, { text: "False", correct: true }] },
-  { question: "Deployment-based licensing is based on installation count.", answers: [{ text: "True", correct: false }, { text: "False", correct: true }] },
-  { question: "Volume licenses were historically easier to exploit.", answers: [{ text: "True", correct: true }, { text: "False", correct: false }] },
-  { question: "A software maintenance program often includes security fixes.", answers: [{ text: "True", correct: true }, { text: "False", correct: false }] },
-  { question: "BSA provides rewards to informants of software piracy.", answers: [{ text: "True", correct: true }, { text: "False", correct: false }] },
-  { question: "EULA enforceability depends on hardware type.", answers: [{ text: "True", correct: false }, { text: "False", correct: true }] },
-  { question: "KMS activation requires a minimum number of registered clients.", answers: [{ text: "True", correct: true }, { text: "False", correct: false }] },
-  { question: "Stand-alone licensing is common in client/server environments.", answers: [{ text: "True", correct: false }, { text: "False", correct: true }] },
-  { question: "Redistribution of modified open-source software requires source code.", answers: [{ text: "True", correct: true }, { text: "False", correct: false }] },
-  { question: "Reverse engineering is prohibited under proprietary licenses.", answers: [{ text: "True", correct: true }, { text: "False", correct: false }] },
-  { question: "Per-connection licenses govern the number of concurrent connections.", answers: [{ text: "True", correct: true }, { text: "False", correct: false }] },
-  { question: "Business Software Alliance was founded in 1992.", answers: [{ text: "True", correct: false }, { text: "False", correct: true }] },
+    "question": "You need to back up large amounts of frequently accessed data with minimal maintenance. Which media type should you select?",
+    "answers": [
+      { "text": "Magnetic Tape", "correct": false },
+      { "text": "Optical Storage", "correct": false },
+      { "text": "Magnetic Disk with network access", "correct": true },
+      { "text": "WORM Media", "correct": false },
+      { "text": "Blu-Ray discs", "correct": false }
+    ]
+  }
 ];
