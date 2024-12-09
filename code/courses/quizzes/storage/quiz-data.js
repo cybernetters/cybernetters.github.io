@@ -438,5 +438,175 @@ const questionBank = [
       { "text": "NTFS", "correct": false },
       { "text": "CDFS", "correct": false }
     ]
+  },
+  {
+    "question": "Which of the following is a benefit of dynamic disks in Windows?",
+    "answers": [
+      { "text": "Only allows up to four primary partitions", "correct": false },
+      { "text": "Supports spanned and striped volumes", "correct": true },
+      { "text": "Limited to basic volumes only", "correct": false },
+      { "text": "Requires manual file system creation", "correct": false },
+      { "text": "Cannot be used with RAID configurations", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the function of the Master Boot Record (MBR)?",
+    "answers": [
+      { "text": "Provides encryption for the disk", "correct": false },
+      { "text": "Logs intended file system changes", "correct": false },
+      { "text": "Identifies the bootable partition and loads the OS", "correct": true },
+      { "text": "Allocates unused disk space", "correct": false },
+      { "text": "Acts as a file system for organizing directories", "correct": false }
+    ]
+  },
+  {
+    "question": "Which RAID level offers fault tolerance by duplicating data across drives?",
+    "answers": [
+      { "text": "RAID 0", "correct": false },
+      { "text": "RAID 1", "correct": true },
+      { "text": "RAID 5", "correct": false },
+      { "text": "RAID 10", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the smallest physical unit of storage on a disk?",
+    "answers": [
+      { "text": "Track", "correct": false },
+      { "text": "Sector", "correct": true },
+      { "text": "Cluster", "correct": false },
+      { "text": "Partition", "correct": false },
+      { "text": "Cylinder", "correct": false }
+    ]
+  },
+  {
+    "question": "Which file system supports large file sizes and journaling in Windows?",
+    "answers": [
+      { "text": "FAT16", "correct": false },
+      { "text": "FAT32", "correct": false },
+      { "text": "NTFS", "correct": true },
+      { "text": "CDFS", "correct": false },
+      { "text": "exFAT", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary advantage of using SSDs over HDDs?",
+    "answers": [
+      { "text": "Lower cost per GB", "correct": false },
+      { "text": "Increased storage capacity", "correct": false },
+      { "text": "Faster access times and no moving parts", "correct": true },
+      { "text": "Improved wear leveling", "correct": false },
+      { "text": "Reduced lifespan compared to HDDs", "correct": false }
+    ]
+  },
+  {
+    "question": "Which technology is most commonly used for SAN implementations?",
+    "answers": [
+      { "text": "Fibre Channel", "correct": true },
+      { "text": "SMB/CIFS", "correct": false },
+      { "text": "NTFS", "correct": false },
+      { "text": "UDF", "correct": false },
+      { "text": "CDFS", "correct": false }
+    ]
+  },
+  {
+    "question": "Which RAID configuration combines striping with parity for fault tolerance and performance?",
+    "answers": [
+      { "text": "RAID 0", "correct": false },
+      { "text": "RAID 1", "correct": false },
+      { "text": "RAID 5", "correct": true },
+      { "text": "RAID 10", "correct": false },
+      { "text": "RAID 1+5", "correct": false }
+    ]
+  },
+  {
+    "question": "Which partition type in Windows is used to house the swap file to reduce fragmentation?",
+    "answers": [
+      { "text": "Primary partition", "correct": false },
+      { "text": "Extended partition", "correct": false },
+      { "text": "Swap partition", "correct": true },
+      { "text": "System partition", "correct": false },
+      { "text": "Data partition", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the purpose of journaling in file systems?",
+    "answers": [
+      { "text": "To prevent disk failures", "correct": false },
+      { "text": "To log file system changes for recovery", "correct": true },
+      { "text": "To reduce power consumption in storage devices", "correct": false },
+      { "text": "To enable multiple file formats on one partition", "correct": false },
+      { "text": "To optimize disk usage for small files", "correct": false }
+    ]
+  },
+  {
+    "question": "Dynamic volumes can span across multiple physical disks.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "RAID 0 provides data redundancy to protect against disk failures.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "NTFS supports both share and file system-level permissions.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Logical Block Addressing (LBA) addresses sectors as a continuous linear stream.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "A cluster in a file system can only contain one file.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Hybrid drives provide the performance of SSDs for all files stored on the device.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "iSCSI uses TCP/IP for communication and operates at the OSI Session layer.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "NAS traffic is typically shared with other network traffic, making it less suited for real-time applications.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "In Windows, FAT32 supports files larger than 4GB.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Journaling in file systems ensures that changes are completed even after a crash or power loss.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
   }
 ];
