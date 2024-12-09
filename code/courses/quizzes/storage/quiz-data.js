@@ -338,7 +338,7 @@ const questionBank = [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
-  }
+  },
   {
     "question": "A client experiences data loss after a disk failure. Which RAID configuration should they use to prevent this in the future?",
     "answers": [
