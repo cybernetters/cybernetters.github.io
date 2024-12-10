@@ -708,7 +708,7 @@ const questionBank = [
       { "text": "Limited fault tolerance capabilities", "correct": false },
       { "text": "Cannot create mirrored volumes", "correct": false }
     ]
-  }
+  },
   {
     "question": "A journaling file system logs intended changes to the disk before they are applied.",
     "answers": [

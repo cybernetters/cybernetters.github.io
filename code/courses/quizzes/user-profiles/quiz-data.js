@@ -408,5 +408,165 @@ const questionBank = [
       { "text": "Desktop", "correct": false },
       { "text": "Application Data", "correct": false }
     ]
+  },
+  {
+    "question": "What is one major security concern with locally cached profiles?",
+    "answers": [
+      { "text": "They increase network traffic", "correct": false },
+      { "text": "They can be accessed offline by unauthorized users", "correct": true },
+      { "text": "They require folder redirection", "correct": false },
+      { "text": "They limit user flexibility", "correct": false }
+    ]
+  },
+  {
+    "question": "Which folder is NOT commonly redirected in folder redirection?",
+    "answers": [
+      { "text": "Documents", "correct": false },
+      { "text": "Desktop", "correct": false },
+      { "text": "Downloads", "correct": true },
+      { "text": "Start Menu", "correct": false }
+    ]
+  },
+  {
+    "question": "What is a limitation of mandatory profiles?",
+    "answers": [
+      { "text": "Profiles cannot be shared", "correct": false },
+      { "text": "Profiles are not writable by users", "correct": true },
+      { "text": "Profiles cannot be customized by administrators", "correct": false },
+      { "text": "Profiles require additional network storage", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the main function of a home folder?",
+    "answers": [
+      { "text": "To store the user’s profile", "correct": false },
+      { "text": "To provide a central location for user files", "correct": true },
+      { "text": "To ensure consistent settings across devices", "correct": false },
+      { "text": "To redirect system folders", "correct": false }
+    ]
+  },
+  {
+    "question": "Which profile is best suited for a user who requires the same profile environment on multiple devices with minimal network dependency?",
+    "answers": [
+      { "text": "Local Profile", "correct": false },
+      { "text": "Roaming Profile", "correct": false },
+      { "text": "Mandatory Profile", "correct": true },
+      { "text": "Cached Profile", "correct": false }
+    ]
+  },
+  {
+    "question": "What is a common reason for implementing folder redirection?",
+    "answers": [
+      { "text": "To simplify profile management", "correct": false },
+      { "text": "To reduce logon/logoff times", "correct": true },
+      { "text": "To enforce stricter profile permissions", "correct": false },
+      { "text": "To eliminate roaming profiles", "correct": false }
+    ]
+  },
+  {
+    "question": "Which type of profile is created by default for all new users?",
+    "answers": [
+      { "text": "Local Profile", "correct": true },
+      { "text": "Roaming Profile", "correct": false },
+      { "text": "Mandatory Profile", "correct": false },
+      { "text": "Network Profile", "correct": false }
+    ]
+  },
+  {
+    "question": "Which folder is part of a Windows profile?",
+    "answers": [
+      { "text": "Program Files", "correct": false },
+      { "text": "Desktop", "correct": true },
+      { "text": "System32", "correct": false },
+      { "text": "Temp", "correct": false }
+    ]
+  },
+  {
+    "question": "What is a disadvantage of roaming profiles?",
+    "answers": [
+      { "text": "They cannot be cached", "correct": false },
+      { "text": "They create versioning issues when used simultaneously on multiple devices", "correct": true },
+      { "text": "They are not compatible with folder redirection", "correct": false },
+      { "text": "They require administrative privileges to use", "correct": false }
+    ]
+  },
+  {
+    "question": "Which profile allows for changes to be synchronized to a network share at logoff?",
+    "answers": [
+      { "text": "Local Profile", "correct": false },
+      { "text": "Roaming Profile", "correct": true },
+      { "text": "Mandatory Profile", "correct": false },
+      { "text": "Default Profile", "correct": false }
+    ]
+  },
+  {
+    "question": "Folder redirection reduces the amount of data copied during logon/logoff.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Mandatory profiles can be modified by end users to suit their preferences.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Roaming profiles are designed to provide a consistent user environment across multiple devices.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Folder redirection eliminates the need for network connectivity.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Local profiles are always stored in a network share location.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Cached profiles allow users to log in without network access.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Roaming profiles automatically delete the local copy after the user logs off.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "The default profile can be customized by administrators to set baseline settings for new users.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Folder redirection can mitigate security risks associated with cached profiles.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Mandatory profiles are typically used for tasks requiring strict control over user environments.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
   }
 ];
