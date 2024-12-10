@@ -438,5 +438,275 @@ const questionBank = [
       { "text": "assign RHOST <IP>", "correct": false },
       { "text": "set LHOST <IP>", "correct": false }
     ]
+  },
+  {
+    "question": "What is the primary role of Meterpreter in Metasploit?",
+    "answers": [
+      { "text": "Exploiting target vulnerabilities", "correct": false },
+      { "text": "Providing an interactive shell on the target", "correct": true },
+      { "text": "Managing exploit modules", "correct": false },
+      { "text": "Scanning network ports", "correct": false },
+      { "text": "Encapsulating payloads", "correct": false }
+    ]
+  },
+  {
+    "question": "Which Metasploit command displays available post-exploitation modules?",
+    "answers": [
+      { "text": "show post", "correct": true },
+      { "text": "list modules", "correct": false },
+      { "text": "show auxiliary", "correct": false },
+      { "text": "show payloads", "correct": false },
+      { "text": "view modules", "correct": false }
+    ]
+  },
+  {
+    "question": "What type of Metasploit module is used for brute-forcing credentials?",
+    "answers": [
+      { "text": "Exploits", "correct": false },
+      { "text": "Auxiliary", "correct": true },
+      { "text": "Post", "correct": false },
+      { "text": "Encoders", "correct": false },
+      { "text": "Nops", "correct": false }
+    ]
+  },
+  {
+    "question": "Which Metasploit module ensures persistence on a compromised system?",
+    "answers": [
+      { "text": "Auxiliary", "correct": false },
+      { "text": "Exploit", "correct": false },
+      { "text": "Post", "correct": true },
+      { "text": "Encoder", "correct": false },
+      { "text": "Payload", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the purpose of the msfvenom tool?",
+    "answers": [
+      { "text": "To generate and encode payloads", "correct": true },
+      { "text": "To list auxiliary modules", "correct": false },
+      { "text": "To configure exploits", "correct": false },
+      { "text": "To manage active sessions", "correct": false },
+      { "text": "To perform network scans", "correct": false }
+    ]
+  },
+  {
+    "question": "Which command is used to interact with a specific active session in Metasploit?",
+    "answers": [
+      { "text": "sessions -i", "correct": true },
+      { "text": "interact -s", "correct": false },
+      { "text": "show sessions", "correct": false },
+      { "text": "active <session>", "correct": false },
+      { "text": "engage", "correct": false }
+    ]
+  },
+  {
+    "question": "How can you list active sessions in Metasploit?",
+    "answers": [
+      { "text": "show active", "correct": false },
+      { "text": "sessions -l", "correct": true },
+      { "text": "list all", "correct": false },
+      { "text": "show sessions", "correct": false },
+      { "text": "view active", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the function of the resource command in Metasploit?",
+    "answers": [
+      { "text": "To save a session", "correct": false },
+      { "text": "To execute a series of Metasploit commands from a file", "correct": true },
+      { "text": "To list available resources", "correct": false },
+      { "text": "To interact with the database", "correct": false },
+      { "text": "To manage module dependencies", "correct": false }
+    ]
+  },
+  {
+    "question": "Which command kills all background jobs in Metasploit?",
+    "answers": [
+      { "text": "jobs -K", "correct": true },
+      { "text": "kill all", "correct": false },
+      { "text": "stop all", "correct": false },
+      { "text": "jobs --terminate", "correct": false },
+      { "text": "unset jobs", "correct": false }
+    ]
+  },
+  {
+    "question": "What Metasploit payload is typically used for reverse connections to the attacker?",
+    "answers": [
+      { "text": "Meterpreter shell", "correct": false },
+      { "text": "Bind TCP shell", "correct": false },
+      { "text": "Reverse TCP shell", "correct": true },
+      { "text": "GUI payload", "correct": false },
+      { "text": "Post payload", "correct": false }
+    ]
+  }
+  {
+    "question": "Which command is used to save the current environment and settings in Metasploit?",
+    "answers": [
+      { "text": "save", "correct": true },
+      { "text": "backup", "correct": false },
+      { "text": "setg", "correct": false },
+      { "text": "export", "correct": false },
+      { "text": "store", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the purpose of the unsetg command in Metasploit?",
+    "answers": [
+      { "text": "To delete a global variable", "correct": true },
+      { "text": "To set a global variable", "correct": false },
+      { "text": "To reset local variables", "correct": false },
+      { "text": "To remove all variables", "correct": false },
+      { "text": "To clear session history", "correct": false }
+    ]
+  },
+  {
+    "question": "What does the jobs -k command do in Metasploit?",
+    "answers": [
+      { "text": "Lists all active jobs", "correct": false },
+      { "text": "Terminates a specified job", "correct": true },
+      { "text": "Displays job status", "correct": false },
+      { "text": "Kills all active sessions", "correct": false },
+      { "text": "Stops a background session", "correct": false }
+    ]
+  },
+  {
+    "question": "Which category of Metasploit modules is used after a system has been compromised?",
+    "answers": [
+      { "text": "Exploits", "correct": false },
+      { "text": "Auxiliary", "correct": false },
+      { "text": "Post", "correct": true },
+      { "text": "Payloads", "correct": false },
+      { "text": "Encoders", "correct": false }
+    ]
+  },
+  {
+    "question": "What does the show payloads command display?",
+    "answers": [
+      { "text": "All exploits available in the framework", "correct": false },
+      { "text": "All available payloads compatible with a module", "correct": true },
+      { "text": "Current settings for an exploit", "correct": false },
+      { "text": "A list of active sessions", "correct": false },
+      { "text": "A summary of system variables", "correct": false }
+    ]
+  },
+  {
+    "question": "Which command allows the creation of a Netcat-like connection within Metasploit?",
+    "answers": [
+      { "text": "connect", "correct": true },
+      { "text": "netcat", "correct": false },
+      { "text": "session", "correct": false },
+      { "text": "interact", "correct": false },
+      { "text": "tcpconnect", "correct": false }
+    ]
+  },
+  {
+    "question": "What is a key purpose of Metasploit encoders?",
+    "answers": [
+      { "text": "To simplify auxiliary module use", "correct": false },
+      { "text": "To obfuscate payloads and evade detection", "correct": true },
+      { "text": "To compress exploit scripts", "correct": false },
+      { "text": "To enhance brute-force attacks", "correct": false },
+      { "text": "To verify exploit compatibility", "correct": false }
+    ]
+  },
+  {
+    "question": "How can you view a list of all Metasploit modules in a specific category?",
+    "answers": [
+      { "text": "list <category>", "correct": false },
+      { "text": "show <category>", "correct": true },
+      { "text": "modules <category>", "correct": false },
+      { "text": "view <category>", "correct": false },
+      { "text": "explore <category>", "correct": false }
+    ]
+  },
+  {
+    "question": "Which command retrieves a list of previously used commands in Metasploit?",
+    "answers": [
+      { "text": "commands", "correct": false },
+      { "text": "history", "correct": true },
+      { "text": "list", "correct": false },
+      { "text": "logs", "correct": false },
+      { "text": "previous", "correct": false }
+    ]
+  },
+  {
+    "question": "Which payload type is used to provide a full graphical interface on the target machine?",
+    "answers": [
+      { "text": "Reverse shell", "correct": false },
+      { "text": "Bind shell", "correct": false },
+      { "text": "Meterpreter shell", "correct": true },
+      { "text": "Interactive shell", "correct": false },
+      { "text": "GUI payload", "correct": false }
+    ]
+  },
+  {
+    "question": "The set command in Metasploit assigns values to variables only for the current session.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The exploit command in Metasploit requires all settings to be configured before execution.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The getg command retrieves the value of a local variable.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Post-exploitation modules in Metasploit can help escalate user privileges.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The makerc command in Metasploit is used to list all auxiliary modules.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "The check command ensures that a target is vulnerable without exploiting it.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Metasploit auxiliary modules include denial-of-service tools.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The unset command in Metasploit removes both local and global variables by default.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Encoders in Metasploit are mandatory for all exploits to work effectively.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "The sessions -i command in Metasploit allows interaction with a specific session.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
   }
 ];
