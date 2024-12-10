@@ -608,7 +608,7 @@ const questionBank = [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
-  }
+  },
   {
     "question": "Which RAID configuration provides the highest fault tolerance with minimal performance impact?",
     "answers": [
