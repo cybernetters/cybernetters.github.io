@@ -538,7 +538,7 @@ const questionBank = [
       { "text": "GUI payload", "correct": false },
       { "text": "Post payload", "correct": false }
     ]
-  }
+  },
   {
     "question": "Which command is used to save the current environment and settings in Metasploit?",
     "answers": [

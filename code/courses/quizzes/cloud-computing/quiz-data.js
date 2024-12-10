@@ -408,30 +408,7 @@ const questionBank = [
       { "text": "Lack of resource pooling", "correct": false },
       { "text": "Limited network access", "correct": false }
     ]
-  }
-]
-
-
-
-
-You said:
-continue in same format
-
-Infrastructure as a Service allows customers to control the resources provisioned but not the physical infrastructure. (T)
-Hybrid clouds can only combine private and public clouds. (F)
-Resource pooling in cloud computing means a fixed set of resources for all users. (F)
-Measured service is a feature that promotes cost-efficiency in cloud computing. (T)
-Community clouds are always managed by third-party vendors. (F)
-Private clouds offer higher security compared to public clouds. (T)
-Elasticity ensures that resources can scale up or down based on demand. (T)
-Platform as a Service (PaaS) allows customers to manage the underlying hardware. (F)
-The SaaS model requires significant management effort from the customer. (F)
-Virtual servers in IaaS can be used to mimic traditional datacenters. (T)
-ChatGPT said:
-
-json
-Copy code
-[
+  },
   {
     "question": "Infrastructure as a Service allows customers to control the resources provisioned but not the physical infrastructure.",
     "answers": [
