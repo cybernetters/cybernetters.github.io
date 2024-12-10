@@ -325,5 +325,260 @@ const questionBank = [
       { text: "False", correct: false },
     ],
   },
+  {
+    "question": "What is the role of the Print Spooler service in network printing?",
+    "answers": [
+      { "text": "Converts print jobs to PostScript.", "correct": false },
+      { "text": "Buffers and schedules print jobs.", "correct": true },
+      { "text": "Manages printer permissions.", "correct": false },
+      { "text": "Locates the appropriate print provider.", "correct": false },
+      { "text": "Handles raster-to-text conversion.", "correct": false }
+    ]
+  },
+  {
+    "question": "Which protocol is the default for modern Windows network printing systems?",
+    "answers": [
+      { "text": "LPR", "correct": false },
+      { "text": "RAW", "correct": true },
+      { "text": "CUPS", "correct": false },
+      { "text": "PCL", "correct": false },
+      { "text": "PostScript", "correct": false }
+    ]
+  },
+  {
+    "question": "What does the Print Monitor enable in the network print job path?",
+    "answers": [
+      { "text": "Load balancing between printers.", "correct": false },
+      { "text": "Conversion of print jobs into PDL.", "correct": false },
+      { "text": "Bi-directional communication with the printer.", "correct": true },
+      { "text": "Scheduling of received print jobs.", "correct": false },
+      { "text": "Assigning user permissions for the printer.", "correct": false }
+    ]
+  },
+  {
+    "question": "What does a queue configuration labeled 'RAW' assume about a print job?",
+    "answers": [
+      { "text": "It contains only ASCII text.", "correct": false },
+      { "text": "It is formatted using a PDL.", "correct": true },
+      { "text": "It requires the CUPS protocol.", "correct": false },
+      { "text": "It requires job resizing.", "correct": false },
+      { "text": "It uses proportional scaling by default.", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following can cause delays in network printing?",
+    "answers": [
+      { "text": "Bi-directional communication.", "correct": false },
+      { "text": "Absence of a spooler service.", "correct": true },
+      { "text": "Use of automatic driver installation.", "correct": false },
+      { "text": "Incorporation into Active Directory.", "correct": false },
+      { "text": "Use of lightweight PDLs.", "correct": false }
+    ]
+  },
+  {
+    "question": "What is one advantage of using PostScript over PCL?",
+    "answers": [
+      { "text": "Higher speed for text rendering.", "correct": false },
+      { "text": "Lightweight and efficient design.", "correct": false },
+      { "text": "Superior image scaling and transformation.", "correct": true },
+      { "text": "Less tolerance for errors.", "correct": false },
+      { "text": "Compatibility with inkjet printers.", "correct": false }
+    ]
+  },
+  {
+    "question": "Which type of connection is most common for consumer printers?",
+    "answers": [
+      { "text": "Serial", "correct": false },
+      { "text": "Parallel", "correct": false },
+      { "text": "USB", "correct": true },
+      { "text": "Ethernet", "correct": false },
+      { "text": "Bluetooth", "correct": false }
+    ]
+  },
+  {
+    "question": "What is a critical requirement for printer pooling?",
+    "answers": [
+      { "text": "All printers must share the same driver.", "correct": true },
+      { "text": "Separate queues must be configured for each user.", "correct": false },
+      { "text": "The printers must support LPR.", "correct": false },
+      { "text": "Load balancing must be manually configured.", "correct": false },
+      { "text": "Automatic installation must be disabled.", "correct": false }
+    ]
+  },
+  {
+    "question": "Which permission is required for a user to delete their own print jobs?",
+    "answers": [
+      { "text": "Manage Printers", "correct": false },
+      { "text": "Manage Documents", "correct": false },
+      { "text": "Creator/Owner", "correct": true },
+      { "text": "Print", "correct": false },
+      { "text": "Administrator", "correct": false }
+    ]
+  },
+  {
+    "question": "What is a primary feature of the LPR protocol?",
+    "answers": [
+      { "text": "Allows bi-directional communication.", "correct": false },
+      { "text": "Requires accurate job sizing.", "correct": true },
+      { "text": "Eliminates port limitations.", "correct": false },
+      { "text": "Functions as a spooler service.", "correct": false },
+      { "text": "Supports driver-free installations.", "correct": false }
+    ]
+  },
+  {
+    "question": "What is one disadvantage of PostScript as a Page Description Language?",
+    "answers": [
+      { "text": "Incompatibility with modern printers.", "correct": false },
+      { "text": "Requires proprietary drivers.", "correct": false },
+      { "text": "Slower font rendering due to raster conversion.", "correct": true },
+      { "text": "Limited to text-only documents.", "correct": false },
+      { "text": "Does not support scaling or rotation.", "correct": false }
+    ]
+  },
+  {
+    "question": "What component handles job control in the print job path?",
+    "answers": [
+      { "text": "Print Router", "correct": false },
+      { "text": "Local Print Provider", "correct": true },
+      { "text": "GDI", "correct": false },
+      { "text": "Print Monitor", "correct": false },
+      { "text": "Spooler", "correct": false }
+    ]
+  },
+  {
+    "question": "What distinguishes PCL from PostScript in network printing?",
+    "answers": [
+      { "text": "PCL supports proportional scaling.", "correct": false },
+      { "text": "PostScript is optimized for inkjet printers.", "correct": false },
+      { "text": "PCL is lighter and faster for text-based jobs.", "correct": true },
+      { "text": "PostScript lacks support for ASCII files.", "correct": false },
+      { "text": "PCL requires proprietary software.", "correct": false }
+    ]
+  },
+  {
+    "question": "Why might an administrator assign 'Manage Printers' permissions to a user?",
+    "answers": [
+      { "text": "To handle driver installation.", "correct": false },
+      { "text": "To modify printer settings.", "correct": true },
+      { "text": "To reorder print jobs in a queue.", "correct": false },
+      { "text": "To restrict access to a specific printer.", "correct": false },
+      { "text": "To prioritize their own print jobs.", "correct": false }
+    ]
+  },
+  {
+    "question": "What does the Common UNIX Printing System (CUPS) include?",
+    "answers": [
+      { "text": "Spooler and scheduler.", "correct": true },
+      { "text": "GDI and raster converter.", "correct": false },
+      { "text": "RAW and ASCII queues.", "correct": false },
+      { "text": "Driver installer.", "correct": false },
+      { "text": "Port assignment tool.", "correct": false }
+    ]
+  },
+  {
+    "question": "PCL is more lightweight than PostScript for text-based printing.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The 'Manage Documents' permission allows a user to reorder other users' print jobs.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "LPR protocol includes support for bi-directional communication.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Printer pooling requires all printers to use identical drivers.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "RAW protocol eliminates port limitations in network printing.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "CUPS is a protocol specifically designed for Windows platforms.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "The spooler service schedules and buffers print jobs in network printing.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "PostScript renders text directly without raster conversion.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Active Directory integration simplifies the discovery of printers with specific features.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The 'Print' permission allows users to change printer configurations.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Print jobs formatted with RAW require specific queue configurations.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "LPR jobs are time-sensitive and may fail after a timeout period.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The Print Monitor is responsible for bi-directional communication in the job path.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Printer pooling improves load balancing by sharing jobs across multiple printers.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "A user with 'Creator/Owner' permissions can delete other users' print jobs.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  }
 ];
   
