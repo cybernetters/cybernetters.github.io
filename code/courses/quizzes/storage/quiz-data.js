@@ -609,4 +609,139 @@ const questionBank = [
       { "text": "False", "correct": false }
     ]
   }
+  {
+    "question": "Which RAID configuration provides the highest fault tolerance with minimal performance impact?",
+    "answers": [
+      { "text": "RAID 0", "correct": false },
+      { "text": "RAID 1", "correct": true },
+      { "text": "RAID 5", "correct": false },
+      { "text": "RAID 10", "correct": false },
+      { "text": "RAID 6", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the purpose of Logical Block Addressing (LBA)?",
+    "answers": [
+      { "text": "To allocate sectors for dynamic partitions", "correct": false },
+      { "text": "To enable continuous linear addressing of disk sectors", "correct": true },
+      { "text": "To improve file system journaling", "correct": false },
+      { "text": "To manage RAID configurations", "correct": false },
+      { "text": "To reduce data loss during power failures", "correct": false }
+    ]
+  },
+  {
+    "question": "What is a key limitation of FAT32 compared to NTFS?",
+    "answers": [
+      { "text": "Lack of support for journaling", "correct": true },
+      { "text": "Inability to format partitions", "correct": false },
+      { "text": "Incompatibility with USB drives", "correct": false },
+      { "text": "No support for removable media", "correct": false },
+      { "text": "No support for small files", "correct": false }
+    ]
+  },
+  {
+    "question": "Which interconnect is commonly used in high-performance systems and RAID arrays?",
+    "answers": [
+      { "text": "SATA", "correct": false },
+      { "text": "SCSI", "correct": true },
+      { "text": "IDE", "correct": false },
+      { "text": "ATA", "correct": false },
+      { "text": "USB", "correct": false }
+    ]
+  },
+  {
+    "question": "What type of RAID uses striping with parity to achieve redundancy and performance?",
+    "answers": [
+      { "text": "RAID 0", "correct": false },
+      { "text": "RAID 1", "correct": false },
+      { "text": "RAID 5", "correct": true },
+      { "text": "RAID 10", "correct": false },
+      { "text": "RAID 6", "correct": false }
+    ]
+  },
+  {
+    "question": "What does a partition in a storage device represent?",
+    "answers": [
+      { "text": "A single physical disk", "correct": false },
+      { "text": "A contiguous collection of sectors", "correct": true },
+      { "text": "A group of mirrored volumes", "correct": false },
+      { "text": "An interconnect mechanism", "correct": false },
+      { "text": "A journaling file system", "correct": false }
+    ]
+  },
+  {
+    "question": "Which file system is ideal for removable media with large file sizes?",
+    "answers": [
+      { "text": "FAT16", "correct": false },
+      { "text": "NTFS", "correct": false },
+      { "text": "exFAT", "correct": true },
+      { "text": "CDFS", "correct": false },
+      { "text": "UDF", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary function of the system partition in Windows?",
+    "answers": [
+      { "text": "To store application data", "correct": false },
+      { "text": "To manage file system permissions", "correct": false },
+      { "text": "To house OS boot files", "correct": true },
+      { "text": "To enable journaling", "correct": false },
+      { "text": "To act as an extended partition", "correct": false }
+    ]
+  },
+  {
+    "question": "Which NAS protocol is commonly used for file sharing on Windows networks?",
+    "answers": [
+      { "text": "iSCSI", "correct": false },
+      { "text": "NFS", "correct": false },
+      { "text": "SMB/CIFS", "correct": true },
+      { "text": "Fibre Channel", "correct": false },
+      { "text": "NTFS", "correct": false }
+    ]
+  },
+  {
+    "question": "What is a disadvantage of software-based RAID?",
+    "answers": [
+      { "text": "Higher cost compared to hardware RAID", "correct": false },
+      { "text": "Uses processor clock cycles and system memory", "correct": true },
+      { "text": "Incompatibility with modern operating systems", "correct": false },
+      { "text": "Limited fault tolerance capabilities", "correct": false },
+      { "text": "Cannot create mirrored volumes", "correct": false }
+    ]
+  }
+  {
+    "question": "A journaling file system logs intended changes to the disk before they are applied.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "RAID 10 offers fault tolerance but does not improve performance.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "In Windows, a primary partition must be active to boot the operating system.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "File system security features include permissions and encryption.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Logical drives within an extended partition are a feature of basic disks.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  }
 ];
