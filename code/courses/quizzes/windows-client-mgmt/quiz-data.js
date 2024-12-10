@@ -338,7 +338,7 @@ const questionBank = [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
-  }
+  },
   {
     "question": "You are tasked with deploying an update across 1,000 machines. Which method minimizes user disruption?",
     "answers": [
