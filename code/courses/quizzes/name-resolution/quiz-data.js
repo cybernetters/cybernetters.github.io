@@ -268,7 +268,7 @@ const questionBank = [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
-  }
+  },
   {
     "question": "Reverse DNS resolution maps domain names to IP addresses.",
     "answers": [
@@ -338,7 +338,7 @@ const questionBank = [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
-  }
+  },
   {
     "question": "A user reports an IP address change isn’t reflecting. Which command should you run?",
     "answers": [
