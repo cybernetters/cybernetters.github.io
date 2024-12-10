@@ -438,5 +438,175 @@ const questionBank = [
       { "text": "Apply conflicting GPOs only at the local level", "correct": false },
       { "text": "Use the 'Not Configured' setting", "correct": false }
     ]
+  },
+  {
+    "question": "What happens if a GPO setting is configured at the site level but conflicts with a setting at the domain level?",
+    "answers": [
+      { "text": "The domain-level setting overrides the site-level setting", "correct": true },
+      { "text": "The site-level setting takes precedence", "correct": false },
+      { "text": "Both settings are merged", "correct": false },
+      { "text": "The conflict disables the setting", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "Which feature allows you to apply a GPO setting specifically to a certain group of computers?",
+    "answers": [
+      { "text": "Loopback processing", "correct": false },
+      { "text": "Group filtering", "correct": false },
+      { "text": "Security filtering", "correct": true },
+      { "text": "Registry enforcement", "correct": false },
+      { "text": "Group Policy inheritance", "correct": false }
+    ]
+  },
+  {
+    "question": "When should the 'Enforced' option be used in a GPO?",
+    "answers": [
+      { "text": "To allow child OUs to override parent settings", "correct": false },
+      { "text": "To prevent inheritance of parent settings", "correct": false },
+      { "text": "To ensure parent settings apply regardless of conflicts", "correct": true },
+      { "text": "To prioritize local settings", "correct": false },
+      { "text": "To disable GPO inheritance", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary benefit of using the Group Policy Object Editor?",
+    "answers": [
+      { "text": "To troubleshoot GPO application issues", "correct": false },
+      { "text": "To manage linked GPOs", "correct": false },
+      { "text": "To configure individual GPO settings", "correct": true },
+      { "text": "To force inheritance settings", "correct": false },
+      { "text": "To monitor policy deployment logs", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following settings can be included in a GPO?",
+    "answers": [
+      { "text": "Registry modifications", "correct": false },
+      { "text": "Software installation", "correct": false },
+      { "text": "Security policies", "correct": false },
+      { "text": "Folder redirection", "correct": false },
+      { "text": "All of the above", "correct": true }
+    ]
+  },
+  {
+    "question": "If a GPO is configured but not linked to any site, domain, or OU, what happens?",
+    "answers": [
+      { "text": "It applies by default to all users and computers", "correct": false },
+      { "text": "It applies only to the local computer", "correct": false },
+      { "text": "It does not apply to any object", "correct": true },
+      { "text": "It is applied during boot-up only", "correct": false },
+      { "text": "It causes inheritance conflicts", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following commands provides a detailed report of all applied GPOs?",
+    "answers": [
+      { "text": "Gpupdate", "correct": false },
+      { "text": "Gpedit", "correct": false },
+      { "text": "Gpresult", "correct": true },
+      { "text": "Rsop.msc", "correct": false },
+      { "text": "Event Viewer", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the purpose of a 'loopback processing' setting in Group Policy?",
+    "answers": [
+      { "text": "To override site-level settings", "correct": false },
+      { "text": "To apply user settings based on the computer's location", "correct": true },
+      { "text": "To enforce local policies", "correct": false },
+      { "text": "To block inheritance", "correct": false },
+      { "text": "To apply only OU-level policies", "correct": false }
+    ]
+  },
+  {
+    "question": "Which GPO layer typically affects all users and computers in an organization unless overridden?",
+    "answers": [
+      { "text": "Local Policy", "correct": false },
+      { "text": "Site Policy", "correct": false },
+      { "text": "Domain Policy", "correct": true },
+      { "text": "OU Policy", "correct": false },
+      { "text": "Child Policy", "correct": false }
+    ]
+  },
+  {
+    "question": "What tool would you use to view GPO settings in a readable hierarchy?",
+    "answers": [
+      { "text": "Event Viewer", "correct": false },
+      { "text": "Gpedit.msc", "correct": false },
+      { "text": "Resultant Set of Policy (RSOP)", "correct": true },
+      { "text": "Security Filtering Viewer", "correct": false },
+      { "text": "System Configuration", "correct": false }
+    ]
+  },
+  {
+    "question": "The Group Policy Management tool can only be used to edit existing GPOs.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Site-level GPOs are applied after domain-level GPOs.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Blocking inheritance disables all parent GPO settings for the affected child objects.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Security filtering restricts GPO application to specific users or groups.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Loopback processing allows computer settings to override user settings.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The 'Enforced' option can be applied to any GPO to ensure it takes precedence over others.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "If a GPO is not linked to an OU, domain, or site, it will not apply to any objects.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Gpupdate /force can be used to immediately apply any changes made to GPOs.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Local policies are overridden by site policies in the default inheritance order.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "GPO settings cannot be applied to security groups.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
   }
 ];
