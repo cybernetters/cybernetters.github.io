@@ -318,5 +318,175 @@ const questionBank = [
       { "text": "Reconfigure the proxy server to use a different port", "correct": false },
       { "text": "Verify the pivot machine has administrative rights", "correct": false }
     ]
+  },
+  {
+    "question": "What is the purpose of creating a reverse shell during a persistence attack?",
+    "answers": [
+      { "text": "To escalate privileges locally", "correct": false },
+      { "text": "To maintain remote access to the target machine", "correct": true },
+      { "text": "To disable antivirus software", "correct": false },
+      { "text": "To modify network configurations", "correct": false },
+      { "text": "To perform privilege escalation on the attacker machine", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is required to upload a reverse shell via SMBClient?",
+    "answers": [
+      { "text": "Administrator access on the target machine", "correct": true },
+      { "text": "A direct connection to the target's DNS server", "correct": false },
+      { "text": "A command-line interface on the target machine", "correct": false },
+      { "text": "Access to the Kerberos authentication system", "correct": false },
+      { "text": "A brute-force attack on the target’s credentials", "correct": false }
+    ]
+  },
+  {
+    "question": "Which tool is primarily used for tunneling in Ligolo-NG?",
+    "answers": [
+      { "text": "Proxychains", "correct": false },
+      { "text": "Tun interface", "correct": true },
+      { "text": "SMBClient", "correct": false },
+      { "text": "Sc.exe", "correct": false },
+      { "text": "SCP", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the function of setting a service’s startup type to 'auto' using sc.exe?",
+    "answers": [
+      { "text": "Ensures the service starts after the user logs in", "correct": false },
+      { "text": "Prevents the service from being listed in the task manager", "correct": false },
+      { "text": "Ensures the service starts every time the system boots", "correct": true },
+      { "text": "Stops the service after 24 hours of operation", "correct": false },
+      { "text": "Enables the service only when the network is idle", "correct": false }
+    ]
+  },
+  {
+    "question": "During pivoting, why would an attacker transfer files using SCP instead of SMBClient?",
+    "answers": [
+      { "text": "SCP provides encryption for secure file transfers", "correct": true },
+      { "text": "SCP requires less configuration", "correct": false },
+      { "text": "SMBClient is only compatible with Linux systems", "correct": false },
+      { "text": "SCP prevents file execution on transfer", "correct": false },
+      { "text": "SCP avoids detection by antivirus software", "correct": false }
+    ]
+  },
+  {
+    "question": "What is a primary reason attackers use port forwarding during pivoting?",
+    "answers": [
+      { "text": "To disrupt IDS systems", "correct": false },
+      { "text": "To bypass firewall restrictions", "correct": true },
+      { "text": "To create a new user account on the pivot machine", "correct": false },
+      { "text": "To transfer administrative tools to the target", "correct": false },
+      { "text": "To enumerate network shares", "correct": false }
+    ]
+  },
+  {
+    "question": "When using Ligolo-NG, what is the default port used for the proxy server?",
+    "answers": [
+      { "text": "8080", "correct": false },
+      { "text": "11601", "correct": true },
+      { "text": "443", "correct": false },
+      { "text": "80", "correct": false },
+      { "text": "1521", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following could indicate successful pivoting?",
+    "answers": [
+      { "text": "Detection of malware by antivirus software", "correct": false },
+      { "text": "Nmap scan results showing reachable services on the target network", "correct": true },
+      { "text": "Denial of Service (DoS) attack on the pivot machine", "correct": false },
+      { "text": "System logs showing unauthorized logins", "correct": false },
+      { "text": "Failure to establish a reverse shell", "correct": false }
+    ]
+  },
+  {
+    "question": "Why might attackers avoid installing many tools on a pivot machine?",
+    "answers": [
+      { "text": "To conserve disk space", "correct": false },
+      { "text": "To prevent triggering antivirus or network monitoring systems", "correct": true },
+      { "text": "To avoid conflicts with existing services", "correct": false },
+      { "text": "To reduce the risk of privilege escalation", "correct": false },
+      { "text": "To bypass domain authentication", "correct": false }
+    ]
+  },
+  {
+    "question": "What is a key limitation of local admins in an Active Directory environment?",
+    "answers": [
+      { "text": "Inability to create new user accounts", "correct": false },
+      { "text": "Inability to use RDP, SMB, or WinRM remotely unless explicitly configured", "correct": true },
+      { "text": "Restriction from accessing other local machines", "correct": false },
+      { "text": "Lack of access to the DNS server", "correct": false },
+      { "text": "Limited privileges on domain controllers", "correct": false }
+    ]
+  },
+  {
+    "question": "A reverse shell allows attackers to maintain a persistent connection with the target machine.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Persistence using services is dependent on the credentials used to create the service remaining valid.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Domain admins have unrestricted access to all systems in an Active Directory environment.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Ligolo-NG's agent requires root privileges to run.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Port forwarding is only useful in networks without segmentation.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "SCP transfers are encrypted, making them harder to detect during monitoring.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Tunnels created with Ligolo-NG can support multiple concurrent connections.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Antivirus software always detects files uploaded for persistence.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "NIC cards on a pivot machine can reveal access to multiple networks.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "A service created with sc.exe will only run once and does not survive system reboots.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
   }
 ];
