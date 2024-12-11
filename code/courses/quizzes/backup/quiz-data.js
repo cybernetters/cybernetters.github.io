@@ -438,5 +438,225 @@ const questionBank = [
       { "text": "WORM Media", "correct": false },
       { "text": "Blu-Ray discs", "correct": false }
     ]
+  },
+  {
+    "question": "Optical storage is most commonly used for:",
+    "answers": [
+      { "text": "High-speed, high-frequency backups", "correct": false },
+      { "text": "Long-term archival purposes", "correct": true },
+      { "text": "Incremental backups exclusively", "correct": false },
+      { "text": "Replacing centralized backup systems", "correct": false },
+      { "text": "On-premises server backups", "correct": false }
+    ]
+  },
+  {
+    "question": "WORM media is best suited for:",
+    "answers": [
+      { "text": "Regular server backups", "correct": false },
+      { "text": "Offsite storage for differential backups", "correct": false },
+      { "text": "Write-once, permanent archiving", "correct": true },
+      { "text": "High-speed, dynamic data storage", "correct": false },
+      { "text": "Automated incremental backups", "correct": false }
+    ]
+  },
+  {
+    "question": "A company experiencing natural disasters would benefit most from:",
+    "answers": [
+      { "text": "Network-attached storage without encryption", "correct": false },
+      { "text": "Offsite backup rotation with encryption", "correct": true },
+      { "text": "Using only optical storage", "correct": false },
+      { "text": "Daily incremental backups on local media", "correct": false },
+      { "text": "Eliminating tape-based storage solutions", "correct": false }
+    ]
+  },
+  {
+    "question": "What is a common feature of media libraries for backups?",
+    "answers": [
+      { "text": "Automated media swapping", "correct": true },
+      { "text": "Built-in data compression", "correct": false },
+      { "text": "Exclusive support for optical media", "correct": false },
+      { "text": "Low maintenance and cost", "correct": false },
+      { "text": "Only compatible with magnetic tape", "correct": false }
+    ]
+  },
+  {
+    "question": "Differential backups are faster to restore compared to incremental backups.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Full backups disregard the archive bit to include all files in the backup process.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Grandfather backups in GFS are overwritten weekly to maintain efficiency.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Magnetic disk backups are typically slower than magnetic tape backups.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Incremental backups require more media compared to differential backups.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Optical storage is commonly used for routine backups in enterprise environments.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Centralized backup systems reduce administrative overhead for large networks.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Compression is less effective on hardware-based backup systems than software-based ones.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Media-rated fireproof safes may not fully protect backups during extreme heat.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "A restore operation with incremental backups requires all incrementals since the last full backup.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Which type of backup requires restoring only the most recent differential backup along with the last full backup?",
+    "answers": [
+      { "text": "Full Backup", "correct": false },
+      { "text": "Incremental Backup", "correct": false },
+      { "text": "Differential Backup", "correct": true },
+      { "text": "Custom Backup", "correct": false },
+      { "text": "Mirror Backup", "correct": false }
+    ]
+  },
+  {
+    "question": "What is a key advantage of centralized backup systems?",
+    "answers": [
+      { "text": "No need for network connectivity", "correct": false },
+      { "text": "Simplifies administration for multiple servers", "correct": true },
+      { "text": "Eliminates media rotation requirements", "correct": false },
+      { "text": "Increases individual server stability", "correct": false },
+      { "text": "Reduces storage media costs", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary function of the archive bit in a backup system?",
+    "answers": [
+      { "text": "Marks compressed files", "correct": false },
+      { "text": "Tracks which files have changed", "correct": true },
+      { "text": "Identifies files already backed up", "correct": false },
+      { "text": "Secures files for encryption", "correct": false },
+      { "text": "Labels files for deletion", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is a characteristic of a Grandfather-Father-Son (GFS) rotation?",
+    "answers": [
+      { "text": "Includes only incremental backups", "correct": false },
+      { "text": "Promotes a monthly full backup to 'grandfather' status", "correct": true },
+      { "text": "Disregards the need for offsite storage", "correct": false },
+      { "text": "Relies on full backups exclusively", "correct": false },
+      { "text": "Requires daily full backups", "correct": false }
+    ]
+  },
+  {
+    "question": "Which media type is most cost-effective for high-capacity backups but slower to read/write?",
+    "answers": [
+      { "text": "Magnetic Disk", "correct": false },
+      { "text": "Optical Storage", "correct": false },
+      { "text": "Magnetic Tape", "correct": true },
+      { "text": "SSD", "correct": false },
+      { "text": "Blu-Ray", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary benefit of using incremental backups?",
+    "answers": [
+      { "text": "Simplifies restoration process", "correct": false },
+      { "text": "Uses minimal storage media", "correct": true },
+      { "text": "Backups all files regardless of changes", "correct": false },
+      { "text": "Faster restoration than differential backups", "correct": false },
+      { "text": "Does not use the archive bit", "correct": false }
+    ]
+  },
+  {
+    "question": "What is a significant downside of magnetic tape as a backup medium?",
+    "answers": [
+      { "text": "High cost compared to disks", "correct": false },
+      { "text": "Lack of compression support", "correct": false },
+      { "text": "Sequential access limits speed", "correct": true },
+      { "text": "Unsuitable for offsite storage", "correct": false },
+      { "text": "Unreliable for long-term storage", "correct": false }
+    ]
+  },
+  {
+    "question": "The Windows Server Backup tool provides full restoration capabilities for:",
+    "answers": [
+      { "text": "Applications only", "correct": false },
+      { "text": "Files and folders only", "correct": false },
+      { "text": "Operating systems, volumes, and application data", "correct": true },
+      { "text": "Backup catalogs exclusively", "correct": false },
+      { "text": "Registry settings only", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following methods minimizes the risk of backup media failure?",
+    "answers": [
+      { "text": "Avoiding offsite storage rotation", "correct": false },
+      { "text": "Using optical storage exclusively", "correct": false },
+      { "text": "Implementing media rotation schedules", "correct": true },
+      { "text": "Backing up files during peak hours", "correct": false },
+      { "text": "Only performing differential backups", "correct": false }
+    ]
+  },
+  {
+    "question": "Which compression ratio is typical for hardware-based backup systems?",
+    "answers": [
+      { "text": "1.0 to 1.1", "correct": false },
+      { "text": "1.2 to 1.3", "correct": true },
+      { "text": "2.0 to 3.0", "correct": false },
+      { "text": "0.8 to 0.9", "correct": false },
+      { "text": "Variable, based on file type", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the purpose of performing regular backup testing?",
+    "answers": [
+      { "text": "Reduces the need for offsite storage", "correct": false },
+      { "text": "Ensures that backups are functioning correctly", "correct": true },
+      { "text": "Improves network bandwidth during backups", "correct": false },
+      { "text": "Eliminates the need for incremental backups", "correct": false },
+      { "text": "Simplifies recovery operations", "correct": false }
+    ]
   }
 ];
