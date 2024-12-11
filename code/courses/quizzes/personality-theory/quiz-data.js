@@ -98,7 +98,7 @@ const questionBank = [
       { "text": "Psychoticism and Agreeableness", "correct": false },
       { "text": "Conscientiousness and Openness", "correct": false }
     ]
-  }
+  },
   {
     "question": "According to Eysenck, the study of individual differences in personality falls under:",
     "answers": [
