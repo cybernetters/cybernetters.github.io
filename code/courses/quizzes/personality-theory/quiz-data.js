@@ -478,5 +478,205 @@ const questionBank = [
       { "text": "Triggers for immediate emotions", "correct": false },
       { "text": "Solutions for behavioral disorders", "correct": false }
     ]
+  },
+  {
+    "question": "An employee is caught falsifying company records but claims, 'I was under pressure from my manager to meet impossible targets.' Which technique of neutralization is this an example of?",
+    "answers": [
+      { "text": "Denial of Injury", "correct": false },
+      { "text": "Denial of the Victim", "correct": false },
+      { "text": "Appeal to Higher Loyalties", "correct": false },
+      { "text": "Denial of Responsibility", "correct": true },
+      { "text": "Condemnation of the Condemners", "correct": false }
+    ]
+  },
+  {
+    "question": "A student caught plagiarizing asserts, 'It’s not like anyone was hurt, and it didn’t harm the institution.' This aligns with which neutralization technique?",
+    "answers": [
+      { "text": "Denial of the Victim", "correct": false },
+      { "text": "Denial of Responsibility", "correct": false },
+      { "text": "Denial of Injury", "correct": true },
+      { "text": "Condemnation of the Condemners", "correct": false },
+      { "text": "Appeal to Higher Loyalties", "correct": false }
+    ]
+  },
+  {
+    "question": "After vandalizing public property, a teenager claims, 'The government neglects this area anyway; they deserve it.' This justification is an example of:",
+    "answers": [
+      { "text": "Denial of Responsibility", "correct": false },
+      { "text": "Denial of Injury", "correct": false },
+      { "text": "Denial of the Victim", "correct": true },
+      { "text": "Appeal to Higher Loyalties", "correct": false },
+      { "text": "Condemnation of the Condemners", "correct": false }
+    ]
+  },
+  {
+    "question": "A hacker targeting large corporations defends their actions by saying, 'They exploit workers and deserve to be exposed.' This reflects which technique?",
+    "answers": [
+      { "text": "Denial of Responsibility", "correct": false },
+      { "text": "Denial of Injury", "correct": false },
+      { "text": "Condemnation of the Condemners", "correct": true },
+      { "text": "Denial of the Victim", "correct": false },
+      { "text": "Appeal to Higher Loyalties", "correct": false }
+    ]
+  },
+  {
+    "question": "A teenager admits to shoplifting but justifies it by saying, 'My friends needed me to do it to prove my loyalty.' Which technique is being used here?",
+    "answers": [
+      { "text": "Denial of Responsibility", "correct": false },
+      { "text": "Denial of Injury", "correct": false },
+      { "text": "Denial of the Victim", "correct": false },
+      { "text": "Condemnation of the Condemners", "correct": false },
+      { "text": "Appeal to Higher Loyalties", "correct": true }
+    ]
+  },
+  {
+    "question": "After being caught cheating on a test, a student states, 'Everyone else in the class cheats too.' Which technique does this represent?",
+    "answers": [
+      { "text": "Denial of Responsibility", "correct": false },
+      { "text": "Condemnation of the Condemners", "correct": true },
+      { "text": "Denial of Injury", "correct": false },
+      { "text": "Denial of the Victim", "correct": false },
+      { "text": "Appeal to Higher Loyalties", "correct": false }
+    ]
+  },
+  {
+    "question": "A professional accused of insider trading says, 'This is how everyone in my industry operates; it’s just business.' Which justification technique is this?",
+    "answers": [
+      { "text": "Appeal to Higher Loyalties", "correct": false },
+      { "text": "Condemnation of the Condemners", "correct": true },
+      { "text": "Denial of Responsibility", "correct": false },
+      { "text": "Denial of Injury", "correct": false },
+      { "text": "Denial of the Victim", "correct": false }
+    ]
+  },
+  {
+    "question": "A protestor damages property during a demonstration and argues, 'I was standing up for a greater cause.' This reflects which technique?",
+    "answers": [
+      { "text": "Denial of Responsibility", "correct": false },
+      { "text": "Denial of Injury", "correct": false },
+      { "text": "Condemnation of the Condemners", "correct": false },
+      { "text": "Appeal to Higher Loyalties", "correct": true },
+      { "text": "Denial of the Victim", "correct": false }
+    ]
+  },
+  {
+    "question": "When questioned about evading taxes, an individual argues, 'The government wastes money on unnecessary projects anyway.' This exemplifies:",
+    "answers": [
+      { "text": "Denial of Responsibility", "correct": false },
+      { "text": "Denial of the Victim", "correct": false },
+      { "text": "Denial of Injury", "correct": false },
+      { "text": "Condemnation of the Condemners", "correct": true },
+      { "text": "Appeal to Higher Loyalties", "correct": false }
+    ]
+  },
+  {
+    "question": "A student justifies bullying a classmate by claiming, 'They started it by making fun of me.' Which neutralization technique is evident here?",
+    "answers": [
+      { "text": "Denial of Responsibility", "correct": false },
+      { "text": "Denial of Injury", "correct": false },
+      { "text": "Denial of the Victim", "correct": true },
+      { "text": "Condemnation of the Condemners", "correct": false },
+      { "text": "Appeal to Higher Loyalties", "correct": false }
+    ]
+  },
+  {
+    "question": "An employee is caught falsifying company records but claims, 'I was under pressure from my manager to meet impossible targets.' Which technique of neutralization is this an example of?",
+    "answers": [
+      { "text": "Denial of Injury", "correct": false },
+      { "text": "Denial of the Victim", "correct": false },
+      { "text": "Appeal to Higher Loyalties", "correct": false },
+      { "text": "Denial of Responsibility", "correct": true },
+      { "text": "Condemnation of the Condemners", "correct": false }
+    ]
+  },
+  {
+    "question": "A student caught plagiarizing asserts, 'It’s not like anyone was hurt, and it didn’t harm the institution.' This aligns with which neutralization technique?",
+    "answers": [
+      { "text": "Denial of the Victim", "correct": false },
+      { "text": "Denial of Responsibility", "correct": false },
+      { "text": "Denial of Injury", "correct": true },
+      { "text": "Condemnation of the Condemners", "correct": false },
+      { "text": "Appeal to Higher Loyalties", "correct": false }
+    ]
+  },
+  {
+    "question": "After vandalizing public property, a teenager claims, 'The government neglects this area anyway; they deserve it.' This justification is an example of:",
+    "answers": [
+      { "text": "Denial of Responsibility", "correct": false },
+      { "text": "Denial of Injury", "correct": false },
+      { "text": "Denial of the Victim", "correct": true },
+      { "text": "Appeal to Higher Loyalties", "correct": false },
+      { "text": "Condemnation of the Condemners", "correct": false }
+    ]
+  },
+  {
+    "question": "A hacker targeting large corporations defends their actions by saying, 'They exploit workers and deserve to be exposed.' This reflects which technique?",
+    "answers": [
+      { "text": "Denial of Responsibility", "correct": false },
+      { "text": "Denial of Injury", "correct": false },
+      { "text": "Condemnation of the Condemners", "correct": true },
+      { "text": "Denial of the Victim", "correct": false },
+      { "text": "Appeal to Higher Loyalties", "correct": false }
+    ]
+  },
+  {
+    "question": "A teenager admits to shoplifting but justifies it by saying, 'My friends needed me to do it to prove my loyalty.' Which technique is being used here?",
+    "answers": [
+      { "text": "Denial of Responsibility", "correct": false },
+      { "text": "Denial of Injury", "correct": false },
+      { "text": "Denial of the Victim", "correct": false },
+      { "text": "Condemnation of the Condemners", "correct": false },
+      { "text": "Appeal to Higher Loyalties", "correct": true }
+    ]
+  },
+  {
+    "question": "After being caught cheating on a test, a student states, 'Everyone else in the class cheats too.' Which technique does this represent?",
+    "answers": [
+      { "text": "Denial of Responsibility", "correct": false },
+      { "text": "Condemnation of the Condemners", "correct": true },
+      { "text": "Denial of Injury", "correct": false },
+      { "text": "Denial of the Victim", "correct": false },
+      { "text": "Appeal to Higher Loyalties", "correct": false }
+    ]
+  },
+  {
+    "question": "A professional accused of insider trading says, 'This is how everyone in my industry operates; it’s just business.' Which justification technique is this?",
+    "answers": [
+      { "text": "Appeal to Higher Loyalties", "correct": false },
+      { "text": "Condemnation of the Condemners", "correct": true },
+      { "text": "Denial of Responsibility", "correct": false },
+      { "text": "Denial of Injury", "correct": false },
+      { "text": "Denial of the Victim", "correct": false }
+    ]
+  },
+  {
+    "question": "A protestor damages property during a demonstration and argues, 'I was standing up for a greater cause.' This reflects which technique?",
+    "answers": [
+      { "text": "Denial of Responsibility", "correct": false },
+      { "text": "Denial of Injury", "correct": false },
+      { "text": "Condemnation of the Condemners", "correct": false },
+      { "text": "Appeal to Higher Loyalties", "correct": true },
+      { "text": "Denial of the Victim", "correct": false }
+    ]
+  },
+  {
+    "question": "When questioned about evading taxes, an individual argues, 'The government wastes money on unnecessary projects anyway.' This exemplifies:",
+    "answers": [
+      { "text": "Denial of Responsibility", "correct": false },
+      { "text": "Denial of the Victim", "correct": false },
+      { "text": "Denial of Injury", "correct": false },
+      { "text": "Condemnation of the Condemners", "correct": true },
+      { "text": "Appeal to Higher Loyalties", "correct": false }
+    ]
+  },
+  {
+    "question": "A student justifies bullying a classmate by claiming, 'They started it by making fun of me.' Which neutralization technique is evident here?",
+    "answers": [
+      { "text": "Denial of Responsibility", "correct": false },
+      { "text": "Denial of Injury", "correct": false },
+      { "text": "Denial of the Victim", "correct": true },
+      { "text": "Condemnation of the Condemners", "correct": false },
+      { "text": "Appeal to Higher Loyalties", "correct": false }
+    ]
   }
 ];
