@@ -488,5 +488,5 @@ const questionBank = [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
-  }
+  },
 ];
