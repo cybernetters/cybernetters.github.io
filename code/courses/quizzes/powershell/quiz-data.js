@@ -439,5 +439,275 @@ const questionBank = [
       { text: "True", correct: true },
       { text: "False", correct: false },
     ]
+  },
+  {
+    "question": "What is the primary purpose of Windows Script Host (WSH)?",
+    "answers": [
+      { "text": "To compile scripts for the operating system", "correct": false },
+      { "text": "To execute batch files in Linux environments", "correct": false },
+      { "text": "To automate parts of the core operating system", "correct": true },
+      { "text": "To replace PowerShell scripts", "correct": false },
+      { "text": "To install third-party software", "correct": false }
+    ]
+  },
+  {
+    "question": "Which scripting host outputs text to dialog boxes by default?",
+    "answers": [
+      { "text": "cscript.exe", "correct": false },
+      { "text": "PowerShell", "correct": false },
+      { "text": "bash.exe", "correct": false },
+      { "text": "wscript.exe", "correct": true },
+      { "text": "cmd.exe", "correct": false }
+    ]
+  },
+  {
+    "question": "What does the cmdlet Export-CSV do in PowerShell?",
+    "answers": [
+      { "text": "Reads a CSV file and stores it in a variable", "correct": false },
+      { "text": "Appends data to an existing CSV file", "correct": false },
+      { "text": "Creates a CSV file from objects", "correct": true },
+      { "text": "Converts a CSV file into text format", "correct": false },
+      { "text": "Deletes the contents of a CSV file", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following PowerShell commands retrieves all currently running services?",
+    "answers": [
+      { "text": "Get-RunningServices", "correct": false },
+      { "text": "Get-ActiveServices", "correct": false },
+      { "text": "Get-Service | Where-Object { $_.Status -eq 'Running' }", "correct": true },
+      { "text": "Find-Service -Running", "correct": false },
+      { "text": "Show-Services", "correct": false }
+    ]
+  },
+  {
+    "question": "Which operator in PowerShell is used to perform a wildcard comparison?",
+    "answers": [
+      { "text": "-eq", "correct": false },
+      { "text": "-like", "correct": true },
+      { "text": "-ne", "correct": false },
+      { "text": "-gt", "correct": false },
+      { "text": "-le", "correct": false }
+    ]
+  },
+  {
+    "question": "What does the command Set-ExecutionPolicy Unrestricted do?",
+    "answers": [
+      { "text": "Restricts script execution", "correct": false },
+      { "text": "Allows only signed scripts to run", "correct": false },
+      { "text": "Allows any script to run without restrictions", "correct": true },
+      { "text": "Enables remote script execution", "correct": false },
+      { "text": "Removes all execution policies", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the result of the following PowerShell command? Get-Content file.txt | Measure-Object -Line",
+    "answers": [
+      { "text": "Counts the number of words in file.txt", "correct": false },
+      { "text": "Outputs the size of file.txt in bytes", "correct": false },
+      { "text": "Counts the number of lines in file.txt", "correct": true },
+      { "text": "Formats file.txt for display", "correct": false },
+      { "text": "Filters lines containing specific keywords", "correct": false }
+    ]
+  },
+  {
+    "question": "What is required to run a .ps1 script that includes named arguments?",
+    "answers": [
+      { "text": "Use the Execute cmdlet", "correct": false },
+      { "text": "Provide the argument names and values explicitly", "correct": true },
+      { "text": "Set execution policy to 'Restricted'", "correct": false },
+      { "text": "Use Start-Script", "correct": false },
+      { "text": "Arguments must be passed via pipeline", "correct": false }
+    ]
+  },
+  {
+    "question": "Which feature of PowerShell allows passing objects between cmdlets?",
+    "answers": [
+      { "text": "Streams", "correct": false },
+      { "text": "Filters", "correct": false },
+      { "text": "Pipeline", "correct": true },
+      { "text": "FileSystem", "correct": false },
+      { "text": "Modules", "correct": false }
+    ]
+  },
+  {
+    "question": "Which cmdlet would you use to start a PowerShell remoting session?",
+    "answers": [
+      { "text": "Enable-PSSession", "correct": false },
+      { "text": "Enter-RemoteCommand", "correct": false },
+      { "text": "Enter-PSSession", "correct": true },
+      { "text": "Start-WSManSession", "correct": false },
+      { "text": "Get-RemoteSession", "correct": false }
+    ]
+  },
+  {
+    "question": "PowerShell pipelines pass text between cmdlets, not objects.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "The cmdlet Import-CSV reads the contents of a CSV file into an array of objects.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The Set-ExecutionPolicy Restricted allows only signed scripts to run.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "PowerShell supports loops, including While, For, and Do While.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The command Exit-PSSession terminates a remote PowerShell session.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "To manipulate the Windows Registry, you must use WMI in PowerShell.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "PowerShell cmdlets always follow the format Verb-Noun.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The Add-Content cmdlet replaces the content of a file.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "In PowerShell, $_ refers to the current object in a pipeline.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "You can only use PowerShell on Windows operating systems.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Which cmdlet in PowerShell retrieves help information about a specific cmdlet?",
+    "answers": [
+      { "text": "Get-Help", "correct": true },
+      { "text": "Get-Command", "correct": false },
+      { "text": "Help-Command", "correct": false },
+      { "text": "Retrieve-Help", "correct": false },
+      { "text": "Show-Help", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the default execution policy in PowerShell?",
+    "answers": [
+      { "text": "Unrestricted", "correct": false },
+      { "text": "RemoteSigned", "correct": false },
+      { "text": "Restricted", "correct": true },
+      { "text": "AllSigned", "correct": false },
+      { "text": "Undefined", "correct": false }
+    ]
+  },
+  {
+    "question": "What must be done before using Enable-PSRemoting in a networked environment?",
+    "answers": [
+      { "text": "Install a third-party tool", "correct": false },
+      { "text": "Configure Windows Task Scheduler", "correct": false },
+      { "text": "Enable WinRM", "correct": true },
+      { "text": "Run the cmdlet without prerequisites", "correct": false },
+      { "text": "Restart the PowerShell session", "correct": false }
+    ]
+  },
+  {
+    "question": "Which cmdlet allows exporting objects to a file with a specific delimiter?",
+    "answers": [
+      { "text": "Add-Content", "correct": false },
+      { "text": "Export-File", "correct": false },
+      { "text": "Export-CSV", "correct": true },
+      { "text": "Export-Object", "correct": false },
+      { "text": "Export-Table", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the function of Start-Job in PowerShell?",
+    "answers": [
+      { "text": "Start a new service", "correct": false },
+      { "text": "Launch a GUI application", "correct": false },
+      { "text": "Run a background task asynchronously", "correct": true },
+      { "text": "Schedule a task in Task Scheduler", "correct": false },
+      { "text": "Begin remote debugging", "correct": false }
+    ]
+  },
+  {
+    "question": "Which command appends data to an existing file in PowerShell?",
+    "answers": [
+      { "text": "Set-Content", "correct": false },
+      { "text": "Replace-File", "correct": false },
+      { "text": "Append-Content", "correct": false },
+      { "text": "Add-Content", "correct": true },
+      { "text": "Write-File", "correct": false }
+    ]
+  },
+  {
+    "question": "What does the cmdlet Stop-Process -Name notepad do?",
+    "answers": [
+      { "text": "Closes all open processes on the system", "correct": false },
+      { "text": "Suspends the Notepad application temporarily", "correct": false },
+      { "text": "Terminates all instances of Notepad", "correct": true },
+      { "text": "Deletes the Notepad executable from the system", "correct": false },
+      { "text": "Renames the Notepad process", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is a key advantage of using PowerShell over traditional batch scripting?",
+    "answers": [
+      { "text": "Requires fewer system resources", "correct": false },
+      { "text": "Supports only text-based operations", "correct": false },
+      { "text": "Works exclusively on Windows 10 or later", "correct": false },
+      { "text": "Processes and manipulates objects", "correct": true },
+      { "text": "Requires no prior configuration", "correct": false }
+    ]
+  },
+  {
+    "question": "Which cmdlet creates a variable to store data for later use in PowerShell?",
+    "answers": [
+      { "text": "Set-Variable", "correct": true },
+      { "text": "Store-Data", "correct": false },
+      { "text": "New-Variable", "correct": false },
+      { "text": "Create-Variable", "correct": false },
+      { "text": "Save-Data", "correct": false }
+    ]
+  },
+  {
+    "question": "How do you run a PowerShell script from the command line?",
+    "answers": [
+      { "text": "Type the script name directly", "correct": false },
+      { "text": "Use Run-Script", "correct": false },
+      { "text": "Prefix the script name with .\\", "correct": true },
+      { "text": "Open the script in Notepad and save it", "correct": false },
+      { "text": "Scripts cannot be run from the command line", "correct": false }
+    ]
   }
 ];
