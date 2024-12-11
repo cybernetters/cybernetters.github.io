@@ -678,5 +678,5 @@ const questionBank = [
       { "text": "Gene-environment interaction", "correct": false },
       { "text": "The Lucifer Effect", "correct": false }
     ]
-  }
+  },
 ];
