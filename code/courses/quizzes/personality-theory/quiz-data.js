@@ -478,5 +478,205 @@ const questionBank = [
       { "text": "Triggers for immediate emotions", "correct": false },
       { "text": "Solutions for behavioral disorders", "correct": false }
     ]
+  },
+  {
+    "question": "A 35-year-old man is arrested for fraud. During an evaluation, he exhibits glib charm, a lack of remorse, and manipulative behavior. Based on these traits, he most likely aligns with:",
+    "answers": [
+      { "text": "Antisocial Personality Disorder", "correct": false },
+      { "text": "Borderline Personality Disorder", "correct": false },
+      { "text": "Psychopathy", "correct": true },
+      { "text": "Narcissistic Personality Disorder", "correct": false },
+      { "text": "Secondary psychopathy", "correct": false }
+    ]
+  },
+  {
+    "question": "A teenager consistently skips school, engages in reckless behavior, and shows little concern for others' well-being. These behaviors are most indicative of:",
+    "answers": [
+      { "text": "Primary psychopathy", "correct": false },
+      { "text": "Sociopathy", "correct": true },
+      { "text": "Neuroticism", "correct": false },
+      { "text": "Psychoticism", "correct": false },
+      { "text": "Extraversion", "correct": false }
+    ]
+  },
+  {
+    "question": "A corporate leader is admired for their assertiveness and social charisma but often makes decisions without considering long-term emotional impacts on their team. Based on Eysenck's PEN model, which dimension likely describes them?",
+    "answers": [
+      { "text": "Neuroticism", "correct": false },
+      { "text": "Extraversion", "correct": true },
+      { "text": "Psychoticism", "correct": false },
+      { "text": "Openness", "correct": false },
+      { "text": "Agreeableness", "correct": false }
+    ]
+  },
+  {
+    "question": "An individual raised in an environment of neglect develops antisocial tendencies but shows evidence of remorse when confronted about their actions. This presentation most aligns with:",
+    "answers": [
+      { "text": "Primary psychopathy", "correct": false },
+      { "text": "Secondary psychopathy", "correct": true },
+      { "text": "Antisocial Personality Disorder", "correct": false },
+      { "text": "High neuroticism", "correct": false },
+      { "text": "Systemic variable-driven behavior", "correct": false }
+    ]
+  },
+  {
+    "question": "A prison inmate consistently violates rules, demonstrates poor impulse control, and seeks thrill-seeking behaviors. Which personality trait from Eysenck’s theory might best explain this?",
+    "answers": [
+      { "text": "High extraversion", "correct": false },
+      { "text": "High neuroticism", "correct": false },
+      { "text": "High psychoticism", "correct": true },
+      { "text": "Low openness", "correct": false },
+      { "text": "High agreeableness", "correct": false }
+    ]
+  },
+  {
+    "question": "A researcher studying cybercriminals finds that many individuals share traits of impulsivity and low emotional empathy. This observation supports which personality framework?",
+    "answers": [
+      { "text": "Trait theory", "correct": true },
+      { "text": "Social learning theory", "correct": false },
+      { "text": "Differential psychology", "correct": false },
+      { "text": "The Lucifer Effect", "correct": false },
+      { "text": "Gene-environment interaction", "correct": false }
+    ]
+  },
+  {
+    "question": "A high-ranking official uses manipulative tactics to secure political power and exhibits little concern for the suffering of others. This behavior is most consistent with:",
+    "answers": [
+      { "text": "Sociopathy", "correct": false },
+      { "text": "Psychopathy", "correct": true },
+      { "text": "Neuroticism", "correct": false },
+      { "text": "Antisocial Personality Disorder", "correct": false },
+      { "text": "Systemic variable-driven behavior", "correct": false }
+    ]
+  },
+  {
+    "question": "A university student who often avoids social events, overthinks minor problems, and exhibits anxiety during exams would score high on which of Eysenck’s dimensions?",
+    "answers": [
+      { "text": "Extraversion", "correct": false },
+      { "text": "Psychoticism", "correct": false },
+      { "text": "Neuroticism", "correct": true },
+      { "text": "Conscientiousness", "correct": false },
+      { "text": "Openness", "correct": false }
+    ]
+  },
+  {
+    "question": "A company implements policies to reduce workplace misconduct. They find that system-wide changes in procedures are more effective than targeting individuals. This aligns most closely with which aspect of The Lucifer Effect?",
+    "answers": [
+      { "text": "Dispositional variables", "correct": false },
+      { "text": "Situational variables", "correct": false },
+      { "text": "Systemic variables", "correct": true },
+      { "text": "Differential psychology", "correct": false },
+      { "text": "Static personality traits", "correct": false }
+    ]
+  },
+  {
+    "question": "A teacher observes that a student shows consistent irritability and mood swings, which disrupt their ability to focus. This pattern likely reflects:",
+    "answers": [
+      { "text": "High psychoticism", "correct": false },
+      { "text": "High neuroticism", "correct": true },
+      { "text": "High extraversion", "correct": false },
+      { "text": "Low conscientiousness", "correct": false },
+      { "text": "Low agreeableness", "correct": false }
+    ]
+  },
+  {
+    "question": "A teenager raised in an unstable environment displays hostility toward authority figures and disregard for social norms. The most likely explanation for this behavior is:",
+    "answers": [
+      { "text": "Primary psychopathy", "correct": false },
+      { "text": "Environmental adversity interacting with impulsivity", "correct": true },
+      { "text": "Genetic predisposition for antisocial behavior", "correct": false },
+      { "text": "Systemic variable-driven personality development", "correct": false },
+      { "text": "Dispositional resilience", "correct": false }
+    ]
+  },
+  {
+    "question": "A psychologist notes that an offender exhibits fearlessness and an innate inability to form emotional bonds. Which classification is most appropriate?",
+    "answers": [
+      { "text": "Secondary psychopathy", "correct": false },
+      { "text": "ASPD", "correct": false },
+      { "text": "Primary psychopathy", "correct": true },
+      { "text": "Sociopathy", "correct": false },
+      { "text": "Neurotic personality disorder", "correct": false }
+    ]
+  },
+  {
+    "question": "In a study, participants exposed to extreme social isolation exhibited increased tendencies toward impulsive and aggressive behavior. This supports which theory of personality development?",
+    "answers": [
+      { "text": "Trait theory", "correct": false },
+      { "text": "Social learning theory", "correct": false },
+      { "text": "Gene-environment interaction", "correct": true },
+      { "text": "Eysenck’s PEN model", "correct": false },
+      { "text": "The Lucifer Effect", "correct": false }
+    ]
+  },
+  {
+    "question": "A young adult who enjoys thrill-seeking activities, such as extreme sports, but often disregards safety precautions, might score high in:",
+    "answers": [
+      { "text": "Extraversion and openness", "correct": false },
+      { "text": "Psychoticism and extraversion", "correct": true },
+      { "text": "Neuroticism and psychoticism", "correct": false },
+      { "text": "Openness and conscientiousness", "correct": false },
+      { "text": "Conscientiousness and agreeableness", "correct": false }
+    ]
+  },
+  {
+    "question": "During an investigation, a suspect demonstrates glib and superficial charm and appears highly confident. This behavior is most aligned with which personality construct?",
+    "answers": [
+      { "text": "Sociopathy", "correct": false },
+      { "text": "Psychopathy", "correct": true },
+      { "text": "Neuroticism", "correct": false },
+      { "text": "Extraversion", "correct": false },
+      { "text": "Agreeableness", "correct": false }
+    ]
+  },
+  {
+    "question": "A worker consistently misses deadlines but shows remorse and commits to improving their time management. This pattern is least likely to align with:",
+    "answers": [
+      { "text": "High conscientiousness", "correct": false },
+      { "text": "High extraversion", "correct": false },
+      { "text": "Secondary psychopathy", "correct": true },
+      { "text": "Low neuroticism", "correct": false },
+      { "text": "Low agreeableness", "correct": false }
+    ]
+  },
+  {
+    "question": "A study identifies economic inequality and legal inefficiencies as root causes of criminal behavior in a region. This finding aligns with:",
+    "answers": [
+      { "text": "Dispositional variables", "correct": false },
+      { "text": "Situational variables", "correct": false },
+      { "text": "Systemic variables", "correct": true },
+      { "text": "Psychological dispositions", "correct": false },
+      { "text": "Trait-based analysis", "correct": false }
+    ]
+  },
+  {
+    "question": "A clinical trial finds that individuals with shallow emotions and manipulative tendencies are less responsive to therapy targeting emotional empathy. This observation supports which concept?",
+    "answers": [
+      { "text": "Secondary psychopathy", "correct": false },
+      { "text": "Neuroticism", "correct": false },
+      { "text": "Primary psychopathy", "correct": true },
+      { "text": "Extraversion", "correct": false },
+      { "text": "Environmental adaptation", "correct": false }
+    ]
+  },
+  {
+    "question": "After a natural disaster, displaced individuals exhibit increased impulsivity and aggression due to environmental stress. This behavior illustrates the role of:",
+    "answers": [
+      { "text": "Static personality traits", "correct": false },
+      { "text": "Systemic variables", "correct": false },
+      { "text": "Dispositional variables", "correct": false },
+      { "text": "Situational variables", "correct": true },
+      { "text": "Neuroticism", "correct": false }
+    ]
+  },
+  {
+    "question": "A psychologist studies an individual with a history of impulsive antisocial behavior, tracing it to early parental neglect. This case most strongly aligns with:",
+    "answers": [
+      { "text": "Primary psychopathy", "correct": false },
+      { "text": "Secondary psychopathy", "correct": true },
+      { "text": "Antisocial Personality Disorder", "correct": false },
+      { "text": "Gene-environment interaction", "correct": false },
+      { "text": "The Lucifer Effect", "correct": false }
+    ]
   }
 ];
