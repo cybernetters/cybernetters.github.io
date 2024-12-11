@@ -193,5 +193,130 @@ const questionBank = [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
+  },
+  {
+    "question": "Why should a unique service name be used when creating persistence on a shared machine?",
+    "answers": [
+      { "text": "To avoid service conflicts with other attackers", "correct": true },
+      { "text": "To bypass detection by antivirus systems", "correct": false },
+      { "text": "To prevent alerting network monitoring tools", "correct": false },
+      { "text": "To ensure the service starts automatically", "correct": false },
+      { "text": "To hide the service in system logs", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary benefit of verifying a tun connection?",
+    "answers": [
+      { "text": "To validate data integrity", "correct": false },
+      { "text": "To ensure the pivot machine is reachable", "correct": false },
+      { "text": "To prevent accidental data leaks", "correct": false },
+      { "text": "To confirm the attacker machine can route traffic through the tunnel", "correct": true },
+      { "text": "To activate proxychains", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the significance of uploading nc.exe during a persistence attack?",
+    "answers": [
+      { "text": "It acts as an antivirus bypass tool.", "correct": false },
+      { "text": "It is used to spawn reverse shells.", "correct": true },
+      { "text": "It serves as a file encryption utility.", "correct": false },
+      { "text": "It is a required component for Ligolo-NG.", "correct": false },
+      { "text": "It enables credential dumping.", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the function of a Ligolo-NG Server?",
+    "answers": [
+      { "text": "Manages tunnels and routes traffic", "correct": true },
+      { "text": "Scans networks for vulnerable machines", "correct": false },
+      { "text": "Acts as a proxy for domain authentication", "correct": false },
+      { "text": "Generates payloads for pivoting attacks", "correct": false },
+      { "text": "Encrypts all data on the pivot machine", "correct": false }
+    ]
+  },
+  {
+    "question": "Antivirus software always detects persistence attempts.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Domain Admins can administer multiple machines within Active Directory.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "A machine can pivot traffic without having a NIC on the target network.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Network segmentation increases the difficulty of lateral movement.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Using Ligolo-NG requires manual certificate configuration every time.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Scenario: You need to access a highly segmented server. After SSH-ing into a pivot machine, you find it has two NICs: one on your network and another on the target network. Which step should you take next?",
+    "answers": [
+      { "text": "Directly scan the target from your attack machine", "correct": false },
+      { "text": "Use Ligolo-NG to establish a tunnel through the pivot machine", "correct": true },
+      { "text": "Create a service on the pivot machine for persistence", "correct": false },
+      { "text": "Transfer Netcat to the target network server", "correct": false },
+      { "text": "Enumerate users on the target network", "correct": false }
+    ]
+  },
+  {
+    "question": "Scenario: During a persistence attempt, the nc.exe file fails antivirus checks. What is the best course of action?",
+    "answers": [
+      { "text": "Retry the upload using a different protocol", "correct": false },
+      { "text": "Use obfuscation techniques to evade detection", "correct": true },
+      { "text": "Terminate the attack and delete all logs", "correct": false },
+      { "text": "Attempt persistence through an alternate method, like sc.exe", "correct": false },
+      { "text": "Upload multiple redundant files", "correct": false }
+    ]
+  },
+  {
+    "question": "Scenario: An nmap scan shows no open ports on a pivot machine. How can you proceed with pivoting?",
+    "answers": [
+      { "text": "Use the machine’s NIC to attempt SSH into the target", "correct": false },
+      { "text": "Employ a port forwarding tool like Ligolo-NG", "correct": true },
+      { "text": "Escalate privileges to a domain administrator", "correct": false },
+      { "text": "Perform a brute force attack on closed ports", "correct": false },
+      { "text": "Transfer administrative tools to the pivot machine", "correct": false }
+    ]
+  },
+  {
+    "question": "Scenario: An attacker uses a service to maintain persistence but notices it’s not set to auto-start. What command should they run?",
+    "answers": [
+      { "text": "net start <service name>", "correct": false },
+      { "text": "sc.exe \\\\IP config <service name> start= auto", "correct": true },
+      { "text": "servicectl set auto", "correct": false },
+      { "text": "sudo enable service", "correct": false },
+      { "text": "autorun –config", "correct": false }
+    ]
+  },
+  {
+    "question": "Scenario: After establishing a tunnel, traffic is not routing to the target. What step should you verify?",
+    "answers": [
+      { "text": "Confirm that the target machine has active NICs", "correct": false },
+      { "text": "Check if the pivot machine has network isolation enabled", "correct": false },
+      { "text": "Ensure the tun connection is configured correctly on the attack machine", "correct": true },
+      { "text": "Reconfigure the proxy server to use a different port", "correct": false },
+      { "text": "Verify the pivot machine has administrative rights", "correct": false }
+    ]
   }
 ];

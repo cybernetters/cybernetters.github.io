@@ -1,472 +1,322 @@
 const questionBank = [
   {
-    "question": "Which of the following describes a key function of an Active Directory Forest?",
+    "question": "What is a key prerequisite for remotely spawning a process to achieve persistence on a target machine?",
     "answers": [
-      { "text": "Manages replication between sites", "correct": false },
-      { "text": "Provides a global listing of all objects in the directory", "correct": false },
-      { "text": "Establishes transitive trusts between domains", "correct": true },
-      { "text": "Determines client authentication servers", "correct": false },
-      { "text": "Creates a bridgehead server for site replication", "correct": false }
+      { "text": "Administrator credentials on the domain controller", "correct": false },
+      { "text": "Credentials from a user of the Administrators group on the target machine", "correct": true },
+      { "text": "Physical access to the machine", "correct": false },
+      { "text": "A vulnerable network protocol", "correct": false },
+      { "text": "A valid user account without admin rights", "correct": false }
     ]
   },
   {
-    "question": "What is the primary purpose of Active Directory Sites?",
+    "question": "Which of the following is a command used to upload files via SMBClient?",
     "answers": [
-      { "text": "To organize logical structures like OUs", "correct": false },
-      { "text": "To define physical network locations for optimized replication", "correct": true },
-      { "text": "To establish permissions across forests", "correct": false },
-      { "text": "To maintain DNS services in each domain", "correct": false },
-      { "text": "To manage schema changes in the forest", "correct": false }
-    ]
-  },
-  {
-    "question": "Which FSMO role is responsible for maintaining unique SIDs within a domain?",
-    "answers": [
-      { "text": "Schema Master", "correct": false },
-      { "text": "PDC Emulator", "correct": false },
-      { "text": "RID Master", "correct": true },
-      { "text": "Infrastructure Master", "correct": false },
-      { "text": "Domain Naming Master", "correct": false }
-    ]
-  },
-  {
-    "question": "What is a primary advantage of defining a site in Active Directory?",
-    "answers": [
-      { "text": "Reduces overall replication costs", "correct": false },
-      { "text": "Ensures that GPO changes are applied immediately", "correct": false },
-      { "text": "Facilitates authentication against the closest domain controller", "correct": true },
-      { "text": "Guarantees single-master operations in the forest", "correct": false },
-      { "text": "Allocates unique RIDs across all domains", "correct": false }
-    ]
-  },
-  {
-    "question": "Which of the following FSMO roles is forest-wide in scope?",
-    "answers": [
-      { "text": "RID Master", "correct": false },
-      { "text": "Infrastructure Master", "correct": false },
-      { "text": "Schema Master", "correct": true },
-      { "text": "PDC Emulator", "correct": false },
+      { "text": "smb://upload", "correct": false },
+      { "text": "smbclient //ip/targetDrive -U \"Domain\\Username\"%'Password' -c 'put <filename>'", "correct": true },
+      { "text": "scp upload.file //ip/targetDrive", "correct": false },
+      { "text": "upload -p smb <filename>", "correct": false },
       { "text": "None of the above", "correct": false }
     ]
   },
   {
-    "question": "When is it necessary to seize an FSMO role?",
+    "question": "What is the purpose of setting a service to auto-start during a persistence attack?",
     "answers": [
-      { "text": "During scheduled maintenance", "correct": false },
-      { "text": "When the source server is permanently unavailable", "correct": true },
-      { "text": "When upgrading the forest functional level", "correct": false },
-      { "text": "For performance optimization", "correct": false },
-      { "text": "None of the above", "correct": false }
+      { "text": "To immediately escalate privileges", "correct": false },
+      { "text": "To maintain access even if credentials change", "correct": true },
+      { "text": "To evade detection by antivirus software", "correct": false },
+      { "text": "To execute multiple payloads simultaneously", "correct": false },
+      { "text": "To prevent the service from being visible in task manager", "correct": false }
     ]
   },
   {
-    "question": "Which tool is commonly used to transfer the Schema Master role?",
+    "question": "Which program is recommended for pivoting due to its lightweight and versatile nature?",
     "answers": [
-      { "text": "Active Directory Users and Computers", "correct": false },
-      { "text": "Active Directory Schema snap-in", "correct": true },
-      { "text": "ntdsutil command-line tool", "correct": false },
-      { "text": "Active Directory Sites and Services", "correct": false },
-      { "text": "None of the above", "correct": false }
+      { "text": "Netcat", "correct": false },
+      { "text": "Ligolo-NG", "correct": true },
+      { "text": "Nmap", "correct": false },
+      { "text": "Proxychains", "correct": false },
+      { "text": "Wireshark", "correct": false }
     ]
   },
   {
-    "question": "What is the significance of the Global Catalog (GC) server in a multi-domain forest?",
+    "question": "When using Ligolo-NG, what is the role of the Agent?",
     "answers": [
-      { "text": "It enforces password changes across all domains", "correct": false },
-      { "text": "It provides cross-domain object searches", "correct": true },
-      { "text": "It manages domain naming across forests", "correct": false },
-      { "text": "It allocates RIDs for all domains", "correct": false },
-      { "text": "It ensures schema changes propagate across forests", "correct": false }
+      { "text": "It serves as a network scanner.", "correct": false },
+      { "text": "It sets up the tun interface on the attacker machine.", "correct": false },
+      { "text": "It facilitates connections without requiring admin access.", "correct": true },
+      { "text": "It generates self-signed certificates.", "correct": false },
+      { "text": "It acts as the primary target during attacks.", "correct": false }
     ]
   },
   {
-    "question": "Which server type is designated to manage replication between sites in Active Directory?",
+    "question": "Why is pivoting important in an attacker's strategy?",
     "answers": [
-      { "text": "Schema Master", "correct": false },
-      { "text": "Bridgehead Server", "correct": true },
-      { "text": "RID Master", "correct": false },
-      { "text": "Domain Controller", "correct": false },
-      { "text": "Infrastructure Master", "correct": false }
+      { "text": "To escalate privileges directly on the compromised machine", "correct": false },
+      { "text": "To move laterally and reach the final target in a segmented network", "correct": true },
+      { "text": "To replace existing network protocols with malicious ones", "correct": false },
+      { "text": "To download sensitive data from external servers", "correct": false },
+      { "text": "To monitor DNS traffic for anomalies", "correct": false }
     ]
   },
   {
-    "question": "What is a key function of the Infrastructure Master role?",
+    "question": "What is typically required to use runas for persistence?",
     "answers": [
-      { "text": "Manages schema changes", "correct": false },
-      { "text": "Ensures SIDs are unique", "correct": false },
-      { "text": "Updates references to objects in other domains", "correct": true },
-      { "text": "Acts as the root time server for the domain", "correct": false },
-      { "text": "Allocates RIDs within the domain", "correct": false }
+      { "text": "Guest-level privileges", "correct": false },
+      { "text": "Access to the Administrator account", "correct": true },
+      { "text": "Domain admin credentials", "correct": false },
+      { "text": "A secondary user account on the machine", "correct": false },
+      { "text": "Physical access to the system", "correct": false }
     ]
   },
   {
-    "question": "Which of the following is NOT a valid FSMO role?",
+    "question": "What is a potential disadvantage of transferring tools to a pivot machine?",
     "answers": [
-      { "text": "Schema Master", "correct": false },
-      { "text": "Domain Naming Master", "correct": false },
-      { "text": "Global Catalog Master", "correct": true },
-      { "text": "PDC Emulator", "correct": false },
-      { "text": "Infrastructure Master", "correct": false }
+      { "text": "It guarantees detection by antivirus systems.", "correct": false },
+      { "text": "It can generate noise and alert network monitoring systems.", "correct": true },
+      { "text": "It removes traces of previous activities.", "correct": false },
+      { "text": "It may result in immediate termination of the attack.", "correct": false },
+      { "text": "It prevents successful lateral movement.", "correct": false }
     ]
   },
   {
-    "question": "When should you avoid assigning the Infrastructure Master to a Global Catalog server?",
+    "question": "Which of the following is NOT a recommended step when setting up Ligolo-NG?",
     "answers": [
-      { "text": "If the server handles multiple FSMO roles", "correct": false },
-      { "text": "If there are multiple domains in the forest", "correct": true },
-      { "text": "If schema changes are being made frequently", "correct": false },
-      { "text": "If the domain is running out of RIDs", "correct": false },
-      { "text": "None of the above", "correct": false }
+      { "text": "Using the Agent to connect to the Server", "correct": false },
+      { "text": "Setting up a tun interface on the attacker machine", "correct": false },
+      { "text": "Using proxychains for all connections", "correct": true },
+      { "text": "Verifying the tun interface is active with ip addr show", "correct": false },
+      { "text": "Using Let's Encrypt for certificates", "correct": false }
     ]
   },
   {
-    "question": "What happens if the PDC Emulator role is unavailable?",
+    "question": "What is a key use of port redirection during pivoting?",
     "answers": [
-      { "text": "RID allocation stops entirely", "correct": false },
-      { "text": "Authentication across domains halts", "correct": false },
-      { "text": "Password changes may take longer to propagate", "correct": true },
-      { "text": "Schema updates cannot occur", "correct": false },
-      { "text": "No impact unless the RID pool is exhausted", "correct": false }
+      { "text": "To escalate privileges on the target machine", "correct": false },
+      { "text": "To access network segments isolated from the attacker's machine", "correct": true },
+      { "text": "To establish direct connections between the attacker and target", "correct": false },
+      { "text": "To obfuscate malicious traffic from IDS systems", "correct": false },
+      { "text": "To replace compromised systems with attacker-controlled devices", "correct": false }
     ]
   },
   {
-    "question": "Which of the following tools can be used to seize FSMO roles?",
+    "question": "What command can confirm the tun interface is up?",
     "answers": [
-      { "text": "Active Directory Users and Computers", "correct": false },
-      { "text": "Active Directory Domains and Trusts", "correct": false },
-      { "text": "Active Directory Sites and Services", "correct": false },
-      { "text": "ntdsutil", "correct": true },
-      { "text": "All of the above", "correct": false }
+      { "text": "ifconfig", "correct": false },
+      { "text": "sudo ip route add", "correct": false },
+      { "text": "sudo ip addr show ligolo", "correct": true },
+      { "text": "netstat -a", "correct": false },
+      { "text": "ls -tun", "correct": false }
     ]
   },
   {
-    "question": "Why might an organization configure a standby operations master DC?",
+    "question": "Which pivoting technique is used to reach a target on a separate subnetwork?",
     "answers": [
-      { "text": "To improve global catalog searches", "correct": false },
-      { "text": "To act as a fallback for FSMO roles", "correct": true },
-      { "text": "To enforce domain-wide replication schedules", "correct": false },
-      { "text": "To optimize cross-site authentication", "correct": false },
-      { "text": "None of the above", "correct": false }
+      { "text": "File transfer via SMB", "correct": false },
+      { "text": "Persistence through service creation", "correct": false },
+      { "text": "Port forwarding", "correct": true },
+      { "text": "DNS spoofing", "correct": false },
+      { "text": "Credential dumping", "correct": false }
     ]
   },
   {
-    "question": "Which of the following is true about the Schema Master role?",
+    "question": "What is one key feature of Ligolo-NG?",
     "answers": [
-      { "text": "It is domain-wide in scope", "correct": false },
-      { "text": "It controls modifications to AD schema", "correct": true },
-      { "text": "It can exist on multiple domain controllers", "correct": false },
-      { "text": "It requires frequent updates", "correct": false },
-      { "text": "It facilitates SID allocations across the domain", "correct": false }
+      { "text": "Requires admin access on the target machine", "correct": false },
+      { "text": "Uses proxychains for encryption", "correct": false },
+      { "text": "Automatically establishes tunnels without configuration", "correct": false },
+      { "text": "Handles multiple tunnels efficiently", "correct": true },
+      { "text": "Relies exclusively on domain-based authentication", "correct": false }
     ]
   },
   {
-    "question": "Which FSMO role is critical during the creation of a new domain?",
+    "question": "In the persistence phase, what is the role of sc.exe?",
     "answers": [
-      { "text": "Schema Master", "correct": false },
-      { "text": "Domain Naming Master", "correct": true },
-      { "text": "PDC Emulator", "correct": false },
-      { "text": "RID Master", "correct": false },
-      { "text": "Infrastructure Master", "correct": false }
+      { "text": "To escalate user privileges", "correct": false },
+      { "text": "To create and configure services for auto-start", "correct": true },
+      { "text": "To upload payloads to the target", "correct": false },
+      { "text": "To manage network interfaces", "correct": false },
+      { "text": "To enumerate connected devices", "correct": false }
     ]
   },
   {
-    "question": "What tool is typically used for defining Active Directory sites?",
+    "question": "What is the likely result of uploading a file that fails antivirus checks?",
     "answers": [
-      { "text": "Active Directory Schema snap-in", "correct": false },
-      { "text": "ntdsutil", "correct": false },
-      { "text": "Active Directory Sites and Services", "correct": true },
-      { "text": "Active Directory Users and Computers", "correct": false },
-      { "text": "Active Directory Domains and Trusts", "correct": false }
+      { "text": "The file is quarantined.", "correct": true },
+      { "text": "The upload is rejected by the network.", "correct": false },
+      { "text": "The antivirus deletes the file immediately.", "correct": false },
+      { "text": "The attacker's connection is terminated.", "correct": false },
+      { "text": "The target machine reboots.", "correct": false }
     ]
   },
   {
-    "question": "What type of network typically connects sites in Active Directory?",
+    "question": "What does a successful nmap scan of a pivoted target signify?",
     "answers": [
-      { "text": "LAN", "correct": false },
-      { "text": "WAN", "correct": true },
-      { "text": "VPN", "correct": false },
-      { "text": "MAN", "correct": false },
-      { "text": "VLAN", "correct": false }
+      { "text": "The final target is not segmented.", "correct": false },
+      { "text": "The attacker has achieved privilege escalation.", "correct": false },
+      { "text": "The pivot is operational, allowing access to the target.", "correct": true },
+      { "text": "Network defenses have been bypassed permanently.", "correct": false },
+      { "text": "The target is vulnerable to DNS spoofing attacks.", "correct": false }
     ]
   },
   {
-    "question": "Which FSMO role manages domain-specific RID allocations?",
-    "answers": [
-      { "text": "Schema Master", "correct": false },
-      { "text": "Domain Naming Master", "correct": false },
-      { "text": "RID Master", "correct": true },
-      { "text": "PDC Emulator", "correct": false },
-      { "text": "Infrastructure Master", "correct": false }
-    ]
-  },
-  {
-    "question": "Which of the following is NOT a valid FSMO role?",
-    "answers": [
-      { "text": "Schema Master", "correct": false },
-      { "text": "Domain Naming Master", "correct": false },
-      { "text": "Global Catalog Master", "correct": true },
-      { "text": "PDC Emulator", "correct": false },
-      { "text": "Infrastructure Master", "correct": false }
-    ]
-  },
-  {
-    "question": "When should you avoid assigning the Infrastructure Master to a Global Catalog server?",
-    "answers": [
-      { "text": "If the server handles multiple FSMO roles", "correct": false },
-      { "text": "If there are multiple domains in the forest", "correct": true },
-      { "text": "If schema changes are being made frequently", "correct": false },
-      { "text": "If the domain is running out of RIDs", "correct": false },
-      { "text": "None of the above", "correct": false }
-    ]
-  },
-  {
-    "question": "What happens if the PDC Emulator role is unavailable?",
-    "answers": [
-      { "text": "RID allocation stops entirely", "correct": false },
-      { "text": "Authentication across domains halts", "correct": false },
-      { "text": "Password changes may take longer to propagate", "correct": true },
-      { "text": "Schema updates cannot occur", "correct": false },
-      { "text": "No impact unless the RID pool is exhausted", "correct": false }
-    ]
-  },
-  {
-    "question": "Which of the following tools can be used to seize FSMO roles?",
-    "answers": [
-      { "text": "Active Directory Users and Computers", "correct": false },
-      { "text": "Active Directory Domains and Trusts", "correct": false },
-      { "text": "Active Directory Sites and Services", "correct": false },
-      { "text": "ntdsutil", "correct": true },
-      { "text": "All of the above", "correct": false }
-    ]
-  },
-  {
-    "question": "Why might an organization configure a standby operations master DC?",
-    "answers": [
-      { "text": "To improve global catalog searches", "correct": false },
-      { "text": "To act as a fallback for FSMO roles", "correct": true },
-      { "text": "To enforce domain-wide replication schedules", "correct": false },
-      { "text": "To optimize cross-site authentication", "correct": false },
-      { "text": "None of the above", "correct": false }
-    ]
-  },
-  {
-    "question": "Which of the following is true about the Schema Master role?",
-    "answers": [
-      { "text": "It is domain-wide in scope", "correct": false },
-      { "text": "It controls modifications to AD schema", "correct": true },
-      { "text": "It can exist on multiple domain controllers", "correct": false },
-      { "text": "It requires frequent updates", "correct": false },
-      { "text": "It facilitates SID allocations across the domain", "correct": false }
-    ]
-  },
-  {
-    "question": "Which FSMO role is critical during the creation of a new domain?",
-    "answers": [
-      { "text": "Schema Master", "correct": false },
-      { "text": "Domain Naming Master", "correct": true },
-      { "text": "PDC Emulator", "correct": false },
-      { "text": "RID Master", "correct": false },
-      { "text": "Infrastructure Master", "correct": false }
-    ]
-  },
-  {
-    "question": "What tool is typically used for defining Active Directory sites?",
-    "answers": [
-      { "text": "Active Directory Schema snap-in", "correct": false },
-      { "text": "ntdsutil", "correct": false },
-      { "text": "Active Directory Sites and Services", "correct": true },
-      { "text": "Active Directory Users and Computers", "correct": false },
-      { "text": "Active Directory Domains and Trusts", "correct": false }
-    ]
-  },
-  {
-    "question": "What type of network typically connects sites in Active Directory?",
-    "answers": [
-      { "text": "LAN", "correct": false },
-      { "text": "WAN", "correct": true },
-      { "text": "VPN", "correct": false },
-      { "text": "MAN", "correct": false },
-      { "text": "VLAN", "correct": false }
-    ]
-  },
-  {
-    "question": "Which FSMO role manages domain-specific RID allocations?",
-    "answers": [
-      { "text": "Schema Master", "correct": false },
-      { "text": "Domain Naming Master", "correct": false },
-      { "text": "RID Master", "correct": true },
-      { "text": "PDC Emulator", "correct": false },
-      { "text": "Infrastructure Master", "correct": false }
-    ]
-  },
-  {
-    "question": "Seizing FSMO roles should be a last resort.",
+    "question": "A process spawned remotely for persistence will survive a credential change.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "The RID Master assigns security identifiers for all domains in a forest.",
+    "question": "Local admins are always capable of using RDP for remote administration.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "Transitive trusts exist automatically between domains in the same forest.",
-    "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
-    ]
-  },
-  {
-    "question": "The Domain Naming Master is required when creating new organizational units.",
+    "question": "Ligolo-NG requires admin privileges to run its Agent program.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "Sites are composed of servers and configuration objects.",
+    "question": "The scp command can transfer files between machines.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "The PDC Emulator should ideally not reside on the same server as the Global Catalog.",
+    "question": "Port forwarding is used to bypass network segmentation.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "The Schema Master role controls updates to the forest schema.",
+    "question": "Why should a unique service name be used when creating persistence on a shared machine?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "To avoid service conflicts with other attackers", "correct": true },
+      { "text": "To bypass detection by antivirus systems", "correct": false },
+      { "text": "To prevent alerting network monitoring tools", "correct": false },
+      { "text": "To ensure the service starts automatically", "correct": false },
+      { "text": "To hide the service in system logs", "correct": false }
     ]
   },
   {
-    "question": "Relative IDs are used to ensure SIDs are unique within a domain.",
+    "question": "What is the primary benefit of verifying a tun connection?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "To validate data integrity", "correct": false },
+      { "text": "To ensure the pivot machine is reachable", "correct": false },
+      { "text": "To prevent accidental data leaks", "correct": false },
+      { "text": "To confirm the attacker machine can route traffic through the tunnel", "correct": true },
+      { "text": "To activate proxychains", "correct": false }
     ]
   },
   {
-    "question": "The Global Catalog is a single-master operation in Active Directory.",
+    "question": "What is the significance of uploading nc.exe during a persistence attack?",
+    "answers": [
+      { "text": "It acts as an antivirus bypass tool.", "correct": false },
+      { "text": "It is used to spawn reverse shells.", "correct": true },
+      { "text": "It serves as a file encryption utility.", "correct": false },
+      { "text": "It is a required component for Ligolo-NG.", "correct": false },
+      { "text": "It enables credential dumping.", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the function of a Ligolo-NG Server?",
+    "answers": [
+      { "text": "Manages tunnels and routes traffic", "correct": true },
+      { "text": "Scans networks for vulnerable machines", "correct": false },
+      { "text": "Acts as a proxy for domain authentication", "correct": false },
+      { "text": "Generates payloads for pivoting attacks", "correct": false },
+      { "text": "Encrypts all data on the pivot machine", "correct": false }
+    ]
+  },
+  {
+    "question": "Antivirus software always detects persistence attempts.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "A single IP subnet can span multiple sites in Active Directory.",
+    "question": "Domain Admins can administer multiple machines within Active Directory.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "A machine can pivot traffic without having a NIC on the target network.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "You are tasked with optimizing replication between two sites. Which approach should you consider?",
+    "question": "Network segmentation increases the difficulty of lateral movement.",
     "answers": [
-      { "text": "Enable the PDC Emulator role in both sites", "correct": false },
-      { "text": "Configure relative costs between site links", "correct": true },
-      { "text": "Deploy an additional Schema Master in each site", "correct": false },
-      { "text": "Merge the sites into a single subnet", "correct": false },
-      { "text": "Increase the replication interval for all domain controllers", "correct": false }
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "A domain controller handling the RID Master role is offline. What is the potential impact?",
+    "question": "Using Ligolo-NG requires manual certificate configuration every time.",
     "answers": [
-      { "text": "Authentication will fail across the domain", "correct": false },
-      { "text": "Schema changes cannot be made", "correct": false },
-      { "text": "New security objects cannot be created if RIDs are exhausted", "correct": true },
-      { "text": "Replication between sites will stop", "correct": false },
-      { "text": "Cross-domain queries will fail", "correct": false }
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "During a planned maintenance window, you need to take the Infrastructure Master offline. What precautions should you take?",
+    "question": "Scenario: You need to access a highly segmented server. After SSH-ing into a pivot machine, you find it has two NICs: one on your network and another on the target network. Which step should you take next?",
     "answers": [
-      { "text": "Move all FSMO roles to another server", "correct": false },
-      { "text": "Ensure no schema changes are planned", "correct": false },
-      { "text": "Confirm that no cross-domain object updates are expected", "correct": true },
-      { "text": "Disable replication between sites temporarily", "correct": false },
-      { "text": "None of the above", "correct": false }
+      { "text": "Directly scan the target from your attack machine", "correct": false },
+      { "text": "Use Ligolo-NG to establish a tunnel through the pivot machine", "correct": true },
+      { "text": "Create a service on the pivot machine for persistence", "correct": false },
+      { "text": "Transfer Netcat to the target network server", "correct": false },
+      { "text": "Enumerate users on the target network", "correct": false }
     ]
   },
   {
-    "question": "What is the first step when transferring the Domain Naming Master role to another server?",
+    "question": "Scenario: During a persistence attempt, the nc.exe file fails antivirus checks. What is the best course of action?",
     "answers": [
-      { "text": "Open Active Directory Users and Computers", "correct": false },
-      { "text": "Access the ntdsutil tool", "correct": false },
-      { "text": "Launch Active Directory Domains and Trusts", "correct": true },
-      { "text": "Define a new Global Catalog server", "correct": false },
-      { "text": "Configure the relative cost for site links", "correct": false }
+      { "text": "Retry the upload using a different protocol", "correct": false },
+      { "text": "Use obfuscation techniques to evade detection", "correct": true },
+      { "text": "Terminate the attack and delete all logs", "correct": false },
+      { "text": "Attempt persistence through an alternate method, like sc.exe", "correct": false },
+      { "text": "Upload multiple redundant files", "correct": false }
     ]
   },
   {
-    "question": "A network administrator needs to ensure efficient authentication for clients in remote offices. What should they configure?",
+    "question": "Scenario: An nmap scan shows no open ports on a pivot machine. How can you proceed with pivoting?",
     "answers": [
-      { "text": "Global Catalog servers in all remote offices", "correct": false },
-      { "text": "Active Directory Sites and associated subnets", "correct": true },
-      { "text": "Schema Master on each domain controller", "correct": false },
-      { "text": "Multiple PDC Emulators within the same domain", "correct": false },
-      { "text": "None of the above", "correct": false }
+      { "text": "Use the machine’s NIC to attempt SSH into the target", "correct": false },
+      { "text": "Employ a port forwarding tool like Ligolo-NG", "correct": true },
+      { "text": "Escalate privileges to a domain administrator", "correct": false },
+      { "text": "Perform a brute force attack on closed ports", "correct": false },
+      { "text": "Transfer administrative tools to the pivot machine", "correct": false }
     ]
   },
   {
-    "question": "What is the main consideration when deciding to seize an FSMO role?",
+    "question": "Scenario: An attacker uses a service to maintain persistence but notices it’s not set to auto-start. What command should they run?",
     "answers": [
-      { "text": "If schema changes are pending", "correct": false },
-      { "text": "If the source server will not come back online", "correct": true },
-      { "text": "Whether cross-domain authentication is required", "correct": false },
-      { "text": "If replication conflicts are frequent", "correct": false },
-      { "text": "None of the above", "correct": false }
+      { "text": "net start <service name>", "correct": false },
+      { "text": "sc.exe \\\\IP config <service name> start= auto", "correct": true },
+      { "text": "servicectl set auto", "correct": false },
+      { "text": "sudo enable service", "correct": false },
+      { "text": "autorun –config", "correct": false }
     ]
   },
   {
-    "question": "You observe slow replication between two sites. What could be a potential cause?",
+    "question": "Scenario: After establishing a tunnel, traffic is not routing to the target. What step should you verify?",
     "answers": [
-      { "text": "The Schema Master is offline", "correct": false },
-      { "text": "The bridgehead server is overloaded", "correct": true },
-      { "text": "The RID Master role has been seized", "correct": false },
-      { "text": "Multiple PDC Emulators are active", "correct": false },
-      { "text": "The site is missing from Active Directory", "correct": false }
-    ]
-  },
-  {
-    "question": "A client is failing to authenticate within a site. What is the most likely issue?",
-    "answers": [
-      { "text": "The PDC Emulator is unavailable", "correct": false },
-      { "text": "No subnet has been defined for the site", "correct": true },
-      { "text": "The Schema Master role is offline", "correct": false },
-      { "text": "The RID pool is depleted", "correct": false },
-      { "text": "None of the above", "correct": false }
-    ]
-  },
-  {
-    "question": "You are configuring a new site in Active Directory. What is the primary reason for doing so?",
-    "answers": [
-      { "text": "To support additional FSMO roles", "correct": false },
-      { "text": "To define a new schema for the forest", "correct": false },
-      { "text": "To optimize DC replication and client authentication", "correct": true },
-      { "text": "To reduce WAN traffic globally", "correct": false },
-      { "text": "To ensure all GPOs are applied consistently", "correct": false }
-    ]
-  },
-  {
-    "question": "Which FSMO role must be available during the addition of a new domain?",
-    "answers": [
-      { "text": "Schema Master", "correct": false },
-      { "text": "RID Master", "correct": false },
-      { "text": "Infrastructure Master", "correct": false },
-      { "text": "Domain Naming Master", "correct": true },
-      { "text": "PDC Emulator", "correct": false }
+      { "text": "Confirm that the target machine has active NICs", "correct": false },
+      { "text": "Check if the pivot machine has network isolation enabled", "correct": false },
+      { "text": "Ensure the tun connection is configured correctly on the attack machine", "correct": true },
+      { "text": "Reconfigure the proxy server to use a different port", "correct": false },
+      { "text": "Verify the pivot machine has administrative rights", "correct": false }
     ]
   }
 ];
