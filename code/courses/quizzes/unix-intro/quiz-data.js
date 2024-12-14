@@ -159,4 +159,44 @@ const questionBank = [
       { "text": "System V", "correct": false }
     ]
   },
+  {
+    "question": "Which OS was first to support multithreading and wireless technology?",
+    "answers": [
+      { "text": "FreeBSD 6.0", "correct": true },
+      { "text": "UNIX V6", "correct": false },
+      { "text": "Mac OS X Cheetah", "correct": false },
+      { "text": "System V Release 4", "correct": false },
+      { "text": "Windows NT", "correct": false }
+    ]
+  },
+  {
+    "question": "What feature is associated with MacOS 10.6 Snow Leopard?",
+    "answers": [
+      { "text": "Cloud sharing", "correct": false },
+      { "text": "A 64-bit kernel", "correct": true },
+      { "text": "Expanded virtual memory", "correct": false },
+      { "text": "Multithreading", "correct": false },
+      { "text": "Real-time processing", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary goal of the SANS Institute, established in 1990?",
+    "answers": [
+      { "text": "System administration training", "correct": true },
+      { "text": "UNIX development", "correct": false },
+      { "text": "Proprietary software licensing", "correct": false },
+      { "text": "Cloud computing management", "correct": false },
+      { "text": "Networking hardware sales", "correct": false }
+    ]
+  },
+  {
+    "question": "What significant trend occurred between 2000 and the present in UNIX/Linux?",
+    "answers": [
+      { "text": "Decline in usage", "correct": false },
+      { "text": "Growth of virtualization and cloud computing", "correct": true },
+      { "text": "Complete dominance of Windows servers", "correct": false },
+      { "text": "End of UNIX development", "correct": false },
+      { "text": "Transition to closed-source software", "correct": false }
+    ]
+  }
 ];
