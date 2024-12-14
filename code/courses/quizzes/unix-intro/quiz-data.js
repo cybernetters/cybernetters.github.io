@@ -198,5 +198,245 @@ const questionBank = [
       { "text": "End of UNIX development", "correct": false },
       { "text": "Transition to closed-source software", "correct": false }
     ]
+  },
+  {
+    "question": "UNIX is based on Multics.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Linus Torvalds created GNU tools.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Time-sharing systems replaced single-purpose computing.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The UNIX philosophy emphasizes doing multiple things in a single program.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "The first UNIX version was written in 1969.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "FreeBSD is not derived from BSD.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Linux gained popularity due to its strong community support.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "USENIX held its first system admin conference in 1987.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "RedHat Enterprise Linux is an open-source software.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "MacOS is built on a Linux kernel.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Windows NT replaced UNIX completely in government systems.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "GNU tools are crucial for Linux distributions.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Linux servers cost less than Windows servers.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Virtualization has reduced the importance of UNIX/Linux.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "The GNU Project began in 1983.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The Linux kernel was derived from Minix.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "MacOS Snow Leopard introduced 64-bit kernel support.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The SANS Institute focuses on marketing Linux distributions.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Fedora Linux is used for testing new features.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Cloud computing is unrelated to UNIX/Linux resurgence.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Which Linux distribution would you recommend for testing a new server feature?",
+    "answers": [
+      { "text": "Debian", "correct": false },
+      { "text": "Fedora", "correct": true },
+      { "text": "Ubuntu", "correct": false },
+      { "text": "CentOS", "correct": false },
+      { "text": "Suse", "correct": false }
+    ]
+  },
+  {
+    "question": "A system admin needs a free alternative to RedHat. Which distribution should they choose?",
+    "answers": [
+      { "text": "OpenSuse", "correct": false },
+      { "text": "Fedora", "correct": false },
+      { "text": "CentOS", "correct": true },
+      { "text": "Debian", "correct": false },
+      { "text": "MacOS", "correct": false }
+    ]
+  },
+  {
+    "question": "To ensure security on a Linux server, which task is most critical?",
+    "answers": [
+      { "text": "Upgrading hardware", "correct": false },
+      { "text": "Automating tasks", "correct": false },
+      { "text": "Vigilant monitoring", "correct": true },
+      { "text": "Developing site policies", "correct": false },
+      { "text": "Installing updates", "correct": false }
+    ]
+  },
+  {
+    "question": "What would be the first step when installing a new Linux distribution on a server?",
+    "answers": [
+      { "text": "Configure security policies", "correct": false },
+      { "text": "Install and upgrade software", "correct": false },
+      { "text": "Add hardware", "correct": false },
+      { "text": "Configure access control", "correct": false },
+      { "text": "Partition the disk and install the OS", "correct": true }
+    ]
+  },
+  {
+    "question": "Which feature makes FreeBSD a good choice for enterprise multithreading systems?",
+    "answers": [
+      { "text": "Cloud integration", "correct": false },
+      { "text": "Multithreaded file system", "correct": true },
+      { "text": "Enhanced graphics tools", "correct": false },
+      { "text": "Proprietary tools", "correct": false },
+      { "text": "System-wide upgrades", "correct": false }
+    ]
+  },
+  {
+    "question": "A company prioritizing cost-effectiveness should choose which server OS?",
+    "answers": [
+      { "text": "Windows NT", "correct": false },
+      { "text": "FreeBSD", "correct": false },
+      { "text": "MacOS", "correct": false },
+      { "text": "RedHat", "correct": false },
+      { "text": "Debian", "correct": true }
+    ]
+  },
+  {
+    "question": "If you want to experiment with cutting-edge Linux features, which OS is ideal?",
+    "answers": [
+      { "text": "Fedora", "correct": true },
+      { "text": "Ubuntu", "correct": false },
+      { "text": "CentOS", "correct": false },
+      { "text": "OpenSuse", "correct": false },
+      { "text": "MacOS", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the best course of action for troubleshooting a failed server backup?",
+    "answers": [
+      { "text": "Add new hardware", "correct": false },
+      { "text": "Review system logs", "correct": true },
+      { "text": "Reinstall the OS", "correct": false },
+      { "text": "Configure new users", "correct": false },
+      { "text": "Install security patches", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following tasks falls under automating system admin processes?",
+    "answers": [
+      { "text": "Controlling user access", "correct": false },
+      { "text": "Configuring backups via scripts", "correct": true },
+      { "text": "Installing Linux distributions", "correct": false },
+      { "text": "Setting up cloud services", "correct": false },
+      { "text": "Writing site policies", "correct": false }
+    ]
+  },
+  {
+    "question": "What task ensures maximum uptime for Linux servers?",
+    "answers": [
+      { "text": "Automating system updates", "correct": false },
+      { "text": "Adding new accounts", "correct": false },
+      { "text": "Removing unnecessary services", "correct": false },
+      { "text": "Maintaining local documentation", "correct": false },
+      { "text": "Monitoring system performance", "correct": true }
+    ]
   }
 ];
