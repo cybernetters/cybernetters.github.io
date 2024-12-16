@@ -1,442 +1,362 @@
 const questionBank = [
-  {
-    "question": "Which of the following is a primary purpose of name resolution?",
+    {
+      "question": "Which layer of the OSI model is responsible for reliable transmission of data?",
+      "answers": [
+        { "text": "Network Layer", "correct": false },
+        { "text": "Data Link Layer", "correct": false },
+        { "text": "Transport Layer", "correct": true },
+        { "text": "Physical Layer", "correct": false },
+        { "text": "Session Layer", "correct": false }
+      ]
+    },
+    {
+      "question": "What protocol is used for secure remote logins?",
+      "answers": [
+        { "text": "FTP", "correct": false },
+        { "text": "SSH", "correct": true },
+        { "text": "Telnet", "correct": false },
+        { "text": "HTTP", "correct": false },
+        { "text": "SMTP", "correct": false }
+      ]
+    },
+    {
+      "question": "What does the Presentation Layer of the OSI model handle?",
+      "answers": [
+        { "text": "Routing data between networks", "correct": false },
+        { "text": "Data compression and encryption", "correct": true },
+        { "text": "Physical connectivity", "correct": false },
+        { "text": "Error detection", "correct": false },
+        { "text": "Flow control", "correct": false }
+      ]
+    },
+    {
+      "question": "Which protocol is responsible for resolving domain names to IP addresses?",
+      "answers": [
+        { "text": "HTTP", "correct": false },
+        { "text": "DNS", "correct": true },
+        { "text": "SMTP", "correct": false },
+        { "text": "SNMP", "correct": false },
+        { "text": "ARP", "correct": false }
+      ]
+    },
+    {
+      "question": "Which of the following protocols operates at the Data Link Layer?",
+      "answers": [
+        { "text": "IP", "correct": false },
+        { "text": "ARP", "correct": true },
+        { "text": "TCP", "correct": false },
+        { "text": "UDP", "correct": false },
+        { "text": "DNS", "correct": false }
+      ]
+    },
+    {
+      "question": "What is a key benefit of subnetting?",
+      "answers": [
+        { "text": "Reduces routing table size", "correct": true },
+        { "text": "Increases IP address availability", "correct": false },
+        { "text": "Increases bandwidth", "correct": false },
+        { "text": "Ensures encryption", "correct": false },
+        { "text": "Creates new VLANs", "correct": false }
+      ]
+    },
+    {
+      "question": "Which layer of the TCP/IP model corresponds to the OSI Session Layer?",
+      "answers": [
+        { "text": "Application", "correct": true },
+        { "text": "Transport", "correct": false },
+        { "text": "Internet", "correct": false },
+        { "text": "Network Access", "correct": false },
+        { "text": "Physical", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the purpose of ARP?",
+      "answers": [
+        { "text": "Encrypting data", "correct": false },
+        { "text": "Mapping IP addresses to MAC addresses", "correct": true },
+        { "text": "Resolving domain names", "correct": false },
+        { "text": "Routing data", "correct": false },
+        { "text": "Compression of data", "correct": false }
+      ]
+    },
+    {
+      "question": "Which protocol uses port 443 by default?",
+      "answers": [
+        { "text": "HTTP", "correct": false },
+        { "text": "HTTPS", "correct": true },
+        { "text": "FTP", "correct": false },
+        { "text": "SMTP", "correct": false },
+        { "text": "SNMP", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the main function of a router?",
+      "answers": [
+        { "text": "Forward packets based on IP address", "correct": true },
+        { "text": "Control data link layer communication", "correct": false },
+        { "text": "Encrypt all traffic", "correct": false },
+        { "text": "Perform error checking", "correct": false },
+        { "text": "Terminate physical circuits", "correct": false }
+      ]
+    },
+    {
+      "question": "The OSI model has 7 layers.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "question": "HTTP operates at the Transport Layer of the OSI model.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "question": "DNS translates domain names to IP addresses.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "question": "TCP provides connectionless communication.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "question": "FTP uses port 21 for control commands.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "question": "ARP resolves MAC addresses to IP addresses.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "question": "NAT is used to translate private IPs to public IPs.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "question": "The TCP/IP model has 5 layers.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "question": "Spanning Tree Protocol prevents switching loops.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "question": "VLANs operate at the Physical Layer of the OSI model.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "question": "A client requires encrypted file transfer. Which protocol should you recommend?",
+      "answers": [
+        { "text": "FTP", "correct": false },
+        { "text": "SFTP", "correct": true },
+        { "text": "HTTP", "correct": false },
+        { "text": "SMTP", "correct": false },
+        { "text": "SNMP", "correct": false }
+      ]
+    },
+    {
+      "question": "What protocol should be used to resolve a hostname to an IP address?",
+      "answers": [
+        { "text": "DNS", "correct": true },
+        { "text": "ARP", "correct": false },
+        { "text": "SMTP", "correct": false },
+        { "text": "Telnet", "correct": false },
+        { "text": "FTP", "correct": false }
+      ]
+    },
+    {
+      "question": "An administrator needs to ensure packets are delivered reliably between two systems. Which protocol should be used?",
+      "answers": [
+        { "text": "UDP", "correct": false },
+        { "text": "TCP", "correct": true },
+        { "text": "ICMP", "correct": false },
+        { "text": "IP", "correct": false },
+        { "text": "FTP", "correct": false }
+      ]
+    },
+    {
+      "question": "Which tool would you use to check connectivity between two devices on a network?",
+      "answers": [
+        { "text": "Traceroute", "correct": false },
+        { "text": "Ping", "correct": true },
+        { "text": "DNS Lookup", "correct": false },
+        { "text": "Netstat", "correct": false },
+        { "text": "SSH", "correct": false }
+      ]
+    },
+    {
+      "question": "A network engineer needs to find the MAC address of a neighboring device. Which command should they use?",
+      "answers": [
+        { "text": "ping", "correct": false },
+        { "text": "arp", "correct": true },
+        { "text": "traceroute", "correct": false },
+        { "text": "ipconfig", "correct": false },
+        { "text": "nslookup", "correct": false }
+      ]
+    },
+    {
+      "question": "You are tasked with ensuring all communication within your internal network is encrypted. Which protocol should be implemented?",
+      "answers": [
+        { "text": "HTTP", "correct": false },
+        { "text": "HTTPS", "correct": true },
+        { "text": "FTP", "correct": false },
+        { "text": "SMTP", "correct": false },
+        { "text": "Telnet", "correct": false }
+      ]
+    },
+    {
+      "question": "Which port number must be open to allow secure shell access to a remote server?",
+      "answers": [
+        { "text": "80", "correct": false },
+        { "text": "443", "correct": false },
+        { "text": "22", "correct": true },
+        { "text": "25", "correct": false },
+        { "text": "53", "correct": false }
+      ]
+    },
+    {
+      "question": "An IT administrator wants to monitor traffic between two routers. Which protocol is commonly used?",
+      "answers": [
+        { "text": "SMTP", "correct": false },
+        { "text": "SNMP", "correct": true },
+        { "text": "FTP", "correct": false },
+        { "text": "ARP", "correct": false },
+        { "text": "DHCP", "correct": false }
+      ]
+    },
+    {
+      "question": "What protocol is used to automatically assign IP addresses in a network?",
+      "answers": [
+        { "text": "DNS", "correct": false },
+        { "text": "DHCP", "correct": true },
+        { "text": "NAT", "correct": false },
+        { "text": "ARP", "correct": false },
+        { "text": "HTTP", "correct": false }
+      ]
+    },
+    {
+      "question": "A technician needs to map a shared folder on a Windows system. Which protocol should they use?",
+      "answers": [
+        { "text": "SNMP", "correct": false },
+        { "text": "SMB", "correct": true },
+        { "text": "SMTP", "correct": false },
+        { "text": "HTTPS", "correct": false },
+        { "text": "FTP", "correct": false }
+      ]
+    },
+    {
+      "question": "Which of the following commands can be used to display the current routing table on a Linux system?",
+      "answers": [
+        { "text": "netstat -r", "correct": true },
+        { "text": "ping", "correct": false },
+        { "text": "traceroute", "correct": false },
+        { "text": "ifconfig", "correct": false },
+        { "text": "nslookup", "correct": false }
+      ]
+    },
+    {
+      "question": "A user reports slow network performance. What tool would you use to analyze the path of packets between source and destination?",
+      "answers": [
+        { "text": "ping", "correct": false },
+        { "text": "traceroute", "correct": true },
+        { "text": "arp", "correct": false },
+        { "text": "nslookup", "correct": false },
+        { "text": "ipconfig", "correct": false }
+      ]
+    },
+    {
+      "question": "Which network device is used to break up collision domains?",
+      "answers": [
+        { "text": "Hub", "correct": false },
+        { "text": "Switch", "correct": true },
+        { "text": "Router", "correct": false },
+        { "text": "Access Point", "correct": false },
+        { "text": "Repeater", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the default subnet mask for a Class B network?",
+      "answers": [
+        { "text": "255.255.255.0", "correct": false },
+        { "text": "255.255.0.0", "correct": true },
+        { "text": "255.0.0.0", "correct": false },
+        { "text": "255.255.255.255", "correct": false },
+        { "text": "255.0.255.0", "correct": false }
+      ]
+    },
+    {
+    "question": "Which layer of the OSI model is responsible for reliable transmission of data?",
     "answers": [
-      { "text": "Convert IP addresses to domain names", "correct": false },
-      { "text": "Convert human-readable names to network addresses", "correct": true },
-      { "text": "Map domain names to FQDNs", "correct": false },
-      { "text": "Translate NetBIOS names to SMB", "correct": false },
-      { "text": "Create a namespace hierarchy", "correct": false }
+        { "text": "Network Layer", "correct": false },
+        { "text": "Data Link Layer", "correct": false },
+        { "text": "Transport Layer", "correct": true },
+        { "text": "Physical Layer", "correct": false }
     ]
-  },
-  {
-    "question": "What type of resolution converts addresses back to names?",
+    },
+    {
+    "question": "What is the primary purpose of the TCP/IP model?",
     "answers": [
-      { "text": "Forward resolution", "correct": false },
-      { "text": "Dynamic resolution", "correct": false },
-      { "text": "Reverse resolution", "correct": true },
-      { "text": "Hierarchical resolution", "correct": false },
-      { "text": "Domain resolution", "correct": false }
+        { "text": "To encrypt all communications", "correct": false },
+        { "text": "To standardize network communication protocols", "correct": true },
+        { "text": "To replace the OSI model", "correct": false },
+        { "text": "To manage hardware-level communication", "correct": false }
     ]
-  },
-  {
-    "question": "What file contains static maps of hostnames to IP addresses?",
+    },
+    {
+    "question": "The OSI model has 7 layers.",
     "answers": [
-      { "text": "SRV file", "correct": false },
-      { "text": "DNS cache", "correct": false },
-      { "text": "HOSTS file", "correct": true },
-      { "text": "NetBIOS table", "correct": false },
-      { "text": "Namespace file", "correct": false }
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
     ]
-  },
-  {
-    "question": "What is the maximum number of characters allowed for a DNS hostname?",
+    },
+    {
+    "question": "TCP provides connectionless communication.",
     "answers": [
-      { "text": "127", "correct": false },
-      { "text": "255", "correct": true },
-      { "text": "63", "correct": false },
-      { "text": "200", "correct": false },
-      { "text": "512", "correct": false }
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
     ]
-  },
-  {
-    "question": "What is the term for a computer’s friendly, human-readable name?",
+    },
+    {
+    "question": "A technician is troubleshooting a network issue and wants to check connectivity. Which tool should they use?",
     "answers": [
-      { "text": "NetBIOS name", "correct": false },
-      { "text": "Namespace", "correct": false },
-      { "text": "Hostname", "correct": true },
-      { "text": "DNS record", "correct": false },
-      { "text": "FQDN", "correct": false }
+        { "text": "traceroute", "correct": false },
+        { "text": "ping", "correct": true },
+        { "text": "arp", "correct": false },
+        { "text": "ipconfig", "correct": false }
     ]
-  },
-  {
-    "question": "What component resolves Fully Qualified Domain Names (FQDNs) to IP addresses?",
+    },
+    {
+    "question": "Which protocol should you use to securely access a remote server via command line?",
     "answers": [
-      { "text": "Namespace server", "correct": false },
-      { "text": "DNS server", "correct": true },
-      { "text": "NetBIOS resolver", "correct": false },
-      { "text": "DHCP server", "correct": false },
-      { "text": "Name controller", "correct": false }
+        { "text": "Telnet", "correct": false },
+        { "text": "SSH", "correct": true },
+        { "text": "HTTP", "correct": false },
+        { "text": "FTP", "correct": false }
     ]
-  },
-  {
-    "question": "Which protocol does Active Directory primarily rely on for name resolution?",
-    "answers": [
-      { "text": "NetBIOS", "correct": false },
-      { "text": "SMB", "correct": false },
-      { "text": "DNS", "correct": true },
-      { "text": "IPX/SPX", "correct": false },
-      { "text": "HTTP", "correct": false }
-    ]
-  },
-  {
-    "question": "Which record is required for workstations to locate domain controllers in Active Directory?",
-    "answers": [
-      { "text": "SRV", "correct": true },
-      { "text": "SOA", "correct": false },
-      { "text": "PTR", "correct": false },
-      { "text": "A", "correct": false },
-      { "text": "CNAME", "correct": false }
-    ]
-  },
-  {
-    "question": "Which DNS tool can be used to display Resolver cache contents?",
-    "answers": [
-      { "text": "nslookup", "correct": false },
-      { "text": "ipconfig /displaydns", "correct": true },
-      { "text": "whois", "correct": false },
-      { "text": "ipconfig /flushdns", "correct": false },
-      { "text": "dig", "correct": false }
-    ]
-  },
-  {
-    "question": "What command clears local DNS cache in Windows?",
-    "answers": [
-      { "text": "ipconfig /showdns", "correct": false },
-      { "text": "ipconfig /resetdns", "correct": false },
-      { "text": "ipconfig /flushdns", "correct": true },
-      { "text": "ipconfig /renewdns", "correct": false },
-      { "text": "ipconfig /cleardns", "correct": false }
-    ]
-  },
-  {
-    "question": "What is the primary function of a Namespace?",
-    "answers": [
-      { "text": "Control DNS zone security", "correct": false },
-      { "text": "Translate NetBIOS names", "correct": false },
-      { "text": "Group a set of hosts under a logical name", "correct": true },
-      { "text": "Register dynamic DNS entries", "correct": false },
-      { "text": "Determine a host’s IP address", "correct": false }
-    ]
-  },
-  {
-    "question": "What kind of DNS entry maps a domain name to an IP address?",
-    "answers": [
-      { "text": "PTR", "correct": false },
-      { "text": "SRV", "correct": false },
-      { "text": "A", "correct": true },
-      { "text": "SOA", "correct": false },
-      { "text": "CNAME", "correct": false }
-    ]
-  },
-  {
-    "question": "What is the DNS process called where a server queries another server on behalf of a client?",
-    "answers": [
-      { "text": "Dynamic resolution", "correct": false },
-      { "text": "Iterative query", "correct": false },
-      { "text": "Recursive query", "correct": true },
-      { "text": "Reverse lookup", "correct": false },
-      { "text": "Proxy resolution", "correct": false }
-    ]
-  },
-  {
-    "question": "What key security feature does DNSSEC add to DNS?",
-    "answers": [
-      { "text": "IP encryption", "correct": false },
-      { "text": "Name spoofing prevention", "correct": false },
-      { "text": "Record validation with encryption keys", "correct": true },
-      { "text": "Cache flushing", "correct": false },
-      { "text": "Zone transfer logging", "correct": false }
-    ]
-  },
-  {
-    "question": "What DNS record provides information about the primary DNS server for a zone?",
-    "answers": [
-      { "text": "SOA", "correct": true },
-      { "text": "SRV", "correct": false },
-      { "text": "A", "correct": false },
-      { "text": "PTR", "correct": false },
-      { "text": "MX", "correct": false }
-    ]
-  },
-  {
-    "question": "What does the 16th character of a NetBIOS name indicate?",
-    "answers": [
-      { "text": "Service type", "correct": true },
-      { "text": "IP address", "correct": false },
-      { "text": "Hostname", "correct": false },
-      { "text": "Namespace", "correct": false },
-      { "text": "Subdomain", "correct": false }
-    ]
-  },
-  {
-    "question": "What protocol is commonly used to dynamically assign IP addresses to hosts?",
-    "answers": [
-      { "text": "BOOTP", "correct": false },
-      { "text": "DHCP", "correct": true },
-      { "text": "DNS", "correct": false },
-      { "text": "NBT", "correct": false },
-      { "text": "NetBIOS", "correct": false }
-    ]
-  },
-  {
-    "question": "What tool shows the owner of a domain name?",
-    "answers": [
-      { "text": "ARIN", "correct": false },
-      { "text": "nslookup", "correct": false },
-      { "text": "whois", "correct": true },
-      { "text": "ipconfig", "correct": false },
-      { "text": "DNSSEC", "correct": false }
-    ]
-  },
-  {
-    "question": "What is an essential component of Dynamic DNS in Active Directory?",
-    "answers": [
-      { "text": "SRV records", "correct": true },
-      { "text": "NetBIOS mapping", "correct": false },
-      { "text": "Recursive queries", "correct": false },
-      { "text": "Forwarders", "correct": false },
-      { "text": "Reverse caching", "correct": false }
-    ]
-  },
-  {
-    "question": "What is the hierarchical structure of the DNS namespace?",
-    "answers": [
-      { "text": "Hostname.TopLevelDomain.Subdomain", "correct": false },
-      { "text": "Subdomain.Hostname.TopLevelDomain", "correct": false },
-      { "text": "TopLevelDomain.Subdomain.Hostname", "correct": false },
-      { "text": "Hostname.Subdomain(s).TopLevelDomain", "correct": true },
-      { "text": "Subdomain(s).TopLevelDomain.Hostname", "correct": false }
-    ]
-  },
-  {
-    "question": "Name resolution converts human-readable names to network addresses.",
-    "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
-    ]
-  },
-  {
-    "question": "NetBIOS is primarily used in modern DNS systems.",
-    "answers": [
-      { "text": "True", "correct": false },
-      { "text": "False", "correct": true }
-    ]
-  },
-  {
-    "question": "A HOSTS file provides dynamic mapping of hostnames to IP addresses.",
-    "answers": [
-      { "text": "True", "correct": false },
-      { "text": "False", "correct": true }
-    ]
-  },
-  {
-    "question": "DNS supports up to 127 levels of domains in its hierarchy.",
-    "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
-    ]
-  },
-  {
-    "question": "A domain controller cannot modify the AD database during Dynamic DNS updates.",
-    "answers": [
-      { "text": "True", "correct": false },
-      { "text": "False", "correct": true }
-    ]
-  },
-  {
-    "question": "DNS records are inherently secure and protected from spoofing.",
-    "answers": [
-      { "text": "True", "correct": false },
-      { "text": "False", "correct": true }
-    ]
-  },
-  {
-    "question": "The /flushdns command is used to clear DNS cache in Windows.",
-    "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
-    ]
-  },
-  {
-    "question": "FQDN consists of a hostname and a namespace.",
-    "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
-    ]
-  },
-  {
-    "question": "DNSSEC encrypts DNS records for additional security.",
-    "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
-    ]
-  },
-  {
-    "question": "NetBIOS names are 15 characters long, with a 16th character indicating the service.",
-    "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
-    ]
-  },
-  {
-    "question": "Reverse DNS resolution maps domain names to IP addresses.",
-    "answers": [
-      { "text": "True", "correct": false },
-      { "text": "False", "correct": true }
-    ]
-  },
-  {
-    "question": "DNS servers cache results to improve query speed.",
-    "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
-    ]
-  },
-  {
-    "question": "SRV records are critical for locating services in Active Directory.",
-    "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
-    ]
-  },
-  {
-    "question": "BOOTP is more efficient than DHCP for dynamic IP assignment.",
-    "answers": [
-      { "text": "True", "correct": false },
-      { "text": "False", "correct": true }
-    ]
-  },
-  {
-    "question": "The authoritative DNS server manages zone files for a namespace.",
-    "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
-    ]
-  },
-  {
-    "question": "Recursive queries allow DNS servers to query each other on behalf of a client.",
-    "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
-    ]
-  },
-  {
-    "question": "Dynamic DNS reduces administrative workload by updating records automatically.",
-    "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
-    ]
-  },
-  {
-    "question": "DNS troubleshooting uses the 'whois' tool for cache analysis.",
-    "answers": [
-      { "text": "True", "correct": false },
-      { "text": "False", "correct": true }
-    ]
-  },
-  {
-    "question": "Service records include service name, server FQDN, and priority.",
-    "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
-    ]
-  },
-  {
-    "question": "Active Directory domains rely solely on NetBIOS for name resolution.",
-    "answers": [
-      { "text": "True", "correct": false },
-      { "text": "False", "correct": true }
-    ]
-  },
-  {
-    "question": "A user reports an IP address change isn’t reflecting. Which command should you run?",
-    "answers": [
-      { "text": "ipconfig /renew", "correct": false },
-      { "text": "ipconfig /flushdns", "correct": true },
-      { "text": "nslookup", "correct": false },
-      { "text": "whois", "correct": false },
-      { "text": "ping", "correct": false }
-    ]
-  },
-  {
-    "question": "A DNS server is being overwhelmed by incorrect queries. What tool can diagnose the issue?",
-    "answers": [
-      { "text": "ipconfig /displaydns", "correct": false },
-      { "text": "nslookup", "correct": true },
-      { "text": "ARIN", "correct": false },
-      { "text": "dig", "correct": false },
-      { "text": "DNSSEC", "correct": false }
-    ]
-  },
-  {
-    "question": "A new service fails to register in DNS. Which record type should you verify?",
-    "answers": [
-      { "text": "A", "correct": false },
-      { "text": "SOA", "correct": false },
-      { "text": "SRV", "correct": true },
-      { "text": "PTR", "correct": false },
-      { "text": "CNAME", "correct": false }
-    ]
-  },
-  {
-    "question": "An organization wants to secure its DNS. What should be implemented?",
-    "answers": [
-      { "text": "Dynamic DNS", "correct": false },
-      { "text": "DNSSEC", "correct": true },
-      { "text": "DHCP integration", "correct": false },
-      { "text": "NetBIOS resolution", "correct": false },
-      { "text": "Recursive caching", "correct": false }
-    ]
-  },
-  {
-    "question": "A workstation fails to resolve an internal name. Which file should you examine?",
-    "answers": [
-      { "text": "SRV", "correct": false },
-      { "text": "HOSTS", "correct": true },
-      { "text": "DNS cache", "correct": false },
-      { "text": "Namespace", "correct": false },
-      { "text": "Reverse lookup zone", "correct": false }
-    ]
-  },
-  {
-    "question": "You need to test whether a server responds to DNS requests. Which tool should you use?",
-    "answers": [
-      { "text": "ipconfig", "correct": false },
-      { "text": "whois", "correct": false },
-      { "text": "nslookup", "correct": true },
-      { "text": "ARIN", "correct": false },
-      { "text": "ipconfig /renew", "correct": false }
-    ]
-  },
-  {
-    "question": "A client can’t find a domain controller. Which record is likely missing?",
-    "answers": [
-      { "text": "A", "correct": false },
-      { "text": "PTR", "correct": false },
-      { "text": "SRV", "correct": true },
-      { "text": "SOA", "correct": false },
-      { "text": "CNAME", "correct": false }
-    ]
-  },
-  {
-    "question": "DNS caching isn’t working properly. What’s the first troubleshooting step?",
-    "answers": [
-      { "text": "Check the DNS server logs", "correct": false },
-      { "text": "Clear the local cache with ipconfig /flushdns", "correct": true },
-      { "text": "Test with a different DNS resolver", "correct": false },
-      { "text": "Manually edit the HOSTS file", "correct": false },
-      { "text": "Verify the FQDN format", "correct": false }
-    ]
-  },
-  {
-    "question": "A DNS query to an external site takes unusually long. What could reduce this delay?",
-    "answers": [
-      { "text": "Increase TTL in DNS records", "correct": false },
-      { "text": "Use recursive queries", "correct": false },
-      { "text": "Implement forwarders", "correct": true },
-      { "text": "Disable DNS caching", "correct": false },
-      { "text": "Add SRV records", "correct": false }
-    ]
-  },
-  {
-    "question": "During migration, FQDN resolution fails intermittently. What’s the most likely issue?",
-    "answers": [
-      { "text": "HOSTS file corruption", "correct": false },
-      { "text": "Incorrect SOA record configuration", "correct": true },
-      { "text": "Missing PTR records", "correct": false },
-      { "text": "Caching mismatch", "correct": false },
-      { "text": "NetBIOS misconfiguration", "correct": false }
-    ]
-  }
-];
+    }
+  ];
