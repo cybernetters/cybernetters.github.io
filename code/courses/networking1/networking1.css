@@ -165,8 +165,8 @@
   color: #00ff00;
 }
 
-.units .unit.unit1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+#unit1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                     url('/images/networking-unit1-bg.webp');
 }
 
