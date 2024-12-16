@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 1: Networking Foundations</title>
+  <link rel="stylesheet" href="../../../styles.css"> <!-- Global Styles -->
+  <style>
+    /* GLOBAL PAGE STYLING */
+    body {
+      background-color: #111;
+      color: #00ff00;
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    /* CONTAINER FOR TOPIC CARDS */
+    .topic-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Topic Card Styling */
+    .topic-card {
+      background-color: #222;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column; /* Ensures the header is on top */
+      gap: 1rem;
+    }
+
+    /* Card Header Styling */
+    .card-header {
+      background-color: #333;
+      color: #00ff00;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: left;
+    }
+
+    .card-header h2 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .card-header p {
+      margin: 0.5rem 0 0;
+      font-size: 1rem;
+    }
+
+    /* Content Row (Learn and Practice Side-by-Side) */
+    .content-row {
+      display: flex;
+      gap: 2rem; /* Space between Learn and Practice sections */
+    }
+
+    /* Learn Section */
+    .learn,
+    .practice {
+      flex: 1; /* Equal width for Learn and Practice */
+    }
+
+    .learn h3,
+    .practice h3 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      color: #00ff00;
+    }
+
+    /* Video Thumbnails */
+    .video-thumbnail {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.5rem;
+      background-color: #333;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .video-thumbnail:hover {
+      transform: scale(1.05);
+    }
+
+    .video-thumbnail img {
+      width: 80px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .video-thumbnail p {
+      color: #00ff00;
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    /* Practice Section */
+    .quiz {
+      background-color: #333;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 2fr 1fr; /* two columns */
+    }
+
+    .quiz .quiz-table {
+      text-align: left;
+    }
+
+    .quiz .quiz-score {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      border-color: #00ff00;
+      border-style: solid;
+      border-width: 0px 0px 0px 1px
+    }
+
+    .quiz .quiz-score-value {
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    .quiz p {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      color: #00ff00;
+    }
+
+    .quiz button {
+      background-color: #00ff00;
+      color: #000;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .quiz button:hover {
+      background-color: #008f00;
+    }
+
+    /* Remove Bullet Points */
+    .learn ul {
+      list-style: none; /* Disable bullets */
+      padding: 0;       /* Remove extra padding */
+      margin: 0;        /* Remove extra margin */
+    }
+
+    .learn li {
+      margin-bottom: 1rem; /* Add spacing between items */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .content-row {
+        flex-direction: column; /* Stack Learn and Practice sections on smaller screens */
+      }
+    }
+  </style>
+</head>
+
+<!-- BODY -->
+<body>
+  <!-- HEADER SECTION -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <h1 class="logo">
+          <a href="../../../index.html">
+            <img src="/images/cybernetters-logo.webp" alt="CyberNetters Logo">
+          </a>
+        </h1>
+        <nav class="nav">
+          <ul id="menu" class="button-nav">
+            <li><a href="../../../index.html" class="nav-link">Home</a></li>
+            <li><a href="/code/about/about.html" class="nav-link">About</a></li>
+            <li><a href="/code/services/services.html" class="nav-link">Services</a></li>
+            <li><a href="/code/resources/resources.html" class="nav-link">Resources</a></li>
+            <li class="dropdown">
+              <a href="/code/courses/courses.html" class="dropbtn nav-link">Courses</a>
+              <div class="dropdown-content">
+                <a href="/code/courses/networking1/networking1.html">Networking I</a>
+                <a href="/code/courses/sysadmin/sysadmin.html">System Administration</a>
+              </div>
+            </li>
+            <li><a href="/code/resources/contact.html" class="nav-link">Contact</a></li>
+            <li><a href="/code/auth/sign-in.html" class="nav-link">Sign In</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <h2>Unit 1: Networking Foundations</h2>
+    <div class="topic-container">
+        <!-- Communication Models -->
+        <div class="topic-card">
+          <div class="card-header">
+            <h2>Communication Models</h2>
+            <p>An introduction to communication models like OSI and TCP/IP.</p>
+          </div>
+          <div class="content-row">
+            <div class="learn">
+              <h3>Learn</h3>
+              <ul>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=nRltqZ-bq3U" target="_blank" class="video-thumbnail">
+                    <img src="../../../images/makefg.webp" alt="Communication Models">
+                    <p>OSI and TCP/IP Models</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="practice">
+              <h3>Practice</h3>
+              <div class="quiz">
+                <div class="quiz-table">
+                  <p>Up next for you:</p>
+                  <p><strong>Quiz: Communication Models</strong></p>
+                  <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/communication-models/landing.html'">Start</button>
+                </div>
+                <div class="quiz-score">
+                  <div class="quiz-score-value" id="quiz-1-score">
+                    0
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Physical Layer Applications -->
+        <div class="topic-card">
+            <div class="card-header">
+              <h2>Communication Models</h2>
+              <p>An introduction to communication models like OSI and TCP/IP.</p>
+            </div>
+            <div class="content-row">
+              <div class="learn">
+                <h3>Learn</h3>
+                <ul>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=nRltqZ-bq3U" target="_blank" class="video-thumbnail">
+                      <img src="../../../images/makefg.webp" alt="Communication Models">
+                      <p>OSI and TCP/IP Models</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="practice">
+                <h3>Practice</h3>
+                <div class="quiz">
+                  <div class="quiz-table">
+                    <p>Up next for you:</p>
+                    <p><strong>Quiz: Communication Models</strong></p>
+                    <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/communication-models/landing.html'">Start</button>
+                  </div>
+                  <div class="quiz-score">
+                    <div class="quiz-score-value" id="quiz-1-score">
+                      0
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER SECTION -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 CyberNetters. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
