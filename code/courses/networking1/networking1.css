@@ -167,22 +167,37 @@
 
 .units .unit.unit1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                    url('/images/sysadmin-unit1-bg.webp');
+                    url('/images/networking-unit1-bg.webp');
 }
 
 .units .unit.unit2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                    url('/images/sysadmin-unit2-bg.webp');
+                    url('/images/networking-unit2-bg.webp');
 }
 
 .units .unit.unit3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                    url('/images/sysadmin-unit3-bg.webp');
+                    url('/images/networking-unit3-bg.webp');
+}
+
+.units .unit.unit4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url('/images/networking-unit4-bg.webp');
+}
+
+.units .unit.unit5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url('/images/networking-unit5-bg.webp');
+}
+
+.units .unit.unit6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url('/images/networking-unit6-bg.webp');
 }
 
 .units .unit.unit7 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                    url('/images/sysadmin-unit7-bg.webp');
+                    url('/images/networking-unit7-bg.webp');
 }
 
 /* Add more for additional units */
