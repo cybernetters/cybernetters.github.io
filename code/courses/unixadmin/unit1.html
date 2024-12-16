@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unit 1: UNIX System Basics</title>
+  <title>Unit 1: Networking Foundations</title>
   <link rel="stylesheet" href="../../../styles.css"> <!-- Global Styles -->
   <style>
     /* GLOBAL PAGE STYLING */
@@ -118,7 +118,7 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
       display: grid;
       grid-gap: 10px;
-      grid-template-columns: 2fr 1fr;	/* two columns */
+      grid-template-columns: 2fr 1fr; /* two columns */
     }
 
     .quiz .quiz-table {
@@ -156,22 +156,10 @@
       font-size: 1rem;
     }
 
-    .quiz-card {}
-    .quiz-card quiz-table {
-      float: left;
-      width: 75%;  
-    }
-    .quiz-card quiz-score {
-      float: left;
-      width: 25%;
-      padding-left: 20px;
-    }
-    
-    
     .quiz button:hover {
       background-color: #008f00;
     }
-    
+
     /* Remove Bullet Points */
     .learn ul {
       list-style: none; /* Disable bullets */
@@ -182,7 +170,7 @@
     .learn li {
       margin-bottom: 1rem; /* Add spacing between items */
     }
-    
+
     /* Responsive Design */
     @media (max-width: 768px) {
       .content-row {
@@ -226,63 +214,44 @@
 
   <!-- MAIN CONTENT -->
   <main>
-    <h2>Unit 1: UNIX System Basics</h2>
+    <h2>Unit 1: Networking Foundations</h2>
     <div class="topic-container">
-
-      <!-- Back Button -->
-      <div style="text-align: center; margin-bottom: 1rem;">
-        <button 
-          onclick="window.location.href='unixadmin.html'" 
-          style="background-color: #00ff00; color: #000; padding: 0.5rem 1rem; font-size: 1rem; border: none; border-radius: 4px; cursor: pointer;">
-          ← Back to UNIX Administration
-        </button>
-      </div>
-
-      <!-- UNIX Intro Card -->
-      <div class="topic-card">
-        <!-- CARD HEADER -->
-        <div class="card-header">
-          <h2>Introduction to UNIX</h2>
-          <p>An overview of UNIX/Linux systems, their history, key components, and how they are used today, focusing on the role of Linux system administrators and the basics of time-sharing.</p>
-        </div>
-
-        <!-- CONTENT ROW -->
-        <div class="content-row">
-          <!-- LEARN SECTION -->
-          <div class="learn">
-            <h3>Learn</h3>
-            <ul>
-              <li>
-                <a href="https://www.youtube.com/watch?v=nRltqZ-bq3U" target="_blank" class="video-thumbnail">
-                  <img src="../../../images/makefg.webp" alt="AAA">
-                  <p>Introduction to UNIX</p>
-                </a>
-              </li>
-              <li>
-                <strong>Resource:</strong> <a href="/code/resources/aaa-fundamentals.pdf" target="_blank">Download PDF</a>
-              </li>
-            </ul>
+        <!-- Communication Models -->
+        <div class="topic-card">
+          <div class="card-header">
+            <h2>Communication Models</h2>
+            <p>An introduction to communication models like OSI and TCP/IP.</p>
           </div>
-
-	  <!-- PRACTICE SECTION -->
-          <div class="practice">
-            <h3>Practice</h3>
-            <div class="quiz">
-	      <div class="quiz-table">
-                <p>Up next for you:</p>
-                <p><strong>Quiz: UNIX Intro</strong></p>
-                <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/unix-intro/landing.html'">Start</button>
-	      </div>
-	      <div class="quiz-score">
-	        <div class="quiz-score-value" id="quiz-1-score">
-		      0
-	        </div>
-	      </div>
+          <div class="content-row">
+            <div class="learn">
+              <h3>Learn</h3>
+              <ul>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=nRltqZ-bq3U" target="_blank" class="video-thumbnail">
+                    <img src="../../../images/osi-tcpip.webp" alt="Communication Models">
+                    <p>OSI and TCP/IP Models</p>
+                  </a>
+                </li>
+              </ul>
             </div>
-          </div>        
+            <div class="practice">
+              <h3>Practice</h3>
+              <div class="quiz">
+                <div class="quiz-table">
+                  <p>Up next for you:</p>
+                  <p><strong>Quiz: Communication Models</strong></p>
+                  <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/communication-models/landing.html'">Start</button>
+                </div>
+                <div class="quiz-score">
+                  <div class="quiz-score-value" id="quiz-1-score">
+                    0
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
     </div>
   </main>
 
@@ -293,30 +262,4 @@
     </div>
   </footer>
 </body>
-<script>
-  function loadQuizScore(quizId, elementId) {
-    // Retrieve the score from localStorage
-    const score = localStorage.getItem(quizId) || 0; // Default score to 0
-    const scoreElement = document.getElementById(elementId);
-
-    if (scoreElement) {
-      scoreElement.textContent = score; // Update the score in the card
-      console.log(`Updated score for ${quizId}: ${score}`);
-    } else {
-      console.error(`Element with ID ${elementId} not found.`);
-    }
-  }
-
-  // Load all scores dynamically on page load
-  document.addEventListener("DOMContentLoaded", () => {
-    loadQuizScore("quiz-1-score"); // Load AAA Quiz score
-    loadQuizScore("quiz-2-score"); // Load Directory Services Quiz score
-    loadQuizScore("quiz-3-score"); // Active Directory Basics
-    // Add additional calls for other quizzes as needed
-    // e.g., loadQuizScore("quiz-2-score", "quiz-directory-services-score");
-  });
-</script>
-
 </html>
-
-<script src="quiz.js" defer></script>
