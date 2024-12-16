@@ -118,7 +118,7 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
       display: grid;
       grid-gap: 10px;
-      grid-template-columns: 2fr 1fr;	/* two columns */
+      grid-template-columns: 2fr 1fr; /* two columns */
     }
 
     .quiz .quiz-table {
@@ -156,22 +156,10 @@
       font-size: 1rem;
     }
 
-    .quiz-card {}
-    .quiz-card quiz-table {
-      float: left;
-      width: 75%;  
-    }
-    .quiz-card quiz-score {
-      float: left;
-      width: 25%;
-      padding-left: 20px;
-    }
-    
-    
     .quiz button:hover {
       background-color: #008f00;
     }
-    
+
     /* Remove Bullet Points */
     .learn ul {
       list-style: none; /* Disable bullets */
@@ -182,7 +170,7 @@
     .learn li {
       margin-bottom: 1rem; /* Add spacing between items */
     }
-    
+
     /* Responsive Design */
     @media (max-width: 768px) {
       .content-row {
@@ -237,92 +225,33 @@
           <div class="content-row">
             <div class="learn">
               <h3>Learn</h3>
-              <div class="video-card">
-                <a href="https://www.youtube.com/watch?v=nRltqZ-bq3U" target="_blank">
-                  <div class="video-thumbnail">
+              <ul>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=nRltqZ-bq3U" target="_blank" class="video-thumbnail">
                     <img src="../../../images/osi-tcpip.webp" alt="Communication Models">
                     <p>OSI and TCP/IP Models</p>
-                  </div>
-                </a>
-              </div>
+                  </a>
+                </li>
+              </ul>
             </div>
             <div class="practice">
               <h3>Practice</h3>
               <div class="quiz">
-                <p>Test your understanding of Communication Models.</p>
-                <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/communication-models/landing.html'">Start</button>
+                <div class="quiz-table">
+                  <p>Up next for you:</p>
+                  <p><strong>Quiz: Communication Models</strong></p>
+                  <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/communication-models/landing.html'">Start</button>
+                </div>
                 <div class="quiz-score">
-                  <span>0</span>
+                  <div class="quiz-score-value" id="quiz-1-score">
+                    0
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      
-        <!-- Underlying Technologies -->
-        <div class="topic-card">
-          <div class="card-header">
-            <h2>Underlying Technologies</h2>
-            <p>Understand the hardware and software technologies enabling networking.</p>
-          </div>
-          <div class="content-row">
-            <div class="learn">
-              <h3>Learn</h3>
-              <div class="video-card">
-                <a href="https://www.youtube.com/watch?v=nRltqZ-bq3U" target="_blank">
-                  <div class="video-thumbnail">
-                    <img src="../../../images/networking-tech.webp" alt="Underlying Technologies">
-                    <p>Networking Technologies Overview</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="practice">
-              <h3>Practice</h3>
-              <div class="quiz">
-                <p>Enhance your knowledge of Networking Technologies.</p>
-                <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/underlying-technologies/landing.html'">Start</button>
-                <div class="quiz-score">
-                  <span>0</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-        <!-- Physical Layer -->
-        <div class="topic-card">
-          <div class="card-header">
-            <h2>The Physical Layer</h2>
-            <p>An exploration of the physical layer and its significance in networking.</p>
-          </div>
-          <div class="content-row">
-            <div class="learn">
-              <h3>Learn</h3>
-              <div class="video-card">
-                <a href="https://www.youtube.com/watch?v=nRltqZ-bq3U" target="_blank">
-                  <div class="video-thumbnail">
-                    <img src="../../../images/physical-layer.webp" alt="Physical Layer">
-                    <p>Introduction to the Physical Layer</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="practice">
-              <h3>Practice</h3>
-              <div class="quiz">
-                <p>Dive into the Physical Layer concepts.</p>
-                <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/physical-layer/landing.html'">Start</button>
-                <div class="quiz-score">
-                  <span>0</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>     
-      
-
+      </div>
     </div>
   </main>
 
