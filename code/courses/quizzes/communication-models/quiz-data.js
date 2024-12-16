@@ -316,47 +316,167 @@ const questionBank = [
         { "text": "Data Link Layer", "correct": false },
         { "text": "Transport Layer", "correct": true },
         { "text": "Physical Layer", "correct": false }
-    ]
+      ]
     },
     {
-    "question": "What is the primary purpose of the TCP/IP model?",
+    "question": "What protocol is used to automatically assign IP addresses in a network?",
     "answers": [
-        { "text": "To encrypt all communications", "correct": false },
-        { "text": "To standardize network communication protocols", "correct": true },
-        { "text": "To replace the OSI model", "correct": false },
-        { "text": "To manage hardware-level communication", "correct": false }
-    ]
+        { "text": "DNS", "correct": false },
+        { "text": "DHCP", "correct": true },
+        { "text": "NAT", "correct": false },
+        { "text": "ARP", "correct": false }
+      ]
     },
     {
-    "question": "The OSI model has 7 layers.",
+    "question": "Which protocol resolves domain names to IP addresses?",
+    "answers": [
+        { "text": "HTTP", "correct": false },
+        { "text": "DNS", "correct": true },
+        { "text": "FTP", "correct": false },
+        { "text": "ARP", "correct": false }
+      ]
+    },
+    {
+    "question": "What is the primary function of the Physical Layer in the OSI model?",
+    "answers": [
+        { "text": "Ensuring data integrity", "correct": false },
+        { "text": "Routing packets", "correct": false },
+        { "text": "Transmission of raw bitstreams", "correct": true },
+        { "text": "Data encryption", "correct": false }
+      ]
+    },
+    {
+    "question": "Which protocol operates at port 22 and is used for secure remote logins?",
+    "answers": [
+        { "text": "FTP", "correct": false },
+        { "text": "Telnet", "correct": false },
+        { "text": "SSH", "correct": true },
+        { "text": "SMTP", "correct": false }
+      ]
+    },
+    {
+    "question": "What is a key feature of the Transport Layer in the OSI model?",
+    "answers": [
+        { "text": "Frame creation", "correct": false },
+        { "text": "End-to-end communication reliability", "correct": true },
+        { "text": "Data encapsulation", "correct": false },
+        { "text": "Signal transmission", "correct": false }
+      ]
+    },
+    {
+    "question": "The OSI model has how many layers?",
+    "answers": [
+        { "text": "4", "correct": false },
+        { "text": "5", "correct": false },
+        { "text": "6", "correct": false },
+        { "text": "7", "correct": true }
+      ]
+    },
+    {
+    "question": "Which layer is responsible for logical addressing and routing?",
+    "answers": [
+        { "text": "Data Link Layer", "correct": false },
+        { "text": "Network Layer", "correct": true },
+        { "text": "Physical Layer", "correct": false },
+        { "text": "Session Layer", "correct": false }
+      ]
+    },
+    {
+    "question": "What is the purpose of ARP?",
+    "answers": [
+        { "text": "Resolve IP to MAC addresses", "correct": true },
+        { "text": "Resolve domain names", "correct": false },
+        { "text": "Route packets", "correct": false },
+        { "text": "Secure remote access", "correct": false }
+      ]
+    },
+    {
+    "question": "Which protocol operates at the Application Layer of the OSI model?",
+    "answers": [
+        { "text": "TCP", "correct": false },
+        { "text": "UDP", "correct": false },
+        { "text": "HTTP", "correct": true },
+        { "text": "IP", "correct": false }
+      ]
+    },
+    {
+    "question": "DNS translates domain names to IP addresses.",
     "answers": [
         { "text": "True", "correct": true },
         { "text": "False", "correct": false }
-    ]
+      ]
+    },
+    {
+    "question": "The Physical Layer handles encryption of data.",
+    "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
     },
     {
     "question": "TCP provides connectionless communication.",
     "answers": [
         { "text": "True", "correct": false },
         { "text": "False", "correct": true }
-    ]
+      ]
     },
     {
-    "question": "A technician is troubleshooting a network issue and wants to check connectivity. Which tool should they use?",
+    "question": "FTP uses port 21 for transferring files.",
+    "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+    "question": "ARP is used to resolve IP addresses to MAC addresses.",
+    "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+    "question": "A technician needs to check connectivity between two systems. Which tool should they use?",
     "answers": [
         { "text": "traceroute", "correct": false },
         { "text": "ping", "correct": true },
         { "text": "arp", "correct": false },
         { "text": "ipconfig", "correct": false }
-    ]
+      ]
     },
     {
-    "question": "Which protocol should you use to securely access a remote server via command line?",
+    "question": "What protocol should you use to securely access a remote server via command line?",
     "answers": [
         { "text": "Telnet", "correct": false },
         { "text": "SSH", "correct": true },
         { "text": "HTTP", "correct": false },
         { "text": "FTP", "correct": false }
-    ]
+      ]
+    },
+    {
+    "question": "What is the default subnet mask for a Class B network?",
+    "answers": [
+        { "text": "255.255.255.0", "correct": false },
+        { "text": "255.255.0.0", "correct": true },
+        { "text": "255.0.0.0", "correct": false },
+        { "text": "255.255.255.255", "correct": false }
+      ]
+    },
+    {
+    "question": "A technician is tasked with resolving MAC addresses to IP addresses. Which protocol is used?",
+    "answers": [
+        { "text": "DNS", "correct": false },
+        { "text": "NAT", "correct": false },
+        { "text": "ARP", "correct": true },
+        { "text": "FTP", "correct": false }
+      ]
+    },
+    {
+    "question": "Which tool is used to check the path packets take to a destination?",
+    "answers": [
+        { "text": "ping", "correct": false },
+        { "text": "ipconfig", "correct": false },
+        { "text": "traceroute", "correct": true },
+        { "text": "netstat", "correct": false }
+      ]
     }
   ];
