@@ -300,69 +300,85 @@ body {
   color: #00ff00;
   font-size: 2rem;
   cursor: pointer;
-  z-index: 1000; /* Ensures button stays on top */
+  z-index: 1000; /* Ensure the button stays above other content */
 }
 
 .hamburger:focus {
-  outline: none; /* Remove focus outline for cleaner design */
+  outline: none; /* Remove focus outline */
 }
 
-/* Mobile Menu Styles */
+/* Mobile Menu */
 @media (max-width: 768px) {
-  /* Show the hamburger button on smaller screens */
   .hamburger {
     display: block;
   }
 
-  /* Hide the menu initially */
   .nav {
     display: none;
     position: absolute;
-    top: 60px; /* Adjust position to appear below the header */
+    top: 60px; /* Adjust based on your header height */
     left: 0;
-    background-color: #111;
+    background-color: rgba(0, 0, 0, 0.95); /* Almost solid black background */
     width: 100%;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     text-align: center;
-    z-index: 999; /* Ensure the menu is on top */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    z-index: 999; /* Ensure menu stays above other content */
   }
 
-  /* Menu styling for active (visible) state */
   .nav.active {
-    display: block;
-    animation: slideIn 0.3s ease-out; /* Add animation for smooth effect */
+    display: block; /* Show menu when active */
+    animation: fadeIn 0.3s ease-in-out; /* Smooth fade-in animation */
   }
 
-  /* Styling for menu items */
+  /* Menu Items */
   .nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    list-style: none;
     margin: 0;
     padding: 0;
-    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 
   .nav ul li a {
-    color: #00ff00;
+    color: #00ff00; /* Bright green text */
+    font-size: 1.3rem;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-weight: bold;
     transition: color 0.3s ease;
   }
 
   .nav ul li a:hover {
-    color: #008f00;
+    color: #008f00; /* Darker green on hover */
   }
 
-  /* Animation for menu appearance */
-  @keyframes slideIn {
+  /* Fade-in animation */
+  @keyframes fadeIn {
     from {
-      transform: translateY(-10px);
       opacity: 0;
+      transform: translateY(-10px);
     }
     to {
-      transform: translateY(0);
       opacity: 1;
+      transform: translateY(0);
     }
+  }
+}
+
+/* Desktop Menu (unchanged) */
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav ul {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .hamburger {
+    display: none; /* Hide hamburger on larger screens */
   }
 }
