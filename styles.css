@@ -41,32 +41,87 @@ a:visited, a:hover, a:active {
   height: auto;
 }
 
+/* =======================================
+ Header and Navbar Styling (This section)
+======================================== */
+.header {
+  background-color: #121212; /* Dark background for header */
+  color: var(--text-color);   /* Light text color */
+  padding: 1rem 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header .logo img {
+  max-width: 200px;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.nav {
+  background-color: transparent;
+}
+
 .nav ul {
   display: flex;
-  list-style: none;
   justify-content: flex-end;
-  margin: 0;
+  list-style: none;
   padding: 0;
 }
 
 .nav ul li {
-  margin-left: 1rem;
+  margin-left: 1.5rem;  /* Space out items */
+}
+
+/* Navbar Styling */
+.nav ul li a.nav-link {
+  color: #00ff00; /* Neon green */
+  text-decoration: none;
+  padding: 0.8rem 1.2rem; /* Adjusted padding */
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effects for Navbar Links */
+.nav ul li a.nav-link:hover {
+  color: #000;  /* Change text color to black on hover */
+  background-color: #00ff00;  /* Green background on hover */
+  border-radius: 8px;  /* Rounded corners */
+}
+
+/* Dropdown Menu */
+.nav ul li.dropdown {
   position: relative;
 }
 
-.nav ul li a {
-  color: #1a1a1a;
+.nav ul li .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1a1a1a; /* Dark background for dropdown */
+  min-width: 160px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Show dropdown on hover */
+.nav ul li:hover .dropdown-content {
+  display: block;
+}
+
+.nav ul li .dropdown-content a {
+  padding: 12px 16px;
+  color: #00ff00; /* Neon green */
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  font-weight: bold;
-  transition: color 0.3s, background-color 0.3s;
+  display: block;
 }
 
-.nav ul li a:hover {
-  color: #fff;
+/* Hover effects for dropdown links */
+.nav ul li .dropdown-content a:hover {
+  background-color: #00ff00;
+  color: black;
 }
 
-/* Footer Section */
+/* =======================================
+ Footer Section
+======================================== */
 .footer {
   background-color: #1f1f1f;
   color: white;
