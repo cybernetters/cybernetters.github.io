@@ -26,53 +26,59 @@ body {
 }
 
 .course-card {
-  width: calc(33.33% - 2rem); /* Adjust to three cards per row */
+  width: calc(33.33% - 2rem); /* Adjusts to fit three cards per row */
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 1.5rem; /* Adjust padding */
+  padding: 1.5rem; /* Adjusted padding */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: relative;
   text-align: center;
-  height: 300px; /* Adjust height for better proportions */
-  overflow: hidden; /* Ensures no text spills out */
+  height: 350px; /* Fixed height for all cards */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden; /* Prevents text overflow */
 }
 
 .course-card .card-content {
-  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
   padding: 1rem;
   border-radius: 8px;
-  position: absolute;
-  bottom: 0; /* Stick content to bottom */
-  left: 0;
-  right: 0;
-  height: auto; /* Adjust height dynamically */
-  max-height: 80%; /* Ensures text fits within box */
-  overflow-y: auto; /* Adds scroll if text overflows */
-}
-
-.course-card h3 {
-  font-size: 1.4rem; /* Adjust font size for headings */
-  margin-bottom: 0.5rem;
+  overflow: hidden; /* Hide overflowing content */
+  text-overflow: ellipsis; /* Truncate long text */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensure it fills the card */
 }
 
 .course-card p {
-  font-size: 0.9rem; /* Reduce font size slightly */
-  line-height: 1.2rem; /* Improve readability */
-  margin-bottom: 1rem;
+  font-size: 0.9rem; /* Smaller font for text */
+  line-height: 1.2rem;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* Show only 5 lines of text */
+  -webkit-box-orient: vertical;
 }
 
 .course-card .btn {
+  background-color: #00ff00;
+  color: black;
   padding: 0.6rem 1.2rem;
-  font-size: 0.9rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 0 8px #00ff00;
+  transition: transform 0.2s ease-in-out;
 }
+
 .course-card .btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 20px #00ff00;
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px #00ff00;
 }
 
 /* Progress Sidebar Section */
