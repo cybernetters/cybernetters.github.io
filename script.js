@@ -109,9 +109,13 @@ function toggleForms() {
   }
 }
 
-const menuToggle = document.getElementById("menu-toggle");
-const menu = document.getElementById("menu");
+// JavaScript for Hamburger Menu Toggle
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
 
-menuToggle.addEventListener("click", () => {
-  menu.classList.toggle("active");
+  menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
 });
+
