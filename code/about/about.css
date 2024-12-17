@@ -158,3 +158,25 @@ h2 {
         font-size: 2rem;
     }
 }
+
+/* Large Explore Courses Button */
+.cta-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 1rem 2.5rem; /* Larger padding for a bigger button */
+    font-size: 1.5rem; /* Larger text */
+    font-weight: bold;
+    color: #000; /* Text color */
+    background-color: #00ff00; /* Bright green background */
+    text-decoration: none;
+    border-radius: 8px; /* Rounded corners */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.4); /* Soft green shadow */
+}
+
+.cta-btn:hover {
+    background-color: #008f00; /* Darker green on hover */
+    color: #fff; /* White text on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 6px 15px rgba(0, 255, 0, 0.6);
+}
