@@ -88,3 +88,27 @@
     opacity: 0;
   }
 }
+
+/* Hero Header Section */
+.hero-header {
+  background: url('/images/hero-bg.webp') no-repeat center center/cover; /* Add your background image here */
+  color: #00ff00;
+  text-align: center;
+  padding: 4rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #fff; /* Subtle white for readability */
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
