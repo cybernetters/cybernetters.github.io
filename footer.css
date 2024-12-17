@@ -14,6 +14,12 @@
   height: auto;
 }
 
+@media (max-width: 768px) {
+  .service-item {
+    width: 100%;
+  }
+}
+
 .footer-links,
 .footer-socials,
 .footer-contact {
