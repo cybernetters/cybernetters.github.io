@@ -2,249 +2,213 @@
    Global Styles
 ======================================== */
 body {
-    margin: 0;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #121212;
-    color: #00ff00;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #121212;
+  color: #00ff00;
 }
 
 /* Universal Link Styling */
 a {
-    color: #00ff00; /* Green color */
-    text-decoration: none;
+  color: #00ff00; /* Green color */
+  text-decoration: none;
 }
 
 a:visited, a:hover, a:active {
-    color: #00ff00;
-    text-decoration: none;
+  color: #00ff00;
+  text-decoration: none;
 }
 
 /* Header Section */
 .header {
-    position: relative;
-    background-image: url('https://raw.githubusercontent.com/cybernetters/cybernetters.github.io/main/cyber-background-qrvi98v4g2ezuomr.jpg');
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(100%) brightness(1.2);
-    color: #00ff00;
-    border-bottom: 2px solid #00ff00;
-    padding: 1rem 0;
+  position: relative;
+  background-image: url('https://raw.githubusercontent.com/cybernetters/cybernetters.github.io/main/cyber-background-qrvi98v4g2ezuomr.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%) brightness(1.2);
+  color: #00ff00;
+  border-bottom: 2px solid #00ff00;
+  padding: 1rem 0;
 }
 
 .header .logo {
-    position: relative;
-    z-index: 2;
-}
-
-.header .logo img {
-    max-width: 200px;
-    height: auto;
-}
-
-.nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 0;
-}
-
-.nav ul li {
-    margin-left: 1rem;
-    position: relative;
-}
-
-.nav ul li a {
-    color: #1a1a1a;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    font-weight: bold;
-    transition: color 0.3s, background-color 0.3s;
-}
-
-.nav ul li a:hover {
-    color: #fff;
-}
-
-/* Footer Section */
-.footer {
-    background-color: #1f1f1f;
-    color: white;
-    padding: 30px 0;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-logo img {
-    max-width: 150px;
-}
-
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links li {
-    margin-bottom: 8px;
-}
-
-.footer-links a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-.footer-bottom {
-    background-color: #141414;
-    padding: 15px 0;
-    text-align: center;
-}
-
-.footer-bottom p {
-    font-size: 14px;
-}
-
-/* =======================================
-   Global Styling for the Entire Website
-======================================== */
-
-/* General Body Styling */
-body {
-  background-color: #121212;
-  color: #00ff00;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-/* Existing page-specific styles might go here */
-
-/* =======================================
-   Header and Navbar Styling (This section)
-======================================== */
-
-/* Navbar Styling for Header and Dropdowns */
-.header {
-  background-color: #121212; /* Dark background for header */
-  color: var(--text-color);
-  padding: 1rem 2rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* Further CSS styling for other sections goes here */
-
-
-/* =======================================
-   Header Styling
-======================================== */
-.header {
-  background-color: #121212; /* Dark background for header */
-  color: var(--text-color);   /* Light text color */
-  padding: 1rem 0;
+  position: relative;
+  z-index: 2;
 }
 
 .header .logo img {
   max-width: 200px;
-  height: auto; /* Maintain aspect ratio */
-}
-
-.nav {
-  background-color: transparent;
+  height: auto;
 }
 
 .nav ul {
   display: flex;
-  justify-content: flex-end;
   list-style: none;
+  justify-content: flex-end;
+  margin: 0;
   padding: 0;
 }
 
 .nav ul li {
-  margin-left: 1.5rem;  /* Space out items */
+  margin-left: 1rem;
+  position: relative;
 }
 
-/* Navbar Styling */
-.nav ul li a.nav-link {
-  color: #00ff00; /* Neon green */
+.nav ul li a {
+  color: #1a1a1a;
   text-decoration: none;
-  padding: 0.8rem 1.2rem; /* Adjusted padding */
+  padding: 0.5rem 1rem;
   font-weight: bold;
-  transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s, background-color 0.3s;
 }
 
-/* Hover Effects for Navbar Links */
-.nav ul li a.nav-link:hover {
-  color: #000;  /* Change text color to black on hover */
-  background-color: #00ff00;  /* Green background on hover */
-  border-radius: 8px;  /* Rounded corners */
+.nav ul li a:hover {
+  color: #fff;
 }
 
-/* Dropdown Menu */
-.nav ul li.dropdown {
-  position: relative;
-}
-
-.nav ul li .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #1a1a1a; /* Dark background for dropdown */
-  min-width: 160px;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Show dropdown on hover */
-.nav ul li:hover .dropdown-content {
-  display: block;
-}
-
-.nav ul li .dropdown-content a {
-  padding: 12px 16px;
-  color: #00ff00; /* Neon green */
-  text-decoration: none;
-  display: block;
-}
-
-/* Hover effects for dropdown links */
-.nav ul li .dropdown-content a:hover {
-  background-color: #00ff00;
-  color: black;
-}
-
-
-/* Dropdown Menu */
-.nav ul li.dropdown {
-  position: relative;
-}
-
-.nav ul li .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--dark-gray);
-  min-width: 160px;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.nav ul li:hover .dropdown-content {
-  display: block;
-}
-
-.nav ul li .dropdown-content a {
-  padding: 12px 16px;
-  color: #00ff00;
-  text-decoration: none;
-  display: block;
-}
-
-.nav ul li .dropdown-content a:hover {
-  background-color: #00cc00;
+/* Footer Section */
+.footer {
+  background-color: #1f1f1f;
   color: white;
+  padding: 30px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #141414;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+}
+
+/* =======================================
+ Responsive Styling for Mobile
+======================================== */
+@media (max-width: 768px) {
+  .header {
+      padding: 0.5rem 1rem;
+  }
+
+  .header .logo img {
+      max-width: 150px;
+  }
+
+  .nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .nav ul li {
+      margin: 0.5rem 0;
+  }
+
+  .nav ul li a {
+      display: block;
+      width: 100%;
+      text-align: left;
+  }
+
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-links ul {
+      padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+      font-size: 14px;
+      padding: 0.5rem;
+  }
+
+  .header .logo img {
+      max-width: 120px;
+  }
+
+  h1, h2 {
+      font-size: 1.2rem;
+  }
+
+  .nav ul {
+      gap: 0.5rem;
+  }
+
+  .footer {
+      padding: 20px 0;
+  }
+}
+
+/* =======================================
+ Improved Content and Card Responsiveness
+======================================== */
+.topic-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.topic-card {
+  background-color: #222;
+  border: 2px solid #00ff00;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  width: 100%;
+  max-width: 350px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .topic-card {
+      width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .topic-card {
+      width: 100%;
+  }
+  .topic-card h2 {
+      font-size: 1rem;
+  }
+  .topic-card p {
+      font-size: 0.9rem;
+  }
 }
