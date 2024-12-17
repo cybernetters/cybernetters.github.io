@@ -171,3 +171,28 @@
   <script src="../../script.js"></script>
 </body>
 </html>
+
+<!-- Dynamic Progress Script -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const totalProgress = 65; // Replace with a dynamic calculation
+    const courses = [
+      { name: "System Administration", progress: 50 },
+      { name: "Networking I", progress: 25 },
+      { name: "UNIX Administration", progress: 10 },
+    ];
+
+    // Update Overall Progress
+    document.querySelector(".overall-progress .progress-fill").style.width = totalProgress + "%";
+    document.querySelector(".overall-progress p").innerText = `${totalProgress}% Complete`;
+
+    // Update Course-by-Course Progress
+    const courseItems = document.querySelectorAll(".course-progress .course-item");
+    courseItems.forEach((item, index) => {
+      const progressFill = item.querySelector(".progress-fill");
+      const progressText = item.querySelector("p");
+      progressFill.style.width = courses[index].progress + "%";
+      progressText.innerText = `${courses[index].progress}% Mastery`;
+    });
+  });
+</script>
