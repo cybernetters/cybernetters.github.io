@@ -478,5 +478,210 @@ const questionBank = [
         { "text": "traceroute", "correct": true },
         { "text": "netstat", "correct": false }
       ]
+    },
+    {
+      "question": "What is the primary purpose of the OSI model?",
+      "answers": [
+        { "text": "To encrypt all communications", "correct": false },
+        { "text": "To provide a standard framework for network communication", "correct": true },
+        { "text": "To replace all network protocols", "correct": false },
+        { "text": "To manage physical devices", "correct": false }
+      ]
+    },
+    {
+      "question": "Which OSI layer is responsible for managing how data is presented?",
+      "answers": [
+        { "text": "Application Layer", "correct": false },
+        { "text": "Presentation Layer", "correct": true },
+        { "text": "Session Layer", "correct": false },
+        { "text": "Network Layer", "correct": false }
+      ]
+    },
+    {
+      "question": "Which layer ensures host-to-host communication integrity?",
+      "answers": [
+        { "text": "Data Link Layer", "correct": false },
+        { "text": "Transport Layer", "correct": true },
+        { "text": "Session Layer", "correct": false },
+        { "text": "Network Layer", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the function of the Session Layer?",
+      "answers": [
+        { "text": "To establish and manage interactive communication sessions", "correct": true },
+        { "text": "To handle error correction and retransmission", "correct": false },
+        { "text": "To route packets", "correct": false },
+        { "text": "To compress data", "correct": false }
+      ]
+    },
+    {
+      "question": "What does the Network Layer provide?",
+      "answers": [
+        { "text": "Point-to-point communication", "correct": false },
+        { "text": "Globally-unique addressing and routing", "correct": true },
+        { "text": "Data encryption", "correct": false },
+        { "text": "Error correction", "correct": false }
+      ]
+    },
+    {
+      "question": "Which layer uses frames for data transmission?",
+      "answers": [
+        { "text": "Physical Layer", "correct": false },
+        { "text": "Data Link Layer", "correct": true },
+        { "text": "Network Layer", "correct": false },
+        { "text": "Transport Layer", "correct": false }
+      ]
+    },
+    {
+      "question": "What is encapsulation in the OSI model?",
+      "answers": [
+        { "text": "The process of breaking down data into layers", "correct": false },
+        { "text": "The process of adding headers and footers at each layer", "correct": true },
+        { "text": "The process of routing packets", "correct": false },
+        { "text": "The process of checking errors in frames", "correct": false }
+      ]
+    },
+    {
+      "question": "Which protocols exist at the OSI Application Layer?",
+      "answers": [
+        { "text": "HTTP, SMTP, and Telnet", "correct": true },
+        { "text": "IP and ICMP", "correct": false },
+        { "text": "TCP and UDP", "correct": false },
+        { "text": "ARP and RARP", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the function of the Data Link Layer?",
+      "answers": [
+        { "text": "To establish physical connections", "correct": false },
+        { "text": "To ensure point-to-point validity of data", "correct": true },
+        { "text": "To provide routing services", "correct": false },
+        { "text": "To present data to applications", "correct": false }
+      ]
+    },
+    {
+      "question": "Which layer is responsible for encryption and compression?",
+      "answers": [
+        { "text": "Network Layer", "correct": false },
+        { "text": "Transport Layer", "correct": false },
+        { "text": "Presentation Layer", "correct": true },
+        { "text": "Session Layer", "correct": false }
+      ]
+    },
+    {
+      "question": "What does the Physical Layer handle?",
+      "answers": [
+        { "text": "Logical addressing", "correct": false },
+        { "text": "Transmission and receipt of raw bitstreams", "correct": true },
+        { "text": "Error correction", "correct": false },
+        { "text": "Frame validation", "correct": false }
+      ]
+    },
+    {
+      "question": "What protocols operate at the Transport Layer?",
+      "answers": [
+        { "text": "HTTP and FTP", "correct": false },
+        { "text": "IP and ICMP", "correct": false },
+        { "text": "TCP and UDP", "correct": true },
+        { "text": "DNS and ARP", "correct": false }
+      ]
+    },
+    {
+      "question": "Which layer determines routes between source and destination networks?",
+      "answers": [
+        { "text": "Data Link Layer", "correct": false },
+        { "text": "Network Layer", "correct": true },
+        { "text": "Transport Layer", "correct": false },
+        { "text": "Session Layer", "correct": false }
+      ]
+    },
+    {
+      "question": "Which layer introduces Logical Adjacency?",
+      "answers": [
+        { "text": "Data Link Layer", "correct": false },
+        { "text": "Session Layer", "correct": false },
+        { "text": "Physical Layer", "correct": true },
+        { "text": "Presentation Layer", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the key difference between TCP/IP and OSI models?",
+      "answers": [
+        { "text": "TCP/IP has 4 layers, OSI has 7", "correct": true },
+        { "text": "TCP/IP manages only routing", "correct": false },
+        { "text": "OSI includes all internet protocols", "correct": false },
+        { "text": "TCP/IP replaces the Network Layer", "correct": false }
+      ]
+    },
+    {
+      "question": "The OSI model has seven layers.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "question": "The Data Link Layer uses packets for transmission.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "question": "The Presentation Layer is responsible for data encryption.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "question": "The Physical Layer includes the physical media itself.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "question": "Encapsulation involves adding headers and footers to data.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "question": "TCP and UDP operate at the Network Layer.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "question": "The Network Layer is responsible for globally unique addressing.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "question": "The OSI model standardizes network components for interoperability.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "question": "Logical adjacency allows layers to communicate directly.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "question": "The Application Layer handles user-to-user communication.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
     }
   ];
