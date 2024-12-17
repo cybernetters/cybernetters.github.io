@@ -1,87 +1,57 @@
 /* Hero Section */
 .hero {
+  position: relative;
   background-image: url('images/cybersecurity-bg.png');
   background-size: cover;
   background-position: center;
   color: var(--text-color);
-  padding: 8rem 1rem; /* Increase the padding to make text more visible */
+  padding: 8rem 1rem;
   text-align: center;
-  position: relative;
 }
 
-/* Button Styling */
-.hero .btn {
-  background-color: #00ff00; /* Neon green background */
-  color: black;              /* Black text */
-  padding: 1rem 2rem;        /* Add padding for better size */
-  font-size: 1.2rem;         /* Increase font size */
-  text-decoration: none;     /* Remove underline */
-  border-radius: 8px;        /* Rounded corners */
-  font-weight: bold;
-  box-shadow: 0 0 10px #00ff00; /* Neon green glow */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
-  margin-top: 1.5rem;        /* Space between text and button */
-}
-
-.hero .btn:hover {
-  transform: scale(1.1);  /* Hover effect: enlarge the button */
-  box-shadow: 0 0 20px #00ff00; /* Neon green glow on hover */
-}
-
-/* Glitch Effect */
-.glitch-text {
-  position: relative;
-  font-size: 3rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #b1ff3c;
-  display: inline-block;
-  z-index: 2;
-}
-
-.glitch-text::before,
-.glitch-text::after {
-  content: attr(data-text);
+/* Add overlay for opacity */
+.hero::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.8;
-  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay: Adjust the last value for opacity */
+  z-index: 1;
 }
 
-.glitch-text::before {
-  left: -2px;
-  color: #f30;
-  animation: glitch-animation 1s infinite linear alternate-reverse;
+.hero .hero-content {
+  position: relative;
+  z-index: 2; /* Ensure content appears above the overlay */
 }
 
-.glitch-text::after {
-  left: 2px;
-  color: #2380f9;
-  animation: glitch-animation 1s infinite linear alternate;
-}
-
-@keyframes glitch-animation {
-  0% { clip: rect(2px, 9999px, 40px, 0); transform: skew(0.5deg, 0.5deg); }
-  50% { clip: rect(15px, 9999px, 45px, 0); transform: skew(-0.5deg, -0.5deg); }
-  100% { clip: rect(5px, 9999px, 60px, 0); transform: skew(0deg, 0deg); }
-}
-
-/* Button Styling */
-.hero .btn {
-  background-color: #00ff00; /* Neon green background */
-  color: black;              /* Black text */
-  padding: 1rem 2rem;        /* Add padding for better size */
-  font-size: 1.2rem;         /* Increase font size */
-  text-decoration: none;     /* Remove underline */
-  border-radius: 8px;        /* Rounded corners */
+.hero h1 {
+  font-size: 3.5rem;
   font-weight: bold;
-  box-shadow: 0 0 10px #00ff00; /* Neon green glow */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
-  margin-top: 1.5rem;        /* Space between text and button */
+  color: #00ff00; /* Neon green for text */
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #ddd;
+}
+
+.hero .btn {
+  background-color: #00ff00;
+  color: black;
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 0 10px #00ff00;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hero .btn:hover {
-  transform: scale(1.1);  /* Hover effect: enlarge the button */
-  box-shadow: 0 0 20px #00ff00; /* Neon green glow on hover */
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #00ff00;
 }
