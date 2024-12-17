@@ -31,70 +31,40 @@
 /* Glitch Effect */
 .glitch-text {
   position: relative;
-  font-size: 4rem;  /* Adjust font size */
+  font-size: 3rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
   font-weight: bold;
-  color: #b1ff3c;  /* Neon green */
+  color: #b1ff3c;
   display: inline-block;
-  z-index: 2;  /* Ensure the neon green text is on top */
+  z-index: 2;
 }
 
-.glitch-text:before,
-.glitch-text:after {
+.glitch-text::before,
+.glitch-text::after {
   content: attr(data-text);
   position: absolute;
   top: 0;
   left: 0;
-  color: white;
-  text-shadow: -2px 0 #f30, 2px 0 #2380f9;  /* Red and Blue for glitch */
-  animation: glitch-animation 1s infinite;
-  z-index: 1; /* Keep glitch layers behind the main text */
+  opacity: 0.8;
+  z-index: -1;
 }
 
-/* Glitch Animation */
-@keyframes glitch-animation {
-  0% {
-    clip: rect(3px, 9999px, 60px, 0);
-    transform: skew(0.42deg);
-    color: red;
-  }
-  20% {
-    clip: rect(23px, 9999px, 58px, 0);
-    transform: skew(0.44deg);
-    color: blue;
-  }
-  40% {
-    clip: rect(78px, 9999px, 40px, 0);
-    transform: skew(0.47deg);
-    color: green;
-  }
-  60% {
-    clip: rect(92px, 9999px, 60px, 0);
-    transform: skew(0.50deg);
-    color: red;
-  }
-  80% {
-    clip: rect(47px, 9999px, 50px, 0);
-    transform: skew(0.44deg);
-    color: blue;
-  }
-  100% {
-    clip: rect(10px, 9999px, 70px, 0);
-    transform: skew(0.42deg);
-    color: green;
-  }
-}
-
-/* Glitch Layer Offsets */
-.glitch-text:before {
+.glitch-text::before {
   left: -2px;
-  text-shadow: -3px 0 #f30;  /* Slightly offset */
+  color: #f30;
+  animation: glitch-animation 1s infinite linear alternate-reverse;
 }
 
-.glitch-text:after {
+.glitch-text::after {
   left: 2px;
-  text-shadow: 3px 0 #2380f9;  /* Slightly offset */
+  color: #2380f9;
+  animation: glitch-animation 1s infinite linear alternate;
+}
+
+@keyframes glitch-animation {
+  0% { clip: rect(2px, 9999px, 40px, 0); transform: skew(0.5deg, 0.5deg); }
+  50% { clip: rect(15px, 9999px, 45px, 0); transform: skew(-0.5deg, -0.5deg); }
+  100% { clip: rect(5px, 9999px, 60px, 0); transform: skew(0deg, 0deg); }
 }
 
 /* Button Styling */
