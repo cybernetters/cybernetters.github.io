@@ -81,19 +81,21 @@ const matrixContainer = document.getElementById('matrix-animation');
 
 // Generate random matrix characters
 const createMatrixRain = () => {
+  const container = document.querySelector('.matrix-rain-container');
   for (let i = 0; i < 100; i++) {
     const matrixChar = document.createElement('div');
-    matrixChar.textContent = String.fromCharCode(0x30A0 + Math.random() * 96); // Random Unicode Katakana
+    matrixChar.textContent = String.fromCharCode(0x30A0 + Math.random() * 96); // Random Katakana
     matrixChar.style.position = 'absolute';
     matrixChar.style.left = Math.random() * window.innerWidth + 'px';
     matrixChar.style.top = Math.random() * window.innerHeight + 'px';
     matrixChar.className = 'matrix-char';
     matrixChar.style.animationDuration = 2 + Math.random() * 3 + 's'; // Random speed
-    matrixContainer.appendChild(matrixChar);
+    container.appendChild(matrixChar);
   }
 };
 
 createMatrixRain();
+
 
 // Toggle between Sign In and Sign Up forms
 function toggleForms() {
