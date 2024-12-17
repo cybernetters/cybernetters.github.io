@@ -17,6 +17,7 @@ body {
 }
 
 /* Course Cards Section */
+
 .course-cards {
   flex: 0 0 70%;
   display: flex;
@@ -25,46 +26,50 @@ body {
 }
 
 .course-card {
-  width: calc(25% - 2rem); /* Three cards side by side */
+  width: calc(33.33% - 2rem); /* Adjust to three cards per row */
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 2rem;
+  padding: 1.5rem; /* Adjust padding */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: relative;
   text-align: center;
-  height: 250px; /* Fixed height for consistency */
+  height: 300px; /* Adjust height for better proportions */
+  overflow: hidden; /* Ensures no text spills out */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .course-card .card-content {
-  background: rgba(0, 0, 0, 0.6); /* Dark overlay for content inside the card */
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
   padding: 1rem;
   border-radius: 8px;
-  position: relative;
+  position: absolute;
+  bottom: 0; /* Stick content to bottom */
+  left: 0;
+  right: 0;
+  height: auto; /* Adjust height dynamically */
+  max-height: 80%; /* Ensures text fits within box */
+  overflow-y: auto; /* Adds scroll if text overflows */
 }
 
 .course-card h3 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
+  font-size: 1.4rem; /* Adjust font size for headings */
+  margin-bottom: 0.5rem;
 }
 
 .course-card p {
-  font-size: 0.8rem;
-  margin-bottom: 1.5rem;
+  font-size: 0.9rem; /* Reduce font size slightly */
+  line-height: 1.2rem; /* Improve readability */
+  margin-bottom: 1rem;
 }
 
 .course-card .btn {
-  background-color: #00ff00;
-  color: black;
-  padding: 0.8rem 1.5rem;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  box-shadow: 0 0 10px #00ff00;
-  transition: transform 0.3s ease-in-out;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
 }
-
 .course-card .btn:hover {
   transform: scale(1.1);
   box-shadow: 0 0 20px #00ff00;
