@@ -81,20 +81,48 @@
         <!-- Progress Sidebar Section -->
         <aside class="progress-sidebar">
           <h2>Progress</h2>
-          <div class="progress-bar mb-3">
-            <h3>System Administration</h3>
-            <div class="progress">
-              <div class="progress-fill" style="width: 50%;">50% Mastery</div>
+        
+          <!-- Overall Progress -->
+          <div class="overall-progress">
+            <h3>Overall Progress</h3>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 65%;"> <!-- Update dynamically -->
+              </div>
             </div>
+            <p>65% Complete</p> <!-- Replace with actual percentage -->
           </div>
-  
-          <div class="progress-bar mb-3">
-            <h3>Networking I</h3>
-            <div class="progress">
-              <div class="progress-fill" style="width: 25%;">25% Mastery</div>
+        
+          <!-- Course-by-Course Progress -->
+          <div class="course-progress">
+            <h3>Course Progress</h3>
+        
+            <div class="course-item">
+              <h4>System Administration</h4>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 50%;"> <!-- Update dynamically -->
+                </div>
+              </div>
+              <p>50% Mastery</p>
+            </div>
+        
+            <div class="course-item">
+              <h4>Networking I</h4>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 25%;"></div> <!-- Update dynamically -->
+              </div>
+              <p>25% Mastery</p>
+            </div>
+        
+            <div class="course-item">
+              <h4>UNIX Administration</h4>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 10%;"></div> <!-- Update dynamically -->
+              </div>
+              <p>10% Mastery</p>
             </div>
           </div>
         </aside>
+        
       </td>
     </tr>
   </table>
