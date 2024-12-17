@@ -50,13 +50,13 @@ const questionBank = [
       ]
     },
     {
-      "question": "What is a key benefit of subnetting?",
+      "question": "What is the primary benefit of subnetting in a network?",
       "answers": [
-        { "text": "Reduces routing table size", "correct": true },
-        { "text": "Increases IP address availability", "correct": false },
-        { "text": "Increases bandwidth", "correct": false },
-        { "text": "Ensures encryption", "correct": false },
-        { "text": "Creates new VLANs", "correct": false }
+        { "text": "Reduces the size of routing tables", "correct": true },
+        { "text": "Improves encryption of data", "correct": false },
+        { "text": "Increases physical bandwidth", "correct": false },
+        { "text": "Eliminates IP address conflicts", "correct": false },
+        { "text": "Simplifies VLAN configuration", "correct": false }
       ]
     },
     {
