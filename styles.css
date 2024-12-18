@@ -87,50 +87,6 @@ a:visited, a:hover, a:active {
   border-radius: 8px;  /* Rounded corners */
 }
 
-/* Dropdown Container */
-.nav ul li.dropdown {
-  position: relative;
-}
-
-.nav ul li .dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #1a1a1a; /* Dark dropdown background */
-  min-width: 180px;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-}
-
-/* Show dropdown on hover */
-.nav ul li:hover .dropdown-content {
-  display: block;
-}
-
-/* Dropdown Link Styling */
-.dropdown-content a {
-  display: flex; /* Align icon and text */
-  align-items: center; /* Vertically center icon and text */
-  padding: 10px 16px;
-  color: #00ff00; /* Neon green text */
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-/* Icon Styling */
-.dropdown-icon {
-  width: 16px;
-  margin-right: 8px;
-}
-
-/* Hover Effects */
-.dropdown-content a:hover {
-  background-color: #00ff00; /* Neon green background */
-  color: black; /* Text changes to black */
-}
-
 /* =======================================
  Footer Section
 ======================================== */
@@ -292,16 +248,64 @@ body {
   font-size: 1rem;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  padding: 1rem;
-  border-radius: 5px;
+/* Dropdown Parent */
+.nav ul li.dropdown {
+  position: relative; /* Ensures dropdown positions correctly */
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.nav ul li .dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute; /* Aligns relative to the parent li */
+  top: 100%; /* Positions below the parent */
+  left: 0;
+  background-color: #1a1a1a; /* Dark dropdown background */
+  min-width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Ensures it appears on top */
+}
+
+/* Show Dropdown on Hover */
+.nav ul li:hover .dropdown-content {
+  display: block; /* Display dropdown */
+}
+
+/* Dropdown Links */
+.nav ul li .dropdown-content a {
+  display: flex; /* Align icon and text */
+  align-items: center; /* Vertical alignment */
+  padding: 0.8rem 1.2rem;
+  color: #00ff00; /* Neon green text */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth hover */
+}
+
+/* Dropdown Icons */
+.nav ul li .dropdown-content a img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px; /* Space between icon and text */
+}
+
+/* Hover Effects for Dropdown Links */
+.nav ul li .dropdown-content a:hover {
+  background-color: #00ff00; /* Neon green background */
+  color: black; /* Black text on hover */
+}
+
+/* Parent Nav Link Styling */
+.nav ul li a.nav-link {
+  color: #00ff00; /* Neon green for parent links */
+  text-decoration: none;
+  padding: 0.8rem 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav ul li a.nav-link:hover {
+  background-color: #00ff00; /* Neon green background on hover */
+  color: black; /* Black text on hover */
 }
 
 /* Hamburger Button */
