@@ -1,3 +1,26 @@
+/* Welcome Section Styling */
+.welcome-section {
+    margin: 4rem auto; /* Adds top and bottom margin for spacing */
+    padding: 2rem 1rem; /* Adds padding for internal spacing */
+    max-width: 1000px; /* Limits the width for better readability */
+    text-align: center; /* Centers the content */
+}
+
+.welcome-section h1 {
+    font-size: 3.5rem; /* Larger heading for emphasis */
+    margin-bottom: 1rem; /* Adds space below the heading */
+    color: #00ff00; /* Neon green */
+    line-height: 1.2; /* Adds line height for cleaner spacing */
+}
+
+.welcome-section p {
+    font-size: 1.3rem; /* Larger font for readability */
+    line-height: 1.6; /* Improves spacing between lines */
+    color: #ddd; /* Light gray for better contrast */
+    margin: 0 auto; /* Centers the paragraph */
+    max-width: 800px; /* Limits text width for readability */
+}
+
 /* About Section Styling */
 .about-section {
     background-image: url('images/about-bg.jpg');
