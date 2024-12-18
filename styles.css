@@ -89,36 +89,47 @@ a:visited, a:hover, a:active {
 
 /* Dropdown Menu */
 .nav ul li.dropdown {
-  position: relative;
+  position: relative; /* Allows child dropdown to position absolutely */
 }
 
 .nav ul li .dropdown-content {
-  display: none;
-  position: absolute;
+  display: none; /* Hidden by default */
+  position: absolute; /* Positions dropdown relative to parent li */
+  top: 100%; /* Dropdown starts right below the parent */
+  left: 0; /* Aligns the dropdown with the parent */
   background-color: #1a1a1a; /* Dark background for dropdown */
   min-width: 160px;
   border-radius: 8px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensures dropdown appears on top of other elements */
+  overflow: visible; /* Prevents clipping */
 }
 
 /* Show dropdown on hover */
 .nav ul li:hover .dropdown-content {
-  display: block;
+  display: block; /* Displays dropdown */
 }
 
+/* Dropdown Link Styling */
 .nav ul li .dropdown-content a {
   padding: 12px 16px;
-  color: #00ff00; /* Neon green */
+  color: #00ff00; /* Neon green text */
   text-decoration: none;
-  display: block;
+  display: block; /* Makes links full width */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
 }
 
 /* Hover effects for dropdown links */
 .nav ul li .dropdown-content a:hover {
-  background-color: #00ff00;
-  color: black;
+  background-color: #00ff00; /* Neon green background */
+  color: black; /* Text changes to black */
 }
 
+/* Parent Container Styling Fix */
+.nav {
+  overflow: visible; /* Ensures no clipping */
+  z-index: 1000; /* Makes sure navigation is always on top */
+}
 /* =======================================
  Footer Section
 ======================================== */
