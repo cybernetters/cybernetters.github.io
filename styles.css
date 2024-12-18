@@ -113,7 +113,7 @@ a:visited, a:hover, a:active {
 .dropdown-content a {
   display: flex; /* Align icon and text */
   align-items: center; /* Vertically center icon and text */
-  padding: 10px 16px;
+  padding: 4px 16px;
   color: #00ff00; /* Neon green text */
   text-decoration: none;
   transition: background-color 0.3s ease;
