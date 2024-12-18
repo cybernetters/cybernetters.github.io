@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Courses - CyberNetters</title>
-  <link rel="stylesheet" href="courses.css">  <!-- Custom Styles -->
-  <link rel="stylesheet" href="../../styles.css">   <!-- Global Styles -->
-  <link rel="stylesheet" href="../../hero.css">   <!-- Global Styles -->
+  <title>Search - CyberNetters</title>
+  <link rel="stylesheet" href="courses.css"> <!-- Custom Styles -->
+  <link rel="stylesheet" href="../../styles.css"> <!-- Global Styles -->
+  <link rel="stylesheet" href="../../hero.css"> <!-- Global Styles -->
 </head>
 <body>
   <!-- Header Section -->
@@ -42,101 +42,34 @@
     </div>
   </header>
 
-  <!-- Hero Section Header -->
+  <!-- Hero Section -->
   <section class="hero-header">
     <div class="container">
-      <h1 class="hero-title">Courses</h1>
-      <p class="hero-subtitle">Explore our courses to advance your skills in System Administration, Networking, and more!</p>
+      <h1 class="hero-title">Search CyberNetters</h1>
+      <p class="hero-subtitle">Find resources, courses, and guides across our platform.</p>
     </div>
   </section>
 
   <!-- Main Content -->
-  <!-- table to contain cards and progress -->
-  <table style="width:100%">
-    <tr>
-      <td style="width:75%">        
-        <main class="container mt-5 courses-page">
-          <div class="row">
-            <!-- Course Cards Section -->
-            <section class="course-cards">
-              <div class="course-card" style="background-image: url('/images/sysadmin-bg.webp');">
-                <div class="card-content">
-                  <h3><a href="/code/courses/sysadmin/sysadmin.html" class="text-white">System Administration</a></h3>
-                  <p class="text-white">This course provides an introduction to system administration tasks such as configuring operating systems, managing users, and securing networks.</p>
-                  <a href="/code/courses/sysadmin/sysadmin.html" class="btn btn-light">Learn More</a>
-                </div>
-              </div>
-      
-              <div class="course-card" style="background-image: url('/images/networking-bg.webp');">
-                <div class="card-content">
-                  <h3><a href="/code/courses/networking1/networking1.html" class="text-white">Networking I</a></h3>
-                  <p class="text-white">Learn the fundamentals of networking, including IP addressing, routing, and protocols like DNS and DHCP.</p>
-                  <a href="/code/courses/networking1/networking1.html" class="btn btn-light">Learn More</a>
-                </div>
-              </div>
-      
-              <div class="course-card" style="background-image: url('/images/unixadmin-bg.webp');">
-                <div class="card-content">
-                  <h3><a href="/code/courses/unixadmin/unixadmin.html" class="text-white">UNIX Administration</a></h3>
-                  <p class="text-white">Learn the fundamentals of UNIX system administration, including installation, networking, software management, scripting, and user management.</p>
-                  <a href="/code/courses/unixadmin/unixadmin.html" class="btn btn-light">Learn More</a>
-                </div>
-              </div>
-            </section>
-          </div>
-        </main>
-      </td>
-      <td style="width:25%">        
-        <!-- Progress Sidebar Section -->
-        <aside class="progress-sidebar">
-          <h2>Progress</h2>
-        
-          <!-- Overall Progress -->
-          <div class="overall-progress">
-            <h3>Overall Progress</h3>
-            <div class="progress-bar">
-              <div class="progress-fill" style="width: 65%;"> <!-- Update dynamically -->
-              </div>
-            </div>
-            <p>65% Complete</p> <!-- Replace with actual percentage -->
-          </div>
-        
-          <!-- Course-by-Course Progress -->
-          <div class="course-progress">
-            <h3>Course Progress</h3>
-        
-            <div class="course-item">
-              <h4>System Administration</h4>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 50%;"> <!-- Update dynamically -->
-                </div>
-              </div>
-              <p>50% Mastery</p>
-            </div>
-        
-            <div class="course-item">
-              <h4>Networking I</h4>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 25%;"></div> <!-- Update dynamically -->
-              </div>
-              <p>25% Mastery</p>
-            </div>
-        
-            <div class="course-item">
-              <h4>UNIX Administration</h4>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 10%;"></div> <!-- Update dynamically -->
-              </div>
-              <p>10% Mastery</p>
-            </div>
-          </div>
-        </aside>
-        
-      </td>
-    </tr>
-  </table>
-  
-  
+  <main class="container">
+    <div class="search-section">
+      <!-- Search Input -->
+      <div class="search-bar-container">
+        <input 
+          type="text" 
+          id="searchInput" 
+          class="search-bar" 
+          placeholder="Type to search..." 
+          oninput="performSearch()"
+        />
+      </div>
+
+      <!-- Search Results -->
+      <div id="searchResults" class="search-results">
+        <!-- Results will dynamically appear here -->
+      </div>
+    </div>
+  </main>
 
   <!-- Footer Section -->
   <footer class="footer">
@@ -178,30 +111,75 @@
   </footer>
 
   <script src="../../script.js"></script>
+  <script>
+    function performSearch() {
+      const query = document.getElementById('searchInput').value.toLowerCase();
+      const resultsContainer = document.getElementById('searchResults');
+      resultsContainer.innerHTML = '';
+
+      // Example Search Data
+      const resources = [
+        { name: 'Networking I', link: '/code/courses/networking1/networking1.html' },
+        { name: 'System Administration', link: '/code/courses/sysadmin/sysadmin.html' },
+        { name: 'UNIX Administration', link: '/code/courses/unixadmin/unixadmin.html' },
+        { name: 'CyberNetters Services', link: '/code/services/services.html' },
+        { name: 'About CyberNetters', link: '/code/about/about.html' },
+      ];
+
+      // Filter results
+      const filteredResults = resources.filter(item =>
+        item.name.toLowerCase().includes(query)
+      );
+
+      // Render results
+      if (filteredResults.length > 0) {
+        filteredResults.forEach(item => {
+          const resultDiv = document.createElement('div');
+          resultDiv.className = 'result-item';
+          resultDiv.innerHTML = `<a href="${item.link}">${item.name}</a>`;
+          resultsContainer.appendChild(resultDiv);
+        });
+      } else {
+        resultsContainer.innerHTML = '<p>No results found.</p>';
+      }
+    }
+  </script>
+
+  <style>
+    .search-section {
+      margin: 2rem auto;
+      text-align: center;
+    }
+    .search-bar-container {
+      margin-bottom: 1.5rem;
+    }
+    .search-bar {
+      width: 80%;
+      padding: 1rem;
+      font-size: 1.2rem;
+      border: 2px solid #00ff00;
+      border-radius: 8px;
+      background-color: #222;
+      color: #00ff00;
+    }
+    .search-results {
+      margin-top: 2rem;
+      text-align: left;
+    }
+    .result-item {
+      background-color: #222;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+    .result-item a {
+      color: #00ff00;
+      text-decoration: none;
+    }
+    .result-item a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </body>
 </html>
-
-<!-- Dynamic Progress Script -->
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const totalProgress = 65; // Replace with a dynamic calculation
-    const courses = [
-      { name: "System Administration", progress: 50 },
-      { name: "Networking I", progress: 25 },
-      { name: "UNIX Administration", progress: 10 },
-    ];
-
-    // Update Overall Progress
-    document.querySelector(".overall-progress .progress-fill").style.width = totalProgress + "%";
-    document.querySelector(".overall-progress p").innerText = `${totalProgress}% Complete`;
-
-    // Update Course-by-Course Progress
-    const courseItems = document.querySelectorAll(".course-progress .course-item");
-    courseItems.forEach((item, index) => {
-      const progressFill = item.querySelector(".progress-fill");
-      const progressText = item.querySelector("p");
-      progressFill.style.width = courses[index].progress + "%";
-      progressText.innerText = `${courses[index].progress}% Mastery`;
-    });
-  });
-</script>
