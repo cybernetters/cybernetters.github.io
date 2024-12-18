@@ -8,21 +8,31 @@
   <title>Unit 1: Networking Foundations</title>
   <link rel="stylesheet" href="../../../styles.css"> <!-- Global Styles -->
   <style>
+    /* Reset for box-sizing */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    /* General styles */
     body {
-      background-color: #111;
-      color: #00ff00;
-      font-family: 'Courier New', Courier, monospace;
       margin: 0;
       padding: 0;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #111;
+      color: #00ff00;
+      height: 100vh;
     }
 
-    /* CONTAINER LAYOUT */
-    .container {
+    /* Container Layout */
+    .layout {
       display: flex;
-      height: calc(100vh - 60px); /* Adjust height for the header */
+      flex-direction: row;
+      height: calc(100vh - 60px); /* Adjust for header height */
     }
 
-    /* SIDEBAR STYLING */
+    /* Sidebar (30%) */
     .sidebar {
       width: 30%;
       background-color: #222;
@@ -39,34 +49,34 @@
     .sidebar ul {
       list-style: none;
       padding: 0;
-      margin: 0;
     }
 
     .sidebar a {
       display: block;
       padding: 0.5rem;
-      background-color: #333;
-      border-radius: 5px;
+      margin-bottom: 0.5rem;
       color: #00ff00;
       text-decoration: none;
-      transition: background-color 0.3s;
+      background-color: #333;
+      border-radius: 5px;
     }
 
     .sidebar a:hover {
       background-color: #444;
     }
 
-    /* MAIN CONTENT */
+    /* Main Content (70%) */
     .main-content {
       width: 70%;
       padding: 2rem;
       overflow-y: auto;
     }
 
-    .main-content h1, h2 {
+    .main-content h1, .main-content h2 {
       text-align: center;
     }
 
+    /* Topic Card Styling */
     .topic-card {
       background-color: #222;
       border-radius: 8px;
@@ -85,7 +95,7 @@
     }
 
     @media (max-width: 768px) {
-      .container {
+      .layout {
         flex-direction: column;
       }
       .sidebar, .main-content {
@@ -95,6 +105,7 @@
         flex-direction: column;
       }
     }
+
   </style>
 </head>
 
@@ -108,24 +119,32 @@
         </a>
       </h1>
       <nav class="nav">
-        <ul id="menu" class="button-nav">
+        <ul>
           <li><a href="../../../index.html">Home</a></li>
           <li><a href="/code/about/about.html">About</a></li>
           <li><a href="/code/services/services.html">Services</a></li>
           <li><a href="/code/resources/resources.html">Resources</a></li>
-          <li class="dropdown">
-            <a href="/code/courses/courses.html" class="dropbtn">Courses</a>
-            <div class="dropdown-content">
-              <a href="/code/courses/networking1/networking1.html">Networking I</a>
-              <a href="/code/courses/sysadmin/sysadmin.html">System Administration</a>
-            </div>
-          </li>
-          <li><a href="/code/resources/contact.html">Contact</a></li>
           <li><a href="/code/auth/sign-in.html">Sign In</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
+  <!-- LAYOUT CONTAINER -->
+  <div class="layout">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <h2>Units</h2>
+      <ul>
+        <li><a href="#">Unit 1: Networking Foundations</a></li>
+        <li><a href="#">Unit 2: Data Link Layer</a></li>
+        <li><a href="#">Unit 3: IP Addressing</a></li>
+        <li><a href="#">Unit 4: Network Services</a></li>
+        <li><a href="#">Unit 5: Routing Concepts</a></li>
+        <li><a href="#">Unit 6: Access Control</a></li>
+      </ul>
+    </nav>
+
 
   <!-- MAIN CONTENT -->
   <main>
