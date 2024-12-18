@@ -17,12 +17,11 @@
     }
 
     .container {
-      display: flex;
-      flex-direction: row;
-      height: 100vh;
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 60px); /* Subtract header height */
     }
 
-    /* Sidebar (30% width) */
     .sidebar {
       width: 30%;
       background-color: #222;
@@ -63,10 +62,10 @@
 
     /* Main content (70% width) */
     .main-content {
-      width: 70%;
-      padding: 2rem;
-      overflow-y: auto;
-    }
+    width: 70%;
+    padding: 2rem;
+    overflow-y: auto;
+   }
 
     .main-content h1 {
       text-align: center;
