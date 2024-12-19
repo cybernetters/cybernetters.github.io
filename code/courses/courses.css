@@ -172,7 +172,8 @@ body {
 .course-path-container {
   display: flex;
   align-items: center;
-  font-size: 1.2rem; /* Larger font for better readability */
+  font-size: 28px; /* Larger font for better readability */
+  line-height: 32px; /* Improved vertical spacing */
   gap: 0.5rem; /* Space between breadcrumb items */
 }
 
