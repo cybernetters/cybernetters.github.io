@@ -194,6 +194,7 @@ body {
 
 .current-page {
   font-weight: bold;
+  font-size: 24px;
   color: #ffffff; /* Make the current page stand out */
 }
 
