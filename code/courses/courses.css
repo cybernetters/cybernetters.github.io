@@ -1,12 +1,12 @@
 /* =======================================
    General Styles for Courses Page
 ======================================== */
-body {
-  background-color: #121212;
-  color: #00ff00; /* Accent color */
-  font-family: 'Courier New', Courier, monospace;
-  margin: 0;
-  padding: 0;
+/* Course-Specific Body Styles */
+body.course-page {
+  background-color: #111; /* Darker background for course pages */
+  color: #00ff00; /* Retain green text */
+  height: 100%; /* Full page height */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* =======================================
