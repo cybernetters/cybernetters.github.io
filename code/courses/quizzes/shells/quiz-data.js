@@ -338,6 +338,106 @@ const questionBank = [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
+  },
+  {
+    "question": "A system administrator wants to ensure that a new Linux server can support a database requiring 50 GB of storage. What partition table should they use to configure the disk?",
+    "answers": [
+      { "text": "MBR", "correct": false },
+      { "text": "GPT", "correct": true },
+      { "text": "PATA", "correct": false },
+      { "text": "LVM", "correct": false },
+      { "text": "SCSI", "correct": false }
+    ]
+  },
+  {
+    "question": "A user wants to append the current system date to a file called log.txt. Which command should they use?",
+    "answers": [
+      { "text": "date > log.txt", "correct": false },
+      { "text": "date >> log.txt", "correct": true },
+      { "text": "date < log.txt", "correct": false },
+      { "text": "date | log.txt", "correct": false },
+      { "text": "date <<< log.txt", "correct": false }
+    ]
+  },
+  {
+    "question": "Which command should an administrator use to schedule an immediate system reboot?",
+    "answers": [
+      { "text": "halt", "correct": false },
+      { "text": "shutdown -h now", "correct": false },
+      { "text": "shutdown -r now", "correct": true },
+      { "text": "poweroff", "correct": false },
+      { "text": "reboot", "correct": false }
+    ]
+  },
+  {
+    "question": "A technician wants to identify which shell is being used by default on their Linux system. Which file should they check?",
+    "answers": [
+      { "text": "/etc/passwd", "correct": true },
+      { "text": "/etc/shells", "correct": false },
+      { "text": "/home/.bashrc", "correct": false },
+      { "text": "/var/log/messages", "correct": false },
+      { "text": "/boot/grub.conf", "correct": false }
+    ]
+  },
+  {
+    "question": "A company needs to store logs separately for better system management. Which partition should they configure for this purpose?",
+    "answers": [
+      { "text": "/boot", "correct": false },
+      { "text": "/swap", "correct": false },
+      { "text": "/home", "correct": false },
+      { "text": "/var", "correct": true },
+      { "text": "/usr", "correct": false }
+    ]
+  },
+  {
+    "question": "Which command should a user execute to know the currently logged-in user’s name?",
+    "answers": [
+      { "text": "who", "correct": false },
+      { "text": "whoami", "correct": true },
+      { "text": "id", "correct": false },
+      { "text": "w", "correct": false },
+      { "text": "uname", "correct": false }
+    ]
+  },
+  {
+    "question": "A user encounters a terminal that does not display their commands correctly. Which command should they use to reset the terminal settings?",
+    "answers": [
+      { "text": "clear", "correct": false },
+      { "text": "reset", "correct": true },
+      { "text": "exit", "correct": false },
+      { "text": "ls", "correct": false },
+      { "text": "cal", "correct": false }
+    ]
+  },
+  {
+    "question": "An administrator wants to allow a non-root user to run a command as root. Which file should they edit to configure this?",
+    "answers": [
+      { "text": "/etc/passwd", "correct": false },
+      { "text": "/etc/sudoers", "correct": true },
+      { "text": "/etc/hosts", "correct": false },
+      { "text": "/home/.bashrc", "correct": false },
+      { "text": "/etc/rc.local", "correct": false }
+    ]
+  },
+  {
+    "question": "A user needs to combine the output of two commands to reduce the displayed information. What tool should they use?",
+    "answers": [
+      { "text": "Pipe (|)", "correct": true },
+      { "text": "Redirect (>)", "correct": false },
+      { "text": "Append (>>)", "correct": false },
+      { "text": "Variable ($)", "correct": false },
+      { "text": "Metacharacter (*)", "correct": false }
+    ]
+  },
+  {
+    "question": "If a script inherits environment variables from its parent shell, which type of shell is it using?",
+    "answers": [
+      { "text": "Login shell", "correct": false },
+      { "text": "Non-interactive shell", "correct": true },
+      { "text": "Interactive shell", "correct": false },
+      { "text": "Root shell", "correct": false },
+      { "text": "GUI shell", "correct": false }
+    ]
   }
 ];
 
