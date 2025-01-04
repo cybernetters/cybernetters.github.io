@@ -9,6 +9,33 @@ body {
   padding: 0;
 }
 
+/* =======================================
+   Topic Container Styles
+======================================== */
+.topic-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =======================================
+   Topic Card Styles
+======================================== */
+.topic-card {
+  background-color: #222;
+  border: 2px solid #00ff00; /* Green border for the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 100%; /* Ensure it stretches to the full width of the container */
+  max-width: 100%; /* Prevent overflow */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+
 /* Main Content Container */
 .courses-page {
   display: flex;
