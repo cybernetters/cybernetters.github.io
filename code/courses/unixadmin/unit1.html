@@ -2,6 +2,7 @@
 <html lang="en">
 
 <!-- HEAD -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,8 @@
       padding: 0;
     }
 
-    h1, h2 {
+    h1,
+    h2 {
       text-align: center;
       margin: 2rem 0;
     }
@@ -44,13 +46,15 @@
     /* Content Row (Learn and Practice Side-by-Side) */
     .content-row {
       display: flex;
-      gap: 2rem; /* Space between Learn and Practice sections */
+      gap: 2rem;
+      /* Space between Learn and Practice sections */
     }
 
     /* Learn Section */
     .learn,
     .practice {
-      flex: 1; /* Equal width for Learn and Practice */
+      flex: 1;
+      /* Equal width for Learn and Practice */
     }
 
     .learn h3,
@@ -98,7 +102,8 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
       display: grid;
       grid-gap: 10px;
-      grid-template-columns: 2fr 1fr; /* two columns */
+      grid-template-columns: 2fr 1fr;
+      /* two columns */
     }
 
     .quiz .quiz-table {
@@ -142,25 +147,31 @@
 
     /* Remove Bullet Points */
     .learn ul {
-      list-style: none; /* Disable bullets */
-      padding: 0;       /* Remove extra padding */
-      margin: 0;        /* Remove extra margin */
+      list-style: none;
+      /* Disable bullets */
+      padding: 0;
+      /* Remove extra padding */
+      margin: 0;
+      /* Remove extra margin */
     }
 
     .learn li {
-      margin-bottom: 1rem; /* Add spacing between items */
+      margin-bottom: 1rem;
+      /* Add spacing between items */
     }
 
     /* Responsive Design */
     @media (max-width: 768px) {
       .content-row {
-        flex-direction: column; /* Stack Learn and Practice sections on smaller screens */
+        flex-direction: column;
+        /* Stack Learn and Practice sections on smaller screens */
       }
     }
   </style>
 </head>
 
 <!-- BODY -->
+
 <body>
   <!-- HEADER SECTION -->
   <header class="header">
@@ -196,12 +207,13 @@
   <main>
     <h2>Unit 1: Networking Foundations</h2>
     <div class="topic-container">
-        <!-- UNIX Intro Card -->
+      <!-- UNIX Intro Card -->
       <div class="topic-card">
         <!-- CARD HEADER -->
         <div class="card-header">
           <h2>Introduction to UNIX</h2>
-          <p>An overview of UNIX/Linux systems, their history, key components, and how they are used today, focusing on the role of Linux system administrators and the basics of time-sharing.</p>
+          <p>An overview of UNIX/Linux systems, their history, key components, and how they are used today, focusing on
+            the role of Linux system administrators and the basics of time-sharing.</p>
         </div>
 
         <!-- CONTENT ROW -->
@@ -217,30 +229,32 @@
                 </a>
               </li>
               <li>
-                <strong>Resource:</strong> <a href="/code/resources/aaa-fundamentals.pdf" target="_blank">Download PDF</a>
+                <strong>Resource:</strong> <a href="/code/resources/aaa-fundamentals.pdf" target="_blank">Download
+                  PDF</a>
               </li>
             </ul>
           </div>
 
-        <!-- PRACTICE SECTION -->
-            <div class="practice">
-              <h3>Practice</h3>
-              <div class="quiz">
-          <div class="quiz-table">
-                  <p>Up next for you:</p>
-                  <p><strong>Quiz: UNIX Intro</strong></p>
-                  <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/unix-intro/landing.html'">Start</button>
-          </div>
-          <div class="quiz-score">
-            <div class="quiz-score-value" id="quiz-1-score">
-            0
-            </div>
-          </div>
+          <!-- PRACTICE SECTION -->
+          <div class="practice">
+            <h3>Practice</h3>
+            <div class="quiz">
+              <div class="quiz-table">
+                <p>Up next for you:</p>
+                <p><strong>Quiz: UNIX Intro</strong></p>
+                <button
+                  onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/unix-intro/landing.html'">Start</button>
               </div>
-            </div>        
+              <div class="quiz-score">
+                <div class="quiz-score-value" id="quiz-1-score">
+                  0
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   </main>
 
@@ -251,4 +265,5 @@
     </div>
   </footer>
 </body>
+
 </html>
