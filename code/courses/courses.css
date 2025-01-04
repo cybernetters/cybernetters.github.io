@@ -16,8 +16,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%; /* Take full width */
+  max-width: 1200px; /* Limit maximum width */
+  margin: 0 auto; /* Center horizontally */
+  padding: 1rem; /* Add padding for spacing */
+  box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 /* =======================================
