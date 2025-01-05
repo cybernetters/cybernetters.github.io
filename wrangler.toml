@@ -7,3 +7,5 @@ compatibility_date = "2025-01-05"
 binding = "DB"
 database_name = "login-db"
 database_id = "683d925b-4ca7-4411-a963-90c5b72d67fc"
+
+main = "worker.js" # Add this line to specify the entry point
