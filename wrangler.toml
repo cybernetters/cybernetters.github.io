@@ -1,7 +1,7 @@
 name = "cybernetters-app"
 type = "javascript"
 account_id = "5551b1fcaa6d607ef5369d6e8dcd3503"
-compatibility_date = "2025-01-01"
+compatibility_date = "2025-01-05"
 
 [[d1_databases]]
 binding = "DB"

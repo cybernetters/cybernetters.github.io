@@ -5,49 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign In - CyberNetters</title>
   <link rel="stylesheet" href="../../styles.css">
-  <link rel="stylesheet" href="auth.css"> <!-- Optional CSS file for auth pages -->
+  <link rel="stylesheet" href="auth.css">
 </head>
 <body>
   <!-- Header -->
   <header class="header">
-  <div class="container">
-    <h1 class="logo"><a href="/index.html">CyberNetters</a></h1>
-    <nav class="nav">
-      <ul id="menu" class="button-nav">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/code/about/about.html">About</a></li>
-        <li><a href="/code/services/services.html">Services</a></li>
-        <li><a href="/code/resources/resources.html">Resources</a></li>
-        <li class="dropdown">
-          <a href="/code/courses/courses.html" class="dropbtn">Courses</a>
-          <div class="dropdown-content">
-            <a href="/code/courses/networking1/networking1.html">Networking I</a>
-            <a href="/code/courses/sysadmin/sysadmin.html">System Administration</a>
-            <!-- You can add more course links here as needed -->
-          </div>
-        </li>
-        <li><a href="/code/resources/contact.html">Contact</a></li>
-        <!-- Add Sign-In Link -->
-        <li><a href="/code/auth/sign-in.html">Sign In</a></li> <!-- This is the new link -->
-      </ul>
-    </nav>
-  </div>
-</header>
-
+    <div class="container">
+      <h1 class="logo"><a href="/index.html">CyberNetters</a></h1>
+      <nav class="nav">
+        <ul id="menu" class="button-nav">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/code/about/about.html">About</a></li>
+          <li><a href="/code/services/services.html">Services</a></li>
+          <li><a href="/code/resources/resources.html">Resources</a></li>
+          <li class="dropdown">
+            <a href="/code/courses/courses.html" class="dropbtn">Courses</a>
+            <div class="dropdown-content">
+              <a href="/code/courses/networking1/networking1.html">Networking I</a>
+              <a href="/code/courses/sysadmin/sysadmin.html">System Administration</a>
+            </div>
+          </li>
+          <li><a href="/code/resources/contact.html">Contact</a></li>
+          <li><a href="/code/auth/sign-in.html">Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <!-- Main Content -->
   <main class="auth-page">
     <section class="auth-container">
       <h2>Sign In</h2>
-      <form action="/auth/signin" method="POST">
+      <form id="sign-in-form">
         <div class="form-group">
           <label for="username">Username</label>
-          <input type="text" id="username" name="username" required placeholder="Enter your username">
+          <input type="text" id="username" name="username" required placeholder="Enter your username" aria-label="Username">
         </div>
         <div class="form-group">
           <label for="password">Password</label>
-          <input type="password" id="password" name="password" required placeholder="Enter your password">
+          <input type="password" id="password" name="password" required placeholder="Enter your password" aria-label="Password" autocomplete="off">
         </div>
+        <div id="feedback" style="color: red; margin-top: 10px;"></div>
         <div class="form-group">
           <button type="submit">Sign In</button>
         </div>
@@ -65,6 +63,49 @@
     </div>
   </footer>
 
-  <script src="../../script.js"></script>
+  <script>
+    document.querySelector('#sign-in-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(e.target);
+      const credentials = {
+        username: formData.get('username'),
+        password: formData.get('password'),
+      };
+
+      const feedback = document.getElementById('feedback');
+      const button = e.target.querySelector('button');
+      button.classList.add('loading');
+      button.textContent = 'Signing in...';
+
+      try {
+        const response = await fetch('/api/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(credentials),
+        });
+
+        button.classList.remove('loading');
+        button.textContent = 'Sign In';
+
+        const result = await response.json();
+        if (response.ok) {
+          feedback.style.color = 'green';
+          feedback.textContent = 'Login successful! Redirecting...';
+          setTimeout(() => {
+            window.location.href = '/dashboard.html';
+          }, 2000);
+        } else {
+          feedback.style.color = 'red';
+          feedback.textContent = result.message || 'Login failed. Please try again.';
+        }
+      } catch (error) {
+        button.classList.remove('loading');
+        button.textContent = 'Sign In';
+        feedback.style.color = 'red';
+        feedback.textContent = 'An error occurred. Please try again later.';
+      }
+    });
+  </script>
 </body>
 </html>
