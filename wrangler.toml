@@ -2,10 +2,10 @@ name = "cybernetters-app"
 type = "javascript"
 account_id = "5551b1fcaa6d607ef5369d6e8dcd3503"
 compatibility_date = "2025-01-05"
+workers_dev = true
+main = "worker.js" # This specifies the entry point for your worker script.
 
 [[d1_databases]]
 binding = "DB"
 database_name = "login-db"
 database_id = "683d925b-4ca7-4411-a963-90c5b72d67fc"
-
-main = "worker.js" # Add this line to specify the entry point
