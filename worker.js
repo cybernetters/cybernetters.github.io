@@ -5,11 +5,20 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
+    // Handle `/` (root path)
+    if (url.pathname === '/') {
+      return new Response('Welcome to the Cybernetters API! Available endpoints: /api/login, /api/register', {
+        status: 200,
+        headers: { 'Content-Type': 'text/plain' },
+      });
+    }
+
+    // Handle `/api/login`
     if (url.pathname === '/api/login') {
       return handleLogin(request, env);
     }
 
-    // Optionally, add more routes for other endpoints like register
+    // Handle `/api/register`
     if (url.pathname === '/api/register') {
       return handleRegister(request, env);
     }
@@ -19,57 +28,57 @@ export default {
   },
 };
 
-// Handler for the /api/login endpoint
+// Define the login handler
 async function handleLogin(request, env) {
   if (request.method !== 'POST') {
     return new Response('Method Not Allowed', { status: 405 });
   }
 
-  try {
-    const { username, password } = await request.json();
+  const { username, password } = await request.json();
 
-    // Query the database for the user
-    const { results } = await env.DB.prepare('SELECT * FROM users WHERE name = ?').bind(username).all();
+  // Query the database
+  const { results } = await env.DB.prepare('SELECT * FROM users WHERE name = ?')
+    .bind(username)
+    .all();
 
-    if (results.length === 0) {
-      return new Response(JSON.stringify({ message: 'User not found' }), {
-        status: 404,
-        headers: { 'Content-Type': 'application/json' },
-      });
-    }
-
-    const user = results[0];
-
-    // Validate the password (you should hash and compare passwords for production)
-    const isValidPassword = password === user.password; // Replace this with hashed password validation logic
-
-    if (!isValidPassword) {
-      return new Response(JSON.stringify({ message: 'Invalid credentials' }), {
-        status: 401,
-        headers: { 'Content-Type': 'application/json' },
-      });
-    }
-
-    // Respond with a success message
-    return new Response(JSON.stringify({ message: 'Login successful' }), {
-      status: 200,
+  if (results.length === 0) {
+    return new Response(JSON.stringify({ message: 'User not found' }), {
+      status: 404,
       headers: { 'Content-Type': 'application/json' },
     });
-  } catch (error) {
-    console.error('Error handling login:', error);
-    return new Response(
-      JSON.stringify({ message: 'Internal Server Error', error: error.message }),
-      { status: 500, headers: { 'Content-Type': 'application/json' } }
-    );
   }
+
+  const user = results[0];
+  const isValidPassword = password === user.password; // Replace with hashed password validation
+
+  if (!isValidPassword) {
+    return new Response(JSON.stringify({ message: 'Invalid credentials' }), {
+      status: 401,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  }
+
+  return new Response(JSON.stringify({ message: 'Login successful' }), {
+    status: 200,
+    headers: { 'Content-Type': 'application/json' },
+  });
 }
 
-// (Optional) Handler for /api/register if you need to support it
+// Define the register handler (optional)
 async function handleRegister(request, env) {
   if (request.method !== 'POST') {
     return new Response('Method Not Allowed', { status: 405 });
   }
 
-  // Add register logic here
-  return new Response('Register endpoint not implemented yet', { status: 501 });
+  const { username, password } = await request.json();
+
+  // Add the user to the database
+  await env.DB.prepare('INSERT INTO users (name, password) VALUES (?, ?)')
+    .bind(username, password)
+    .run();
+
+  return new Response(JSON.stringify({ message: 'User registered successfully' }), {
+    status: 201,
+    headers: { 'Content-Type': 'application/json' },
+  });
 }
