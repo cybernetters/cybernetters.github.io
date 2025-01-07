@@ -2,8 +2,11 @@ name = "cybernetters-app"
 type = "javascript"
 account_id = "5551b1fcaa6d607ef5369d6e8dcd3503"
 compatibility_date = "2025-01-05"
-workers_dev = true
-main = "worker.js" # This specifies the entry point for your worker script.
+workers_dev = false
+main = "worker.js"
+
+zone_id = "1343a6a18f8ab02a33b560c601a3f0db" # Zone ID from Cloudflare dashboard
+route = "https://cybernetters.net/api/*" # Route that was created
 
 [[d1_databases]]
 binding = "DB"
