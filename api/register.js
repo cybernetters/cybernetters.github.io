@@ -93,8 +93,4 @@ async function handleLogin(request, env) {
     { status: 200 }
   );
 
-  if (url.hostname === 'www.cybernetters.net') {
-    return Response.redirect('https://cybernetters.net' + url.pathname, 301);
-  }  
-
 }
