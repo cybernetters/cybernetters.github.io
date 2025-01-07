@@ -103,18 +103,27 @@
           const result = await response.json();
   
           if (response.ok) {
-            // Registration successful
-            feedback.style.color = 'green';
-            feedback.textContent = 'Registration successful! Redirecting to the sign-in page...';
-  
-            // Redirect to sign-in page after a delay
-            setTimeout(() => {
-              window.location.href = '/sign-in.html';
-            }, 3000);
+              // Registration successful
+              feedback.style.color = 'green';
+              feedback.textContent = 'Registration successful! Redirecting to the sign-in page...';
+
+              // Redirect to sign-in page after a delay
+              setTimeout(() => {
+                  window.location.href = '/sign-in.html';
+              }, 3000);
           } else {
-            // Registration failed
-            feedback.style.color = 'red';
-            feedback.textContent = result.message || 'Registration failed. Please try again.';
+              // Registration failed
+              try {
+                  // Try parsing the response to get the error message
+                  const result = await response.json();
+                  feedback.style.color = 'red';
+                  feedback.textContent = result.message || 'Registration failed. Please try again.';
+              } catch (error) {
+                  // Fallback for unexpected errors
+                  console.error('Error parsing error response:', error);
+                  feedback.style.color = 'red';
+                  feedback.textContent = 'An unexpected error occurred. Please try again later.';
+              }
           }
         } catch (error) {
           // Handle network or server errors
