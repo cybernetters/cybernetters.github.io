@@ -1,12 +1,10 @@
-import register from './api/register.js';
-import login from './api/login.js';
+import bcrypt from 'bcryptjs';
 
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
     try {
-      // Handle `/` (root path)
       if (url.pathname === '/') {
         return new Response(
           'Welcome to the Cybernetters API! Available endpoints: /api/login, /api/register',
@@ -17,22 +15,18 @@ export default {
         );
       }
 
-      // Handle `/api/login`
       if (url.pathname === '/api/login' && request.method === 'POST') {
         return handleLogin(request, env);
       }
 
-      // Handle `/api/register`
       if (url.pathname === '/api/register' && request.method === 'POST') {
         return handleRegister(request, env);
       }
 
-      // Method Not Allowed
       if (url.pathname === '/api/login' || url.pathname === '/api/register') {
         return new Response('Method Not Allowed', { status: 405 });
       }
 
-      // Default response for unknown paths
       return new Response('Not Found', { status: 404 });
     } catch (error) {
       console.error('Error handling request:', error);
@@ -52,7 +46,7 @@ async function handleLogin(request, env) {
   try {
     const { username, password } = await request.json();
 
-    // Query the database
+    // Query the database for the user
     const { results } = await env.DB.prepare('SELECT * FROM users WHERE name = ?')
       .bind(username)
       .all();
@@ -65,7 +59,7 @@ async function handleLogin(request, env) {
     }
 
     const user = results[0];
-    const isValidPassword = password === user.password; // Replace with hashed password validation
+    const isValidPassword = await bcrypt.compare(password, user.password);
 
     if (!isValidPassword) {
       return new Response(JSON.stringify({ message: 'Invalid credentials' }), {
@@ -95,9 +89,12 @@ async function handleRegister(request, env) {
   try {
     const { username, password } = await request.json();
 
-    // Add the user to the database
+    // Hash the password before storing it
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    // Store the hashed password in the database
     await env.DB.prepare('INSERT INTO users (name, password) VALUES (?, ?)')
-      .bind(username, password)
+      .bind(username, hashedPassword)
       .run();
 
     return new Response(JSON.stringify({ message: 'User registered successfully' }), {
