@@ -64,48 +64,58 @@
   </footer>
 
   <script>
-    document.querySelector('#sign-in-form').addEventListener('submit', async (e) => {
+    document.querySelector('form').addEventListener('submit', async (e) => {
       e.preventDefault();
-
+  
       const formData = new FormData(e.target);
-      const credentials = {
+      const user = {
         username: formData.get('username'),
+        email: formData.get('email'),
         password: formData.get('password'),
+        confirmPassword: formData.get('confirm-password'),
       };
-
+  
       const feedback = document.getElementById('feedback');
       const button = e.target.querySelector('button');
       button.classList.add('loading');
-      button.textContent = 'Signing in...';
-
+      button.textContent = 'Signing up...';
+  
+      if (user.password !== user.confirmPassword) {
+        feedback.textContent = 'Passwords do not match.';
+        button.classList.remove('loading');
+        button.textContent = 'Sign Up';
+        return;
+      }
+  
       try {
-        const response = await fetch('/api/login', {
+        const response = await fetch('/api/register', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(credentials),
+          body: JSON.stringify(user),
         });
-
+  
         button.classList.remove('loading');
-        button.textContent = 'Sign In';
-
+        button.textContent = 'Sign Up';
+  
         const result = await response.json();
         if (response.ok) {
           feedback.style.color = 'green';
-          feedback.textContent = 'Login successful! Redirecting...';
+          feedback.textContent = 'Registration successful! Redirecting...';
           setTimeout(() => {
-            window.location.href = '/dashboard.html';
+            window.location.href = '/code/auth/sign-in.html';
           }, 2000);
         } else {
           feedback.style.color = 'red';
-          feedback.textContent = result.message || 'Login failed. Please try again.';
+          feedback.textContent = result.message || 'Registration failed. Please try again.';
         }
       } catch (error) {
         button.classList.remove('loading');
-        button.textContent = 'Sign In';
+        button.textContent = 'Sign Up';
         feedback.style.color = 'red';
         feedback.textContent = 'An error occurred. Please try again later.';
       }
     });
   </script>
+  
 </body>
 </html>
