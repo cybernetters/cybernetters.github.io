@@ -14,12 +14,15 @@ body.course-page {
 ======================================== */
 .topic-container {
   display: flex;
-  flex-direction: column; /* If vertical stacking is needed */
-  gap: 2rem; /* Space between cards */
-  width: 100%; /* Ensure it spans the full width */
-  padding: 1rem; /* Add some padding for better aesthetics */
-  box-sizing: border-box; /* Include padding/border in the width calculation */
+  flex-direction: column;
+  gap: 2rem; /* Space between topic cards */
+  width: 100%; /* Full width of main content */
+  max-width: none; /* Prevent restrictions */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 
 
 /* =======================================

@@ -29,25 +29,26 @@
 
     /* Container Layout */
     .layout {
-      display: flex; /* Enable flexbox */
-      flex-direction: row; /* Arrange items in a row */
-      width: 100%;
-      max-width: none; /* Prevent inheritance */
+      display: flex;
+      flex-direction: row; /* Ensure the sidebar stays on the left */
+      width: 100%; /* Full width of the viewport */
+      height: calc(100vh - 60px); /* Full height minus header */
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      box-sizing: border-box; /* Include padding and border in width */
+      gap: 1rem; /* Space between sidebar and main content */
     }
 
 
     /* Sidebar */
     .sidebar {
-      flex: 0 0 20%; /* Sidebar fixed to 20% width */
-      background-color: #222;
-      padding: 1rem;
-      height: 100vh; /* Make the sidebar span the full viewport height */
-      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow for separation */
-      overflow-y: auto;
+        flex: 0 0 20%; /* Fixed width of 20% */
+        background-color: #222;
+        padding: 1rem;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        overflow-y: auto;
     }
+
 
     .sidebar h2 {
       font-size: 1.5rem;
@@ -175,6 +176,11 @@
       font-size: 1rem;
       margin: 0;
     }
+
+    .layout, .sidebar, .main-content, .topic-container {
+    border: 1px dashed red; /* For debugging only */
+    }
+
 
     /* Practice Section */
     .quiz {
