@@ -15,6 +15,7 @@ body.course-page {
 .topic-container {
   display: flex; /* Use flexbox to align child topic cards */
   flex-wrap: wrap; /* Allow wrapping of topic cards if necessary */
+  flex-direction: column; /* Stack cards vertically */
   gap: 1rem; /* Space between cards */
   width: 100%; /* Utilize full width */
   box-sizing: border-box;
