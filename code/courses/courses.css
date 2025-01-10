@@ -13,12 +13,14 @@ body.course-page {
    Topic Container Styles
 ======================================== */
 .topic-container {
-  display: flex; /* Use flexbox to align child topic cards */
-  flex-wrap: wrap; /* Allow wrapping of topic cards if necessary */
+  display: flex;
   flex-direction: column; /* Stack cards vertically */
-  gap: 1rem; /* Space between cards */
-  width: 100%; /* Utilize full width */
-  box-sizing: border-box;
+  gap: 2rem; /* Space between cards */
+  width: 100%; /* Full width of the container */
+  max-width: none; /* Remove any width restriction */
+  margin: 0 auto; /* Center container if needed */
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
 
@@ -27,7 +29,8 @@ body.course-page {
    Topic Card Styles
 ======================================== */
 .topic-card {
-  flex: 1 1 calc(50% - 1rem); /* Each card takes 50% width minus gap */
+  /*flex: 1 1 calc(50% - 1rem);  Each card takes 50% width minus gap */
+  flex: 1 1 100%; /* Full width for each card */
   background-color: #222;
   border: 2px solid #00ff00; /* Green border for the card */
   border-radius: 8px; /* Rounded corners */
@@ -234,6 +237,9 @@ body.course-page {
   .course-path {
     padding: 1rem; /* Reduce padding for smaller screens */
     font-size: 1rem; /* Adjust font size */
+  }
+  .topic-container {
+    flex-direction: column !important; /* Force stacking */
   }
 }
 
