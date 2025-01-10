@@ -15,6 +15,9 @@ body.course-page {
 .topic-container {
   display: flex;
   flex-direction: column; /* Stack cards vertically */
+  flex-grow: 1; /* Ensure the card grows to take full space */
+  flex-shrink: 0; /* Prevent shrinking */
+  flex-basis: auto; /* Allow it to adapt to the container's size */
   gap: 2rem; /* Space between cards */
   width: 100%; /* Full width of the container */
   max-width: none; /* Remove any width restriction */
