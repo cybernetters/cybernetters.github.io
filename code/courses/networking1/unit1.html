@@ -239,15 +239,15 @@
       background-color: #008f00;
     }
 
-    /* Responsive Design */
-    @media (min-width: 769px) {
+    /* Responsive Design for smaller screens */
+    @media (max-width: 768px) {
       .layout {
-        flex-direction: column;
+        flex-direction: column; /* Stack sidebar and main content vertically */
       }
 
       .sidebar {
         flex: 0 0 auto;
-        width: 100%;
+        width: 100%; /* Full width for the sidebar */
         margin-bottom: 1rem;
       }
 
@@ -255,10 +255,6 @@
         max-width: 100%; /* Allow full width on small screens */
         margin-left: 0;
         margin-right: 0;
-      }
-
-      .content-row {
-        flex-direction: column;
       }
     }
 
