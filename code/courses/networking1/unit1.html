@@ -77,11 +77,14 @@
 
     /* Main Content (70%) */
     .main-content {
-      flex: 1; /* Take up remaining space */
+      flex: 1; /* Allow the main content to grow and fill available space */
       padding: 2rem;
       overflow-y: auto;
-      max-width: none; /* Remove the restriction of 70% width */
+      margin: 0; /* Remove any default margins */
+      max-width: none; /* Remove any width restriction */
+      box-sizing: border-box; /* Include padding in dimensions */
     }
+
 
     .main-content h1, .main-content h2 {
       text-align: center;
