@@ -30,23 +30,20 @@
     /* Container Layout */
     .layout {
       display: flex;
-      flex-direction: row; /* Ensure the sidebar stays on the left */
-      width: 100%; /* Full width of the viewport */
-      height: calc(100vh - 60px); /* Full height minus header */
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box; /* Include padding and border in width */
+      flex-direction: row; /* Sidebar on the left */
+      width: 100%;
+      height: calc(100vh - 60px); /* Adjust height as needed */
       gap: 1rem; /* Space between sidebar and main content */
     }
 
 
     /* Sidebar */
     .sidebar {
-        flex: 0 0 20%; /* Fixed width of 20% */
-        background-color: #222;
-        padding: 1rem;
-        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-        overflow-y: auto;
+      flex: 0 0 20%; /* Sidebar takes 20% of the space */
+      background-color: #222;
+      padding: 1rem;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+      overflow-y: auto;
     }
 
 
@@ -77,14 +74,12 @@
 
     /* Main Content (70%) */
     .main-content {
-      flex: 1; /* Allow the main content to grow and fill available space */
+      flex: 1; /* Let main content take the remaining space */
       padding: 2rem;
+      margin: 0;
       overflow-y: auto;
-      margin: 0; /* Remove any default margins */
-      max-width: none; /* Remove any width restriction */
-      box-sizing: border-box; /* Include padding in dimensions */
+      box-sizing: border-box; /* Include padding in width */
     }
-
 
     .main-content h1, .main-content h2 {
       text-align: center;
@@ -242,19 +237,20 @@
     /* Responsive Design for smaller screens */
     @media (max-width: 768px) {
       .layout {
-        flex-direction: column; /* Stack sidebar and main content vertically */
+        flex-direction: column; /* Stack sidebar and content */
       }
 
       .sidebar {
-        flex: 0 0 auto;
-        width: 100%; /* Full width for the sidebar */
-        margin-bottom: 1rem;
+        flex: 0 0 auto; /* Sidebar takes full width */
+        width: 100%;
       }
 
       .main-content {
-        max-width: 100%; /* Allow full width on small screens */
-        margin-left: 0;
-        margin-right: 0;
+        flex: 1; /* Adjust main content to take full width */
+      }
+
+      .topic-card {
+        flex: 1 1 100%; /* Each card takes full width */
       }
     }
 

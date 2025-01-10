@@ -13,13 +13,10 @@ body.course-page {
    Topic Container Styles
 ======================================== */
 .topic-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem; /* Space between topic cards */
-  width: 100%; /* Full width of main content */
-  max-width: none; /* Prevent restrictions */
-  margin: 0;
-  padding: 0;
+  display: flex; /* Use flexbox to align child topic cards */
+  flex-wrap: wrap; /* Allow wrapping of topic cards if necessary */
+  gap: 1rem; /* Space between cards */
+  width: 100%; /* Utilize full width */
   box-sizing: border-box;
 }
 
@@ -29,6 +26,7 @@ body.course-page {
    Topic Card Styles
 ======================================== */
 .topic-card {
+  flex: 1 1 calc(50% - 1rem); /* Each card takes 50% width minus gap */
   background-color: #222;
   border: 2px solid #00ff00; /* Green border for the card */
   border-radius: 8px; /* Rounded corners */
