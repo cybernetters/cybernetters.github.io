@@ -29,11 +29,13 @@
 
     /* Container Layout */
     .layout {
+      display: flex; /* Enable flexbox */
+      flex-direction: row; /* Arrange items in a row */
       width: 100%;
-      max-width: none; /* Prevent any inherent width restrictions */
+      max-width: none; /* Prevent inheritance */
       margin: 0;
       padding: 0;
-      box-sizing: border-box; /* Ensure padding and border are included in width/height */
+      box-sizing: border-box;
     }
 
 
@@ -42,7 +44,8 @@
       flex: 0 0 20%; /* Sidebar fixed to 20% width */
       background-color: #222;
       padding: 1rem;
-      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+      height: 100vh; /* Make the sidebar span the full viewport height */
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow for separation */
       overflow-y: auto;
     }
 
@@ -73,12 +76,10 @@
 
     /* Main Content (70%) */
     .main-content {
-      flex: 1; /* Allows the main content to grow within the remaining space */
-      max-width: 70%; /* Restrict the main content to a maximum of 70% width */
+      flex: 1; /* Take up remaining space */
       padding: 2rem;
       overflow-y: auto;
-      margin-left: auto; /* Center-align the content by pushing from the left */
-      margin-right: auto; /* Center-align the content by pushing from the right */
+      max-width: none; /* Remove the restriction of 70% width */
     }
 
     .main-content h1, .main-content h2 {
