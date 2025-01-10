@@ -29,10 +29,13 @@
 
     /* Container Layout */
     .layout {
-      display: flex;
-      flex-direction: row;
-      height: calc(100vh - 60px); /* Adjust for header height */
+      width: 100%;
+      max-width: none; /* Prevent any inherent width restrictions */
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; /* Ensure padding and border are included in width/height */
     }
+
 
     /* Sidebar */
     .sidebar {
