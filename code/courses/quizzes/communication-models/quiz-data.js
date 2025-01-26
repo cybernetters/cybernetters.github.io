@@ -400,5 +400,205 @@ const questionBank = [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
+  },
+  {
+    "question": "Which layer of the OSI Model is responsible for determining the optimal path for data?",
+    "answers": [
+      { "text": "Physical", "correct": false },
+      { "text": "Data Link", "correct": false },
+      { "text": "Network", "correct": true },
+      { "text": "Transport", "correct": false },
+      { "text": "Session", "correct": false }
+    ]
+  },
+  {
+    "question": "At which layer does flow control primarily occur in the OSI Model?",
+    "answers": [
+      { "text": "Physical", "correct": false },
+      { "text": "Data Link", "correct": false },
+      { "text": "Network", "correct": false },
+      { "text": "Transport", "correct": true },
+      { "text": "Application", "correct": false }
+    ]
+  },
+  {
+    "question": "Which OSI layer uses logical ports to manage multiple services?",
+    "answers": [
+      { "text": "Physical", "correct": false },
+      { "text": "Transport", "correct": false },
+      { "text": "Session", "correct": true },
+      { "text": "Presentation", "correct": false },
+      { "text": "Data Link", "correct": false }
+    ]
+  },
+  {
+    "question": "What type of addressing is utilized by the Data Link Layer?",
+    "answers": [
+      { "text": "IP addressing", "correct": false },
+      { "text": "Physical addressing", "correct": true },
+      { "text": "Logical addressing", "correct": false },
+      { "text": "Port addressing", "correct": false },
+      { "text": "Domain addressing", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary data unit used at the Network Layer?",
+    "answers": [
+      { "text": "Bit", "correct": false },
+      { "text": "Frame", "correct": false },
+      { "text": "Packet", "correct": true },
+      { "text": "Segment", "correct": false },
+      { "text": "Message", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following occurs at the Presentation Layer?",
+    "answers": [
+      { "text": "Session establishment", "correct": false },
+      { "text": "Compression of data", "correct": true },
+      { "text": "Logical addressing", "correct": false },
+      { "text": "Routing decisions", "correct": false },
+      { "text": "Frame validation", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary goal of encapsulation in the OSI Model?",
+    "answers": [
+      { "text": "To improve encryption", "correct": false },
+      { "text": "To segment data for easier routing", "correct": false },
+      { "text": "To wrap data with necessary headers and trailers", "correct": true },
+      { "text": "To manage session termination", "correct": false },
+      { "text": "To ensure reliability of packet delivery", "correct": false }
+    ]
+  },
+  {
+    "question": "Which layer is involved in providing error detection for transmitted frames?",
+    "answers": [
+      { "text": "Physical", "correct": false },
+      { "text": "Data Link", "correct": true },
+      { "text": "Network", "correct": false },
+      { "text": "Transport", "correct": false },
+      { "text": "Session", "correct": false }
+    ]
+  },
+  {
+    "question": "Which OSI layer would a router primarily operate at?",
+    "answers": [
+      { "text": "Physical", "correct": false },
+      { "text": "Data Link", "correct": false },
+      { "text": "Network", "correct": true },
+      { "text": "Transport", "correct": false },
+      { "text": "Application", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following best describes the primary role of the Session Layer?",
+    "answers": [
+      { "text": "Ensuring reliable transmission", "correct": false },
+      { "text": "Establishing, maintaining, and terminating sessions", "correct": true },
+      { "text": "Translating data formats", "correct": false },
+      { "text": "Handling end-to-end communication", "correct": false },
+      { "text": "Managing bitstream transmission", "correct": false }
+    ]
+  },
+  {
+    "question": "A network technician observes high packet loss between two devices. Which layer should they troubleshoot first?",
+    "answers": [
+      { "text": "Physical", "correct": true },
+      { "text": "Data Link", "correct": false },
+      { "text": "Network", "correct": false },
+      { "text": "Transport", "correct": false },
+      { "text": "Application", "correct": false }
+    ]
+  },
+  {
+    "question": "An employee reports that their internet browser cannot load pages but can still ping other devices. Which OSI layer is likely causing the issue?",
+    "answers": [
+      { "text": "Physical", "correct": false },
+      { "text": "Data Link", "correct": false },
+      { "text": "Network", "correct": false },
+      { "text": "Application", "correct": true },
+      { "text": "Presentation", "correct": false }
+    ]
+  },
+  {
+    "question": "A network switch is configured to forward frames based on MAC addresses. At which layer does this function occur?",
+    "answers": [
+      { "text": "Physical", "correct": false },
+      { "text": "Data Link", "correct": true },
+      { "text": "Network", "correct": false },
+      { "text": "Transport", "correct": false },
+      { "text": "Application", "correct": false }
+    ]
+  },
+  {
+    "question": "A developer needs to implement data encryption in an application. Which OSI layer would their efforts align with?",
+    "answers": [
+      { "text": "Physical", "correct": false },
+      { "text": "Data Link", "correct": false },
+      { "text": "Network", "correct": false },
+      { "text": "Presentation", "correct": true },
+      { "text": "Transport", "correct": false }
+    ]
+  },
+  {
+    "question": "An application cannot communicate because the session keeps timing out. Which layer of the OSI Model is most likely at fault?",
+    "answers": [
+      { "text": "Physical", "correct": false },
+      { "text": "Data Link", "correct": false },
+      { "text": "Session", "correct": true },
+      { "text": "Transport", "correct": false },
+      { "text": "Network", "correct": false }
+    ]
+  },
+  {
+    "question": "A packet is dropped during routing due to an unreachable destination. Which layer handles this situation?",
+    "answers": [
+      { "text": "Physical", "correct": false },
+      { "text": "Data Link", "correct": false },
+      { "text": "Network", "correct": true },
+      { "text": "Transport", "correct": false },
+      { "text": "Session", "correct": false }
+    ]
+  },
+  {
+    "question": "A technician is troubleshooting a Wi-Fi connection issue. At which OSI layer should they start?",
+    "answers": [
+      { "text": "Physical", "correct": true },
+      { "text": "Data Link", "correct": false },
+      { "text": "Network", "correct": false },
+      { "text": "Transport", "correct": false },
+      { "text": "Session", "correct": false }
+    ]
+  },
+  {
+    "question": "A client device is unable to access a server due to incorrect IP configuration. Which layer of the OSI Model is responsible?",
+    "answers": [
+      { "text": "Physical", "correct": false },
+      { "text": "Data Link", "correct": false },
+      { "text": "Network", "correct": true },
+      { "text": "Transport", "correct": false },
+      { "text": "Application", "correct": false }
+    ]
+  },
+  {
+    "question": "A video streaming application is buffering due to unreliable packet delivery. Which OSI layer should be analyzed?",
+    "answers": [
+      { "text": "Physical", "correct": false },
+      { "text": "Data Link", "correct": false },
+      { "text": "Network", "correct": false },
+      { "text": "Transport", "correct": true },
+      { "text": "Application", "correct": false }
+    ]
+  },
+  {
+    "question": "When testing encryption mechanisms, which layer's functionality is being evaluated?",
+    "answers": [
+      { "text": "Physical", "correct": false },
+      { "text": "Data Link", "correct": false },
+      { "text": "Network", "correct": false },
+      { "text": "Presentation", "correct": true },
+      { "text": "Session", "correct": false }
+    ]
   }
 ];
