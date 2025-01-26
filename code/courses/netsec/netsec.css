@@ -1,0 +1,520 @@
+/* =======================================
+   Course Header
+======================================== */
+.course-header {
+  background-image: url('/images/networking-bg.webp'); /* Add a relevant background image */
+  background-size: cover;
+  background-position: center;
+  color: #00ff00; /* Neon green color */
+  text-align: center;
+  padding: 4rem 1rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.course-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+  z-index: 1;
+}
+
+.course-header h1 {
+  font-size: 3rem; /* Increase the font size for emphasis */
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Neon glow effect */
+  position: relative;
+  z-index: 2; /* Ensure text appears above the overlay */
+  margin-bottom: 1rem;
+}
+
+.course-header p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+.course-header .cta {
+  margin-top: 1.5rem;
+}
+
+.course-header .cta a {
+  display: inline-block;
+  background-color: #00ff00;
+  color: black;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px #00ff00;
+}
+
+.course-header .cta a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #00ff00;
+}
+
+
+/* =======================================
+   Units Section
+======================================== */
+.units {
+  flex: 0 0 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.units .unit {
+  background-size: cover; /* Ensures the image covers the entire card */
+  background-position: center; /* Keeps the image centered */
+  background-repeat: no-repeat; /* Avoids repeating the image */
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(59, 141, 39, 0.658);
+  position: relative;
+  text-align: left;
+  height: 300px; /* Fixed height for consistency */
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex; /* Makes content positioning easier */
+  flex-direction: column;
+  justify-content: space-between; /* Aligns content at the top and bottom */
+}
+
+.units .unit a {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8); /* Enhances legibility over the background */
+  z-index: 2; /* Keeps it above the background */
+  position: relative;
+}
+
+.units .unit a:hover {
+  color: #00ff00; /* Highlight effect on hover */
+}
+
+.units .unit::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for text contrast */
+  border-radius: 8px; /* Matches the card border radius */
+  z-index: 1; /* Places it behind the text content */
+}
+
+.units .unit a, 
+.units .unit .mastery, 
+.units .unit-content {
+  position: relative;
+  z-index: 2; /* Ensures content is above the overlay */
+}
+
+
+.units .unit .mastery {
+  font-size: 0.9rem;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  position: relative;
+  margin-top: auto; /* Pushes mastery progress to the bottom */
+}
+
+.units .unit h3 {
+  font-size: 1.5rem;
+  color: #00ff00;
+  margin-bottom: 1rem;
+}
+
+.units .unit ul {
+  list-style: none;
+  padding: 0;
+}
+
+.units .unit ul li {
+  font-weight: normal;
+  margin-bottom: 0.8rem;
+}
+
+.units .unit ul li a {
+  font-weight: normal;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.units .unit ul li a:hover {
+  font-weight: normal;
+  color: #00ff00;
+}
+
+#unit1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                    url('/images/networking-unit1-bg.webp');
+}
+
+#unit2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url('/images/networking-unit2-bg.webp');
+}
+
+.units .unit.unit3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url('/images/networking-unit3-bg.webp');
+}
+
+.units .unit.unit4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url('/images/networking-unit4-bg.webp');
+}
+
+.units .unit.unit5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url('/images/networking-unit5-bg.webp');
+}
+
+.units .unit.unit6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url('/images/networking-unit6-bg.webp');
+}
+
+.units .unit.unit7 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url('/images/networking-unit7-bg.webp');
+}
+
+/* Add more for additional units */
+
+/* Unit Card */
+.unit-card {
+  background-color: #222;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  color: #00ff00;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.unit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+/* Unit Header */
+.unit-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.unit-container {
+  display: flex;
+  flex-direction: column; /* Ensure items stack vertically */
+  gap: 1.5rem; /* Add spacing between the cards */
+}
+
+.unit-card {
+  width: 100%; /* Ensure each card spans the full width of its container */
+  background-color: #222;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.unit-header h2 {
+  margin: 0;
+  color: #00ff00;
+}
+
+.mastery p {
+  margin: 0.5rem 0;
+  color: #00ff00;
+}
+
+.unit-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.unit-content li {
+  margin: 0.5rem 0;
+}
+
+.unit-content a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+.unit-content a:hover {
+  text-decoration: underline;
+}
+
+/* Tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #333;
+  color: #00ff00;
+  text-align: left;
+  border-radius: 8px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+/* Unit Content */
+.unit-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.unit-content li {
+  margin: 0.5rem 0;
+}
+
+.unit-content li a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+.unit-content li a:hover {
+  color: #fff;
+}
+
+/* QUIZ CARD: Table-like Layout */
+.quiz-card {
+  background-color: #222; /* Dark background for card */
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 10px;
+  color: #00ff00; /* Neon green text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for card */
+}
+
+/* Table-like Layout */
+.quiz-table {
+  display: grid;
+  grid-template-columns: 2fr 1px 1fr; /* Left, Divider, Right */
+  align-items: center;
+  gap: 20px; /* Space between sections */
+}
+
+/* LEFT SIDE: Quiz Info */
+.quiz-info {
+  font-size: 1rem;
+}
+
+.quiz-info p {
+  margin: 5px 0; /* Adds spacing between quiz info lines */
+}
+
+/* DIVIDER: Vertical Divider */
+.quiz-divider {
+  width: 1px;
+  background-color: #00ff00; /* Neon green divider */
+  height: 100%; /* Stretch full height */
+  align-self: stretch; /* Ensures the divider matches height */
+}
+
+/* RIGHT SIDE: Quiz Score */
+.quiz-score {
+  text-align: center; /* Center-align the score */
+}
+
+.quiz-score .score-value {
+  font-size: 1.8rem; /* Larger font size for score */
+  font-weight: bold;
+}
+
+.quiz-score .score-label {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* START QUIZ BUTTON */
+.quiz-start {
+  text-align: center;
+  margin-top: 15px; /* Adds spacing above the button */
+}
+
+.quiz-start button {
+  background-color: #00ff00; /* Neon green button */
+  color: #000; /* Black text on the button */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.quiz-start button:hover {
+  background-color: #008f00; /* Darker green on hover */
+}
+
+
+
+/* Start Button */
+.quiz-start {
+  flex: 1;
+  text-align: center;
+}
+
+.quiz-start button {
+  background-color: #00ff00;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.quiz-start button:hover {
+  background-color: #008f00;
+}
+
+
+/* Sidebar Styling */
+.sidebar {
+  background-color: #111; /* Dark background for contrast */
+  color: #00ff00; /* Neon green text color */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Progress Bar Container */
+.progress-bar {
+  margin-bottom: 1.5rem;
+}
+
+.progress-bar h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Progress Bar */
+.progress {
+  height: 1rem; /* Adjust height of the progress bar */
+  background-color: #333; /* Background color for the empty portion */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress-bar .progress-bar {
+  height: 100%;
+  background-color: #00ff00; /* Neon green for filled progress */
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  font-weight: bold;
+  color: black; /* Text color for contrast */
+}
+
+/* Additional Styling for Points Earned */
+.sidebar p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #fff; /* White text for contrast with the dark background */
+}
+
+.sidebar p strong {
+  color: #00ff00; /* Highlighted in neon green */
+}
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+/* Styling for Tooltip Icon */
+.tooltip img {
+  width: 16px; /* Adjust to make icon smaller or bigger */
+  height: auto; /* Maintain aspect ratio */
+  vertical-align: middle; /* Align with text */
+  cursor: pointer; /* Make it look clickable */
+}
+
+/* Tooltip Text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 50%;
+  margin-left: -125px; /* Centers the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}

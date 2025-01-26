@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 5: Routing Concepts</title>
+  <link rel="stylesheet" href="../../../styles.css"> <!-- Global Styles -->
+  <link rel="stylesheet" href="../courses.css"> <!-- Course Styles -->
+
+  <!-- Standard favicon -->
+  <link rel="icon" type="image/x-icon" href="../../../CybernettersLogoNoBg.png">
+
+  <!-- High-resolution displays -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../CybernettersLogoNoBg.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../CybernettersLogoNoBg.png">
+
+
+  <style>
+    /* Reset for box-sizing */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    /* General styles */
+    /* body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #111;
+      color: #00ff00;
+      height: 100vh;
+    } */
+
+    /* Container Layout */
+    .layout {
+      display: flex;
+      flex-direction: row; /* Sidebar on the left */
+      width: 100%;
+      height: calc(100vh - 60px); /* Adjust height as needed */
+      gap: 1rem; /* Space between sidebar and main content */
+    }
+
+
+    /* Sidebar */
+    .sidebar {
+      flex: 0 0 20%; /* Sidebar takes 20% of the space */
+      background-color: #222;
+      padding: 1rem;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+      overflow-y: auto;
+    }
+
+
+    .sidebar h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      color: #00ff00;
+      text-decoration: none;
+      background-color: #333;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .sidebar a:hover {
+      background-color: #444;
+    }
+
+    /* Main Content (70%) */
+    .main-content {
+      flex: 1; /* Let main content take the remaining space */
+      padding: 2rem;
+      margin: 0;
+      overflow-y: auto;
+      box-sizing: border-box; /* Include padding in width */
+    }
+
+    .main-content h1, .main-content h2 {
+      text-align: center;
+    }
+
+    /* Content Row */
+    .content-row {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .content-row > div {
+      flex: 1; /* Equal width for Learn and Practice sections */
+    }
+
+    /* Card Header */
+    .card-header {
+      background-color: #333; /* Darker background for header */
+      padding: 1rem;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+
+    .card-header h2 {
+      color: #00ff00;
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    .card-header p {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    /* Content Row */
+    .content-row {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    }
+
+    /* Learn and Practice Sections */
+    .learn, .practice {
+      flex: 1;
+      background-color: #333; /* Subcard background */
+      border: 2px solid #00ff00; /* Optional border for subcards */
+      border-radius: 6px;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .learn h3, .practice h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #00ff00;
+    }
+
+    .learn ul, .practice ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .learn ul li, .practice ul li {
+      margin-bottom: 1rem;
+    }
+
+    /* Video Thumbnails */
+    .video-thumbnail {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.5rem;
+      background-color: #444; /* Slightly lighter than the card */
+      border-radius: 4px;
+      transition: transform 0.2s ease;
+    }
+
+    .video-thumbnail:hover {
+      transform: scale(1.05);
+    }
+
+    .video-thumbnail img {
+      width: 80px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .video-thumbnail p {
+      color: #00ff00;
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    /* .layout, .sidebar, .main-content, .topic-container {
+    border: 1px dashed red;  For debugging only 
+    } */
+
+
+    /* Practice Section */
+    .quiz {
+      background-color: #333;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      display: grid;
+      grid-template-columns: 2fr 1fr; /* Two columns: quiz details and score */
+      gap: 1rem; /* Space between the columns */
+      max-width: 70%; /* Restrict the quiz card width to match the main content */
+      margin-left: auto; /* Center the card horizontally */
+      margin-right: auto; /* Center the card horizontally */
+    }
+
+    .quiz .quiz-table {
+      text-align: left;
+    }
+
+    .quiz .quiz-score {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      border-left: 2px solid #00ff00; /* Divider between the two columns */
+      padding-left: 1rem;
+    }
+
+    .quiz .quiz-score-value {
+      font-size: 3rem;
+      color: #00ff00;
+      text-align: center;
+    }
+
+    .quiz p {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      color: #00ff00;
+    }
+
+    .quiz button {
+      background-color: #00ff00;
+      color: #000;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .quiz button:hover {
+      background-color: #008f00;
+    }
+
+    /* Responsive Design for smaller screens */
+    @media (max-width: 768px) {
+      .layout {
+        flex-direction: column; /* Stack sidebar and content */
+      }
+
+      .sidebar {
+        flex: 0 0 auto; /* Sidebar takes full width */
+        width: 100%;
+      }
+
+      .main-content {
+        flex: 1; /* Adjust main content to take full width */
+      }
+
+      .topic-card {
+        flex: 1 1 100%; /* Each card takes full width */
+      }
+    }
+
+  </style>
+</head>
+
+<!-- BODY -->
+<body>
+  <!-- HEADER SECTION -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <h1 class="logo">
+          <a href="../../../index.html">
+            <img src="/images/cybernetters-logo.webp" alt="CyberNetters Logo">
+          </a>
+        </h1>
+        <nav class="nav">
+          <ul id="menu" class="button-nav">
+            <li><a href="../../../index.html" class="nav-link">Home</a></li>
+            <li><a href="/code/about/about.html" class="nav-link">About</a></li>
+            <li><a href="/code/services/services.html" class="nav-link">Services</a></li>
+            <li><a href="/code/resources/resources.html" class="nav-link">Resources</a></li>
+            <li class="dropdown">
+              <a href="/code/courses/courses.html" class="dropbtn nav-link">Courses</a>
+              <div class="dropdown-content">
+                <a href="/code/courses/networking1/networking1.html">Networking I</a>
+                <a href="/code/courses/sysadmin/sysadmin.html">System Administration</a>
+              </div>
+            </li>
+            <li><a href="/code/resources/contact.html" class="nav-link">Contact</a></li>
+            <li><a href="/code/auth/sign-in.html" class="nav-link">Sign In</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- LAYOUT CONTAINER -->
+  <div class="layout">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <div class="course-home">
+        <a href="/code/courses/courses.html">← Course Home</a>
+      </div>
+      <h2>Units</h2>
+      <ul>
+        <li><a href="unit1.html">Unit 1: Networking Foundations</a></li>
+        <li><a href="unit2.html">Unit 2: Data Link Layer</a></li>
+        <li><a href="unit3.html">Unit 3: IP Addressing</a></li>
+        <li><a href="unit4.html">Unit 4: Network Services</a></li>
+        <li><a href="unit5.html">Unit 5: Routing Concepts</a></li>
+        <li><a href="unit6.html">Unit 6: Access Control</a></li>
+      </ul>
+    </nav>
+
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- Course Path -->
+    <div class="course-path">
+      <div class="course-path-container">
+        <a href="/code/courses/courses.html" class="breadcrumb">Course Home</a>
+        <span class="separator">></span>
+        <span class="current-page">Unit 5: Routing Concepts</span>
+      </div>
+    </div>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <h2>Unit 5: Routing Concepts</h2>
+    <div class="topic-container">
+        <!-- Routing -->
+        <div class="topic-card">
+          <div class="card-header">
+            <h2>Routing</h2>
+            <p>Introduction to the principles of routing and how data is directed across networks.</p>
+          </div>
+          <div class="content-row">
+            <div class="learn">
+              <h3>Learn</h3>
+              <ul>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=nRltqZ-bq3U" target="_blank" class="video-thumbnail">
+                    <img src="../../../images/makefg.webp" alt="Routing">
+                    <p>Routing</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="practice">
+              <h3>Practice</h3>
+              <div class="quiz">
+                <div class="quiz-table">
+                  <p>Up next for you:</p>
+                  <p><strong>Quiz: Routing</strong></p>
+                  <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/routing/landing.html'">Start</button>
+                </div>
+                <div class="quiz-score">
+                  <div class="quiz-score-value" id="quiz-1-score">
+                    0
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Static Routing -->
+        <div class="topic-card">
+          <div class="card-header">
+            <h2>Static Routing</h2>
+            <p>Learn about manually configured routing paths and their applications in small networks.</p>
+          </div>
+          <div class="content-row">
+            <div class="learn">
+              <h3>Learn</h3>
+              <ul>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=nRltqZ-bq3U" target="_blank" class="video-thumbnail">
+                    <img src="../../../images/makefg.webp" alt="Static Routing">
+                    <p>Static Routing</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="practice">
+              <h3>Practice</h3>
+              <div class="quiz">
+                <div class="quiz-table">
+                  <p>Up next for you:</p>
+                  <p><strong>Quiz: Static Routing</strong></p>
+                  <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/static-routing/landing.html'">Start</button>
+                </div>
+                <div class="quiz-score">
+                  <div class="quiz-score-value" id="quiz-1-score">
+                    0
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Routing -->
+        <div class="topic-card">
+          <div class="card-header">
+            <h2>Dynamic Routing</h2>
+            <p>Overview of automated routing protocols that adapt to network changes.</p>
+          </div>
+          <div class="content-row">
+            <div class="learn">
+              <h3>Learn</h3>
+              <ul>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=nRltqZ-bq3U" target="_blank" class="video-thumbnail">
+                    <img src="../../../images/makefg.webp" alt="Dynamic Routing">
+                    <p>Dynamic Routing</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="practice">
+              <h3>Practice</h3>
+              <div class="quiz">
+                <div class="quiz-table">
+                  <p>Up next for you:</p>
+                  <p><strong>Quiz: Dynamic Routing</strong></p>
+                  <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/dynamic-routing/landing.html'">Start</button>
+                </div>
+                <div class="quiz-score">
+                  <div class="quiz-score-value" id="quiz-1-score">
+                    0
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Routing Information Protocol -->
+        <div class="topic-card">
+          <div class="card-header">
+            <h2>RIP</h2>
+            <p>Explore the Routing Information Protocol (RIP), an early dynamic routing protocol for simple network setups.
+
+            </p>
+          </div>
+          <div class="content-row">
+            <div class="learn">
+              <h3>Learn</h3>
+              <ul>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=nRltqZ-bq3U" target="_blank" class="video-thumbnail">
+                    <img src="../../../images/makefg.webp" alt="Routing Information Protocol">
+                    <p>Routing Information Protocol</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="practice">
+              <h3>Practice</h3>
+              <div class="quiz">
+                <div class="quiz-table">
+                  <p>Up next for you:</p>
+                  <p><strong>Quiz: RIP</strong></p>
+                  <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/rip/landing.html'">Start</button>
+                </div>
+                <div class="quiz-score">
+                  <div class="quiz-score-value" id="quiz-1-score">
+                    0
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OSPF -->
+        <div class="topic-card">
+          <div class="card-header">
+            <h2>OSPF</h2>
+            <p>Understand Open Shortest Path First (OSPF), a scalable and efficient dynamic routing protocol used in complex networks.</p>
+          </div>
+          <div class="content-row">
+            <div class="learn">
+              <h3>Learn</h3>
+              <ul>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=nRltqZ-bq3U" target="_blank" class="video-thumbnail">
+                    <img src="../../../images/makefg.webp" alt="OSPF">
+                    <p>OSPF</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="practice">
+              <h3>Practice</h3>
+              <div class="quiz">
+                <div class="quiz-table">
+                  <p>Up next for you:</p>
+                  <p><strong>Quiz: OSPF</strong></p>
+                  <button onclick="window.location.href='https://cybernetters.net/code/courses/quizzes/ospf/landing.html'">Start</button>
+                </div>
+                <div class="quiz-score">
+                  <div class="quiz-score-value" id="quiz-1-score">
+                    0
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER SECTION -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 CyberNetters. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
