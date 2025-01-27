@@ -600,5 +600,126 @@ const questionBank = [
       { "text": "Presentation", "correct": true },
       { "text": "Session", "correct": false }
     ]
+  },
+  {
+    "question": "The Transport Layer ensures that data is delivered in sequence and without errors.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The Physical Layer is responsible for error detection and correction.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Encapsulation begins at the Application Layer in the OSI Model.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The Session Layer manages encryption and compression of data.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "The Data Link Layer is responsible for assigning logical IP addresses.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Network Layer protocols include IP and IPX.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The Presentation Layer is responsible for data syntax and structure.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The Application Layer interfaces directly with the user’s application software.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The OSI Model supports open communication between multi-vendor environments.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The Transport Layer is involved in session establishment between hosts.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+
+  {
+    "question": "A packet is being transmitted across a router. At which OSI layer is this activity taking place?",
+    "answers": [
+      { "text": "Data Link", "correct": false },
+      { "text": "Network", "correct": true },
+      { "text": "Transport", "correct": false },
+      { "text": "Session", "correct": false },
+      { "text": "Application", "correct": false }
+    ]
+  },
+  {
+    "question": "During troubleshooting, a technician notices that packets are being transmitted but are not reaching the intended application. Which layer should they investigate?",
+    "answers": [
+      { "text": "Physical", "correct": false },
+      { "text": "Data Link", "correct": false },
+      { "text": "Network", "correct": false },
+      { "text": "Application", "correct": true },
+      { "text": "Transport", "correct": false }
+    ]
+  },
+  {
+    "question": "A user experiences repeated disconnections during a video call. Which OSI layer is responsible for maintaining a stable connection?",
+    "answers": [
+      { "text": "Physical", "correct": false },
+      { "text": "Data Link", "correct": false },
+      { "text": "Session", "correct": true },
+      { "text": "Transport", "correct": false },
+      { "text": "Presentation", "correct": false }
+    ]
+  },
+  {
+    "question": "A device is sending frames but cannot access the network medium due to a collision. Which layer would be responsible for resolving this?",
+    "answers": [
+      { "text": "Physical", "correct": false },
+      { "text": "Data Link", "correct": true },
+      { "text": "Network", "correct": false },
+      { "text": "Transport", "correct": false },
+      { "text": "Session", "correct": false }
+    ]
+  },
+  {
+    "question": "An IT administrator is analyzing routing tables to ensure proper network traffic flow. Which OSI layer’s protocols are most relevant for this task?",
+    "answers": [
+      { "text": "Physical", "correct": false },
+      { "text": "Data Link", "correct": false },
+      { "text": "Network", "correct": true },
+      { "text": "Transport", "correct": false },
+      { "text": "Application", "correct": false }
+    ]
   }
 ];

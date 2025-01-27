@@ -398,5 +398,5 @@ const questionBank = [
       { "text": "Require authentication for UDP sessions", "correct": false },
       { "text": "None of the above", "correct": false }
     ]
-  }
+  },
 ];
