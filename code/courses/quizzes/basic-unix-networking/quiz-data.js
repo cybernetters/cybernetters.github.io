@@ -1,412 +1,412 @@
 const questionBank = [
   {
-    "question": "Which UNIX/Linux printing approach has become most prevalent?",
+    "question": "Which command is traditionally used to configure network interfaces on UNIX systems?",
     "answers": [
-      { "text": "BSD Style Printing", "correct": false },
-      { "text": "SysV Style Printing", "correct": false },
-      { "text": "CUPS (Common UNIX Printing System)", "correct": true },
-      { "text": "None of the above", "correct": false }
+      { "text": "ip", "correct": false },
+      { "text": "ifconfig", "correct": true },
+      { "text": "netstat", "correct": false },
+      { "text": "route", "correct": false }
     ]
   },
   {
-    "question": "In CUPS server configuration, which file is used to define printers and limit access?",
+    "question": "Which option in the ifconfig command is used to bring an interface up?",
     "answers": [
-      { "text": "/etc/cups/client.conf", "correct": false },
-      { "text": "/etc/cups/cupsd.conf", "correct": true },
-      { "text": "/etc/printcap", "correct": false },
-      { "text": "/etc/cups/cups.conf", "correct": false }
+      { "text": "down", "correct": false },
+      { "text": "start", "correct": false },
+      { "text": "up", "correct": true },
+      { "text": "enable", "correct": false }
     ]
   },
   {
-    "question": "Which of the following sets of commands does CUPS provide its own versions of?",
+    "question": "What parameter does the ifconfig command use to specify an IP address and netmask?",
     "answers": [
-      { "text": "lp, lpr, lprm, lpq", "correct": true },
-      { "text": "lpd, lpc, lpstat, lpadmin", "correct": false },
-      { "text": "lpr, lpstat, lpd, lpsched", "correct": false },
-      { "text": "lpadmin, lpinfo, lpr, lprm", "correct": false }
+      { "text": "ip/netmask", "correct": false },
+      { "text": "addr mask", "correct": false },
+      { "text": "interface/mask", "correct": false },
+      { "text": "IP address followed by netmask", "correct": true }
     ]
   },
   {
-    "question": "What is the primary purpose of a print spooler in a network printing environment?",
+    "question": "Which command is used to display the routing table on FreeBSD systems?",
     "answers": [
-      { "text": "To convert document formats for printers", "correct": false },
-      { "text": "To collect and schedule print jobs", "correct": true },
-      { "text": "To manage printer driver installations", "correct": false },
-      { "text": "To configure printer hardware settings", "correct": false }
+      { "text": "route", "correct": false },
+      { "text": "netstat –r", "correct": true },
+      { "text": "ip route show", "correct": false },
+      { "text": "ifconfig –r", "correct": false }
     ]
   },
   {
-    "question": "Which command is recommended in a lab environment for creating a new printer with CUPS?",
+    "question": "What is the primary function of the route command in UNIX networking?",
     "answers": [
-      { "text": "lpinfo –m", "correct": false },
-      { "text": "lpadmin –p", "correct": true },
-      { "text": "lpq –a", "correct": false },
-      { "text": "lpr –P", "correct": false }
+      { "text": "To configure network interfaces", "correct": false },
+      { "text": "To display DNS records", "correct": false },
+      { "text": "To add or delete routes in the routing table", "correct": true },
+      { "text": "To flush ARP caches", "correct": false }
     ]
   },
   {
-    "question": "Which URL format is used to access the CUPS web interface?",
+    "question": "Which command is used in newer UNIX systems to add an IP address to an interface?",
     "answers": [
-      { "text": "http://printserver:80", "correct": false },
-      { "text": "http://printserver:631", "correct": true },
-      { "text": "https://printserver:8080", "correct": false },
-      { "text": "ftp://printserver:631", "correct": false }
+      { "text": "ifconfig add", "correct": false },
+      { "text": "ip addr add", "correct": true },
+      { "text": "route add addr", "correct": false },
+      { "text": "netstat -a", "correct": false }
     ]
   },
   {
-    "question": "In UNIX user administration, which file holds the encrypted password and expiration information?",
+    "question": "What does the command “ip addr show dev eth0” do?",
     "answers": [
-      { "text": "/etc/passwd", "correct": false },
-      { "text": "/etc/shadow", "correct": true },
-      { "text": "/etc/login.defs", "correct": false },
-      { "text": "/etc/group", "correct": false }
+      { "text": "Adds an IP address to eth0", "correct": false },
+      { "text": "Deletes an IP address from eth0", "correct": false },
+      { "text": "Displays the IP addresses assigned to eth0", "correct": true },
+      { "text": "Resets the eth0 interface", "correct": false }
     ]
   },
   {
-    "question": "What is the purpose of the pwconv command?",
+    "question": "To remove an IP address from an interface using the ip command, which option is used?",
     "answers": [
-      { "text": "To revert back to using only /etc/passwd", "correct": false },
-      { "text": "To configure the system to use /etc/shadow", "correct": true },
-      { "text": "To convert passwords to plain text", "correct": false },
-      { "text": "To update the /etc/login.defs file", "correct": false }
+      { "text": "ip addr delete", "correct": false },
+      { "text": "ip addr remove", "correct": false },
+      { "text": "ip addr del", "correct": true },
+      { "text": "ip addr clear", "correct": false }
     ]
   },
   {
-    "question": "How many fields does an entry in the /etc/passwd file contain?",
+    "question": "Which command example correctly adds a new route using the older routing method?",
     "answers": [
-      { "text": "5", "correct": false },
-      { "text": "6", "correct": false },
-      { "text": "7", "correct": true },
-      { "text": "8", "correct": false }
+      { "text": "route add default 172.16.5.1", "correct": false },
+      { "text": "route add 192.168.1.2/24 dev eth0", "correct": false },
+      { "text": "route add -net 192.168.0.0/16 192.168.1.1", "correct": true },
+      { "text": "route add -host 127.0.0.1 dev lo", "correct": false }
     ]
   },
   {
-    "question": "Which directory contains the default files copied to every new user’s home directory?",
+    "question": "Which ip command example correctly adds a route for a network?",
     "answers": [
-      { "text": "/etc/default", "correct": false },
-      { "text": "/etc/skel", "correct": true },
-      { "text": "/etc/login.defs", "correct": false },
-      { "text": "/usr/share/skel", "correct": false }
+      { "text": "ip route add 192.168.2.0/24 via 192.168.1.1", "correct": true },
+      { "text": "ip route new 192.168.2.0/24 via 192.168.1.1", "correct": false },
+      { "text": "ip route insert 192.168.2.0/24 via 192.168.1.1", "correct": false },
+      { "text": "ip route make 192.168.2.0/24 via 192.168.1.1", "correct": false }
     ]
   },
   {
-    "question": "Which command is used to create a new user account on a UNIX system?",
+    "question": "Which file in Linux contains the configuration for network interfaces at boot time?",
     "answers": [
-      { "text": "usermod", "correct": false },
-      { "text": "userdel", "correct": false },
-      { "text": "useradd", "correct": true },
-      { "text": "passwd", "correct": false }
+      { "text": "/etc/resolv.conf", "correct": false },
+      { "text": "/etc/sysconfig/network-scripts/ifcfg-eth0", "correct": true },
+      { "text": "/etc/hosts", "correct": false },
+      { "text": "/etc/rc.conf", "correct": false }
     ]
   },
   {
-    "question": "Which command is used to modify an existing user’s account information?",
+    "question": "On BSD systems, which file is used to set interface and routing parameters at boot time?",
     "answers": [
-      { "text": "useradd", "correct": false },
-      { "text": "usermod", "correct": true },
-      { "text": "userdel", "correct": false },
-      { "text": "chage", "correct": false }
+      { "text": "/etc/rc.conf", "correct": true },
+      { "text": "/etc/sysconfig/network", "correct": false },
+      { "text": "/etc/network/interfaces", "correct": false },
+      { "text": "/etc/resolv.conf", "correct": false }
     ]
   },
   {
-    "question": "Which command is used specifically to change a user’s password expiration settings?",
+    "question": "What is the purpose of the /etc/hostname file?",
     "answers": [
-      { "text": "passwd", "correct": false },
-      { "text": "chage", "correct": true },
-      { "text": "usermod", "correct": false },
-      { "text": "chsh", "correct": false }
+      { "text": "To list IP addresses for the system", "correct": false },
+      { "text": "To store the system’s fully qualified domain name", "correct": true },
+      { "text": "To store local hostnames and IP mappings", "correct": false },
+      { "text": "To configure network interface options", "correct": false }
     ]
   },
   {
-    "question": "When a user account is deleted with userdel, what happens to the files previously owned by that user?",
+    "question": "Which file is primarily used to define the DNS name servers on a UNIX system?",
     "answers": [
-      { "text": "They are transferred to the root user", "correct": false },
-      { "text": "They are deleted automatically", "correct": false },
-      { "text": "They become owned by a numeric UID representing the deleted account", "correct": true },
-      { "text": "They are reassigned to the user’s primary group", "correct": false }
+      { "text": "/etc/hosts", "correct": false },
+      { "text": "/etc/nsswitch.conf", "correct": false },
+      { "text": "/etc/resolv.conf", "correct": true },
+      { "text": "/etc/hostname", "correct": false }
     ]
   },
   {
-    "question": "Which file lists all groups and their associated users in UNIX?",
+    "question": "What is the purpose of the /etc/hosts file?",
     "answers": [
-      { "text": "/etc/passwd", "correct": false },
-      { "text": "/etc/shadow", "correct": false },
-      { "text": "/etc/group", "correct": true },
-      { "text": "/etc/login.defs", "correct": false }
+      { "text": "To store the system’s routing information", "correct": false },
+      { "text": "To map hostnames to IP addresses locally", "correct": true },
+      { "text": "To list DNS servers", "correct": false },
+      { "text": "To configure interface parameters", "correct": false }
     ]
   },
   {
-    "question": "Which command allows a user to temporarily change their primary group?",
+    "question": "Which file determines the order of name resolution methods on a UNIX system?",
     "answers": [
-      { "text": "groups", "correct": false },
-      { "text": "newgrp", "correct": true },
-      { "text": "chgrp", "correct": false },
-      { "text": "groupmod", "correct": false }
+      { "text": "/etc/nsswitch.conf", "correct": true },
+      { "text": "/etc/hostname", "correct": false },
+      { "text": "/etc/hosts", "correct": false },
+      { "text": "/etc/resolv.conf", "correct": false }
     ]
   },
   {
-    "question": "What is the main purpose of implementing disk quotas on a UNIX system?",
+    "question": "Which of the following is NOT a step when adding a new machine to a LAN?",
     "answers": [
-      { "text": "To restrict the number of processes a user can run", "correct": false },
-      { "text": "To limit disk space usage per user", "correct": true },
-      { "text": "To enforce file permissions", "correct": false },
-      { "text": "To set password expiration policies", "correct": false }
+      { "text": "Assigning a unique IP address and hostname", "correct": false },
+      { "text": "Configuring network interfaces", "correct": false },
+      { "text": "Setting up default routes", "correct": false },
+      { "text": "Installing a firewall by default", "correct": true }
     ]
   },
   {
-    "question": "In PAM (Pluggable Authentication Modules), which module type handles user authentication?",
+    "question": "Which alternative name resolution method is mentioned in the document?",
     "answers": [
-      { "text": "account", "correct": false },
-      { "text": "session", "correct": false },
-      { "text": "password", "correct": false },
-      { "text": "auth", "correct": true }
+      { "text": "LDAP", "correct": false },
+      { "text": "NIS/NIS+", "correct": true },
+      { "text": "RADIUS", "correct": false },
+      { "text": "Kerberos", "correct": false }
     ]
   },
   {
-    "question": "In a PAM configuration one-liner, what does the \"control-flag\" specify?",
+    "question": "Which command is used to flush the routing table using the ip command?",
     "answers": [
-      { "text": "The module path", "correct": false },
-      { "text": "The level of enforcement for the module", "correct": true },
-      { "text": "The module’s arguments", "correct": false },
-      { "text": "The module type", "correct": false }
+      { "text": "ip route flush", "correct": true },
+      { "text": "ip route delete all", "correct": false },
+      { "text": "ip route clear", "correct": false },
+      { "text": "ip route purge", "correct": false }
     ]
   },
   {
-    "question": "On a CentOS system, to enforce password complexity (such as minimum length and mixed case), which file is typically modified?",
+    "question": "What is the first step in troubleshooting a network connectivity issue, as suggested in the document?",
     "answers": [
-      { "text": "/etc/passwd", "correct": false },
-      { "text": "/etc/shadow", "correct": false },
-      { "text": "/etc/login.defs", "correct": false },
-      { "text": "/etc/pam.d/system-auth", "correct": true }
+      { "text": "Check if the DNS server is configured", "correct": false },
+      { "text": "Verify physical connectivity and link lights", "correct": true },
+      { "text": "Flush the ARP table", "correct": false },
+      { "text": "Restart the network service", "correct": false }
     ]
   },
   {
-    "question": "BSD Style Printing originated in BSD and uses LPD or LPR printing.",
+    "question": "Adding a new machine to a LAN requires assigning a unique IP address and hostname.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "SysV Style Printing is widely used in modern UNIX systems.",
+    "question": "The ifconfig command can be used to set an interface’s MTU value.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Using the route command, you can only add routes; you cannot delete routes.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "CUPS stands for Common UNIX Printing System and has become the de facto printing standard.",
+    "question": "The ip command is a newer method for configuring network interfaces and routes compared to ifconfig and route.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "The CUPS web interface is accessed via a non-standard TCP port, typically 631.",
-    "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
-    ]
-  },
-  {
-    "question": "The file /etc/cups/cupsd.conf is used to configure the CUPS server settings, including printer definitions and access limits.",
-    "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
-    ]
-  },
-  {
-    "question": "CUPS includes its own versions of basic BSD print commands such as lp, lpr, lpq, and lprm to maintain script compatibility.",
-    "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
-    ]
-  },
-  {
-    "question": "A print spooler only collects print jobs and does not perform any scheduling.",
+    "question": "The /etc/sysconfig/network-scripts directory is used on BSD systems to configure network interfaces.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "The /etc/shadow file stores encrypted passwords as well as password expiration details.",
+    "question": "The file /etc/hosts is used to locally store mappings between IP addresses and hostnames.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "The pwunconv command configures the system to use only the /etc/passwd file for authentication.",
+    "question": "The /etc/resolv.conf file contains the DNS server entries that the system uses for name resolution.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "Each entry in the /etc/passwd file consists of 7 fields, including the username, UID, and login shell.",
+    "question": "The ip addr add command requires the subnet mask to be provided in CIDR notation (e.g., /24).",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "The /etc/skel directory contains default configuration files that are copied to new users’ home directories.",
+    "question": "The command “ip route show” displays the current routing table.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "The useradd command is used to create new user accounts on a UNIX system.",
+    "question": "On Linux systems, the default route is typically set in the /etc/sysconfig/network file.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "The userdel command reassigns a deleted user’s files automatically to the administrator’s account.",
+    "question": "The /etc/hostname file stores the system’s IP address.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "The /etc/group file lists group names, their GIDs, and additional user members beyond those defined in /etc/passwd.",
+    "question": "Using the ip command, the “ip route del” command is used to remove an existing route.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "The newgrp command permanently changes a user’s primary group.",
+    "question": "A proper LAN configuration always requires manual configuration of DNS servers.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "Disk quotas can be enabled on a filesystem by modifying the /etc/fstab file to include usrquota and grpquota options.",
+    "question": "NIS/NIS+ was historically used as a centralized name resolution method but is now considered largely obsolete.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "PAM stands for Pluggable Authentication Modules and is used to provide flexible authentication methods.",
+    "question": "The ip command can be used to flush the entire routing table with “ip route flush”.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "The ‘auth’ module type in PAM is responsible for handling session creation tasks.",
+    "question": "Physical connectivity issues are one of the first troubleshooting steps when addressing network problems.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The ifconfig command is only used for assigning IP addresses and cannot be used to control ARP behavior.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "In PAM configuration, if no appropriate module is found, the system defaults to using the ‘other’ module, which denies access.",
+    "question": "On Linux systems, the /etc/nsswitch.conf file determines the order of lookup methods for name resolution.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "On Debian/Ubuntu systems, the default password policies can be found in /etc/pam.d/common-passwd and /etc/login.defs.",
+    "question": "The default configuration files for network settings on Linux include both interface scripts and routing parameters.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "A system administrator needs to add a new printer to a CUPS-managed server. Which command should they use?",
+    "question": "Troubleshooting steps for network issues include checking for proper interface configuration, ARP table entries, and firewall settings.",
     "answers": [
-      { "text": "lpstat", "correct": false },
-      { "text": "lpadmin", "correct": true },
-      { "text": "lpq", "correct": false },
-      { "text": "lprm", "correct": false }
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "To troubleshoot a printing issue where a job is not being transmitted, an administrator should first review which location for log files?",
+    "question": "An administrator needs to assign an IP address of 192.168.1.100 with a subnet mask of 255.255.255.0 to interface eth0 using ifconfig. Which command should they use?",
     "answers": [
-      { "text": "/etc/cups/cupsd.conf", "correct": false },
-      { "text": "/var/log", "correct": true },
-      { "text": "/etc/cups/client.conf", "correct": false },
-      { "text": "/usr/log/print", "correct": false }
+      { "text": "ifconfig eth0 up", "correct": false },
+      { "text": "ifconfig eth0 192.168.1.100 netmask 255.255.255.0", "correct": true },
+      { "text": "ip addr add 192.168.1.100/24 dev eth0", "correct": false },
+      { "text": "route add -net 192.168.1.100 netmask 255.255.255.0 dev eth0", "correct": false }
     ]
   },
   {
-    "question": "A user complains that their password has expired. Which file should an administrator review to adjust the password aging parameters?",
+    "question": "After configuring a new interface using the ip command, which command will display the current IP configuration for eth0?",
     "answers": [
-      { "text": "/etc/passwd", "correct": false },
-      { "text": "/etc/shadow", "correct": true },
-      { "text": "/etc/login.defs", "correct": false },
-      { "text": "/etc/pam.d/system-auth", "correct": false }
+      { "text": "ip addr show dev eth0", "correct": true },
+      { "text": "ifconfig eth0", "correct": false },
+      { "text": "ip route show dev eth0", "correct": false },
+      { "text": "netstat -i eth0", "correct": false }
     ]
   },
   {
-    "question": "If an administrator needs to temporarily disable a user account, which command could be used?",
+    "question": "A technician needs to add a new route to direct traffic destined for the 192.168.2.0/24 network via the gateway 192.168.1.1 using the ip command. Which command is correct?",
     "answers": [
-      { "text": "usermod -L username", "correct": true },
-      { "text": "useradd -d username", "correct": false },
-      { "text": "passwd -u username", "correct": false },
-      { "text": "chage -l username", "correct": false }
+      { "text": "ip route add 192.168.2.0/24 via 192.168.1.1", "correct": true },
+      { "text": "ip route set 192.168.2.0/24 gw 192.168.1.1", "correct": false },
+      { "text": "route add -net 192.168.2.0/24 192.168.1.1", "correct": false },
+      { "text": "ip route new 192.168.2.0/24 via 192.168.1.1", "correct": false }
     ]
   },
   {
-    "question": "When configuring disk quotas on Rocky Linux, which sequence of steps is correct after modifying the /etc/fstab file?",
+    "question": "To remove an existing route for network 192.168.2.0/24 using the ip command, which of the following is the correct command?",
     "answers": [
-      { "text": "Remount the filesystem → Run quotacheck → Use edquota to assign quotas", "correct": true },
-      { "text": "Run edquota → Remount the filesystem → Run quotacheck", "correct": false },
-      { "text": "Run quotacheck → Remount the filesystem → Use edquota", "correct": false },
-      { "text": "Remount the filesystem → Use edquota → Run quotacheck", "correct": false }
+      { "text": "ip route delete 192.168.2.0/24 via 192.168.1.1", "correct": false },
+      { "text": "ip route del 192.168.2.0/24 via 192.168.1.1", "correct": true },
+      { "text": "ip route remove 192.168.2.0/24 via 192.168.1.1", "correct": false },
+      { "text": "ip route flush 192.168.2.0/24 via 192.168.1.1", "correct": false }
     ]
   },
   {
-    "question": "To enforce a password complexity policy on a CentOS system, which file is most likely to be modified?",
+    "question": "If an administrator finds that the default route is missing after reboot on a Linux system, which file should they check to verify persistent routing settings?",
     "answers": [
-      { "text": "/etc/passwd", "correct": false },
-      { "text": "/etc/shadow", "correct": false },
-      { "text": "/etc/login.defs", "correct": false },
-      { "text": "/etc/pam.d/system-auth", "correct": true }
+      { "text": "/etc/hosts", "correct": false },
+      { "text": "/etc/resolv.conf", "correct": false },
+      { "text": "/etc/sysconfig/network", "correct": true },
+      { "text": "/etc/rc.conf", "correct": false }
     ]
   },
   {
-    "question": "An administrator wants to access the CUPS web interface from a browser. Which of the following URLs is correct?",
+    "question": "A system administrator needs to verify that DNS resolution is functioning correctly. Which of the following files should be reviewed for proper DNS server entries?",
     "answers": [
-      { "text": "http://printerserver:631", "correct": true },
-      { "text": "https://printerserver:80", "correct": false },
-      { "text": "http://printerserver:8080", "correct": false },
-      { "text": "ftp://printerserver:631", "correct": false }
+      { "text": "/etc/hosts", "correct": false },
+      { "text": "/etc/nsswitch.conf", "correct": false },
+      { "text": "/etc/resolv.conf", "correct": true },
+      { "text": "/etc/hostname", "correct": false }
     ]
   },
   {
-    "question": "After creating a new user account with the useradd command, which directory’s contents are automatically copied to the new user’s home directory?",
+    "question": "When troubleshooting network connectivity, which of the following is the best first step?",
     "answers": [
-      { "text": "/etc/default", "correct": false },
-      { "text": "/etc/skel", "correct": true },
-      { "text": "/etc/login.defs", "correct": false },
-      { "text": "/usr/share/defaults", "correct": false }
+      { "text": "Flushing the routing table", "correct": false },
+      { "text": "Checking physical connectivity and link lights", "correct": true },
+      { "text": "Editing the /etc/resolv.conf file", "correct": false },
+      { "text": "Restarting the network service", "correct": false }
     ]
   },
   {
-    "question": "If an administrator needs to view the list of groups that a user belongs to, which command should they run?",
+    "question": "After configuring an interface using the ifconfig command, what command can an administrator use to verify that the interface is operational?",
     "answers": [
-      { "text": "groups", "correct": true },
-      { "text": "newgrp", "correct": false },
-      { "text": "chgrp", "correct": false },
-      { "text": "usermod", "correct": false }
+      { "text": "ifconfig –a", "correct": true },
+      { "text": "netstat –i", "correct": false },
+      { "text": "ping 127.0.0.1", "correct": false },
+      { "text": "route –n", "correct": false }
     ]
   },
   {
-    "question": "To check which print jobs are currently pending in the queue on a CUPS-managed printer, which command is most appropriate?",
+    "question": "Which configuration file would an administrator edit on a BSD system to set interface parameters and routing at boot time?",
     "answers": [
-      { "text": "lpq", "correct": true },
-      { "text": "lpr", "correct": false },
-      { "text": "lpadmin", "correct": false },
-      { "text": "lpstat -a", "correct": false }
+      { "text": "/etc/sysconfig/network-scripts/ifcfg-eth0", "correct": false },
+      { "text": "/etc/rc.conf", "correct": true },
+      { "text": "/etc/network/interfaces", "correct": false },
+      { "text": "/etc/resolv.conf", "correct": false }
+    ]
+  },
+  {
+    "question": "A technician needs to verify that the system’s DNS name resolution order is set correctly. Which file should be checked?",
+    "answers": [
+      { "text": "/etc/hosts", "correct": false },
+      { "text": "/etc/nsswitch.conf", "correct": true },
+      { "text": "/etc/resolv.conf", "correct": false },
+      { "text": "/etc/hostname", "correct": false }
     ]
   }
   
