@@ -1158,9 +1158,7 @@ const questionBank = [
       { "text": "Require authentication for UDP sessions", "correct": false },
       { "text": "None of the above", "correct": false }
     ]
-  }
-],
-"TrueFalse": [
+  },
   {
     "question": "UNIX is primarily a command-line only operating system.",
     "answers": [
@@ -1300,9 +1298,7 @@ const questionBank = [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
-  }
-],
-"ApplicationMCQs": [
+  },
   {
     "question": "A user has a file named script.sh that they are unable to execute. Which command will allow the file owner to gain execute permission?",
     "answers": [
