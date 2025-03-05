@@ -1,442 +1,412 @@
 const questionBank = [
   {
-    "question": "What was the first commercial computer introduced in 1952?",
+    "question": "During the boot process, which component is responsible for locating the kernel image on disk, loading it into memory, and starting it?",
     "answers": [
-      { "text": "IBM 701", "correct": true },
-      { "text": "IBM 704", "correct": false },
-      { "text": "UNIX V6", "correct": false },
-      { "text": "Multics", "correct": false },
-      { "text": "FreeBSD", "correct": false }
+      { "text": "BIOS/firmware", "correct": false },
+      { "text": "Boot loader", "correct": true },
+      { "text": "Kernel", "correct": false },
+      { "text": "init process", "correct": false }
     ]
   },
   {
-    "question": "Which operating system is Unix primarily based on?",
+    "question": "Which file is used to configure the legacy GRUB boot loader’s boot order and options?",
     "answers": [
-      { "text": "Windows", "correct": false },
-      { "text": "BSD", "correct": false },
-      { "text": "AT&T Bell Labs UNIX", "correct": true },
-      { "text": "Multics", "correct": false },
-      { "text": "GNU/Linux", "correct": false }
+      { "text": "/boot/grub/grub.cfg", "correct": false },
+      { "text": "/boot/grub/grub.conf", "correct": true },
+      { "text": "/etc/default/grub", "correct": false },
+      { "text": "/etc/grub.conf", "correct": false }
     ]
   },
   {
-    "question": "Which feature was introduced with UNIX System V Release 2 in 1984?",
+    "question": "For GRUB2, administrators typically modify which file before rebuilding the configuration using grub2-mkconfig?",
     "answers": [
-      { "text": "Time-sharing", "correct": false },
-      { "text": "Shared memory", "correct": true },
-      { "text": "64-bit processing", "correct": false },
-      { "text": "Virtualization", "correct": false },
-      { "text": "Thread support", "correct": false }
+      { "text": "/boot/grub/grub.cfg", "correct": false },
+      { "text": "/etc/default/grub", "correct": true },
+      { "text": "/etc/grub2.conf", "correct": false },
+      { "text": "/boot/grub2.cfg", "correct": false }
     ]
   },
   {
-    "question": "Who created the first version of UNIX?",
+    "question": "Which process, having a process ID of 1, is responsible for beginning user space initialization?",
     "answers": [
-      { "text": "Linus Torvalds", "correct": false },
-      { "text": "Andrew Tanenbaum", "correct": false },
-      { "text": "Ken Thompson", "correct": true },
-      { "text": "Bill Joy", "correct": false },
-      { "text": "Dennis Ritchie", "correct": false }
+      { "text": "systemd (or init)", "correct": true },
+      { "text": "grub", "correct": false },
+      { "text": "bios", "correct": false },
+      { "text": "kernel", "correct": false }
     ]
   },
   {
-    "question": "What is the primary philosophy of UNIX?",
+    "question": "In System V init, which runlevel is typically associated with single-user mode?",
     "answers": [
-      { "text": "Maximize system compatibility", "correct": false },
-      { "text": "Write programs that do one thing and do it well", "correct": true },
-      { "text": "Centralize all operations", "correct": false },
-      { "text": "Focus only on graphical interfaces", "correct": false },
-      { "text": "Avoid modular programming", "correct": false }
+      { "text": "0", "correct": false },
+      { "text": "1 (or S)", "correct": true },
+      { "text": "3", "correct": false },
+      { "text": "5", "correct": false }
     ]
   },
   {
-    "question": "What was the main contribution of Bill Joy to UNIX?",
+    "question": "Which feature of systemd differentiates it from traditional SysV init by allowing services to start concurrently?",
     "answers": [
-      { "text": "Developed the Linux kernel", "correct": false },
-      { "text": "Enhanced UNIX at MIT", "correct": false },
-      { "text": "Created Sun Microsystems and SunOS", "correct": true },
-      { "text": "Started the Multics project", "correct": false },
-      { "text": "None of the above", "correct": false }
+      { "text": "Serial execution", "correct": false },
+      { "text": "Parallelization", "correct": true },
+      { "text": "Strict dependency chains", "correct": false },
+      { "text": "Sequential script linking", "correct": false }
     ]
   },
   {
-    "question": "Which UNIX clone served as the base for Linus Torvalds’ Linux kernel?",
+    "question": "What command in systemd is used to display the status of a service (e.g., httpd)?",
     "answers": [
-      { "text": "FreeBSD", "correct": false },
-      { "text": "Minix", "correct": true },
-      { "text": "GNU", "correct": false },
-      { "text": "AT&T UNIX", "correct": false },
-      { "text": "NetBSD", "correct": false }
+      { "text": "service httpd status", "correct": false },
+      { "text": "systemctl status httpd", "correct": true },
+      { "text": "chkconfig httpd status", "correct": false },
+      { "text": "initctl status httpd", "correct": false }
     ]
   },
   {
-    "question": "What was the main reason for UNIX administrators learning Windows NT in 1993?",
+    "question": "In SysV init, what is the purpose of the symbolic links (beginning with S and K) in the rc#.d directories?",
     "answers": [
-      { "text": "Windows NT became open-source", "correct": false },
-      { "text": "To replace UNIX with Windows NT", "correct": false },
-      { "text": "UNIX's market share was declining", "correct": false },
-      { "text": "Windows NT met government security needs", "correct": true },
-      { "text": "UNIX became obsolete", "correct": false }
+      { "text": "To load kernel modules", "correct": false },
+      { "text": "To manage service start-up and shutdown order", "correct": true },
+      { "text": "To configure bootloader settings", "correct": false },
+      { "text": "To update DNS configuration", "correct": false }
     ]
   },
   {
-    "question": "Which of the following Linux distributions is specifically used for testing new features?",
+    "question": "Which of the following best describes the source code distribution method for UNIX software installation?",
     "answers": [
-      { "text": "Debian", "correct": false },
-      { "text": "Ubuntu", "correct": false },
-      { "text": "Fedora", "correct": true },
-      { "text": "CentOS", "correct": false },
-      { "text": "Suse", "correct": false }
+      { "text": "Pre-compiled binary installation", "correct": false },
+      { "text": "Downloading and compiling the source on the target machine", "correct": true },
+      { "text": "Using package managers to resolve dependencies automatically", "correct": false },
+      { "text": "Installing from live CDs only", "correct": false }
     ]
   },
   {
-    "question": "Which organization held the first system administration conference in 1987?",
+    "question": "What is the standard command sequence for compiling software from source?",
     "answers": [
-      { "text": "DARPA", "correct": false },
-      { "text": "USENIX Association", "correct": true },
-      { "text": "Linux Foundation", "correct": false },
-      { "text": "GNU Project", "correct": false },
-      { "text": "SANS Institute", "correct": false }
+      { "text": "./install; make; make clean", "correct": false },
+      { "text": "./configure; make; make install", "correct": true },
+      { "text": "make configure; make; install", "correct": false },
+      { "text": "configure; compile; install", "correct": false }
     ]
   },
   {
-    "question": "Which of these is a duty of a system administrator?",
+    "question": "Which packaging system is commonly used on Red Hat-based Linux distributions?",
     "answers": [
-      { "text": "Writing operating system kernels", "correct": false },
-      { "text": "Managing user access and accounts", "correct": true },
-      { "text": "Designing hardware architecture", "correct": false },
-      { "text": "Creating new programming languages", "correct": false },
-      { "text": "Developing graphical applications", "correct": false }
+      { "text": "dpkg", "correct": false },
+      { "text": "pacman", "correct": false },
+      { "text": "rpm (and yum)", "correct": true },
+      { "text": "pkg", "correct": false }
     ]
   },
   {
-    "question": "What is a key feature of FreeBSD 6.0 introduced in 2005?",
+    "question": "Kernel modules allow new hardware support to be added without what?",
     "answers": [
-      { "text": "Support for cloud computing", "correct": false },
-      { "text": "Multithreaded file systems", "correct": true },
-      { "text": "Expanded time-sharing capabilities", "correct": false },
-      { "text": "64-bit kernel", "correct": false },
-      { "text": "Built-in cloud sharing", "correct": false }
+      { "text": "Recompiling the entire operating system", "correct": true },
+      { "text": "Installing additional drivers", "correct": false },
+      { "text": "Using package managers", "correct": false },
+      { "text": "Restarting the boot loader", "correct": false }
     ]
   },
   {
-    "question": "What year was the GNU Project established?",
+    "question": "Which command is typically used to load a kernel module dynamically on Linux?",
     "answers": [
-      { "text": "1985", "correct": false },
-      { "text": "1990", "correct": false },
-      { "text": "1974", "correct": false },
-      { "text": "1991", "correct": false },
-      { "text": "1983", "correct": true }
+      { "text": "insmod or modprobe", "correct": true },
+      { "text": "lsmod", "correct": false },
+      { "text": "rmmod", "correct": false },
+      { "text": "depmod", "correct": false }
     ]
   },
   {
-    "question": "What made Linux widely successful during its early years?",
+    "question": "A tarball is best described as which of the following?",
     "answers": [
-      { "text": "Proprietary tools and software", "correct": false },
-      { "text": "Backing by Microsoft", "correct": false },
-      { "text": "Strong community support", "correct": true },
-      { "text": "Absence of GNU tools", "correct": false },
-      { "text": "Limited compatibility with UNIX", "correct": false }
+      { "text": "A compressed archive containing multiple files", "correct": true },
+      { "text": "A binary executable file", "correct": false },
+      { "text": "A kernel module package", "correct": false },
+      { "text": "A text configuration file", "correct": false }
     ]
   },
   {
-    "question": "Which Linux distribution is free and derived from RedHat?",
+    "question": "Which component of systemd is responsible for logging system events?",
     "answers": [
-      { "text": "Suse Linux Enterprise", "correct": false },
-      { "text": "CentOS", "correct": true },
-      { "text": "Fedora", "correct": false },
-      { "text": "Ubuntu", "correct": false },
-      { "text": "Debian", "correct": false }
+      { "text": "logind", "correct": false },
+      { "text": "journald", "correct": true },
+      { "text": "networkd", "correct": false },
+      { "text": "cgroups", "correct": false }
     ]
   },
   {
-    "question": "Which UNIX derivative formed the core for MacOS?",
+    "question": "In systemd, what is the purpose of a “target”?",
     "answers": [
-      { "text": "Linux", "correct": false },
-      { "text": "Solaris", "correct": false },
-      { "text": "FreeBSD", "correct": true },
-      { "text": "GNU", "correct": false },
-      { "text": "System V", "correct": false }
+      { "text": "It defines a specific boot loader configuration", "correct": false },
+      { "text": "It represents a group of units that are started together to achieve a particular state", "correct": true },
+      { "text": "It compiles software packages", "correct": false },
+      { "text": "It controls kernel module loading", "correct": false }
     ]
   },
   {
-    "question": "Which OS was first to support multithreading and wireless technology?",
+    "question": "Which file is NOT directly modified by administrators when configuring GRUB2?",
     "answers": [
-      { "text": "FreeBSD 6.0", "correct": true },
-      { "text": "UNIX V6", "correct": false },
-      { "text": "Mac OS X Cheetah", "correct": false },
-      { "text": "System V Release 4", "correct": false },
-      { "text": "Windows NT", "correct": false }
+      { "text": "/etc/default/grub", "correct": false },
+      { "text": "/boot/grub/grub.cfg", "correct": false },
+      { "text": "A file under /etc/default/grub.d", "correct": false },
+      { "text": "/boot/grub/grub.conf", "correct": true }
     ]
   },
   {
-    "question": "What feature is associated with MacOS 10.6 Snow Leopard?",
+    "question": "In systemd, which target is analogous to the traditional multi-user mode (non-graphical)?",
     "answers": [
-      { "text": "Cloud sharing", "correct": false },
-      { "text": "A 64-bit kernel", "correct": true },
-      { "text": "Expanded virtual memory", "correct": false },
-      { "text": "Multithreading", "correct": false },
-      { "text": "Real-time processing", "correct": false }
+      { "text": "graphical.target", "correct": false },
+      { "text": "rescue.target", "correct": false },
+      { "text": "multi-user.target", "correct": true },
+      { "text": "default.target", "correct": false }
     ]
   },
   {
-    "question": "What is the primary goal of the SANS Institute, established in 1990?",
+    "question": "Which target in systemd is used to start a complete graphical environment?",
     "answers": [
-      { "text": "System administration training", "correct": true },
-      { "text": "UNIX development", "correct": false },
-      { "text": "Proprietary software licensing", "correct": false },
-      { "text": "Cloud computing management", "correct": false },
-      { "text": "Networking hardware sales", "correct": false }
+      { "text": "graphical.target", "correct": true },
+      { "text": "multi-user.target", "correct": false },
+      { "text": "network.target", "correct": false },
+      { "text": "local-fs.target", "correct": false }
     ]
   },
   {
-    "question": "What significant trend occurred between 2000 and the present in UNIX/Linux?",
+    "question": "What does the “make install” command do when compiling software from source?",
     "answers": [
-      { "text": "Decline in usage", "correct": false },
-      { "text": "Growth of virtualization and cloud computing", "correct": true },
-      { "text": "Complete dominance of Windows servers", "correct": false },
-      { "text": "End of UNIX development", "correct": false },
-      { "text": "Transition to closed-source software", "correct": false }
+      { "text": "It compiles the source code", "correct": false },
+      { "text": "It installs the compiled binaries and other resources into the system", "correct": true },
+      { "text": "It cleans up temporary files", "correct": false },
+      { "text": "It downloads the source tarball", "correct": false }
     ]
   },
   {
-    "question": "UNIX is based on Multics.",
+    "question": "The BIOS (or firmware) initiates the boot process by loading the boot loader.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "Linus Torvalds created GNU tools.",
+    "question": "GRUB2’s configuration is directly edited in the file /boot/grub/grub.cfg by administrators.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "Time-sharing systems replaced single-purpose computing.",
+    "question": "Systemd replaces traditional SysV init and supports parallel startup of services.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "The UNIX philosophy emphasizes doing multiple things in a single program.",
+    "question": "Runlevels are a concept used by both BSD and System V init systems.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "The first UNIX version was written in 1969.",
+    "question": "The default runlevel for SysV init is specified in the /etc/inittab file.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "FreeBSD is not derived from BSD.",
+    "question": "Using systemctl set-default, administrators can permanently change the default target in systemd.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The command sequence “./configure; make; make install” is used for compiling software from source, not for installing pre-compiled packages.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "RPM-based package managers are used on Debian-based systems.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "Linux gained popularity due to its strong community support.",
+    "question": "Kernel modules run in kernel (ring 0) space, which can pose security risks if malicious.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "USENIX held its first system admin conference in 1987.",
-    "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
-    ]
-  },
-  {
-    "question": "RedHat Enterprise Linux is an open-source software.",
-    "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
-    ]
-  },
-  {
-    "question": "MacOS is built on a Linux kernel.",
+    "question": "Loading a kernel module dynamically with modprobe or insmod requires a system reboot.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "Windows NT replaced UNIX completely in government systems.",
+    "question": "GRUB supports multi-booting, allowing the selection between multiple operating systems at startup.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "System logs managed by systemd can be viewed using the command journalctl -f.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "In SysV init, the symbolic links in the rc#.d directories point to scripts in the /etc/init.d directory.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The chkconfig command is used to manage services under systemd.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "GNU tools are crucial for Linux distributions.",
+    "question": "The boot loader passes configuration information to the kernel during startup.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "Linux servers cost less than Windows servers.",
+    "question": "Compiling software from source requires that a suitable compiler and support libraries are installed on the target system.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "Virtualization has reduced the importance of UNIX/Linux.",
+    "question": "A tarball is typically a compressed archive, often created with gzip or bzip2.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Pre-compiled package managers automatically resolve and install software dependencies.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The init process (or systemd) is always started with process ID 1.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Systemd and SysV init use identical methods for managing services and boot targets.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "The GNU Project began in 1983.",
+    "question": "An administrator wants to permanently change the default boot target to multi-user mode (non-graphical) using systemd. Which command should they use?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "systemctl isolate multi-user.target", "correct": false },
+      { "text": "systemctl set-default multi-user.target", "correct": true },
+      { "text": "telinit 3", "correct": false },
+      { "text": "systemctl enable multi-user.target", "correct": false }
     ]
   },
   {
-    "question": "The Linux kernel was derived from Minix.",
+    "question": "After modifying the /etc/default/grub file, what command must be run to update GRUB2’s configuration?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "grub2-install", "correct": false },
+      { "text": "update-grub", "correct": false },
+      { "text": "grub2-mkconfig -o /boot/grub/grub.cfg", "correct": true },
+      { "text": "grub-mkconfig -o /etc/grub.conf", "correct": false }
     ]
   },
   {
-    "question": "MacOS Snow Leopard introduced 64-bit kernel support.",
+    "question": "A technician is compiling software from source and encounters missing dependency errors. What is the most likely required action?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "Re-download the tarball", "correct": false },
+      { "text": "Install the necessary support libraries and headers", "correct": true },
+      { "text": "Run make clean", "correct": false },
+      { "text": "Reboot the system", "correct": false }
     ]
   },
   {
-    "question": "The SANS Institute focuses on marketing Linux distributions.",
+    "question": "To load a new kernel module dynamically without rebooting, which command should an administrator use?",
     "answers": [
-      { "text": "True", "correct": false },
-      { "text": "False", "correct": true }
+      { "text": "lsmod", "correct": false },
+      { "text": "rmmod", "correct": false },
+      { "text": "modprobe (or insmod)", "correct": true },
+      { "text": "depmod", "correct": false }
     ]
   },
   {
-    "question": "Fedora Linux is used for testing new features.",
+    "question": "When installing pre-compiled software packages on a Red Hat–based system, which package manager is typically used?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "apt", "correct": false },
+      { "text": "rpm (or yum)", "correct": true },
+      { "text": "pacman", "correct": false },
+      { "text": "dpkg", "correct": false }
     ]
   },
   {
-    "question": "Cloud computing is unrelated to UNIX/Linux resurgence.",
+    "question": "An administrator needs to view real-time logs of systemd-managed services. Which command is best suited for this task?",
     "answers": [
-      { "text": "True", "correct": false },
-      { "text": "False", "correct": true }
+      { "text": "tail -f /var/log/messages", "correct": false },
+      { "text": "dmesg", "correct": false },
+      { "text": "journalctl -f", "correct": true },
+      { "text": "systemctl logs", "correct": false }
     ]
   },
   {
-    "question": "Which Linux distribution would you recommend for testing a new server feature?",
+    "question": "A system boots into single-user mode due to misconfiguration. Which target (or runlevel) is the system most likely set to?",
     "answers": [
-      { "text": "Debian", "correct": false },
-      { "text": "Fedora", "correct": true },
-      { "text": "Ubuntu", "correct": false },
-      { "text": "CentOS", "correct": false },
-      { "text": "Suse", "correct": false }
+      { "text": "multi-user.target (runlevel 3)", "correct": false },
+      { "text": "graphical.target (runlevel 5)", "correct": false },
+      { "text": "rescue.target (or runlevel 1)", "correct": true },
+      { "text": "poweroff.target", "correct": false }
     ]
   },
   {
-    "question": "A system admin needs a free alternative to RedHat. Which distribution should they choose?",
+    "question": "After compiling software from source, which command installs the compiled binaries to the appropriate system directories?",
     "answers": [
-      { "text": "OpenSuse", "correct": false },
-      { "text": "Fedora", "correct": false },
-      { "text": "CentOS", "correct": true },
-      { "text": "Debian", "correct": false },
-      { "text": "MacOS", "correct": false }
+      { "text": "make", "correct": false },
+      { "text": "make clean", "correct": false },
+      { "text": "make install", "correct": true },
+      { "text": "./configure", "correct": false }
     ]
   },
   {
-    "question": "To ensure security on a Linux server, which task is most critical?",
+    "question": "To check the current status of the “httpd” service on a systemd-based Linux system, which command should be used?",
     "answers": [
-      { "text": "Upgrading hardware", "correct": false },
-      { "text": "Automating tasks", "correct": false },
-      { "text": "Vigilant monitoring", "correct": true },
-      { "text": "Developing site policies", "correct": false },
-      { "text": "Installing updates", "correct": false }
+      { "text": "service httpd status", "correct": false },
+      { "text": "systemctl status httpd", "correct": true },
+      { "text": "chkconfig httpd on", "correct": false },
+      { "text": "initctl status httpd", "correct": false }
     ]
   },
   {
-    "question": "What would be the first step when installing a new Linux distribution on a server?",
+    "question": "If an administrator needs to temporarily switch the system to rescue mode using systemd, which command is appropriate?",
     "answers": [
-      { "text": "Configure security policies", "correct": false },
-      { "text": "Install and upgrade software", "correct": false },
-      { "text": "Add hardware", "correct": false },
-      { "text": "Configure access control", "correct": false },
-      { "text": "Partition the disk and install the OS", "correct": true }
-    ]
-  },
-  {
-    "question": "Which feature makes FreeBSD a good choice for enterprise multithreading systems?",
-    "answers": [
-      { "text": "Cloud integration", "correct": false },
-      { "text": "Multithreaded file system", "correct": true },
-      { "text": "Enhanced graphics tools", "correct": false },
-      { "text": "Proprietary tools", "correct": false },
-      { "text": "System-wide upgrades", "correct": false }
-    ]
-  },
-  {
-    "question": "A company prioritizing cost-effectiveness should choose which server OS?",
-    "answers": [
-      { "text": "Windows NT", "correct": false },
-      { "text": "FreeBSD", "correct": false },
-      { "text": "MacOS", "correct": false },
-      { "text": "RedHat", "correct": false },
-      { "text": "Debian", "correct": true }
-    ]
-  },
-  {
-    "question": "If you want to experiment with cutting-edge Linux features, which OS is ideal?",
-    "answers": [
-      { "text": "Fedora", "correct": true },
-      { "text": "Ubuntu", "correct": false },
-      { "text": "CentOS", "correct": false },
-      { "text": "OpenSuse", "correct": false },
-      { "text": "MacOS", "correct": false }
-    ]
-  },
-  {
-    "question": "What is the best course of action for troubleshooting a failed server backup?",
-    "answers": [
-      { "text": "Add new hardware", "correct": false },
-      { "text": "Review system logs", "correct": true },
-      { "text": "Reinstall the OS", "correct": false },
-      { "text": "Configure new users", "correct": false },
-      { "text": "Install security patches", "correct": false }
-    ]
-  },
-  {
-    "question": "Which of the following tasks falls under automating system admin processes?",
-    "answers": [
-      { "text": "Controlling user access", "correct": false },
-      { "text": "Configuring backups via scripts", "correct": true },
-      { "text": "Installing Linux distributions", "correct": false },
-      { "text": "Setting up cloud services", "correct": false },
-      { "text": "Writing site policies", "correct": false }
-    ]
-  },
-  {
-    "question": "What task ensures maximum uptime for Linux servers?",
-    "answers": [
-      { "text": "Automating system updates", "correct": false },
-      { "text": "Adding new accounts", "correct": false },
-      { "text": "Removing unnecessary services", "correct": false },
-      { "text": "Maintaining local documentation", "correct": false },
-      { "text": "Monitoring system performance", "correct": true }
+      { "text": "systemctl set-default rescue.target", "correct": false },
+      { "text": "systemctl isolate rescue.target", "correct": true },
+      { "text": "telinit 1", "correct": false },
+      { "text": "systemctl rescue", "correct": false }
     ]
   }
 ];
