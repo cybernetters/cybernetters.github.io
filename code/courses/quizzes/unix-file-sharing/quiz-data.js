@@ -1,412 +1,412 @@
 const questionBank = [
   {
-    "question": "Which command is traditionally used to configure network interfaces on UNIX systems?",
+    "question": "Which level of file sharing includes protocols such as FTP, Secure FTP, and cloud-based sharing?",
     "answers": [
-      { "text": "ip", "correct": false },
-      { "text": "ifconfig", "correct": true },
-      { "text": "netstat", "correct": false },
-      { "text": "route", "correct": false }
+      { "text": "Storage level", "correct": false },
+      { "text": "Filesystem level", "correct": false },
+      { "text": "Application level", "correct": true },
+      { "text": "Kernel level", "correct": false }
     ]
   },
   {
-    "question": "Which option in the ifconfig command is used to bring an interface up?",
+    "question": "Which protocol uses TCP and provides user authentication but transmits data in clear text?",
     "answers": [
-      { "text": "down", "correct": false },
-      { "text": "start", "correct": false },
-      { "text": "up", "correct": true },
-      { "text": "enable", "correct": false }
+      { "text": "TFTP", "correct": false },
+      { "text": "FTP", "correct": true },
+      { "text": "SCP", "correct": false },
+      { "text": "SFTP", "correct": false }
     ]
   },
   {
-    "question": "What parameter does the ifconfig command use to specify an IP address and netmask?",
+    "question": "Which protocol uses UDP and does not provide user authentication?",
     "answers": [
-      { "text": "ip/netmask", "correct": false },
-      { "text": "addr mask", "correct": false },
-      { "text": "interface/mask", "correct": false },
-      { "text": "IP address followed by netmask", "correct": true }
+      { "text": "FTP", "correct": false },
+      { "text": "SCP", "correct": false },
+      { "text": "TFTP", "correct": true },
+      { "text": "SFTP", "correct": false }
     ]
   },
   {
-    "question": "Which command is used to display the routing table on FreeBSD systems?",
+    "question": "Which secure file transfer protocol is part of SSH and supports encrypted traffic?",
     "answers": [
-      { "text": "route", "correct": false },
-      { "text": "netstat –r", "correct": true },
-      { "text": "ip route show", "correct": false },
-      { "text": "ifconfig –r", "correct": false }
+      { "text": "TFTP", "correct": false },
+      { "text": "SCP", "correct": true },
+      { "text": "FTP", "correct": false },
+      { "text": "NFS", "correct": false }
     ]
   },
   {
-    "question": "What is the primary function of the route command in UNIX networking?",
+    "question": "NFS is best described as a method to share which of the following over a network?",
     "answers": [
-      { "text": "To configure network interfaces", "correct": false },
-      { "text": "To display DNS records", "correct": false },
-      { "text": "To add or delete routes in the routing table", "correct": true },
-      { "text": "To flush ARP caches", "correct": false }
+      { "text": "Pre-compiled binaries", "correct": false },
+      { "text": "Entire filesystems", "correct": true },
+      { "text": "Printer queues", "correct": false },
+      { "text": "Virtual machines", "correct": false }
     ]
   },
   {
-    "question": "Which command is used in newer UNIX systems to add an IP address to an interface?",
+    "question": "Which of the following is NOT one of the three versions of NFS discussed?",
     "answers": [
-      { "text": "ifconfig add", "correct": false },
-      { "text": "ip addr add", "correct": true },
-      { "text": "route add addr", "correct": false },
-      { "text": "netstat -a", "correct": false }
+      { "text": "NFSv2", "correct": false },
+      { "text": "NFSv3", "correct": false },
+      { "text": "NFSv4", "correct": false },
+      { "text": "NFSv5", "correct": true }
     ]
   },
   {
-    "question": "What does the command “ip addr show dev eth0” do?",
+    "question": "What is one key improvement introduced with NFSv4 compared to previous versions?",
     "answers": [
-      { "text": "Adds an IP address to eth0", "correct": false },
-      { "text": "Deletes an IP address from eth0", "correct": false },
-      { "text": "Displays the IP addresses assigned to eth0", "correct": true },
-      { "text": "Resets the eth0 interface", "correct": false }
+      { "text": "Stateless operation", "correct": false },
+      { "text": "2 GB file size limit", "correct": false },
+      { "text": "Integrated locking and mount protocols", "correct": true },
+      { "text": "UDP-based transport", "correct": false }
     ]
   },
   {
-    "question": "To remove an IP address from an interface using the ip command, which option is used?",
+    "question": "In NFS authentication and authorization, what remains unchanged when an export is mounted on a client?",
     "answers": [
-      { "text": "ip addr delete", "correct": false },
-      { "text": "ip addr remove", "correct": false },
-      { "text": "ip addr del", "correct": true },
-      { "text": "ip addr clear", "correct": false }
+      { "text": "File permissions are reset", "correct": false },
+      { "text": "The owning UID/GID numbers", "correct": true },
+      { "text": "User passwords are transmitted", "correct": false },
+      { "text": "Network authentication is performed per access", "correct": false }
     ]
   },
   {
-    "question": "Which command example correctly adds a new route using the older routing method?",
+    "question": "For non-UNIX hosts mounting an NFS share, what must be mapped correctly?",
     "answers": [
-      { "text": "route add default 172.16.5.1", "correct": false },
-      { "text": "route add 192.168.1.2/24 dev eth0", "correct": false },
-      { "text": "route add -net 192.168.0.0/16 192.168.1.1", "correct": true },
-      { "text": "route add -host 127.0.0.1 dev lo", "correct": false }
+      { "text": "IP addresses only", "correct": false },
+      { "text": "File type tags", "correct": false },
+      { "text": "UIDs and GIDs", "correct": true },
+      { "text": "Network masks", "correct": false }
     ]
   },
   {
-    "question": "Which ip command example correctly adds a route for a network?",
+    "question": "Which tool converts file formats between UNIX and DOS styles?",
     "answers": [
-      { "text": "ip route add 192.168.2.0/24 via 192.168.1.1", "correct": true },
-      { "text": "ip route new 192.168.2.0/24 via 192.168.1.1", "correct": false },
-      { "text": "ip route insert 192.168.2.0/24 via 192.168.1.1", "correct": false },
-      { "text": "ip route make 192.168.2.0/24 via 192.168.1.1", "correct": false }
+      { "text": "dos2unix", "correct": false },
+      { "text": "unix2dos", "correct": false },
+      { "text": "Both A and B", "correct": true },
+      { "text": "nfsstat", "correct": false }
     ]
   },
   {
-    "question": "Which file in Linux contains the configuration for network interfaces at boot time?",
+    "question": "What is the recommended filename format for best compatibility in NFS environments?",
     "answers": [
-      { "text": "/etc/resolv.conf", "correct": false },
-      { "text": "/etc/sysconfig/network-scripts/ifcfg-eth0", "correct": true },
-      { "text": "/etc/hosts", "correct": false },
-      { "text": "/etc/rc.conf", "correct": false }
+      { "text": "8.3 format with all upper-case", "correct": false },
+      { "text": "8.3 format with all lower-case", "correct": true },
+      { "text": "Long filenames with spaces", "correct": false },
+      { "text": "Filenames with special characters", "correct": false }
     ]
   },
   {
-    "question": "On BSD systems, which file is used to set interface and routing parameters at boot time?",
+    "question": "Which advanced NFS configuration option prevents applications from continuously retrying on an error?",
     "answers": [
-      { "text": "/etc/rc.conf", "correct": true },
-      { "text": "/etc/sysconfig/network", "correct": false },
-      { "text": "/etc/network/interfaces", "correct": false },
-      { "text": "/etc/resolv.conf", "correct": false }
+      { "text": "Hard mounts", "correct": false },
+      { "text": "Soft mounts", "correct": true },
+      { "text": "Timeout settings", "correct": false },
+      { "text": "Retransmission limits", "correct": false }
     ]
   },
   {
-    "question": "What is the purpose of the /etc/hostname file?",
+    "question": "What is the typical default maximum transfer size in an NFS configuration?",
     "answers": [
-      { "text": "To list IP addresses for the system", "correct": false },
-      { "text": "To store the system’s fully qualified domain name", "correct": true },
-      { "text": "To store local hostnames and IP mappings", "correct": false },
-      { "text": "To configure network interface options", "correct": false }
+      { "text": "4096 bytes", "correct": false },
+      { "text": "8192 bytes", "correct": true },
+      { "text": "16384 bytes", "correct": false },
+      { "text": "32768 bytes", "correct": false }
     ]
   },
   {
-    "question": "Which file is primarily used to define the DNS name servers on a UNIX system?",
+    "question": "Which configuration file is used to define which file systems are available for sharing via NFS?",
     "answers": [
-      { "text": "/etc/hosts", "correct": false },
-      { "text": "/etc/nsswitch.conf", "correct": false },
-      { "text": "/etc/resolv.conf", "correct": true },
-      { "text": "/etc/hostname", "correct": false }
+      { "text": "/etc/fstab", "correct": false },
+      { "text": "/etc/exports", "correct": true },
+      { "text": "/etc/nfs.conf", "correct": false },
+      { "text": "/etc/mount.conf", "correct": false }
     ]
   },
   {
-    "question": "What is the purpose of the /etc/hosts file?",
+    "question": "What command is used on the client side to manually mount an NFS export?",
     "answers": [
-      { "text": "To store the system’s routing information", "correct": false },
-      { "text": "To map hostnames to IP addresses locally", "correct": true },
-      { "text": "To list DNS servers", "correct": false },
-      { "text": "To configure interface parameters", "correct": false }
+      { "text": "mount –t nfs Host:Export /LocalMountPoint", "correct": true },
+      { "text": "nfsmount –a Host /Export", "correct": false },
+      { "text": "showmount –e Host", "correct": false },
+      { "text": "rpcinfo –m Host", "correct": false }
     ]
   },
   {
-    "question": "Which file determines the order of name resolution methods on a UNIX system?",
+    "question": "Which tool provides statistics for NFS RPC calls?",
     "answers": [
-      { "text": "/etc/nsswitch.conf", "correct": true },
-      { "text": "/etc/hostname", "correct": false },
-      { "text": "/etc/hosts", "correct": false },
-      { "text": "/etc/resolv.conf", "correct": false }
+      { "text": "nfsping", "correct": false },
+      { "text": "nfsstat", "correct": true },
+      { "text": "rpcinfo", "correct": false },
+      { "text": "showmount", "correct": false }
     ]
   },
   {
-    "question": "Which of the following is NOT a step when adding a new machine to a LAN?",
+    "question": "Which NFS testing tool sends an RPC echo reply packet to test connectivity?",
     "answers": [
-      { "text": "Assigning a unique IP address and hostname", "correct": false },
-      { "text": "Configuring network interfaces", "correct": false },
-      { "text": "Setting up default routes", "correct": false },
-      { "text": "Installing a firewall by default", "correct": true }
+      { "text": "rpcinfo", "correct": false },
+      { "text": "nfsping", "correct": true },
+      { "text": "spray", "correct": false },
+      { "text": "showmount", "correct": false }
     ]
   },
   {
-    "question": "Which alternative name resolution method is mentioned in the document?",
+    "question": "Samba implements file sharing for which type of network environment?",
     "answers": [
-      { "text": "LDAP", "correct": false },
-      { "text": "NIS/NIS+", "correct": true },
-      { "text": "RADIUS", "correct": false },
-      { "text": "Kerberos", "correct": false }
+      { "text": "UNIX-only networks", "correct": false },
+      { "text": "Windows networks", "correct": true },
+      { "text": "iSCSI storage networks", "correct": false },
+      { "text": "Cloud storage systems", "correct": false }
     ]
   },
   {
-    "question": "Which command is used to flush the routing table using the ip command?",
+    "question": "Which daemon in Samba is responsible for NetBIOS name resolution and service announcement?",
     "answers": [
-      { "text": "ip route flush", "correct": true },
-      { "text": "ip route delete all", "correct": false },
-      { "text": "ip route clear", "correct": false },
-      { "text": "ip route purge", "correct": false }
+      { "text": "smbd", "correct": false },
+      { "text": "nmbd", "correct": true },
+      { "text": "cifsd", "correct": false },
+      { "text": "smbutil", "correct": false }
     ]
   },
   {
-    "question": "What is the first step in troubleshooting a network connectivity issue, as suggested in the document?",
+    "question": "In the Samba configuration file (smb.conf), which parameter sets the workgroup?",
     "answers": [
-      { "text": "Check if the DNS server is configured", "correct": false },
-      { "text": "Verify physical connectivity and link lights", "correct": true },
-      { "text": "Flush the ARP table", "correct": false },
-      { "text": "Restart the network service", "correct": false }
+      { "text": "security", "correct": false },
+      { "text": "encrypt passwords", "correct": false },
+      { "text": "workgroup", "correct": true },
+      { "text": "smb passwd file", "correct": false }
     ]
   },
   {
-    "question": "Adding a new machine to a LAN requires assigning a unique IP address and hostname.",
-    "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
-    ]
-  },
-  {
-    "question": "The ifconfig command can be used to set an interface’s MTU value.",
+    "question": "NFS is designed to share an entire UNIX filesystem over the network.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "Using the route command, you can only add routes; you cannot delete routes.",
+    "question": "FTP transmits data securely by encrypting user authentication and file contents.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "The ip command is a newer method for configuring network interfaces and routes compared to ifconfig and route.",
+    "question": "SCP is part of the SSH suite and encrypts all traffic between hosts.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "The /etc/sysconfig/network-scripts directory is used on BSD systems to configure network interfaces.",
+    "question": "NFSv2 uses TCP by default to provide reliable data transport.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "The file /etc/hosts is used to locally store mappings between IP addresses and hostnames.",
+    "question": "NFSv3 supports larger file sizes and can operate over TCP.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "The /etc/resolv.conf file contains the DNS server entries that the system uses for name resolution.",
+    "question": "NFSv4 introduces stateful protocol features for better concurrency control.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "The ip addr add command requires the subnet mask to be provided in CIDR notation (e.g., /24).",
+    "question": "When an NFS export is mounted, the remote file ownership is remapped to the local system’s UID/GID values automatically if they match.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "The command “ip route show” displays the current routing table.",
-    "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
-    ]
-  },
-  {
-    "question": "On Linux systems, the default route is typically set in the /etc/sysconfig/network file.",
-    "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
-    ]
-  },
-  {
-    "question": "The /etc/hostname file stores the system’s IP address.",
+    "question": "File format conversions (like unix2dos) are not necessary when sharing files over NFS.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "Using the ip command, the “ip route del” command is used to remove an existing route.",
+    "question": "Soft mounts in NFS allow applications to be notified of an error rather than continuously retrying a failed request.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "A proper LAN configuration always requires manual configuration of DNS servers.",
+    "question": "The default maximum transfer size for NFS is typically set to 8192 bytes.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Exports for NFS are configured in the /etc/exports file on the server.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "NFS client mounts are always performed manually by the user with the mount command.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "NIS/NIS+ was historically used as a centralized name resolution method but is now considered largely obsolete.",
+    "question": "The nfsping utility tests RPC connectivity by sending echo reply packets.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "The ip command can be used to flush the entire routing table with “ip route flush”.",
+    "question": "The rpcinfo command shows the program numbers and versions of the services running on a remote NFS server.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "Physical connectivity issues are one of the first troubleshooting steps when addressing network problems.",
+    "question": "Samba allows UNIX machines to emulate Windows networking protocols such as SMB/CIFS.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "The ifconfig command is only used for assigning IP addresses and cannot be used to control ARP behavior.",
+    "question": "In Samba, the smbd daemon handles file sharing and user authentication.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Samba configuration is kept in a file named smb.conf, typically located in /etc/samba.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Mounting a Samba share using smbmount is the currently preferred method on modern systems.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "On Linux systems, the /etc/nsswitch.conf file determines the order of lookup methods for name resolution.",
+    "question": "Samba supports both file sharing and printer sharing functionalities.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "The default configuration files for network settings on Linux include both interface scripts and routing parameters.",
+    "question": "NFS and Samba use identical mechanisms for authentication and authorization.",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "Troubleshooting steps for network issues include checking for proper interface configuration, ARP table entries, and firewall settings.",
+    "question": "An administrator wants to allow only specific hosts to mount an NFS export. Which of the following methods should they use in the /etc/exports file?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "Specify export options using read-only flags", "correct": false },
+      { "text": "List allowed hostnames or IP addresses", "correct": true },
+      { "text": "Use soft mount options", "correct": false },
+      { "text": "Define maximum transfer size", "correct": false }
     ]
   },
   {
-    "question": "An administrator needs to assign an IP address of 192.168.1.100 with a subnet mask of 255.255.255.0 to interface eth0 using ifconfig. Which command should they use?",
+    "question": "A user is experiencing frequent timeouts when accessing an NFS share over a high-latency connection. Which NFS configuration parameter should be adjusted to reduce these timeouts?",
     "answers": [
-      { "text": "ifconfig eth0 up", "correct": false },
-      { "text": "ifconfig eth0 192.168.1.100 netmask 255.255.255.0", "correct": true },
-      { "text": "ip addr add 192.168.1.100/24 dev eth0", "correct": false },
-      { "text": "route add -net 192.168.1.100 netmask 255.255.255.0 dev eth0", "correct": false }
+      { "text": "Soft mount option", "correct": false },
+      { "text": "Retransmission count", "correct": false },
+      { "text": "Read/write maximum transfer size", "correct": false },
+      { "text": "Timeout value", "correct": true }
     ]
   },
   {
-    "question": "After configuring a new interface using the ip command, which command will display the current IP configuration for eth0?",
+    "question": "To test the availability of remote NFS services, which tool can be used to display the remote file systems available for mounting?",
     "answers": [
-      { "text": "ip addr show dev eth0", "correct": true },
-      { "text": "ifconfig eth0", "correct": false },
-      { "text": "ip route show dev eth0", "correct": false },
-      { "text": "netstat -i eth0", "correct": false }
+      { "text": "nfsping", "correct": false },
+      { "text": "showmount", "correct": true },
+      { "text": "rpcinfo", "correct": false },
+      { "text": "nfsstat", "correct": false }
     ]
   },
   {
-    "question": "A technician needs to add a new route to direct traffic destined for the 192.168.2.0/24 network via the gateway 192.168.1.1 using the ip command. Which command is correct?",
+    "question": "A technician wants to determine the capacity of an NFS server by sending a large number of RPC packets. Which tool is used for this purpose?",
     "answers": [
-      { "text": "ip route add 192.168.2.0/24 via 192.168.1.1", "correct": true },
-      { "text": "ip route set 192.168.2.0/24 gw 192.168.1.1", "correct": false },
-      { "text": "route add -net 192.168.2.0/24 192.168.1.1", "correct": false },
-      { "text": "ip route new 192.168.2.0/24 via 192.168.1.1", "correct": false }
+      { "text": "rpcinfo", "correct": false },
+      { "text": "spray", "correct": true },
+      { "text": "nfsping", "correct": false },
+      { "text": "nfsstat", "correct": false }
     ]
   },
   {
-    "question": "To remove an existing route for network 192.168.2.0/24 using the ip command, which of the following is the correct command?",
+    "question": "An administrator must convert a UNIX-formatted text file to a DOS-compatible format before sharing it over the network. Which command should they use?",
     "answers": [
-      { "text": "ip route delete 192.168.2.0/24 via 192.168.1.1", "correct": false },
-      { "text": "ip route del 192.168.2.0/24 via 192.168.1.1", "correct": true },
-      { "text": "ip route remove 192.168.2.0/24 via 192.168.1.1", "correct": false },
-      { "text": "ip route flush 192.168.2.0/24 via 192.168.1.1", "correct": false }
+      { "text": "dos2unix", "correct": false },
+      { "text": "unix2dos", "correct": true },
+      { "text": "nfsstat", "correct": false },
+      { "text": "rpcinfo", "correct": false }
     ]
   },
   {
-    "question": "If an administrator finds that the default route is missing after reboot on a Linux system, which file should they check to verify persistent routing settings?",
+    "question": "To mount an NFS export manually on the client side, which command is appropriate?",
     "answers": [
-      { "text": "/etc/hosts", "correct": false },
-      { "text": "/etc/resolv.conf", "correct": false },
-      { "text": "/etc/sysconfig/network", "correct": true },
-      { "text": "/etc/rc.conf", "correct": false }
+      { "text": "mount -t cifs //server/share /local/mount", "correct": false },
+      { "text": "mount -t nfs server:/export /local/mount", "correct": true },
+      { "text": "smbmount //server/share /local/mount", "correct": false },
+      { "text": "showmount -e server", "correct": false }
     ]
   },
   {
-    "question": "A system administrator needs to verify that DNS resolution is functioning correctly. Which of the following files should be reviewed for proper DNS server entries?",
+    "question": "A UNIX administrator is configuring Samba for Windows file sharing. Which parameter in smb.conf specifies the workgroup name?",
     "answers": [
-      { "text": "/etc/hosts", "correct": false },
-      { "text": "/etc/nsswitch.conf", "correct": false },
-      { "text": "/etc/resolv.conf", "correct": true },
-      { "text": "/etc/hostname", "correct": false }
+      { "text": "security", "correct": false },
+      { "text": "workgroup", "correct": true },
+      { "text": "encrypt passwords", "correct": false },
+      { "text": "hosts allow", "correct": false }
     ]
   },
   {
-    "question": "When troubleshooting network connectivity, which of the following is the best first step?",
+    "question": "To securely access files on a Samba share from a Linux client, which command is preferred to mount the share?",
     "answers": [
-      { "text": "Flushing the routing table", "correct": false },
-      { "text": "Checking physical connectivity and link lights", "correct": true },
-      { "text": "Editing the /etc/resolv.conf file", "correct": false },
-      { "text": "Restarting the network service", "correct": false }
+      { "text": "smbmount", "correct": false },
+      { "text": "mount -t smbfs", "correct": false },
+      { "text": "mount -t cifs with appropriate options", "correct": true },
+      { "text": "mount -t nfs", "correct": false }
     ]
   },
   {
-    "question": "After configuring an interface using the ifconfig command, what command can an administrator use to verify that the interface is operational?",
+    "question": "If a user on a non-UNIX system is having trouble mapping UIDs and GIDs when accessing an NFS share, what is the most likely underlying issue?",
     "answers": [
-      { "text": "ifconfig –a", "correct": true },
-      { "text": "netstat –i", "correct": false },
-      { "text": "ping 127.0.0.1", "correct": false },
-      { "text": "route –n", "correct": false }
+      { "text": "Incorrect DNS resolution", "correct": false },
+      { "text": "Mismatch between remote and local UID/GID information", "correct": true },
+      { "text": "Improper soft mount configuration", "correct": false },
+      { "text": "Outdated NFS version", "correct": false }
     ]
   },
   {
-    "question": "Which configuration file would an administrator edit on a BSD system to set interface parameters and routing at boot time?",
+    "question": "An administrator needs to verify that the NFS server is correctly exporting its file systems. Which command should they run on a client machine?",
     "answers": [
-      { "text": "/etc/sysconfig/network-scripts/ifcfg-eth0", "correct": false },
-      { "text": "/etc/rc.conf", "correct": true },
-      { "text": "/etc/network/interfaces", "correct": false },
-      { "text": "/etc/resolv.conf", "correct": false }
-    ]
-  },
-  {
-    "question": "A technician needs to verify that the system’s DNS name resolution order is set correctly. Which file should be checked?",
-    "answers": [
-      { "text": "/etc/hosts", "correct": false },
-      { "text": "/etc/nsswitch.conf", "correct": true },
-      { "text": "/etc/resolv.conf", "correct": false },
-      { "text": "/etc/hostname", "correct": false }
+      { "text": "nfsping", "correct": false },
+      { "text": "showmount -e <server>", "correct": true },
+      { "text": "rpcinfo -p <server>", "correct": false },
+      { "text": "nfsstat", "correct": false }
     ]
   }
   
