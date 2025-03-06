@@ -1,442 +1,682 @@
 const questionBank = [
   {
-    "question": "What was the first commercial computer introduced in 1952?",
+    "question": "Which of the following is cited as a fundamental weakness of UNIX security?",
     "answers": [
-      { "text": "IBM 701", "correct": true },
-      { "text": "IBM 704", "correct": false },
-      { "text": "UNIX V6", "correct": false },
-      { "text": "Multics", "correct": false },
-      { "text": "FreeBSD", "correct": false }
+      { "text": "Excessive encryption", "correct": false },
+      { "text": "Weak authentication model", "correct": true },
+      { "text": "Too many user accounts", "correct": false },
+      { "text": "Overly strict authorization", "correct": false }
     ]
   },
   {
-    "question": "Which operating system is Unix primarily based on?",
+    "question": "What is the first step in securing a UNIX system according to the lecture?",
     "answers": [
-      { "text": "Windows", "correct": false },
-      { "text": "BSD", "correct": false },
-      { "text": "AT&T Bell Labs UNIX", "correct": true },
-      { "text": "Multics", "correct": false },
-      { "text": "GNU/Linux", "correct": false }
+      { "text": "Disabling network services", "correct": false },
+      { "text": "Backing up the system", "correct": true },
+      { "text": "Changing default passwords", "correct": false },
+      { "text": "Installing a firewall", "correct": false }
     ]
   },
   {
-    "question": "Which feature was introduced with UNIX System V Release 2 in 1984?",
+    "question": "Which command is suggested for creating a simple backup of the system?",
     "answers": [
-      { "text": "Time-sharing", "correct": false },
-      { "text": "Shared memory", "correct": true },
-      { "text": "64-bit processing", "correct": false },
-      { "text": "Virtualization", "correct": false },
-      { "text": "Thread support", "correct": false }
+      { "text": "cp -r", "correct": false },
+      { "text": "dd", "correct": false },
+      { "text": "tar –cvf tarfile /files/to/backup", "correct": true },
+      { "text": "rsync", "correct": false }
     ]
   },
   {
-    "question": "Who created the first version of UNIX?",
+    "question": "Which security measure is recommended for protecting user accounts?",
     "answers": [
-      { "text": "Linus Torvalds", "correct": false },
-      { "text": "Andrew Tanenbaum", "correct": false },
-      { "text": "Ken Thompson", "correct": true },
-      { "text": "Bill Joy", "correct": false },
-      { "text": "Dennis Ritchie", "correct": false }
+      { "text": "Disabling shadow passwords", "correct": false },
+      { "text": "Using shadow passwords", "correct": true },
+      { "text": "Allowing blank passwords", "correct": false },
+      { "text": "Creating guest accounts", "correct": false }
     ]
   },
   {
-    "question": "What is the primary philosophy of UNIX?",
+    "question": "To prevent abuse of dormant accounts, which command option is suggested?",
     "answers": [
-      { "text": "Maximize system compatibility", "correct": false },
-      { "text": "Write programs that do one thing and do it well", "correct": true },
-      { "text": "Centralize all operations", "correct": false },
-      { "text": "Focus only on graphical interfaces", "correct": false },
-      { "text": "Avoid modular programming", "correct": false }
+      { "text": "userdel –r", "correct": false },
+      { "text": "passwd –l", "correct": false },
+      { "text": "usermod –f days account", "correct": true },
+      { "text": "chage –E account", "correct": false }
     ]
   },
   {
-    "question": "What was the main contribution of Bill Joy to UNIX?",
+    "question": "Restricted shells (like rbash) are used primarily to:",
     "answers": [
-      { "text": "Developed the Linux kernel", "correct": false },
-      { "text": "Enhanced UNIX at MIT", "correct": false },
-      { "text": "Created Sun Microsystems and SunOS", "correct": true },
-      { "text": "Started the Multics project", "correct": false },
-      { "text": "None of the above", "correct": false }
+      { "text": "Provide full administrative privileges", "correct": false },
+      { "text": "Allow users to bypass security controls", "correct": false },
+      { "text": "Lock a user into a limited command environment", "correct": true },
+      { "text": "Enable remote file transfer", "correct": false }
     ]
   },
   {
-    "question": "Which UNIX clone served as the base for Linus Torvalds’ Linux kernel?",
+    "question": "Which of the following is a tool mentioned for auditing and logging on UNIX systems?",
     "answers": [
-      { "text": "FreeBSD", "correct": false },
-      { "text": "Minix", "correct": true },
-      { "text": "GNU", "correct": false },
-      { "text": "AT&T UNIX", "correct": false },
-      { "text": "NetBSD", "correct": false }
+      { "text": "auditd", "correct": false },
+      { "text": "psacct", "correct": false },
+      { "text": "syslog", "correct": false },
+      { "text": "all of the above", "correct": true }
     ]
   },
   {
-    "question": "What was the main reason for UNIX administrators learning Windows NT in 1993?",
+    "question": "File integrity checking is used to:",
     "answers": [
-      { "text": "Windows NT became open-source", "correct": false },
-      { "text": "To replace UNIX with Windows NT", "correct": false },
-      { "text": "UNIX's market share was declining", "correct": false },
-      { "text": "Windows NT met government security needs", "correct": true },
-      { "text": "UNIX became obsolete", "correct": false }
+      { "text": "Speed up file transfers", "correct": false },
+      { "text": "Ensure files were not altered by an intruder", "correct": true },
+      { "text": "Backup data faster", "correct": false },
+      { "text": "Compress files before transmission", "correct": false }
     ]
   },
   {
-    "question": "Which of the following Linux distributions is specifically used for testing new features?",
+    "question": "Which of the following tools is NOT mentioned as a file integrity checker?",
     "answers": [
-      { "text": "Debian", "correct": false },
-      { "text": "Ubuntu", "correct": false },
-      { "text": "Fedora", "correct": true },
-      { "text": "CentOS", "correct": false },
-      { "text": "Suse", "correct": false }
+      { "text": "tripwire", "correct": false },
+      { "text": "aide", "correct": false },
+      { "text": "fcheck", "correct": false },
+      { "text": "chkrootkit", "correct": true }
     ]
   },
   {
-    "question": "Which organization held the first system administration conference in 1987?",
+    "question": "Which network service is identified as insecure due to clear text password transmission?",
     "answers": [
-      { "text": "DARPA", "correct": false },
-      { "text": "USENIX Association", "correct": true },
-      { "text": "Linux Foundation", "correct": false },
-      { "text": "GNU Project", "correct": false },
-      { "text": "SANS Institute", "correct": false }
+      { "text": "SSH", "correct": false },
+      { "text": "Telnet", "correct": true },
+      { "text": "HTTPS", "correct": false },
+      { "text": "SFTP", "correct": false }
     ]
   },
   {
-    "question": "Which of these is a duty of a system administrator?",
+    "question": "What is the recommended approach for handling services that are not used?",
     "answers": [
-      { "text": "Writing operating system kernels", "correct": false },
-      { "text": "Managing user access and accounts", "correct": true },
-      { "text": "Designing hardware architecture", "correct": false },
-      { "text": "Creating new programming languages", "correct": false },
-      { "text": "Developing graphical applications", "correct": false }
+      { "text": "Leaving them running but blocking with a firewall", "correct": false },
+      { "text": "Disabling them from starting at boot", "correct": true },
+      { "text": "Encrypting their traffic", "correct": false },
+      { "text": "Increasing their logging level", "correct": false }
     ]
   },
   {
-    "question": "What is a key feature of FreeBSD 6.0 introduced in 2005?",
+    "question": "Which command-line tool can be used to list open ports and verify running services?",
     "answers": [
-      { "text": "Support for cloud computing", "correct": false },
-      { "text": "Multithreaded file systems", "correct": true },
-      { "text": "Expanded time-sharing capabilities", "correct": false },
-      { "text": "64-bit kernel", "correct": false },
-      { "text": "Built-in cloud sharing", "correct": false }
+      { "text": "netstat (or ss)", "correct": true },
+      { "text": "top", "correct": false },
+      { "text": "ifconfig", "correct": false },
+      { "text": "uname", "correct": false }
     ]
   },
   {
-    "question": "What year was the GNU Project established?",
+    "question": "The chroot command is used to:",
     "answers": [
-      { "text": "1985", "correct": false },
-      { "text": "1990", "correct": false },
-      { "text": "1974", "correct": false },
-      { "text": "1991", "correct": false },
-      { "text": "1983", "correct": true }
+      { "text": "Encrypt files on disk", "correct": false },
+      { "text": "Isolate an application within a virtual root directory", "correct": true },
+      { "text": "Create backups of system files", "correct": false },
+      { "text": "Change file ownership recursively", "correct": false }
     ]
   },
   {
-    "question": "What made Linux widely successful during its early years?",
+    "question": "Security Enhanced Linux (SELinux) adds which type of control to UNIX systems?",
     "answers": [
-      { "text": "Proprietary tools and software", "correct": false },
-      { "text": "Backing by Microsoft", "correct": false },
-      { "text": "Strong community support", "correct": true },
-      { "text": "Absence of GNU tools", "correct": false },
-      { "text": "Limited compatibility with UNIX", "correct": false }
+      { "text": "Discretionary Access Control", "correct": false },
+      { "text": "Role-Based Access Control", "correct": false },
+      { "text": "Mandatory Access Control", "correct": true },
+      { "text": "Time-Based Access Control", "correct": false }
     ]
   },
   {
-    "question": "Which Linux distribution is free and derived from RedHat?",
+    "question": "To view the current SELinux mode, which command is used?",
     "answers": [
-      { "text": "Suse Linux Enterprise", "correct": false },
-      { "text": "CentOS", "correct": true },
-      { "text": "Fedora", "correct": false },
-      { "text": "Ubuntu", "correct": false },
-      { "text": "Debian", "correct": false }
+      { "text": "selinux --status", "correct": false },
+      { "text": "getenforce", "correct": true },
+      { "text": "sestatus", "correct": false },
+      { "text": "setenforce", "correct": false }
     ]
   },
   {
-    "question": "Which UNIX derivative formed the core for MacOS?",
+    "question": "In SELinux, if an action is being blocked by policy, an administrator can use which tool to generate policy adjustments?",
     "answers": [
-      { "text": "Linux", "correct": false },
-      { "text": "Solaris", "correct": false },
-      { "text": "FreeBSD", "correct": true },
-      { "text": "GNU", "correct": false },
-      { "text": "System V", "correct": false }
+      { "text": "audit2allow", "correct": true },
+      { "text": "checkpolicy", "correct": false },
+      { "text": "setenforce", "correct": false },
+      { "text": "restorecon", "correct": false }
     ]
   },
   {
-    "question": "Which OS was first to support multithreading and wireless technology?",
+    "question": "Packet filters in UNIX systems are used to:",
     "answers": [
-      { "text": "FreeBSD 6.0", "correct": true },
-      { "text": "UNIX V6", "correct": false },
-      { "text": "Mac OS X Cheetah", "correct": false },
-      { "text": "System V Release 4", "correct": false },
-      { "text": "Windows NT", "correct": false }
+      { "text": "Limit application logging", "correct": false },
+      { "text": "Filter ingress and egress network traffic", "correct": true },
+      { "text": "Encrypt file systems", "correct": false },
+      { "text": "Create user accounts securely", "correct": false }
     ]
   },
   {
-    "question": "What feature is associated with MacOS 10.6 Snow Leopard?",
+    "question": "TCPwrapper functions as a type of:",
     "answers": [
-      { "text": "Cloud sharing", "correct": false },
-      { "text": "A 64-bit kernel", "correct": true },
-      { "text": "Expanded virtual memory", "correct": false },
-      { "text": "Multithreading", "correct": false },
-      { "text": "Real-time processing", "correct": false }
+      { "text": "Disk encryption tool", "correct": false },
+      { "text": "Application-specific firewall", "correct": true },
+      { "text": "Backup utility", "correct": false },
+      { "text": "File integrity checker", "correct": false }
     ]
   },
   {
-    "question": "What is the primary goal of the SANS Institute, established in 1990?",
+    "question": "Which of the following security analysis probes is described as a tool that attempts to break into a system based on known vulnerabilities?",
     "answers": [
-      { "text": "System administration training", "correct": true },
-      { "text": "UNIX development", "correct": false },
-      { "text": "Proprietary software licensing", "correct": false },
-      { "text": "Cloud computing management", "correct": false },
-      { "text": "Networking hardware sales", "correct": false }
+      { "text": "Nessus", "correct": false },
+      { "text": "SATAN", "correct": true },
+      { "text": "Real Secure", "correct": false },
+      { "text": "Portscanner", "correct": false }
     ]
   },
   {
-    "question": "What significant trend occurred between 2000 and the present in UNIX/Linux?",
+    "question": "Nessus is best described as:",
     "answers": [
-      { "text": "Decline in usage", "correct": false },
-      { "text": "Growth of virtualization and cloud computing", "correct": true },
-      { "text": "Complete dominance of Windows servers", "correct": false },
-      { "text": "End of UNIX development", "correct": false },
-      { "text": "Transition to closed-source software", "correct": false }
+      { "text": "A commercial antivirus solution", "correct": false },
+      { "text": "A free and open-source portscanner", "correct": false },
+      { "text": "An open solution for vulnerability assessment compatible with multiple platforms", "correct": true },
+      { "text": "A disk backup tool", "correct": false }
     ]
   },
   {
-    "question": "UNIX is based on Multics.",
+    "question": "UNIX was originally developed before security was a major concern.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "Linus Torvalds created GNU tools.",
+    "question": "Backing up the system is considered the first step in securing a UNIX system.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "It is recommended to disable shadow passwords on modern UNIX systems.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "Time-sharing systems replaced single-purpose computing.",
+    "question": "Dormant accounts can pose a security risk if left enabled.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "The UNIX philosophy emphasizes doing multiple things in a single program.",
+    "question": "Restricted shells are foolproof and cannot be bypassed by any application shell escapes.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "The first UNIX version was written in 1969.",
+    "question": "Process accounting and syslog are methods used for auditing and logging in UNIX.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "FreeBSD is not derived from BSD.",
+    "question": "File integrity checking helps ensure that files have not been modified by an unauthorized user.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "FTP is secure because it encrypts both authentication and data traffic.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "Linux gained popularity due to its strong community support.",
+    "question": "Disabling unused services is a recommended practice for service security.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "USENIX held its first system admin conference in 1987.",
+    "question": "The chroot command can limit an application’s view of the filesystem by confining it to a virtual root.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "RedHat Enterprise Linux is an open-source software.",
+    "question": "SELinux provides Mandatory Access Controls that restrict subjects from accessing objects unless explicitly allowed by policy.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "MacOS is built on a Linux kernel.",
+    "question": "Setting SELinux to permissive mode will enforce the security policy while still logging denials.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "Windows NT replaced UNIX completely in government systems.",
+    "question": "The command getenforce is used to display the current SELinux mode.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Audit2allow is a tool that helps generate new SELinux policy rules based on logged denials.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Packet filters and TCPwrappers are both used to restrict network traffic.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Portscanners can be used as a security analysis probe to identify open ports on a system.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "SATAN and Nessus are both examples of tools used for vulnerability assessment.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Real Secure is an open-source vulnerability scanner available for UNIX systems.",
     "answers": [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
   },
   {
-    "question": "GNU tools are crucial for Linux distributions.",
+    "question": "Using a backup tape to restore a compromised system is an example of a recovery strategy.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "Linux servers cost less than Windows servers.",
+    "question": "The lecture suggests that reducing the risk associated with UNIX systems is an ongoing mission due to its inherent insecurity.",
     "answers": [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
   },
   {
-    "question": "Virtualization has reduced the importance of UNIX/Linux.",
+    "question": "An administrator needs to back up the entire system to a bootable tape for quick restoration. Which of the following commands is most appropriate?",
     "answers": [
-      { "text": "True", "correct": false },
-      { "text": "False", "correct": true }
+      { "text": "dd if=/dev/sda of=/dev/tape", "correct": false },
+      { "text": "tar –cvf backup.tar /", "correct": true },
+      { "text": "rsync -av / /backup", "correct": false },
+      { "text": "cp -r / /tape", "correct": false }
     ]
   },
   {
-    "question": "The GNU Project began in 1983.",
+    "question": "To disable a dormant user account automatically after a set number of days, which command should be used?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "chage –d", "correct": false },
+      { "text": "usermod –f days username", "correct": true },
+      { "text": "passwd –l username", "correct": false },
+      { "text": "userdel username", "correct": false }
     ]
   },
   {
-    "question": "The Linux kernel was derived from Minix.",
+    "question": "A system administrator wants to restrict a web server to operate within a chroot jail for enhanced security. Which command should be used to launch the web server in this restricted environment?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "chroot /var/chroot /usr/sbin/httpd", "correct": true },
+      { "text": "jail /var/chroot /usr/sbin/httpd", "correct": false },
+      { "text": "restrict /var/chroot /usr/sbin/httpd", "correct": false },
+      { "text": "secure /var/chroot /usr/sbin/httpd", "correct": false }
     ]
   },
   {
-    "question": "MacOS Snow Leopard introduced 64-bit kernel support.",
+    "question": "After observing SELinux denials in the audit log, an administrator wants to generate new policy rules to allow the desired action. Which sequence of tools should they use?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "setenforce, getenforce, restorecon", "correct": false },
+      { "text": "audit2allow, then compile with checkpolicy", "correct": true },
+      { "text": "getenforce, then chcon", "correct": false },
+      { "text": "semanage, then restorecon", "correct": false }
     ]
   },
   {
-    "question": "The SANS Institute focuses on marketing Linux distributions.",
+    "question": "Which command will display the current SELinux operating mode to an administrator?",
     "answers": [
-      { "text": "True", "correct": false },
-      { "text": "False", "correct": true }
+      { "text": "sestatus", "correct": false },
+      { "text": "getenforce", "correct": true },
+      { "text": "setenforce", "correct": false },
+      { "text": "selinux-status", "correct": false }
     ]
   },
   {
-    "question": "Fedora Linux is used for testing new features.",
+    "question": "An administrator is tasked with verifying that only authorized services are running. Which command could they use to list open network ports on a UNIX system?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "ps aux", "correct": false },
+      { "text": "netstat –an | grep LISTEN", "correct": true },
+      { "text": "lsof –i:80", "correct": false },
+      { "text": "chkconfig", "correct": false }
     ]
   },
   {
-    "question": "Cloud computing is unrelated to UNIX/Linux resurgence.",
+    "question": "To enforce that only known hosts can mount an NFS export, which configuration file should be edited on the NFS server?",
     "answers": [
-      { "text": "True", "correct": false },
-      { "text": "False", "correct": true }
+      { "text": "/etc/exports", "correct": true },
+      { "text": "/etc/fstab", "correct": false },
+      { "text": "/etc/hosts.allow", "correct": false },
+      { "text": "/etc/nfs.conf", "correct": false }
     ]
   },
   {
-    "question": "Which Linux distribution would you recommend for testing a new server feature?",
+    "question": "A security auditor wants to ensure that file integrity on critical system binaries is maintained. Which tool is most suitable for periodic checksum verification?",
     "answers": [
-      { "text": "Debian", "correct": false },
-      { "text": "Fedora", "correct": true },
-      { "text": "Ubuntu", "correct": false },
-      { "text": "CentOS", "correct": false },
-      { "text": "Suse", "correct": false }
+      { "text": "tripwire", "correct": true },
+      { "text": "psacct", "correct": false },
+      { "text": "syslog", "correct": false },
+      { "text": "chroot", "correct": false }
     ]
   },
   {
-    "question": "A system admin needs a free alternative to RedHat. Which distribution should they choose?",
+    "question": "When reviewing audit logs for potential intrusions, which log file is most commonly examined on a UNIX system?",
     "answers": [
-      { "text": "OpenSuse", "correct": false },
-      { "text": "Fedora", "correct": false },
-      { "text": "CentOS", "correct": true },
-      { "text": "Debian", "correct": false },
-      { "text": "MacOS", "correct": false }
+      { "text": "/var/log/secure", "correct": false },
+      { "text": "/var/log/audit/audit.log", "correct": true },
+      { "text": "/var/log/messages", "correct": false },
+      { "text": "/var/log/syslog", "correct": false }
     ]
   },
   {
-    "question": "To ensure security on a Linux server, which task is most critical?",
+    "question": "To disable an insecure service such as Telnet from running at boot, what is the recommended course of action?",
     "answers": [
-      { "text": "Upgrading hardware", "correct": false },
-      { "text": "Automating tasks", "correct": false },
-      { "text": "Vigilant monitoring", "correct": true },
-      { "text": "Developing site policies", "correct": false },
-      { "text": "Installing updates", "correct": false }
+      { "text": "Block Telnet via the firewall only", "correct": false },
+      { "text": "Stop the service and remove it from startup scripts", "correct": true },
+      { "text": "Change its default port number", "correct": false },
+      { "text": "Encrypt its traffic with SSL", "correct": false }
     ]
   },
   {
-    "question": "What would be the first step when installing a new Linux distribution on a server?",
+    "question": "Which of the following is cited as a fundamental weakness of UNIX security?",
     "answers": [
-      { "text": "Configure security policies", "correct": false },
-      { "text": "Install and upgrade software", "correct": false },
-      { "text": "Add hardware", "correct": false },
-      { "text": "Configure access control", "correct": false },
-      { "text": "Partition the disk and install the OS", "correct": true }
+      { "text": "Excessive encryption", "correct": false },
+      { "text": "Weak authentication model", "correct": true },
+      { "text": "Too many user accounts", "correct": false },
+      { "text": "Overly strict authorization", "correct": false }
     ]
   },
   {
-    "question": "Which feature makes FreeBSD a good choice for enterprise multithreading systems?",
+    "question": "What is the first step in securing a UNIX system according to the lecture?",
     "answers": [
-      { "text": "Cloud integration", "correct": false },
-      { "text": "Multithreaded file system", "correct": true },
-      { "text": "Enhanced graphics tools", "correct": false },
-      { "text": "Proprietary tools", "correct": false },
-      { "text": "System-wide upgrades", "correct": false }
+      { "text": "Disabling network services", "correct": false },
+      { "text": "Backing up the system", "correct": true },
+      { "text": "Changing default passwords", "correct": false },
+      { "text": "Installing a firewall", "correct": false }
     ]
   },
   {
-    "question": "A company prioritizing cost-effectiveness should choose which server OS?",
+    "question": "Which command is suggested for creating a simple backup of the system?",
     "answers": [
-      { "text": "Windows NT", "correct": false },
-      { "text": "FreeBSD", "correct": false },
-      { "text": "MacOS", "correct": false },
-      { "text": "RedHat", "correct": false },
-      { "text": "Debian", "correct": true }
+      { "text": "cp -r", "correct": false },
+      { "text": "dd", "correct": false },
+      { "text": "tar –cvf tarfile /files/to/backup", "correct": true },
+      { "text": "rsync", "correct": false }
     ]
   },
   {
-    "question": "If you want to experiment with cutting-edge Linux features, which OS is ideal?",
+    "question": "Which security measure is recommended for protecting user accounts?",
     "answers": [
-      { "text": "Fedora", "correct": true },
-      { "text": "Ubuntu", "correct": false },
-      { "text": "CentOS", "correct": false },
-      { "text": "OpenSuse", "correct": false },
-      { "text": "MacOS", "correct": false }
+      { "text": "Disabling shadow passwords", "correct": false },
+      { "text": "Using shadow passwords", "correct": true },
+      { "text": "Allowing blank passwords", "correct": false },
+      { "text": "Creating guest accounts", "correct": false }
     ]
   },
   {
-    "question": "What is the best course of action for troubleshooting a failed server backup?",
+    "question": "To prevent abuse of dormant accounts, which command option is suggested?",
     "answers": [
-      { "text": "Add new hardware", "correct": false },
-      { "text": "Review system logs", "correct": true },
-      { "text": "Reinstall the OS", "correct": false },
-      { "text": "Configure new users", "correct": false },
-      { "text": "Install security patches", "correct": false }
+      { "text": "userdel –r", "correct": false },
+      { "text": "passwd –l", "correct": false },
+      { "text": "usermod –f days account", "correct": true },
+      { "text": "chage –E account", "correct": false }
     ]
   },
   {
-    "question": "Which of the following tasks falls under automating system admin processes?",
+    "question": "Restricted shells (like rbash) are used primarily to:",
     "answers": [
-      { "text": "Controlling user access", "correct": false },
-      { "text": "Configuring backups via scripts", "correct": true },
-      { "text": "Installing Linux distributions", "correct": false },
-      { "text": "Setting up cloud services", "correct": false },
-      { "text": "Writing site policies", "correct": false }
+      { "text": "Provide full administrative privileges", "correct": false },
+      { "text": "Allow users to bypass security controls", "correct": false },
+      { "text": "Lock a user into a limited command environment", "correct": true },
+      { "text": "Enable remote file transfer", "correct": false }
     ]
   },
   {
-    "question": "What task ensures maximum uptime for Linux servers?",
+    "question": "Which of the following is a tool mentioned for auditing and logging on UNIX systems?",
     "answers": [
-      { "text": "Automating system updates", "correct": false },
-      { "text": "Adding new accounts", "correct": false },
-      { "text": "Removing unnecessary services", "correct": false },
-      { "text": "Maintaining local documentation", "correct": false },
-      { "text": "Monitoring system performance", "correct": true }
+      { "text": "auditd", "correct": false },
+      { "text": "psacct", "correct": false },
+      { "text": "syslog", "correct": false },
+      { "text": "all of the above", "correct": true }
+    ]
+  },
+  {
+    "question": "File integrity checking is used to:",
+    "answers": [
+      { "text": "Speed up file transfers", "correct": false },
+      { "text": "Ensure files were not altered by an intruder", "correct": true },
+      { "text": "Backup data faster", "correct": false },
+      { "text": "Compress files before transmission", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following tools is NOT mentioned as a file integrity checker?",
+    "answers": [
+      { "text": "tripwire", "correct": false },
+      { "text": "aide", "correct": false },
+      { "text": "fcheck", "correct": false },
+      { "text": "chkrootkit", "correct": true }
+    ]
+  },
+  {
+    "question": "Which network service is identified as insecure due to clear text password transmission?",
+    "answers": [
+      { "text": "SSH", "correct": false },
+      { "text": "Telnet", "correct": true },
+      { "text": "HTTPS", "correct": false },
+      { "text": "SFTP", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the recommended approach for handling services that are not used?",
+    "answers": [
+      { "text": "Leaving them running but blocking with a firewall", "correct": false },
+      { "text": "Disabling them from starting at boot", "correct": true },
+      { "text": "Encrypting their traffic", "correct": false },
+      { "text": "Increasing their logging level", "correct": false }
+    ]
+  },
+  {
+    "question": "Which command-line tool can be used to list open ports and verify running services?",
+    "answers": [
+      { "text": "netstat (or ss)", "correct": true },
+      { "text": "top", "correct": false },
+      { "text": "ifconfig", "correct": false },
+      { "text": "uname", "correct": false }
+    ]
+  },
+  {
+    "question": "The chroot command is used to:",
+    "answers": [
+      { "text": "Encrypt files on disk", "correct": false },
+      { "text": "Isolate an application within a virtual root directory", "correct": true },
+      { "text": "Create backups of system files", "correct": false },
+      { "text": "Change file ownership recursively", "correct": false }
+    ]
+  },
+  {
+    "question": "Security Enhanced Linux (SELinux) adds which type of control to UNIX systems?",
+    "answers": [
+      { "text": "Discretionary Access Control", "correct": false },
+      { "text": "Role-Based Access Control", "correct": false },
+      { "text": "Mandatory Access Control", "correct": true },
+      { "text": "Time-Based Access Control", "correct": false }
+    ]
+  },
+  {
+    "question": "To view the current SELinux mode, which command is used?",
+    "answers": [
+      { "text": "selinux --status", "correct": false },
+      { "text": "getenforce", "correct": true },
+      { "text": "sestatus", "correct": false },
+      { "text": "setenforce", "correct": false }
+    ]
+  },
+  {
+    "question": "In SELinux, if an action is being blocked by policy, an administrator can use which tool to generate policy adjustments?",
+    "answers": [
+      { "text": "audit2allow", "correct": true },
+      { "text": "checkpolicy", "correct": false },
+      { "text": "setenforce", "correct": false },
+      { "text": "restorecon", "correct": false }
+    ]
+  },
+  {
+    "question": "Packet filters in UNIX systems are used to:",
+    "answers": [
+      { "text": "Limit application logging", "correct": false },
+      { "text": "Filter ingress and egress network traffic", "correct": true },
+      { "text": "Encrypt file systems", "correct": false },
+      { "text": "Create user accounts securely", "correct": false }
+    ]
+  },
+  {
+    "question": "TCPwrapper functions as a type of:",
+    "answers": [
+      { "text": "Disk encryption tool", "correct": false },
+      { "text": "Application-specific firewall", "correct": true },
+      { "text": "Backup utility", "correct": false },
+      { "text": "File integrity checker", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following security analysis probes is described as a tool that attempts to break into a system based on known vulnerabilities?",
+    "answers": [
+      { "text": "Nessus", "correct": false },
+      { "text": "SATAN", "correct": true },
+      { "text": "Real Secure", "correct": false },
+      { "text": "Portscanner", "correct": false }
+    ]
+  },
+  {
+    "question": "Nessus is best described as:",
+    "answers": [
+      { "text": "A commercial antivirus solution", "correct": false },
+      { "text": "A free and open-source portscanner", "correct": false },
+      { "text": "An open solution for vulnerability assessment compatible with multiple platforms", "correct": true },
+      { "text": "A disk backup tool", "correct": false }
+    ]
+  },
+  {
+    "question": "An administrator needs to back up the entire system to a bootable tape for quick restoration. Which of the following commands is most appropriate?",
+    "answers": [
+      { "text": "dd if=/dev/sda of=/dev/tape", "correct": false },
+      { "text": "tar –cvf backup.tar /", "correct": true },
+      { "text": "rsync -av / /backup", "correct": false },
+      { "text": "cp -r / /tape", "correct": false }
+    ]
+  },
+  {
+    "question": "To disable a dormant user account automatically after a set number of days, which command should be used?",
+    "answers": [
+      { "text": "chage –d", "correct": false },
+      { "text": "usermod –f days username", "correct": true },
+      { "text": "passwd –l username", "correct": false },
+      { "text": "userdel username", "correct": false }
+    ]
+  },
+  {
+    "question": "A system administrator wants to restrict a web server to operate within a chroot jail for enhanced security. Which command should be used to launch the web server in this restricted environment?",
+    "answers": [
+      { "text": "chroot /var/chroot /usr/sbin/httpd", "correct": true },
+      { "text": "jail /var/chroot /usr/sbin/httpd", "correct": false },
+      { "text": "restrict /var/chroot /usr/sbin/httpd", "correct": false },
+      { "text": "secure /var/chroot /usr/sbin/httpd", "correct": false }
+    ]
+  },
+  {
+    "question": "After observing SELinux denials in the audit log, an administrator wants to generate new policy rules to allow the desired action. Which sequence of tools should they use?",
+    "answers": [
+      { "text": "setenforce, getenforce, restorecon", "correct": false },
+      { "text": "audit2allow, then compile with checkpolicy", "correct": true },
+      { "text": "getenforce, then chcon", "correct": false },
+      { "text": "semanage, then restorecon", "correct": false }
+    ]
+  },
+  {
+    "question": "Which command will display the current SELinux operating mode to an administrator?",
+    "answers": [
+      { "text": "sestatus", "correct": false },
+      { "text": "getenforce", "correct": true },
+      { "text": "setenforce", "correct": false },
+      { "text": "selinux-status", "correct": false }
+    ]
+  },
+  {
+    "question": "An administrator is tasked with verifying that only authorized services are running. Which command could they use to list open network ports on a UNIX system?",
+    "answers": [
+      { "text": "ps aux", "correct": false },
+      { "text": "netstat –an | grep LISTEN", "correct": true },
+      { "text": "lsof –i:80", "correct": false },
+      { "text": "chkconfig", "correct": false }
+    ]
+  },
+  {
+    "question": "To enforce that only known hosts can mount an NFS export, which configuration file should be edited on the NFS server?",
+    "answers": [
+      { "text": "/etc/exports", "correct": true },
+      { "text": "/etc/fstab", "correct": false },
+      { "text": "/etc/hosts.allow", "correct": false },
+      { "text": "/etc/nfs.conf", "correct": false }
+    ]
+  },
+  {
+    "question": "A security auditor wants to ensure that file integrity on critical system binaries is maintained. Which tool is most suitable for periodic checksum verification?",
+    "answers": [
+      { "text": "tripwire", "correct": true },
+      { "text": "psacct", "correct": false },
+      { "text": "syslog", "correct": false },
+      { "text": "chroot", "correct": false }
+    ]
+  },
+  {
+    "question": "When reviewing audit logs for potential intrusions, which log file is most commonly examined on a UNIX system?",
+    "answers": [
+      { "text": "/var/log/secure", "correct": false },
+      { "text": "/var/log/audit/audit.log", "correct": true },
+      { "text": "/var/log/messages", "correct": false },
+      { "text": "/var/log/syslog", "correct": false }
+    ]
+  },
+  {
+    "question": "To disable an insecure service such as Telnet from running at boot, what is the recommended course of action?",
+    "answers": [
+      { "text": "Block Telnet via the firewall only", "correct": false },
+      { "text": "Stop the service and remove it from startup scripts", "correct": true },
+      { "text": "Change its default port number", "correct": false },
+      { "text": "Encrypt its traffic with SSL", "correct": false }
     ]
   }
 ];
