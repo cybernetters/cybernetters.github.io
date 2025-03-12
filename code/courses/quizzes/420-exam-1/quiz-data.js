@@ -408,5 +408,130 @@ const questionBank = [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
+  },
+  {
+    "question": "Which of the following is required before conducting a forensic search on a suspect's device in most criminal cases?",
+    "answers": [
+      { "text": "Verbal permission from the suspect", "correct": false },
+      { "text": "A search warrant", "correct": true },
+      { "text": "The suspect’s employer’s approval", "correct": false },
+      { "text": "An open-source forensic tool", "correct": false }
+    ]
+  },
+  {
+    "question": "The Plain View Doctrine allows an investigator to seize evidence without a warrant under which condition?",
+    "answers": [
+      { "text": "The evidence is encrypted", "correct": false },
+      { "text": "The investigator is lawfully present and the evidence is clearly visible", "correct": true },
+      { "text": "The evidence is located in a locked cabinet", "correct": false },
+      { "text": "The investigator suspects the evidence exists but has not yet found it", "correct": false }
+    ]
+  },
+  {
+    "question": "Which legal principle requires law enforcement to describe specifically what they are searching for and where they will search?",
+    "answers": [
+      { "text": "Exclusionary Rule", "correct": false },
+      { "text": "Best Evidence Rule", "correct": false },
+      { "text": "Particularity Requirement", "correct": true },
+      { "text": "Fifth Amendment Protection", "correct": false }
+    ]
+  },
+  {
+    "question": "Which court case ruled that searching a suspect's digital files beyond the scope of a warrant violates the Fourth Amendment?",
+    "answers": [
+      { "text": "United States v. Comprehensive Drug Testing", "correct": true },
+      { "text": "Arizona v. Hicks", "correct": false },
+      { "text": "Miranda v. Arizona", "correct": false },
+      { "text": "Katz v. United States", "correct": false }
+    ]
+  },
+  {
+    "question": "In digital forensics, how should an investigator handle data that is outside the scope of a search warrant?",
+    "answers": [
+      { "text": "Include it in the forensic report regardless", "correct": false },
+      { "text": "Ignore it entirely", "correct": false },
+      { "text": "Request an additional warrant before analyzing it", "correct": true },
+      { "text": "Encrypt it to prevent unauthorized access", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a requirement for the Plain View Doctrine to apply?",
+    "answers": [
+      { "text": "The officer must have a legal right to be in the viewing area", "correct": false },
+      { "text": "The evidence must be immediately apparent as illegal", "correct": false },
+      { "text": "The officer must use advanced digital forensic tools to locate the evidence", "correct": true },
+      { "text": "The officer must discover the evidence inadvertently", "correct": false }
+    ]
+  },
+  {
+    "question": "What should an investigator do if they encounter encrypted files while executing a search warrant?",
+    "answers": [
+      { "text": "Attempt to break the encryption immediately", "correct": false },
+      { "text": "Ignore the files and move to unencrypted data", "correct": false },
+      { "text": "Seize the files and request additional legal authorization to access them", "correct": true },
+      { "text": "Copy the files but leave them on the original system", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is an example of exceeding the authority of a search warrant in a digital forensic investigation?",
+    "answers": [
+      { "text": "Searching for documents related to fraud when the warrant is for child exploitation evidence", "correct": true },
+      { "text": "Finding evidence of an unrelated crime while searching within the permitted files", "correct": false },
+      { "text": "Using forensic tools to create a bit-stream image of the suspect’s hard drive", "correct": false },
+      { "text": "Maintaining the chain of custody for all collected evidence", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following describes the proper handling of evidence in accordance with the chain of custody?",
+    "answers": [
+      { "text": "Keeping forensic evidence on a personal USB drive for convenience", "correct": false },
+      { "text": "Logging every transfer of evidence from collection to analysis", "correct": true },
+      { "text": "Allowing multiple unauthorized individuals to access the evidence", "correct": false },
+      { "text": "Using cloud storage to share forensic evidence without encryption", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary risk of violating the search scope in a forensic investigation?",
+    "answers": [
+      { "text": "The evidence becomes inadmissible in court", "correct": true },
+      { "text": "The investigator can complete the search faster", "correct": false },
+      { "text": "The suspect automatically becomes guilty", "correct": false },
+      { "text": "The evidence is permanently deleted", "correct": false }
+    ]
+  },
+  {
+    "question": "The Plain View Doctrine allows an investigator to actively search for evidence that was not included in the warrant.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Digital evidence discovered outside the scope of a warrant can still be used in court under certain conditions.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The Exclusionary Rule states that evidence obtained illegally cannot be used in court.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The Fourth Amendment protects individuals from unreasonable searches and seizures, including digital searches.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "An investigator can seize a suspect’s laptop without a warrant if they believe it contains evidence of a crime.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
   }
 ];
