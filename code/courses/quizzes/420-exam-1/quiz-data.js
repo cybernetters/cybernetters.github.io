@@ -533,5 +533,130 @@ const questionBank = [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
+  },
+  {
+    "question": "Which of the following is a key feature of the NTFS file system?",
+    "answers": [
+      { "text": "It lacks file permissions", "correct": false },
+      { "text": "It does not support file compression", "correct": false },
+      { "text": "It includes a Master File Table (MFT)", "correct": true },
+      { "text": "It does not support long filenames", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the purpose of the Master File Table (MFT) in NTFS?",
+    "answers": [
+      { "text": "To store the contents of all files", "correct": false },
+      { "text": "To track file metadata and allocation details", "correct": true },
+      { "text": "To limit user access to specific files", "correct": false },
+      { "text": "To encrypt files automatically", "correct": false }
+    ]
+  },
+  {
+    "question": "Which NTFS attribute contains metadata about a file, such as its creation and modification times?",
+    "answers": [
+      { "text": "$DATA", "correct": false },
+      { "text": "$STANDARD_INFORMATION", "correct": true },
+      { "text": "$INDEX_ROOT", "correct": false },
+      { "text": "$BITMAP", "correct": false }
+    ]
+  },
+  {
+    "question": "In NTFS, what does the $DATA attribute store?",
+    "answers": [
+      { "text": "File permissions", "correct": false },
+      { "text": "File metadata", "correct": false },
+      { "text": "The actual content of the file", "correct": true },
+      { "text": "A list of all files in a directory", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following NTFS file attributes tracks changes to a file, including creation and last modification timestamps?",
+    "answers": [
+      { "text": "$ATTRIBUTE_LIST", "correct": false },
+      { "text": "$LOGGED_UTILITY_STREAM", "correct": false },
+      { "text": "$STANDARD_INFORMATION", "correct": true },
+      { "text": "$SECURITY_DESCRIPTOR", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT an advantage of NTFS over FAT32?",
+    "answers": [
+      { "text": "Support for larger file sizes", "correct": false },
+      { "text": "Built-in file encryption", "correct": false },
+      { "text": "Enhanced security permissions", "correct": false },
+      { "text": "Compatibility with all operating systems", "correct": true }
+    ]
+  },
+  {
+    "question": "What happens when a file is deleted in NTFS?",
+    "answers": [
+      { "text": "The file's data is immediately erased from the disk", "correct": false },
+      { "text": "The file is moved to a hidden system folder", "correct": false },
+      { "text": "The MFT entry is marked as available, but data remains on the disk", "correct": true },
+      { "text": "The file becomes encrypted and inaccessible", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the purpose of the $BITMAP attribute in NTFS?",
+    "answers": [
+      { "text": "Stores file timestamps", "correct": false },
+      { "text": "Tracks clusters that are in use or available", "correct": true },
+      { "text": "Holds security descriptors", "correct": false },
+      { "text": "Stores alternate data streams", "correct": false }
+    ]
+  },
+  {
+    "question": "Which forensic tool is commonly used to analyze NTFS file system structures?",
+    "answers": [
+      { "text": "Wireshark", "correct": false },
+      { "text": "EnCase", "correct": true },
+      { "text": "FTK Imager", "correct": false },
+      { "text": "Autopsy", "correct": false }
+    ]
+  },
+  {
+    "question": "What are Alternate Data Streams (ADS) in NTFS?",
+    "answers": [
+      { "text": "Additional hidden data attached to a file without appearing in its main content", "correct": true },
+      { "text": "Encrypted backups of files", "correct": false },
+      { "text": "Temporary files stored in system memory", "correct": false },
+      { "text": "Special permissions for NTFS file access", "correct": false }
+    ]
+  },
+  {
+    "question": "NTFS stores metadata separately from the actual file content.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "When a file is deleted in NTFS, its data is immediately overwritten.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Alternate Data Streams (ADS) can be used to hide malicious code within files.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The Master File Table (MFT) in NTFS contains entries for all files and directories on a volume.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "File timestamps in NTFS cannot be altered by users or programs.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
   }
 ];
