@@ -283,5 +283,130 @@ const questionBank = [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
+  },
+  {
+    "question": "What is the primary purpose of hexadecimal representation in digital forensics?",
+    "answers": [
+      { "text": "To encrypt data for forensic analysis", "correct": false },
+      { "text": "To represent binary data in a human-readable format", "correct": true },
+      { "text": "To compress forensic images", "correct": false },
+      { "text": "To remove metadata from files", "correct": false }
+    ]
+  },
+  {
+    "question": "Which tool is commonly used for analyzing hex values in a forensic investigation?",
+    "answers": [
+      { "text": "FTK Imager", "correct": false },
+      { "text": "Hex Workshop", "correct": true },
+      { "text": "Wireshark", "correct": false },
+      { "text": "EnCase", "correct": false }
+    ]
+  },
+  {
+    "question": "A forensic examiner analyzing a file in hex format notices the header '50 4B 03 04'. What type of file is this likely to be?",
+    "answers": [
+      { "text": "JPEG", "correct": false },
+      { "text": "ZIP", "correct": true },
+      { "text": "PDF", "correct": false },
+      { "text": "DOCX", "correct": false }
+    ]
+  },
+  {
+    "question": "Which hashing algorithm is considered stronger for forensic validation due to lower collision rates?",
+    "answers": [
+      { "text": "MD5", "correct": false },
+      { "text": "CRC-32", "correct": false },
+      { "text": "SHA-256", "correct": true },
+      { "text": "Base64", "correct": false }
+    ]
+  },
+  {
+    "question": "Why is hashing used in forensic investigations?",
+    "answers": [
+      { "text": "To compress large forensic images", "correct": false },
+      { "text": "To compare evidence integrity before and after analysis", "correct": true },
+      { "text": "To encrypt suspect drives", "correct": false },
+      { "text": "To extract hidden files", "correct": false }
+    ]
+  },
+  {
+    "question": "Which forensic tool can be used to verify file integrity using hash values?",
+    "answers": [
+      { "text": "md5sum", "correct": false },
+      { "text": "SHA256sum", "correct": false },
+      { "text": "FTK Imager", "correct": false },
+      { "text": "All of the above", "correct": true }
+    ]
+  },
+  {
+    "question": "What is a significant limitation of using MD5 hashing in digital forensics?",
+    "answers": [
+      { "text": "It cannot be used on Windows systems", "correct": false },
+      { "text": "It is slow and inefficient", "correct": false },
+      { "text": "It has known vulnerabilities to hash collisions", "correct": true },
+      { "text": "It does not generate unique hash values", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following forensic tools is most useful for analyzing network traffic for digital evidence?",
+    "answers": [
+      { "text": "Autopsy", "correct": false },
+      { "text": "Wireshark", "correct": true },
+      { "text": "FTK Imager", "correct": false },
+      { "text": "X-Ways Forensics", "correct": false }
+    ]
+  },
+  {
+    "question": "When performing forensic analysis on a RAID system, which factor is most important?",
+    "answers": [
+      { "text": "The software used to create the RAID", "correct": false },
+      { "text": "The number of hard drives in the RAID array", "correct": false },
+      { "text": "The RAID configuration (RAID 0, RAID 1, etc.)", "correct": true },
+      { "text": "The operating system of the forensic workstation", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary purpose of the 'Bit-stream Image' technique in forensic acquisition?",
+    "answers": [
+      { "text": "To extract only user-created files", "correct": false },
+      { "text": "To create a forensic copy that includes all data, including deleted files", "correct": true },
+      { "text": "To convert all forensic data to a readable PDF format", "correct": false },
+      { "text": "To compress forensic images to save space", "correct": false }
+    ]
+  },
+  {
+    "question": "Each file type has a unique hexadecimal signature that can be used to identify it.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The MD5 algorithm is immune to all forms of collision attacks.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "A forensic hash of a file should remain the same unless the file has been altered.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "RAID 5 provides redundancy by distributing parity data across multiple disks.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Wireshark can be used to capture and analyze encrypted network traffic without decryption.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
   }
 ];
