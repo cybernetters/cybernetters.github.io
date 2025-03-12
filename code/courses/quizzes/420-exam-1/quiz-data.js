@@ -658,5 +658,130 @@ const questionBank = [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
+  },
+  {
+    "question": "What does every MFT record in NTFS begin with?",
+    "answers": [
+      { "text": "FILE0", "correct": true },
+      { "text": "NTFS_BOOT", "correct": false },
+      { "text": "$DATA", "correct": false },
+      { "text": "MFT_RECORD", "correct": false }
+    ]
+  },
+  {
+    "question": "In the MFT, what does the attribute 0x10 represent?",
+    "answers": [
+      { "text": "File data", "correct": false },
+      { "text": "File metadata (Standard Information)", "correct": true },
+      { "text": "File permissions", "correct": false },
+      { "text": "Master boot record", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the purpose of attribute 0x30 in an MFT record?",
+    "answers": [
+      { "text": "Stores security descriptors", "correct": false },
+      { "text": "Defines the NTFS volume name", "correct": false },
+      { "text": "Contains the filename and related metadata", "correct": true },
+      { "text": "Tracks disk errors", "correct": false }
+    ]
+  },
+  {
+    "question": "What does the attribute 0x40 indicate in an MFT record?",
+    "answers": [
+      { "text": "File ownership information", "correct": false },
+      { "text": "Object ID for tracking purposes", "correct": true },
+      { "text": "Storage location for the file's encryption keys", "correct": false },
+      { "text": "Recovery log of deleted files", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the significance of the 0x80 attribute in an MFT record?",
+    "answers": [
+      { "text": "It stores the actual file data", "correct": true },
+      { "text": "It holds security descriptors for access control", "correct": false },
+      { "text": "It marks a file as encrypted", "correct": false },
+      { "text": "It indicates a deleted file", "correct": false }
+    ]
+  },
+  {
+    "question": "In NTFS, what does a 'resident' file mean?",
+    "answers": [
+      { "text": "A file whose data is stored directly within the MFT record", "correct": true },
+      { "text": "A file that is stored in a different sector from its MFT entry", "correct": false },
+      { "text": "A file stored in the NTFS $LOGFILE", "correct": false },
+      { "text": "A file that has been compressed using NTFS compression", "correct": false }
+    ]
+  },
+  {
+    "question": "What does the length of attribute 0x10 indicate in an MFT record?",
+    "answers": [
+      { "text": "The size of the actual file data", "correct": false },
+      { "text": "The number of attributes present in the record", "correct": false },
+      { "text": "The total size of the Standard Information attribute", "correct": true },
+      { "text": "The number of sectors occupied by the file", "correct": false }
+    ]
+  },
+  {
+    "question": "Which NTFS attribute is responsible for tracking security and access control settings?",
+    "answers": [
+      { "text": "$BITMAP", "correct": false },
+      { "text": "$SECURITY_DESCRIPTOR", "correct": true },
+      { "text": "$STANDARD_INFORMATION", "correct": false },
+      { "text": "$DATA", "correct": false }
+    ]
+  },
+  {
+    "question": "In hex analysis of an MFT record, what does the 'resident flag' in attribute 0x80 indicate?",
+    "answers": [
+      { "text": "Whether the file is stored inside the MFT or externally", "correct": true },
+      { "text": "If the file is encrypted", "correct": false },
+      { "text": "Whether the file is a system file", "correct": false },
+      { "text": "If the file has been accessed recently", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following would NOT be found in an MFT record?",
+    "answers": [
+      { "text": "File timestamps", "correct": false },
+      { "text": "File size", "correct": false },
+      { "text": "The physical location of file clusters on disk", "correct": false },
+      { "text": "The BIOS version of the system", "correct": true }
+    ]
+  },
+  {
+    "question": "A resident file in NTFS has its data stored directly within the MFT record.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The attribute 0x80 in an MFT record stores the filename of a file.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "The Master File Table (MFT) keeps track of every file and directory in an NTFS volume.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The length of an attribute field in an MFT record always corresponds to the file size.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "A deleted file's MFT entry is removed immediately upon deletion.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
   }
 ];
