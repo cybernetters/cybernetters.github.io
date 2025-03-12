@@ -158,5 +158,130 @@ const questionBank = [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
+  },
+  {
+    "question": "Which of the following is a fundamental requirement for evidence to be admissible in court?",
+    "answers": [
+      { "text": "Evidence must be encrypted", "correct": false },
+      { "text": "Evidence must be modified before presentation", "correct": false },
+      { "text": "Evidence must follow the chain of custody", "correct": true },
+      { "text": "Evidence must be obtained without a warrant", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary purpose of a forensic hash value?",
+    "answers": [
+      { "text": "To encrypt digital evidence", "correct": false },
+      { "text": "To verify the integrity of digital evidence", "correct": true },
+      { "text": "To make forensic copies smaller", "correct": false },
+      { "text": "To modify the original evidence for analysis", "correct": false }
+    ]
+  },
+  {
+    "question": "Which forensic tool is specifically designed to analyze Windows file systems?",
+    "answers": [
+      { "text": "FTK Imager", "correct": true },
+      { "text": "Linux dd command", "correct": false },
+      { "text": "Wireshark", "correct": false },
+      { "text": "Netcat", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the main difference between public-sector and private-sector investigations?",
+    "answers": [
+      { "text": "Public-sector investigations deal with corporate policy violations", "correct": false },
+      { "text": "Private-sector investigations are subject to constitutional laws", "correct": false },
+      { "text": "Public-sector investigations involve law enforcement and criminal cases", "correct": true },
+      { "text": "Private-sector investigations always lead to criminal prosecution", "correct": false }
+    ]
+  },
+  {
+    "question": "Which rule allows business records to be admitted into court as evidence?",
+    "answers": [
+      { "text": "Fourth Amendment", "correct": false },
+      { "text": "Best Evidence Rule", "correct": false },
+      { "text": "Business Record Exception", "correct": true },
+      { "text": "Plain View Doctrine", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT considered a forensic imaging method?",
+    "answers": [
+      { "text": "Disk-to-image copy", "correct": false },
+      { "text": "Logical disk-to-disk copy", "correct": false },
+      { "text": "File copy and paste", "correct": true },
+      { "text": "Sparse acquisition", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is a common risk when conducting a forensic analysis on live systems?",
+    "answers": [
+      { "text": "Overwriting evidence", "correct": false },
+      { "text": "Legal issues due to improper search warrants", "correct": false },
+      { "text": "Changes in volatile memory (RAM)", "correct": false },
+      { "text": "All of the above", "correct": true }
+    ]
+  },
+  {
+    "question": "Which legal case established that police need an additional warrant when searching computers for different types of crimes?",
+    "answers": [
+      { "text": "Arizona v. Hicks", "correct": false },
+      { "text": "United States v. Comprehensive Drug Testing", "correct": true },
+      { "text": "State of Texas v. Anthony Granville", "correct": false },
+      { "text": "Katz v. United States", "correct": false }
+    ]
+  },
+  {
+    "question": "Which type of forensic acquisition is best suited for recovering deleted files?",
+    "answers": [
+      { "text": "Logical acquisition", "correct": false },
+      { "text": "Sparse acquisition", "correct": false },
+      { "text": "Live acquisition", "correct": false },
+      { "text": "Disk-to-image acquisition", "correct": true }
+    ]
+  },
+  {
+    "question": "In forensic investigations, which of the following is a primary concern when handling RAID storage systems?",
+    "answers": [
+      { "text": "The number of files stored", "correct": false },
+      { "text": "The size and configuration of the RAID system", "correct": true },
+      { "text": "The brand of the hard drives", "correct": false },
+      { "text": "The color of the storage devices", "correct": false }
+    ]
+  },
+  {
+    "question": "A forensic examiner can always use the plain view doctrine to seize evidence on a suspect’s computer.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Deleted files can sometimes be recovered even after they have been removed from the recycle bin.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "A write-blocker prevents an investigator from accessing files on a suspect’s device.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Forensic imaging creates an exact bit-for-bit copy of a digital device for investigation.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Cloud storage complicates forensic investigations due to jurisdiction and accessibility issues.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
   }
 ];
