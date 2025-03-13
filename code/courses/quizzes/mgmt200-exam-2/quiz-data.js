@@ -88,7 +88,105 @@ const questionBank = [
       { "text": "Sales to customers on account.", "correct": true },
       { "text": "Sales with a high risk that the customer will return the product.", "correct": false }
     ]
+  },
+  {
+    "question": "Gershwin Wallcovering Inc. shipped the wrong shade of paint to a customer. The customer agreed to keep the paint upon being offered a 15% price reduction. The price reduction is an example of a:",
+    "answers": [
+      { "text": "Sales revenue", "correct": false },
+      { "text": "Sales discount", "correct": false },
+      { "text": "Sales return", "correct": false },
+      { "text": "Sales allowance", "correct": true }
+    ]
+  },
+  {
+    "question": "Accounts receivable are normally reported at the:",
+    "answers": [
+      { "text": "Present value of future cash receipts", "correct": false },
+      { "text": "Current value plus accrued interest", "correct": false },
+      { "text": "Amount expected to be collected", "correct": true },
+      { "text": "Current value less expected collection costs", "correct": false }
+    ]
+  },
+  {
+    "question": "Using a balance sheet approach to estimate bad debts involves calculating the desired ending balance in which account?",
+    "answers": [
+      { "text": "Accounts receivable", "correct": false },
+      { "text": "Allowance for uncollectible accounts", "correct": true },
+      { "text": "Bad debt expense", "correct": false },
+      { "text": "Credit sales", "correct": false }
+    ]
+  },
+  {
+    "question": "The normal balance of the account 'Allowance for Uncollectible Accounts' is a ________ because ________.",
+    "answers": [
+      { "text": "Debit; it is a contra account to Revenue (a credit account)", "correct": false },
+      { "text": "Credit; it is a contra account to Accounts Receivable (a debit account)", "correct": true },
+      { "text": "Debit; it is an expense in the income statement", "correct": false },
+      { "text": "Credit; it is a contra account to Bad Debt Expense (a debit account)", "correct": false }
+    ]
+  },
+  {
+    "question": "Lail Inc. accounts for bad debts using the allowance method. On June 1, Lail Inc. wrote off Andrew Green's $2,500 account. Based on Lail's estimation, Andrew Green will never pay any portion of the balance in his account. What effect will this write-off have on Lail Inc.'s balance sheet at the time of the write-off?",
+    "answers": [
+      { "text": "An increase to stockholders' equity and a decrease to liabilities", "correct": false },
+      { "text": "No effect", "correct": true },
+      { "text": "An increase to assets and an increase to stockholders' equity", "correct": false },
+      { "text": "A decrease to assets and a decrease to stockholders' equity", "correct": false }
+    ]
+  },
+  {
+    "question": "At December 31, Amy Jo's Appliances had account balances in Accounts Receivable of $311,000 and in Allowance for Uncollectible Accounts of $970 (credit) before any adjustments. An analysis of Amy Jo's December 31 accounts receivable suggests that the allowance for uncollectible accounts should be 2% of accounts receivable. Bad debt expense for the year should be:",
+    "answers": [
+      { "text": "$6,220", "correct": false },
+      { "text": "$6,450", "correct": false },
+      { "text": "$5,250", "correct": true },
+      { "text": "$7,190", "correct": false }
+    ]
+  },
+  {
+    "question": "On September 1, 2021, Middleton Corp. lends cash and accepts a $1,000 note receivable that offers 12% interest and is due in six months. How much interest revenue will Middleton Corp. report during 2021?",
+    "answers": [
+      { "text": "$20", "correct": false },
+      { "text": "$40", "correct": true },
+      { "text": "$30", "correct": false },
+      { "text": "$60", "correct": false }
+    ]
+  },
+  {
+    "question": "The cost of unsold inventory at the end of the year is classified as a(n) ________ in the ________.",
+    "answers": [
+      { "text": "Asset; Balance sheet", "correct": true },
+      { "text": "Expense; Income statement", "correct": false },
+      { "text": "Liability; Balance sheet", "correct": false },
+      { "text": "Revenue; Income statement", "correct": false }
+    ]
+  },
+  {
+    "question": "Tyler Toys has beginning inventory for the year of $18,000. During the year, Tyler purchases inventory for $230,000 and has cost of goods sold equal to $233,000. Tyler's ending inventory equals:",
+    "answers": [
+      { "text": "$15,000", "correct": true },
+      { "text": "$18,000", "correct": false },
+      { "text": "$21,000", "correct": false },
+      { "text": "$19,000", "correct": false }
+    ]
+  },
+  {
+    "question": "Gross profit is calculated as net sales minus:",
+    "answers": [
+      { "text": "Nonoperating expenses and income tax expense", "correct": false },
+      { "text": "Operating expenses", "correct": false },
+      { "text": "Cost of goods sold", "correct": true },
+      { "text": "All of the other answers are subtracted from net sales to calculate gross profit", "correct": false }
+    ]
+  },
+  {
+    "question": "Which measure reflects profitability from normal operations and a key performance measure for predicting the future profit-generating ability of a company?",
+    "answers": [
+      { "text": "Gross profit", "correct": false },
+      { "text": "Operating income", "correct": true },
+      { "text": "Income before income taxes", "correct": false },
+      { "text": "Net income", "correct": false }
+    ]
   }
-}
 
 ];
