@@ -88,33 +88,7 @@ const questionBank = [
       { "text": "Sales to customers on account.", "correct": true },
       { "text": "Sales with a high risk that the customer will return the product.", "correct": false }
     ]
-  },
-  {
-    "question": "Barton Health Services provided care to a patient worth $1,200. Because the patient was over the age of 65, Barton granted the patient a 20% discount and the customer paid the correct amount in cash. How would Barton record the service transaction?\n\n\
-+------+-------------------+------------+\n\
-|      | Account          | Amount     |\n\
-+------+-------------------+------------+\n\
-| A    | Cash             |  960       |\n\
-|      | Service Revenue  |  960       |\n\
-+------+-------------------+------------+\n\
-| B    | Cash             | 960        |\n\
-|      | Trade Discount   | 240        |\n\
-|      | Service Revenue  | 1,200      |\n\
-+------+-------------------+------------+\n\
-| C    | Cash             | 1,200      |\n\
-|      | Service Revenue  | 1,200      |\n\
-+------+-------------------+------------+\n\
-| D    | Cash             | 1,200      |\n\
-|      | Trade Discount   | 240        |\n\
-|      | Service Revenue  | 960        |\n\
-+------+-------------------+------------+",
-    
-    "answers": [
-        { "text": "Option A", "correct": true },
-        { "text": "Option B", "correct": false },
-        { "text": "Option C", "correct": false },
-        { "text": "Option D", "correct": false }
-    ]
+  }
 }
 
 ];
