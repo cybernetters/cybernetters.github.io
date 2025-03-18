@@ -1,412 +1,2000 @@
 const questionBank = [
   {
-    "question": "Which IEEE standard defines the original Spanning Tree Protocol?",
+    "question": "Which of the following is NOT a characteristic of IPv4?",
     "answers": [
-      { "text": "IEEE 802.1D", "correct": true },
-      { "text": "IEEE 802.1W", "correct": false },
-      { "text": "IEEE 802.1S", "correct": false },
-      { "text": "IEEE 802.3", "correct": false }
+      { "text": "Connectionless delivery", "correct": false },
+      { "text": "Best effort delivery", "correct": false },
+      { "text": "Media independence", "correct": false },
+      { "text": "Built-in reliability", "correct": true }
     ]
   },
   {
-    "question": "What is the primary purpose of the Spanning Tree Protocol (STP)?",
+    "question": "What does “best effort” delivery in IPv4 imply?",
     "answers": [
-      { "text": "To load balance traffic", "correct": false },
-      { "text": "To enforce security policies", "correct": false },
-      { "text": "To prevent switching loops in redundant networks", "correct": true },
-      { "text": "To manage VLAN assignments", "correct": false }
+      { "text": "Guaranteed delivery of packets", "correct": false },
+      { "text": "Unreliable delivery without error recovery", "correct": true },
+      { "text": "Priority-based delivery", "correct": false },
+      { "text": "Reliable handshaking between hosts", "correct": false }
     ]
   },
   {
-    "question": "Which Cisco proprietary protocol adds VLAN features to the traditional STP?",
+    "question": "In IPv4 addressing, what role does the subnet mask play?",
     "answers": [
-      { "text": "RSTP", "correct": false },
-      { "text": "MSTP", "correct": false },
-      { "text": "PVST+", "correct": true },
-      { "text": "Rapid PVST+", "correct": false }
+      { "text": "It determines the physical address", "correct": false },
+      { "text": "It divides the address into network and host portions", "correct": true },
+      { "text": "It encrypts the IP address", "correct": false },
+      { "text": "It defines the default gateway", "correct": false }
     ]
   },
   {
-    "question": "What is the default bridge priority value used in STP?",
+    "question": "What is the primary purpose of a default gateway?",
     "answers": [
-      { "text": "4096", "correct": false },
-      { "text": "32768", "correct": true },
-      { "text": "65536", "correct": false },
-      { "text": "1024", "correct": false }
+      { "text": "To assign IP addresses to hosts", "correct": false },
+      { "text": "To serve as the router interface for network communications", "correct": true },
+      { "text": "To manage MAC addresses", "correct": false },
+      { "text": "To fragment packets", "correct": false }
     ]
   },
   {
-    "question": "When two switches have the same priority during the STP election process, which parameter is used as a tie-breaker?",
+    "question": "Which method of representing a subnet mask is used for Classless Interdomain Routing (CIDR)?",
     "answers": [
-      { "text": "Port number", "correct": false },
-      { "text": "Link speed", "correct": false },
-      { "text": "MAC address", "correct": true },
-      { "text": "CPU usage", "correct": false }
+      { "text": "Dotted decimal notation", "correct": false },
+      { "text": "Binary notation", "correct": false },
+      { "text": "Slash (/) followed by the number of network bits", "correct": true },
+      { "text": "Hexadecimal notation", "correct": false }
     ]
   },
   {
-    "question": "Which timer in STP defines how often the root port sends hello messages?",
+    "question": "What two parts make up an IPv4 address?",
     "answers": [
-      { "text": "Forward Delay Timer", "correct": false },
-      { "text": "Hello Timer", "correct": true },
-      { "text": "Max Age Timer", "correct": false },
-      { "text": "MAC Address Table timer", "correct": false }
+      { "text": "Network number and subnet mask", "correct": false },
+      { "text": "Network number and host number", "correct": true },
+      { "text": "Host number and default gateway", "correct": false },
+      { "text": "MAC address and network number", "correct": false }
     ]
   },
   {
-    "question": "What is the typical Hello Timer interval in STP?",
+    "question": "Which MTU value is associated with Copper Ethernet as presented?",
     "answers": [
-      { "text": "1 second", "correct": false },
-      { "text": "2 seconds", "correct": true },
-      { "text": "5 seconds", "correct": false },
-      { "text": "10 seconds", "correct": false }
+      { "text": "512 bytes", "correct": false },
+      { "text": "1518 bytes", "correct": true },
+      { "text": "2272 bytes", "correct": false },
+      { "text": "17,966 bytes", "correct": false }
     ]
   },
   {
-    "question": "Which timer specifies the duration that ports remain in the blocking state before transitioning?",
+    "question": "What network device is responsible for fragmenting packets when necessary?",
     "answers": [
-      { "text": "Hello Timer", "correct": false },
-      { "text": "Max Age Timer", "correct": true },
-      { "text": "Forward Delay Timer", "correct": false },
-      { "text": "MAC Address Table lifetime", "correct": false }
+      { "text": "Switch", "correct": false },
+      { "text": "Router", "correct": true },
+      { "text": "Hub", "correct": false },
+      { "text": "Bridge", "correct": false }
     ]
   },
   {
-    "question": "In STP, which port roles are responsible for forwarding packets?",
+    "question": "Which protocol maps an IPv4 address to a MAC address?",
     "answers": [
-      { "text": "Only the Designated Port", "correct": false },
-      { "text": "Only the Root Port", "correct": false },
-      { "text": "Both the Designated Port and the Root Port", "correct": true },
-      { "text": "The Blocked Port and the Root Port", "correct": false }
+      { "text": "DHCP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "ARP", "correct": true },
+      { "text": "ICMP", "correct": false }
     ]
   },
   {
-    "question": "Which of the following is NOT included in the STP frame format?",
+    "question": "How are IPv6 addresses typically represented?",
     "answers": [
-      { "text": "Protocol ID", "correct": false },
-      { "text": "MAC address table", "correct": true },
-      { "text": "Port Priority", "correct": false },
-      { "text": "Message Age", "correct": false }
+      { "text": "Dotted decimal format", "correct": false },
+      { "text": "Colon-hexadecimal format", "correct": true },
+      { "text": "Binary string", "correct": false },
+      { "text": "Octal format", "correct": false }
     ]
   },
   {
-    "question": "What does MSTP stand for?",
+    "question": "Which rule applies when condensing an IPv6 address?",
     "answers": [
-      { "text": "Multiple Spanning Tree Protocol", "correct": true },
-      { "text": "Managed Spanning Tree Protocol", "correct": false },
-      { "text": "Multicast Spanning Tree Protocol", "correct": false },
-      { "text": "Modular Spanning Tree Protocol", "correct": false }
+      { "text": "Multiple sequences of zero tuples can be compressed", "correct": false },
+      { "text": "Only one sequence of all-zero tuples can be compressed", "correct": true },
+      { "text": "All leading zeros must be retained", "correct": false },
+      { "text": "The address must always be written with eight complete tuples", "correct": false }
     ]
   },
   {
-    "question": "Which STP variant typically improves convergence times to around 10 seconds?",
+    "question": "What was one of the drivers for the development of IPv6?",
     "answers": [
-      { "text": "PVST+", "correct": false },
-      { "text": "Rapid STP (RSTP)", "correct": true },
-      { "text": "MSTP", "correct": false },
-      { "text": "Traditional STP", "correct": false }
+      { "text": "To increase the size of packets", "correct": false },
+      { "text": "To address IPv4 address exhaustion", "correct": true },
+      { "text": "To eliminate the need for routing", "correct": false },
+      { "text": "To simplify MAC addressing", "correct": false }
     ]
   },
   {
-    "question": "Which benefit is associated with Rapid STP (RSTP) compared to traditional STP?",
+    "question": "Which protocol is used to map an IPv4 address to a corresponding MAC address?",
     "answers": [
-      { "text": "It has a slower convergence process", "correct": false },
-      { "text": "It uses a handshake process for rapid transition", "correct": true },
-      { "text": "It increases the number of redundant paths", "correct": false },
-      { "text": "It eliminates the need for timers", "correct": false }
+      { "text": "DHCP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false }
     ]
   },
   {
-    "question": "What is the maximum numerical value for the priority field in STP (given it ranges from 0 to 65536 in multiples of 4096)?",
+    "question": "What benefit does hierarchical addressing provide in IPv4?",
     "answers": [
-      { "text": "4096", "correct": false },
-      { "text": "32768", "correct": false },
-      { "text": "65536", "correct": true },
-      { "text": "8192", "correct": false }
+      { "text": "It increases the size of the IP header", "correct": false },
+      { "text": "It simplifies routing by using the network portion", "correct": true },
+      { "text": "It expands the available address space", "correct": false },
+      { "text": "It eliminates the need for fragmentation", "correct": false }
     ]
   },
   {
-    "question": "Which protocol provides one spanning tree instance for each VLAN?",
+    "question": "At which OSI layer does the IP address operate?",
     "answers": [
-      { "text": "MSTP", "correct": false },
-      { "text": "RSTP", "correct": false },
-      { "text": "PVST", "correct": true },
-      { "text": "Traditional STP", "correct": false }
+      { "text": "Physical layer", "correct": false },
+      { "text": "Data Link layer", "correct": false },
+      { "text": "Network layer", "correct": true },
+      { "text": "Transport layer", "correct": false }
     ]
   },
   {
-    "question": "What is a key difference between PVST and PVST+?",
+    "question": "Which of the following is NOT a method for assigning IPv6 addresses?",
     "answers": [
-      { "text": "PVST supports only ISL links, while PVST+ also supports 802.1Q links", "correct": true },
-      { "text": "PVST+ is slower than PVST", "correct": false },
-      { "text": "PVST+ does not allow multiple root bridges per VLAN", "correct": false },
-      { "text": "There is no difference", "correct": false }
+      { "text": "Manual addressing", "correct": false },
+      { "text": "DHCPv6", "correct": false },
+      { "text": "Stateless auto-configuration", "correct": false },
+      { "text": "ARP-based configuration", "correct": true }
     ]
   },
   {
-    "question": "Which command is used to evaluate the traffic on an interface to help identify a port generating high load?",
+    "question": "In IPv4, what does “fragmentation” refer to?",
     "answers": [
-      { "text": "show spanning-tree", "correct": false },
-      { "text": "show processes cpu history", "correct": false },
-      { "text": "show int <interface>", "correct": true },
-      { "text": "show mac-address-table", "correct": false }
+      { "text": "Dividing a packet into smaller pieces due to MTU constraints", "correct": true },
+      { "text": "Combining several packets into one larger packet", "correct": false },
+      { "text": "Encrypting a packet for secure transmission", "correct": false },
+      { "text": "Routing a packet through multiple gateways", "correct": false }
     ]
   },
   {
-    "question": "In determining which port to block during STP convergence, which factor is used as a tie-breaker?",
+    "question": "What does each “1” bit in the subnet mask indicate?",
     "answers": [
-      { "text": "Highest path cost", "correct": false },
-      { "text": "Lowest sender BID", "correct": true },
-      { "text": "Highest MAC address", "correct": false },
-      { "text": "Lowest CPU usage", "correct": false }
+      { "text": "A bit belonging to the host portion", "correct": false },
+      { "text": "A bit belonging to the network portion", "correct": true },
+      { "text": "A bit that represents the default gateway", "correct": false },
+      { "text": "A bit used for error checking", "correct": false }
     ]
   },
   {
-    "question": "In a PVST configuration, what is the relationship between the number of VLANs and the number of spanning tree instances?",
+    "question": "Which media type has the smallest MTU as noted in the lecture?",
     "answers": [
-      { "text": "One-to-one", "correct": true },
-      { "text": "One-to-many", "correct": false },
-      { "text": "Many-to-one", "correct": false },
-      { "text": "No fixed relationship", "correct": false }
+      { "text": "Copper Ethernet", "correct": false },
+      { "text": "Copper Serial: Frame Relay", "correct": true },
+      { "text": "Optical Fiber: ATM", "correct": false },
+      { "text": "Wireless: 802.11", "correct": false }
     ]
   },
   {
-    "question": "Which best practice is recommended for STP implementation in an enterprise network?",
+    "question": "What is the primary role of the network layer in data communication?",
     "answers": [
-      { "text": "Use default configurations without any adjustments", "correct": false },
-      { "text": "Manually configure the root bridge to optimize topology", "correct": true },
-      { "text": "Disable redundant links to simplify the network", "correct": false },
-      { "text": "Increase the MAC address table lifetime", "correct": false }
+      { "text": "Encrypting data for secure transmission", "correct": false },
+      { "text": "Managing physical media connections", "correct": false },
+      { "text": "Addressing and routing packets from host to host", "correct": true },
+      { "text": "Handling application-level protocols", "correct": false }
     ]
   },
   {
-    "question": "STP provides one spanning tree instance per VLAN in PVST. True or False?",
+    "question": "Which of the following is used to map an IPv4 address to a MAC address?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "DHCP", "correct": false }
     ]
   },
   {
-    "question": "The primary purpose of STP is to increase the number of redundant paths in a network. True or False?",
+    "question": "How are IPv6 addresses typically represented?",
     "answers": [
-      { "text": "True", "correct": false },
-      { "text": "False", "correct": true }
+      { "text": "Dotted decimal format", "correct": false },
+      { "text": "Colon-hexadecimal format", "correct": true },
+      { "text": "Binary string", "correct": false },
+      { "text": "Octal format", "correct": false }
     ]
   },
   {
-    "question": "Rapid STP (RSTP) is backwards compatible with traditional STP. True or False?",
+    "question": "Which rule applies when condensing an IPv6 address?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "Multiple sequences of zero tuples can be compressed", "correct": false },
+      { "text": "Only one sequence of all-zero tuples can be compressed", "correct": true },
+      { "text": "All leading zeros must be retained", "correct": false },
+      { "text": "The address must always be written with eight complete tuples", "correct": false }
     ]
   },
   {
-    "question": "The default bridge priority value in STP is 32768. True or False?",
+    "question": "What was one of the drivers for the development of IPv6?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "To increase the size of packets", "correct": false },
+      { "text": "To address IPv4 address exhaustion", "correct": true },
+      { "text": "To eliminate the need for routing", "correct": false },
+      { "text": "To simplify MAC addressing", "correct": false }
     ]
   },
   {
-    "question": "A switch’s Bridge ID (BID) in STP is composed of its priority and its MAC address. True or False?",
+    "question": "Which protocol is used to map an IPv4 address to a corresponding MAC address?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "DHCP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false }
     ]
   },
   {
-    "question": "The default Hello Timer in STP is set to 5 seconds. True or False?",
+    "question": "What benefit does hierarchical addressing provide in IPv4?",
     "answers": [
-      { "text": "True", "correct": false },
-      { "text": "False", "correct": true }
+      { "text": "It increases the size of the IP header", "correct": false },
+      { "text": "It simplifies routing by using the network portion", "correct": true },
+      { "text": "It expands the available address space", "correct": false },
+      { "text": "It eliminates the need for fragmentation", "correct": false }
     ]
   },
   {
-    "question": "The Max Age Timer in STP is usually set to 20 seconds. True or False?",
+    "question": "At which OSI layer does the IP address operate?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "Physical layer", "correct": false },
+      { "text": "Data Link layer", "correct": false },
+      { "text": "Network layer", "correct": true },
+      { "text": "Transport layer", "correct": false }
     ]
   },
   {
-    "question": "The Forward Delay Timer in STP determines how long a port remains in the Listening and Learning states. True or False?",
+    "question": "Which of the following is NOT a method for assigning IPv6 addresses?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "Manual addressing", "correct": false },
+      { "text": "DHCPv6", "correct": false },
+      { "text": "Stateless auto-configuration", "correct": false },
+      { "text": "ARP-based configuration", "correct": true }
     ]
   },
   {
-    "question": "RSTP reduces convergence times to approximately 10 seconds compared to traditional STP. True or False?",
+    "question": "In IPv4, what does “fragmentation” refer to?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "Dividing a packet into smaller pieces due to MTU constraints", "correct": true },
+      { "text": "Combining several packets into one larger packet", "correct": false },
+      { "text": "Encrypting a packet for secure transmission", "correct": false },
+      { "text": "Routing a packet through multiple gateways", "correct": false }
     ]
   },
   {
-    "question": "PVST provides one spanning tree instance for all VLANs in a network. True or False?",
+    "question": "What does each “1” bit in the subnet mask indicate?",
     "answers": [
-      { "text": "True", "correct": false },
-      { "text": "False", "correct": true }
+      { "text": "A bit belonging to the host portion", "correct": false },
+      { "text": "A bit belonging to the network portion", "correct": true },
+      { "text": "A bit that represents the default gateway", "correct": false },
+      { "text": "A bit used for error checking", "correct": false }
     ]
   },
   {
-    "question": "PVST+ extends PVST by adding support for 802.1Q links in addition to Cisco’s proprietary ISL. True or False?",
+    "question": "Which media type has the smallest MTU as noted in the lecture?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "Copper Ethernet", "correct": false },
+      { "text": "Copper Serial: Frame Relay", "correct": true },
+      { "text": "Optical Fiber: ATM", "correct": false },
+      { "text": "Wireless: 802.11", "correct": false }
     ]
   },
   {
-    "question": "MSTP uses the RSTP convergence algorithm to maintain a minimum number of spanning tree instances for the VLANs present on the network. True or False?",
+    "question": "What is the primary role of the network layer in data communication?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "Encrypting data for secure transmission", "correct": false },
+      { "text": "Managing physical media connections", "correct": false },
+      { "text": "Addressing and routing packets from host to host", "correct": true },
+      { "text": "Handling application-level protocols", "correct": false }
     ]
   },
   {
-    "question": "The STP election process, which determines the root bridge, can take around 45 seconds to complete. True or False?",
+    "question": "Which of the following is used to map an IPv4 address to a MAC address?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "DHCP", "correct": false }
     ]
   },
   {
-    "question": "A designated port in STP is responsible for forwarding all traffic on its segment. True or False?",
+    "question": "How are IPv6 addresses typically represented?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "Dotted decimal format", "correct": false },
+      { "text": "Colon-hexadecimal format", "correct": true },
+      { "text": "Binary string", "correct": false },
+      { "text": "Octal format", "correct": false }
     ]
   },
   {
-    "question": "The root port is the port with the shortest path cost to the root bridge. True or False?",
+    "question": "Which rule applies when condensing an IPv6 address?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "Multiple sequences of zero tuples can be compressed", "correct": false },
+      { "text": "Only one sequence of all-zero tuples can be compressed", "correct": true },
+      { "text": "All leading zeros must be retained", "correct": false },
+      { "text": "The address must always be written with eight complete tuples", "correct": false }
     ]
   },
   {
-    "question": "The STP frame format includes a field for Port Priority. True or False?",
+    "question": "What was one of the drivers for the development of IPv6?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "To increase the size of packets", "correct": false },
+      { "text": "To address IPv4 address exhaustion", "correct": true },
+      { "text": "To eliminate the need for routing", "correct": false },
+      { "text": "To simplify MAC addressing", "correct": false }
     ]
   },
   {
-    "question": "STP employs an election process among switches to select the authoritative root bridge. True or False?",
+    "question": "Which protocol is used to map an IPv4 address to a corresponding MAC address?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "DHCP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false }
     ]
   },
   {
-    "question": "The process of evaluating link speed, summing path costs, and comparing sender BIDs is used to determine which port should be blocked. True or False?",
+    "question": "What benefit does hierarchical addressing provide in IPv4?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "It increases the size of the IP header", "correct": false },
+      { "text": "It simplifies routing by using the network portion", "correct": true },
+      { "text": "It expands the available address space", "correct": false },
+      { "text": "It eliminates the need for fragmentation", "correct": false }
     ]
   },
   {
-    "question": "In RSTP, an edge port (often configured with PortFast) allows for immediate transition to the forwarding state. True or False?",
+    "question": "At which OSI layer does the IP address operate?",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+      { "text": "Physical layer", "correct": false },
+      { "text": "Data Link layer", "correct": false },
+      { "text": "Network layer", "correct": true },
+      { "text": "Transport layer", "correct": false }
     ]
   },
   {
-    "question": "The command 'show mac-address-table' is used to identify real-time traffic load on a specific port. True or False?",
+    "question": "Which of the following is NOT a method for assigning IPv6 addresses?",
     "answers": [
-      { "text": "True", "correct": false },
-      { "text": "False", "correct": true }
+      { "text": "Manual addressing", "correct": false },
+      { "text": "DHCPv6", "correct": false },
+      { "text": "Stateless auto-configuration", "correct": false },
+      { "text": "ARP-based configuration", "correct": true }
     ]
   },
   {
-    "question": "In an enterprise network experiencing slow convergence after a topology change, an engineer notices that the network is taking more than 30 seconds for ports to become active. Which protocol is most likely being used?",
+    "question": "In IPv4, what does “fragmentation” refer to?",
     "answers": [
-      { "text": "Rapid STP (RSTP)", "correct": false },
-      { "text": "Rapid PVST+", "correct": false },
-      { "text": "Traditional STP", "correct": true },
-      { "text": "MSTP", "correct": false }
+      { "text": "Dividing a packet into smaller pieces due to MTU constraints", "correct": true },
+      { "text": "Combining several packets into one larger packet", "correct": false },
+      { "text": "Encrypting a packet for secure transmission", "correct": false },
+      { "text": "Routing a packet through multiple gateways", "correct": false }
     ]
   },
   {
-    "question": "A network administrator manually sets a lower priority value on a switch to ensure it becomes the root bridge. Which best practice is being applied?",
+    "question": "What does each “1” bit in the subnet mask indicate?",
     "answers": [
-      { "text": "Disabling redundant links", "correct": false },
-      { "text": "Manually configuring the root bridge", "correct": true },
-      { "text": "Enabling PortFast on all ports", "correct": false },
-      { "text": "Adjusting the Hello Timer", "correct": false }
+      { "text": "A bit belonging to the host portion", "correct": false },
+      { "text": "A bit belonging to the network portion", "correct": true },
+      { "text": "A bit that represents the default gateway", "correct": false },
+      { "text": "A bit used for error checking", "correct": false }
     ]
   },
   {
-    "question": "While troubleshooting a VLAN-specific issue, an administrator discovers that different VLANs have different root bridge configurations. Which protocol feature is most likely in use?",
+    "question": "Which media type has the smallest MTU as noted in the lecture?",
     "answers": [
-      { "text": "RSTP", "correct": false },
-      { "text": "MSTP", "correct": false },
-      { "text": "PVST", "correct": true },
-      { "text": "Traditional STP", "correct": false }
+      { "text": "Copper Ethernet", "correct": false },
+      { "text": "Copper Serial: Frame Relay", "correct": true },
+      { "text": "Optical Fiber: ATM", "correct": false },
+      { "text": "Wireless: 802.11", "correct": false }
     ]
   },
   {
-    "question": "In a network where a trunk port is forwarding traffic in one VLAN but blocking in another, what does this indicate about the spanning tree configuration?",
+    "question": "What is the primary role of the network layer in data communication?",
     "answers": [
-      { "text": "The switch is running MSTP", "correct": false },
-      { "text": "The network is using PVST", "correct": true },
-      { "text": "RSTP is misconfigured", "correct": false },
-      { "text": "There is a hardware failure", "correct": false }
+      { "text": "Encrypting data for secure transmission", "correct": false },
+      { "text": "Managing physical media connections", "correct": false },
+      { "text": "Addressing and routing packets from host to host", "correct": true },
+      { "text": "Handling application-level protocols", "correct": false }
     ]
   },
   {
-    "question": "During a network outage investigation, high CPU utilization is observed on core switches. Which STP-related issue might be contributing to this condition?",
+    "question": "Which of the following is used to map an IPv4 address to a MAC address?",
     "answers": [
-      { "text": "Excessively long Hello Timer intervals", "correct": false },
-      { "text": "Broadcast storms caused by switching loops", "correct": true },
-      { "text": "Manual root bridge configuration errors", "correct": false },
-      { "text": "Incorrect MAC address table aging", "correct": false }
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "DHCP", "correct": false }
     ]
   },
   {
-    "question": "An engineer finds that a port on the network edge is not transitioning immediately to the forwarding state after link-up. Which configuration is likely missing?",
+    "question": "How are IPv6 addresses typically represented?",
     "answers": [
-      { "text": "Proper VLAN assignment", "correct": false },
-      { "text": "PortFast (edge port) configuration", "correct": true },
-      { "text": "Correct MAC address setup", "correct": false },
-      { "text": "An increased Forward Delay Timer", "correct": false }
+      { "text": "Dotted decimal format", "correct": false },
+      { "text": "Colon-hexadecimal format", "correct": true },
+      { "text": "Binary string", "correct": false },
+      { "text": "Octal format", "correct": false }
     ]
   },
   {
-    "question": "To reduce the delay during a topology change, a network administrator decides to adjust a timer that affects how long a port stays in the Listening and Learning states. Which timer should be modified?",
+    "question": "Which rule applies when condensing an IPv6 address?",
     "answers": [
-      { "text": "Hello Timer", "correct": false },
-      { "text": "Max Age Timer", "correct": false },
-      { "text": "Forward Delay Timer", "correct": true },
-      { "text": "MAC Address Table lifetime", "correct": false }
+      { "text": "Multiple sequences of zero tuples can be compressed", "correct": false },
+      { "text": "Only one sequence of all-zero tuples can be compressed", "correct": true },
+      { "text": "All leading zeros must be retained", "correct": false },
+      { "text": "The address must always be written with eight complete tuples", "correct": false }
     ]
   },
   {
-    "question": "In a scenario requiring load balancing across multiple VLANs, which spanning tree protocol variant is most suitable?",
+    "question": "What was one of the drivers for the development of IPv6?",
     "answers": [
-      { "text": "MSTP", "correct": false },
-      { "text": "RSTP", "correct": false },
-      { "text": "PVST+", "correct": true },
-      { "text": "Traditional STP", "correct": false }
+      { "text": "To increase the size of packets", "correct": false },
+      { "text": "To address IPv4 address exhaustion", "correct": true },
+      { "text": "To eliminate the need for routing", "correct": false },
+      { "text": "To simplify MAC addressing", "correct": false }
     ]
   },
   {
-    "question": "An administrator notices that one switch has a non-default priority setting that helps it become the root bridge. What is the most likely reason for this configuration?",
+    "question": "Which protocol is used to map an IPv4 address to a corresponding MAC address?",
     "answers": [
-      { "text": "To shorten the MAC address table lifetime", "correct": false },
-      { "text": "To force the switch to be the root bridge", "correct": true },
-      { "text": "To disable PortFast on edge ports", "correct": false },
-      { "text": "To match the priority of neighboring switches", "correct": false }
+      { "text": "DHCP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false }
     ]
   },
   {
-    "question": "Comparing traditional STP and RSTP, a network engineer observes that RSTP incorporates a “handshake” process for faster transitions. What specific benefit does this provide?",
+    "question": "What benefit does hierarchical addressing provide in IPv4?",
     "answers": [
-      { "text": "Improved link aggregation performance", "correct": false },
-      { "text": "Enhanced VLAN tagging efficiency", "correct": false },
-      { "text": "More reliable handling of host device connections during topology changes", "correct": true },
-      { "text": "Reduced power consumption on switches", "correct": false }
+      { "text": "It increases the size of the IP header", "correct": false },
+      { "text": "It simplifies routing by using the network portion", "correct": true },
+      { "text": "It expands the available address space", "correct": false },
+      { "text": "It eliminates the need for fragmentation", "correct": false }
+    ]
+  },
+  {
+    "question": "At which OSI layer does the IP address operate?",
+    "answers": [
+      { "text": "Physical layer", "correct": false },
+      { "text": "Data Link layer", "correct": false },
+      { "text": "Network layer", "correct": true },
+      { "text": "Transport layer", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a method for assigning IPv6 addresses?",
+    "answers": [
+      { "text": "Manual addressing", "correct": false },
+      { "text": "DHCPv6", "correct": false },
+      { "text": "Stateless auto-configuration", "correct": false },
+      { "text": "ARP-based configuration", "correct": true }
+    ]
+  },
+  {
+    "question": "In IPv4, what does “fragmentation” refer to?",
+    "answers": [
+      { "text": "Dividing a packet into smaller pieces due to MTU constraints", "correct": true },
+      { "text": "Combining several packets into one larger packet", "correct": false },
+      { "text": "Encrypting a packet for secure transmission", "correct": false },
+      { "text": "Routing a packet through multiple gateways", "correct": false }
+    ]
+  },
+  {
+    "question": "What does each “1” bit in the subnet mask indicate?",
+    "answers": [
+      { "text": "A bit belonging to the host portion", "correct": false },
+      { "text": "A bit belonging to the network portion", "correct": true },
+      { "text": "A bit that represents the default gateway", "correct": false },
+      { "text": "A bit used for error checking", "correct": false }
+    ]
+  },
+  {
+    "question": "Which media type has the smallest MTU as noted in the lecture?",
+    "answers": [
+      { "text": "Copper Ethernet", "correct": false },
+      { "text": "Copper Serial: Frame Relay", "correct": true },
+      { "text": "Optical Fiber: ATM", "correct": false },
+      { "text": "Wireless: 802.11", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary role of the network layer in data communication?",
+    "answers": [
+      { "text": "Encrypting data for secure transmission", "correct": false },
+      { "text": "Managing physical media connections", "correct": false },
+      { "text": "Addressing and routing packets from host to host", "correct": true },
+      { "text": "Handling application-level protocols", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is used to map an IPv4 address to a MAC address?",
+    "answers": [
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "DHCP", "correct": false }
+    ]
+  },
+  {
+    "question": "How are IPv6 addresses typically represented?",
+    "answers": [
+      { "text": "Dotted decimal format", "correct": false },
+      { "text": "Colon-hexadecimal format", "correct": true },
+      { "text": "Binary string", "correct": false },
+      { "text": "Octal format", "correct": false }
+    ]
+  },
+  {
+    "question": "Which rule applies when condensing an IPv6 address?",
+    "answers": [
+      { "text": "Multiple sequences of zero tuples can be compressed", "correct": false },
+      { "text": "Only one sequence of all-zero tuples can be compressed", "correct": true },
+      { "text": "All leading zeros must be retained", "correct": false },
+      { "text": "The address must always be written with eight complete tuples", "correct": false }
+    ]
+  },
+  {
+    "question": "What was one of the drivers for the development of IPv6?",
+    "answers": [
+      { "text": "To increase the size of packets", "correct": false },
+      { "text": "To address IPv4 address exhaustion", "correct": true },
+      { "text": "To eliminate the need for routing", "correct": false },
+      { "text": "To simplify MAC addressing", "correct": false }
+    ]
+  },
+  {
+    "question": "Which protocol is used to map an IPv4 address to a corresponding MAC address?",
+    "answers": [
+      { "text": "DHCP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false }
+    ]
+  },
+  {
+    "question": "What benefit does hierarchical addressing provide in IPv4?",
+    "answers": [
+      { "text": "It increases the size of the IP header", "correct": false },
+      { "text": "It simplifies routing by using the network portion", "correct": true },
+      { "text": "It expands the available address space", "correct": false },
+      { "text": "It eliminates the need for fragmentation", "correct": false }
+    ]
+  },
+  {
+    "question": "At which OSI layer does the IP address operate?",
+    "answers": [
+      { "text": "Physical layer", "correct": false },
+      { "text": "Data Link layer", "correct": false },
+      { "text": "Network layer", "correct": true },
+      { "text": "Transport layer", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a method for assigning IPv6 addresses?",
+    "answers": [
+      { "text": "Manual addressing", "correct": false },
+      { "text": "DHCPv6", "correct": false },
+      { "text": "Stateless auto-configuration", "correct": false },
+      { "text": "ARP-based configuration", "correct": true }
+    ]
+  },
+  {
+    "question": "In IPv4, what does “fragmentation” refer to?",
+    "answers": [
+      { "text": "Dividing a packet into smaller pieces due to MTU constraints", "correct": true },
+      { "text": "Combining several packets into one larger packet", "correct": false },
+      { "text": "Encrypting a packet for secure transmission", "correct": false },
+      { "text": "Routing a packet through multiple gateways", "correct": false }
+    ]
+  },
+  {
+    "question": "What does each “1” bit in the subnet mask indicate?",
+    "answers": [
+      { "text": "A bit belonging to the host portion", "correct": false },
+      { "text": "A bit belonging to the network portion", "correct": true },
+      { "text": "A bit that represents the default gateway", "correct": false },
+      { "text": "A bit used for error checking", "correct": false }
+    ]
+  },
+  {
+    "question": "Which media type has the smallest MTU as noted in the lecture?",
+    "answers": [
+      { "text": "Copper Ethernet", "correct": false },
+      { "text": "Copper Serial: Frame Relay", "correct": true },
+      { "text": "Optical Fiber: ATM", "correct": false },
+      { "text": "Wireless: 802.11", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary role of the network layer in data communication?",
+    "answers": [
+      { "text": "Encrypting data for secure transmission", "correct": false },
+      { "text": "Managing physical media connections", "correct": false },
+      { "text": "Addressing and routing packets from host to host", "correct": true },
+      { "text": "Handling application-level protocols", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is used to map an IPv4 address to a MAC address?",
+    "answers": [
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "DHCP", "correct": false }
+    ]
+  },
+  {
+    "question": "How are IPv6 addresses typically represented?",
+    "answers": [
+      { "text": "Dotted decimal format", "correct": false },
+      { "text": "Colon-hexadecimal format", "correct": true },
+      { "text": "Binary string", "correct": false },
+      { "text": "Octal format", "correct": false }
+    ]
+  },
+  {
+    "question": "Which rule applies when condensing an IPv6 address?",
+    "answers": [
+      { "text": "Multiple sequences of zero tuples can be compressed", "correct": false },
+      { "text": "Only one sequence of all-zero tuples can be compressed", "correct": true },
+      { "text": "All leading zeros must be retained", "correct": false },
+      { "text": "The address must always be written with eight complete tuples", "correct": false }
+    ]
+  },
+  {
+    "question": "What was one of the drivers for the development of IPv6?",
+    "answers": [
+      { "text": "To increase the size of packets", "correct": false },
+      { "text": "To address IPv4 address exhaustion", "correct": true },
+      { "text": "To eliminate the need for routing", "correct": false },
+      { "text": "To simplify MAC addressing", "correct": false }
+    ]
+  },
+  {
+    "question": "Which protocol is used to map an IPv4 address to a corresponding MAC address?",
+    "answers": [
+      { "text": "DHCP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false }
+    ]
+  },
+  {
+    "question": "What benefit does hierarchical addressing provide in IPv4?",
+    "answers": [
+      { "text": "It increases the size of the IP header", "correct": false },
+      { "text": "It simplifies routing by using the network portion", "correct": true },
+      { "text": "It expands the available address space", "correct": false },
+      { "text": "It eliminates the need for fragmentation", "correct": false }
+    ]
+  },
+  {
+    "question": "At which OSI layer does the IP address operate?",
+    "answers": [
+      { "text": "Physical layer", "correct": false },
+      { "text": "Data Link layer", "correct": false },
+      { "text": "Network layer", "correct": true },
+      { "text": "Transport layer", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a method for assigning IPv6 addresses?",
+    "answers": [
+      { "text": "Manual addressing", "correct": false },
+      { "text": "DHCPv6", "correct": false },
+      { "text": "Stateless auto-configuration", "correct": false },
+      { "text": "ARP-based configuration", "correct": true }
+    ]
+  },
+  {
+    "question": "In IPv4, what does “fragmentation” refer to?",
+    "answers": [
+      { "text": "Dividing a packet into smaller pieces due to MTU constraints", "correct": true },
+      { "text": "Combining several packets into one larger packet", "correct": false },
+      { "text": "Encrypting a packet for secure transmission", "correct": false },
+      { "text": "Routing a packet through multiple gateways", "correct": false }
+    ]
+  },
+  {
+    "question": "What does each “1” bit in the subnet mask indicate?",
+    "answers": [
+      { "text": "A bit belonging to the host portion", "correct": false },
+      { "text": "A bit belonging to the network portion", "correct": true },
+      { "text": "A bit that represents the default gateway", "correct": false },
+      { "text": "A bit used for error checking", "correct": false }
+    ]
+  },
+  {
+    "question": "Which media type has the smallest MTU as noted in the lecture?",
+    "answers": [
+      { "text": "Copper Ethernet", "correct": false },
+      { "text": "Copper Serial: Frame Relay", "correct": true },
+      { "text": "Optical Fiber: ATM", "correct": false },
+      { "text": "Wireless: 802.11", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary role of the network layer in data communication?",
+    "answers": [
+      { "text": "Encrypting data for secure transmission", "correct": false },
+      { "text": "Managing physical media connections", "correct": false },
+      { "text": "Addressing and routing packets from host to host", "correct": true },
+      { "text": "Handling application-level protocols", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is used to map an IPv4 address to a MAC address?",
+    "answers": [
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "DHCP", "correct": false }
+    ]
+  },
+  {
+    "question": "How are IPv6 addresses typically represented?",
+    "answers": [
+      { "text": "Dotted decimal format", "correct": false },
+      { "text": "Colon-hexadecimal format", "correct": true },
+      { "text": "Binary string", "correct": false },
+      { "text": "Octal format", "correct": false }
+    ]
+  },
+  {
+    "question": "Which rule applies when condensing an IPv6 address?",
+    "answers": [
+      { "text": "Multiple sequences of zero tuples can be compressed", "correct": false },
+      { "text": "Only one sequence of all-zero tuples can be compressed", "correct": true },
+      { "text": "All leading zeros must be retained", "correct": false },
+      { "text": "The address must always be written with eight complete tuples", "correct": false }
+    ]
+  },
+  {
+    "question": "What was one of the drivers for the development of IPv6?",
+    "answers": [
+      { "text": "To increase the size of packets", "correct": false },
+      { "text": "To address IPv4 address exhaustion", "correct": true },
+      { "text": "To eliminate the need for routing", "correct": false },
+      { "text": "To simplify MAC addressing", "correct": false }
+    ]
+  },
+  {
+    "question": "Which protocol is used to map an IPv4 address to a corresponding MAC address?",
+    "answers": [
+      { "text": "DHCP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false }
+    ]
+  },
+  {
+    "question": "What benefit does hierarchical addressing provide in IPv4?",
+    "answers": [
+      { "text": "It increases the size of the IP header", "correct": false },
+      { "text": "It simplifies routing by using the network portion", "correct": true },
+      { "text": "It expands the available address space", "correct": false },
+      { "text": "It eliminates the need for fragmentation", "correct": false }
+    ]
+  },
+  {
+    "question": "At which OSI layer does the IP address operate?",
+    "answers": [
+      { "text": "Physical layer", "correct": false },
+      { "text": "Data Link layer", "correct": false },
+      { "text": "Network layer", "correct": true },
+      { "text": "Transport layer", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a method for assigning IPv6 addresses?",
+    "answers": [
+      { "text": "Manual addressing", "correct": false },
+      { "text": "DHCPv6", "correct": false },
+      { "text": "Stateless auto-configuration", "correct": false },
+      { "text": "ARP-based configuration", "correct": true }
+    ]
+  },
+  {
+    "question": "In IPv4, what does “fragmentation” refer to?",
+    "answers": [
+      { "text": "Dividing a packet into smaller pieces due to MTU constraints", "correct": true },
+      { "text": "Combining several packets into one larger packet", "correct": false },
+      { "text": "Encrypting a packet for secure transmission", "correct": false },
+      { "text": "Routing a packet through multiple gateways", "correct": false }
+    ]
+  },
+  {
+    "question": "What does each “1” bit in the subnet mask indicate?",
+    "answers": [
+      { "text": "A bit belonging to the host portion", "correct": false },
+      { "text": "A bit belonging to the network portion", "correct": true },
+      { "text": "A bit that represents the default gateway", "correct": false },
+      { "text": "A bit used for error checking", "correct": false }
+    ]
+  },
+  {
+    "question": "Which media type has the smallest MTU as noted in the lecture?",
+    "answers": [
+      { "text": "Copper Ethernet", "correct": false },
+      { "text": "Copper Serial: Frame Relay", "correct": true },
+      { "text": "Optical Fiber: ATM", "correct": false },
+      { "text": "Wireless: 802.11", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary role of the network layer in data communication?",
+    "answers": [
+      { "text": "Encrypting data for secure transmission", "correct": false },
+      { "text": "Managing physical media connections", "correct": false },
+      { "text": "Addressing and routing packets from host to host", "correct": true },
+      { "text": "Handling application-level protocols", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is used to map an IPv4 address to a MAC address?",
+    "answers": [
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "DHCP", "correct": false }
+    ]
+  },
+  {
+    "question": "How are IPv6 addresses typically represented?",
+    "answers": [
+      { "text": "Dotted decimal format", "correct": false },
+      { "text": "Colon-hexadecimal format", "correct": true },
+      { "text": "Binary string", "correct": false },
+      { "text": "Octal format", "correct": false }
+    ]
+  },
+  {
+    "question": "Which rule applies when condensing an IPv6 address?",
+    "answers": [
+      { "text": "Multiple sequences of zero tuples can be compressed", "correct": false },
+      { "text": "Only one sequence of all-zero tuples can be compressed", "correct": true },
+      { "text": "All leading zeros must be retained", "correct": false },
+      { "text": "The address must always be written with eight complete tuples", "correct": false }
+    ]
+  },
+  {
+    "question": "What was one of the drivers for the development of IPv6?",
+    "answers": [
+      { "text": "To increase the size of packets", "correct": false },
+      { "text": "To address IPv4 address exhaustion", "correct": true },
+      { "text": "To eliminate the need for routing", "correct": false },
+      { "text": "To simplify MAC addressing", "correct": false }
+    ]
+  },
+  {
+    "question": "Which protocol is used to map an IPv4 address to a corresponding MAC address?",
+    "answers": [
+      { "text": "DHCP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false }
+    ]
+  },
+  {
+    "question": "What benefit does hierarchical addressing provide in IPv4?",
+    "answers": [
+      { "text": "It increases the size of the IP header", "correct": false },
+      { "text": "It simplifies routing by using the network portion", "correct": true },
+      { "text": "It expands the available address space", "correct": false },
+      { "text": "It eliminates the need for fragmentation", "correct": false }
+    ]
+  },
+  {
+    "question": "At which OSI layer does the IP address operate?",
+    "answers": [
+      { "text": "Physical layer", "correct": false },
+      { "text": "Data Link layer", "correct": false },
+      { "text": "Network layer", "correct": true },
+      { "text": "Transport layer", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a method for assigning IPv6 addresses?",
+    "answers": [
+      { "text": "Manual addressing", "correct": false },
+      { "text": "DHCPv6", "correct": false },
+      { "text": "Stateless auto-configuration", "correct": false },
+      { "text": "ARP-based configuration", "correct": true }
+    ]
+  },
+  {
+    "question": "In IPv4, what does “fragmentation” refer to?",
+    "answers": [
+      { "text": "Dividing a packet into smaller pieces due to MTU constraints", "correct": true },
+      { "text": "Combining several packets into one larger packet", "correct": false },
+      { "text": "Encrypting a packet for secure transmission", "correct": false },
+      { "text": "Routing a packet through multiple gateways", "correct": false }
+    ]
+  },
+  {
+    "question": "What does each “1” bit in the subnet mask indicate?",
+    "answers": [
+      { "text": "A bit belonging to the host portion", "correct": false },
+      { "text": "A bit belonging to the network portion", "correct": true },
+      { "text": "A bit that represents the default gateway", "correct": false },
+      { "text": "A bit used for error checking", "correct": false }
+    ]
+  },
+  {
+    "question": "Which media type has the smallest MTU as noted in the lecture?",
+    "answers": [
+      { "text": "Copper Ethernet", "correct": false },
+      { "text": "Copper Serial: Frame Relay", "correct": true },
+      { "text": "Optical Fiber: ATM", "correct": false },
+      { "text": "Wireless: 802.11", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary role of the network layer in data communication?",
+    "answers": [
+      { "text": "Encrypting data for secure transmission", "correct": false },
+      { "text": "Managing physical media connections", "correct": false },
+      { "text": "Addressing and routing packets from host to host", "correct": true },
+      { "text": "Handling application-level protocols", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is used to map an IPv4 address to a MAC address?",
+    "answers": [
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "DHCP", "correct": false }
+    ]
+  },
+  {
+    "question": "How are IPv6 addresses typically represented?",
+    "answers": [
+      { "text": "Dotted decimal format", "correct": false },
+      { "text": "Colon-hexadecimal format", "correct": true },
+      { "text": "Binary string", "correct": false },
+      { "text": "Octal format", "correct": false }
+    ]
+  },
+  {
+    "question": "Which rule applies when condensing an IPv6 address?",
+    "answers": [
+      { "text": "Multiple sequences of zero tuples can be compressed", "correct": false },
+      { "text": "Only one sequence of all-zero tuples can be compressed", "correct": true },
+      { "text": "All leading zeros must be retained", "correct": false },
+      { "text": "The address must always be written with eight complete tuples", "correct": false }
+    ]
+  },
+  {
+    "question": "What was one of the drivers for the development of IPv6?",
+    "answers": [
+      { "text": "To increase the size of packets", "correct": false },
+      { "text": "To address IPv4 address exhaustion", "correct": true },
+      { "text": "To eliminate the need for routing", "correct": false },
+      { "text": "To simplify MAC addressing", "correct": false }
+    ]
+  },
+  {
+    "question": "Which protocol is used to map an IPv4 address to a corresponding MAC address?",
+    "answers": [
+      { "text": "DHCP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false }
+    ]
+  },
+  {
+    "question": "What benefit does hierarchical addressing provide in IPv4?",
+    "answers": [
+      { "text": "It increases the size of the IP header", "correct": false },
+      { "text": "It simplifies routing by using the network portion", "correct": true },
+      { "text": "It expands the available address space", "correct": false },
+      { "text": "It eliminates the need for fragmentation", "correct": false }
+    ]
+  },
+  {
+    "question": "At which OSI layer does the IP address operate?",
+    "answers": [
+      { "text": "Physical layer", "correct": false },
+      { "text": "Data Link layer", "correct": false },
+      { "text": "Network layer", "correct": true },
+      { "text": "Transport layer", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a method for assigning IPv6 addresses?",
+    "answers": [
+      { "text": "Manual addressing", "correct": false },
+      { "text": "DHCPv6", "correct": false },
+      { "text": "Stateless auto-configuration", "correct": false },
+      { "text": "ARP-based configuration", "correct": true }
+    ]
+  },
+  {
+    "question": "In IPv4, what does “fragmentation” refer to?",
+    "answers": [
+      { "text": "Dividing a packet into smaller pieces due to MTU constraints", "correct": true },
+      { "text": "Combining several packets into one larger packet", "correct": false },
+      { "text": "Encrypting a packet for secure transmission", "correct": false },
+      { "text": "Routing a packet through multiple gateways", "correct": false }
+    ]
+  },
+  {
+    "question": "What does each “1” bit in the subnet mask indicate?",
+    "answers": [
+      { "text": "A bit belonging to the host portion", "correct": false },
+      { "text": "A bit belonging to the network portion", "correct": true },
+      { "text": "A bit that represents the default gateway", "correct": false },
+      { "text": "A bit used for error checking", "correct": false }
+    ]
+  },
+  {
+    "question": "Which media type has the smallest MTU as noted in the lecture?",
+    "answers": [
+      { "text": "Copper Ethernet", "correct": false },
+      { "text": "Copper Serial: Frame Relay", "correct": true },
+      { "text": "Optical Fiber: ATM", "correct": false },
+      { "text": "Wireless: 802.11", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary role of the network layer in data communication?",
+    "answers": [
+      { "text": "Encrypting data for secure transmission", "correct": false },
+      { "text": "Managing physical media connections", "correct": false },
+      { "text": "Addressing and routing packets from host to host", "correct": true },
+      { "text": "Handling application-level protocols", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is used to map an IPv4 address to a MAC address?",
+    "answers": [
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "DHCP", "correct": false }
+    ]
+  },
+  {
+    "question": "How are IPv6 addresses typically represented?",
+    "answers": [
+      { "text": "Dotted decimal format", "correct": false },
+      { "text": "Colon-hexadecimal format", "correct": true },
+      { "text": "Binary string", "correct": false },
+      { "text": "Octal format", "correct": false }
+    ]
+  },
+  {
+    "question": "Which rule applies when condensing an IPv6 address?",
+    "answers": [
+      { "text": "Multiple sequences of zero tuples can be compressed", "correct": false },
+      { "text": "Only one sequence of all-zero tuples can be compressed", "correct": true },
+      { "text": "All leading zeros must be retained", "correct": false },
+      { "text": "The address must always be written with eight complete tuples", "correct": false }
+    ]
+  },
+  {
+    "question": "What was one of the drivers for the development of IPv6?",
+    "answers": [
+      { "text": "To increase the size of packets", "correct": false },
+      { "text": "To address IPv4 address exhaustion", "correct": true },
+      { "text": "To eliminate the need for routing", "correct": false },
+      { "text": "To simplify MAC addressing", "correct": false }
+    ]
+  },
+  {
+    "question": "Which protocol is used to map an IPv4 address to a corresponding MAC address?",
+    "answers": [
+      { "text": "DHCP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false }
+    ]
+  },
+  {
+    "question": "What benefit does hierarchical addressing provide in IPv4?",
+    "answers": [
+      { "text": "It increases the size of the IP header", "correct": false },
+      { "text": "It simplifies routing by using the network portion", "correct": true },
+      { "text": "It expands the available address space", "correct": false },
+      { "text": "It eliminates the need for fragmentation", "correct": false }
+    ]
+  },
+  {
+    "question": "At which OSI layer does the IP address operate?",
+    "answers": [
+      { "text": "Physical layer", "correct": false },
+      { "text": "Data Link layer", "correct": false },
+      { "text": "Network layer", "correct": true },
+      { "text": "Transport layer", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a method for assigning IPv6 addresses?",
+    "answers": [
+      { "text": "Manual addressing", "correct": false },
+      { "text": "DHCPv6", "correct": false },
+      { "text": "Stateless auto-configuration", "correct": false },
+      { "text": "ARP-based configuration", "correct": true }
+    ]
+  },
+  {
+    "question": "In IPv4, what does “fragmentation” refer to?",
+    "answers": [
+      { "text": "Dividing a packet into smaller pieces due to MTU constraints", "correct": true },
+      { "text": "Combining several packets into one larger packet", "correct": false },
+      { "text": "Encrypting a packet for secure transmission", "correct": false },
+      { "text": "Routing a packet through multiple gateways", "correct": false }
+    ]
+  },
+  {
+    "question": "What does each “1” bit in the subnet mask indicate?",
+    "answers": [
+      { "text": "A bit belonging to the host portion", "correct": false },
+      { "text": "A bit belonging to the network portion", "correct": true },
+      { "text": "A bit that represents the default gateway", "correct": false },
+      { "text": "A bit used for error checking", "correct": false }
+    ]
+  },
+  {
+    "question": "Which media type has the smallest MTU as noted in the lecture?",
+    "answers": [
+      { "text": "Copper Ethernet", "correct": false },
+      { "text": "Copper Serial: Frame Relay", "correct": true },
+      { "text": "Optical Fiber: ATM", "correct": false },
+      { "text": "Wireless: 802.11", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary role of the network layer in data communication?",
+    "answers": [
+      { "text": "Encrypting data for secure transmission", "correct": false },
+      { "text": "Managing physical media connections", "correct": false },
+      { "text": "Addressing and routing packets from host to host", "correct": true },
+      { "text": "Handling application-level protocols", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is used to map an IPv4 address to a MAC address?",
+    "answers": [
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "DHCP", "correct": false }
+    ]
+  },
+  {
+    "question": "How are IPv6 addresses typically represented?",
+    "answers": [
+      { "text": "Dotted decimal format", "correct": false },
+      { "text": "Colon-hexadecimal format", "correct": true },
+      { "text": "Binary string", "correct": false },
+      { "text": "Octal format", "correct": false }
+    ]
+  },
+  {
+    "question": "Which rule applies when condensing an IPv6 address?",
+    "answers": [
+      { "text": "Multiple sequences of zero tuples can be compressed", "correct": false },
+      { "text": "Only one sequence of all-zero tuples can be compressed", "correct": true },
+      { "text": "All leading zeros must be retained", "correct": false },
+      { "text": "The address must always be written with eight complete tuples", "correct": false }
+    ]
+  },
+  {
+    "question": "What was one of the drivers for the development of IPv6?",
+    "answers": [
+      { "text": "To increase the size of packets", "correct": false },
+      { "text": "To address IPv4 address exhaustion", "correct": true },
+      { "text": "To eliminate the need for routing", "correct": false },
+      { "text": "To simplify MAC addressing", "correct": false }
+    ]
+  },
+  {
+    "question": "Which protocol is used to map an IPv4 address to a corresponding MAC address?",
+    "answers": [
+      { "text": "DHCP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false }
+    ]
+  },
+  {
+    "question": "What benefit does hierarchical addressing provide in IPv4?",
+    "answers": [
+      { "text": "It increases the size of the IP header", "correct": false },
+      { "text": "It simplifies routing by using the network portion", "correct": true },
+      { "text": "It expands the available address space", "correct": false },
+      { "text": "It eliminates the need for fragmentation", "correct": false }
+    ]
+  },
+  {
+    "question": "At which OSI layer does the IP address operate?",
+    "answers": [
+      { "text": "Physical layer", "correct": false },
+      { "text": "Data Link layer", "correct": false },
+      { "text": "Network layer", "correct": true },
+      { "text": "Transport layer", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a method for assigning IPv6 addresses?",
+    "answers": [
+      { "text": "Manual addressing", "correct": false },
+      { "text": "DHCPv6", "correct": false },
+      { "text": "Stateless auto-configuration", "correct": false },
+      { "text": "ARP-based configuration", "correct": true }
+    ]
+  },
+  {
+    "question": "In IPv4, what does “fragmentation” refer to?",
+    "answers": [
+      { "text": "Dividing a packet into smaller pieces due to MTU constraints", "correct": true },
+      { "text": "Combining several packets into one larger packet", "correct": false },
+      { "text": "Encrypting a packet for secure transmission", "correct": false },
+      { "text": "Routing a packet through multiple gateways", "correct": false }
+    ]
+  },
+  {
+    "question": "What does each “1” bit in the subnet mask indicate?",
+    "answers": [
+      { "text": "A bit belonging to the host portion", "correct": false },
+      { "text": "A bit belonging to the network portion", "correct": true },
+      { "text": "A bit that represents the default gateway", "correct": false },
+      { "text": "A bit used for error checking", "correct": false }
+    ]
+  },
+  {
+    "question": "Which media type has the smallest MTU as noted in the lecture?",
+    "answers": [
+      { "text": "Copper Ethernet", "correct": false },
+      { "text": "Copper Serial: Frame Relay", "correct": true },
+      { "text": "Optical Fiber: ATM", "correct": false },
+      { "text": "Wireless: 802.11", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary role of the network layer in data communication?",
+    "answers": [
+      { "text": "Encrypting data for secure transmission", "correct": false },
+      { "text": "Managing physical media connections", "correct": false },
+      { "text": "Addressing and routing packets from host to host", "correct": true },
+      { "text": "Handling application-level protocols", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is used to map an IPv4 address to a MAC address?",
+    "answers": [
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "DHCP", "correct": false }
+    ]
+  },
+  {
+    "question": "How are IPv6 addresses typically represented?",
+    "answers": [
+      { "text": "Dotted decimal format", "correct": false },
+      { "text": "Colon-hexadecimal format", "correct": true },
+      { "text": "Binary string", "correct": false },
+      { "text": "Octal format", "correct": false }
+    ]
+  },
+  {
+    "question": "Which rule applies when condensing an IPv6 address?",
+    "answers": [
+      { "text": "Multiple sequences of zero tuples can be compressed", "correct": false },
+      { "text": "Only one sequence of all-zero tuples can be compressed", "correct": true },
+      { "text": "All leading zeros must be retained", "correct": false },
+      { "text": "The address must always be written with eight complete tuples", "correct": false }
+    ]
+  },
+  {
+    "question": "What was one of the drivers for the development of IPv6?",
+    "answers": [
+      { "text": "To increase the size of packets", "correct": false },
+      { "text": "To address IPv4 address exhaustion", "correct": true },
+      { "text": "To eliminate the need for routing", "correct": false },
+      { "text": "To simplify MAC addressing", "correct": false }
+    ]
+  },
+  {
+    "question": "Which protocol is used to map an IPv4 address to a corresponding MAC address?",
+    "answers": [
+      { "text": "DHCP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false }
+    ]
+  },
+  {
+    "question": "What benefit does hierarchical addressing provide in IPv4?",
+    "answers": [
+      { "text": "It increases the size of the IP header", "correct": false },
+      { "text": "It simplifies routing by using the network portion", "correct": true },
+      { "text": "It expands the available address space", "correct": false },
+      { "text": "It eliminates the need for fragmentation", "correct": false }
+    ]
+  },
+  {
+    "question": "At which OSI layer does the IP address operate?",
+    "answers": [
+      { "text": "Physical layer", "correct": false },
+      { "text": "Data Link layer", "correct": false },
+      { "text": "Network layer", "correct": true },
+      { "text": "Transport layer", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a method for assigning IPv6 addresses?",
+    "answers": [
+      { "text": "Manual addressing", "correct": false },
+      { "text": "DHCPv6", "correct": false },
+      { "text": "Stateless auto-configuration", "correct": false },
+      { "text": "ARP-based configuration", "correct": true }
+    ]
+  },
+  {
+    "question": "In IPv4, what does “fragmentation” refer to?",
+    "answers": [
+      { "text": "Dividing a packet into smaller pieces due to MTU constraints", "correct": true },
+      { "text": "Combining several packets into one larger packet", "correct": false },
+      { "text": "Encrypting a packet for secure transmission", "correct": false },
+      { "text": "Routing a packet through multiple gateways", "correct": false }
+    ]
+  },
+  {
+    "question": "What does each “1” bit in the subnet mask indicate?",
+    "answers": [
+      { "text": "A bit belonging to the host portion", "correct": false },
+      { "text": "A bit belonging to the network portion", "correct": true },
+      { "text": "A bit that represents the default gateway", "correct": false },
+      { "text": "A bit used for error checking", "correct": false }
+    ]
+  },
+  {
+    "question": "Which media type has the smallest MTU as noted in the lecture?",
+    "answers": [
+      { "text": "Copper Ethernet", "correct": false },
+      { "text": "Copper Serial: Frame Relay", "correct": true },
+      { "text": "Optical Fiber: ATM", "correct": false },
+      { "text": "Wireless: 802.11", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary role of the network layer in data communication?",
+    "answers": [
+      { "text": "Encrypting data for secure transmission", "correct": false },
+      { "text": "Managing physical media connections", "correct": false },
+      { "text": "Addressing and routing packets from host to host", "correct": true },
+      { "text": "Handling application-level protocols", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is used to map an IPv4 address to a MAC address?",
+    "answers": [
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "DHCP", "correct": false }
+    ]
+  },
+  {
+    "question": "How are IPv6 addresses typically represented?",
+    "answers": [
+      { "text": "Dotted decimal format", "correct": false },
+      { "text": "Colon-hexadecimal format", "correct": true },
+      { "text": "Binary string", "correct": false },
+      { "text": "Octal format", "correct": false }
+    ]
+  },
+  {
+    "question": "Which rule applies when condensing an IPv6 address?",
+    "answers": [
+      { "text": "Multiple sequences of zero tuples can be compressed", "correct": false },
+      { "text": "Only one sequence of all-zero tuples can be compressed", "correct": true },
+      { "text": "All leading zeros must be retained", "correct": false },
+      { "text": "The address must always be written with eight complete tuples", "correct": false }
+    ]
+  },
+  {
+    "question": "What was one of the drivers for the development of IPv6?",
+    "answers": [
+      { "text": "To increase the size of packets", "correct": false },
+      { "text": "To address IPv4 address exhaustion", "correct": true },
+      { "text": "To eliminate the need for routing", "correct": false },
+      { "text": "To simplify MAC addressing", "correct": false }
+    ]
+  },
+  {
+    "question": "Which protocol is used to map an IPv4 address to a corresponding MAC address?",
+    "answers": [
+      { "text": "DHCP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false }
+    ]
+  },
+  {
+    "question": "What benefit does hierarchical addressing provide in IPv4?",
+    "answers": [
+      { "text": "It increases the size of the IP header", "correct": false },
+      { "text": "It simplifies routing by using the network portion", "correct": true },
+      { "text": "It expands the available address space", "correct": false },
+      { "text": "It eliminates the need for fragmentation", "correct": false }
+    ]
+  },
+  {
+    "question": "At which OSI layer does the IP address operate?",
+    "answers": [
+      { "text": "Physical layer", "correct": false },
+      { "text": "Data Link layer", "correct": false },
+      { "text": "Network layer", "correct": true },
+      { "text": "Transport layer", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a method for assigning IPv6 addresses?",
+    "answers": [
+      { "text": "Manual addressing", "correct": false },
+      { "text": "DHCPv6", "correct": false },
+      { "text": "Stateless auto-configuration", "correct": false },
+      { "text": "ARP-based configuration", "correct": true }
+    ]
+  },
+  {
+    "question": "In IPv4, what does “fragmentation” refer to?",
+    "answers": [
+      { "text": "Dividing a packet into smaller pieces due to MTU constraints", "correct": true },
+      { "text": "Combining several packets into one larger packet", "correct": false },
+      { "text": "Encrypting a packet for secure transmission", "correct": false },
+      { "text": "Routing a packet through multiple gateways", "correct": false }
+    ]
+  },
+  {
+    "question": "What does each “1” bit in the subnet mask indicate?",
+    "answers": [
+      { "text": "A bit belonging to the host portion", "correct": false },
+      { "text": "A bit belonging to the network portion", "correct": true },
+      { "text": "A bit that represents the default gateway", "correct": false },
+      { "text": "A bit used for error checking", "correct": false }
+    ]
+  },
+  {
+    "question": "Which media type has the smallest MTU as noted in the lecture?",
+    "answers": [
+      { "text": "Copper Ethernet", "correct": false },
+      { "text": "Copper Serial: Frame Relay", "correct": true },
+      { "text": "Optical Fiber: ATM", "correct": false },
+      { "text": "Wireless: 802.11", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary role of the network layer in data communication?",
+    "answers": [
+      { "text": "Encrypting data for secure transmission", "correct": false },
+      { "text": "Managing physical media connections", "correct": false },
+      { "text": "Addressing and routing packets from host to host", "correct": true },
+      { "text": "Handling application-level protocols", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is used to map an IPv4 address to a MAC address?",
+    "answers": [
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "DHCP", "correct": false }
+    ]
+  },
+  {
+    "question": "How are IPv6 addresses typically represented?",
+    "answers": [
+      { "text": "Dotted decimal format", "correct": false },
+      { "text": "Colon-hexadecimal format", "correct": true },
+      { "text": "Binary string", "correct": false },
+      { "text": "Octal format", "correct": false }
+    ]
+  },
+  {
+    "question": "Which rule applies when condensing an IPv6 address?",
+    "answers": [
+      { "text": "Multiple sequences of zero tuples can be compressed", "correct": false },
+      { "text": "Only one sequence of all-zero tuples can be compressed", "correct": true },
+      { "text": "All leading zeros must be retained", "correct": false },
+      { "text": "The address must always be written with eight complete tuples", "correct": false }
+    ]
+  },
+  {
+    "question": "What was one of the drivers for the development of IPv6?",
+    "answers": [
+      { "text": "To increase the size of packets", "correct": false },
+      { "text": "To address IPv4 address exhaustion", "correct": true },
+      { "text": "To eliminate the need for routing", "correct": false },
+      { "text": "To simplify MAC addressing", "correct": false }
+    ]
+  },
+  {
+    "question": "Which protocol is used to map an IPv4 address to a corresponding MAC address?",
+    "answers": [
+      { "text": "DHCP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false }
+    ]
+  },
+  {
+    "question": "What benefit does hierarchical addressing provide in IPv4?",
+    "answers": [
+      { "text": "It increases the size of the IP header", "correct": false },
+      { "text": "It simplifies routing by using the network portion", "correct": true },
+      { "text": "It expands the available address space", "correct": false },
+      { "text": "It eliminates the need for fragmentation", "correct": false }
+    ]
+  },
+  {
+    "question": "At which OSI layer does the IP address operate?",
+    "answers": [
+      { "text": "Physical layer", "correct": false },
+      { "text": "Data Link layer", "correct": false },
+      { "text": "Network layer", "correct": true },
+      { "text": "Transport layer", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a method for assigning IPv6 addresses?",
+    "answers": [
+      { "text": "Manual addressing", "correct": false },
+      { "text": "DHCPv6", "correct": false },
+      { "text": "Stateless auto-configuration", "correct": false },
+      { "text": "ARP-based configuration", "correct": true }
+    ]
+  },
+  {
+    "question": "In IPv4, what does “fragmentation” refer to?",
+    "answers": [
+      { "text": "Dividing a packet into smaller pieces due to MTU constraints", "correct": true },
+      { "text": "Combining several packets into one larger packet", "correct": false },
+      { "text": "Encrypting a packet for secure transmission", "correct": false },
+      { "text": "Routing a packet through multiple gateways", "correct": false }
+    ]
+  },
+  {
+    "question": "What does each “1” bit in the subnet mask indicate?",
+    "answers": [
+      { "text": "A bit belonging to the host portion", "correct": false },
+      { "text": "A bit belonging to the network portion", "correct": true },
+      { "text": "A bit that represents the default gateway", "correct": false },
+      { "text": "A bit used for error checking", "correct": false }
+    ]
+  },
+  {
+    "question": "Which media type has the smallest MTU as noted in the lecture?",
+    "answers": [
+      { "text": "Copper Ethernet", "correct": false },
+      { "text": "Copper Serial: Frame Relay", "correct": true },
+      { "text": "Optical Fiber: ATM", "correct": false },
+      { "text": "Wireless: 802.11", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary role of the network layer in data communication?",
+    "answers": [
+      { "text": "Encrypting data for secure transmission", "correct": false },
+      { "text": "Managing physical media connections", "correct": false },
+      { "text": "Addressing and routing packets from host to host", "correct": true },
+      { "text": "Handling application-level protocols", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is used to map an IPv4 address to a MAC address?",
+    "answers": [
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "DHCP", "correct": false }
+    ]
+  },
+  {
+    "question": "How are IPv6 addresses typically represented?",
+    "answers": [
+      { "text": "Dotted decimal format", "correct": false },
+      { "text": "Colon-hexadecimal format", "correct": true },
+      { "text": "Binary string", "correct": false },
+      { "text": "Octal format", "correct": false }
+    ]
+  },
+  {
+    "question": "Which rule applies when condensing an IPv6 address?",
+    "answers": [
+      { "text": "Multiple sequences of zero tuples can be compressed", "correct": false },
+      { "text": "Only one sequence of all-zero tuples can be compressed", "correct": true },
+      { "text": "All leading zeros must be retained", "correct": false },
+      { "text": "The address must always be written with eight complete tuples", "correct": false }
+    ]
+  },
+  {
+    "question": "What was one of the drivers for the development of IPv6?",
+    "answers": [
+      { "text": "To increase the size of packets", "correct": false },
+      { "text": "To address IPv4 address exhaustion", "correct": true },
+      { "text": "To eliminate the need for routing", "correct": false },
+      { "text": "To simplify MAC addressing", "correct": false }
+    ]
+  },
+  {
+    "question": "Which protocol is used to map an IPv4 address to a corresponding MAC address?",
+    "answers": [
+      { "text": "DHCP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false }
+    ]
+  },
+  {
+    "question": "What benefit does hierarchical addressing provide in IPv4?",
+    "answers": [
+      { "text": "It increases the size of the IP header", "correct": false },
+      { "text": "It simplifies routing by using the network portion", "correct": true },
+      { "text": "It expands the available address space", "correct": false },
+      { "text": "It eliminates the need for fragmentation", "correct": false }
+    ]
+  },
+  {
+    "question": "At which OSI layer does the IP address operate?",
+    "answers": [
+      { "text": "Physical layer", "correct": false },
+      { "text": "Data Link layer", "correct": false },
+      { "text": "Network layer", "correct": true },
+      { "text": "Transport layer", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a method for assigning IPv6 addresses?",
+    "answers": [
+      { "text": "Manual addressing", "correct": false },
+      { "text": "DHCPv6", "correct": false },
+      { "text": "Stateless auto-configuration", "correct": false },
+      { "text": "ARP-based configuration", "correct": true }
+    ]
+  },
+  {
+    "question": "In IPv4, what does “fragmentation” refer to?",
+    "answers": [
+      { "text": "Dividing a packet into smaller pieces due to MTU constraints", "correct": true },
+      { "text": "Combining several packets into one larger packet", "correct": false },
+      { "text": "Encrypting a packet for secure transmission", "correct": false },
+      { "text": "Routing a packet through multiple gateways", "correct": false }
+    ]
+  },
+  {
+    "question": "What does each “1” bit in the subnet mask indicate?",
+    "answers": [
+      { "text": "A bit belonging to the host portion", "correct": false },
+      { "text": "A bit belonging to the network portion", "correct": true },
+      { "text": "A bit that represents the default gateway", "correct": false },
+      { "text": "A bit used for error checking", "correct": false }
+    ]
+  },
+  {
+    "question": "Which media type has the smallest MTU as noted in the lecture?",
+    "answers": [
+      { "text": "Copper Ethernet", "correct": false },
+      { "text": "Copper Serial: Frame Relay", "correct": true },
+      { "text": "Optical Fiber: ATM", "correct": false },
+      { "text": "Wireless: 802.11", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary role of the network layer in data communication?",
+    "answers": [
+      { "text": "Encrypting data for secure transmission", "correct": false },
+      { "text": "Managing physical media connections", "correct": false },
+      { "text": "Addressing and routing packets from host to host", "correct": true },
+      { "text": "Handling application-level protocols", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is used to map an IPv4 address to a MAC address?",
+    "answers": [
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "DHCP", "correct": false }
+    ]
+  },
+  {
+    "question": "How are IPv6 addresses typically represented?",
+    "answers": [
+      { "text": "Dotted decimal format", "correct": false },
+      { "text": "Colon-hexadecimal format", "correct": true },
+      { "text": "Binary string", "correct": false },
+      { "text": "Octal format", "correct": false }
+    ]
+  },
+  {
+    "question": "Which rule applies when condensing an IPv6 address?",
+    "answers": [
+      { "text": "Multiple sequences of zero tuples can be compressed", "correct": false },
+      { "text": "Only one sequence of all-zero tuples can be compressed", "correct": true },
+      { "text": "All leading zeros must be retained", "correct": false },
+      { "text": "The address must always be written with eight complete tuples", "correct": false }
+    ]
+  },
+  {
+    "question": "What was one of the drivers for the development of IPv6?",
+    "answers": [
+      { "text": "To increase the size of packets", "correct": false },
+      { "text": "To address IPv4 address exhaustion", "correct": true },
+      { "text": "To eliminate the need for routing", "correct": false },
+      { "text": "To simplify MAC addressing", "correct": false }
+    ]
+  },
+  {
+    "question": "Which protocol is used to map an IPv4 address to a corresponding MAC address?",
+    "answers": [
+      { "text": "DHCP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false }
+    ]
+  },
+  {
+    "question": "What benefit does hierarchical addressing provide in IPv4?",
+    "answers": [
+      { "text": "It increases the size of the IP header", "correct": false },
+      { "text": "It simplifies routing by using the network portion", "correct": true },
+      { "text": "It expands the available address space", "correct": false },
+      { "text": "It eliminates the need for fragmentation", "correct": false }
+    ]
+  },
+  {
+    "question": "At which OSI layer does the IP address operate?",
+    "answers": [
+      { "text": "Physical layer", "correct": false },
+      { "text": "Data Link layer", "correct": false },
+      { "text": "Network layer", "correct": true },
+      { "text": "Transport layer", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a method for assigning IPv6 addresses?",
+    "answers": [
+      { "text": "Manual addressing", "correct": false },
+      { "text": "DHCPv6", "correct": false },
+      { "text": "Stateless auto-configuration", "correct": false },
+      { "text": "ARP-based configuration", "correct": true }
+    ]
+  },
+  {
+    "question": "In IPv4, what does “fragmentation” refer to?",
+    "answers": [
+      { "text": "Dividing a packet into smaller pieces due to MTU constraints", "correct": true },
+      { "text": "Combining several packets into one larger packet", "correct": false },
+      { "text": "Encrypting a packet for secure transmission", "correct": false },
+      { "text": "Routing a packet through multiple gateways", "correct": false }
+    ]
+  },
+  {
+    "question": "What does each “1” bit in the subnet mask indicate?",
+    "answers": [
+      { "text": "A bit belonging to the host portion", "correct": false },
+      { "text": "A bit belonging to the network portion", "correct": true },
+      { "text": "A bit that represents the default gateway", "correct": false },
+      { "text": "A bit used for error checking", "correct": false }
+    ]
+  },
+  {
+    "question": "Which media type has the smallest MTU as noted in the lecture?",
+    "answers": [
+      { "text": "Copper Ethernet", "correct": false },
+      { "text": "Copper Serial: Frame Relay", "correct": true },
+      { "text": "Optical Fiber: ATM", "correct": false },
+      { "text": "Wireless: 802.11", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary role of the network layer in data communication?",
+    "answers": [
+      { "text": "Encrypting data for secure transmission", "correct": false },
+      { "text": "Managing physical media connections", "correct": false },
+      { "text": "Addressing and routing packets from host to host", "correct": true },
+      { "text": "Handling application-level protocols", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is used to map an IPv4 address to a MAC address?",
+    "answers": [
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "DHCP", "correct": false }
+    ]
+  },
+  {
+    "question": "How are IPv6 addresses typically represented?",
+    "answers": [
+      { "text": "Dotted decimal format", "correct": false },
+      { "text": "Colon-hexadecimal format", "correct": true },
+      { "text": "Binary string", "correct": false },
+      { "text": "Octal format", "correct": false }
+    ]
+  },
+  {
+    "question": "Which rule applies when condensing an IPv6 address?",
+    "answers": [
+      { "text": "Multiple sequences of zero tuples can be compressed", "correct": false },
+      { "text": "Only one sequence of all-zero tuples can be compressed", "correct": true },
+      { "text": "All leading zeros must be retained", "correct": false },
+      { "text": "The address must always be written with eight complete tuples", "correct": false }
+    ]
+  },
+  {
+    "question": "What was one of the drivers for the development of IPv6?",
+    "answers": [
+      { "text": "To increase the size of packets", "correct": false },
+      { "text": "To address IPv4 address exhaustion", "correct": true },
+      { "text": "To eliminate the need for routing", "correct": false },
+      { "text": "To simplify MAC addressing", "correct": false }
+    ]
+  },
+  {
+    "question": "Which protocol is used to map an IPv4 address to a corresponding MAC address?",
+    "answers": [
+      { "text": "DHCP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false }
+    ]
+  },
+  {
+    "question": "What benefit does hierarchical addressing provide in IPv4?",
+    "answers": [
+      { "text": "It increases the size of the IP header", "correct": false },
+      { "text": "It simplifies routing by using the network portion", "correct": true },
+      { "text": "It expands the available address space", "correct": false },
+      { "text": "It eliminates the need for fragmentation", "correct": false }
+    ]
+  },
+  {
+    "question": "At which OSI layer does the IP address operate?",
+    "answers": [
+      { "text": "Physical layer", "correct": false },
+      { "text": "Data Link layer", "correct": false },
+      { "text": "Network layer", "correct": true },
+      { "text": "Transport layer", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a method for assigning IPv6 addresses?",
+    "answers": [
+      { "text": "Manual addressing", "correct": false },
+      { "text": "DHCPv6", "correct": false },
+      { "text": "Stateless auto-configuration", "correct": false },
+      { "text": "ARP-based configuration", "correct": true }
+    ]
+  },
+  {
+    "question": "In IPv4, what does “fragmentation” refer to?",
+    "answers": [
+      { "text": "Dividing a packet into smaller pieces due to MTU constraints", "correct": true },
+      { "text": "Combining several packets into one larger packet", "correct": false },
+      { "text": "Encrypting a packet for secure transmission", "correct": false },
+      { "text": "Routing a packet through multiple gateways", "correct": false }
+    ]
+  },
+  {
+    "question": "What does each “1” bit in the subnet mask indicate?",
+    "answers": [
+      { "text": "A bit belonging to the host portion", "correct": false },
+      { "text": "A bit belonging to the network portion", "correct": true },
+      { "text": "A bit that represents the default gateway", "correct": false },
+      { "text": "A bit used for error checking", "correct": false }
+    ]
+  },
+  {
+    "question": "Which media type has the smallest MTU as noted in the lecture?",
+    "answers": [
+      { "text": "Copper Ethernet", "correct": false },
+      { "text": "Copper Serial: Frame Relay", "correct": true },
+      { "text": "Optical Fiber: ATM", "correct": false },
+      { "text": "Wireless: 802.11", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the primary role of the network layer in data communication?",
+    "answers": [
+      { "text": "Encrypting data for secure transmission", "correct": false },
+      { "text": "Managing physical media connections", "correct": false },
+      { "text": "Addressing and routing packets from host to host", "correct": true },
+      { "text": "Handling application-level protocols", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is used to map an IPv4 address to a MAC address?",
+    "answers": [
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "DHCP", "correct": false }
+    ]
+  },
+  {
+    "question": "How are IPv6 addresses typically represented?",
+    "answers": [
+      { "text": "Dotted decimal format", "correct": false },
+      { "text": "Colon-hexadecimal format", "correct": true },
+      { "text": "Binary string", "correct": false },
+      { "text": "Octal format", "correct": false }
+    ]
+  },
+  {
+    "question": "Which rule applies when condensing an IPv6 address?",
+    "answers": [
+      { "text": "Multiple sequences of zero tuples can be compressed", "correct": false },
+      { "text": "Only one sequence of all-zero tuples can be compressed", "correct": true },
+      { "text": "All leading zeros must be retained", "correct": false },
+      { "text": "The address must always be written with eight complete tuples", "correct": false }
+    ]
+  },
+  {
+    "question": "What was one of the drivers for the development of IPv6?",
+    "answers": [
+      { "text": "To increase the size of packets", "correct": false },
+      { "text": "To address IPv4 address exhaustion", "correct": true },
+      { "text": "To eliminate the need for routing", "correct": false },
+      { "text": "To simplify MAC addressing", "correct": false }
+    ]
+  },
+  {
+    "question": "Which protocol is used to map an IPv4 address to a corresponding MAC address?",
+    "answers": [
+      { "text": "DHCP", "correct": false },
+      { "text": "DNS", "correct": false },
+      { "text": "ARP", "correct": true },
+      { "text": "RARP", "correct": false }
+    ]
+  },
+  {
+    "question": "What benefit does hierarchical addressing provide in IPv4?",
+    "answers": [
+      { "text": "It increases the size of the IP header", "correct": false },
+      { "text": "It simplifies routing by using the network portion", "correct": true },
+      { "text": "It expands the available address space", "correct": false },
+      { "text": "It eliminates the need for fragmentation", "correct": false }
+    ]
+  },
+  {
+    "question": "At which OSI layer does the IP address operate?",
+    "answers": [
+      { "text": "Physical layer", "correct": false },
+      { "text": "Data Link layer", "correct": false },
+      { "text": "Network layer", "correct": true },
+      { "text": "Transport layer", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a method for assigning IPv6 addresses?",
+    "answers": [
+      { "text": "Manual addressing", "correct": false },
+      { "text": "DHCPv6", "correct": false },
+      { "text": "Stateless auto-configuration", "correct": false },
+      { "text": "ARP-based configuration", "correct": true }
+    ]
+  },
+  {
+    "question": "In IPv4, what does “fragmentation” refer to?",
+    "answers": [
+      { "text": "Dividing a packet into smaller pieces due to MTU constraints", "correct": true },
+      { "text": "Combining several packets into one larger packet", "correct": false },
+      { "text": "Encrypting a packet for secure transmission", "correct": false },
+      { "text": "Routing a packet through multiple gateways", "correct": false }
+    ]
+  },
+  {
+    "question": "What does each “1” bit in the subnet mask indicate?",
+    "answers": [
+      { "text": "A bit belonging to the host portion", "correct": false },
+      { "text": "A bit belonging to the network portion", "correct": true },
+      { "text": "A bit that represents the default gateway", "correct": false },
+      { "text": "A bit used for error checking", "correct": false }
     ]
   }
 ]
