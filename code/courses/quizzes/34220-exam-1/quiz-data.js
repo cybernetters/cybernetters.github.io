@@ -271,5 +271,65 @@ const questionBank = [
       { "text": "Zulu", "correct": false },
       { "text": "None of the above", "correct": false }
     ]
+  },
+  {
+    "question": "Which of the following is not a characteristic of NTP?",
+    "answers": [
+      { "text": "Adjusts duration between reference checks", "correct": false },
+      { "text": "Currently uses a 32-bit timestamp", "correct": false },
+      { "text": "Sets client time once as a single transaction", "correct": true },
+      { "text": "Time servers are available via a public pool project", "correct": false },
+      { "text": "Uses a hierarchy of time servers", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the minimum stratum level you should have for an enterprise time server?",
+    "answers": [
+      { "text": "Stratum 0", "correct": false },
+      { "text": "Stratum 1", "correct": false },
+      { "text": "Stratum 2", "correct": true },
+      { "text": "Stratum 3", "correct": false },
+      { "text": "Stratum 4", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is not a viable option for dealing with SPAM as a system/network administrator?",
+    "answers": [
+      { "text": "Bayesian Filters", "correct": false },
+      { "text": "Firewalls", "correct": true },
+      { "text": "White lists", "correct": false },
+      { "text": "Black lists", "correct": false },
+      { "text": "Grey lists", "correct": false }
+    ]
+  },
+  {
+    "question": "Without sender authentication what options are available for controlling SPAM?",
+    "answers": [
+      { "text": "Blacklisting", "correct": false },
+      { "text": "Whitelisting", "correct": false },
+      { "text": "Bayesian filtering", "correct": false },
+      { "text": "All of the above", "correct": true },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is an authentication protocol used to identify the origination of an e-mail message?",
+    "answers": [
+      { "text": "Sender Policy Framework", "correct": false },
+      { "text": "Sender ID", "correct": false },
+      { "text": "Bayesian ID", "correct": false },
+      { "text": "A & B", "correct": true },
+      { "text": "All of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is the best practice for having two separate non-HTTPS web sites running on the same physical machine?",
+    "answers": [
+      { "text": "Bind multiple IP addresses to the machine and assign sites to IP addresses", "correct": false },
+      { "text": "Run the sites on different ports", "correct": false },
+      { "text": "Use the DNS name used in the HTTP get request to assign sites to URLs", "correct": true },
+      { "text": "Use virtual machines to build completely separate O/S and web server installations", "correct": false },
+      { "text": "It cannot be done as described", "correct": false }
+    ]
   }
 ];
