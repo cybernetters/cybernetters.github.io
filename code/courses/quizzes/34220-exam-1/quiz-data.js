@@ -391,5 +391,56 @@ const questionBank = [
       { "text": "SMTP provides no digital signatures", "correct": false },
       { "text": "All of the above", "correct": false }
     ]
+  },
+  {
+    "question": "Which of the following is NOT functionality added to SMTP by MIME?",
+    "answers": [
+      { "text": "Non-Latin characters", "correct": false },
+      { "text": "Attachments", "correct": false },
+      { "text": "Multiple email parts", "correct": false },
+      { "text": "Different styles", "correct": false },
+      { "text": "All of the above are added by MIME", "correct": true }
+    ]
+  },
+  {
+    "question": "Which of the following is required infrastructure to deploy S/MIME?",
+    "answers": [
+      { "text": "PKI", "correct": true },
+      { "text": "Web server", "correct": false },
+      { "text": "Active Directory", "correct": false },
+      { "text": "Kerberos", "correct": false },
+      { "text": "All of the above are required", "correct": false }
+    ]
+  },
+  {
+    "question": "What is required to send an S/MIME-secured email?",
+    "answers": [
+      { "text": "The receiving mail server’s certificate", "correct": false },
+      { "text": "The receiving email user’s certificate", "correct": false },
+      { "text": "The sending mail server’s certificate", "correct": false },
+      { "text": "The sending email user’s certificate", "correct": true },
+      { "text": "All of the above are required", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is the defined CN in an S/MIME certificate?",
+    "answers": [
+      { "text": "The mail server’s hostname", "correct": false },
+      { "text": "The user’s directory name", "correct": false },
+      { "text": "The user’s email address", "correct": true },
+      { "text": "The mail server’s IP address", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT seen as a potential downside to implementing S/MIME?",
+    "answers": [
+      { "text": "Difficulty integrating with webmail", "correct": false },
+      { "text": "Facilitating spam", "correct": false },
+      { "text": "End-to-end encryption", "correct": true },
+      { "text": "Backwards compatibility", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
   }
+
 ];
