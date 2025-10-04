@@ -16,8 +16,8 @@ const questionBank = [
   {
     "question": "In a Virtual Machine environment, you should synchronize each VM to its NTP synched host.",
     "answers": [
-      { "text": "True", "correct": false },
-      { "text": "False", "correct": true }
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
     ]
   },
   {
