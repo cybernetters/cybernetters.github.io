@@ -331,5 +331,65 @@ const questionBank = [
       { "text": "Use virtual machines to build completely separate O/S and web server installations", "correct": false },
       { "text": "It cannot be done as described", "correct": false }
     ]
+  },
+  {
+    "question": "Which of the following is NOT true about Internet news?",
+    "answers": [
+      { "text": "Communications handled through Network News Transfer Protocol", "correct": false },
+      { "text": "Anyone can create any group or subgroup", "correct": true },
+      { "text": "Relies upon a hierarchy of interconnected servers", "correct": false },
+      { "text": "A message posted to one server is copied to all other servers in the group", "correct": false },
+      { "text": "All of the above are true", "correct": false }
+    ]
+  },
+  {
+    "question": "What type of DNS record is typically used to identify a host in an e-mail address?",
+    "answers": [
+      { "text": "A", "correct": false },
+      { "text": "CNAME", "correct": false },
+      { "text": "MX", "correct": true },
+      { "text": "PTR", "correct": false },
+      { "text": ".", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a typical e-mail delivery error?",
+    "answers": [
+      { "text": "Host unreachable", "correct": false },
+      { "text": "User unknown", "correct": false },
+      { "text": "User mailbox full", "correct": false },
+      { "text": "Incoming mail queue full", "correct": false },
+      { "text": "All of the above are SMTP delivery errors", "correct": true }
+    ]
+  },
+  {
+    "question": "A message is sent to ten users on four hosts in three domains from a workstation using SMTP. How many copies of the message are sent from the origin server?",
+    "answers": [
+      { "text": "One", "correct": false },
+      { "text": "Three", "correct": true },
+      { "text": "Four", "correct": false },
+      { "text": "Ten", "correct": false },
+      { "text": "Not enough information is given to determine the number of messages sent", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the name of the US federal anti-SPAM legislation?",
+    "answers": [
+      { "text": "ANTI SPAM", "correct": false },
+      { "text": "CAN SPAM", "correct": true },
+      { "text": "SPAM STOP", "correct": false },
+      { "text": "SPAMALOT", "correct": false },
+      { "text": "STOP SPAM", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the root cause of the SPAM problem?",
+    "answers": [
+      { "text": "SMTP is unauthenticated", "correct": true },
+      { "text": "SMTP is unencrypted", "correct": false },
+      { "text": "SMTP requires encoding", "correct": false },
+      { "text": "SMTP provides no digital signatures", "correct": false },
+      { "text": "All of the above", "correct": false }
+    ]
   }
 ];
