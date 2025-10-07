@@ -497,6 +497,62 @@ const questionBank = [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
+  },
+  {
+    "question": "In DNS the terms zone and domain mean the same thing.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "It is best to use a different DNS domain name for your internal network than the one used on your external network.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Only two DNS servers can be authoritative for any zone.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "IN-ADDR.ARPA.1.168.192. is the name for the reverse address zone for the 192.168.1.0/24 network.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "All servers that allow unsolicited access from Internet hosts should be located in a DMZ.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Because the order of firewall rules is so critical, it is not possible to optimize rulesets.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "When using stateful packet inspection (SPI), you do not have to explicitly allow return traffic through the firewall.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The last rule in a firewall ruleset is usually one that allows all traffic.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
   }
 
 ];
