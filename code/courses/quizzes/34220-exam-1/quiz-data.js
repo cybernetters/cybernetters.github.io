@@ -553,6 +553,46 @@ const questionBank = [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
+  },
+  {
+    "question": "Which of the following should be placed in a DMZ?",
+    "answers": [
+      { "text": "Web proxy", "correct": false },
+      { "text": "Relay host", "correct": false },
+      { "text": "DHCP server", "correct": false },
+      { "text": "A & B", "correct": true },
+      { "text": "All of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is not a concern when writing firewall rulesets?",
+    "answers": [
+      { "text": "The interface to which the rule is applied", "correct": false },
+      { "text": "The destination of the traffic", "correct": false },
+      { "text": "The metric of the rule", "correct": true },
+      { "text": "The order of the rules", "correct": false },
+      { "text": "The source of the traffic", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following can be used to filter traffic at a firewall?",
+    "answers": [
+      { "text": "Source address", "correct": false },
+      { "text": "Destination address", "correct": false },
+      { "text": "Port number", "correct": false },
+      { "text": "A & B", "correct": false },
+      { "text": "All of the above", "correct": true }
+    ]
+  },
+  {
+    "question": "When setting up firewall rules, which of the following are basic tasks that can be performed when a packet matches a rule?",
+    "answers": [
+      { "text": "Accept", "correct": false },
+      { "text": "Deny", "correct": false },
+      { "text": "Reject", "correct": false },
+      { "text": "All of the above are basic tasks that can be performed", "correct": true },
+      { "text": "None of the above are basic tasks that can be performed", "correct": false }
+    ]
   }
 
 ];
