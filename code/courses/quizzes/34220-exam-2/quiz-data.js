@@ -187,6 +187,106 @@ const questionBank = [
       { "text": "Maintain a list of revoked certificates", "correct": false },
       { "text": "Verify the identity of any entity requesting a certificate", "correct": true }
     ]
-  }
+  },
+  {
+      "question": "Which of the following is the best practice for having two separate non-HTTPS web sites running on the same physical machine?",
+      "answers": [
+        { "text": "Bind multiple IP addresses to the machine and assign sites to IP addresses", "correct": false },
+        { "text": "Run the sites on different ports", "correct": false },
+        { "text": "Use virtual machines to build completely separate O/S and web server installations", "correct": false },
+        { "text": "Use the DNS name used in the HTTP get request to assign sites to URLs", "correct": true },
+        { "text": "It cannot be done as described", "correct": false }
+      ]
+    },
+    {
+      "question": "Which of the following is not a characteristic of HTTPS?",
+      "answers": [
+        { "text": "Authenticates the server", "correct": false },
+        { "text": "Authenticates the client", "correct": true },
+        { "text": "Can functionally replace HTTP", "correct": false },
+        { "text": "Encrypts data during transmission", "correct": false },
+        { "text": "Requires digital certificates", "correct": false }
+      ]
+    },
+    {
+      "question": "Which of the following is not a reason to implement a reverse proxy server?",
+      "answers": [
+        { "text": "Increase security for the web server", "correct": false },
+        { "text": "Save on internal bandwidth", "correct": true },
+        { "text": "Enable HTTPS security for a non-HTTPS enabled web server", "correct": false },
+        { "text": "Increase the capacity of a dynamic web application", "correct": false },
+        { "text": "All of the above are reasons to implement a reverse proxy server", "correct": false }
+      ]
+    },
+    {
+      "question": "Which of the following is not a reason to implement a web proxy server?",
+      "answers": [
+        { "text": "Filter content", "correct": false },
+        { "text": "Filter SPAM", "correct": true },
+        { "text": "Authenticate and authorize web access", "correct": false },
+        { "text": "Save bandwidth", "correct": false },
+        { "text": "All of the above are reasons to implement a web proxy server", "correct": false }
+      ]
+    },
+    {
+      "question": "Which of the following is not a method of resolving the proxy server client configuration problem?",
+      "answers": [
+        { "text": "Proxy Auto Configuration (PAC) script", "correct": false },
+        { "text": "Web Proxy Auto-Discovery Protocol", "correct": false },
+        { "text": "DHCP Service Location Protocol Record", "correct": false },
+        { "text": "Transparent proxy", "correct": false },
+        { "text": "All of the above can resolve the proxy server client configuration problem", "correct": true }
+      ]
+    },
+    {
+      "question": "Which of the following does not require special configuration to properly implement transparent web proxying?",
+      "answers": [
+        { "text": "The proxy server", "correct": false },
+        { "text": "The firewall between the client and proxy server", "correct": false },
+        { "text": "The gateway router", "correct": false },
+        { "text": "The clients", "correct": true },
+        { "text": "All of the above must be properly configured", "correct": false }
+      ]
+    },
+    {
+      "question": "Which of the following best describes Application Delivery Controller (ADC) Architectures?",
+      "answers": [
+        { "text": "The ADC can be in-line with the application server(s)", "correct": false },
+        { "text": "The ADC can be located in the same DMZ as the application server(s)", "correct": false },
+        { "text": "The ADC must process all traffic in and out of the application server(s)", "correct": false },
+        { "text": "The ADC must reside in a higher level DMZ than the application server(s)", "correct": false },
+        { "text": "None of the above", "correct": true }
+      ]
+    },
+    {
+      "question": "Which load balancing technique does not take into account server capability?",
+      "answers": [
+        { "text": "Fastest", "correct": false },
+        { "text": "Least connections", "correct": true },
+        { "text": "Observed", "correct": false },
+        { "text": "Predictive", "correct": false },
+        { "text": "All of the above take into account server capability", "correct": false }
+      ]
+    },
+    {
+      "question": "Which of the following is not a characteristic of basic load balancing?",
+      "answers": [
+        { "text": "Connections are made from clients directly to servers", "correct": false },
+        { "text": "It is in effect a 1:many NAT", "correct": false },
+        { "text": "The load balancer selects a target to service the request", "correct": false },
+        { "text": "There are two separate data flows: one from the client to the balancer and one from the balancer to the server", "correct": true },
+        { "text": "All of the above are characteristics of basic load balancing", "correct": false }
+      ]
+    },
+    {
+      "question": "Which of the following are capabilities of application delivery controllers?",
+      "answers": [
+        { "text": "Load balancing", "correct": false },
+        { "text": "Fail-Over", "correct": false },
+        { "text": "SSL Acceleration", "correct": false },
+        { "text": "Monitoring", "correct": false },
+        { "text": "All of the above are capabilities of application delivery controllers", "correct": true }
+      ]
+    }
 
 ];
