@@ -167,6 +167,26 @@ const questionBank = [
       { "text": "NSEC", "correct": false },
       { "text": "CDS", "correct": false }
     ]
+  },
+  {
+    "question": "The purpose of a certificate authority is to:",
+    "answers": [
+      { "text": "Reduce the amount of computational power used for asymmetric key encryption", "correct": false },
+      { "text": "Reduce the dependence on third parties such as Verisign and Thawte", "correct": false },
+      { "text": "Issue and verify the authenticity of public keys", "correct": true },
+      { "text": "Verify the authenticity of private keys to the key owner", "correct": false },
+      { "text": "All of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a responsibility of an X.509 certificate authority?",
+    "answers": [
+      { "text": "Provide a public repository for all issued certificates", "correct": false },
+      { "text": "Maintain a list of issued certificates", "correct": false },
+      { "text": "Issue digital certificates", "correct": false },
+      { "text": "Maintain a list of revoked certificates", "correct": false },
+      { "text": "Verify the identity of any entity requesting a certificate", "correct": true }
+    ]
   }
 
 ];
