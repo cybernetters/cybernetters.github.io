@@ -72,8 +72,8 @@ const questionBank = [
   {
     "question": "Application delivery controllers always provide some level of load balancing functionality.",
     "answers": [
-      { "text": "True", "correct": false },
-      { "text": "False", "correct": true }
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
     ]
   },
   {
