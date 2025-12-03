@@ -287,6 +287,56 @@ const questionBank = [
         { "text": "Monitoring", "correct": false },
         { "text": "All of the above are capabilities of application delivery controllers", "correct": true }
       ]
+    },
+    {
+      "question": "Which persistence method only works with HTTP and HTTPS?",
+      "answers": [
+        { "text": "Individual source address persistence", "correct": false },
+        { "text": "Aggregated source address persistence", "correct": false },
+        { "text": "Cookie based persistence", "correct": true },
+        { "text": "A & B", "correct": false },
+        { "text": "Any of the above", "correct": false }
+      ]
+    },
+    {
+      "question": "Which persistence method is preferred for applications that concurrently open many inter-related connections?",
+      "answers": [
+        { "text": "Individual source address persistence", "correct": false },
+        { "text": "Aggregated source address persistence", "correct": false },
+        { "text": "Cookie based persistence", "correct": false },
+        { "text": "A & B", "correct": true },
+        { "text": "Any of the above", "correct": false }
+      ]
+    },
+    {
+      "question": "An application delivery controller must be _______________ of the application server.",
+      "answers": [
+        { "text": "logically in front", "correct": true },
+        { "text": "physically in front", "correct": false },
+        { "text": "logically behind", "correct": false },
+        { "text": "physically behind", "correct": false },
+        { "text": "alongside", "correct": false }
+      ]
+    },
+    {
+      "question": "A full proxy application delivery controller has how many separate data flows for each transaction?",
+      "answers": [
+        { "text": "One", "correct": false },
+        { "text": "Two", "correct": true },
+        { "text": "Three", "correct": false },
+        { "text": "Four or more", "correct": false },
+        { "text": "Variable numbers", "correct": false }
+      ]
+    },
+    {
+      "question": "Which of the following is not an advantage to using SSL acceleration?",
+      "answers": [
+        { "text": "Can add SSL to non-SSL enabled applications", "correct": false },
+        { "text": "Increases application reliability", "correct": true },
+        { "text": "Performance can be increased using hardware based encryption", "correct": false },
+        { "text": "Reduces processor load on application servers", "correct": false },
+        { "text": "Reduces the number of certificates required", "correct": false }
+      ]
     }
 
 ];
