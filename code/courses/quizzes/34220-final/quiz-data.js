@@ -188,6 +188,86 @@ const questionBank = [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
+  },
+  {
+    "question": "Which transport layer protocol and port number are associated with DNS?",
+    "answers": [
+      { "text": "TCP 25", "correct": false },
+      { "text": "UDP 53", "correct": true },
+      { "text": "TCP 80", "correct": false },
+      { "text": "TCP 389", "correct": false },
+      { "text": "TCP 443", "correct": false }
+    ]
+  },
+  {
+    "question": "Which transport layer protocol and port number are associated with HTTP?",
+    "answers": [
+      { "text": "TCP 25", "correct": false },
+      { "text": "UDP 53", "correct": false },
+      { "text": "TCP 80", "correct": true },
+      { "text": "TCP 389", "correct": false },
+      { "text": "TCP 443", "correct": false }
+    ]
+  },
+  {
+    "question": "Which transport layer protocol and port number are associated with HTTPS?",
+    "answers": [
+      { "text": "TCP 25", "correct": false },
+      { "text": "UDP 53", "correct": false },
+      { "text": "TCP 80", "correct": false },
+      { "text": "TCP 389", "correct": false },
+      { "text": "TCP 443", "correct": true }
+    ]
+  },
+  {
+    "question": "Which transport layer protocol and port number are associated with LDAP?",
+    "answers": [
+      { "text": "TCP 25", "correct": false },
+      { "text": "UDP 53", "correct": false },
+      { "text": "TCP 80", "correct": false },
+      { "text": "TCP 389", "correct": true },
+      { "text": "TCP 443", "correct": false }
+    ]
+  },
+  {
+    "question": "What DNS record has been co-opted into a spam control mechanism?",
+    "answers": [
+      { "text": "A", "correct": false },
+      { "text": "CNAME", "correct": false },
+      { "text": "PTR", "correct": false },
+      { "text": "SOA", "correct": false },
+      { "text": "TXT", "correct": true }
+    ]
+  },
+  {
+    "question": "The purpose of a certificate authority is to:",
+    "answers": [
+      { "text": "Reduce the amount of computational power used for asymmetric key encryption", "correct": false },
+      { "text": "Reduce the dependence on third parties such as Verisign and Thawte", "correct": false },
+      { "text": "Issue and verify the authenticity of public keys", "correct": true },
+      { "text": "Verify the authenticity of private keys to the key owner", "correct": false },
+      { "text": "All of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is not a responsibility of an X.509 certificate authority?",
+    "answers": [
+      { "text": "Provide a public repository for all issued certificates", "correct": true },
+      { "text": "Maintain a list of issued certificates", "correct": false },
+      { "text": "Issue digital certificates", "correct": false },
+      { "text": "Maintain a list of revoked certificates", "correct": false },
+      { "text": "Verify the identity of any entity requesting a certificate", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is not a common use of a PKI?",
+    "answers": [
+      { "text": "Digital signatures of documents and code", "correct": false },
+      { "text": "E-Mail encryption and signing", "correct": false },
+      { "text": "HTTPS", "correct": false },
+      { "text": "IPsec", "correct": false },
+      { "text": "PPTP", "correct": true }
+    ]
   }
 
 ];
