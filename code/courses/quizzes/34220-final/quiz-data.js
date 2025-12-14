@@ -268,6 +268,303 @@ const questionBank = [
       { "text": "IPsec", "correct": false },
       { "text": "PPTP", "correct": true }
     ]
+  },
+    {
+    "question": "To register a second level domain name, you must provide two authoritative DNS servers that are live 24/7.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Only one DNS server can be authoritative for a given zone.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "In DNS, the terms zone and domain are interchangeable.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "The DNS name space is large enough in terms of levels and characters per level to meet any practical situation that you may come across.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "1.168.192.IN-ADDR.ARPA is the typical name for the reverse address zone for the 192.168.1.0/24 network.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "In general, it’s better to reject unwanted traffic at a firewall than to deny it.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The main purpose of the firewall between the DMZ and the Internet is to limit access from DMZ servers to specific Internet hosts.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "A well implemented firewall/DMZ architecture allows for all security concerns to be addressed at the edge of the network.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "When using stateful packet inspection (SPI), you do not have to explicitly allow return traffic through the firewall.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "The SNTP protocol consistently checks time and uses a drift file to ensure accuracy.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "An NTP stratum 2 or greater host must have at least two time sources to have reliable time information.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "In a Virtual Machine environment, you should synchronize each VM to its NTP-synchronized host.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The purpose of Marzullo's algorithm is to take into account the transmission duration of the time information in NTP.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Proper functioning of a Microsoft Active Directory requires clients and servers to agree on the time within five minutes.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "HELO and EHLO produce the same output on an ESMTP-capable mail server.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "The currently used version of SMTP only natively supports 7-bit ASCII communication.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Proper DNS functionality is a prerequisite for functional e-mail.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Current anti-spam legislation offers little practical help against spam.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Which e-mail protocol is used to send mail?",
+    "answers": [
+      { "text": "SMTP", "correct": true },
+      { "text": "POP3", "correct": false },
+      { "text": "IMAP", "correct": false },
+      { "text": "MAPI", "correct": false },
+      { "text": "POP3 and IMAP", "correct": false }
+    ]
+  },
+  {
+    "question": "Which e-mail protocols initiate connections from clients?",
+    "answers": [
+      { "text": "SMTP", "correct": false },
+      { "text": "POP3", "correct": false },
+      { "text": "IMAP", "correct": false },
+      { "text": "MAPI", "correct": false },
+      { "text": "POP3 and IMAP", "correct": true }
+    ]
+  },
+  {
+    "question": "Which e-mail protocol accesses mail on a mail server?",
+    "answers": [
+      { "text": "SMTP", "correct": false },
+      { "text": "POP3", "correct": false },
+      { "text": "IMAP", "correct": true },
+      { "text": "MAPI", "correct": false },
+      { "text": "POP3 and IMAP", "correct": false }
+    ]
+  },
+  {
+    "question": "Which e-mail protocol retrieves mail from a mail server?",
+    "answers": [
+      { "text": "SMTP", "correct": false },
+      { "text": "POP3", "correct": true },
+      { "text": "IMAP", "correct": false },
+      { "text": "MAPI", "correct": false },
+      { "text": "POP3 and IMAP", "correct": false }
+    ]
+  },
+  {
+    "question": "Which e-mail protocols send passwords in clear text?",
+    "answers": [
+      { "text": "SMTP", "correct": false },
+      { "text": "POP3", "correct": false },
+      { "text": "IMAP", "correct": false },
+      { "text": "MAPI", "correct": false },
+      { "text": "POP3 and IMAP", "correct": true }
+    ]
+  },
+  {
+    "question": "Which e-mail protocol is required on all modern mail servers?",
+    "answers": [
+      { "text": "SMTP", "correct": true },
+      { "text": "POP3", "correct": false },
+      { "text": "IMAP", "correct": false },
+      { "text": "MAPI", "correct": false },
+      { "text": "POP3 and IMAP", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a valid top-level DNS domain?",
+    "answers": [
+      { "text": "edu", "correct": false },
+      { "text": "com", "correct": false },
+      { "text": "net", "correct": false },
+      { "text": "us", "correct": false },
+      { "text": "All of the above are top level DNS domains", "correct": true }
+    ]
+  },
+  {
+    "question": "Who is responsible for creating and managing top-level DNS names (such as .com)?",
+    "answers": [
+      { "text": "ICANN", "correct": true },
+      { "text": "IETF", "correct": false },
+      { "text": "IAB", "correct": false },
+      { "text": "Designated registrar(s)", "correct": false },
+      { "text": "The organization that registered the domain name", "correct": false }
+    ]
+  },
+  {
+    "question": "Who is responsible for approving second level DNS names (such as purdue.edu)?",
+    "answers": [
+      { "text": "ICANN", "correct": false },
+      { "text": "IETF", "correct": true },
+      { "text": "IAB", "correct": false },
+      { "text": "Designated registrar(s)", "correct": false },
+      { "text": "The organization that registered the domain name", "correct": false }
+    ]
+  },
+  {
+    "question": "Who is responsible for approving third level DNS names (such as tech.purdue.edu)?",
+    "answers": [
+      { "text": "ICANN", "correct": false },
+      { "text": "IETF", "correct": false },
+      { "text": "IAB", "correct": false },
+      { "text": "Designated registrar(s)", "correct": false },
+      { "text": "The organization that registered the domain name", "correct": true }
+    ]
+  },
+  {
+    "question": "What type of DNS query is made by a client to a local DNS server and requires a final answer?",
+    "answers": [
+      { "text": "Recursive query", "correct": true },
+      { "text": "Iterative query", "correct": false },
+      { "text": "Forward query", "correct": false },
+      { "text": "Any of the above", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "What type of DNS query is made by a DNS server to a root server and only requires a pointer to the authoritative server for the domain being queried?",
+    "answers": [
+      { "text": "Recursive query", "correct": false },
+      { "text": "Iterative query", "correct": true },
+      { "text": "Forward query", "correct": false },
+      { "text": "Any of the above", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "Which DNS record type contains the domain administrator’s email address?",
+    "answers": [
+      { "text": "SOA", "correct": true },
+      { "text": "A", "correct": false },
+      { "text": "PTR", "correct": false },
+      { "text": "MX", "correct": false },
+      { "text": "CNAME", "correct": false }
+    ]
+  },
+  {
+    "question": "Which DNS record type is used to determine the IP address for a known hostname?",
+    "answers": [
+      { "text": "SOA", "correct": false },
+      { "text": "A", "correct": true },
+      { "text": "PTR", "correct": false },
+      { "text": "MX", "correct": false },
+      { "text": "CNAME", "correct": false }
+    ]
+  },
+  {
+    "question": "Which DNS record type is used to list DNS aliases for hosts?",
+    "answers": [
+      { "text": "SOA", "correct": false },
+      { "text": "A", "correct": false },
+      { "text": "PTR", "correct": false },
+      { "text": "MX", "correct": false },
+      { "text": "CNAME", "correct": true }
+    ]
+  },
+  {
+    "question": "Which statement about a DMZ is false?",
+    "answers": [
+      { "text": "A DMZ is located behind the first Internet firewall", "correct": false },
+      { "text": "Systems in a DMZ are fully protected from the Internet", "correct": true },
+      { "text": "A DMZ is an isolated network segment", "correct": false },
+      { "text": "In order to have a DMZ, you must also have packet-filtering capabilities", "correct": false },
+      { "text": "All of these statements are true", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following packet criteria can be used to filter traffic at a firewall?",
+    "answers": [
+      { "text": "Source network address", "correct": false },
+      { "text": "Destination network address", "correct": false },
+      { "text": "Destination port number", "correct": false },
+      { "text": "A & B", "correct": false },
+      { "text": "All of the above", "correct": true }
+    ]
   }
+
 
 ];
