@@ -387,6 +387,132 @@ const questionBank = [
         { "text": "Backwards compatibility", "correct": true },
         { "text": "None of the above", "correct": false }
       ]
-    }
+    },
+    {
+    "question": "To register a second level domain name, you must provide two authoritative DNS servers that are live 24/7.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Only one DNS server can be authoritative for a given zone.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "In DNS, the terms zone and domain are interchangeable.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "The DNS name space is large enough in terms of levels and characters per level to meet any practical situation that you may come across.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "1.168.192.IN-ADDR.ARPA is the typical name for the reverse address zone for the 192.168.1.0/24 network.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "In general, it’s better to reject unwanted traffic at a firewall than to deny it.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The main purpose of the firewall between the DMZ and the Internet is to limit access from DMZ servers to specific Internet hosts.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "A well implemented firewall/DMZ architecture allows for all security concerns to be addressed at the edge of the network.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "When using stateful packet inspection (SPI), you do not have to explicitly allow return traffic through the firewall.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "The SNTP protocol consistently checks time and uses a drift file to ensure accuracy.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "An NTP stratum 2 or greater host must have at least two time sources to have reliable time information.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "In a Virtual Machine environment, you should synchronize each VM to its NTP-synchronized host.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "The purpose of Marzullo's algorithm is to take into account the transmission duration of the time information in NTP.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Proper functioning of a Microsoft Active Directory requires clients and servers to agree on the time within five minutes.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "HELO and EHLO produce the same output on an ESMTP-capable mail server.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "The currently used version of SMTP only natively supports 7-bit ASCII communication.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Proper DNS functionality is a prerequisite for functional e-mail.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "Current anti-spam legislation offers little practical help against spam.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  }
 
 ];
