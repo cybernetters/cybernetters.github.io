@@ -564,7 +564,118 @@ const questionBank = [
       { "text": "A & B", "correct": false },
       { "text": "All of the above", "correct": true }
     ]
+  },
+  {
+    "question": "Which of the following characteristics is not unique to a dynamic firewall and is common to both dynamic and static firewalls?",
+    "answers": [
+      { "text": "Examines the source and destination address and port number", "correct": true },
+      { "text": "Examines TCP sequence numbers", "correct": false },
+      { "text": "Takes the context of a packet into consideration", "correct": false },
+      { "text": "Keeps ports closed until a request to open the port is received", "correct": false },
+      { "text": "Ensures UDP packets are part of a known data flow", "correct": false }
+    ]
+  },
+  {
+    "question": "What should be placed in a DMZ?",
+    "answers": [
+      { "text": "Any service that accepts incoming connections from unauthenticated public hosts", "correct": true },
+      { "text": "Any service that accepts incoming connections from authenticated public hosts", "correct": false },
+      { "text": "Any service that accepts incoming connections from private hosts", "correct": false },
+      { "text": "Any service that accepts incoming connections from any host", "correct": false },
+      { "text": "All of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is an invalid IP address match criterion for a firewall rule?",
+    "answers": [
+      { "text": "172.45.50.0 mask 255.255.255.0", "correct": false },
+      { "text": "172.45.50.256/32", "correct": true },
+      { "text": "172.45.50.0/28", "correct": false },
+      { "text": "0.0.0.0/0", "correct": false },
+      { "text": "172.45.50.56 mask 255.255.255.255", "correct": false }
+    ]
+  },
+  {
+    "question": "When setting up rules on a firewall, what is typically the last rule?",
+    "answers": [
+      { "text": "Accept all", "correct": false },
+      { "text": "Accept all non-private traffic", "correct": false },
+      { "text": "Deny all", "correct": true },
+      { "text": "Deny all non-private traffic", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is not a viable option for dealing with spam as a system or network administrator?",
+    "answers": [
+      { "text": "Bayesian filters", "correct": false },
+      { "text": "Firewalls", "correct": true },
+      { "text": "Whitelists", "correct": false },
+      { "text": "Blacklists", "correct": false },
+      { "text": "Greylists", "correct": false }
+    ]
+  },
+  {
+    "question": "Without sender authentication, what options are available for controlling spam?",
+    "answers": [
+      { "text": "Blacklisting", "correct": false },
+      { "text": "Whitelisting", "correct": false },
+      { "text": "Bayesian filtering", "correct": false },
+      { "text": "All of the above", "correct": true },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "What type of DNS record is typically used to identify a recipient host in an email address?",
+    "answers": [
+      { "text": "A", "correct": false },
+      { "text": "CNAME", "correct": false },
+      { "text": "MX", "correct": true },
+      { "text": "PTR", "correct": false },
+      { "text": ".", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a typical email delivery error?",
+    "answers": [
+      { "text": "Host unreachable", "correct": false },
+      { "text": "User unknown", "correct": false },
+      { "text": "User mailbox full", "correct": false },
+      { "text": "Incoming mail queue full", "correct": false },
+      { "text": "All of the above are SMTP delivery errors", "correct": true }
+    ]
+  },
+  {
+    "question": "A message is sent to ten users on four hosts in three domains from a workstation using SMTP. How many copies of the message are sent from the origin server?",
+    "answers": [
+      { "text": "One", "correct": false },
+      { "text": "Three", "correct": true },
+      { "text": "Four", "correct": false },
+      { "text": "Ten", "correct": false },
+      { "text": "Not enough information is given to determine the number of messages sent", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the root cause of the spam problem?",
+    "answers": [
+      { "text": "SMTP is unauthenticated", "correct": true },
+      { "text": "SMTP is unencrypted", "correct": false },
+      { "text": "SMTP requires encoding", "correct": false },
+      { "text": "SMTP provides no digital signatures", "correct": false },
+      { "text": "All of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT functionality added to SMTP by MIME?",
+    "answers": [
+      { "text": "Non-Latin characters", "correct": false },
+      { "text": "Attachments", "correct": false },
+      { "text": "Multiple email parts", "correct": false },
+      { "text": "Different styles", "correct": false },
+      { "text": "All of the above are added by MIME", "correct": true }
+    ]
   }
+]
 
 
 ];
