@@ -675,7 +675,4 @@ const questionBank = [
       { "text": "All of the above are added by MIME", "correct": true }
     ]
   }
-]
-
-
 ];
