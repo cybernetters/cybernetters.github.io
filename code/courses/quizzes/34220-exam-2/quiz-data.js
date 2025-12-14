@@ -573,6 +573,116 @@ const questionBank = [
       { "text": "MAPI", "correct": false },
       { "text": "POP3 and IMAP", "correct": false }
     ]
+  },
+  {
+    "question": "Which of the following is NOT a valid top-level DNS domain?",
+    "answers": [
+      { "text": "edu", "correct": false },
+      { "text": "com", "correct": false },
+      { "text": "net", "correct": false },
+      { "text": "us", "correct": false },
+      { "text": "All of the above are top level DNS domains", "correct": true }
+    ]
+  },
+  {
+    "question": "Who is responsible for creating and managing top-level DNS names (such as .com)?",
+    "answers": [
+      { "text": "ICANN", "correct": true },
+      { "text": "IETF", "correct": false },
+      { "text": "IAB", "correct": false },
+      { "text": "Designated registrar(s)", "correct": false },
+      { "text": "The organization that registered the domain name", "correct": false }
+    ]
+  },
+  {
+    "question": "Who is responsible for approving second level DNS names (such as purdue.edu)?",
+    "answers": [
+      { "text": "ICANN", "correct": false },
+      { "text": "IETF", "correct": true },
+      { "text": "IAB", "correct": false },
+      { "text": "Designated registrar(s)", "correct": false },
+      { "text": "The organization that registered the domain name", "correct": false }
+    ]
+  },
+  {
+    "question": "Who is responsible for approving third level DNS names (such as tech.purdue.edu)?",
+    "answers": [
+      { "text": "ICANN", "correct": false },
+      { "text": "IETF", "correct": false },
+      { "text": "IAB", "correct": false },
+      { "text": "Designated registrar(s)", "correct": false },
+      { "text": "The organization that registered the domain name", "correct": true }
+    ]
+  },
+  {
+    "question": "What type of DNS query is made by a client to a local DNS server and requires a final answer?",
+    "answers": [
+      { "text": "Recursive query", "correct": true },
+      { "text": "Iterative query", "correct": false },
+      { "text": "Forward query", "correct": false },
+      { "text": "Any of the above", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "What type of DNS query is made by a DNS server to a root server and only requires a pointer to the authoritative server for the domain being queried?",
+    "answers": [
+      { "text": "Recursive query", "correct": false },
+      { "text": "Iterative query", "correct": true },
+      { "text": "Forward query", "correct": false },
+      { "text": "Any of the above", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "Which DNS record type contains the domain administrator’s email address?",
+    "answers": [
+      { "text": "SOA", "correct": true },
+      { "text": "A", "correct": false },
+      { "text": "PTR", "correct": false },
+      { "text": "MX", "correct": false },
+      { "text": "CNAME", "correct": false }
+    ]
+  },
+  {
+    "question": "Which DNS record type is used to determine the IP address for a known hostname?",
+    "answers": [
+      { "text": "SOA", "correct": false },
+      { "text": "A", "correct": true },
+      { "text": "PTR", "correct": false },
+      { "text": "MX", "correct": false },
+      { "text": "CNAME", "correct": false }
+    ]
+  },
+  {
+    "question": "Which DNS record type is used to list DNS aliases for hosts?",
+    "answers": [
+      { "text": "SOA", "correct": false },
+      { "text": "A", "correct": false },
+      { "text": "PTR", "correct": false },
+      { "text": "MX", "correct": false },
+      { "text": "CNAME", "correct": true }
+    ]
+  },
+  {
+    "question": "Which statement about a DMZ is false?",
+    "answers": [
+      { "text": "A DMZ is located behind the first Internet firewall", "correct": false },
+      { "text": "Systems in a DMZ are fully protected from the Internet", "correct": true },
+      { "text": "A DMZ is an isolated network segment", "correct": false },
+      { "text": "In order to have a DMZ, you must also have packet-filtering capabilities", "correct": false },
+      { "text": "All of these statements are true", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following packet criteria can be used to filter traffic at a firewall?",
+    "answers": [
+      { "text": "Source network address", "correct": false },
+      { "text": "Destination network address", "correct": false },
+      { "text": "Destination port number", "correct": false },
+      { "text": "A & B", "correct": false },
+      { "text": "All of the above", "correct": true }
+    ]
   }
 
 ];
