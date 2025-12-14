@@ -674,6 +674,107 @@ const questionBank = [
       { "text": "Different styles", "correct": false },
       { "text": "All of the above are added by MIME", "correct": true }
     ]
+  },
+  {
+    "question": "Which load balancing technique does not take into account server capability?",
+    "answers": [
+      { "text": "Fastest", "correct": false },
+      { "text": "Least connections", "correct": true },
+      { "text": "Observed", "correct": false },
+      { "text": "Predictive", "correct": false },
+      { "text": "All of the above take into account server capability", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is not a characteristic of basic load balancing?",
+    "answers": [
+      { "text": "Connections are made from clients directly to servers", "correct": false },
+      { "text": "It is in effect a 1:many NAT", "correct": false },
+      { "text": "The load balancer selects a target to service the request", "correct": false },
+      { "text": "There are two separate data flows: one from the client to the balancer and one from the balancer to the server", "correct": true },
+      { "text": "All of the above are characteristics of basic load balancing", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following are capabilities of application delivery controllers?",
+    "answers": [
+      { "text": "Load balancing", "correct": false },
+      { "text": "Fail-over", "correct": false },
+      { "text": "SSL acceleration", "correct": false },
+      { "text": "Monitoring", "correct": false },
+      { "text": "All of the above are capabilities of application delivery controllers", "correct": true }
+    ]
+  },
+  {
+    "question": "An application delivery controller must be which of the following relative to the application server?",
+    "answers": [
+      { "text": "Logically in front", "correct": true },
+      { "text": "Physically in front", "correct": false },
+      { "text": "Logically behind", "correct": false },
+      { "text": "Physically behind", "correct": false },
+      { "text": "Alongside", "correct": false }
+    ]
+  },
+  {
+    "question": "A full proxy application delivery controller has how many separate data flows for each transaction?",
+    "answers": [
+      { "text": "One", "correct": false },
+      { "text": "Two", "correct": true },
+      { "text": "Three", "correct": false },
+      { "text": "Four or more", "correct": false },
+      { "text": "Variable numbers", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the purpose of DMARC?",
+    "answers": [
+      { "text": "To prevent your organization from successfully sending e-mail", "correct": false },
+      { "text": "To prevent your organization from receiving spam", "correct": false },
+      { "text": "To add authentication to SMTP", "correct": false },
+      { "text": "To publish information about your organization’s mail policies", "correct": true },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is required infrastructure to deploy S/MIME?",
+    "answers": [
+      { "text": "PKI", "correct": true },
+      { "text": "Web server", "correct": false },
+      { "text": "Active Directory", "correct": false },
+      { "text": "Kerberos", "correct": false },
+      { "text": "All of the above are required", "correct": false }
+    ]
+  },
+  {
+    "question": "What is required to send an S/MIME-secured email?",
+    "answers": [
+      { "text": "The receiving mail server’s certificate", "correct": false },
+      { "text": "The receiving email user’s certificate", "correct": true },
+      { "text": "The sending mail server’s certificate", "correct": false },
+      { "text": "The sending email user’s certificate", "correct": false },
+      { "text": "All of the above are required", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is the defined Common Name (CN) in an S/MIME certificate?",
+    "answers": [
+      { "text": "The mail server’s hostname", "correct": false },
+      { "text": "The user’s directory name", "correct": false },
+      { "text": "The user’s email address", "correct": true },
+      { "text": "The mail server’s IP address", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT seen as a potential downside to implementing S/MIME?",
+    "answers": [
+      { "text": "Difficulty integrating with webmail", "correct": false },
+      { "text": "Facilitating spam", "correct": false },
+      { "text": "End-to-end encryption", "correct": false },
+      { "text": "Backwards compatibility", "correct": true },
+      { "text": "None of the above", "correct": false }
+    ]
   }
-  
+
+
   ];
