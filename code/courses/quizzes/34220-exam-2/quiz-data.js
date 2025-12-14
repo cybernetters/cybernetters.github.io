@@ -391,8 +391,8 @@ const questionBank = [
     {
     "question": "To register a second level domain name, you must provide two authoritative DNS servers that are live 24/7.",
     "answers": [
-      { "text": "True", "correct": true },
-      { "text": "False", "correct": false }
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
       ]
     },
     {
