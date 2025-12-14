@@ -513,6 +513,66 @@ const questionBank = [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
+  },
+  {
+    "question": "Which e-mail protocol is used to send mail?",
+    "answers": [
+      { "text": "SMTP", "correct": true },
+      { "text": "POP3", "correct": false },
+      { "text": "IMAP", "correct": false },
+      { "text": "MAPI", "correct": false },
+      { "text": "POP3 and IMAP", "correct": false }
+    ]
+  },
+  {
+    "question": "Which e-mail protocols initiate connections from clients?",
+    "answers": [
+      { "text": "SMTP", "correct": false },
+      { "text": "POP3", "correct": false },
+      { "text": "IMAP", "correct": false },
+      { "text": "MAPI", "correct": false },
+      { "text": "POP3 and IMAP", "correct": true }
+    ]
+  },
+  {
+    "question": "Which e-mail protocol accesses mail on a mail server?",
+    "answers": [
+      { "text": "SMTP", "correct": false },
+      { "text": "POP3", "correct": false },
+      { "text": "IMAP", "correct": true },
+      { "text": "MAPI", "correct": false },
+      { "text": "POP3 and IMAP", "correct": false }
+    ]
+  },
+  {
+    "question": "Which e-mail protocol retrieves mail from a mail server?",
+    "answers": [
+      { "text": "SMTP", "correct": false },
+      { "text": "POP3", "correct": true },
+      { "text": "IMAP", "correct": false },
+      { "text": "MAPI", "correct": false },
+      { "text": "POP3 and IMAP", "correct": false }
+    ]
+  },
+  {
+    "question": "Which e-mail protocols send passwords in clear text?",
+    "answers": [
+      { "text": "SMTP", "correct": false },
+      { "text": "POP3", "correct": false },
+      { "text": "IMAP", "correct": false },
+      { "text": "MAPI", "correct": false },
+      { "text": "POP3 and IMAP", "correct": true }
+    ]
+  },
+  {
+    "question": "Which e-mail protocol is required on all modern mail servers?",
+    "answers": [
+      { "text": "SMTP", "correct": true },
+      { "text": "POP3", "correct": false },
+      { "text": "IMAP", "correct": false },
+      { "text": "MAPI", "correct": false },
+      { "text": "POP3 and IMAP", "correct": false }
+    ]
   }
 
 ];
