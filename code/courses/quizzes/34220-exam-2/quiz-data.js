@@ -683,6 +683,6 @@ const questionBank = [
       { "text": "A & B", "correct": false },
       { "text": "All of the above", "correct": true }
     ]
-  },
+  }
 
   ];
