@@ -683,6 +683,76 @@ const questionBank = [
       { "text": "A & B", "correct": false },
       { "text": "All of the above", "correct": true }
     ]
+  },
+  {
+    "question": "In STP, the best path to the Root Switch/Bridge is determined by:",
+    "answers": [
+      { "text": "Highest bandwidth interface", "correct": false },
+      { "text": "Lowest Path Cost selection", "correct": true },
+      { "text": "Lowest MAC address", "correct": false },
+      { "text": "Lowest port number", "correct": false },
+      { "text": "Highest bridge priority", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the maximum number of active physical links that can be included in an aggregate link trunk?",
+    "answers": [
+      { "text": "4", "correct": false },
+      { "text": "8", "correct": true },
+      { "text": "12", "correct": false },
+      { "text": "16", "correct": false },
+      { "text": "Unlimited", "correct": false }
+    ]
+  },
+  {
+    "question": "A 4 Gbps aggregate link connects two switches. What is the maximum data rate between a single client and a single server?",
+    "answers": [
+      { "text": "1 Gbps", "correct": true },
+      { "text": "2 Gbps", "correct": false },
+      { "text": "4 Gbps", "correct": false },
+      { "text": "500 Mbps", "correct": false },
+      { "text": "It depends on the protocol", "correct": false }
+    ]
+  },
+  {
+    "question": "HSRP1 reboots in an HSRP group. Once HSRP1 comes back online, which statement is true?",
+    "answers": [
+      { "text": "HSRP1 will always become the active router", "correct": false },
+      { "text": "HSRP1 will remain in standby mode permanently", "correct": false },
+      { "text": "HSRP1 will become the active router if preemption is enabled", "correct": true },
+      { "text": "HSRP1 cannot rejoin the group without manual intervention", "correct": false },
+      { "text": "HSRP1 will only forward traffic but not participate in elections", "correct": false }
+    ]
+  },
+  {
+    "question": "The network 128.210.0.0/16 contains which of the following hosts?",
+    "answers": [
+      { "text": "128.211.10.5", "correct": false },
+      { "text": "128.209.255.254", "correct": false },
+      { "text": "128.210.139.24", "correct": true },
+      { "text": "128.212.1.1", "correct": false },
+      { "text": "128.210.256.10", "correct": false }
+    ]
+  },
+  {
+    "question": "The host 191.92.74.68 is contained in which of the following networks?",
+    "answers": [
+      { "text": "191.92.74.60/30", "correct": false },
+      { "text": "191.92.0.0/16", "correct": false },
+      { "text": "191.92.72.0/23", "correct": false },
+      { "text": "191.92.74.64/30", "correct": false },
+      { "text": "None of the above", "correct": true }
+    ]
+  },
+  {
+    "question": "The network 17.21.123.0/24 would fit into which supernet?",
+    "answers": [
+      { "text": "17.21.0.0/16", "correct": false },
+      { "text": "17.21.0.0/18", "correct": true },
+      { "text": "17.21.64.0/18", "correct": false },
+      { "text": "17.21.120.0/22", "correct": false },
+      { "text": "17.21.128.0/17", "correct": false }
+    ]
   }
 
   ];
