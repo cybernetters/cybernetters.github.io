@@ -540,6 +540,123 @@ const questionBank = [
       { "text": "True", "correct": true },
       { "text": "False", "correct": false }
     ]
+  },
+  {
+    "question": "When using PFS the phase 2 key is derived from the phase 1 key.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "A session key is created through Oakley/DH or PFS.",
+    "answers": [
+      { "text": "IKE Phase 1", "correct": false },
+      { "text": "IKE Phase 2", "correct": false },
+      { "text": "IKE Phase 3", "correct": false },
+      { "text": "A & B", "correct": true },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "A session key is always established via Oakley/DH.",
+    "answers": [
+      { "text": "IKE Phase 1", "correct": true },
+      { "text": "IKE Phase 2", "correct": false },
+      { "text": "IKE Phase 3", "correct": false },
+      { "text": "A & B", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "A unique SPI is assigned to identify traffic using the SA.",
+    "answers": [
+      { "text": "IKE Phase 1", "correct": false },
+      { "text": "IKE Phase 2", "correct": true },
+      { "text": "IKE Phase 3", "correct": false },
+      { "text": "A & B", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "An IKE SA is established between nodes.",
+    "answers": [
+      { "text": "IKE Phase 1", "correct": true },
+      { "text": "IKE Phase 2", "correct": false },
+      { "text": "IKE Phase 3", "correct": false },
+      { "text": "A & B", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "An IPsec SA is established between nodes.",
+    "answers": [
+      { "text": "IKE Phase 1", "correct": false },
+      { "text": "IKE Phase 2", "correct": true },
+      { "text": "IKE Phase 3", "correct": false },
+      { "text": "A & B", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "The nodes authenticate each other.",
+    "answers": [
+      { "text": "IKE Phase 1", "correct": true },
+      { "text": "IKE Phase 2", "correct": false },
+      { "text": "IKE Phase 3", "correct": false },
+      { "text": "A & B", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "Provides encryption.",
+    "answers": [
+      { "text": "Transport Mode", "correct": false },
+      { "text": "Tunnel Mode", "correct": false },
+      { "text": "Authentication Header (AH) Protocol", "correct": false },
+      { "text": "Encapsulating Security Payload (ESP) Protocol", "correct": true },
+      { "text": "B & D", "correct": false }
+    ]
+  },
+  {
+    "question": "Enables point to point communication between two data endpoints.",
+    "answers": [
+      { "text": "Transport Mode", "correct": true },
+      { "text": "Tunnel Mode", "correct": false },
+      { "text": "Authentication Header (AH) Protocol", "correct": false },
+      { "text": "Encapsulating Security Payload (ESP) Protocol", "correct": false },
+      { "text": "B & D", "correct": false }
+    ]
+  },
+  {
+    "question": "Authenticates the entire packet.",
+    "answers": [
+      { "text": "Transport Mode", "correct": false },
+      { "text": "Tunnel Mode", "correct": false },
+      { "text": "Authentication Header (AH) Protocol", "correct": true },
+      { "text": "Encapsulating Security Payload (ESP) Protocol", "correct": false },
+      { "text": "B & D", "correct": false }
+    ]
+  },
+  {
+    "question": "Required to create an IPsec Site-to-Site VPN.",
+    "answers": [
+      { "text": "Transport Mode", "correct": false },
+      { "text": "Tunnel Mode", "correct": false },
+      { "text": "Authentication Header (AH) Protocol", "correct": false },
+      { "text": "Encapsulating Security Payload (ESP) Protocol", "correct": false },
+      { "text": "B & D", "correct": true }
+    ]
+  },
+  {
+    "question": "Requires the communication endpoints to be the cryptographic endpoints.",
+    "answers": [
+      { "text": "Transport Mode", "correct": true },
+      { "text": "Tunnel Mode", "correct": false },
+      { "text": "Authentication Header (AH) Protocol", "correct": false },
+      { "text": "Encapsulating Security Payload (ESP) Protocol", "correct": false },
+      { "text": "B & D", "correct": false }
+    ]
   }
 
 
