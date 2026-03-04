@@ -428,6 +428,156 @@ const questionBank = [
       { "text": "Edge, Core, Internet", "correct": false },
       { "text": "Access only", "correct": false }
     ]
+  },
+  {
+    "question": "What is the smallest summarized address space that contains the 192.168.1.2 and 192.168.1.3 host addresses?",
+    "answers": [
+      { "text": "192.168.1.0/24", "correct": false },
+      { "text": "192.168.1.0/30", "correct": false },
+      { "text": "192.168.1.2/31", "correct": true },
+      { "text": "192.168.1.0/29", "correct": false },
+      { "text": "192.168.1.2/30", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the best practice for DNS name spaces within a corporate network?",
+    "answers": [
+      { "text": "Use one publicly registered DNS domain for internal and external servers", "correct": false },
+      { "text": "Use a publicly registered DNS domain for external servers and a second publicly registered domain for internal servers", "correct": false },
+      { "text": "Use a publicly registered DNS domain for external servers and a non-publicly registered domain for internal servers", "correct": true },
+      { "text": "A or B", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the best DMZ layout for messaging systems such as Microsoft Exchange or Lotus Notes?",
+    "answers": [
+      { "text": "Put a relay host/mail forwarder in a DMZ and the messaging server in the private address space", "correct": false },
+      { "text": "Put a relay host/mail forwarder in an outer DMZ and the messaging server in an inner DMZ", "correct": true },
+      { "text": "Put the messaging server in a single DMZ and allow SMTP traffic to reach it directly", "correct": false },
+      { "text": "Put the messaging server in the private zone and forward port 25 to it", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "In which type of VPN is a data endpoint rarely an encapsulation endpoint?",
+    "answers": [
+      { "text": "Client access", "correct": false },
+      { "text": "Site-to-site", "correct": true },
+      { "text": "SSH", "correct": false },
+      { "text": "SSL", "correct": false },
+      { "text": "All of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "This client access VPN technology allows for two factor user authentication.",
+    "answers": [
+      { "text": "GRE/PPP", "correct": false },
+      { "text": "IPsec Tunneling Mode", "correct": false },
+      { "text": "L2TP/IPsec", "correct": true },
+      { "text": "PPTP/GRE", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "Which client access VPN technology is most likely to work through restrictive DNAT/PAT firewalls?",
+    "answers": [
+      { "text": "GRE/PPP", "correct": false },
+      { "text": "IPsec Tunneling Mode", "correct": false },
+      { "text": "L2TP/IPsec", "correct": false },
+      { "text": "PPTP/GRE", "correct": false },
+      { "text": "SSL", "correct": true }
+    ]
+  },
+  {
+    "question": "This technology can be summarized as PPP over IP.",
+    "answers": [
+      { "text": "L2TP", "correct": false },
+      { "text": "PPTP", "correct": true },
+      { "text": "IPsec", "correct": false },
+      { "text": "SSL", "correct": false },
+      { "text": "A & B", "correct": false }
+    ]
+  },
+  {
+    "question": "This VPN technology suffers some performance degradation by encapsulating TCP in TCP.",
+    "answers": [
+      { "text": "L2TP", "correct": false },
+      { "text": "PPTP", "correct": false },
+      { "text": "IPsec", "correct": false },
+      { "text": "SSL", "correct": true },
+      { "text": "A & B", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the preferred approach for assigning IP addresses to client-access VPN clients?",
+    "answers": [
+      { "text": "Include VPN clients in an existing private IP segment", "correct": false },
+      { "text": "Create a new private IP segment for VPN clients in the middle of the physical client space such that all must be summarized together", "correct": false },
+      { "text": "Create a new private IP segment for VPN clients in a space separate such that physical clients can be summarized without VPN clients", "correct": true },
+      { "text": "Create a new private IP segment for VPN clients that cannot summarize with physical clients", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is not a required step in configuring a RADIUS transaction?",
+    "answers": [
+      { "text": "Authorize the client", "correct": false },
+      { "text": "Create an access profile", "correct": false },
+      { "text": "Define a filter-id for the user", "correct": true },
+      { "text": "Define IP addresses and ports", "correct": false },
+      { "text": "Set the shared secret", "correct": false }
+    ]
+  },
+  {
+    "question": "In IPsec, this network protocol defines how security association (SA) information is exchanged.",
+    "answers": [
+      { "text": "IKE", "correct": false },
+      { "text": "ISAKMP", "correct": true },
+      { "text": "Transform Set", "correct": false },
+      { "text": "Policy", "correct": false },
+      { "text": "Crypto Map", "correct": false }
+    ]
+  },
+  {
+    "question": "What IPsec protocol/mode is used to authenticate the entire IP packet?",
+    "answers": [
+      { "text": "AH", "correct": true },
+      { "text": "ESP", "correct": false },
+      { "text": "Transport", "correct": false },
+      { "text": "Tunnel", "correct": false },
+      { "text": "A & B", "correct": false }
+    ]
+  },
+  {
+    "question": "Per the standard, which IPsec protocol/mode must be supported by all IPsec enabled nodes?",
+    "answers": [
+      { "text": "Main mode", "correct": true },
+      { "text": "Aggressive mode", "correct": false },
+      { "text": "Perfect Forward Security", "correct": false },
+      { "text": "A & C", "correct": false },
+      { "text": "All of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "Which part of initiating an IPsec connection includes negotiating a cipher and MAC?",
+    "answers": [
+      { "text": "Phase 1", "correct": false },
+      { "text": "Phase 2", "correct": true },
+      { "text": "Diffie-Hellman", "correct": false },
+      { "text": "PFS", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is not part of an IPsec Transform?",
+    "answers": [
+      { "text": "Block cipher", "correct": false },
+      { "text": "IPsec protocol", "correct": false },
+      { "text": "IPsec Mode", "correct": false },
+      { "text": "Key", "correct": true },
+      { "text": "MAC function", "correct": false }
+    ]
   }
 
 
