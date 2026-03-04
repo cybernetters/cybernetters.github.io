@@ -428,6 +428,118 @@ const questionBank = [
       { "text": "172.27.3.0/28", "correct": false },
       { "text": "172.27.3.0/25", "correct": false }
     ]
+  },
+  {
+    "question": "When using SNAT, inbound traffic address translation typically occurs before rules are processed; allowing the use of the internal addresses in the inbound rules.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "In general, firewalls should inspect traffic entering, rather than exiting, an interface.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "DMZs and internal networks should have completely separate IP and DNS spaces.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Strict regulation in IETF standards ensure that an open port 25 provides SMTP services.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "A firewall that only has three physical interfaces cannot be used to create multiple DMZ segments.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "Using parallel DMZs is a good method for reducing the impact of a server breach.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "A \"true\" VPN must provide network extension.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "From the client perspective in a client access VPN solution, traffic is routed across the VPN.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "L2TP/IPsec can provide better encryption than is available in PPTP/GRE.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "In a site-to-site VPN a virtual NIC is added to each data endpoint's configuration.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "802.1x port based authentication commonly uses RADIUS for user authentication.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "RADIUS represents a security threat as it passes clear text passwords across the network.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "ISAKMP is the IKE protocol used to manage security associations in IPsec.",
+    "answers": [
+      { "text": "True", "correct": false },
+      { "text": "False", "correct": true }
+    ]
+  },
+  {
+    "question": "IPsec is standardized for both IPv4 and IPv6.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "AH and ESP can be used concurrently.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
+  },
+  {
+    "question": "In Cisco devices a transform set is bound to an interface by a Crypto Map.",
+    "answers": [
+      { "text": "True", "correct": true },
+      { "text": "False", "correct": false }
+    ]
   }
 
 
