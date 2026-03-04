@@ -578,6 +578,66 @@ const questionBank = [
       { "text": "Key", "correct": true },
       { "text": "MAC function", "correct": false }
     ]
+  },
+  {
+    "question": "In the packet filter rule '* * * 10.1.2.2/31 tcp 21 accept', which component represents the Action?",
+    "answers": [
+      { "text": "*", "correct": false },
+      { "text": "10.1.2.2/31", "correct": false },
+      { "text": "21", "correct": false },
+      { "text": "accept", "correct": true },
+      { "text": "tcp", "correct": false }
+    ]
+  },
+  {
+    "question": "In the packet filter rule '* * * 10.1.2.2/31 tcp 21 accept', which component represents the Destination IP address?",
+    "answers": [
+      { "text": "*", "correct": false },
+      { "text": "10.1.2.2/31", "correct": true },
+      { "text": "21", "correct": false },
+      { "text": "accept", "correct": false },
+      { "text": "tcp", "correct": false }
+    ]
+  },
+  {
+    "question": "In the packet filter rule '* * * 10.1.2.2/31 tcp 21 accept', which component represents the Destination Protocol?",
+    "answers": [
+      { "text": "*", "correct": false },
+      { "text": "10.1.2.2/31", "correct": false },
+      { "text": "21", "correct": false },
+      { "text": "accept", "correct": false },
+      { "text": "tcp", "correct": true }
+    ]
+  },
+  {
+    "question": "In the packet filter rule '* * * 10.1.2.2/31 tcp 21 accept', which component represents the Destination Protocol Detail?",
+    "answers": [
+      { "text": "*", "correct": false },
+      { "text": "10.1.2.2/31", "correct": false },
+      { "text": "21", "correct": true },
+      { "text": "accept", "correct": false },
+      { "text": "tcp", "correct": false }
+    ]
+  },
+  {
+    "question": "In the packet filter rule '* * * 10.1.2.2/31 tcp 21 accept', which component represents the Source IP address?",
+    "answers": [
+      { "text": "*", "correct": true },
+      { "text": "10.1.2.2/31", "correct": false },
+      { "text": "21", "correct": false },
+      { "text": "accept", "correct": false },
+      { "text": "tcp", "correct": false }
+    ]
+  },
+  {
+    "question": "In the packet filter rule '* * * 10.1.2.2/31 tcp 21 accept', which component represents the Source Protocol?",
+    "answers": [
+      { "text": "*", "correct": true },
+      { "text": "10.1.2.2/31", "correct": false },
+      { "text": "21", "correct": false },
+      { "text": "accept", "correct": false },
+      { "text": "tcp", "correct": false }
+    ]
   }
 
 
