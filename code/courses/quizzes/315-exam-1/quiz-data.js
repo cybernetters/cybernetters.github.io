@@ -173,6 +173,87 @@ const questionBank = [
       { "text": "3", "correct": false },
       { "text": "4", "correct": false }
     ]
+  },
+  {
+    "question": "How many values can be returned from a C function without using pointers?",
+    "answers": [
+      { "text": "1", "correct": true },
+      { "text": "2", "correct": false },
+      { "text": "255", "correct": false },
+      { "text": "unlimited", "correct": false }
+    ]
+  },
+  {
+    "question": "A recursive function requires:",
+    "answers": [
+      { "text": "End condition", "correct": false },
+      { "text": "Recursive call", "correct": false },
+      { "text": "A & B", "correct": true },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "Register variables are used for what reason?",
+    "answers": [
+      { "text": "Because it is cool to use registers", "correct": false },
+      { "text": "Direct access to the computer's backplane", "correct": false },
+      { "text": "To take advantage of pointers", "correct": false },
+      { "text": "To speed up execution", "correct": true }
+    ]
+  },
+  {
+    "question": "In an ANSI C program, the code: for(;;){}",
+    "answers": [
+      { "text": "Is invalid", "correct": false },
+      { "text": "Is a post test loop", "correct": false },
+      { "text": "Is an infinite loop", "correct": true },
+      { "text": "All above are incorrect", "correct": false }
+    ]
+  },
+  {
+    "question": "If a pointer is defined using int *xPtr = 2468;, what is the value stored at the pointer location?",
+    "answers": [
+      { "text": "2468", "correct": false },
+      { "text": "Don’t know the value", "correct": true },
+      { "text": "The 'junk' at the memory location from a previous operation", "correct": false },
+      { "text": "More than one answer is correct", "correct": false }
+    ]
+  },
+  {
+    "question": "If you perform an explicit cast from a real number to a whole number, what will you possibly lose?",
+    "answers": [
+      { "text": "Precision", "correct": false },
+      { "text": "Any values after the decimal point", "correct": false },
+      { "text": "Nothing will be lost", "correct": false },
+      { "text": "More than one answer is correct", "correct": true }
+    ]
+  },
+  {
+    "question": "Header files are used to:",
+    "answers": [
+      { "text": "Store additional code for a program to use", "correct": false },
+      { "text": "Store variables", "correct": false },
+      { "text": "Store comments", "correct": false },
+      { "text": "Link pre compiled/linked libraries to use in the program", "correct": true }
+    ]
+  },
+  {
+    "question": "A cast operation is used to force an:",
+    "answers": [
+      { "text": "Implicit type conversion", "correct": false },
+      { "text": "Explicit type conversion", "correct": true },
+      { "text": "Precision", "correct": false },
+      { "text": "Accuracy", "correct": false }
+    ]
+  },
+  {
+    "question": "In scanf(\"%d\", &num1); the & indicates a:",
+    "answers": [
+      { "text": "Pointer", "correct": false },
+      { "text": "Declaration of integer", "correct": false },
+      { "text": "String", "correct": false },
+      { "text": "Address operator", "correct": true }
+    ]
   }
 
 ];
