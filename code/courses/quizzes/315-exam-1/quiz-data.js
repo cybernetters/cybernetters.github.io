@@ -138,6 +138,41 @@ const questionBank = [
       { "text": "True", "correct": false },
       { "text": "False", "correct": true }
     ]
+  },
+  {
+    "question": "Which of the following words describes the C programming language?",
+    "answers": [
+      { "text": "Dynamic", "correct": false },
+      { "text": "Distributed", "correct": false },
+      { "text": "Compiled", "correct": true },
+      { "text": "Machine language", "correct": false }
+    ]
+  },
+  {
+    "question": "After compiling a C source file, a file of which type is produced?",
+    "answers": [
+      { "text": "Object", "correct": true },
+      { "text": "Native compiled file", "correct": false },
+      { "text": "Source file", "correct": false },
+      { "text": "Bytecode file", "correct": false }
+    ]
+  },
+  {
+    "question": "The code #include <stdio.h> is what type of command?",
+    "answers": [
+      { "text": "Function", "correct": false },
+      { "text": "Method header", "correct": false },
+      { "text": "Preprocessor command", "correct": true }
+    ]
+  },
+  {
+    "question": "How many operands does a unary operator affect?",
+    "answers": [
+      { "text": "1", "correct": true },
+      { "text": "2", "correct": false },
+      { "text": "3", "correct": false },
+      { "text": "4", "correct": false }
+    ]
   }
 
 ];
