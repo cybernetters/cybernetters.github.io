@@ -254,6 +254,88 @@ const questionBank = [
       { "text": "String", "correct": false },
       { "text": "Address operator", "correct": true }
     ]
+  },
+  {
+    "question": "Which one of the following is an ANSI C logical operator?",
+    "answers": [
+      { "text": ">=", "correct": false },
+      { "text": "&&", "correct": false },
+      { "text": "||", "correct": false },
+      { "text": "More than one of the choices is logical", "correct": true }
+    ]
+  },
+  {
+    "question": "Which of the following is a post test loop?",
+    "answers": [
+      { "text": "For(;;) {}", "correct": false },
+      { "text": "While(cond) {}", "correct": false },
+      { "text": "Do/while(cond) {}", "correct": true },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "A function that calls another function is the",
+    "answers": [
+      { "text": "Called function", "correct": false },
+      { "text": "Calling function", "correct": true },
+      { "text": "Main function", "correct": false },
+      { "text": "Pass by reference", "correct": false }
+    ]
+  },
+  {
+    "question": "Scope is the area of the program where:",
+    "answers": [
+      { "text": "The methods are stored", "correct": false },
+      { "text": "Where global variables are all stored properly", "correct": false },
+      { "text": "The area where variables are \"known\"", "correct": true },
+      { "text": "Not a real area of the program", "correct": false }
+    ]
+  },
+  {
+    "question": "In \"???\" a called function receives values from its calling function, stores the passed values in its own local parameters, manipulates these parameters appropriately, and directly returns, at most, a single value.",
+    "answers": [
+      { "text": "Pass by reference", "correct": false },
+      { "text": "Pass by value", "correct": true },
+      { "text": "Pass to main", "correct": false },
+      { "text": "Pass to wide receiver", "correct": false }
+    ]
+  },
+  {
+    "question": "When a single ANSI C function calls itself it is called",
+    "answers": [
+      { "text": "Direct recursion", "correct": true },
+      { "text": "Indirect recursion", "correct": false },
+      { "text": "Mutual recursion", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "Recursive programs must have two parts. What are those parts?",
+    "answers": [
+      { "text": "Recursive call and end condition", "correct": true },
+      { "text": "Post test loop and end condition", "correct": false },
+      { "text": "Pre test loop and recursive call", "correct": false },
+      { "text": "Pre test loop and end condition", "correct": false }
+    ]
+  },
+  {
+    "question": "To solve a recursive problem, what must be true?",
+    "answers": [
+      { "text": "The problem gets increasingly larger", "correct": false },
+      { "text": "The problem gets continually smaller", "correct": false },
+      { "text": "The problem must end", "correct": false },
+      { "text": "A & C", "correct": true },
+      { "text": "B & C", "correct": false }
+    ]
+  },
+  {
+    "question": "The Towers of Hanoi problem has characteristics, which are:",
+    "answers": [
+      { "text": "Single recursive and optimal", "correct": true },
+      { "text": "Mutual recursive, exponential and optimal", "correct": false },
+      { "text": "Mutual recursive and iterative", "correct": false },
+      { "text": "Single recursive, non-optimal and logarithmic", "correct": false }
+    ]
   }
 
 ];
