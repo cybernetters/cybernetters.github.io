@@ -441,6 +441,71 @@ const questionBank = [
       { "text": "Value", "correct": true },
       { "text": "Low memory", "correct": false }
     ]
+  },
+  {
+    "question": "How many standard recursive function calls, in the recursive step, would you need to solve any standard two dimensional maze? (this assumes no backtracking of a path)",
+    "answers": [
+      { "text": "1", "correct": false },
+      { "text": "2", "correct": false },
+      { "text": "4", "correct": true },
+      { "text": "None are correct", "correct": false }
+    ]
+  },
+  {
+    "question": "In a direct recursion function call, how many times will recursion be called?",
+    "answers": [
+      { "text": "A number set by the loop", "correct": false },
+      { "text": "Until the end condition is reached", "correct": true },
+      { "text": "Infinite number of times", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "When is the Do-While statement most efficiently used?",
+    "answers": [
+      { "text": "Anytime you need to have some statements loop", "correct": false },
+      { "text": "Whenever you need the statements to be executed at least 1 time", "correct": true },
+      { "text": "Whenever you want to test the conditions before executing the statements", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "When a pointer variable is declared, such as int *ptrVal; how much memory is allocated by the operating system?",
+    "answers": [
+      { "text": "Enough memory to store an address", "correct": true },
+      { "text": "Enough memory to store a type of the declaration", "correct": false },
+      { "text": "Always 4 bytes", "correct": false },
+      { "text": "All above are true", "correct": false },
+      { "text": "None are true", "correct": false }
+    ]
+  },
+  {
+    "question": "Using a global variable is:",
+    "answers": [
+      { "text": "The scoping rules for symbolic constants and function prototypes are the same as for variables", "correct": false },
+      { "text": "When a symbolic constant has a general meaning that is applicable throughout an application, it makes good programming sense to declare it globally at the top of a source code file", "correct": false },
+      { "text": "Coding a function prototype as a global makes sense when the function is used by a number of other functions in a source code file", "correct": false },
+      { "text": "All of the above", "correct": true }
+    ]
+  },
+  {
+    "question": "Which type of variables are standard in ANSI C?",
+    "answers": [
+      { "text": "Auto", "correct": false },
+      { "text": "Static", "correct": false },
+      { "text": "Extern", "correct": false },
+      { "text": "None are true", "correct": true }
+    ]
+  },
+  {
+    "question": "What levels of a computing infrastructure can be accessed by a C program?",
+    "answers": [
+      { "text": "Hardware level (HW)", "correct": false },
+      { "text": "Basic Input/Output System (BIOS)", "correct": false },
+      { "text": "Operating System (OS)", "correct": false },
+      { "text": "A & C only", "correct": false },
+      { "text": "B & C", "correct": true }
+    ]
   }
 
 ];
