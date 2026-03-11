@@ -365,6 +365,82 @@ const questionBank = [
       { "text": "The program will terminate immediately.", "correct": false },
       { "text": "None of these", "correct": false }
     ]
+  },
+  {
+    "question": "What happens when the user enters 'n'?",
+    "answers": [
+      { "text": "The program ignores the input and continues looping.", "correct": false },
+      { "text": "The program continues as if the user entered 'y'.", "correct": false },
+      { "text": "The program enters an infinite loop without stopping.", "correct": false },
+      { "text": "The program does not display anything on the terminal.", "correct": false },
+      { "text": "None of these", "correct": true }
+    ]
+  },
+  {
+    "question": "Which of the following modifications would make the program terminate after a single iteration, regardless of user input?",
+    "answers": [
+      { "text": "Leave the return 0; inside the if statement where 'n' or 'N' is selected. Enter 'n' or 'N' at prompt.", "correct": false },
+      { "text": "Adding a return 0 if the input is 'y' or 'Y'. Enter 'y' or 'Y' at prompt.", "correct": false },
+      { "text": "No changes but input 'x' or 'X' to the current program.", "correct": false },
+      { "text": "A and B", "correct": true },
+      { "text": "A and C", "correct": false }
+    ]
+  },
+  {
+    "question": "What can be a pointer in ANSI C?",
+    "answers": [
+      { "text": "Variable", "correct": false },
+      { "text": "Array", "correct": false },
+      { "text": "String", "correct": false },
+      { "text": "All of the above", "correct": true }
+    ]
+  },
+  {
+    "question": "If you have a declaration int *hello;, what does hello represent?",
+    "answers": [
+      { "text": "A pointer variable", "correct": true },
+      { "text": "A value", "correct": false },
+      { "text": "An address", "correct": false },
+      { "text": "More than one of the above", "correct": false },
+      { "text": "All of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "If you have a declaration int *hello;, what does *hello represent?",
+    "answers": [
+      { "text": "A pointer variable", "correct": false },
+      { "text": "A value", "correct": true },
+      { "text": "An address", "correct": false },
+      { "text": "More than one of the above", "correct": false },
+      { "text": "All of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "What is a good and valid way to name a pointer variable that corresponds to a variable val?",
+    "answers": [
+      { "text": "int *val;", "correct": false },
+      { "text": "int *ptrVal;", "correct": true },
+      { "text": "int *Value is Nothing", "correct": false },
+      { "text": "int *value()", "correct": false }
+    ]
+  },
+  {
+    "question": "An alternative to fixed memory allocation in which memory space grows or diminishes during program execution is called:",
+    "answers": [
+      { "text": "An array compile time allocation", "correct": false },
+      { "text": "Dynamic allocation", "correct": true },
+      { "text": "Scalar allocation", "correct": false },
+      { "text": "None of the above", "correct": false }
+    ]
+  },
+  {
+    "question": "For a pointer addrPtr, using the indirection operator *addrPtr refers to the:",
+    "answers": [
+      { "text": "Pointer", "correct": false },
+      { "text": "Address", "correct": false },
+      { "text": "Value", "correct": true },
+      { "text": "Low memory", "correct": false }
+    ]
   }
 
 ];
