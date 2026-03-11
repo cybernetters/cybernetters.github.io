@@ -336,6 +336,35 @@ const questionBank = [
       { "text": "Mutual recursive and iterative", "correct": false },
       { "text": "Single recursive, non-optimal and logarithmic", "correct": false }
     ]
+  },
+  {
+    "question": "What is the correct command to compile and run this C program?",
+    "answers": [
+      { "text": "lab2_studentname_TAname gcc lab2_studentname_TAname.c -o", "correct": false },
+      { "text": "gcc lab2_studentname_TAname.c -o lab2_studentname_TAname then run ./lab2_studentname_TAname", "correct": true },
+      { "text": "gcc lab2_studentname_TAname.c -o lab2_studentname_TAname ./lab2_studentname_TAname", "correct": false },
+      { "text": "lab2_studentname_TAname.o lab2_studentname_TAname.c -o ./lab2_studentname_TAname.c", "correct": false }
+    ]
+  },
+  {
+    "question": "Based on the code above, choose the correct statement.",
+    "answers": [
+      { "text": "The code will not work because the gcc compiler does not recognize multiple printf() and scanf() functions in a single program.", "correct": false },
+      { "text": "The program will terminate immediately after printing the first prompt.", "correct": false },
+      { "text": "The program runs in an infinite loop until the user enters 'n' or 'N'.", "correct": true },
+      { "text": "The while loop will only execute once, regardless of user input.", "correct": false },
+      { "text": "C and D", "correct": false }
+    ]
+  },
+  {
+    "question": "What will happen if the user enters 'x' as input?",
+    "answers": [
+      { "text": "The program will crash due to an invalid character input.", "correct": false },
+      { "text": "The program will display \"Invalid input. Please enter 'y' or 'n'.\" and prompt again.", "correct": true },
+      { "text": "The program will return and display 'y'.", "correct": false },
+      { "text": "The program will terminate immediately.", "correct": false },
+      { "text": "None of these", "correct": false }
+    ]
   }
 
 ];
